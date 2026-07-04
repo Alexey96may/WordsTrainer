@@ -1,30 +1,3 @@
-<template>
-    <form
-        class="form_game"
-        @submit.prevent="onSubmit"
-        style="padding-bottom: 24px"
-    >
-        <AppInput
-            ref="inputComponentRef"
-            v-model="modelValue"
-            name="verb"
-            id="input_verb"
-            aria-label="Ваш ответ на греческом"
-            :has-error="hasError"
-        />
-
-        <AppButton
-            type="button"
-            style="margin-right: 12px"
-            @click="$emit('hint')"
-        >
-            Ответ
-        </AppButton>
-
-        <AppButton type="submit"> Ввод </AppButton>
-    </form>
-</template>
-
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import AppInput from "@/components/ui/AppInput.vue";
@@ -60,6 +33,33 @@ onMounted(() => {
     focusInput();
 });
 </script>
+
+<template>
+    <form
+        class="form_game"
+        @submit.prevent="onSubmit"
+        style="padding-bottom: 24px"
+    >
+        <AppInput
+            ref="inputComponentRef"
+            v-model="modelValue"
+            name="verb"
+            id="input_verb"
+            aria-label="Ваш ответ на греческом"
+            :has-error="hasError"
+        />
+
+        <AppButton
+            type="button"
+            style="margin-right: 12px"
+            @click="$emit('hint')"
+        >
+            Ответ
+        </AppButton>
+
+        <AppButton type="submit"> Ввод </AppButton>
+    </form>
+</template>
 
 <style scoped>
 .form_game {
