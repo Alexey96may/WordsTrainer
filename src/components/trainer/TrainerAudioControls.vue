@@ -1,0 +1,140 @@
+<template>
+    <div
+        class="sound-controls-container"
+        role="toolbar"
+        aria-label="Управление состоянием тренажера"
+    >
+        <button
+            class="control-btn"
+            type="button"
+            title="Сбросить текущий прогресс"
+            @click="$emit('reload')"
+        >
+            <img src="@/assets/img/reload.svg" alt="Сбросить" />
+        </button>
+
+        <button
+            class="control-btn"
+            type="button"
+            title="Пропустить / Сменить вопрос"
+            @click="$emit('refresh')"
+        >
+            <img src="@/assets/img/refresh.svg" alt="Обновить" />
+        </button>
+
+        <button
+            id="soundCheck"
+            class="control-btn"
+            type="button"
+            :class="{ 'sound-off': !isSoundOn }"
+            :title="soundTitle"
+            :aria-label="soundTitle"
+            @click="$emit('toggle-sound')"
+        >
+            <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+                <g data-name="Layer 34" id="Layer_34">
+                    <path
+                        class="cls-1"
+                        d="M18,29a1,1,0,0,1-.57-.18l-10-7A1,1,0,0,1,7,21V11a1,1,0,0,1,.43-.82l10-7a1,1,0,0,1,1-.07A1,1,0,0,1,19,4V28a1,1,0,0,1-.54.89A1,1,0,0,1,18,29ZM9,20.48l8,5.6V5.92l-8,5.6Z"
+                    />
+                    <path
+                        class="cls-1"
+                        d="M8,22H4a3,3,0,0,1-3-3V13a3,3,0,0,1-3-3H8a1,1,0,0,1,1,1V21A1,1,0,0,1,8,22ZM4,12a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H7V12Z"
+                    />
+                    <path
+                        v-if="isSoundOn && soundLevel >= 1"
+                        class="cls-1"
+                        id="sLevel1"
+                        d="M18,21V19a3,3,0,0,0,2.12-5.12l1.42-1.42A5,5,0,0,1,18,21Z"
+                    />
+                    <path
+                        v-if="isSoundOn && soundLevel >= 2"
+                        class="cls-1"
+                        id="sLevel2"
+                        d="M26.48,25.48a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42,11,11,0,0,0,0-15.54,1,1,0,1,1,1.42-1.42,13,13,0,0,1,0,18.38A1,1,0,0,1,26.48,25.48Z"
+                    />
+                    <path
+                        v-if="isSoundOn && soundLevel === 3"
+                        class="cls-1"
+                        id="sLevel3"
+                        d="M23.65,22.65a1,1,0,0,1-.7-.29A1,1,0,0,1,23,21a7,7,0,0,0,0-9.9,1,1,0,0,1,1.41-1.41,9,9,0,0,1,0,12.72A1,1,0,0,1,23.65,22.65Z"
+                    />
+                </g>
+            </svg>
+        </button>
+    </div>
+</template>
+
+<script setup lang="ts">
+import { computed } from "vue";
+
+interface Props {
+    isSoundOn: boolean;
+    soundLevel: number;
+}
+
+const props = defineProps<Props>();
+
+defineEmits<{
+    (e: "reload"): void;
+    (e: "refresh"): void;
+    (e: "toggle-sound"): void;
+}>();
+
+const soundTitle = computed(() => {
+    return props.isSoundOn
+        ? `Громкость: уровень ${props.soundLevel}`
+        : "Звук выключен";
+});
+</script>
+
+<style scoped>
+.sound-controls-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+    border-radius: 4px;
+    transition: transform 0.1s ease;
+}
+
+.control-btn:active {
+    transform: scale(0.92);
+}
+
+.control-btn:focus-visible {
+    outline: 2px solid #198754;
+}
+
+.control-btn img,
+.control-btn svg {
+    width: 32px;
+    height: 32px;
+}
+
+#soundCheck svg .cls-1 {
+    fill: #e0e0e0;
+    transition: fill 0.2s ease;
+}
+
+#soundCheck.sound-off svg path {
+    fill: #6c757d !important;
+}
+</style>

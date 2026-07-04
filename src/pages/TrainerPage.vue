@@ -1,5 +1,9 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted, watch } from "vue";
+import TrainerQuestion from "@/components/trainer/TrainerQuestion.vue";
+import TrainerAudioControls from "@/components/trainer/TrainerAudioControls.vue";
+import TrainerForm from "@/components/trainer/TrainerForm.vue";
+import TrainerScore from "@/components/trainer/TrainerScore.vue";
 
 // ВХОДЯЩИЕ ДАННЫЕ (Глобальные массивы из твоего WP)
 // Если данные приходят извне, их можно передавать через props или импортировать файл.
@@ -521,124 +525,39 @@ onUnmounted(() => {
 
         <section>
             <div class="content_game content_training" style="padding: 24px">
-                <div class="fix_two_rows">
-                    <span v-if="hasError" id="errorField">Подумайте ещё!</span>
-                    <div>
-                        <h2
-                            class="text-center"
-                            id="question_text"
-                            v-html="currentQuestionHtml"
-                        ></h2>
-                    </div>
-                </div>
+                <TrainerQuestion
+                    :question-html="currentQuestionHtml"
+                    :has-error="hasError"
+                />
 
                 <div id="select_container">
                     <div id="select_game"></div>
-
-                    <div id="arrowCont">
-                        <div class="arrowSel" id="arrowSelTwo"></div>
-                        <div class="arrowSel" id="arrowSelThree"></div>
-                    </div>
                 </div>
 
-                <div
-                    id="soundCheckDiv"
-                    :class="{ dispNone: !isControlsVisible }"
-                >
-                    <div id="reload_Game" @click="reloadGame" title="Сбросить">
-                        <img src="@/assets/img/reload.svg" alt="reloadIcon" />
-                    </div>
-                    <div
-                        id="refresh_Game"
-                        @click="refreshGame"
-                        title="Обновить"
-                    >
-                        <img src="@/assets/img/refresh.svg" alt="refreshIcon" />
-                    </div>
-                    <div
-                        id="soundCheck"
-                        @click="toggleSound"
-                        :class="{ 'sound-off': !isSoundOn }"
-                    >
-                        <svg
-                            viewBox="0 0 32 32"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <g data-name="Layer 34" id="Layer_34">
-                                <path
-                                    class="cls-1"
-                                    d="M18,29a1,1,0,0,1-.57-.18l-10-7A1,1,0,0,1,7,21V11a1,1,0,0,1,.43-.82l10-7a1,1,0,0,1,1-.07A1,1,0,0,1,19,4V28a1,1,0,0,1-.54.89A1,1,0,0,1,18,29ZM9,20.48l8,5.6V5.92l-8,5.6Z"
-                                />
-                                <path
-                                    class="cls-1"
-                                    d="M8,22H4a3,3,0,0,1-3-3V13a3,3,0,0,1-3-3H8a1,1,0,0,1,1,1V21A1,1,0,0,1,8,22ZM4,12a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H7V12Z"
-                                />
-                                <path
-                                    v-if="isSoundOn"
-                                    class="cls-1"
-                                    id="sLevel1"
-                                    d="M18,21V19a3,3,0,0,0,2.12-5.12l1.42-1.42A5,5,0,0,1,18,21Z"
-                                />
-                                <path
-                                    v-if="isSoundOn"
-                                    class="cls-1"
-                                    id="sLevel2"
-                                    d="M26.48,25.48a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42,11,11,0,0,0,0-15.54,1,1,0,1,1,1.42-1.42,13,13,0,0,1,0,18.38A1,1,0,0,1,26.48,25.48Z"
-                                />
-                                <path
-                                    v-if="isSoundOn"
-                                    class="cls-1"
-                                    id="sLevel3"
-                                    d="M23.65,22.65a1,1,0,0,1-.7-.29A1,1,0,0,1,23,21a7,7,0,0,0,0-9.9,1,1,0,0,1,1.41-1.41,9,9,0,0,1,0,12.72A1,1,0,0,1,23.65,22.65Z"
-                                />
-                            </g>
-                        </svg>
-                    </div>
-                </div>
+                <TrainerAudioControls
+                    v-if="isControlsVisible"
+                    :is-sound-on="isSoundOn"
+                    :sound-level="soundLevel"
+                    @reload="reloadGame"
+                    @refresh="refreshGame"
+                    @toggle-sound="toggleSound"
+                />
 
-                <form
-                    class="form_game form_train"
-                    id="form_game"
-                    @submit.prevent="handleInputSubmit"
-                    style="padding-bottom: 24px"
-                >
-                    <input
-                        v-model="userAnswer"
-                        autocomplete="off"
-                        size="30"
-                        type="text"
-                        name="verb"
-                        id="input_verb"
-                        ref="answerInput"
-                    />
-                    <button
-                        @click="showHint"
-                        class="my_btn fw-bold button_game"
-                        type="button"
-                        style="margin-right: 12px"
-                    >
-                        Ответ
-                    </button>
-                    <button class="my_btn fw-bold button_game" type="submit">
-                        Ввод
-                    </button>
-                </form>
+                <TrainerForm
+                    ref="trainerFormRef"
+                    v-model="userAnswer"
+                    :has-error="hasError"
+                    @submit="handleInputSubmit"
+                    @hint="showHint"
+                />
 
-                <h4 class="text-center score_title">
-                    Осталось вопросов:
-                    <span id="score">{{ remainingQuestions }}</span>
-                </h4>
+                <TrainerScore :count="remainingQuestions" />
             </div>
 
             <div class="table-content" id="table-content"></div>
         </section>
 
         <section class="train_content" v-html="theoryContent"></section>
-
-        <div id="stat_page" class="stat_topic">
-            <img src="@/assets/img/viewers.png" alt="просмотры" />
-            <span class="views_counter">{{ viewsCount }}</span>
-        </div>
     </main>
 </template>
 
@@ -773,20 +692,6 @@ onUnmounted(() => {
     border-radius: 6px;
     color: #e0e0e0;
     line-height: 1.6;
-}
-
-#stat_page {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-    color: #8b8b8b;
-    font-size: 14px;
-}
-
-#stat_page img {
-    width: 20px;
-    height: 20px;
 }
 
 .dispNone {
