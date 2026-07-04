@@ -7,11 +7,6 @@
         </div>
 
         <div class="footer_info">
-            <div>
-                <a href="#" @click.prevent="$emit('navigate', 'privacy')"
-                    >Политика конфиденциальности</a
-                >
-            </div>
             <div>{{ copyrightText }}</div>
         </div>
 
@@ -39,13 +34,10 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-// Событие для смены страниц (если понадобится переключать на политику конфиденциальности)
-defineEmits(["navigate"]);
-
 // Настройки данных (заменяют WP the_field)
 const telegramLink = ref("https://t.me/your_telegram_group"); // Подставь сюда свою ссылку на группу
 const copyrightText = ref(
-    `© ${new Date().getFullYear()} Alfa Greek. Все права защищены.`,
+    `© 2022-${new Date().getFullYear()} αGreek. Все права защищены.`,
 );
 
 const showCookieBlock = ref(false);

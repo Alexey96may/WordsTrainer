@@ -29,10 +29,14 @@ watchEffect(async () => {
 </script>
 
 <template>
-    <Header @select-trainer="handleTrainerSelection" />
+    <Header
+        @select-trainer="handleTrainerSelection"
+        :current-training-name="trainingName"
+    />
 
     <TrainerPage
         v-if="trainingData.length"
+        :key="currentTrainingId"
         :training-data="trainingData"
         :table-titles="tableTitles"
         :training-name="trainingName"
