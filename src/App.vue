@@ -1,46 +1,16 @@
 <script setup lang="ts">
-import { ref, watchEffect } from "vue";
-import TrainerPage from "./pages/TrainerPage.vue";
 import Header from "@/components/shared/AppHeader.vue";
 import Footer from "@/components/shared/AppFooter.vue";
-
-const currentTrainingId = ref("train_gen_case");
-
-const trainingData = ref([]);
-const tableTitles = ref([]);
-const trainingName = ref("Родительный падеж");
-
-const handleTrainerSelection = (trainerId: string, trainerName: string) => {
-    currentTrainingId.value = trainerId;
-    trainingName.value = trainerName;
-};
-
-watchEffect(async () => {
-    try {
-        const module = await import(
-            `./data/trainings/${currentTrainingId.value}.js`
-        );
-        trainingData.value = module.globalArray;
-        tableTitles.value = module.tableTitlesArr;
-    } catch (err) {
-        console.error("Ошибка загрузки файла тренажера:", err);
-    }
-});
 </script>
 
 <template>
-    <Header
-        @select-trainer="handleTrainerSelection"
-        :current-training-name="trainingName"
-    />
+    <Header />
 
-    <TrainerPage
-        v-if="trainingData.length"
-        :key="currentTrainingId"
-        :training-data="trainingData"
-        :table-titles="tableTitles"
-        :training-name="trainingName"
-    />
+    <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+            <component :is="Component" />
+        </transition>
+    </router-view>
 
     <Footer />
 </template>

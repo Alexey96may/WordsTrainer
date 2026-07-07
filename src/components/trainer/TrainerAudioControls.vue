@@ -8,18 +8,48 @@
             class="control-btn"
             type="button"
             title="Сбросить текущий прогресс"
-            @click="$emit('reload')"
+            @click="handleReload"
         >
-            <img src="@/assets/img/reload.svg" alt="Сбросить" />
+            <svg
+                class="control-btn__svg control-btn__svg--reload"
+                :class="{ 'is-spinning-back': isReloadSpinning }"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                @animationend="isReloadSpinning = false"
+            >
+                <path
+                    d="M12.5 3C17.15 3 21 6.85 21 11.5C21 16.15 17.15 20 12.5 20C8.87 20 5.8 17.7 4.6 14.5M3 10V5M3 10H8"
+                    stroke="#e0e0e0"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
         </button>
 
         <button
             class="control-btn"
             type="button"
             title="Пропустить / Сменить вопрос"
-            @click="$emit('refresh')"
+            @click="handleRefresh"
         >
-            <img src="@/assets/img/refresh.svg" alt="Обновить" />
+            <svg
+                class="control-btn__svg control-btn__svg--load"
+                :class="{ 'is-spinning-forward': isRefreshSpinning }"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                @animationend="isRefreshSpinning = false"
+            >
+                <path
+                    d="M11.5 3C6.85 3 3 6.85 3 11.5C3 16.15 6.85 20 11.5 20C15.13 20 18.2 17.7 19.4 14.5M21 10V5M21 10H16"
+                    stroke="#e0e0e0"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
         </button>
 
         <button
@@ -43,8 +73,9 @@
                     />
                     <path
                         class="cls-1"
-                        d="M8,22H4a3,3,0,0,1-3-3V13a3,3,0,0,1-3-3H8a1,1,0,0,1,1,1V21A1,1,0,0,1,8,22ZM4,12a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H7V12Z"
+                        d="M7,22H3a2,2,0,0,1-2-2V12a2,2,0,0,1,2-2h4a1,1,0,0,1,1,1V21A1,1,0,0,1,7,22ZM3,12v8H6V12Z"
                     />
+
                     <path
                         v-if="isSoundOn && soundLevel >= 1"
                         class="cls-1"
@@ -54,14 +85,14 @@
                     <path
                         v-if="isSoundOn && soundLevel >= 2"
                         class="cls-1"
-                        id="sLevel2"
-                        d="M26.48,25.48a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42,11,11,0,0,0,0-15.54,1,1,0,1,1,1.42-1.42,13,13,0,0,1,0,18.38A1,1,0,0,1,26.48,25.48Z"
+                        id="sLevel3"
+                        d="M23.65,22.65a1,1,0,0,1-.29-.7A1,1,0,0,1,23,21a7,7,0,0,0,0-9.9,1,1,0,0,1,1.41-1.41,9,9,0,0,1,0,12.72A1,1,0,0,1,23.65,22.65Z"
                     />
                     <path
-                        v-if="isSoundOn && soundLevel === 3"
+                        v-if="isSoundOn && soundLevel >= 3"
                         class="cls-1"
-                        id="sLevel3"
-                        d="M23.65,22.65a1,1,0,0,1-.7-.29A1,1,0,0,1,23,21a7,7,0,0,0,0-9.9,1,1,0,0,1,1.41-1.41,9,9,0,0,1,0,12.72A1,1,0,0,1,23.65,22.65Z"
+                        id="sLevel2"
+                        d="M26.48,25.48a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42,11,11,0,0,0,0-15.54,1,1,0,1,1,1.42-1.42,13,13,0,0,1,0,18.38A1,1,0,0,1,26.48,25.48Z"
                     />
                 </g>
             </svg>
@@ -70,7 +101,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { ref, computed } from "vue";
 
 interface Props {
     isSoundOn: boolean;
@@ -79,7 +110,7 @@ interface Props {
 
 const props = defineProps<Props>();
 
-defineEmits<{
+const emit = defineEmits<{
     (e: "reload"): void;
     (e: "refresh"): void;
     (e: "toggle-sound"): void;
@@ -90,6 +121,19 @@ const soundTitle = computed(() => {
         ? `Громкость: уровень ${props.soundLevel}`
         : "Звук выключен";
 });
+
+const isReloadSpinning = ref(false);
+const isRefreshSpinning = ref(false);
+
+const handleReload = () => {
+    isReloadSpinning.value = true;
+    emit("reload");
+};
+
+const handleRefresh = () => {
+    isRefreshSpinning.value = true;
+    emit("refresh");
+};
 </script>
 
 <style scoped>
@@ -102,8 +146,8 @@ const soundTitle = computed(() => {
 
 .control-btn {
     cursor: pointer;
-    width: 36px;
-    height: 36px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +156,7 @@ const soundTitle = computed(() => {
     padding: 0;
     outline: none;
     border-radius: 4px;
-    transition: transform 0.1s ease;
+    transition: all 0.2s ease;
 }
 
 .control-btn:active {
@@ -123,15 +167,72 @@ const soundTitle = computed(() => {
     outline: 2px solid #198754;
 }
 
-.control-btn img,
-.control-btn svg {
-    width: 32px;
-    height: 32px;
+.control-btn__svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s;
 }
 
+.control-btn svg,
+.control-btn__svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.control-btn__svg--load path {
+    transition: all 0.2s ease;
+}
+.control-btn__svg--reload path {
+    transition: all 0.2s ease;
+}
+
+/* Изменяем цвет стрелок при наведении на кнопку для лучшего UX */
+.control-btn:hover .control-btn__svg--load path {
+    stroke: #198754;
+}
+
+.control-btn:hover .control-btn__svg--reload path {
+    stroke: #871e19;
+}
+
+/* Анимация вращения НАЗАД (против часовой) */
+.control-btn__svg.is-spinning-back {
+    animation: spinCounterClockwise 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Анимация вращения ВПЕРЕД (по часовой) */
+.control-btn__svg.is-spinning-forward {
+    animation: spinClockwise 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes spinClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinCounterClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Стили для кнопки звука */
 #soundCheck svg .cls-1 {
     fill: #e0e0e0;
     transition: fill 0.2s ease;
+}
+
+#soundCheck:hover svg .cls-1 {
+    fill: #198754;
 }
 
 #soundCheck.sound-off svg path {

@@ -6,7 +6,7 @@
                 :key="index"
                 class="breadcrumb-item"
             >
-                <a :href="item.url">{{ item.label }}</a>
+                <RouterLink :to="item.url">{{ item.label }}</RouterLink>
                 <span class="separator" aria-hidden="true">&raquo;</span>
             </li>
 
@@ -18,6 +18,8 @@
 </template>
 
 <script setup lang="ts">
+import { RouterLink } from "vue-router";
+
 interface BreadcrumbItem {
     label: string;
     url: string;
@@ -28,11 +30,11 @@ interface Props {
     currentPage: string;
 }
 
-// Задаем дефолтную цепочку (Главная -> Тренажеры), если ничего не передали
+// Задаем дефолтную цепочку (Главная -> Тренажеры) с правильными путями для Vue Router
 withDefaults(defineProps<Props>(), {
     items: () => [
-        { label: "Главная", url: "#" },
-        { label: "Тренажеры", url: "#" },
+        { label: "Главная", url: "/" },
+        { label: "Тренажеры", url: "/" },
     ],
 });
 </script>
@@ -63,6 +65,7 @@ withDefaults(defineProps<Props>(), {
     color: #8b8b8b;
 }
 
+/* Стилизуем RouterLink точно так же, как и старые ссылки */
 .breadcrumb-item a {
     color: #d6d6d6;
     text-decoration: none;
@@ -80,7 +83,7 @@ withDefaults(defineProps<Props>(), {
 }
 
 .breadcrumb-item.active {
-    color: #198754; /* Выделим текущую тему зеленым цветом */
+    color: #198754; /* Выделяем текущую тему фирменным зеленым */
     font-weight: bold;
 }
 </style>

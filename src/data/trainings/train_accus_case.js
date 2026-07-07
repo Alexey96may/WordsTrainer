@@ -405,7 +405,7 @@ export const globalArray = [
         groups: {
             case: "Вин. падеж",
 
-            num: "ед. число",
+            num: "мн. число",
 
             gen: "м. род",
         },
@@ -769,7 +769,7 @@ export const globalArray = [
         groups: {
             case: "Вин. падеж",
 
-            num: "ед. число",
+            num: "мн. число",
 
             gen: "м. род",
         },
@@ -821,7 +821,7 @@ export const globalArray = [
         groups: {
             case: "Вин. падеж",
 
-            num: "ед. число",
+            num: "мн. число",
 
             gen: "м. род",
         },
@@ -1390,14 +1390,14 @@ export const globalArray = [
     },
 
     {
-        word: "της μητέρας",
+        word: "τις μητέρες",
 
         translation: "матерей",
 
         groups: {
             case: "Вин. падеж",
 
-            num: "ед. число",
+            num: "мн. число",
 
             gen: "ж. род",
         },
@@ -1406,9 +1406,9 @@ export const globalArray = [
 
         notice: "",
 
-        qws: ["Η Ημέρα <u>η μητέρα</u> "],
+        qws: ["Σέβομαι <u>η μητέρα</u> όλου του κόσμου."],
 
-        transls: ["День матерей"],
+        transls: ["Я уважаю матерей всего мира."],
 
         kind: "Женский род: -α",
 

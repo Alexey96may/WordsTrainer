@@ -6,9 +6,9 @@
     <header class="header">
         <div class="mob_nav">
             <div class="logo">
-                <a class="navbar-brand" href="#">
+                <RouterLink to="/" class="navbar-brand">
                     <i class="alfa">α</i>Greek
-                </a>
+                </RouterLink>
             </div>
 
             <AppBurgerButton
@@ -35,14 +35,12 @@
                         :key="trainer.id"
                         class="menu-item"
                     >
-                        <a
-                            href="#"
-                            @click.prevent="
-                                selectTrainer(trainer.id, trainer.name)
-                            "
+                        <RouterLink
+                            :to="`/trainer/${trainer.id}`"
+                            @click="closeBurger"
                         >
                             {{ trainer.name }}
-                        </a>
+                        </RouterLink>
                     </li>
                 </ul>
 
@@ -62,8 +60,6 @@
         </AppModalOverlay>
 
         <div class="main_container">
-            <AppBreadcrumbs :current-page="currentTrainingName" />
-
             <slot></slot>
         </div>
     </div>
@@ -71,48 +67,35 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { RouterLink, useRoute } from "vue-router";
 import AppModalOverlay from "@/components/shared/AppModalOverlay.vue";
 import AppBurgerButton from "@/components/ui/AppBurgerButton.vue";
-import AppBreadcrumbs from "@/components/ui/AppBreadcrumbs.vue";
+import { TRAINERS_CONFIG } from "@/config/trainers";
 
 interface Trainer {
     id: string;
     name: string;
 }
 
-interface Props {
-    currentTrainingName: string;
-}
-
-withDefaults(defineProps<Props>(), {
-    currentTrainingName: "Родительный падеж",
-});
-
-const emit = defineEmits<{
-    (e: "select-trainer", id: string, name: string): void;
-}>();
-
+const route = useRoute();
 const isBurgerOpen = ref(false);
 const burgerAnimation = ref("");
 
-const trainersList = ref<Trainer[]>([
-    { id: "train_gen_case", name: "Родительный падеж" },
-    { id: "train_accus_case", name: "Винительный падеж" },
-    { id: "train_adjectives", name: "Прилагательные" },
-    { id: "train_imperative", name: "Повелительное наклонение" },
-    { id: "train_indicative", name: "Изъявительное наклонение" },
-    { id: "train_irregular_aorist", name: "Неправильный аорист" },
-    { id: "train_past_imperfect", name: "Прошедшее длительное (Имперфект)" },
-    { id: "train_past_simple", name: "Прошедшее простое (Аорист)" },
-    { id: "train_pron", name: "Местоимения" },
-    { id: "train_verb_all_the_times", name: "Все глагольные времена" },
-    { id: "train_word_formation", name: "Словообразование" },
-]);
+// Твой полный список тренажеров, ID которых совпадают со слаstep-файлами
+const trainersList = ref(TRAINERS_CONFIG);
 
-const selectTrainer = (trainerId: string, trainerName: string = "Тренажер") => {
-    emit("select-trainer", trainerId, trainerName);
-    closeBurger();
-};
+// Автоматически вычисляем имя текущего тренажера для хлебных крошек
+const currentTrainerName = computed(() => {
+    if (route.name === "trainer" && route.params.slug) {
+        // Ищем по id, так как мы сделали его строковым слагом
+        const activeTrainer = trainersList.value.find(
+            (t) => t.id === route.params.slug,
+        );
+        return activeTrainer ? activeTrainer.name : "Тренажёр";
+    }
+    if (route.name === "home") return "Главная";
+    return "";
+});
 
 const toggleBurger = () => {
     isBurgerOpen.value = !isBurgerOpen.value;
@@ -134,6 +117,7 @@ const scrollToTop = () => {
 </script>
 
 <style scoped>
+/* Твои стили без изменений */
 @keyframes rotation {
     from {
         transform: rotate(0);
@@ -205,7 +189,7 @@ const scrollToTop = () => {
     background-image: linear-gradient(
         0deg,
         rgb(32, 32, 32) 25%,
-        rgb(43, 43, 43) 75%
+        rgb(43, 43, 43) 75-9%
     ) !important;
     box-sizing: border-box;
 }
