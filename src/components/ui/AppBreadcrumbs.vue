@@ -128,6 +128,12 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => {
     transition: color 0.2s ease;
 }
 
+@media (max-width: 600px) {
+    .nav_breadcrumb span {
+        font-size: 12px;
+    }
+}
+
 .breadcrumb-item a:hover {
     color: #ffffff;
 }

@@ -2,7 +2,6 @@
     <div id="select_container" ref="selectContainerRef">
         <div
             id="select_game"
-            :style="{ height: isSelectOpen ? '250px' : '40px' }"
             class="custom-select-box"
             :class="{ 'is-open': isSelectOpen }"
         >
@@ -28,7 +27,6 @@
                     <path
                         d="M6 9L12 15L18 9"
                         stroke="currentColor"
-                        stroke-width="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                     />
@@ -128,8 +126,8 @@ onBeforeUnmount(() => {
 }
 
 .custom-select-box {
-    width: 100%;
-    max-width: 400px;
+    max-width: 320px;
+    height: 40px;
     border: 1px solid #198754;
     border-radius: 4px;
     background-color: #222;
@@ -138,6 +136,10 @@ onBeforeUnmount(() => {
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.is-open {
+    height: 250px;
 }
 
 .option {
@@ -190,6 +192,7 @@ onBeforeUnmount(() => {
     position: absolute;
     top: 50%;
     right: 50%;
+    stroke-width: 2;
     transition: all 0.2s ease;
     translate: 50% -50%;
 }
@@ -235,5 +238,51 @@ onBeforeUnmount(() => {
 
 .disabled-kind {
     color: #7f7f7f !important;
+}
+
+@media (max-width: 600px) {
+    .custom-select-box {
+        max-width: 30vw;
+        height: 30px;
+    }
+
+    .is-open {
+        height: 250px;
+    }
+    .option {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .first-opt {
+        height: 30px;
+    }
+
+    /* Стили стрелки-галочки */
+    .arrow-indicator {
+        width: 30px;
+        height: 30px;
+    }
+
+    .arrow-indicator svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 340px) {
+    .custom-select-box {
+        max-width: 320px;
+    }
+    .option {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    .arrow-indicator svg {
+        width: 18px;
+        height: 18px;
+        stroke-width: 1;
+    }
 }
 </style>

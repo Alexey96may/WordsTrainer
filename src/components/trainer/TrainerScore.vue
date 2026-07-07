@@ -22,7 +22,7 @@ defineProps<Props>();
     color: #d6d6d6;
     margin-top: 20px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,5 +49,18 @@ defineProps<Props>();
 .pop-leave-to {
     transform: scale(0.8);
     opacity: 0;
+}
+
+@media (max-width: 600px) {
+    .score_title {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 340px) {
+    .score_title {
+        margin-top: 18px;
+        font-size: 0.7rem;
+    }
 }
 </style>

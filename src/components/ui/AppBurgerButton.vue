@@ -65,11 +65,18 @@ const burgerAnimationClass = computed(() => {
     cursor: pointer;
     display: block;
     outline: none;
+    aspect-ratio: 1;
+    width: 49px;
 }
 
 .button_img_btn:focus-visible {
     outline: 2px solid #198754;
     border-radius: 4px;
+}
+
+#img_sight {
+    width: 100%;
+    height: 100%;
 }
 
 .button_img_rotate {
@@ -78,5 +85,11 @@ const burgerAnimationClass = computed(() => {
 
 .button_img_rotate_left {
     animation: rotation_left 0.3s linear forwards;
+}
+
+@media (max-width: 600px) {
+    .button_img_btn {
+        width: 36px;
+    }
 }
 </style>

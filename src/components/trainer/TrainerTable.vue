@@ -294,4 +294,29 @@ defineExpose({ tableContentRef });
     color: #000000 !important;
     border-bottom: 1px solid #cca105 !important;
 }
+
+@media (max-width: 600px) {
+    .trainer-table th,
+    .trainer-table td {
+        font-size: 0.9rem;
+    }
+    .table-dark th {
+        font-size: 0.7rem;
+    }
+    .group-header-row {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 340px) {
+    .trainer-table th,
+    .trainer-table td {
+        font-size: 0.8rem;
+    }
+    .table-dark th {
+        font-size: 0.6rem;
+    }
+    .group-header-row th {
+        font-size: 0.7rem;
+    }
+}
 </style>

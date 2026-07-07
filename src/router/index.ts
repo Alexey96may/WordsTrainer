@@ -6,6 +6,7 @@ import {
 
 import HomeView from "@/views/HomeView.vue";
 import TrainerPage from "@/views/TrainerPage.vue";
+import AboutView from "@/views/AboutView.vue";
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -14,14 +15,17 @@ const routes: Array<RouteRecordRaw> = [
         component: HomeView,
     },
     {
+        path: "/about",
+        name: "about",
+        component: AboutView,
+    },
+    {
         path: "/trainer/:slug",
         name: "trainer",
         component: TrainerPage,
-        // ВАЖНО: разрешаем передавать параметры пути (:slug) как пропсы в компонент
         props: true,
     },
     {
-        // 404 Редирект на главную
         path: "/:pathMatch(.*)*",
         redirect: "/",
     },
@@ -30,7 +34,6 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes,
-    // Автоматический скролл вверх страницы при смене роута
     scrollBehavior() {
         return { top: 0 };
     },

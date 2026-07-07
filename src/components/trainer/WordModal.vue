@@ -63,9 +63,8 @@
                                     v-for="(groupVal, groupKey) in item.groups"
                                     :key="groupKey"
                                     class="card-group-line"
-                                >
-                                    {{ groupVal }}
-                                </div>
+                                    v-html="groupVal"
+                                ></div>
                             </template>
                         </div>
 
@@ -429,5 +428,33 @@ onUnmounted(() => {
 .empty-state {
     width: 100%;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .word-modal-window {
+        padding: 18px 6px 12px 12px;
+    }
+
+    .modal-header-section h2 {
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    .modal-word-card {
+        padding: 15px;
+        border-radius: 8px;
+        min-width: 220px;
+    }
+}
+@media (max-width: 340px) {
+    .modal-header-section h2 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    .modal-word-card {
+        padding: 15px;
+        border-radius: 8px;
+        min-width: 220px;
+    }
 }
 </style>

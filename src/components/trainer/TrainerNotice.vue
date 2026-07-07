@@ -62,4 +62,17 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     box-sizing: border-box;
     font-size: 0.95rem;
 }
+
+@media (max-width: 600px) {
+    .fixed-notice {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 340px) {
+    .fixed-notice {
+        padding: 8px;
+        font-size: 0.75rem;
+    }
+}
 </style>

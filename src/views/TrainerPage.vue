@@ -331,7 +331,7 @@ const handleModalOpenRequest = (payload) => {
 </script>
 
 <template>
-    <main v-if="globalArray.length" class="mainTrainer">
+    <div v-if="globalArray.length" class="mainTrainer">
         <div class="title">
             <hr class="hr_title_page" size="3" />
             <h1 class="title_page">{{ pageTitle }}</h1>
@@ -406,9 +406,9 @@ const handleModalOpenRequest = (payload) => {
             class="train_content"
             v-html="theoryContent"
         ></section>
-    </main>
+    </div>
 
-    <main v-else class="mainTrainer">
+    <div v-else class="mainTrainer">
         <h1 class="title_page">
             {{
                 pageTitle === "Тренажёр не найден"
@@ -416,29 +416,13 @@ const handleModalOpenRequest = (payload) => {
                     : "Загрузка данных тренажёра..."
             }}
         </h1>
-    </main>
+    </div>
 </template>
 
 <style scoped>
 .mainTrainer {
     width: 100%;
     min-height: 100vh;
-}
-.title {
-    margin: 40px 0;
-}
-.hr_title_page {
-    border: 0;
-    height: 3px;
-    background: #198754;
-    background-image: linear-gradient(to right, #212529, #198754, #212529);
-    margin: 16px 0;
-}
-.title_page {
-    text-align: center;
-    color: #ffffff;
-    font-size: 2rem;
-    margin: 12px 0;
 }
 .content_game {
     background-color: rgb(29, 29, 29);
@@ -452,6 +436,7 @@ const handleModalOpenRequest = (payload) => {
 .training-config {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     gap: 24px;
     margin-bottom: 40px;
@@ -473,5 +458,29 @@ const handleModalOpenRequest = (payload) => {
     color: #e0e0e0;
     line-height: 1.6;
     margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+    .training-config {
+        gap: 18px;
+        margin-bottom: 30px;
+        height: 30px;
+    }
+
+    .content_game {
+        padding: 18px;
+    }
+}
+@media (max-width: 340px) {
+    .training-config {
+        gap: 12px;
+        flex-direction: column;
+        margin-bottom: 20x;
+    }
+
+    .content_game {
+        border-radius: 6px;
+        padding: 12px;
+    }
 }
 </style>

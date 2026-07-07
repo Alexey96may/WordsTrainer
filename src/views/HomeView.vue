@@ -1,26 +1,28 @@
 <template>
     <div class="home-container">
-        <hr class="hr_title_page" size="3" />
-        <h1 class="title_page">Изучение Греческого Языка</h1>
-        <hr class="hr_title_page" size="3" />
-
-        <p class="welcome-text">
-            Выберите интерактивный тренажёр для практики:
-        </p>
-
-        <div class="trainers-grid">
-            <RouterLink
-                v-for="trainer in trainers"
-                :key="trainer.id"
-                :to="`/trainer/${trainer.id}`"
-                class="trainer-card"
-            >
-                <div class="card-icon">{{ trainer.icon }}</div>
-                <h3>{{ trainer.name }}</h3>
-                <p>{{ trainer.description }}</p>
-                <span class="start-btn">Начать тренировку</span>
-            </RouterLink>
+        <div class="title">
+            <hr class="hr_title_page" size="3" />
+            <h1 class="title_page">Изучение Греческого Языка</h1>
+            <hr class="hr_title_page" size="3" />
         </div>
+
+        <section class="trainers">
+            <h2 class="subtitle">Наши интерактивные тренажёры!</h2>
+
+            <div class="trainers-grid">
+                <RouterLink
+                    v-for="trainer in trainers"
+                    :key="trainer.id"
+                    :to="`/trainer/${trainer.id}`"
+                    class="trainer-card"
+                >
+                    <div class="card-icon">{{ trainer.icon }}</div>
+                    <h3>{{ trainer.name }}</h3>
+                    <p>{{ trainer.description }}</p>
+                    <span class="start-btn">Начать тренировку</span>
+                </RouterLink>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -42,11 +44,6 @@ const trainers = ref(TRAINERS_CONFIG);
 </script>
 
 <style scoped>
-.home-container {
-    max-width: 1200px; /* Немного расширил, чтобы 11 карточек красивее ложились в сетку */
-    margin: 0 auto;
-    padding: 20px;
-}
 .welcome-text {
     text-align: center;
     color: #aaa;
@@ -103,5 +100,46 @@ const trainers = ref(TRAINERS_CONFIG);
 }
 .trainer-card:hover .start-btn {
     background-color: #157347;
+}
+
+@media (max-width: 600px) {
+    .trainers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card-icon {
+        font-size: 1.6rem;
+    }
+    .trainer-card h3 {
+        font-size: 1.2rem;
+    }
+    .trainer-card p {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+    .start-btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .trainers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    .card-icon {
+        font-size: 1.3rem;
+    }
+    .trainer-card {
+        border-radius: 6px;
+        padding: 12px;
+    }
+    .trainer-card h3 {
+        font-size: 1rem;
+    }
+    .trainer-card p {
+        font-size: 0.7rem;
+    }
+    .start-btn {
+        font-size: 0.6rem;
+    }
 }
 </style>

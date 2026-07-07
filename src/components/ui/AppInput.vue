@@ -49,6 +49,7 @@ defineExpose({ focus });
 .custom-input {
     padding: 0.375rem 0.75rem;
     font-size: 1.2rem;
+    text-align: center;
     background-color: #fff;
     border: 1px solid #092217;
     border-radius: 0.25rem;
@@ -57,7 +58,7 @@ defineExpose({ focus });
     transition:
         border-color 0.2s,
         box-shadow 0.2s;
-    max-width: 100%;
+    width: 35vw;
 }
 
 .custom-input:focus {
@@ -65,12 +66,19 @@ defineExpose({ focus });
     box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
 }
 
-/* Стили на случай ошибки (красная рамка при aria-invalid) */
-.custom-input.input-error {
-    border-color: #dc3545;
+@media (max-width: 600px) {
+    .custom-input {
+        font-size: 1rem;
+        width: 60%;
+    }
+    .custom-input:focus {
+        box-shadow: 0 0 0 0.1rem rgba(25, 135, 84, 0.25);
+    }
 }
-
-.custom-input.input-error:focus {
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+@media (max-width: 340px) {
+    .custom-input {
+        font-size: 0.8rem;
+        width: 100%;
+    }
 }
 </style>

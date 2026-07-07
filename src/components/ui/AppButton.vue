@@ -49,4 +49,16 @@ const onClick = (event: MouseEvent) => {
     outline: 2px solid #ffffff;
     outline-offset: 2px;
 }
+
+@media (max-width: 600px) {
+    .my_btn {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 340px) {
+    .my_btn {
+        font-size: 0.8rem;
+        padding: 0.375rem 1rem;
+    }
+}
 </style>

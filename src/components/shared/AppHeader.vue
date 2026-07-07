@@ -53,14 +53,18 @@
 
                 <ul class="header__nav">
                     <li class="menu-item menu-item--ext">
-                        <a href="https://t.me/aGreekRu" target="blank"
+                        <a
+                            href="https://t.me/aGreekRu"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             >Группа в Telegram</a
                         >
                     </li>
                     <li class="menu-item menu-item--ext">
                         <a
                             href="https://t.me/aGreek_translBot_intoRus"
-                            target="blank"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             >Викторина в Telegram</a
                         >
                     </li>
@@ -69,7 +73,15 @@
                 <hr class="hr-menu" />
 
                 <ul class="header__nav">
-                    <li class="menu-item"><a href="#">О проекте</a></li>
+                    <li class="menu-item">
+                        <RouterLink
+                            to="/about"
+                            active-class="is-active"
+                            @click="closeBurger"
+                        >
+                            О проекте
+                        </RouterLink>
+                    </li>
                 </ul>
             </nav>
         </AppModalOverlay>
@@ -176,6 +188,7 @@ const scrollToTop = () => {
     cursor: pointer;
     display: block;
     outline: none;
+    overflow: hidden;
 }
 .button_img_btn:focus-visible {
     outline: 2px solid #198754;
@@ -305,5 +318,12 @@ const scrollToTop = () => {
 }
 .nav_breadcrumb a:hover {
     color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .logo a {
+        font-size: 14px;
+        text-shadow: 1px 1px black;
+    }
 }
 </style>

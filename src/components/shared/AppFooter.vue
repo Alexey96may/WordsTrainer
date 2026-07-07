@@ -34,8 +34,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-// Настройки данных (заменяют WP the_field)
-const telegramLink = ref("https://t.me/your_telegram_group"); // Подставь сюда свою ссылку на группу
+const telegramLink = ref("https://t.me/aGreekRu");
 const copyrightText = ref(
     `© 2022-${new Date().getFullYear()} αGreek. Все права защищены.`,
 );
@@ -70,10 +69,10 @@ const acceptCookies = () => {
     text-align: center;
     color: #d6d6d6;
     font-size: 90%;
-}
-
-.links_footer {
-    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
 }
 
 .links_footer img {
@@ -84,19 +83,6 @@ const acceptCookies = () => {
 
 .links_footer img:hover {
     transform: scale(1.1);
-}
-
-.footer_info div {
-    margin-bottom: 6px;
-}
-
-.footer_info a {
-    color: #198754;
-    text-decoration: none;
-}
-
-.footer_info a:hover {
-    text-decoration: underline;
 }
 
 /* СТИЛИ ДЛЯ COOKIE BLOCK */
@@ -149,8 +135,18 @@ const acceptCookies = () => {
 .my_btn:hover {
     background-color: #198754;
 }
-
-.cookie_accept {
-    float: right;
+@media (max-width: 600px) {
+    .footer {
+        font-size: 80%;
+    }
+}
+@media (max-width: 340px) {
+    .footer {
+        font-size: 70%;
+    }
+    .links_footer img {
+        width: 26px;
+        height: 26px;
+    }
 }
 </style>

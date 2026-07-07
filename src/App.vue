@@ -6,11 +6,13 @@ import Footer from "@/components/shared/AppFooter.vue";
 <template>
     <Header />
 
-    <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
-            <component :is="Component" />
-        </transition>
-    </router-view>
+    <main>
+        <router-view v-slot="{ Component }">
+            <transition name="fade" mode="out-in">
+                <component :is="Component" />
+            </transition>
+        </router-view>
+    </main>
 
     <Footer />
 </template>

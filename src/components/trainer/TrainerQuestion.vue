@@ -59,7 +59,7 @@ defineProps<Props>();
 }
 
 #errorField {
-    color: #dc3545;
+    color: #e53131;
     font-weight: bold;
     font-size: 1.1rem;
     line-height: 1.2;
@@ -89,5 +89,28 @@ defineProps<Props>();
 .expand-error-leave-to {
     max-height: 0;
     opacity: 0;
+}
+
+@media (max-width: 600px) {
+    #question_text {
+        font-size: 1.3rem;
+    }
+    #errorField {
+        font-size: 0.9rem;
+    }
+    :deep(.spanTransl) {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 340px) {
+    #question_text {
+        font-size: 1.1rem;
+    }
+    #errorField {
+        font-size: 0.7rem;
+    }
+    :deep(.spanTransl) {
+        font-size: 0.7rem;
+    }
 }
 </style>

@@ -22,7 +22,6 @@ const onSubmit = () => {
     emit("submit");
 };
 
-// Метод для удержания фокуса из родительского компонента при смене вопросов
 const focusInput = () => {
     inputRef.value?.focus();
 };
@@ -48,7 +47,7 @@ onMounted(() => {
         <div class="form_game__buttons">
             <AppButton
                 type="button"
-                style="margin-right: 12px"
+                class="appButton--answer"
                 @click="$emit('hint')"
             >
                 Ответ
@@ -74,5 +73,26 @@ onMounted(() => {
     justify-content: center;
     align-items: center;
     gap: 12px;
+}
+
+.appButton--answer {
+    margin-right: 12px;
+}
+
+@media (max-width: 600px) {
+    .form_game {
+        gap: 22px;
+        margin-bottom: 36px;
+    }
+}
+@media (max-width: 340px) {
+    .form_game {
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .appButton--answer {
+        margin-right: 6px;
+    }
 }
 </style>

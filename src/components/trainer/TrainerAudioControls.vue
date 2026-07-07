@@ -166,18 +166,35 @@ const handleRefresh = () => {
     outline: 2px solid #198754;
 }
 
-.control-btn__svg {
-    display: block;
-    width: 24px;
-    height: 24px;
-    transition: all 0.2s;
-}
-
 .control-btn svg,
 .control-btn__svg {
     width: 24px;
     height: 24px;
+    transition: all 0.2s;
     display: block;
+}
+
+@media (max-width: 600px) {
+    .sound-controls-container {
+        gap: 12px;
+    }
+
+    .control-btn svg,
+    .control-btn__svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 340px) {
+    .sound-controls-container {
+        gap: 6px;
+    }
+    .control-btn svg,
+    .control-btn__svg {
+        width: 18px;
+        height: 18px;
+    }
 }
 
 .control-btn__svg--load path {

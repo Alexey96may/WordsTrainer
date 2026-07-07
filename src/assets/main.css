@@ -7,7 +7,6 @@ html {
 #app {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
     font-weight: normal;
 }
 
@@ -19,8 +18,86 @@ a,
     padding: 3px;
 }
 
-@media (hover: hover) {
-    a:hover {
-        background-color: hsla(160, 100%, 37%, 0.2);
+.title {
+    margin: 40px 0;
+}
+.hr_title_page {
+    border: 0;
+    height: 3px;
+    background: #198754;
+    background-image: linear-gradient(to right, #212529, #198754, #212529);
+    margin: 16px 0;
+}
+.title_page {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 12px 0;
+}
+
+.subtitle {
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    position: relative;
+    margin-bottom: 24px;
+}
+.subtitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px; /* Длина полоски */
+    height: 2px;
+    background-color: #198754;
+    border-radius: 2px;
+}
+
+@media (max-width: 1280px) {
+    main {
+        padding: 1rem;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #app {
+        max-width: 100%;
+    }
+    .hr_title_page {
+        height: 2px;
+    }
+    .title {
+        margin: 30px 0;
+    }
+    .title_page {
+        font-size: 1.4rem;
+        margin: 12px 0;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 340px) {
+    #app {
+        max-width: 100%;
+        padding: 0rem;
+    }
+    .hr_title_page {
+        height: 1px;
+    }
+    .title {
+        margin: 20px 0;
+    }
+    .title_page {
+        font-size: 1.2rem;
+        margin: 12px 0;
+    }
+    .subtitle {
+        font-size: 0.8rem;
     }
 }
