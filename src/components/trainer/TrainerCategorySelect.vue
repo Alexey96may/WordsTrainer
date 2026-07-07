@@ -81,7 +81,7 @@ const emitCategory = (kind: string) => {
 
 const handleFirstOptClick = () => {
     if (isAllSelected.value) {
-        isSelectOpen.value = true;
+        isSelectOpen.value = !isSelectOpen.value;
     } else {
         isSelectOpen.value = false;
         emitCategory("Все");
@@ -122,7 +122,6 @@ onBeforeUnmount(() => {
 
 <style scoped>
 #select_container {
-    margin: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;

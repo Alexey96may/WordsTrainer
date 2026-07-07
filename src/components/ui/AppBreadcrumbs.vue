@@ -1,41 +1,99 @@
 <template>
-    <nav class="nav_breadcrumb" aria-label="Хлебные крошки">
+    <nav
+        v-if="breadcrumbs.length > 0"
+        class="nav_breadcrumb"
+        aria-label="Хлебные крошки"
+    >
         <ol class="breadcrumb-list">
             <li
-                v-for="(item, index) in items"
+                v-for="(crumb, index) in breadcrumbs"
                 :key="index"
                 class="breadcrumb-item"
+                :class="{ active: index === breadcrumbs.length - 1 }"
+                :aria-current="
+                    index === breadcrumbs.length - 1 ? 'page' : undefined
+                "
             >
-                <RouterLink :to="item.url">{{ item.label }}</RouterLink>
-                <span class="separator" aria-hidden="true">&raquo;</span>
-            </li>
+                <RouterLink
+                    v-if="index < breadcrumbs.length - 1 && crumb.url"
+                    :to="crumb.url"
+                >
+                    {{ crumb.label }}
+                </RouterLink>
 
-            <li class="breadcrumb-item active" aria-current="page">
-                <span>{{ currentPage }}</span>
+                <span v-else>{{ crumb.label }}</span>
+
+                <span
+                    v-if="index < breadcrumbs.length - 1"
+                    class="separator"
+                    aria-hidden="true"
+                    >&raquo;</span
+                >
             </li>
         </ol>
     </nav>
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
+import { ref, computed } from "vue";
+import { TRAINERS_CONFIG } from "@/config/trainers";
 
 interface BreadcrumbItem {
     label: string;
-    url: string;
+    url?: string;
 }
 
-interface Props {
-    items?: BreadcrumbItem[];
-    currentPage: string;
-}
+const route = useRoute();
+const trainersList = ref(TRAINERS_CONFIG);
 
-// Задаем дефолтную цепочку (Главная -> Тренажеры) с правильными путями для Vue Router
-withDefaults(defineProps<Props>(), {
-    items: () => [
-        { label: "Главная", url: "/" },
-        { label: "Тренажеры", url: "/" },
-    ],
+// 1. Сначала определяем имя текущего тренажёра, если мы внутри него
+const currentTrainerName = computed(() => {
+    if (route.name === "trainer" && route.params.slug) {
+        const activeTrainer = trainersList.value.find(
+            (t) => t.id === route.params.slug,
+        );
+        return activeTrainer ? activeTrainer.name : "Тренажёр";
+    }
+    return "";
+});
+
+// 2. Автоматически строим всю цепочку в зависимости от роута
+const breadcrumbs = computed<BreadcrumbItem[]>(() => {
+    // 1. ЕСЛИ МЫ НА ГЛАВНОЙ: вернет только один неактивный пункт [Главная]
+    if (route.name === "home") {
+        return [{ label: "Главная" }];
+    }
+
+    // Базовое первое звено для всех остальных страниц сайта
+    const crumbs: BreadcrumbItem[] = [{ label: "Главная", url: "/" }];
+
+    // 2. ЕСЛИ МЫ В ТРЕНАЖЁРЕ: Главная » Тренажеры » Винительный падеж
+    if (route.name === "trainer") {
+        crumbs.push({ label: "Тренажеры", url: "/" }); // Ссылка на главную, где список
+        crumbs.push({ label: currentTrainerName.value });
+        return crumbs;
+    }
+
+    // 3. ЕСЛИ МЫ НА СТРАНИЦЕ "О ПРОЕКТЕ": Главная » О проекте
+    if (route.name === "about") {
+        crumbs.push({ label: "О проекте" });
+        return crumbs;
+    }
+
+    // 4. ЕСЛИ МЫ НА СТРАНИЦЕ "ГРАММАТИКА": Главная » Грамматика
+    if (route.name === "grammar") {
+        crumbs.push({ label: "Грамматика" });
+        return crumbs;
+    }
+
+    // Фолбек на случай, если у роута задан мета-тайтл в router/index.ts
+    if (route.meta?.title) {
+        crumbs.push({ label: route.meta.title as string });
+        return crumbs;
+    }
+
+    return crumbs;
 });
 </script>
 
@@ -43,7 +101,6 @@ withDefaults(defineProps<Props>(), {
 .nav_breadcrumb {
     background-color: rgb(29, 29, 29);
     padding: 6px 12px;
-    margin-bottom: 12px;
     font-size: 90%;
     font-style: oblique;
     border-radius: 4px;
@@ -65,7 +122,6 @@ withDefaults(defineProps<Props>(), {
     color: #8b8b8b;
 }
 
-/* Стилизуем RouterLink точно так же, как и старые ссылки */
 .breadcrumb-item a {
     color: #d6d6d6;
     text-decoration: none;
@@ -82,8 +138,9 @@ withDefaults(defineProps<Props>(), {
     font-style: normal;
 }
 
+/* Стили для последнего активного элемента */
 .breadcrumb-item.active {
-    color: #198754; /* Выделяем текущую тему фирменным зеленым */
+    color: #198754; /* Твой фирменный зеленый */
     font-weight: bold;
 }
 </style>

@@ -15,13 +15,7 @@
                 @touchmove="handleTouchMove"
                 @touchend="handleTouchEnd"
             >
-                <button
-                    class="modal-close-x"
-                    @click="closeModal"
-                    aria-label="Закрыть"
-                >
-                    <b>X</b>
-                </button>
+                <AppCloseButton class="modal-close-btn" @close="closeModal" />
 
                 <div class="modal-header-section">
                     <h2>
@@ -38,43 +32,49 @@
                     </p>
                 </div>
 
-                <div class="modal-grid-layout" :class="gridClass">
-                    <div
-                        v-for="(item, idx) in relatedForms"
-                        :key="idx"
-                        class="modal-word-card"
-                        :style="getCardStyle(idx)"
-                    >
-                        <span class="card-idx">{{ idx + 1 }}.</span>
-                        <div class="card-main-word">
-                            <strong>{{ item.word }}</strong>
-                        </div>
-
-                        <div v-if="item.translation" class="card-translation">
-                            ({{ item.translation.trim() }})
-                        </div>
-
-                        <template
-                            v-if="
-                                item.groups && Object.keys(item.groups).length
-                            "
+                <div class="modal-body-scroll-container">
+                    <div class="modal-grid-layout" :class="gridClass">
+                        <div
+                            v-for="(item, idx) in relatedForms"
+                            :key="idx"
+                            class="modal-word-card"
+                            :style="getCardStyle(idx)"
                         >
-                            <hr class="card-divider" />
-                            <div
-                                v-for="(groupVal, groupKey) in item.groups"
-                                :key="groupKey"
-                                class="card-group-line"
-                            >
-                                {{ groupVal }}
+                            <span class="card-idx">{{ idx + 1 }}.</span>
+                            <div class="card-main-word">
+                                <strong>{{ item.word }}</strong>
                             </div>
-                        </template>
-                    </div>
 
-                    <div
-                        v-if="relatedForms.length === 0"
-                        class="modal-word-card empty-state"
-                    >
-                        <span>Нет информации</span>
+                            <div
+                                v-if="item.translation"
+                                class="card-translation"
+                            >
+                                ({{ item.translation.trim() }})
+                            </div>
+
+                            <template
+                                v-if="
+                                    item.groups &&
+                                    Object.keys(item.groups).length
+                                "
+                            >
+                                <hr class="card-divider" />
+                                <div
+                                    v-for="(groupVal, groupKey) in item.groups"
+                                    :key="groupKey"
+                                    class="card-group-line"
+                                >
+                                    {{ groupVal }}
+                                </div>
+                            </template>
+                        </div>
+
+                        <div
+                            v-if="relatedForms.length === 0"
+                            class="modal-word-card empty-state"
+                        >
+                            <span>Нет информации</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,6 +84,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, onUnmounted } from "vue";
+import AppCloseButton from "@/components/ui/AppCloseButton.vue";
 
 interface Props {
     isOpen: boolean;
@@ -222,7 +223,6 @@ const handleKeyDown = (e: KeyboardEvent) => {
 // Touch логика
 const handleTouchStart = (e: TouchEvent) => {
     if (!e.touches || !e.touches[0]) return;
-
     touchX.value = e.touches[0].clientX;
     isSwiping.value = true;
     transitionStyle.value = "none";
@@ -230,7 +230,6 @@ const handleTouchStart = (e: TouchEvent) => {
 
 const handleTouchMove = (e: TouchEvent) => {
     if (!isSwiping.value) return;
-
     if (!e.changedTouches || !e.changedTouches[0]) return;
 
     const diffX = e.changedTouches[0].clientX - touchX.value;
@@ -263,7 +262,7 @@ const handleTouchEnd = () => {
     shiftX.value = 0;
 };
 
-// Следим за открытием
+// Блокировка прокрутки body
 watch(
     () => props.isOpen,
     (active) => {
@@ -287,13 +286,13 @@ onUnmounted(() => {
 /* Затемнение на весь экран */
 .modal-overlay-wrapper {
     position: fixed;
-    inset: 0; /* top:0, left:0, right:0, bottom:0 */
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.88);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999999; /* Максимальный приоритет */
-    padding: 15px;
+    z-index: 999999;
+    padding: 20px;
 }
 
 /* Окно модалки */
@@ -304,40 +303,63 @@ onUnmounted(() => {
     border-radius: 12px;
     width: 100%;
     max-width: 900px;
-    max-height: 90vh;
-    overflow-y: auto;
-    padding: 30px 20px;
+    max-height: 85vh; /* Фиксируем максимальную высоту */
+    display: flex;
+    flex-direction: column; /* Элементы выстраиваются вертикально */
+    padding: 24px 12px 24px 24px; /* Меньше отступ справа, чтобы скролл плотно сидел у края */
     color: #fff;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Само окно больше не скроллится целиком */
 }
 
-.modal-close-x {
+/* Позиционирование новой кнопки */
+.modal-close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: 1px solid #dc3545;
-    color: #dc3545;
-    border-radius: 4px;
-    padding: 2px 10px;
-    cursor: pointer;
+    top: 16px;
+    right: 16px;
     z-index: 10;
 }
 
 .modal-header-section {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    padding-right: 12px;
+    flex-shrink: 0; /* Шапка сохраняет размеры и не сжимается */
 }
 
 .modal-header-section h2 {
     color: #fff;
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
 }
 
 .modal-translation-hint {
     color: #8b8b8b;
     font-style: italic;
+    margin: 0;
+}
+
+/* КОНТЕЙНЕР ДЛЯ СКРОЛЛА КАРТОЧЕК */
+.modal-body-scroll-container {
+    overflow-y: auto;
+    flex-grow: 1; /* Занимает всю доступную высоту окна */
+    padding-right: 12px; /* Зазор, чтобы контент не перекрывался скроллбаром */
+}
+
+/* Кастомный зеленый скроллбар */
+.modal-body-scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-body-scroll-container::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 4px;
+}
+.modal-body-scroll-container::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 4px;
+}
+.modal-body-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #157347;
 }
 
 /* Сетка */
@@ -345,6 +367,7 @@ onUnmounted(() => {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    padding-bottom: 8px; /* Защитный отступ снизу */
 }
 
 .modal-grid-layout.grid-column {
@@ -357,7 +380,7 @@ onUnmounted(() => {
     padding: 15px;
     border-radius: 8px;
     flex: 1 1 calc(33.333% - 15px);
-    min-width: 200px;
+    min-width: 220px;
     position: relative;
     box-sizing: border-box;
 }
@@ -371,8 +394,8 @@ onUnmounted(() => {
 
 .card-idx {
     position: absolute;
-    top: 5px;
-    left: 8px;
+    top: 6px;
+    left: 10px;
     font-size: 0.75rem;
     color: #666;
 }

@@ -1,7 +1,5 @@
 <script setup>
 import { ref, computed, watch } from "vue";
-import { RouterLink } from "vue-router";
-// Импортируем наш центральный конфиг тренажеров
 import { TRAINERS_CONFIG } from "@/config/trainers";
 
 import TrainerQuestion from "@/components/trainer/TrainerQuestion.vue";
@@ -9,7 +7,6 @@ import TrainerAudioControls from "@/components/trainer/TrainerAudioControls.vue"
 import TrainerForm from "@/components/trainer/TrainerForm.vue";
 import TrainerScore from "@/components/trainer/TrainerScore.vue";
 import TrainerCategorySelect from "@/components/trainer/TrainerCategorySelect.vue";
-import AppBreadcrumbs from "@/components/ui/AppBreadcrumbs.vue";
 import TrainerTable from "@/components/trainer/TrainerTable.vue";
 import TrainerNotice from "@/components/trainer/TrainerNotice.vue";
 import WordModal from "@/components/trainer/WordModal.vue";
@@ -53,14 +50,12 @@ const soundLevel = ref(3);
 const sVolume = ref(1);
 const isSoundOn = ref(true);
 
-const audio_bad = new Audio(
-    "/wp-content/themes/alfa-greek/assets/music/bad.wav",
-);
+const audio_bad = new Audio(`${import.meta.env.BASE_URL}sound/effects/bad.wav`);
 const audio_great = new Audio(
-    "/wp-content/themes/alfa-greek/assets/music/great.wav",
+    `${import.meta.env.BASE_URL}sound/effects/great.wav`,
 );
 const audio_hint = new Audio(
-    "/wp-content/themes/alfa-greek/assets/music/hint.wav",
+    `${import.meta.env.BASE_URL}sound/effects/hint.wav`,
 );
 
 // Очереди и пулы вопросов
@@ -337,15 +332,14 @@ const handleModalOpenRequest = (payload) => {
 
 <template>
     <main v-if="globalArray.length" class="mainTrainer">
-        <hr class="hr_title_page" size="3" />
-
-        <AppBreadcrumbs :current-page="pageTitle" />
-
-        <h1 class="title_page">{{ pageTitle }}</h1>
-        <hr class="hr_title_page" size="3" />
+        <div class="title">
+            <hr class="hr_title_page" size="3" />
+            <h1 class="title_page">{{ pageTitle }}</h1>
+            <hr class="hr_title_page" size="3" />
+        </div>
 
         <section>
-            <div class="content_game content_training" style="padding: 24px">
+            <div class="content_game content_training">
                 <div class="training-config">
                     <TrainerAudioControls
                         :is-sound-on="isSoundOn"
@@ -428,6 +422,10 @@ const handleModalOpenRequest = (payload) => {
 <style scoped>
 .mainTrainer {
     width: 100%;
+    min-height: 100vh;
+}
+.title {
+    margin: 40px 0;
 }
 .hr_title_page {
     border: 0;
@@ -446,6 +444,7 @@ const handleModalOpenRequest = (payload) => {
     background-color: rgb(29, 29, 29);
     border: 1px solid #198754;
     border-radius: 8px;
+    padding: 24px;
     margin-bottom: 24px;
 }
 
@@ -453,12 +452,14 @@ const handleModalOpenRequest = (payload) => {
 .training-config {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Изменил на flex-start, чтобы выпадающий селектор корректно открывался вниз */
+    align-items: center;
     gap: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     position: relative;
+    height: 40px;
     z-index: 9999;
 }
+
 .training-config__select {
     position: absolute;
     top: 0;

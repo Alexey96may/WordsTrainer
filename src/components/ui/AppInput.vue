@@ -57,6 +57,7 @@ defineExpose({ focus });
     transition:
         border-color 0.2s,
         box-shadow 0.2s;
+    max-width: 100%;
 }
 
 .custom-input:focus {

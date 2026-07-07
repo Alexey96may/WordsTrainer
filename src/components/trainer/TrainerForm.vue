@@ -35,11 +35,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <form
-        class="form_game"
-        @submit.prevent="onSubmit"
-        style="padding-bottom: 24px"
-    >
+    <form class="form_game" @submit.prevent="onSubmit">
         <AppInput
             ref="inputComponentRef"
             v-model="modelValue"
@@ -49,20 +45,31 @@ onMounted(() => {
             :has-error="hasError"
         />
 
-        <AppButton
-            type="button"
-            style="margin-right: 12px"
-            @click="$emit('hint')"
-        >
-            Ответ
-        </AppButton>
+        <div class="form_game__buttons">
+            <AppButton
+                type="button"
+                style="margin-right: 12px"
+                @click="$emit('hint')"
+            >
+                Ответ
+            </AppButton>
 
-        <AppButton type="submit"> Ввод </AppButton>
+            <AppButton type="submit"> Ввод </AppButton>
+        </div>
     </form>
 </template>
 
 <style scoped>
 .form_game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.form_game__buttons {
     display: flex;
     justify-content: center;
     align-items: center;

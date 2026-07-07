@@ -21,6 +21,8 @@
         <hr class="hr_header" />
     </header>
 
+    <AppBreadcrumbs :current-page="currentTrainerName" />
+
     <div class="all_body">
         <AppModalOverlay
             id="mobile-menu"
@@ -37,6 +39,9 @@
                     >
                         <RouterLink
                             :to="`/trainer/${trainer.id}`"
+                            :class="{
+                                'is-active': route.params.slug === trainer.id,
+                            }"
                             @click="closeBurger"
                         >
                             {{ trainer.name }}
@@ -47,8 +52,18 @@
                 <hr class="hr-menu" />
 
                 <ul class="header__nav">
-                    <li class="menu-item"><a href="#">Грамматика</a></li>
-                    <li class="menu-item"><a href="#">Словари</a></li>
+                    <li class="menu-item menu-item--ext">
+                        <a href="https://t.me/aGreekRu" target="blank"
+                            >Группа в Telegram</a
+                        >
+                    </li>
+                    <li class="menu-item menu-item--ext">
+                        <a
+                            href="https://t.me/aGreek_translBot_intoRus"
+                            target="blank"
+                            >Викторина в Telegram</a
+                        >
+                    </li>
                 </ul>
 
                 <hr class="hr-menu" />
@@ -67,27 +82,21 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import AppBreadcrumbs from "@/components/ui/AppBreadcrumbs.vue";
 import { RouterLink, useRoute } from "vue-router";
 import AppModalOverlay from "@/components/shared/AppModalOverlay.vue";
 import AppBurgerButton from "@/components/ui/AppBurgerButton.vue";
 import { TRAINERS_CONFIG } from "@/config/trainers";
 
-interface Trainer {
-    id: string;
-    name: string;
-}
-
 const route = useRoute();
 const isBurgerOpen = ref(false);
 const burgerAnimation = ref("");
 
-// Твой полный список тренажеров, ID которых совпадают со слаstep-файлами
 const trainersList = ref(TRAINERS_CONFIG);
 
 // Автоматически вычисляем имя текущего тренажера для хлебных крошек
 const currentTrainerName = computed(() => {
     if (route.name === "trainer" && route.params.slug) {
-        // Ищем по id, так как мы сделали его строковым слагом
         const activeTrainer = trainersList.value.find(
             (t) => t.id === route.params.slug,
         );
@@ -109,15 +118,41 @@ const closeBurger = () => {
     burgerAnimation.value = "button_img_rotate_left";
 };
 
-const burgerAnimationClass = computed(() => burgerAnimation.value);
-
 const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
 </script>
 
 <style scoped>
-/* Твои стили без изменений */
+/* Все твои стили остаются нетронутыми, добавляем только правила ниже */
+
+.navbar_menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #198754 !important;
+    background-color: #1d1d1d; /* Задаем фон в тон модалки */
+}
+
+/* СТИЛИЗАЦИЯ АКТИВНОЙ ССЫЛКИ ТРЕНАЖЁРА */
+.menu-item a.is-active {
+    color: #198754; /* Фирменный зеленый цвет текста */
+    font-weight: bold;
+    background-color: rgba(25, 135, 84, 0.08); /* Легкий фоновый акцент */
+}
+
+/* Ограничиваем область ховера, чтобы углы фона у активных пунктов не вылезали за рамку */
+.menu-item:first-child a {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.menu-item:last-child a {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Остальные твои стили без изменений */
 @keyframes rotation {
     from {
         transform: rotate(0);
@@ -134,7 +169,6 @@ const scrollToTop = () => {
         transform: rotate(-360deg);
     }
 }
-
 .button_img_btn {
     background: none;
     border: none;
@@ -147,7 +181,6 @@ const scrollToTop = () => {
     outline: 2px solid #198754;
     border-radius: 4px;
 }
-
 .button_img_rotate {
     animation: rotation 0.3s linear forwards;
 }
@@ -189,11 +222,10 @@ const scrollToTop = () => {
     background-image: linear-gradient(
         0deg,
         rgb(32, 32, 32) 25%,
-        rgb(43, 43, 43) 75-9%
+        rgb(43, 43, 43) 75%
     ) !important;
     box-sizing: border-box;
 }
-
 .mob_nav {
     padding: 12px;
     width: 100%;
@@ -202,7 +234,6 @@ const scrollToTop = () => {
     align-items: center;
     gap: 20px;
 }
-
 .logo a {
     text-shadow: 2px 2px black;
     font-size: 18px;
@@ -212,33 +243,22 @@ const scrollToTop = () => {
 .logo .alfa {
     font-style: italic;
 }
-
 .all_body {
     padding: 0 12px;
     display: flex;
     flex-direction: row;
     position: relative;
 }
-
 .main_container {
     box-sizing: border-box;
     width: 100%;
 }
-
-.navbar_menu {
-    display: block;
-    width: 100%;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid #198754 !important;
-}
-
 .indentTop {
     padding-top: 12px;
 }
 .header__nav {
     list-style: none;
-    padding: 0;
+    padding: 20px 0;
 }
 .menu-item a {
     font-size: 95%;
@@ -246,12 +266,15 @@ const scrollToTop = () => {
     padding: 8px 16px;
     color: #d6d6d6;
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .menu-item a:hover {
     color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.03);
 }
-
+.menu-item--ext a {
+    color: #4e87f9e1;
+}
 .hr-menu {
     width: 100%;
     margin: 12px 0;
@@ -260,7 +283,6 @@ const scrollToTop = () => {
     background: #198754;
     background-image: linear-gradient(to right, #212529, #198754, #212529);
 }
-
 .hr_header {
     width: 100%;
     display: none;
@@ -268,18 +290,18 @@ const scrollToTop = () => {
     border-top: 1px solid #333;
     margin: 12px 0;
 }
-
 .nav_breadcrumb {
     background-color: rgb(29, 29, 29);
     padding: 6px 12px;
     text-align: center;
-    margin-bottom: 12px;
     color: #8b8b8b;
     font-size: 90%;
     font-style: oblique;
+    border-radius: 4px;
 }
 .nav_breadcrumb a {
     color: #d6d6d6;
+    text-decoration: none;
 }
 .nav_breadcrumb a:hover {
     color: #ffffff;

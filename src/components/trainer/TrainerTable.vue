@@ -37,9 +37,11 @@
                     :class="{ orange_row: checkHighlight(row) }"
                     @click="handleRowClick(row)"
                 >
-                    <td v-for="(titleObj, tIdx) in titles" :key="tIdx">
-                        {{ row[titleObj.place] || "—" }}
-                    </td>
+                    <td
+                        v-for="(titleObj, tIdx) in titles"
+                        :key="tIdx"
+                        v-html="row[titleObj.place] || '—'"
+                    ></td>
                 </tr>
             </tbody>
         </table>

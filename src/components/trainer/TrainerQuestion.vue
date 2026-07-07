@@ -1,17 +1,14 @@
 <template>
     <div class="fix_two_rows">
-        <Transition name="fade-error">
-            <span
-                v-if="hasError"
-                id="errorField"
-                role="alert"
-                aria-live="assertive"
-            >
-                Подумайте ещё!
-            </span>
+        <Transition name="expand-error">
+            <div v-if="hasError" class="error-slider-wrapper">
+                <span id="errorField" role="alert" aria-live="assertive">
+                    Подумайте ещё!
+                </span>
+            </div>
         </Transition>
 
-        <div>
+        <div class="question-container">
             <h2
                 class="text-center"
                 id="question_text"
@@ -32,21 +29,18 @@ defineProps<Props>();
 
 <style scoped>
 .fix_two_rows {
-    min-height: 90px;
     position: relative;
     text-align: center;
+    width: 100%;
+    min-height: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
 }
 
-#errorField {
-    color: #dc3545;
-    font-weight: bold;
-    font-size: 1.1rem;
-    display: block;
-    margin-bottom: 8px;
+.question-container {
+    width: 100%;
 }
 
 #question_text {
@@ -55,7 +49,24 @@ defineProps<Props>();
     margin: 0;
 }
 
-/* Глубокий селектор для стилизации динамического span из v-html */
+/* Обертка, которая физически раздвигает родительский блок по высоте */
+.error-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    /* Задаем фиксированную высоту для анимации. 
+       Она включает в себя высоту текста (около 22px) + нижний отступ */
+    max-height: 32px;
+}
+
+#errorField {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    display: block;
+    margin-bottom: 10px; /* Этот отступ тоже будет плавно уходить под кат */
+}
+
 :deep(.spanTransl) {
     font-size: 1.1rem;
     color: #8b8b8b;
@@ -63,15 +74,20 @@ defineProps<Props>();
     margin-top: 4px;
 }
 
-/* АНИМАЦИИ ОШИБКИ */
-.fade-error-enter-active,
-.fade-error-leave-active {
-    transition: all 0.25s ease;
+/* АНИМАЦИЯ ЧЕСТНОГО РАСШИРЕНИЯ */
+.expand-error-enter-active,
+.expand-error-leave-active {
+    /* cubic-bezier дает эффект мягкой пружины при расталкивании */
+    transition:
+        max-height 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.2s ease;
 }
 
-.fade-error-enter-from,
-.fade-error-leave-to {
+/* В скрытом состоянии wrapper имеет высоту 0, 
+   поэтому родительский .fix_two_rows сжимается и всё снизу поднимается вверх */
+.expand-error-enter-from,
+.expand-error-leave-to {
+    max-height: 0;
     opacity: 0;
-    transform: translateY(-5px);
 }
 </style>
