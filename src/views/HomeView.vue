@@ -10,37 +10,43 @@
             <h2 class="subtitle">Наши интерактивные тренажёры!</h2>
 
             <div class="trainers-grid">
-                <RouterLink
-                    v-for="trainer in trainers"
-                    :key="trainer.id"
-                    :to="`/trainer/${trainer.id}`"
-                    class="trainer-card"
-                >
-                    <div class="card-icon">{{ trainer.icon }}</div>
-                    <h3>{{ trainer.name }}</h3>
-                    <p>{{ trainer.description }}</p>
-                    <span class="start-btn">Начать тренировку</span>
-                </RouterLink>
+                <template v-if="isLoading">
+                    <TrainerCardSkeleton v-for="i in 6" :key="'loader-' + i" />
+                </template>
+
+                <template v-else>
+                    <RouterLink
+                        v-for="trainer in trainers"
+                        :key="trainer.id"
+                        :to="`/trainer/${trainer.id}`"
+                        class="trainer-card"
+                    >
+                        <div class="card-icon">{{ trainer.icon }}</div>
+                        <h3>{{ trainer.name }}</h3>
+                        <p>{{ trainer.description }}</p>
+                        <span class="start-btn">Начать тренировку</span>
+                    </RouterLink>
+                </template>
             </div>
         </section>
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { RouterLink } from "vue-router";
-import { TRAINERS_CONFIG } from "@/config/trainers";
+import { TRAINERS_CONFIG, type TrainerConfig } from "@/config/trainers";
+import TrainerCardSkeleton from "@/components/ui/TrainerCardSkeleton.vue";
 
-interface TrainerItem {
-    id: number;
-    slug: string;
-    name: string;
-    description: string;
-    icon: string;
-}
+const isLoading = ref(true);
+const trainers = ref<TrainerConfig[]>([]);
 
-// Полный список всех 11 тренажёров, синхронизированный с хедером и файлами JS
-const trainers = ref(TRAINERS_CONFIG);
+onMounted(() => {
+    setTimeout(() => {
+        trainers.value = TRAINERS_CONFIG;
+        isLoading.value = false;
+    }, 300);
+});
 </script>
 
 <style scoped>
