@@ -1,42 +1,51 @@
-# GreekTrainer
+# WordsTrainer 🧠 🚀
 
-This template should help get you started developing with Vue 3 in Vite.
+A highly optimized, modern single-page application (SPA) for learning and memorizing foreign languages (with advanced support for Greek grammar, phonetics, and dynamic exercise building). Built completely with a **zero-any TypeScript** configuration, modular architecture, and fully covered by unit tests.
 
-## Recommended IDE Setup
+🔗 **Live Demo:** [aleksey-technician.github.io/WordsTrainer/](https://alexey96may.github.io/WordsTrainer/)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 🛠️ Tech Stack & Architecture
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+This project is built using professional-grade, modern front-end tooling optimized for scale, performance, and developer experience:
 
-## Type Support for `.vue` Imports in TS
+- **Core:** Vue 3 (Composition API, `<script setup>`)
+- **Language:** TypeScript (Strict Mode, Zero `any` policy)
+- **State & Logic:** Custom Modular Composables (Domain-Driven design)
+- **Styling:** Tailwind CSS / Scoped CSS for precise layouts
+- **Testing Suite:** Vitest + `jsdom` for automated unit testing
+- **Build Tool & Optimization:** Vite + Terser + Rollup Code Splitting + Gzip Pre-compression
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 🏗️ Architectural Highlights & Clean Code
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+The main production component was heavily refactored from a monolithic file into isolated, focused modules using **Vue Composables**. This guarantees a high level of code reusability and testability.
 
-## Project Setup
+### 🧩 Core Modules Split:
 
-```sh
-npm install
-```
+1.  **`useTrainerCore`**: Manages the core game loops, user answer validation engine, dynamically renders reactive HTML for question states, and handles resetting/refreshing training queues.
+2.  **`useTrainerCategories`**: Encapsulates data filtration layers, multi-category selection mechanics, and calculates remaining pool capacities.
+3.  **`useTrainerSound`**: Safely manages browser hardware audio APIs, volumes, and sound states using encapsulated reactive node clones (bypassing global memory leaks).
 
-### Compile and Hot-Reload for Development
+### ⚡ Strict Typing & Data Contracts
 
-```sh
-npm run dev
-```
+All dynamic data models arriving from asynchronous language files are normalized via strict interface bindings:
 
-### Type-Check, Compile and Minify for Production
+```typescript
+export interface RawTrainerItem {
+    word: string;
+    base?: string;
+    kind?: string;
+    qws: string[];
+    transls: string[];
+    notice?: string;
+    [key: string]: unknown;
+}
 
-```sh
-npm run build
+export interface TrainerItem extends RawTrainerItem {
+    base: string;
+    kind: string;
+}
 ```
