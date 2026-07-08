@@ -8,13 +8,15 @@
             </div>
         </Transition>
 
-        <div class="question-container">
-            <h2
-                class="text-center"
-                id="question_text"
-                v-html="questionHtml"
-            ></h2>
-        </div>
+        <Transition name="fade-question" mode="out-in">
+            <div class="question-container" :key="questionHtml">
+                <h2
+                    class="text-center"
+                    id="question_text"
+                    v-html="questionHtml"
+                ></h2>
+            </div>
+        </Transition>
     </div>
 </template>
 
@@ -32,15 +34,19 @@ defineProps<Props>();
     position: relative;
     text-align: center;
     width: 100%;
-    min-height: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 24px;
+    margin: 40px 0 24px;
+    min-height: 84px;
 }
 
 .question-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 84px;
 }
 
 #question_text {
@@ -49,12 +55,10 @@ defineProps<Props>();
     margin: 0;
 }
 
-/* Обертка, которая физически раздвигает родительский блок по высоте */
+/* === АНИМАЦИЯ ОШИБКИ (Раздвигание) === */
 .error-slider-wrapper {
     overflow: hidden;
     width: 100%;
-    /* Задаем фиксированную высоту для анимации. 
-       Она включает в себя высоту текста (около 22px) + нижний отступ */
     max-height: 32px;
 }
 
@@ -64,9 +68,42 @@ defineProps<Props>();
     font-size: 1.1rem;
     line-height: 1.2;
     display: block;
-    margin-bottom: 10px; /* Этот отступ тоже будет плавно уходить под кат */
+    margin-bottom: 10px;
 }
 
+.expand-error-enter-active,
+.expand-error-leave-active {
+    transition:
+        max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.2s ease;
+}
+
+.expand-error-enter-from,
+.expand-error-leave-to {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* === АНИМАЦИЯ СМЕНЫ ВОПРОСА (Fade out-in) === */
+.fade-question-enter-active,
+.fade-question-leave-active {
+    /* Плавное исчезновение и появление за 0.2 секунды */
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.fade-question-enter-from {
+    opacity: 0;
+    transform: translateY(10px); /* Новый вопрос мягко приподнимается снизу */
+}
+
+.fade-question-leave-to {
+    opacity: 0;
+    transform: translateY(-10px); /* Старый вопрос плавно уходит наверх */
+}
+
+/* Стили перевода */
 :deep(.spanTransl) {
     font-size: 1.1rem;
     color: #8b8b8b;
@@ -74,26 +111,12 @@ defineProps<Props>();
     margin-top: 4px;
 }
 
-/* АНИМАЦИЯ ЧЕСТНОГО РАСШИРЕНИЯ */
-.expand-error-enter-active,
-.expand-error-leave-active {
-    /* cubic-bezier дает эффект мягкой пружины при расталкивании */
-    transition:
-        max-height 0.28s cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 0.2s ease;
-}
-
-/* В скрытом состоянии wrapper имеет высоту 0, 
-   поэтому родительский .fix_two_rows сжимается и всё снизу поднимается вверх */
-.expand-error-enter-from,
-.expand-error-leave-to {
-    max-height: 0;
-    opacity: 0;
-}
-
 @media (max-width: 600px) {
     #question_text {
         font-size: 1.3rem;
+    }
+    .question-container {
+        min-height: 96px;
     }
     #errorField {
         font-size: 0.9rem;
@@ -103,6 +126,9 @@ defineProps<Props>();
     }
 }
 @media (max-width: 340px) {
+    .fix_two_rows {
+        margin: 60px 0 24px;
+    }
     #question_text {
         font-size: 1.1rem;
     }

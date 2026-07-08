@@ -26,7 +26,7 @@ defineProps<Props>();
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6px; /* Небольшой отступ между текстом и цифрой */
+    gap: 6px;
 }
 
 #score {
@@ -35,7 +35,6 @@ defineProps<Props>();
     display: inline-block;
 }
 
-/* АНИМАЦИЯ ДЛЯ ЦИФРЫ (Легкий «пульс» при изменении счета) */
 .pop-enter-active,
 .pop-leave-active {
     transition: all 0.15s ease-out;

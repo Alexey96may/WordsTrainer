@@ -1,7 +1,15 @@
 <template>
-    <a id="toTop" title="Наверх" href="#" @click.prevent="scrollToTop"
-        >&#10148;</a
-    >
+    <Transition name="fade">
+        <a
+            v-if="isVisible"
+            id="toTop"
+            title="Наверх"
+            href="#"
+            @click.prevent="scrollToTop"
+        >
+            &#10148;
+        </a>
+    </Transition>
 
     <header class="header">
         <div class="mob_nav">
@@ -93,7 +101,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import AppBreadcrumbs from "@/components/ui/AppBreadcrumbs.vue";
 import { RouterLink, useRoute } from "vue-router";
 import AppModalOverlay from "@/components/shared/AppModalOverlay.vue";
@@ -105,6 +113,29 @@ const isBurgerOpen = ref(false);
 const burgerAnimation = ref("");
 
 const trainersList = ref(TRAINERS_CONFIG);
+
+const isVisible = ref(false);
+let lastScrollY = window.scrollY;
+
+const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 300 && currentScrollY < lastScrollY) {
+        isVisible.value = true;
+    } else {
+        isVisible.value = false;
+    }
+
+    lastScrollY = currentScrollY;
+};
+
+onMounted(() => {
+    window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+    window.removeEventListener("scroll", handleScroll);
+});
 
 // Автоматически вычисляем имя текущего тренажера для хлебных крошек
 const currentTrainerName = computed(() => {
@@ -201,27 +232,52 @@ const scrollToTop = () => {
     animation: rotation_left 0.3s linear forwards;
 }
 
+/* ОБНОВЛЕННАЯ СТИЛИЗАЦИЯ СТРЕЛКИ НАВЕРХ */
 #toTop {
-    padding: 3px 6px;
+    width: 44px;
+    height: 44px;
     line-height: 40px;
     z-index: 999;
     cursor: pointer;
     transform: rotate(270deg);
     position: fixed;
-    bottom: 12px;
-    right: 26px;
+    bottom: 20px;
+    right: 20px;
     text-align: center;
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
+    font-size: 24px;
+
+    color: #198754;
+    background-color: #1d1d1d;
     border: 1px solid #198754;
-    opacity: 0.9;
-    background-color: #fffff0;
+    border-radius: 8px;
+
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 #toTop:hover {
     background-color: #198754;
-    color: white;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(25, 135, 84, 0.4);
+    transform: rotate(270deg) scale(1.05);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: rotate(270deg) translatex(-20px);
 }
 
 .header {
@@ -321,6 +377,13 @@ const scrollToTop = () => {
 }
 
 @media (max-width: 600px) {
+    #toTop {
+        width: 28px;
+        height: 28px;
+        bottom: 16px;
+        right: 16px;
+        font-size: 18px;
+    }
     .logo a {
         font-size: 14px;
         text-shadow: 1px 1px black;

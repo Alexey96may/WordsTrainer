@@ -432,23 +432,15 @@ const handleModalOpenRequest = (payload) => {
     margin-bottom: 24px;
 }
 
-/* Верхняя панель управления игрой */
 .training-config {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     gap: 24px;
-    margin-bottom: 40px;
     position: relative;
     height: 40px;
     z-index: 9999;
-}
-
-.training-config__select {
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 .train_content {
@@ -464,7 +456,6 @@ const handleModalOpenRequest = (payload) => {
     .training-config {
         gap: 18px;
         margin-bottom: 30px;
-        height: 30px;
     }
 
     .content_game {
@@ -472,10 +463,13 @@ const handleModalOpenRequest = (payload) => {
     }
 }
 @media (max-width: 340px) {
+    .training-config__select {
+        flex-basis: 100%;
+    }
     .training-config {
         gap: 12px;
-        flex-direction: column;
-        margin-bottom: 20x;
+        justify-content: center;
+        width: 100%;
     }
 
     .content_game {

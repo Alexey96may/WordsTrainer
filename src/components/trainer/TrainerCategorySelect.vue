@@ -272,7 +272,9 @@ onBeforeUnmount(() => {
 
 @media (max-width: 340px) {
     .custom-select-box {
-        max-width: 320px;
+        max-width: none;
+        width: 100%;
+        flex-shrink: 0;
     }
     .option {
         padding: 6px 12px;
