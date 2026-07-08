@@ -1,12 +1,19 @@
 <template>
     <div class="about-container">
-        <div class="title-container">
+        <div class="title-container fade-in-init">
             <span class="subtitle_page">История и перезапуск</span>
             <h1 class="title_page">О проекте αGreek</h1>
         </div>
 
         <div class="about-content">
-            <section class="info-section">
+            <section
+                :ref="
+                    (el) => {
+                        if (el) revealSections.push(el as HTMLElement);
+                    }
+                "
+                class="info-section scroll-reveal"
+            >
                 <h2>Как всё начиналось</h2>
                 <p>
                     Сайт <strong>αGreek</strong> впервые был опубликован в
@@ -27,12 +34,20 @@
                 </p>
             </section>
 
-            <section class="info-section">
+            <section
+                :ref="
+                    (el) => {
+                        if (el) revealSections.push(el as HTMLElement);
+                    }
+                "
+                class="info-section scroll-reveal"
+            >
                 <h2>Второе дыхание: Что это сейчас?</h2>
                 <p>
                     Мы не могли позволить накопленным интерактивным наработкам
                     бесследно исчезнуть. Самое ценное, практичное и любимое
-                    пользователями ядро сайта — **наши интерактивные тренажёры**
+                    пользователями ядро сайта —
+                    <strong>наши интерактивные тренажёры</strong>
                     — было аккуратно извлечено, переработано и перенесено на эту
                     выделенную, облегчённую платформу.
                 </p>
@@ -43,7 +58,14 @@
                 </blockquote>
             </section>
 
-            <section class="info-section">
+            <section
+                :ref="
+                    (el) => {
+                        if (el) revealSections.push(el as HTMLElement);
+                    }
+                "
+                class="info-section scroll-reveal"
+            >
                 <h2>Что сохранено и доступно:</h2>
                 <div class="features-list">
                     <div class="feature-item">
@@ -82,7 +104,14 @@
                 </div>
             </section>
 
-            <div class="action-zone">
+            <div
+                :ref="
+                    (el) => {
+                        if (el) revealSections.push(el as HTMLElement);
+                    }
+                "
+                class="action-zone scroll-reveal"
+            >
                 <p>
                     Язык — это не только свод строгих правил, но и живой
                     инструмент мысли.
@@ -96,18 +125,84 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, onUnmounted } from "vue";
 import { RouterLink } from "vue-router";
+
+// Теперь это простой массив элементов, а не ref-объект
+const revealSections: HTMLElement[] = [];
+let observer: IntersectionObserver | null = null;
+
+onMounted(() => {
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px 0px -80px 0px",
+        threshold: 0.15,
+    };
+
+    observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("reveal-visible");
+                observer?.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Так как это больше не ref, синтаксис .value убираем!
+    revealSections.forEach((section) => {
+        if (section) observer?.observe(section);
+    });
+});
+
+onUnmounted(() => {
+    if (observer) observer.disconnect();
+    revealSections.length = 0;
+});
 </script>
 
 <style scoped>
 .about-container {
     width: 100%;
-    max-width: 800px; /* Ограничиваем ширину для удобства чтения текста */
+    max-width: 800px;
     margin: 0 auto;
     padding-bottom: 40px;
 }
 
-/* Контейнер заголовка */
+/* --- СТИЛИ ДЛЯ АНИМАЦИИ ПО СКРОЛЛУ --- */
+
+/* Начальное состояние блоков до скролла (скрыты, смещены вниз на 30px) */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+        transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+/* Класс, который вешает JS при пересечении экрана */
+.scroll-reveal.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Анимация заголовка при первой загрузке страницы */
+.fade-in-init {
+    animation: fadeInUpInit 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes fadeInUpInit {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- ОСТАЛЬНЫЕ СТИЛИ СТРАНИЦЫ --- */
 .title-container {
     text-align: center;
     margin: 30px 0 40px 0;
@@ -140,7 +235,6 @@ import { RouterLink } from "vue-router";
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Стилизация текстового контента */
 .about-content {
     background-color: rgb(29, 29, 29);
     border: 1px solid #198754;
@@ -152,7 +246,6 @@ import { RouterLink } from "vue-router";
     margin-bottom: 32px;
 }
 
-/* Применяем наш h2 стиль */
 h2 {
     color: #ffffff;
     font-size: 1.4rem;
@@ -176,7 +269,6 @@ p strong {
     color: #fff;
 }
 
-/* Красивая цитата/важная мысль */
 blockquote {
     margin: 24px 0;
     padding: 16px 20px;
@@ -188,7 +280,6 @@ blockquote {
     line-height: 1.5;
 }
 
-/* Список особенностей сохраненного ядра */
 .features-list {
     display: flex;
     flex-direction: column;
@@ -228,7 +319,6 @@ blockquote {
     line-height: 1.4;
 }
 
-/* Зона призыва к действию внизу */
 .action-zone {
     text-align: center;
     margin-top: 40px;

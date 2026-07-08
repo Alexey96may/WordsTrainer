@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref, computed, watch } from "vue";
 import { TRAINERS_CONFIG } from "@/config/trainers";
 
@@ -6,10 +6,19 @@ import TrainerQuestion from "@/components/trainer/TrainerQuestion.vue";
 import TrainerAudioControls from "@/components/trainer/TrainerAudioControls.vue";
 import TrainerForm from "@/components/trainer/TrainerForm.vue";
 import TrainerScore from "@/components/trainer/TrainerScore.vue";
+import TrainerGameSkeleton from "@/components/ui/TrainerGameSkeleton.vue";
 import TrainerCategorySelect from "@/components/trainer/TrainerCategorySelect.vue";
 import TrainerTable from "@/components/trainer/TrainerTable.vue";
 import TrainerNotice from "@/components/trainer/TrainerNotice.vue";
 import WordModal from "@/components/trainer/WordModal.vue";
+
+interface TrainerItem {
+    id: number;
+    slug: string;
+    name: string;
+    description: string;
+    icon: string;
+}
 
 const props = defineProps({
     slug: {
@@ -26,16 +35,24 @@ const props = defineProps({
     },
 });
 
-// Генерируем карту имен динамически из конфига: { "train_gen_case": "Родительный падеж", ... }
-const trainerNames = TRAINERS_CONFIG.reduce((acc, trainer) => {
-    acc[trainer.id] = trainer.name;
-    return acc;
-}, {});
+// Генерируем карту имен динамически из конфига
+const trainerNames = TRAINERS_CONFIG.reduce<Record<string, string>>(
+    (acc, trainer) => {
+        acc[trainer.id] = trainer.name;
+        return acc;
+    },
+    {},
+);
 
-// Состояние данных тренажера
-const globalArray = ref([]);
-const paramGlobal = ref(props.paramGlobal);
-const titles = ref([]);
+interface LocalTitleItem {
+    title: string;
+    place: string;
+    [key: string]: any;
+}
+
+const globalArray = ref<any[]>([]);
+const paramGlobal = ref<string[]>(props.paramGlobal as string[]);
+const titles = ref<LocalTitleItem[]>([]);
 const pageTitle = ref("Загрузка...");
 
 // Состояние игрового процесса
@@ -59,19 +76,19 @@ const audio_hint = new Audio(
 );
 
 // Очереди и пулы вопросов
-const mainArrAlwaysFull = ref([]);
-const mainArr = ref([]);
-const mainArrsinSort = ref([]);
+const mainArrAlwaysFull = ref<any[]>([]);
+const mainArr = ref<any[]>([]);
+const mainArrsinSort = ref<any[]>([]);
 
 // Фильтрация (Категории)
-const sectionArr = ref([]);
-const checkedKind = ref(["все"]);
+const sectionArr = ref<string[]>([]);
+const checkedKind = ref<string[]>(["все"]);
 const flagGameOver = ref(false);
 
-// Refs
-const trainerTableComponent = ref(null);
+// Refs компонента таблицы и модалки
+const trainerTableComponent = ref<any>(null);
 const modalCurrentIndex = ref(0);
-const modalTableRows = ref([]);
+const modalTableRows = ref<any[]>([]);
 const isModalOpen = ref(false);
 
 const tableDOMElement = computed(() => {
@@ -79,17 +96,17 @@ const tableDOMElement = computed(() => {
 });
 
 // Динамическая загрузка данных по slug
-const loadTrainerData = async (slug) => {
+const loadTrainerData = async (slug: string) => {
     try {
         pageTitle.value = trainerNames[slug] || "Тренажёр";
 
-        // Динамический импорт js-файла
+        // Динамический импорт js-файла базы данных слов
         const module = await import(`../data/trainings/${slug}.js`);
 
         globalArray.value = module.globalArray;
         titles.value = module.tableTitlesArr;
 
-        // Сброс состояния
+        // Сброс состояния игры под новый роут
         userAnswer.value = "";
         hasError.value = false;
         fromHintButton.value = false;
@@ -115,11 +132,11 @@ watch(
     { immediate: true },
 );
 
-// Инициализация
+// Инициализация данных
 const initTrainer = () => {
     if (!globalArray.value.length) return;
 
-    const kinds = new Set(["Все"]);
+    const kinds = new Set<string>(["Все"]);
     globalArray.value.forEach((item) => {
         if (!item.base) item.base = item.word;
         if (item.kind && item.kind.trim() !== "") {
@@ -132,7 +149,7 @@ const initTrainer = () => {
     });
     sectionArr.value = Array.from(kinds);
 
-    const fullList = [];
+    const fullList: any[] = [];
     globalArray.value.forEach((item) => {
         if (
             item.qws &&
@@ -192,7 +209,7 @@ const activeKindsCount = computed(() => {
         : checkedKind.value.length;
 });
 
-const isKindAvailable = (kind) => {
+const isKindAvailable = (kind: string) => {
     if (kind.toLowerCase() === "все") return true;
     return mainArrsinSort.value.some(
         (item) => item.kind.toLowerCase() === kind.toLowerCase(),
@@ -204,7 +221,7 @@ const handleInputSubmit = () => {
 
     const answers = mainArr.value[0].word
         .split("/")
-        .map((a) => a.trim().toLowerCase());
+        .map((a: string) => a.trim().toLowerCase());
     const userAnsClean = userAnswer.value.trim().toLowerCase();
     const isCorrect =
         answers.includes(userAnsClean) ||
@@ -272,7 +289,7 @@ const refreshGame = () => {
     mainArr.value.push(first);
 };
 
-const selectCategory = (kind) => {
+const selectCategory = (kind: string) => {
     const kindClean = kind.toLowerCase();
 
     if (kindClean === "все") {
@@ -316,14 +333,14 @@ const toggleSound = () => {
     }
 };
 
-const playSound = (audioNode) => {
+const playSound = (audioNode: HTMLAudioElement) => {
     if (!isSoundOn.value) return;
-    const clone = audioNode.cloneNode();
+    const clone = audioNode.cloneNode() as HTMLAudioElement;
     clone.volume = sVolume.value;
     clone.play();
 };
 
-const handleModalOpenRequest = (payload) => {
+const handleModalOpenRequest = (payload: any) => {
     modalCurrentIndex.value = payload.flatIndex;
     modalTableRows.value = payload.filteredRows;
     isModalOpen.value = true;
@@ -331,15 +348,21 @@ const handleModalOpenRequest = (payload) => {
 </script>
 
 <template>
-    <div v-if="globalArray.length" class="mainTrainer">
+    <div class="mainTrainer">
         <div class="title">
             <hr class="hr_title_page" size="3" />
             <h1 class="title_page">{{ pageTitle }}</h1>
             <hr class="hr_title_page" size="3" />
         </div>
 
-        <section>
-            <div class="content_game content_training">
+        <div v-if="pageTitle === 'Тренажёр не найден'" class="text-center">
+            <h2 style="color: #e53131; margin-top: 40px">Тренажёр не найден</h2>
+        </div>
+
+        <section v-else>
+            <TrainerGameSkeleton v-if="!globalArray.length" />
+
+            <div v-else class="content_game content_training">
                 <div class="training-config">
                     <TrainerAudioControls
                         :is-sound-on="isSoundOn"
@@ -375,6 +398,7 @@ const handleModalOpenRequest = (payload) => {
             </div>
 
             <TrainerTable
+                v-if="globalArray.length"
                 ref="trainerTableComponent"
                 :titles="titles"
                 :global-array="globalArray"
@@ -386,6 +410,7 @@ const handleModalOpenRequest = (payload) => {
         </section>
 
         <TrainerNotice
+            v-if="globalArray.length"
             :notice-text="
                 showNotesFlag && mainArr[0]?.notice ? mainArr[0].notice : ''
             "
@@ -402,20 +427,10 @@ const handleModalOpenRequest = (payload) => {
         />
 
         <section
-            v-if="theoryContent"
+            v-if="globalArray.length && theoryContent"
             class="train_content"
             v-html="theoryContent"
         ></section>
-    </div>
-
-    <div v-else class="mainTrainer">
-        <h1 class="title_page">
-            {{
-                pageTitle === "Тренажёр не найден"
-                    ? "Тренажёр не найден"
-                    : "Загрузка данных тренажёра..."
-            }}
-        </h1>
     </div>
 </template>
 
