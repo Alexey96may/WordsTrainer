@@ -102,7 +102,7 @@ const emit = defineEmits<{
     (e: "update:currentIndex", val: number): void;
 }>();
 
-// Refs и состояние анимации
+// Refs
 const modalRef = ref<HTMLElement | null>(null);
 const touchX = ref(0);
 const shiftX = ref(0);
@@ -111,7 +111,7 @@ const transformX = ref(0);
 const opacityVal = ref(1);
 const transitionStyle = ref("none");
 
-// Данные
+// Data
 const activeRow = computed(() => {
     if (!props.tableRows.length || props.currentIndex < 0) return null;
     return props.tableRows[props.currentIndex];
@@ -138,7 +138,7 @@ const relatedForms = computed(() => {
 
 const countFill = computed(() => relatedForms.value.length);
 
-// Логика сетки
+// Grid logic
 const gridClass = computed(() => {
     if (countFill.value < 4) return "grid-column";
     if (countFill.value === 24) return "grid-2";
@@ -153,7 +153,7 @@ const modalStyle = computed(() => ({
     transition: transitionStyle.value,
 }));
 
-// Методы
+// Methods
 const capitalize = (s: string): string => {
     if (!s) return "";
     return s.charAt(0).toUpperCase() + s.slice(1);
@@ -219,7 +219,7 @@ const handleKeyDown = (e: KeyboardEvent) => {
     if (["Enter", "Backspace", "Escape"].includes(e.key)) closeModal();
 };
 
-// Touch логика
+// Touch
 const handleTouchStart = (e: TouchEvent) => {
     if (!e.touches || !e.touches[0]) return;
     touchX.value = e.touches[0].clientX;
@@ -261,7 +261,7 @@ const handleTouchEnd = () => {
     shiftX.value = 0;
 };
 
-// Блокировка прокрутки body
+// Disable body scrolling
 watch(
     () => props.isOpen,
     (active) => {
@@ -282,7 +282,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* Затемнение на весь экран */
+/* Full-screen overlay */
 .modal-overlay-wrapper {
     position: fixed;
     inset: 0;
@@ -294,7 +294,7 @@ onUnmounted(() => {
     padding: 20px;
 }
 
-/* Окно модалки */
+/* Modal window */
 .word-modal-window {
     position: relative;
     background-color: #1a1a1a;
@@ -302,16 +302,15 @@ onUnmounted(() => {
     border-radius: 12px;
     width: 100%;
     max-width: 900px;
-    max-height: 85vh; /* Фиксируем максимальную высоту */
+    max-height: 85vh;
     display: flex;
-    flex-direction: column; /* Элементы выстраиваются вертикально */
-    padding: 24px 12px 24px 24px; /* Меньше отступ справа, чтобы скролл плотно сидел у края */
+    flex-direction: column;
+    padding: 24px 12px 24px 24px;
     color: #fff;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    overflow: hidden; /* Само окно больше не скроллится целиком */
+    overflow: hidden;
 }
 
-/* Позиционирование новой кнопки */
 .modal-close-btn {
     position: absolute;
     top: 16px;
@@ -323,7 +322,7 @@ onUnmounted(() => {
     text-align: center;
     margin-bottom: 20px;
     padding-right: 12px;
-    flex-shrink: 0; /* Шапка сохраняет размеры и не сжимается */
+    flex-shrink: 0;
 }
 
 .modal-header-section h2 {
@@ -338,14 +337,14 @@ onUnmounted(() => {
     margin: 0;
 }
 
-/* КОНТЕЙНЕР ДЛЯ СКРОЛЛА КАРТОЧЕК */
+/* CARD SCROLL CONTAINER */
 .modal-body-scroll-container {
     overflow-y: auto;
-    flex-grow: 1; /* Занимает всю доступную высоту окна */
-    padding-right: 12px; /* Зазор, чтобы контент не перекрывался скроллбаром */
+    flex-grow: 1;
+    padding-right: 12px;
 }
 
-/* Кастомный зеленый скроллбар */
+/* Custom green scrollbar */
 .modal-body-scroll-container::-webkit-scrollbar {
     width: 8px;
 }
@@ -357,16 +356,18 @@ onUnmounted(() => {
     background: #198754;
     border-radius: 4px;
 }
-.modal-body-scroll-container::-webkit-scrollbar-thumb:hover {
-    background: #157347;
+@media (hover: hover) {
+    .modal-body-scroll-container::-webkit-scrollbar-thumb:hover {
+        background: #157347;
+    }
 }
 
-/* Сетка */
+/* Grid */
 .modal-grid-layout {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    padding-bottom: 8px; /* Защитный отступ снизу */
+    padding-bottom: 8px; /* Bottom safety margin */
 }
 
 .modal-grid-layout.grid-column {

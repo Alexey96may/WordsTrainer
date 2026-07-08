@@ -29,17 +29,15 @@ header {
         transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Начальное состояние при появлении и конечное при исчезновении */
+/* Initial state upon appearance and final state upon disappearance */
 .fade-view-enter-from {
     opacity: 0;
-    transform: translateY(
-        10px
-    ); /* Небольшой аккуратный сдвиг вверх при появлении */
+    transform: translateY(10px);
 }
 
 .fade-view-leave-to {
     opacity: 0;
-    transform: translateY(-10px); /* Старая страница уходит чуть выше */
+    transform: translateY(-10px);
 }
 
 .logo {

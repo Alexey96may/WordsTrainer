@@ -32,12 +32,11 @@ withDefaults(defineProps<Props>(), {
     ariaLabel: "Поле ввода",
 });
 
-// Двустороннее связывание данных
 const modelValue = defineModel<string>({ default: "" });
 
 const nativeInputRef = ref<HTMLInputElement | null>(null);
 
-// Экспортируем метод фокуса для родительских компонентов
+// Export the focus method for parent components
 const focus = () => {
     nativeInputRef.value?.focus();
 };

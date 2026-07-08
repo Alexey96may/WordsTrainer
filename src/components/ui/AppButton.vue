@@ -38,11 +38,20 @@ const onClick = (event: MouseEvent) => {
     color: rgb(235, 235, 235);
     border: 1px solid #198754;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition:
+        background-color 0.2s ease,
+        transform 0.1s ease;
 }
 
-.my_btn:hover {
-    background-color: #198754;
+@media (hover: hover) {
+    .my_btn:hover {
+        background-color: #198754;
+    }
+}
+
+.my_btn:active {
+    background-color: #157347;
+    transform: scale(0.98);
 }
 
 .my_btn:focus-visible {

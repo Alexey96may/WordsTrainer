@@ -80,12 +80,10 @@ const mainArrAlwaysFull = ref<any[]>([]);
 const mainArr = ref<any[]>([]);
 const mainArrsinSort = ref<any[]>([]);
 
-// Фильтрация (Категории)
 const sectionArr = ref<string[]>([]);
 const checkedKind = ref<string[]>(["все"]);
 const flagGameOver = ref(false);
 
-// Refs компонента таблицы и модалки
 const trainerTableComponent = ref<any>(null);
 const modalCurrentIndex = ref(0);
 const modalTableRows = ref<any[]>([]);
@@ -95,18 +93,16 @@ const tableDOMElement = computed(() => {
     return trainerTableComponent.value?.tableContentRef || null;
 });
 
-// Динамическая загрузка данных по slug
+// Dynamic data loading by slug
 const loadTrainerData = async (slug: string) => {
     try {
         pageTitle.value = trainerNames[slug] || "Тренажёр";
 
-        // Динамический импорт js-файла базы данных слов
         const module = await import(`../data/trainings/${slug}.js`);
 
         globalArray.value = module.globalArray;
         titles.value = module.tableTitlesArr;
 
-        // Сброс состояния игры под новый роут
         userAnswer.value = "";
         hasError.value = false;
         fromHintButton.value = false;
@@ -132,7 +128,6 @@ watch(
     { immediate: true },
 );
 
-// Инициализация данных
 const initTrainer = () => {
     if (!globalArray.value.length) return;
 

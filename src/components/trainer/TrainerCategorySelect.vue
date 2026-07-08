@@ -150,12 +150,16 @@ onBeforeUnmount(() => {
     transition: background-color 0.2s;
     flex-shrink: 0;
 }
-
-.option:hover {
+@media (hover: hover) {
+    .option:hover {
+        background-color: #2d2d2d;
+    }
+}
+.option:active {
     background-color: #2d2d2d;
 }
 
-/* Верхняя плашка теперь относительный контекст для стрелки */
+/* The top bar now serves as the relative context for the arrow */
 .first-opt {
     border-bottom: 1px solid #198754;
     font-weight: bold;
@@ -166,11 +170,11 @@ onBeforeUnmount(() => {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 40px; /* Фиксируем высоту для идеального выравнивания */
+    height: 40px;
     box-sizing: border-box;
 }
 
-/* Стили стрелки-галочки */
+/* Checkmark arrow styles */
 .arrow-indicator {
     width: 40px;
     border-bottom: 1px solid #198754;
@@ -196,8 +200,12 @@ onBeforeUnmount(() => {
     transition: all 0.2s ease;
     translate: 50% -50%;
 }
-
-.arrow-indicator:hover svg {
+@media (hover: hover) {
+    .arrow-indicator:hover svg {
+        color: #fff;
+    }
+}
+.arrow-indicator:active svg {
     color: #fff;
 }
 
@@ -227,8 +235,10 @@ onBeforeUnmount(() => {
     background: #198754;
     border-radius: 3px;
 }
-.secOptionContainer::-webkit-scrollbar-thumb:hover {
-    background: #157347;
+@media (hover: hover) {
+    .secOptionContainer::-webkit-scrollbar-thumb:hover {
+        background: #157347;
+    }
 }
 
 .optSelected {
@@ -258,7 +268,6 @@ onBeforeUnmount(() => {
         height: 30px;
     }
 
-    /* Стили стрелки-галочки */
     .arrow-indicator {
         width: 30px;
         height: 30px;

@@ -128,7 +128,6 @@
 import { onMounted, onUnmounted } from "vue";
 import { RouterLink } from "vue-router";
 
-// Теперь это простой массив элементов, а не ref-объект
 const revealSections: HTMLElement[] = [];
 let observer: IntersectionObserver | null = null;
 
@@ -148,7 +147,6 @@ onMounted(() => {
         });
     }, observerOptions);
 
-    // Так как это больше не ref, синтаксис .value убираем!
     revealSections.forEach((section) => {
         if (section) observer?.observe(section);
     });
@@ -168,9 +166,6 @@ onUnmounted(() => {
     padding-bottom: 40px;
 }
 
-/* --- СТИЛИ ДЛЯ АНИМАЦИИ ПО СКРОЛЛУ --- */
-
-/* Начальное состояние блоков до скролла (скрыты, смещены вниз на 30px) */
 .scroll-reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -180,13 +175,11 @@ onUnmounted(() => {
     will-change: opacity, transform;
 }
 
-/* Класс, который вешает JS при пересечении экрана */
 .scroll-reveal.reveal-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Анимация заголовка при первой загрузке страницы */
 .fade-in-init {
     animation: fadeInUpInit 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
@@ -202,7 +195,6 @@ onUnmounted(() => {
     }
 }
 
-/* --- ОСТАЛЬНЫЕ СТИЛИ СТРАНИЦЫ --- */
 .title-container {
     text-align: center;
     margin: 30px 0 40px 0;
@@ -350,6 +342,17 @@ blockquote {
 .back-to-trainers-btn:hover {
     background-color: #157347;
     transform: translateY(-2px);
+}
+.back-to-trainers-btn:active {
+    background-color: #157347;
+    transform: scale(0.98);
+}
+
+@media (hover: hover) {
+    .back-to-trainers-btn:hover {
+        background-color: #157347;
+        transform: translateY(-2px);
+    }
 }
 
 @media (max-width: 600px) {

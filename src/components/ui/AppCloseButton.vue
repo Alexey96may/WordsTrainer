@@ -39,7 +39,7 @@ defineEmits<{
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    color: #a60909; /* Базовый нейтральный цвет крестика */
+    color: #a60909;
     transition:
         color 0.2s ease,
         background-color 0.2s ease,
@@ -49,25 +49,25 @@ defineEmits<{
     height: 32px;
 }
 
-/* Иконка адаптируется под размеры кнопки */
 .close-x-svg {
     width: 100%;
     height: 100%;
     display: block;
 }
 
-/* Эффект при наведении — крестик становится ярче или принимает твой фирменный цвет */
-.modal-close-x:hover {
-    color: #dc1515;
-    background-color: rgba(255, 0, 0, 0.09); /* Легкая подложка на ховер */
+@media (hover: hover) {
+    .modal-close-x:hover {
+        color: #dc1515;
+        background-color: rgba(255, 0, 0, 0.09);
+    }
 }
 
-/* Клик */
 .modal-close-x:active {
+    color: #dc1515;
+    background-color: rgba(255, 0, 0, 0.15);
     transform: scale(0.92);
 }
 
-/* Стили фокуса для доступности с клавиатуры */
 .modal-close-x:focus-visible {
     outline: 2px solid #198754;
 }

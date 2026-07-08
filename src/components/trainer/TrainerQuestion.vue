@@ -55,7 +55,7 @@ defineProps<Props>();
     margin: 0;
 }
 
-/* === АНИМАЦИЯ ОШИБКИ (Раздвигание) === */
+/* === ERROR ANIMATION (Expanding) === */
 .error-slider-wrapper {
     overflow: hidden;
     width: 100%;
@@ -84,10 +84,9 @@ defineProps<Props>();
     opacity: 0;
 }
 
-/* === АНИМАЦИЯ СМЕНЫ ВОПРОСА (Fade out-in) === */
+/* === QUESTION TRANSITION ANIMATION (Fade out-in) === */
 .fade-question-enter-active,
 .fade-question-leave-active {
-    /* Плавное исчезновение и появление за 0.2 секунды */
     transition:
         opacity 0.2s ease,
         transform 0.2s ease;
@@ -95,15 +94,15 @@ defineProps<Props>();
 
 .fade-question-enter-from {
     opacity: 0;
-    transform: translateY(10px); /* Новый вопрос мягко приподнимается снизу */
+    transform: translateY(10px);
 }
 
 .fade-question-leave-to {
     opacity: 0;
-    transform: translateY(-10px); /* Старый вопрос плавно уходит наверх */
+    transform: translateY(-10px);
 }
 
-/* Стили перевода */
+/* Translation styles */
 :deep(.spanTransl) {
     font-size: 1.1rem;
     color: #8b8b8b;

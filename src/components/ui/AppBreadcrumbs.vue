@@ -47,7 +47,6 @@ interface BreadcrumbItem {
 const route = useRoute();
 const trainersList = ref(TRAINERS_CONFIG);
 
-// 1. Сначала определяем имя текущего тренажёра, если мы внутри него
 const currentTrainerName = computed(() => {
     if (route.name === "trainer" && route.params.slug) {
         const activeTrainer = trainersList.value.find(
@@ -58,36 +57,34 @@ const currentTrainerName = computed(() => {
     return "";
 });
 
-// 2. Автоматически строим всю цепочку в зависимости от роута
 const breadcrumbs = computed<BreadcrumbItem[]>(() => {
-    // 1. ЕСЛИ МЫ НА ГЛАВНОЙ: вернет только один неактивный пункт [Главная]
+    // 1. IF WE ARE ON THE HOME PAGE: returns only one inactive item [Home]
     if (route.name === "home") {
         return [{ label: "Главная" }];
     }
 
-    // Базовое первое звено для всех остальных страниц сайта
+    // Base initial link for all other pages of the site
     const crumbs: BreadcrumbItem[] = [{ label: "Главная", url: "/" }];
 
-    // 2. ЕСЛИ МЫ В ТРЕНАЖЁРЕ: Главная » Тренажеры » Винительный падеж
+    // 2. IF WE ARE IN THE EXERCISE MODULE: Home » Exercises » Accusative case
     if (route.name === "trainer") {
-        crumbs.push({ label: "Тренажеры", url: "/" }); // Ссылка на главную, где список
+        crumbs.push({ label: "Тренажеры", url: "/" });
         crumbs.push({ label: currentTrainerName.value });
         return crumbs;
     }
 
-    // 3. ЕСЛИ МЫ НА СТРАНИЦЕ "О ПРОЕКТЕ": Главная » О проекте
+    // 3. IF WE ARE ON THE "ABOUT THE PROJECT" PAGE: Home » About the Project
     if (route.name === "about") {
         crumbs.push({ label: "О проекте" });
         return crumbs;
     }
-
-    // 4. ЕСЛИ МЫ НА СТРАНИЦЕ "ГРАММАТИКА": Главная » Грамматика
+    // 4. IF WE ARE ON THE "GRAMMAR" PAGE: Home » Grammar
     if (route.name === "grammar") {
         crumbs.push({ label: "Грамматика" });
         return crumbs;
     }
 
-    // Фолбек на случай, если у роута задан мета-тайтл в router/index.ts
+    // Fallback in case a meta title is defined for the route in router/index.ts
     if (route.meta?.title) {
         crumbs.push({ label: route.meta.title as string });
         return crumbs;
@@ -134,8 +131,15 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => {
     }
 }
 
-.breadcrumb-item a:hover {
+@media (hover: hover) {
+    .breadcrumb-item a:hover {
+        color: #ffffff;
+    }
+}
+
+.breadcrumb-item a:active {
     color: #ffffff;
+    opacity: 0.8;
 }
 
 .separator {
@@ -144,9 +148,8 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => {
     font-style: normal;
 }
 
-/* Стили для последнего активного элемента */
 .breadcrumb-item.active {
-    color: #198754; /* Твой фирменный зеленый */
+    color: #198754;
     font-weight: bold;
 }
 </style>

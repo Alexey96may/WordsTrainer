@@ -49,10 +49,10 @@
     width: 100%;
     height: 38px;
     border-radius: 6px;
-    margin-top: auto; /* Прижимаем вниз */
+    margin-top: auto;
 }
 
-/* Эффект мерцания блика */
+/* Glint shimmer effect */
 .skeleton-anim {
     background: linear-gradient(90deg, #252525 25%, #333333 50%, #252525 75%);
     background-size: 200% 100%;
@@ -68,7 +68,6 @@
     }
 }
 
-/* Адаптив под маленькие экраны */
 @media (max-width: 340px) {
     .skeleton-card {
         padding: 12px;

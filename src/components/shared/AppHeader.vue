@@ -137,7 +137,7 @@ onUnmounted(() => {
     window.removeEventListener("scroll", handleScroll);
 });
 
-// Автоматически вычисляем имя текущего тренажера для хлебных крошек
+// Automatically calculate the name of the current simulator for breadcrumbs
 const currentTrainerName = computed(() => {
     if (route.name === "trainer" && route.params.slug) {
         const activeTrainer = trainersList.value.find(
@@ -167,25 +167,22 @@ const scrollToTop = () => {
 </script>
 
 <style scoped>
-/* Все твои стили остаются нетронутыми, добавляем только правила ниже */
-
 .navbar_menu {
     display: block;
     width: 100%;
     text-align: center;
     border-radius: 5px;
     border: 1px solid #198754 !important;
-    background-color: #1d1d1d; /* Задаем фон в тон модалки */
+    background-color: #1d1d1d;
 }
 
-/* СТИЛИЗАЦИЯ АКТИВНОЙ ССЫЛКИ ТРЕНАЖЁРА */
+/* STYLING THE ACTIVE LINK IN THE SIMULATOR */
 .menu-item a.is-active {
-    color: #198754; /* Фирменный зеленый цвет текста */
+    color: #198754;
     font-weight: bold;
-    background-color: rgba(25, 135, 84, 0.08); /* Легкий фоновый акцент */
+    background-color: rgba(25, 135, 84, 0.08);
 }
 
-/* Ограничиваем область ховера, чтобы углы фона у активных пунктов не вылезали за рамку */
 .menu-item:first-child a {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -195,7 +192,6 @@ const scrollToTop = () => {
     border-bottom-right-radius: 4px;
 }
 
-/* Остальные твои стили без изменений */
 @keyframes rotation {
     from {
         transform: rotate(0);
@@ -232,7 +228,6 @@ const scrollToTop = () => {
     animation: rotation_left 0.3s linear forwards;
 }
 
-/* ОБНОВЛЕННАЯ СТИЛИЗАЦИЯ СТРЕЛКИ НАВЕРХ */
 #toTop {
     width: 44px;
     height: 44px;
@@ -253,18 +248,29 @@ const scrollToTop = () => {
 
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition: all 0.25s ease-in-out;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#toTop:hover {
+@media (hover: hover) {
+    #toTop:hover {
+        background-color: #198754;
+        color: #ffffff;
+        box-shadow: 0 2px 8px rgba(25, 135, 84, 0.4);
+        transform: rotate(270deg) scale(1.05);
+    }
+}
+
+#toTop:active {
     background-color: #198754;
     color: #ffffff;
-    box-shadow: 0 2px 8px rgba(25, 135, 84, 0.4);
-    transform: rotate(270deg) scale(1.05);
 }
 
 .fade-enter-active,
@@ -337,9 +343,15 @@ const scrollToTop = () => {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
-.menu-item a:hover {
+@media (hover: hover) {
+    .menu-item a:hover {
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.03);
+    }
+}
+.menu-item a:active {
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: rgba(255, 255, 255, 0.06);
 }
 .menu-item--ext a {
     color: #4e87f9e1;
@@ -370,10 +382,18 @@ const scrollToTop = () => {
 }
 .nav_breadcrumb a {
     color: #d6d6d6;
+    transition: color 0.2s ease;
     text-decoration: none;
 }
-.nav_breadcrumb a:hover {
+@media (hover: hover) {
+    .nav_breadcrumb a:hover {
+        color: #ffffff;
+    }
+}
+
+.nav_breadcrumb a:active {
     color: #ffffff;
+    opacity: 0.8;
 }
 
 @media (max-width: 600px) {

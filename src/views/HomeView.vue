@@ -73,11 +73,11 @@ onMounted(() => {
         box-shadow 0.2s;
     display: flex;
     flex-direction: column;
+    transition:
+        transform 0.2s cubic-bezier(0.25, 1, 0.5, 1),
+        box-shadow 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 }
-.trainer-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(25, 135, 84, 0.2);
-}
+
 .card-icon {
     font-size: 2rem;
     margin-bottom: 12px;
@@ -104,8 +104,21 @@ onMounted(() => {
     font-size: 0.9rem;
     transition: background-color 0.2s;
 }
-.trainer-card:hover .start-btn {
-    background-color: #157347;
+
+.trainer-card:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (hover: hover) {
+    .trainer-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(25, 135, 84, 0.2);
+    }
+
+    .trainer-card:hover .start-btn {
+        background-color: #157347;
+    }
 }
 
 @media (max-width: 600px) {

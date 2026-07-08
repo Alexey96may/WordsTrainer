@@ -174,51 +174,33 @@ const handleRefresh = () => {
     display: block;
 }
 
-@media (max-width: 600px) {
-    .sound-controls-container {
-        gap: 12px;
-    }
-
-    .control-btn svg,
-    .control-btn__svg {
-        width: 22px;
-        height: 22px;
-    }
+.control-btn .control-btn__svg--load path,
+.control-btn .control-btn__svg--reload path {
+    transition: stroke 0.2s ease;
 }
 
-@media (max-width: 340px) {
-    .sound-controls-container {
-        gap: 6px;
+@media (hover: hover) {
+    .control-btn:hover .control-btn__svg--load path {
+        stroke: #198754;
     }
-    .control-btn svg,
-    .control-btn__svg {
-        width: 18px;
-        height: 18px;
+
+    .control-btn:hover .control-btn__svg--reload path {
+        stroke: #871e19;
     }
 }
 
-.control-btn__svg--load path {
-    transition: all 0.2s ease;
-}
-.control-btn__svg--reload path {
-    transition: all 0.2s ease;
-}
-
-/* Изменяем цвет стрелок при наведении на кнопку для лучшего UX */
-.control-btn:hover .control-btn__svg--load path {
+.control-btn:active .control-btn__svg--load path {
     stroke: #198754;
 }
 
-.control-btn:hover .control-btn__svg--reload path {
+.control-btn:active .control-btn__svg--reload path {
     stroke: #871e19;
 }
 
-/* Анимация вращения НАЗАД (против часовой) */
 .control-btn__svg.is-spinning-back {
     animation: spinCounterClockwise 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Анимация вращения ВПЕРЕД (по часовой) */
 .control-btn__svg.is-spinning-forward {
     animation: spinClockwise 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -241,17 +223,46 @@ const handleRefresh = () => {
     }
 }
 
-/* Стили для кнопки звука */
+/* Sound Button */
 #soundCheck svg .cls-1 {
     fill: #e0e0e0;
     transition: fill 0.2s ease;
 }
 
-#soundCheck:hover svg .cls-1 {
+@media (hover: hover) {
+    #soundCheck:hover svg .cls-1 {
+        fill: #198754;
+    }
+}
+
+#soundCheck:active svg .cls-1 {
     fill: #198754;
 }
 
 #soundCheck.sound-off svg path {
     fill: #6c757d !important;
+}
+
+@media (max-width: 600px) {
+    .sound-controls-container {
+        gap: 12px;
+    }
+
+    .control-btn svg,
+    .control-btn__svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 340px) {
+    .sound-controls-container {
+        gap: 6px;
+    }
+    .control-btn svg,
+    .control-btn__svg {
+        width: 18px;
+        height: 18px;
+    }
 }
 </style>
