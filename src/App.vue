@@ -8,9 +8,9 @@ import Footer from "@/components/shared/AppFooter.vue";
 
     <main>
         <router-view v-slot="{ Component }">
-            <transition name="fade" mode="out-in">
+            <Transition name="fade-view" mode="out-in">
                 <component :is="Component" />
-            </transition>
+            </Transition>
         </router-view>
     </main>
 
@@ -20,6 +20,26 @@ import Footer from "@/components/shared/AppFooter.vue";
 <style scoped>
 header {
     line-height: 1.5;
+}
+
+.fade-view-enter-active,
+.fade-view-leave-active {
+    transition:
+        opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Начальное состояние при появлении и конечное при исчезновении */
+.fade-view-enter-from {
+    opacity: 0;
+    transform: translateY(
+        10px
+    ); /* Небольшой аккуратный сдвиг вверх при появлении */
+}
+
+.fade-view-leave-to {
+    opacity: 0;
+    transform: translateY(-10px); /* Старая страница уходит чуть выше */
 }
 
 .logo {
