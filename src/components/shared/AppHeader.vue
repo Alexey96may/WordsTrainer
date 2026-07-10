@@ -35,7 +35,7 @@
         <AppModalOverlay
             id="mobile-menu"
             :is-open="isBurgerOpen"
-            title="Меню тренажеров"
+            :title="$t('header.menuTitle')"
             @close="closeBurger"
         >
             <nav class="navbar_menu">
@@ -52,7 +52,7 @@
                             }"
                             @click="closeBurger"
                         >
-                            {{ trainer.name }}
+                            {{ $t(`trainers.${trainer.id}.name`) }}
                         </RouterLink>
                     </li>
                 </ul>
@@ -65,7 +65,7 @@
                             href="https://t.me/aGreekRu"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >Группа в Telegram</a
+                            >{{ $t("header.links.telegram") }}</a
                         >
                     </li>
                     <li class="menu-item menu-item--ext">
@@ -73,7 +73,7 @@
                             href="https://t.me/aGreek_translBot_intoRus"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >Викторина в Telegram</a
+                            >{{ $t("header.links.quiz") }}</a
                         >
                     </li>
                 </ul>
@@ -87,7 +87,7 @@
                             active-class="is-active"
                             @click="closeBurger"
                         >
-                            О проекте
+                            {{ $t("header.links.about") }}
                         </RouterLink>
                     </li>
                 </ul>
@@ -102,11 +102,14 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
+import { useI18n } from "vue-i18n";
 import AppBreadcrumbs from "@/components/ui/AppBreadcrumbs.vue";
 import { RouterLink, useRoute } from "vue-router";
 import AppModalOverlay from "@/components/shared/AppModalOverlay.vue";
 import AppBurgerButton from "@/components/ui/AppBurgerButton.vue";
 import { TRAINERS_CONFIG } from "@/config/trainers";
+
+const { t } = useI18n();
 
 const route = useRoute();
 const isBurgerOpen = ref(false);
@@ -143,9 +146,11 @@ const currentTrainerName = computed(() => {
         const activeTrainer = trainersList.value.find(
             (t) => t.id === route.params.slug,
         );
-        return activeTrainer ? activeTrainer.name : "Тренажёр";
+        return activeTrainer
+            ? t(`trainers.${activeTrainer.id}.name`)
+            : t("header.breadcrumbs.trainer");
     }
-    if (route.name === "home") return "Главная";
+    if (route.name === "home") return t("header.breadcrumbs.home");
     return "";
 });
 

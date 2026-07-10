@@ -13,18 +13,15 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const telegramLink = ref("https://t.me/aGreekRu");
-const copyrightText = ref(
-    `© 2022-${new Date().getFullYear()} αGreek. Все права защищены.`,
-);
 
-onMounted(() => {
-    const isCookieAccepted = localStorage.getItem("cookie_accepted");
-    if (!isCookieAccepted) {
-        showCookieBlock.value = true;
-    }
+const copyrightText = computed(() => {
+    const year = new Date().getFullYear();
+    return `© 2022-${year} αGreek. ${t("footer.rights")}`;
 });
 </script>
 

@@ -2,12 +2,12 @@
     <div class="home-container">
         <div class="title">
             <hr class="hr_title_page" size="3" />
-            <h1 class="title_page">Изучение Греческого Языка</h1>
+            <h1 class="title_page">{{ $t("home.title") }}</h1>
             <hr class="hr_title_page" size="3" />
         </div>
 
         <section class="trainers">
-            <h2 class="subtitle">Наши интерактивные тренажёры!</h2>
+            <h2 class="subtitle">{{ $t("home.subtitle") }}</h2>
 
             <div class="trainers-grid">
                 <template v-if="isLoading">
@@ -22,9 +22,9 @@
                         class="trainer-card"
                     >
                         <div class="card-icon">{{ trainer.icon }}</div>
-                        <h3>{{ trainer.name }}</h3>
-                        <p>{{ trainer.description }}</p>
-                        <span class="start-btn">Начать тренировку</span>
+                        <h3>{{ $t(`trainers.${trainer.id}.name`) }}</h3>
+                        <p>{{ $t(`trainers.${trainer.id}.desc`) }}</p>
+                        <span class="start-btn">{{ $t("home.startBtn") }}</span>
                     </RouterLink>
                 </template>
             </div>

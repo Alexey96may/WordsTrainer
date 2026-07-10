@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watch } from "vue";
+import { useI18n } from "vue-i18n";
 import { TRAINERS_CONFIG } from "@/config/trainers";
 
 import TrainerQuestion from "@/components/trainer/TrainerQuestion.vue";
@@ -32,6 +33,8 @@ const props = defineProps({
         default: "",
     },
 });
+
+const { t } = useI18n();
 
 // 1. Sound Module
 const {
@@ -77,19 +80,17 @@ const {
     flagGameOver,
 );
 
-// Local page state for loading configurations and tables
-const trainerNames = TRAINERS_CONFIG.reduce<Record<string, string>>(
-    (acc, trainer) => {
-        acc[trainer.id] = trainer.name;
-        return acc;
-    },
-    {},
-);
-
 const globalArray = ref<RawTrainerItem[]>([]);
 const paramGlobal = ref<string[]>(props.paramGlobal as string[]);
 const titles = ref<LocalTitleItem[]>([]);
-const pageTitle = ref("Загрузка...");
+const pageTitle = computed(() => {
+    if (!props.slug) return t("trainer.loading");
+
+    const key = `trainers.${props.slug}.name`;
+    const translated = t(key);
+
+    return translated !== key ? translated : t("trainer.defaultTitle");
+});
 
 const trainerTableComponent = ref<InstanceType<typeof TrainerTable> | null>(
     null,
@@ -105,8 +106,6 @@ const tableDOMElement = computed(() => {
 // Dynamic data loading by slug
 const loadTrainerData = async (slug: string) => {
     try {
-        pageTitle.value = trainerNames[slug] || "Тренажёр";
-
         const module = await import(`../data/trainings/${slug}.js`);
 
         globalArray.value = module.globalArray as RawTrainerItem[];
@@ -121,8 +120,7 @@ const loadTrainerData = async (slug: string) => {
 
         initTrainer(globalArray.value, sectionArr);
     } catch (err) {
-        console.error("Ошибка загрузки файла тренажера для slug:", slug, err);
-        pageTitle.value = "Тренажёр не найден";
+        console.error("Ошибка загрузки...", err);
         globalArray.value = [];
     }
 };
@@ -205,8 +203,10 @@ const handleModalOpenRequest = (payload: {
             <hr class="hr_title_page" size="3" />
         </div>
 
-        <div v-if="pageTitle === 'Тренажёр не найден'" class="text-center">
-            <h2 style="color: #e53131; margin-top: 40px">Тренажёр не найден</h2>
+        <div v-if="pageTitle === t('trainer.notFound')" class="text-center">
+            <h2 style="color: #e53131; margin-top: 40px">
+                $t('trainer.notFound')
+            </h2>
         </div>
 
         <section v-else>

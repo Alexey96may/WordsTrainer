@@ -1,123 +1,50 @@
 <template>
     <div class="about-container">
         <div class="title-container fade-in-init">
-            <span class="subtitle_page">История и перезапуск</span>
-            <h1 class="title_page">О проекте αGreek</h1>
+            <span class="subtitle_page">{{ $t("about.header.subtitle") }}</span>
+            <h1 class="title_page">{{ $t("about.header.title") }}</h1>
         </div>
 
         <div class="about-content">
-            <section
-                :ref="
-                    (el) => {
-                        if (el) revealSections.push(el as HTMLElement);
-                    }
-                "
-                class="info-section scroll-reveal"
-            >
-                <h2>Как всё начиналось</h2>
-                <p>
-                    Сайт <strong>αGreek</strong> впервые был опубликован в
-                    <strong>2022 году</strong> как полноценная образовательная
-                    платформа для всех, кто глубоко погружён в изучение
-                    новогреческого языка. На протяжении нескольких лет проект
-                    помогал структурировать знания, разбираться в
-                    хитросплетениях грамматики и оттачивать навыки.
-                </p>
-                <p>
-                    Однако время диктует свои условия: из-за резко возросшей
-                    стоимости качественного хостинга, а также технических
-                    сложностей и ограничений, связанных с региональными
-                    правилами регистрации и обслуживания доменов, в
-                    <strong>2026 году</strong> оригинальный сайт αGreek в своём
-                    прежнем масштабном формате официально прекратил
-                    существование.
-                </p>
+            <section class="info-section scroll-reveal" :ref="setReveal">
+                <h2>{{ $t("about.sections.history.title") }}</h2>
+                <p v-html="$t('about.sections.history.p1')"></p>
+                <p v-html="$t('about.sections.history.p2')"></p>
             </section>
 
-            <section
-                :ref="
-                    (el) => {
-                        if (el) revealSections.push(el as HTMLElement);
-                    }
-                "
-                class="info-section scroll-reveal"
-            >
-                <h2>Второе дыхание: Что это сейчас?</h2>
-                <p>
-                    Мы не могли позволить накопленным интерактивным наработкам
-                    бесследно исчезнуть. Самое ценное, практичное и любимое
-                    пользователями ядро сайта —
-                    <strong>наши интерактивные тренажёры</strong>
-                    — было аккуратно извлечено, переработано и перенесено на эту
-                    выделенную, облегчённую платформу.
-                </p>
+            <section class="info-section scroll-reveal" :ref="setReveal">
+                <h2>{{ $t("about.sections.rebirth.title") }}</h2>
+                <p v-html="$t('about.sections.rebirth.p1')"></p>
                 <blockquote>
-                    Этот локальный автономный перезапуск — дань уважения языку и
-                    тем, кто упорно продолжает его осваивать, несмотря на любые
-                    внешние изменения.
+                    {{ $t("about.sections.rebirth.quote") }}
                 </blockquote>
             </section>
 
-            <section
-                :ref="
-                    (el) => {
-                        if (el) revealSections.push(el as HTMLElement);
-                    }
-                "
-                class="info-section scroll-reveal"
-            >
-                <h2>Что сохранено и доступно:</h2>
+            <section class="info-section scroll-reveal" :ref="setReveal">
+                <h2>{{ $t("about.sections.features.title") }}</h2>
                 <div class="features-list">
-                    <div class="feature-item">
-                        <span class="feature-icon">🛡️</span>
+                    <div
+                        v-for="(item, i) in $tm(
+                            'about.sections.features.items',
+                        )"
+                        :key="i"
+                        class="feature-item"
+                    >
+                        <span class="feature-icon">{{
+                            featureIcons[i as number]
+                        }}</span>
                         <div>
-                            <h3>Автономность и скорость</h3>
-                            <p>
-                                Никакой лишней «воды», тяжеловесных скриптов или
-                                долгой загрузки. Только чистый код, реактивность
-                                и фокус на практике.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">📝</span>
-                        <div>
-                            <h3>Все базовые тренажёры</h3>
-                            <p>
-                                От отработки окончаний родительного падежа
-                                (Γενική) до комплексной проверки всех глагольных
-                                времён и редких форм аориста.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">🎯</span>
-                        <div>
-                            <h3>Интуитивная логика</h3>
-                            <p>
-                                Удобное переключение категорий внутри
-                                тренировок, мгновенная проверка ответов и
-                                звуковое сопровождение.
-                            </p>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.desc }}</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div
-                :ref="
-                    (el) => {
-                        if (el) revealSections.push(el as HTMLElement);
-                    }
-                "
-                class="action-zone scroll-reveal"
-            >
-                <p>
-                    Язык — это не только свод строгих правил, но и живой
-                    инструмент мысли.
-                </p>
+            <div class="action-zone scroll-reveal" :ref="setReveal">
+                <p>{{ $t("about.action.text") }}</p>
                 <RouterLink to="/" class="back-to-trainers-btn">
-                    Перейти к тренажёрам
+                    {{ $t("about.action.btn") }}
                 </RouterLink>
             </div>
         </div>
@@ -125,11 +52,22 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted, type ComponentPublicInstance } from "vue";
 import { RouterLink } from "vue-router";
 
 const revealSections: HTMLElement[] = [];
 let observer: IntersectionObserver | null = null;
+
+const featureIcons = ["🛡️", "📝", "🎯"];
+
+const setReveal = (el: Element | ComponentPublicInstance | null) => {
+    const htmlEl =
+        el instanceof HTMLElement ? el : (el as ComponentPublicInstance)?.$el;
+
+    if (htmlEl instanceof HTMLElement) {
+        revealSections.push(htmlEl);
+    }
+};
 
 onMounted(() => {
     const observerOptions = {

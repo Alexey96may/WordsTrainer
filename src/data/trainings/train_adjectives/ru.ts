@@ -1,5 +1,3 @@
-﻿//Массив с титулами таблицы и массив объектов с данными.
-
 export const tableTitlesArr = [
     { title: "Прилагательное", place: "base" },
     { title: "Перевод", place: "translation" },
