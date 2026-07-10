@@ -48,7 +48,7 @@ describe("useTrainerCategories composable", () => {
                 flagGameOver,
             );
 
-        expect(checkedKind.value).toEqual(["все"]);
+        expect(checkedKind.value).toEqual(["all"]);
         expect(sectionArr.value).toEqual([]);
         expect(activeKindsCount.value).toBe(-1);
     });
@@ -74,7 +74,7 @@ describe("useTrainerCategories composable", () => {
                 flagGameOver,
             );
 
-        sectionArr.value = ["Все", "Verbs", "Nouns"];
+        sectionArr.value = ["all", "Verbs", "Nouns"];
 
         expect(activeKindsCount.value).toBe(2);
 
@@ -108,7 +108,7 @@ describe("useTrainerCategories composable", () => {
             flagGameOver,
         );
 
-        expect(isKindAvailable("все")).toBe(true);
+        expect(isKindAvailable("all")).toBe(true);
         expect(isKindAvailable("verbs")).toBe(true);
         expect(isKindAvailable("nouns")).toBe(false);
     });
@@ -142,7 +142,7 @@ describe("useTrainerCategories composable", () => {
         expect(remainingQuestions.value).toBe(2);
     });
 
-    it("should revert to 'все' if the last selected category is unchecked", () => {
+    it("should revert to 'all' if the last selected category is unchecked", () => {
         const mockItems = createMockItems();
         const mainArr = ref<TrainerItem[]>([...mockItems]);
         const mainArrsinSort = ref<TrainerItem[]>([...mockItems]);
@@ -162,7 +162,7 @@ describe("useTrainerCategories composable", () => {
         selectCategory("verbs");
         selectCategory("verbs");
 
-        expect(checkedKind.value).toEqual(["все"]);
+        expect(checkedKind.value).toEqual(["all"]);
         expect(mainArr.value).toHaveLength(3);
     });
 });

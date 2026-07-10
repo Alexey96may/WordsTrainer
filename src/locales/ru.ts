@@ -62,6 +62,9 @@ export default {
         loading: "Загрузка...",
         notFound: "Тренажёр не найден",
         defaultTitle: "Тренажёр",
+        categories: {
+            all: "Все",
+        },
     },
     trainers: {
         train_gen_case: {

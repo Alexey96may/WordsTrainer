@@ -8,12 +8,13 @@
             <div
                 class="option first-opt"
                 :class="{
-                    optSelected: checkedKind.includes('все'),
+                    optSelected: checkedKind.includes('all'),
                 }"
                 @click="handleFirstOptClick"
             >
                 <span
-                    >Все <sup>({{ activeKindsCount }})</sup></span
+                    >{{ $t("trainer.categories.all") }}
+                    <sup>({{ activeKindsCount }})</sup></span
                 >
             </div>
 
@@ -69,7 +70,7 @@ const emit = defineEmits<{
 
 const isSelectOpen = ref(false);
 const isAllSelected = computed(() => {
-    return props.checkedKind.includes("все");
+    return props.checkedKind.includes("all");
 });
 const selectContainerRef = ref<HTMLElement | null>(null);
 
@@ -82,7 +83,7 @@ const handleFirstOptClick = () => {
         isSelectOpen.value = !isSelectOpen.value;
     } else {
         isSelectOpen.value = false;
-        emitCategory("Все");
+        emitCategory("all");
     }
 };
 

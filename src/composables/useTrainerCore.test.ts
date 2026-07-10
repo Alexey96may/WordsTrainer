@@ -27,7 +27,7 @@ describe("useTrainerCore composable", () => {
 
         expect(mainArr.value).toHaveLength(2);
         expect(remainingQuestions.value).toBe(2);
-        expect(sectionArr.value).toContain("Все");
+        expect(sectionArr.value).toContain("all");
         expect(sectionArr.value).toContain("Verbs");
     });
 

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { TRAINERS_CONFIG } from "@/config/trainers";
 
 import TrainerQuestion from "@/components/trainer/TrainerQuestion.vue";
 import TrainerAudioControls from "@/components/trainer/TrainerAudioControls.vue";
@@ -34,7 +33,7 @@ const props = defineProps({
     },
 });
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 // 1. Sound Module
 const {
@@ -106,7 +105,10 @@ const tableDOMElement = computed(() => {
 // Dynamic data loading by slug
 const loadTrainerData = async (slug: string) => {
     try {
-        const module = await import(`../data/trainings/${slug}.js`);
+        // const module = await import(`../data/trainings/${slug}.js`);
+        const module = await import(
+            `../data/trainings/${slug}/${locale.value}.ts`
+        );
 
         globalArray.value = module.globalArray as RawTrainerItem[];
         titles.value = module.tableTitlesArr as LocalTitleItem[];
@@ -116,7 +118,7 @@ const loadTrainerData = async (slug: string) => {
         fromHintButton.value = false;
         showNotesFlag.value = false;
         flagGameOver.value = false;
-        checkedKind.value = ["все"];
+        checkedKind.value = ["all"];
 
         initTrainer(globalArray.value, sectionArr);
     } catch (err) {
@@ -134,6 +136,12 @@ watch(
     },
     { immediate: true },
 );
+
+watch(locale, () => {
+    if (props.slug) {
+        loadTrainerData(props.slug);
+    }
+});
 
 // User actions in the game
 const handleInputSubmit = () => {
@@ -160,7 +168,7 @@ const reloadGame = () => {
     userAnswer.value = "";
     showNotesFlag.value = false;
 
-    if (!checkedKind.value.includes("все")) {
+    if (!checkedKind.value.includes("all")) {
         mainArr.value = mainArrAlwaysFull.value.filter((item) =>
             checkedKind.value.includes(item.kind.toLowerCase()),
         );

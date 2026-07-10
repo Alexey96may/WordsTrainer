@@ -12,18 +12,18 @@ export function useTrainerCategories(
     flagGameOver: Ref<boolean>,
 ) {
     const sectionArr = ref<string[]>([]);
-    const checkedKind = ref<string[]>(["все"]);
+    const checkedKind = ref<string[]>(["all"]);
 
     // Calculated property of the number of active categories
     const activeKindsCount = computed<number>(() => {
-        return checkedKind.value.includes("все")
+        return checkedKind.value.includes("all")
             ? sectionArr.value.length - 1
             : checkedKind.value.length;
     });
 
     // Check category availability in the remaining pool
     const isKindAvailable = (kind: string): boolean => {
-        if (kind.toLowerCase() === "все") return true;
+        if (kind.toLowerCase() === "all") return true;
         return mainArrsinSort.value.some(
             (item) => item.kind.toLowerCase() === kind.toLowerCase(),
         );
@@ -33,19 +33,19 @@ export function useTrainerCategories(
     const selectCategory = (kind: string) => {
         const kindClean = kind.toLowerCase();
 
-        if (kindClean === "все") {
-            checkedKind.value = ["все"];
+        if (kindClean === "all") {
+            checkedKind.value = ["all"];
         } else if (checkedKind.value.includes(kindClean)) {
             checkedKind.value = checkedKind.value.filter(
                 (k) => k !== kindClean,
             );
-            if (!checkedKind.value.length) checkedKind.value = ["все"];
+            if (!checkedKind.value.length) checkedKind.value = ["all"];
         } else {
-            if (checkedKind.value.includes("все")) checkedKind.value = [];
+            if (checkedKind.value.includes("all")) checkedKind.value = [];
             checkedKind.value.push(kindClean);
         }
 
-        if (checkedKind.value.includes("все")) {
+        if (checkedKind.value.includes("all")) {
             mainArr.value = [...mainArrsinSort.value];
         } else {
             mainArr.value = mainArrsinSort.value.filter((item) =>

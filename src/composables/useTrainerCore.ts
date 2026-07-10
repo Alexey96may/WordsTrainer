@@ -23,7 +23,7 @@ export function useTrainerCore() {
     ) => {
         if (!rawArray.length) return;
 
-        const kinds = new Set<string>(["Все"]);
+        const kinds = new Set<string>(["all"]);
 
         // Normalization and mapping of incoming data
         const normalizedArray: TrainerItem[] = rawArray.map((item) => {

@@ -57,6 +57,9 @@ export default {
         loading: "Loading...",
         notFound: "Trainer not found",
         defaultTitle: "Trainer",
+        categories: {
+            all: "All",
+        },
     },
     trainers: {
         train_gen_case: {
