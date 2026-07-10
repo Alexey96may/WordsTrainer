@@ -19,11 +19,15 @@
                 </RouterLink>
             </div>
 
-            <AppBurgerButton
-                :is-open="isBurgerOpen"
-                aria-controls="mobile-menu"
-                @toggle="toggleBurger"
-            />
+            <div class="right-head">
+                <AppLangSwitcher />
+
+                <AppBurgerButton
+                    :is-open="isBurgerOpen"
+                    aria-controls="mobile-menu"
+                    @toggle="toggleBurger"
+                />
+            </div>
         </div>
 
         <hr class="hr_header" />
@@ -104,6 +108,7 @@
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
 import AppBreadcrumbs from "@/components/ui/AppBreadcrumbs.vue";
+import AppLangSwitcher from "@/components/ui/AppLangSwitcher.vue";
 import { RouterLink, useRoute } from "vue-router";
 import AppModalOverlay from "@/components/shared/AppModalOverlay.vue";
 import AppBurgerButton from "@/components/ui/AppBurgerButton.vue";
@@ -323,6 +328,11 @@ const scrollToTop = () => {
 .logo .alfa {
     font-style: italic;
 }
+.right-head {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 .all_body {
     padding: 0 12px;
     display: flex;
@@ -412,6 +422,9 @@ const scrollToTop = () => {
     .logo a {
         font-size: 14px;
         text-shadow: 1px 1px black;
+    }
+    .right-head {
+        gap: 12px;
     }
 }
 </style>
