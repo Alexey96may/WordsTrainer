@@ -1,5 +1,15 @@
 export default {
     meta: {
+        title: "αGreek — WordsTrainer",
+        description:
+            "Una aplicación optimizada para el entrenamiento efectivo de vocabulario y gramática griega.",
+        keywords:
+            "vue, typescript, entrenador de idiomas, lengua griega, gramática, aprendizaje dinámico",
+        author: "Aleksey",
+        og_title:
+            "WordsTrainer — Plataforma moderna para el aprendizaje de idiomas",
+        og_description:
+            "Una aplicación optimizada para el entrenamiento efectivo de vocabulario y gramática griega.",
         home: "αGreek. Página Principal",
         about: "αGreek. Sobre el Proyecto",
         trainer: "αGreek. Ejercicio: {name}",

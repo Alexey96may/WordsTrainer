@@ -1,6 +1,60 @@
 <script setup lang="ts">
 import Header from "@/components/shared/AppHeader.vue";
 import Footer from "@/components/shared/AppFooter.vue";
+
+import { useHead } from "@vueuse/head";
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
+import { useRoute } from "vue-router";
+
+const { t, locale } = useI18n();
+const route = useRoute();
+
+useHead(
+    computed(() => {
+        const titleKey = (route.meta.title as string) || "meta.home";
+
+        let pageTitle = "";
+        if (route.name === "trainer") {
+            const slug = route.params.slug as string;
+            const trainerName = t(`trainers.${slug}.name`);
+            pageTitle = t(titleKey, { name: trainerName });
+        } else {
+            pageTitle = t(titleKey);
+        }
+
+        return {
+            htmlAttrs: { lang: locale.value },
+            title: pageTitle,
+            meta: [
+                { name: "description", content: t("meta.description") },
+                { name: "keywords", content: t("meta.keywords") },
+                { name: "author", content: t("meta.author") },
+                { property: "og:type", content: "website" },
+                {
+                    property: "og:url",
+                    content: "https://alexey96may.github.io/WordsTrainer/",
+                },
+                { property: "og:title", content: t("meta.og_title") },
+                {
+                    property: "og:description",
+                    content: t("meta.og_description"),
+                },
+                { property: "twitter:card", content: "summary_large_image" },
+                {
+                    property: "twitter:url",
+                    content: "https://alexey96may.github.io/WordsTrainer/",
+                },
+                { property: "twitter:title", content: t("meta.og_title") },
+                {
+                    property: "twitter:description",
+                    content: t("meta.og_description"),
+                },
+            ],
+            link: [{ rel: "icon", href: "/favicon.png" }],
+        };
+    }),
+);
 </script>
 
 <template>

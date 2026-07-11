@@ -5,6 +5,7 @@ import {
 } from "vue-router";
 
 import HomeView from "@/views/HomeView.vue";
+import { useHead } from "@vueuse/head";
 import { i18n } from "@/i18n";
 import TrainerPage from "@/views/TrainerPage.vue";
 import AboutView from "@/views/AboutView.vue";
@@ -41,23 +42,6 @@ const router = createRouter({
     scrollBehavior() {
         return { top: 0 };
     },
-});
-
-router.beforeEach((to, from, next) => {
-    const titleKey = to.meta.title as string;
-
-    if (to.name === "trainer") {
-        const slug = to.params.slug as string;
-        const trainerName = i18n.global.t(`trainers.${slug}.name`);
-
-        document.title = i18n.global.t(titleKey, { name: trainerName });
-    } else {
-        document.title = titleKey
-            ? i18n.global.t(titleKey)
-            : i18n.global.t("home.title");
-    }
-
-    next();
 });
 
 export default router;
