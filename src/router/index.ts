@@ -44,4 +44,9 @@ const router = createRouter({
     },
 });
 
+const p = new URLSearchParams(window.location.search).get("p");
+if (p) {
+    history.replaceState(null, "", p);
+}
+
 export default router;
