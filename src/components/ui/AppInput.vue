@@ -48,8 +48,9 @@ defineExpose({ focus });
 
 <style scoped>
 .custom-input {
-    padding: 0.375rem 0.75rem;
+    padding: 0.4rem 0.75rem;
     font-size: 1.2rem;
+    line-height: 1.8;
     text-align: center;
     background-color: #fff;
     border: 1px solid #092217;
@@ -59,7 +60,11 @@ defineExpose({ focus });
     transition:
         border-color 0.2s,
         box-shadow 0.2s;
-    width: 35vw;
+    width: 40vw;
+}
+
+.custom-input::placeholder {
+    font-size: 1rem;
 }
 
 .custom-input:focus {
@@ -70,7 +75,11 @@ defineExpose({ focus });
 @media (max-width: 600px) {
     .custom-input {
         font-size: 1rem;
-        width: 60%;
+        width: 100%;
+    }
+
+    .custom-input::placeholder {
+        font-size: 0.8rem;
     }
     .custom-input:focus {
         box-shadow: 0 0 0 0.1rem rgba(25, 135, 84, 0.25);
@@ -78,8 +87,11 @@ defineExpose({ focus });
 }
 @media (max-width: 340px) {
     .custom-input {
-        font-size: 0.8rem;
-        width: 100%;
+        font-size: 0.7rem;
+    }
+
+    .custom-input::placeholder {
+        font-size: 0.6rem;
     }
 }
 </style>

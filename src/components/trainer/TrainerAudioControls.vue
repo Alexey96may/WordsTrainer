@@ -248,7 +248,7 @@ const handleRefresh = () => {
 
 @media (max-width: 600px) {
     .sound-controls-container {
-        gap: 12px;
+        gap: 8px;
     }
 
     .control-btn svg,
@@ -260,7 +260,7 @@ const handleRefresh = () => {
 
 @media (max-width: 340px) {
     .sound-controls-container {
-        gap: 6px;
+        gap: 4px;
     }
     .control-btn svg,
     .control-btn__svg {

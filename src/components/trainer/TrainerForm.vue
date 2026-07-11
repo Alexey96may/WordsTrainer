@@ -78,11 +78,8 @@ onMounted(() => {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-}
-
-.appButton--answer {
-    margin-right: 12px;
+    margin-top: 20px;
+    gap: 28px;
 }
 
 @media (max-width: 600px) {
@@ -90,15 +87,15 @@ onMounted(() => {
         gap: 22px;
         margin-bottom: 36px;
     }
+    .form_game__buttons {
+        margin-top: 20px;
+        gap: 32px;
+    }
 }
 @media (max-width: 340px) {
     .form_game {
         gap: 24px;
         margin-bottom: 40px;
-    }
-
-    .appButton--answer {
-        margin-right: 6px;
     }
 }
 </style>

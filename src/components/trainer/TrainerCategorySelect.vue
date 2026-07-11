@@ -253,7 +253,7 @@ onBeforeUnmount(() => {
 
 @media (max-width: 600px) {
     .custom-select-box {
-        max-width: 30vw;
+        max-width: 40vw;
         height: 30px;
     }
 
@@ -282,7 +282,7 @@ onBeforeUnmount(() => {
 
 @media (max-width: 340px) {
     .custom-select-box {
-        max-width: none;
+        max-width: unset;
         width: 100%;
         flex-shrink: 0;
     }

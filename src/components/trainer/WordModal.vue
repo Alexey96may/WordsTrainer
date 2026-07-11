@@ -1,83 +1,90 @@
 <template>
     <Teleport to="body">
-        <div
-            v-if="isOpen"
-            class="modal-overlay-wrapper"
-            @click.self="closeModal"
-            role="dialog"
-            aria-modal="true"
-        >
+        <Transition name="modal-slide">
             <div
-                ref="modalRef"
-                class="word-modal-window"
-                :style="modalStyle"
-                @touchstart="handleTouchStart"
-                @touchmove="handleTouchMove"
-                @touchend="handleTouchEnd"
+                v-if="isOpen"
+                class="modal-overlay-wrapper"
+                @click.self="closeModal"
+                role="dialog"
+                aria-modal="true"
             >
-                <AppCloseButton class="modal-close-btn" @close="closeModal" />
+                <div
+                    ref="modalRef"
+                    class="word-modal-window"
+                    :style="modalStyle"
+                    @touchstart="handleTouchStart"
+                    @touchmove="handleTouchMove"
+                    @touchend="handleTouchEnd"
+                >
+                    <AppCloseButton
+                        class="modal-close-btn"
+                        @close="closeModal"
+                    />
 
-                <div class="modal-header-section">
-                    <h2>
-                        {{
-                            capitalize(
-                                currentWordData?.base ||
-                                    currentWordData?.word ||
-                                    "",
-                            )
-                        }}
-                    </h2>
-                    <p class="modal-translation-hint">
-                        ({{ getTranslation(currentWordData) }})
-                    </p>
-                </div>
+                    <div class="modal-header-section">
+                        <h2>
+                            {{
+                                capitalize(
+                                    currentWordData?.base ||
+                                        currentWordData?.word ||
+                                        "",
+                                )
+                            }}
+                        </h2>
+                        <p class="modal-translation-hint">
+                            ({{ getTranslation(currentWordData) }})
+                        </p>
+                    </div>
 
-                <div class="modal-body-scroll-container">
-                    <div class="modal-grid-layout" :class="gridClass">
-                        <div
-                            v-for="(item, idx) in relatedForms"
-                            :key="idx"
-                            class="modal-word-card"
-                            :style="getCardStyle(idx)"
-                        >
-                            <span class="card-idx">{{ idx + 1 }}.</span>
-                            <div class="card-main-word">
-                                <strong>{{ item.word }}</strong>
+                    <div class="modal-body-scroll-container">
+                        <div class="modal-grid-layout" :class="gridClass">
+                            <div
+                                v-for="(item, idx) in relatedForms"
+                                :key="idx"
+                                class="modal-word-card"
+                                :style="getCardStyle(idx)"
+                            >
+                                <span class="card-idx">{{ idx + 1 }}.</span>
+                                <div class="card-main-word">
+                                    <strong>{{ item.word }}</strong>
+                                </div>
+
+                                <div
+                                    v-if="item.translation"
+                                    class="card-translation"
+                                >
+                                    ({{ item.translation.trim() }})
+                                </div>
+
+                                <template
+                                    v-if="
+                                        item.groups &&
+                                        Object.keys(item.groups).length
+                                    "
+                                >
+                                    <hr class="card-divider" />
+                                    <div
+                                        v-for="(
+                                            groupVal, groupKey
+                                        ) in item.groups"
+                                        :key="groupKey"
+                                        class="card-group-line"
+                                        v-html="groupVal"
+                                    ></div>
+                                </template>
                             </div>
 
                             <div
-                                v-if="item.translation"
-                                class="card-translation"
+                                v-if="relatedForms.length === 0"
+                                class="modal-word-card empty-state"
                             >
-                                ({{ item.translation.trim() }})
+                                <span>{{ t("trainer.modal.noInfo") }}</span>
                             </div>
-
-                            <template
-                                v-if="
-                                    item.groups &&
-                                    Object.keys(item.groups).length
-                                "
-                            >
-                                <hr class="card-divider" />
-                                <div
-                                    v-for="(groupVal, groupKey) in item.groups"
-                                    :key="groupKey"
-                                    class="card-group-line"
-                                    v-html="groupVal"
-                                ></div>
-                            </template>
-                        </div>
-
-                        <div
-                            v-if="relatedForms.length === 0"
-                            class="modal-word-card empty-state"
-                        >
-                            <span>{{ t("trainer.modal.noInfo") }}</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div></Transition
+        >
     </Teleport>
 </template>
 
@@ -113,6 +120,9 @@ const isSwiping = ref(false);
 const transformX = ref(0);
 const opacityVal = ref(1);
 const transitionStyle = ref("none");
+
+const touchY = ref(0);
+const isScrollDetected = ref(false);
 
 // Data
 const activeRow = computed(() => {
@@ -226,15 +236,27 @@ const handleKeyDown = (e: KeyboardEvent) => {
 const handleTouchStart = (e: TouchEvent) => {
     if (!e.touches || !e.touches[0]) return;
     touchX.value = e.touches[0].clientX;
+    touchY.value = e.touches[0].clientY;
     isSwiping.value = true;
+    isScrollDetected.value = false;
     transitionStyle.value = "none";
 };
 
 const handleTouchMove = (e: TouchEvent) => {
-    if (!isSwiping.value) return;
+    if (!isSwiping.value || isScrollDetected.value) return;
     if (!e.changedTouches || !e.changedTouches[0]) return;
 
-    const diffX = e.changedTouches[0].clientX - touchX.value;
+    const currentX = e.changedTouches[0].clientX;
+    const currentY = e.changedTouches[0].clientY;
+
+    const diffX = currentX - touchX.value;
+    const diffY = currentY - touchY.value;
+
+    if (Math.abs(diffY) > Math.abs(diffX)) {
+        isScrollDetected.value = true;
+        return;
+    }
+
     if (Math.abs(diffX) > 10) {
         transformX.value = diffX;
         shiftX.value = diffX;
@@ -285,6 +307,29 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.modal-slide-enter-active,
+.modal-slide-leave-active {
+    transition: opacity 0.3s ease;
+}
+.modal-slide-enter-from,
+.modal-slide-leave-to {
+    opacity: 0;
+}
+
+.modal-slide-enter-active .word-modal-window {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.modal-slide-enter-from .word-modal-window {
+    transform: translateY(-50px);
+}
+
+.modal-slide-leave-active .word-modal-window {
+    transition: transform 0.3s ease-in;
+}
+.modal-slide-leave-to .word-modal-window {
+    transform: translateY(-50px);
+}
+
 /* Full-screen overlay */
 .modal-overlay-wrapper {
     position: fixed;
@@ -345,6 +390,7 @@ onUnmounted(() => {
     overflow-y: auto;
     flex-grow: 1;
     padding-right: 12px;
+    touch-action: pan-y;
 }
 
 /* Custom green scrollbar */

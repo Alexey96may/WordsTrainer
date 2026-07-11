@@ -41,6 +41,7 @@ const onClick = (event: MouseEvent) => {
     transition:
         background-color 0.2s ease,
         transform 0.1s ease;
+    min-width: 80px;
 }
 
 @media (hover: hover) {

@@ -336,9 +336,6 @@ const handleModalOpenRequest = (payload: {
     }
 }
 @media (max-width: 340px) {
-    .training-config__select {
-        flex-basis: 100%;
-    }
     .training-config {
         gap: 12px;
         justify-content: center;
