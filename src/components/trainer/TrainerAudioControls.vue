@@ -2,12 +2,12 @@
     <div
         class="sound-controls-container"
         role="toolbar"
-        aria-label="Управление состоянием тренажера"
+        :aria-label="$t('trainer.controls.ariaMAin')"
     >
         <button
             class="control-btn"
             type="button"
-            title="Сбросить текущий прогресс"
+            :title="$t('trainer.controls.reload')"
             @click="handleReload"
         >
             <svg
@@ -31,7 +31,7 @@
         <button
             class="control-btn"
             type="button"
-            title="Пропустить / Сменить вопрос"
+            :title="$t('trainer.controls.refresh')"
             @click="handleRefresh"
         >
             <svg
@@ -102,6 +102,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
 
 interface Props {
     isSoundOn: boolean;
@@ -116,10 +117,12 @@ const emit = defineEmits<{
     (e: "toggle-sound"): void;
 }>();
 
+const { t } = useI18n();
+
 const soundTitle = computed(() => {
     return props.isSoundOn
-        ? `Громкость: уровень ${props.soundLevel}`
-        : "Звук выключен";
+        ? t("trainer.controls.soundOn", { level: props.soundLevel })
+        : t("trainer.controls.soundOff");
 });
 
 const isReloadSpinning = ref(false);

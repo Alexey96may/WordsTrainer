@@ -3,7 +3,7 @@
         <Transition name="expand-error">
             <div v-if="hasError" class="error-slider-wrapper">
                 <span id="errorField" role="alert" aria-live="assertive">
-                    Подумайте ещё!
+                    {{ t("trainer.question.error") }}
                 </span>
             </div>
         </Transition>
@@ -21,6 +21,10 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
 interface Props {
     questionHtml: string;
     hasError: boolean;

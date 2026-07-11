@@ -1,6 +1,6 @@
 <template>
     <h4 class="text-center score_title">
-        Осталось вопросов:
+        {{ t("trainer.score.remaining") }}
         <Transition name="pop" mode="out-in">
             <span :key="count" id="score" aria-live="polite" aria-atomic="true">
                 {{ count }}
@@ -10,6 +10,9 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 interface Props {
     count: number;
 }

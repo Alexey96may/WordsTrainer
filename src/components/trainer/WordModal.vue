@@ -72,7 +72,7 @@
                             v-if="relatedForms.length === 0"
                             class="modal-word-card empty-state"
                         >
-                            <span>Нет информации</span>
+                            <span>{{ t("trainer.modal.noInfo") }}</span>
                         </div>
                     </div>
                 </div>
@@ -83,6 +83,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, onUnmounted } from "vue";
+import { useI18n } from "vue-i18n";
 import AppCloseButton from "@/components/ui/AppCloseButton.vue";
 
 interface Props {
@@ -101,6 +102,8 @@ const emit = defineEmits<{
     (e: "close"): void;
     (e: "update:currentIndex", val: number): void;
 }>();
+
+const { t } = useI18n();
 
 // Refs
 const modalRef = ref<HTMLElement | null>(null);

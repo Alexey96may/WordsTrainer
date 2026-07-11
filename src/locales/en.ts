@@ -50,7 +50,13 @@ export default {
             quiz: "Telegram Quiz",
             about: "About Project",
         },
-        breadcrumbs: { home: "Home", trainer: "Trainer" },
+        breadcrumbs: {
+            home: "Home",
+            trainers: "Trainers",
+            about: "About",
+            grammar: "Grammar",
+            defaultTrainer: "Trainer",
+        },
     },
     footer: { rights: "All rights reserved." },
     trainer: {
@@ -59,6 +65,31 @@ export default {
         defaultTitle: "Trainer",
         categories: {
             all: "All",
+        },
+        controls: {
+            ariaMAin: "Simulator state management",
+            reload: "Reset progress",
+            refresh: "Skip / Change question",
+            soundOn: "Volume: level {level}",
+            soundOff: "Sound off",
+        },
+        form: {
+            placeholder: "Your answer",
+            hintBtn: "Hint",
+            submitBtn: "Enter",
+            ariaLabel: "Enter your answer in Greek",
+        },
+        remark: {
+            title: "Notice: ",
+        },
+        question: {
+            error: "Think again!",
+        },
+        score: {
+            remaining: "Questions remaining:",
+        },
+        modal: {
+            noInfo: "No information",
         },
     },
     trainers: {

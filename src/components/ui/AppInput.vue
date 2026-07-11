@@ -10,6 +10,7 @@
         :class="{ 'input-error': hasError }"
         :aria-label="ariaLabel"
         :aria-invalid="hasError"
+        :placeholder="placeholder"
     />
 </template>
 
@@ -23,6 +24,7 @@ interface Props {
     autocomplete?: "on" | "off";
     hasError?: boolean;
     ariaLabel?: string;
+    placeholder?: string;
 }
 
 withDefaults(defineProps<Props>(), {

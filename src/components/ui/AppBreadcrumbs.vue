@@ -2,7 +2,7 @@
     <nav
         v-if="breadcrumbs.length > 0"
         class="nav_breadcrumb"
-        aria-label="Хлебные крошки"
+        aria-label="Breadcrumbs"
     >
         <ol class="breadcrumb-list">
             <li
@@ -37,6 +37,8 @@
 <script setup lang="ts">
 import { RouterLink, useRoute } from "vue-router";
 import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
+
 import { TRAINERS_CONFIG } from "@/config/trainers";
 
 interface BreadcrumbItem {
@@ -44,6 +46,7 @@ interface BreadcrumbItem {
     url?: string;
 }
 
+const { t } = useI18n();
 const route = useRoute();
 const trainersList = ref(TRAINERS_CONFIG);
 
@@ -52,42 +55,34 @@ const currentTrainerName = computed(() => {
         const activeTrainer = trainersList.value.find(
             (t) => t.id === route.params.slug,
         );
-        return activeTrainer ? activeTrainer.name : "Тренажёр";
+        return activeTrainer
+            ? t(`trainers.${activeTrainer.id}.name`)
+            : t("header.breadcrumbs.defaultTrainer");
     }
     return "";
 });
 
 const breadcrumbs = computed<BreadcrumbItem[]>(() => {
-    // 1. IF WE ARE ON THE HOME PAGE: returns only one inactive item [Home]
     if (route.name === "home") {
-        return [{ label: "Главная" }];
+        return [{ label: t("header.breadcrumbs.home") }];
     }
 
-    // Base initial link for all other pages of the site
-    const crumbs: BreadcrumbItem[] = [{ label: "Главная", url: "/" }];
+    const crumbs: BreadcrumbItem[] = [
+        { label: t("header.breadcrumbs.home"), url: "/" },
+    ];
 
-    // 2. IF WE ARE IN THE EXERCISE MODULE: Home » Exercises » Accusative case
     if (route.name === "trainer") {
-        crumbs.push({ label: "Тренажеры", url: "/" });
+        crumbs.push({
+            label: t("header.breadcrumbs.trainers"),
+            url: "/trainers",
+        });
         crumbs.push({ label: currentTrainerName.value });
-        return crumbs;
-    }
-
-    // 3. IF WE ARE ON THE "ABOUT THE PROJECT" PAGE: Home » About the Project
-    if (route.name === "about") {
-        crumbs.push({ label: "О проекте" });
-        return crumbs;
-    }
-    // 4. IF WE ARE ON THE "GRAMMAR" PAGE: Home » Grammar
-    if (route.name === "grammar") {
-        crumbs.push({ label: "Грамматика" });
-        return crumbs;
-    }
-
-    // Fallback in case a meta title is defined for the route in router/index.ts
-    if (route.meta?.title) {
+    } else if (route.name === "about") {
+        crumbs.push({ label: t("header.breadcrumbs.about") });
+    } else if (route.name === "grammar") {
+        crumbs.push({ label: t("header.breadcrumbs.grammar") });
+    } else if (route.meta?.title) {
         crumbs.push({ label: route.meta.title as string });
-        return crumbs;
     }
 
     return crumbs;

@@ -8,7 +8,10 @@ export default {
         },
         breadcrumbs: {
             home: "Главная",
-            trainer: "Тренажёр",
+            trainers: "Тренажеры",
+            about: "О проекте",
+            grammar: "Грамматика",
+            defaultTrainer: "Тренажёр",
         },
     },
     footer: {
@@ -64,6 +67,31 @@ export default {
         defaultTitle: "Тренажёр",
         categories: {
             all: "Все",
+        },
+        controls: {
+            ariaMAin: "Управление состоянием тренажера",
+            reload: "Сбросить текущий прогресс",
+            refresh: "Пропустить / Сменить вопрос",
+            soundOn: "Громкость: уровень {level}",
+            soundOff: "Звук выключен",
+        },
+        form: {
+            placeholder: "Ваш ответ",
+            hintBtn: "Ответ",
+            submitBtn: "Ввод",
+            ariaLabel: "Введите ответ на греческом языке",
+        },
+        remark: {
+            title: "Заметка: ",
+        },
+        question: {
+            error: "Подумайте ещё!",
+        },
+        score: {
+            remaining: "Осталось вопросов:",
+        },
+        modal: {
+            noInfo: "Нет информации",
         },
     },
     trainers: {

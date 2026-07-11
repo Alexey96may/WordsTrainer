@@ -159,7 +159,7 @@ const visibleFlatRows = computed(() => {
 
 // Check visibility of the entire group (none_table / is_table logic)
 const isGroupVisible = (groupKindName: string) => {
-    if (props.checkedKind.includes("все") || props.checkedKind.length === 0)
+    if (props.checkedKind.includes("all") || props.checkedKind.length === 0)
         return true;
     return props.checkedKind.includes(groupKindName.toLowerCase());
 };

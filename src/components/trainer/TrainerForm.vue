@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import AppInput from "@/components/ui/AppInput.vue";
+import { useI18n } from "vue-i18n";
 import AppButton from "@/components/ui/AppButton.vue";
 
 interface Props {
@@ -15,6 +16,8 @@ const emit = defineEmits<{
     (e: "submit"): void;
     (e: "hint"): void;
 }>();
+
+const { t } = useI18n();
 
 const inputRef = ref<HTMLInputElement | null>(null);
 
@@ -40,7 +43,8 @@ onMounted(() => {
             v-model="modelValue"
             name="verb"
             id="input_verb"
-            aria-label="Ваш ответ на греческом"
+            :placeholder="t('trainer.form.placeholder')"
+            :aria-label="t('trainer.form.ariaLabel')"
             :has-error="hasError"
         />
 
@@ -50,10 +54,12 @@ onMounted(() => {
                 class="appButton--answer"
                 @click="$emit('hint')"
             >
-                Ответ
+                {{ t("trainer.form.hintBtn") }}
             </AppButton>
 
-            <AppButton type="submit"> Ввод </AppButton>
+            <AppButton type="submit">
+                {{ t("trainer.form.submitBtn") }}
+            </AppButton>
         </div>
     </form>
 </template>

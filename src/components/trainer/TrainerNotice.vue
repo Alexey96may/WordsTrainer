@@ -1,11 +1,12 @@
 <template>
     <div v-if="noticeText" class="fixed-notice box" :style="noticeStyle">
-        <b>Заметка: </b> <span v-html="noticeText"></span>
+        <b>$t('trainer.remark.title')</b> <span v-html="noticeText"></span>
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed, type CSSProperties } from "vue"; // Импортируем тип
+import { ref, onMounted, onUnmounted, computed, type CSSProperties } from "vue";
+import { useI18n } from "vue-i18n";
 
 interface Props {
     noticeText: string;
@@ -13,13 +14,14 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+
+const { t } = useI18n();
 const scrollY = ref(0);
 
 const handleScroll = () => {
     scrollY.value = window.scrollY;
 };
 
-// Явно типизируем computed как CSSProperties
 const noticeStyle = computed<CSSProperties>(() => {
     if (!props.tableContainerRef)
         return { visibility: "visible", opacity: 0.95 };

@@ -153,7 +153,7 @@ const currentTrainerName = computed(() => {
         );
         return activeTrainer
             ? t(`trainers.${activeTrainer.id}.name`)
-            : t("header.breadcrumbs.trainer");
+            : t("header.breadcrumbs.defaultTrainer");
     }
     if (route.name === "home") return t("header.breadcrumbs.home");
     return "";
