@@ -12,7 +12,7 @@
     </Transition>
 
     <header class="header">
-        <div class="mob_nav">
+        <div class="mob_nav container">
             <div class="logo">
                 <RouterLink to="/" class="navbar-brand">
                     <i class="alfa">α</i>Greek

@@ -1,13 +1,19 @@
 <template>
     <footer class="footer">
-        <div class="links_footer">
-            <a :href="telegramLink" target="_blank" rel="noopener noreferrer">
-                <img src="@/assets/img/telegram.png" alt="logo_telegram" />
-            </a>
-        </div>
+        <div class="container">
+            <div class="links_footer">
+                <a
+                    :href="telegramLink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src="@/assets/img/telegram.png" alt="logo_telegram" />
+                </a>
+            </div>
 
-        <div class="footer_info">
-            <div>{{ copyrightText }}</div>
+            <div class="footer_info">
+                <div>{{ copyrightText }}</div>
+            </div>
         </div>
     </footer>
 </template>
@@ -28,7 +34,6 @@ const copyrightText = computed(() => {
 <style scoped>
 .footer {
     width: 100%;
-    padding: 24px 12px;
     margin-top: 24px;
     background-image: linear-gradient(
         180deg,
@@ -38,6 +43,9 @@ const copyrightText = computed(() => {
     text-align: center;
     color: #d6d6d6;
     font-size: 90%;
+}
+.footer .container {
+    padding: 24px 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;

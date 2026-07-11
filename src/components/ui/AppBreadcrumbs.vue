@@ -4,7 +4,7 @@
         class="nav_breadcrumb"
         aria-label="Breadcrumbs"
     >
-        <ol class="breadcrumb-list">
+        <ol class="breadcrumb-list container">
             <li
                 v-for="(crumb, index) in breadcrumbs"
                 :key="index"
@@ -101,7 +101,6 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => {
 .breadcrumb-list {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
