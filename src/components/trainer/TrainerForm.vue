@@ -41,8 +41,8 @@ onMounted(() => {
         <AppInput
             ref="inputComponentRef"
             v-model="modelValue"
-            name="verb"
-            id="input_verb"
+            name="f7x9_in"
+            id="f7x9_in"
             :placeholder="t('trainer.form.placeholder')"
             :aria-label="t('trainer.form.ariaLabel')"
             :has-error="hasError"
@@ -89,7 +89,7 @@ onMounted(() => {
     }
     .form_game__buttons {
         margin-top: 20px;
-        gap: 32px;
+        gap: 30px;
     }
 }
 @media (max-width: 340px) {

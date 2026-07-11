@@ -2,7 +2,8 @@
     <input
         ref="nativeInputRef"
         v-model="modelValue"
-        autocomplete="one-time-code"
+        autocorrect="off"
+        autocapitalize="off"
         :type="type"
         :name="name"
         :id="id"

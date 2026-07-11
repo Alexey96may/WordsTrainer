@@ -129,11 +129,11 @@ watch(
 
 @media (max-width: 600px) {
     .modal_overlay {
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     .navbar {
-        max-height: calc(100vh - 40px);
+        max-height: calc(100vh - 80px);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
 }

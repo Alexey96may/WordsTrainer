@@ -62,7 +62,7 @@ const onClick = (event: MouseEvent) => {
 
 @media (max-width: 600px) {
     .my_btn {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 @media (max-width: 340px) {

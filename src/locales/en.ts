@@ -110,7 +110,7 @@ export default {
             desc: "Commands, requests, and prohibitions.",
         },
         train_indicative: {
-            name: "Indicative Mood",
+            name: "Present Indicative",
             desc: "Basic verb forms in indicative.",
         },
         train_irregular_aorist: {
