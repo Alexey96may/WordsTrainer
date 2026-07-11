@@ -108,13 +108,13 @@ watch(
 /* VUE ANIMATIONS */
 .slide-down-enter-active,
 .slide-down-leave-active {
-    transition: opacity 0.25s ease;
+    transition: opacity 0.4s ease;
 }
 
 /* Content sliding out */
 .slide-down-enter-active .navbar,
 .slide-down-leave-active .navbar {
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .slide-down-enter-from,
@@ -125,5 +125,16 @@ watch(
 .slide-down-enter-from .navbar,
 .slide-down-leave-to .navbar {
     transform: translateY(calc(-100% - 40px));
+}
+
+@media (max-width: 600px) {
+    .modal_overlay {
+        padding-top: 20px;
+    }
+
+    .navbar {
+        max-height: calc(100vh - 40px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
 }
 </style>

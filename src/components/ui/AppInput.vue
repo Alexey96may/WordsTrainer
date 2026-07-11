@@ -2,7 +2,7 @@
     <input
         ref="nativeInputRef"
         v-model="modelValue"
-        :autocomplete="autocomplete"
+        autocomplete="one-time-code"
         :type="type"
         :name="name"
         :id="id"
@@ -21,7 +21,6 @@ interface Props {
     type?: string;
     name?: string;
     id?: string;
-    autocomplete?: "on" | "off";
     hasError?: boolean;
     ariaLabel?: string;
     placeholder?: string;
@@ -29,7 +28,6 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
     type: "text",
-    autocomplete: "off",
     hasError: false,
     ariaLabel: "Поле ввода",
 });

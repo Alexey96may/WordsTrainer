@@ -184,6 +184,7 @@ const scrollToTop = () => {
     border-radius: 5px;
     border: 1px solid #198754 !important;
     background-color: #1d1d1d;
+    padding: 12px 0;
 }
 
 /* STYLING THE ACTIVE LINK IN THE SIMULATOR */
@@ -418,6 +419,9 @@ const scrollToTop = () => {
         bottom: 16px;
         right: 16px;
         font-size: 18px;
+    }
+    .header__nav {
+        padding: 12px 0;
     }
     .logo a {
         font-size: 14px;
