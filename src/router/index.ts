@@ -5,6 +5,7 @@ import {
 } from "vue-router";
 
 import HomeView from "@/views/HomeView.vue";
+import { i18n } from "@/i18n";
 import TrainerPage from "@/views/TrainerPage.vue";
 import AboutView from "@/views/AboutView.vue";
 
@@ -13,17 +14,20 @@ const routes: Array<RouteRecordRaw> = [
         path: "/",
         name: "home",
         component: HomeView,
+        meta: { title: "meta.home" },
     },
     {
         path: "/about",
         name: "about",
         component: AboutView,
+        meta: { title: "meta.about" },
     },
     {
         path: "/trainer/:slug",
         name: "trainer",
         component: TrainerPage,
         props: true,
+        meta: { title: "meta.trainer" },
     },
     {
         path: "/:pathMatch(.*)*",
@@ -39,9 +43,20 @@ const router = createRouter({
     },
 });
 
-// Меняем тайтл вкладки браузера при переходах
 router.beforeEach((to, from, next) => {
-    document.title = (to.meta.title as string) || "Греческий Язык";
+    const titleKey = to.meta.title as string;
+
+    if (to.name === "trainer") {
+        const slug = to.params.slug as string;
+        const trainerName = i18n.global.t(`trainers.${slug}.name`);
+
+        document.title = i18n.global.t(titleKey, { name: trainerName });
+    } else {
+        document.title = titleKey
+            ? i18n.global.t(titleKey)
+            : i18n.global.t("home.title");
+    }
+
     next();
 });
 

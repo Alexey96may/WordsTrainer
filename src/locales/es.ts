@@ -1,4 +1,9 @@
 export default {
+    meta: {
+        home: "αGreek. Página Principal",
+        about: "αGreek. Sobre el Proyecto",
+        trainer: "αGreek. Ejercicio: {name}",
+    },
     header: {
         menuTitle: "Menú de ejercicios",
         links: {

@@ -1,4 +1,9 @@
 export default {
+    meta: {
+        home: "αGreek. Home Page",
+        about: "αGreek. About Project",
+        trainer: "αGreek. Trainer: {name}",
+    },
     about: {
         header: {
             subtitle: "History and Relaunch",
