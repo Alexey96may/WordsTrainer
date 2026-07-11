@@ -8,7 +8,7 @@
         <Transition name="fade">
             <div v-if="isOpen" class="lang-menu">
                 <button
-                    v-for="lang in ['ru', 'en']"
+                    v-for="lang in ['ru', 'en', 'es']"
                     :key="lang"
                     class="lang-option"
                     :class="{ 'is-active': locale === lang }"

@@ -105,10 +105,24 @@ const tableDOMElement = computed(() => {
 // Dynamic data loading by slug
 const loadTrainerData = async (slug: string) => {
     try {
-        // const module = await import(`../data/trainings/${slug}.js`);
-        const module = await import(
-            `../data/trainings/${slug}/${locale.value}.ts`
-        );
+        const currentLang = locale.value || "ru";
+        let module;
+
+        try {
+            module = await import(
+                `../data/trainings/${slug}/${currentLang}.ts`
+            );
+        } catch (e) {
+            console.warn(
+                `File for ${currentLang} not found, trying to load ru...`,
+            );
+
+            if (currentLang !== "ru") {
+                module = await import(`../data/trainings/${slug}/ru.ts`);
+            } else {
+                throw new Error("Localization file not found");
+            }
+        }
 
         globalArray.value = module.globalArray as RawTrainerItem[];
         titles.value = module.tableTitlesArr as LocalTitleItem[];
@@ -122,8 +136,9 @@ const loadTrainerData = async (slug: string) => {
 
         initTrainer(globalArray.value, sectionArr);
     } catch (err) {
-        console.error("Ошибка загрузки...", err);
+        console.error("Critical data loading error: ", err);
         globalArray.value = [];
+        titles.value = [];
     }
 };
 
