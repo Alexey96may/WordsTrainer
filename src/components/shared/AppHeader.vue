@@ -414,8 +414,8 @@ const scrollToTop = () => {
 
 @media (max-width: 600px) {
     #toTop {
-        width: 28px;
-        height: 28px;
+        width: 32px;
+        height: 32px;
         bottom: 16px;
         right: 16px;
         font-size: 18px;

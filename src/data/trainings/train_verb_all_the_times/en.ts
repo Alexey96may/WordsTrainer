@@ -66810,7 +66810,7 @@ export const globalArray = [
         word: "θα είμαι",
         translation: "I will be",
         groups: {
-            time: "Aorist (Past)", // but actually it's future, but this is how it's labeled in original
+            time: "Future imperfective",
             num: "singular",
             pers: "1st person",
         },
@@ -66825,7 +66825,7 @@ export const globalArray = [
         word: "θα είσαι",
         translation: "You will be",
         groups: {
-            time: "Aorist (Past)",
+            time: "Future imperfective",
             num: "singular",
             pers: "2nd person",
         },
@@ -66840,7 +66840,7 @@ export const globalArray = [
         word: "θα είναι",
         translation: "He will be",
         groups: {
-            time: "Aorist (Past)",
+            time: "Future imperfective",
             num: "singular",
             pers: "3rd person",
         },
@@ -66855,7 +66855,7 @@ export const globalArray = [
         word: "θα είμαστε",
         translation: "We will be",
         groups: {
-            time: "Aorist (Past)",
+            time: "Future imperfective",
             num: "plural",
             pers: "1st person",
         },
@@ -66870,7 +66870,7 @@ export const globalArray = [
         word: "θα είσαστε",
         translation: "You will be",
         groups: {
-            time: "Aorist (Past)",
+            time: "Future imperfective",
             num: "plural",
             pers: "2nd person",
         },
@@ -66885,7 +66885,7 @@ export const globalArray = [
         word: "θα είναι",
         translation: "They will be",
         groups: {
-            time: "Aorist (Past)",
+            time: "Future imperfective",
             num: "plural",
             pers: "3rd person",
         },

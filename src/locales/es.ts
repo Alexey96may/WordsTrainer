@@ -92,7 +92,7 @@ export default {
         },
         form: {
             placeholder: "Tu respuesta",
-            hintBtn: "Respuesta",
+            hintBtn: "Pista",
             submitBtn: "Enviar",
             ariaLabel: "Introduce la respuesta en griego",
         },
