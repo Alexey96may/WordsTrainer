@@ -1,5 +1,3 @@
-// Array with table titles and array of objects with data.
-
 export const tableTitlesArr = [
     { title: "Verb", place: "base" },
     { title: "Aorist", place: "baseAor" },
