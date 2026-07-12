@@ -2343,7 +2343,7 @@ export const globalArray = [
         notice: "",
         qws: ["χάνω"],
         transls: ["Vosotros perded"],
-        unicTransl: "olvidar, olvidarse",
+        unicTransl: "perder, perder (juego)",
     },
     {
         word: "χόρευε",

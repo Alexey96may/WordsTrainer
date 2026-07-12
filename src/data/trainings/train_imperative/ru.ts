@@ -1698,7 +1698,7 @@ export const globalArray = [
         notice: "",
         qws: ["βάζω"],
         transls: ["Ты клади"],
-        unicTransl: "читать",
+        unicTransl: "класть",
     },
     {
         word: "βάζετε",
@@ -1713,7 +1713,7 @@ export const globalArray = [
         notice: "",
         qws: ["βάζω"],
         transls: ["Вы кладите"],
-        unicTransl: "читать",
+        unicTransl: "класть",
     },
     {
         word: "βάλε",
@@ -2343,7 +2343,7 @@ export const globalArray = [
         notice: "",
         qws: ["χάνω"],
         transls: ["Вы потеряйте"],
-        unicTransl: "забывать, забыть",
+        unicTransl: "терять, проигрывать",
     },
     {
         word: "χόρευε",

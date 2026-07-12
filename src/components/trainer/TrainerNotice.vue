@@ -1,6 +1,7 @@
 <template>
     <div v-if="noticeText" class="fixed-notice box" :style="noticeStyle">
-        <b>$t('trainer.remark.title')</b> <span v-html="noticeText"></span>
+        <b>{{ $t("trainer.remark.title") }}</b>
+        <span v-html="noticeText"></span>
     </div>
 </template>
 

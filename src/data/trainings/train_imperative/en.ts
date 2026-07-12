@@ -1,5 +1,3 @@
-// Array with table titles and array of objects with data.
-
 export const tableTitlesArr = [
     { title: "Verb", place: "base" },
     { title: "Translation", place: "unicTransl" },
@@ -2345,7 +2343,7 @@ export const globalArray = [
         notice: "",
         qws: ["χάνω"],
         transls: ["You (pl) lose (perfective)"],
-        unicTransl: "to forget",
+        unicTransl: "to lose, to miss",
     },
     {
         word: "χόρευε",

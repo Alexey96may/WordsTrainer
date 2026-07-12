@@ -2765,7 +2765,7 @@ export const globalArray = [
     },
     {
         word: "αρχαίες",
-        translation: "красивые",
+        translation: "древние",
         groups: {
             case: "Зв. падеж",
             num: "мн. число",
@@ -17674,16 +17674,16 @@ export const globalArray = [
     },
     {
         word: "ενδιαφέρον",
-        translation: "отсутствующее",
+        translation: "интересное",
         groups: {
-            case: "интересное",
+            case: "Им. падеж",
             num: "ед. число",
             gen: "ср. род",
         },
         base: "ενδιαφέρων",
         notice: "",
         qws: ["το ... σύμπαν"],
-        transls: ["интересная вселенная — ενδιαφέρων / интересное"],
+        transls: ["интересная вселенная — ενδιαφέρων / Им. падеж"],
         kind: "-ων, -ουσα, -ον",
     },
     {
