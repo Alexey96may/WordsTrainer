@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Greek Trainer</string>
+    <string name="title_activity_main">Greek Trainer</string>
+    <string name="package_name">com.alexshulga.greektrainer</string>
+    <string name="custom_url_scheme">com.alexshulga.greektrainer</string>
+</resources>

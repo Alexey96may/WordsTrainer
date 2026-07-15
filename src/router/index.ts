@@ -1,12 +1,14 @@
 import {
     createRouter,
     createWebHistory,
+    createWebHashHistory,
     type RouteRecordRaw,
 } from "vue-router";
 
 import HomeView from "@/views/HomeView.vue";
 import { useHead } from "@vueuse/head";
 import { i18n } from "@/i18n";
+import { isNativeApp } from "@/utils/platform";
 import TrainerPage from "@/views/TrainerPage.vue";
 import AboutView from "@/views/AboutView.vue";
 
@@ -36,8 +38,10 @@ const routes: Array<RouteRecordRaw> = [
     },
 ];
 
+const isApp = !!window.Capacitor;
+
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: isNativeApp() ? createWebHashHistory() : createWebHistory(),
     routes,
     scrollBehavior() {
         return { top: 0 };
