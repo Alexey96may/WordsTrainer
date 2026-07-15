@@ -41,16 +41,17 @@ const routes: Array<RouteRecordRaw> = [
 const isApp = !!window.Capacitor;
 
 const router = createRouter({
-    history: isNativeApp() ? createWebHashHistory() : createWebHistory(),
+    // history: isNativeApp() ? createWebHashHistory() : createWebHistory(),
+    history: createWebHashHistory(import.meta.env.BASE_URL),
     routes,
     scrollBehavior() {
         return { top: 0 };
     },
 });
 
-const p = new URLSearchParams(window.location.search).get("p");
-if (p) {
-    history.replaceState(null, "", p);
-}
+// const p = new URLSearchParams(window.location.search).get("p");
+// if (p) {
+//     history.replaceState(null, "", p);
+// }
 
 export default router;

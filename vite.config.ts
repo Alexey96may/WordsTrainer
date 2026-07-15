@@ -19,8 +19,13 @@ export default defineConfig({
         VitePWA({
             registerType: "autoUpdate",
             manifest: manifestData,
+            base: "/WordsTrainer/",
             scope: "/WordsTrainer/",
             includeAssets: ["icon-192.png", "icon-512.png"],
+            workbox: {
+                navigateFallback: "/WordsTrainer/index.html",
+                navigateFallbackDenylist: [/^\/WordsTrainer\/api/],
+            },
         }),
     ],
     base: "/WordsTrainer/",

@@ -12,6 +12,10 @@ const route = useRoute();
 
 useHead(
     computed(() => {
+        const currentPath = route.fullPath;
+        const baseUrl = "https://alexey96may.github.io/WordsTrainer";
+        const fullUrl = `${baseUrl}${currentPath.startsWith("/") ? "" : "/"}${currentPath}`;
+
         const titleKey = (route.meta.title as string) || "meta.home";
 
         let pageTitle = "";
@@ -24,7 +28,10 @@ useHead(
         }
 
         return {
-            htmlAttrs: { lang: locale.value },
+            htmlAttrs: {
+                lang: locale.value,
+                translate: "no",
+            },
             title: pageTitle,
             meta: [
                 { name: "description", content: t("meta.description") },
@@ -33,7 +40,7 @@ useHead(
                 { property: "og:type", content: "website" },
                 {
                     property: "og:url",
-                    content: "https://alexey96may.github.io/WordsTrainer/",
+                    content: fullUrl,
                 },
                 { property: "og:title", content: t("meta.og_title") },
                 {
@@ -43,7 +50,7 @@ useHead(
                 { property: "twitter:card", content: "summary_large_image" },
                 {
                     property: "twitter:url",
-                    content: "https://alexey96may.github.io/WordsTrainer/",
+                    content: fullUrl,
                 },
                 { property: "twitter:title", content: t("meta.og_title") },
                 {
