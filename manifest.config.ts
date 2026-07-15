@@ -5,7 +5,7 @@ export const manifestData = {
     short_name: "αGreek Trainer",
     display: "standalone" as const,
     background_color: "#000000",
-    theme_color: "#ffffff",
+    theme_color: "#000000",
     icons: [
         {
             src: "icon-512.png",
