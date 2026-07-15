@@ -4,11 +4,8 @@
         <meta charset="utf-8" />
         <title>Redirecting...</title>
         <script>
-            var path = window.location.pathname.replace(
-                window.location.origin,
-                "",
-            );
-            window.location.replace("/?p=" + path);
+            var path = window.location.pathname.replace("/WordsTrainer/", "");
+            window.location.replace("/WordsTrainer/?p=/" + path);
         </script>
     </head>
     <body></body>
