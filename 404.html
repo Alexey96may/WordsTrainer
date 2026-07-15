@@ -4,8 +4,8 @@
         <meta charset="utf-8" />
         <title>Redirecting...</title>
         <script>
-            var path = window.location.pathname.replace("/WordsTrainer/", "");
-            window.location.replace("/WordsTrainer/?p=/" + path);
+            sessionStorage.redirect = window.location.href;
+            window.location.replace("/WordsTrainer/");
         </script>
     </head>
     <body></body>
