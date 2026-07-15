@@ -2,7 +2,7 @@ export const manifestData = {
     name: "αGreek Trainer",
     start_url: "/WordsTrainer/",
     scope: "/WordsTrainer/",
-    short_name: "GreekTrainerApp",
+    short_name: "αGreek Trainer",
     display: "standalone" as const,
     background_color: "#ffffff",
     theme_color: "#ffffff",
