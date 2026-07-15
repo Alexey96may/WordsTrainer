@@ -4,7 +4,7 @@ export const manifestData = {
     scope: "/WordsTrainer/",
     short_name: "αGreek Trainer",
     display: "standalone" as const,
-    background_color: "#ffffff",
+    background_color: "#000000",
     theme_color: "#ffffff",
     icons: [
         {
