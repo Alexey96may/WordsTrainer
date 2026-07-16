@@ -157,4 +157,9 @@ export default {
             desc: "Prefixes, suffixes, and word roots.",
         },
     },
+    dailyWord: {
+        title: "Word of the day:",
+        translationLabel: "Translation:",
+        audioHint: "Click on the word to listen",
+    },
 };

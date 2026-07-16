@@ -160,4 +160,9 @@ export default {
             desc: "Estudio de prefijos, sufijos y la lógica de construcción de palabras griegas de la misma raíz.",
         },
     },
+    dailyWord: {
+        title: "Palabra del día:",
+        translationLabel: "Traducción:",
+        audioHint: "Haz clic en la palabra para escuchar",
+    },
 };

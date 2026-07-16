@@ -159,4 +159,9 @@ export default {
             desc: "Étude des préfixes, suffixes et de la logique de construction des mots grecs de même racine.",
         },
     },
+    dailyWord: {
+        title: "Mot du jour :",
+        translationLabel: "Traduction :",
+        audioHint: "Cliquez sur le mot pour écouter",
+    },
 };
