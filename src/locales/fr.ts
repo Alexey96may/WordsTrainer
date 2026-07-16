@@ -107,6 +107,11 @@ export default {
         modal: {
             noInfo: "Aucune information",
         },
+        states: {
+            noGroup: "Sans groupe",
+            gameOver: "Vous avez terminé l'entraînement ! Recommencez.",
+            noQuestions: "Il n'y a plus de questions dans ce mode.",
+        },
     },
     trainers: {
         train_gen_case: {

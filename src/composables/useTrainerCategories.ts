@@ -10,9 +10,12 @@ export function useTrainerCategories(
     hasError: Ref<boolean>,
     userAnswer: Ref<string>,
     flagGameOver: Ref<boolean>,
+
+    sectionArr: Ref<string[]>,
+    checkedKind: Ref<string[]>,
 ) {
-    const sectionArr = ref<string[]>([]);
-    const checkedKind = ref<string[]>(["all"]);
+    // const sectionArr = ref<string[]>([]);
+    // const checkedKind = ref<string[]>(["all"]);
 
     // Calculated property of the number of active categories
     const activeKindsCount = computed<number>(() => {

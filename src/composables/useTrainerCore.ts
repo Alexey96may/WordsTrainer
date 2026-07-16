@@ -1,8 +1,12 @@
 import { ref, computed } from "vue";
 import type { TrainerItem, RawTrainerItem } from "@/types/trainer";
 import { shuffleArray } from "@/utils/trainerHelpers";
+import { saveProgress, getProgress } from "@/utils/db";
+
+import { useI18n } from "vue-i18n";
 
 export function useTrainerCore() {
+    const { t } = useI18n();
     // Gameplay state
     const userAnswer = ref("");
     const hasError = ref(false);
@@ -11,10 +15,17 @@ export function useTrainerCore() {
     const showNotesFlag = ref(false);
     const flagGameOver = ref(false);
 
+    const sectionArr = ref<string[]>([]);
+    const checkedKind = ref<string[]>(["all"]);
+
     // Queues and question pools
     const mainArrAlwaysFull = ref<TrainerItem[]>([]);
     const mainArr = ref<TrainerItem[]>([]);
     const mainArrsinSort = ref<TrainerItem[]>([]);
+
+    const saveTrainerProgress = (slug: string, data: any) => {
+        saveProgress(slug, data);
+    };
 
     // Initialize the trainer from a raw data array
     const initTrainer = (
@@ -28,9 +39,11 @@ export function useTrainerCore() {
         // Normalization and mapping of incoming data
         const normalizedArray: TrainerItem[] = rawArray.map((item) => {
             const base = item.base || item.word;
-            let kind = "Без группы";
+            let kind = t("trainer.states.noGroup");
             if (item.kind && item.kind.trim() !== "") {
-                kind = item.kind[0]!.toUpperCase() + item.kind.slice(1);
+                kind = (
+                    item.kind[0]!.toUpperCase() + item.kind.slice(1)
+                ).toLowerCase();
             }
             kinds.add(kind);
             return { ...item, base, kind };
@@ -72,8 +85,8 @@ export function useTrainerCore() {
     const currentQuestionHtml = computed<string>(() => {
         if (!mainArr.value.length) {
             return flagGameOver.value
-                ? "Вы полностью завершили тренировку! Начните заново."
-                : "В данном режиме больше нет вопросов.";
+                ? t("trainer.states.gameOver")
+                : t("trainer.states.noQuestions");
         }
 
         const currentItem = mainArr.value[0]!;
@@ -86,7 +99,7 @@ export function useTrainerCore() {
     });
 
     // Validation of user response
-    const checkUserAnswer = (): boolean => {
+    const checkUserAnswer = async (slug: string): Promise<boolean> => {
         if (!mainArr.value.length) return false;
 
         const currentItem = mainArr.value[0]!;
@@ -116,6 +129,19 @@ export function useTrainerCore() {
             if (mainArr.value.length === 0) {
                 flagGameOver.value = mainArrsinSort.value.length === 0;
             }
+
+            console.log("Saving to IndexedDB for slug:", slug);
+            try {
+                await saveProgress(slug, {
+                    mainArr: mainArr.value,
+                    mainArrsinSort: mainArrsinSort.value,
+                    checkedKind: checkedKind.value,
+                    sectionArr: sectionArr.value,
+                });
+                console.log("Save successful!");
+            } catch (e) {
+                console.error("Save failed:", e);
+            }
             return true;
         } else {
             hasError.value = true;
@@ -136,5 +162,7 @@ export function useTrainerCore() {
         initTrainer,
         currentQuestionHtml,
         checkUserAnswer,
+        sectionArr,
+        checkedKind,
     };
 }

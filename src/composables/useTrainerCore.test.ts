@@ -1,17 +1,20 @@
 import { describe, it, expect } from "vitest";
 import { ref } from "vue";
 import { useTrainerCore } from "./useTrainerCore";
-import type { RawTrainerItem } from "@/types/trainer";
+import type { TrainerItem } from "@/types/trainer";
 
-const mockRawData: RawTrainerItem[] = [
+// Используем TrainerItem, как того требует новая структура
+const mockData: TrainerItem[] = [
     {
         word: "αγαπώ",
+        base: "αγαπώ",
         kind: "verbs",
         qws: ["Я ... тебя"],
         transls: ["люблю"],
     },
     {
         word: "σκύλος",
+        base: "σκύλος",
         kind: "nouns",
         qws: ["Это мой ..."],
         transls: ["собака"],
@@ -23,15 +26,16 @@ describe("useTrainerCore composable", () => {
         const { initTrainer, mainArr, remainingQuestions } = useTrainerCore();
         const sectionArr = ref<string[]>([]);
 
-        initTrainer(mockRawData, sectionArr);
+        initTrainer(mockData, sectionArr);
 
         expect(mainArr.value).toHaveLength(2);
         expect(remainingQuestions.value).toBe(2);
         expect(sectionArr.value).toContain("all");
-        expect(sectionArr.value).toContain("Verbs");
+        // Проверяем, что категории нормализованы (если ваша логика приводит их к Capitalize)
+        expect(sectionArr.value).toContain("verbs");
     });
 
-    it("should return true for correct answer and clean up the state", () => {
+    it("should return true for correct answer and clean up the state", async () => {
         const {
             initTrainer,
             userAnswer,
@@ -42,11 +46,11 @@ describe("useTrainerCore composable", () => {
         } = useTrainerCore();
         const sectionArr = ref<string[]>([]);
 
-        initTrainer(mockRawData, sectionArr);
+        initTrainer(mockData, sectionArr);
 
+        // Внимание: теперь checkUserAnswer требует slug
         userAnswer.value = mainArr.value[0]!.word;
-
-        const result = checkUserAnswer();
+        const result = await checkUserAnswer("test-slug");
 
         expect(result).toBe(true);
         expect(hasError.value).toBe(false);
@@ -54,7 +58,7 @@ describe("useTrainerCore composable", () => {
         expect(userAnswer.value).toBe("");
     });
 
-    it("should return false for incorrect answer and set error state", () => {
+    it("should return false for incorrect answer and set error state", async () => {
         const {
             initTrainer,
             userAnswer,
@@ -64,10 +68,10 @@ describe("useTrainerCore composable", () => {
         } = useTrainerCore();
         const sectionArr = ref<string[]>([]);
 
-        initTrainer(mockRawData, sectionArr);
+        initTrainer(mockData, sectionArr);
         userAnswer.value = "wrong_answer";
 
-        const result = checkUserAnswer();
+        const result = await checkUserAnswer("test-slug");
 
         expect(result).toBe(false);
         expect(hasError.value).toBe(true);

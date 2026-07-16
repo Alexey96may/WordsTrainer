@@ -108,6 +108,11 @@ export default {
         modal: {
             noInfo: "Нет информации",
         },
+        states: {
+            noGroup: "Без группы",
+            gameOver: "Вы полностью завершили тренировку! Начните заново.",
+            noQuestions: "В данном режиме больше нет вопросов.",
+        },
     },
     trainers: {
         train_gen_case: {

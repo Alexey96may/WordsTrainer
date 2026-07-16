@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, watch } from "vue";
+import { ref, computed, watch, nextTick } from "vue";
 import { useI18n } from "vue-i18n";
 
 import TrainerQuestion from "@/components/trainer/TrainerQuestion.vue";
@@ -13,27 +13,25 @@ import TrainerNotice from "@/components/trainer/TrainerNotice.vue";
 import WordModal from "@/components/trainer/WordModal.vue";
 
 import { shuffleArray } from "@/utils/trainerHelpers";
-import type { LocalTitleItem, RawTrainerItem } from "@/types/trainer";
+import type {
+    LocalTitleItem,
+    RawTrainerItem,
+    TrainerItem,
+} from "@/types/trainer";
 import { useTrainerSound } from "@/composables/useTrainerSound";
 import { useTrainerCore } from "@/composables/useTrainerCore";
 import { useTrainerCategories } from "@/composables/useTrainerCategories";
 
+import { getProgress, saveProgress } from "@/utils/db";
+
 const props = defineProps({
-    slug: {
-        type: String,
-        required: true,
-    },
-    paramGlobal: {
-        type: Array,
-        default: () => [],
-    },
-    theoryContent: {
-        type: String,
-        default: "",
-    },
+    slug: { type: String, required: true },
+    paramGlobal: { type: Array, default: () => [] },
+    theoryContent: { type: String, default: "" },
 });
 
 const { t, locale } = useI18n();
+const isSyncing = ref(false);
 
 // 1. Sound Module
 const {
@@ -46,7 +44,7 @@ const {
     audioHint,
 } = useTrainerSound();
 
-// 2. Core Module (Question and answer state management)
+// 2. Core Module
 const {
     userAnswer,
     hasError,
@@ -60,37 +58,27 @@ const {
     initTrainer,
     currentQuestionHtml,
     checkUserAnswer,
-} = useTrainerCore();
-
-// 3. Categories Module (Passing reactive dependencies from the Core)
-const {
     sectionArr,
     checkedKind,
-    activeKindsCount,
-    isKindAvailable,
-    selectCategory,
-} = useTrainerCategories(
-    mainArr,
-    mainArrsinSort,
-    mainArrAlwaysFull,
-    remainingQuestions,
-    hasError,
-    userAnswer,
-    flagGameOver,
-);
+} = useTrainerCore();
+
+// 3. Categories Module
+const { activeKindsCount, isKindAvailable, selectCategory } =
+    useTrainerCategories(
+        mainArr,
+        mainArrsinSort,
+        mainArrAlwaysFull,
+        remainingQuestions,
+        hasError,
+        userAnswer,
+        flagGameOver,
+        sectionArr,
+        checkedKind,
+    );
 
 const globalArray = ref<RawTrainerItem[]>([]);
 const paramGlobal = ref<string[]>(props.paramGlobal as string[]);
 const titles = ref<LocalTitleItem[]>([]);
-const pageTitle = computed(() => {
-    if (!props.slug) return t("trainer.loading");
-
-    const key = `trainers.${props.slug}.name`;
-    const translated = t(key);
-
-    return translated !== key ? translated : t("trainer.defaultTitle");
-});
-
 const trainerTableComponent = ref<InstanceType<typeof TrainerTable> | null>(
     null,
 );
@@ -98,74 +86,95 @@ const modalCurrentIndex = ref(0);
 const modalTableRows = ref<unknown[]>([]);
 const isModalOpen = ref(false);
 
-const tableDOMElement = computed(() => {
-    return trainerTableComponent.value?.tableContentRef || null;
+const pageTitle = computed(() => {
+    if (!props.slug) return t("trainer.loading");
+    const key = `trainers.${props.slug}.name`;
+    const translated = t(key);
+    return translated !== key ? translated : t("trainer.defaultTitle");
 });
 
-// Dynamic data loading by slug
+const tableDOMElement = computed(
+    () => trainerTableComponent.value?.tableContentRef || null,
+);
+
+const applySavedFilter = () => {
+    if (checkedKind.value.includes("all")) {
+        mainArr.value = [...mainArrsinSort.value];
+    } else {
+        mainArr.value = mainArrsinSort.value.filter((item) =>
+            checkedKind.value.includes(item.kind.toLowerCase()),
+        );
+    }
+    remainingQuestions.value = mainArr.value.length;
+};
+
 const loadTrainerData = async (slug: string) => {
+    isSyncing.value = true;
+
+    mainArr.value = [];
+    mainArrsinSort.value = [];
+    sectionArr.value = [];
+    checkedKind.value = [];
+
+    const currentLang = locale.value || "ru";
+    let module;
     try {
-        const currentLang = locale.value || "ru";
-        let module;
+        module = await import(`../data/trainings/${slug}/${currentLang}.ts`);
+    } catch {
+        module = await import(`../data/trainings/${slug}/ru.ts`);
+    }
 
-        try {
-            module = await import(
-                `../data/trainings/${slug}/${currentLang}.ts`
-            );
-        } catch (e) {
-            console.warn(
-                `File for ${currentLang} not found, trying to load ru...`,
-            );
+    titles.value = module.tableTitlesArr;
+    const rawData = module.globalArray as RawTrainerItem[];
 
-            if (currentLang !== "ru") {
-                module = await import(`../data/trainings/${slug}/ru.ts`);
-            } else {
-                throw new Error("Localization file not found");
-            }
-        }
+    const sanitizedData: TrainerItem[] = rawData.map((item) => ({
+        ...item,
+        base: item.base ?? "",
+        kind: item.kind ?? "general",
+        notice: item.notice ?? "",
+    }));
 
-        globalArray.value = module.globalArray as RawTrainerItem[];
-        titles.value = module.tableTitlesArr as LocalTitleItem[];
+    initTrainer(sanitizedData, sectionArr);
 
+    const saved = await getProgress(slug);
+
+    if (saved) {
+        mainArrsinSort.value = saved.mainArrsinSort;
+        mainArr.value = saved.mainArr;
+        sectionArr.value = saved.sectionArr;
+        checkedKind.value = saved.checkedKind;
+        applySavedFilter();
+        globalArray.value = [...saved.mainArrsinSort];
+    } else {
+        globalArray.value = rawData;
         userAnswer.value = "";
         hasError.value = false;
-        fromHintButton.value = false;
-        showNotesFlag.value = false;
-        flagGameOver.value = false;
         checkedKind.value = ["all"];
-
         initTrainer(globalArray.value, sectionArr);
-    } catch (err) {
-        console.error("Critical data loading error: ", err);
-        globalArray.value = [];
-        titles.value = [];
     }
+
+    await nextTick();
+    isSyncing.value = false;
 };
 
 watch(
     () => props.slug,
     (newSlug) => {
-        if (newSlug) {
-            loadTrainerData(newSlug);
-        }
+        if (newSlug) loadTrainerData(newSlug);
     },
     { immediate: true },
 );
 
-watch(locale, () => {
+watch(locale, async () => {
     if (props.slug) {
-        loadTrainerData(props.slug);
+        await saveProgress(props.slug, null as any);
+        await loadTrainerData(props.slug);
     }
 });
 
-// User actions in the game
-const handleInputSubmit = () => {
-    const isCorrect = checkUserAnswer();
-    if (isCorrect) {
-        playSound(audioGreat);
-    } else {
-        playSound(audioBad);
-    }
+const handleInputSubmit = async () => {
+    if (await checkUserAnswer(props.slug)) playSound(audioGreat);
+    else playSound(audioBad);
 };
 
 const showHint = () => {
@@ -176,36 +185,52 @@ const showHint = () => {
     showNotesFlag.value = true;
 };
 
-const reloadGame = () => {
+const reloadGame = async () => {
     playSound(audioHint);
     flagGameOver.value = false;
     hasError.value = false;
     userAnswer.value = "";
     showNotesFlag.value = false;
+    checkedKind.value = ["all"];
 
-    if (!checkedKind.value.includes("all")) {
-        mainArr.value = mainArrAlwaysFull.value.filter((item) =>
-            checkedKind.value.includes(item.kind.toLowerCase()),
-        );
-        mainArrsinSort.value = [...mainArr.value];
-    } else {
-        mainArr.value = [...mainArrAlwaysFull.value];
-        mainArrsinSort.value = [...mainArrAlwaysFull.value];
-    }
-    mainArr.value = shuffleArray(mainArr.value);
+    mainArr.value = shuffleArray([...mainArrAlwaysFull.value]);
+    mainArrsinSort.value = [...mainArrAlwaysFull.value];
     remainingQuestions.value = mainArr.value.length;
+    globalArray.value = [...mainArrsinSort.value];
+
+    await forceSyncToDB();
 };
 
-const refreshGame = () => {
-    if (mainArr.value.length <= 1) return;
+const refreshGame = async () => {
+    let filtered: TrainerItem[];
+
+    if (checkedKind.value.includes("all")) {
+        filtered = [...mainArrAlwaysFull.value];
+    } else {
+        filtered = mainArrAlwaysFull.value.filter(
+            (item) =>
+                item.kind &&
+                checkedKind.value.includes(item.kind.toLowerCase()),
+        );
+    }
+
+    if (filtered.length <= 1) return;
+
     playSound(audioHint);
     hasError.value = false;
     userAnswer.value = "";
     showNotesFlag.value = false;
 
-    const first = mainArr.value.shift();
-    mainArr.value = shuffleArray(mainArr.value);
-    if (first) mainArr.value.push(first);
+    const shuffled = shuffleArray([...filtered]);
+
+    const first = shuffled.shift();
+    if (first) {
+        shuffled.push(first);
+    }
+
+    mainArr.value = shuffled;
+
+    await forceSyncToDB();
 };
 
 const handleModalOpenRequest = (payload: {
@@ -215,6 +240,29 @@ const handleModalOpenRequest = (payload: {
     modalCurrentIndex.value = payload.flatIndex;
     modalTableRows.value = payload.filteredRows;
     isModalOpen.value = true;
+};
+
+watch(
+    [mainArr, mainArrsinSort, checkedKind],
+    async () => {
+        if (isSyncing.value) return;
+        await saveProgress(props.slug, {
+            mainArr: mainArr.value,
+            mainArrsinSort: mainArrsinSort.value,
+            checkedKind: checkedKind.value,
+            sectionArr: sectionArr.value,
+        });
+    },
+    { deep: true },
+);
+
+const forceSyncToDB = async () => {
+    await saveProgress(props.slug, {
+        mainArr: mainArr.value,
+        mainArrsinSort: mainArrsinSort.value,
+        checkedKind: checkedKind.value,
+        sectionArr: sectionArr.value,
+    });
 };
 </script>
 
@@ -226,13 +274,7 @@ const handleModalOpenRequest = (payload: {
             <hr class="hr_title_page" size="3" />
         </div>
 
-        <div v-if="pageTitle === t('trainer.notFound')" class="text-center">
-            <h2 style="color: #e53131; margin-top: 40px">
-                $t('trainer.notFound')
-            </h2>
-        </div>
-
-        <section v-else>
+        <section v-if="pageTitle !== t('trainer.notFound')">
             <TrainerGameSkeleton v-if="!globalArray.length" />
 
             <div v-else class="content_game content_training">
@@ -244,7 +286,6 @@ const handleModalOpenRequest = (payload: {
                         @refresh="refreshGame"
                         @toggle-sound="toggleSound"
                     />
-
                     <TrainerCategorySelect
                         :section-arr="sectionArr"
                         :checked-kind="checkedKind"
@@ -254,24 +295,22 @@ const handleModalOpenRequest = (payload: {
                         @select-category="selectCategory"
                     />
                 </div>
-
                 <TrainerQuestion
                     :question-html="currentQuestionHtml"
                     :has-error="hasError"
                 />
-
                 <TrainerForm
                     v-model="userAnswer"
                     :has-error="hasError"
                     @submit="handleInputSubmit"
                     @hint="showHint"
                 />
-
                 <TrainerScore :count="remainingQuestions" />
             </div>
 
             <TrainerTable
-                v-if="globalArray.length"
+                v-if="globalArray.length > 0 && titles.length > 0"
+                :key="slug + locale + checkedKind.length + globalArray.length"
                 ref="trainerTableComponent"
                 :titles="titles"
                 :global-array="globalArray"
@@ -289,7 +328,6 @@ const handleModalOpenRequest = (payload: {
             "
             :table-container-ref="tableDOMElement"
         />
-
         <WordModal
             v-model:current-index="modalCurrentIndex"
             :is-open="isModalOpen"
@@ -298,7 +336,6 @@ const handleModalOpenRequest = (payload: {
             :param-global="paramGlobal"
             @close="isModalOpen = false"
         />
-
         <section
             v-if="globalArray.length && theoryContent"
             class="train_content"

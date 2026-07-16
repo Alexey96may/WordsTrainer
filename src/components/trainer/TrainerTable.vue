@@ -104,6 +104,8 @@ const categories = computed(() => {
 
 // 2. Construct the table structure, ensuring row uniqueness based on the `base+kind` rule.
 const groupedTableData = computed(() => {
+    const _forceUpdate = props.checkedKind;
+
     const result: Array<{ kindName: string; rows: any[] }> = [];
     const usedCombinations = new Set<string>();
 

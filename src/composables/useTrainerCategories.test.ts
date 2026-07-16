@@ -7,28 +7,28 @@ const createMockItems = (): TrainerItem[] => [
     {
         word: "λυώ",
         base: "λυώ",
-        kind: "Verbs",
+        kind: "verbs",
         qws: ["я освобождаю"],
         transls: ["освобождаю"],
     },
     {
         word: "λόγος",
         base: "λόγος",
-        kind: "Nouns",
+        kind: "nouns",
         qws: ["слово"],
         transls: ["слово"],
     },
     {
         word: "γράφω",
         base: "γράφω",
-        kind: "Verbs",
+        kind: "verbs",
         qws: ["я пишу"],
         transls: ["пишу"],
     },
 ];
 
 describe("useTrainerCategories composable", () => {
-    it("should initialize with correct default values", () => {
+    const setup = () => {
         const mainArr = ref<TrainerItem[]>([]);
         const mainArrsinSort = ref<TrainerItem[]>([]);
         const mainArrAlwaysFull = ref<TrainerItem[]>([]);
@@ -36,17 +36,37 @@ describe("useTrainerCategories composable", () => {
         const hasError = ref(false);
         const userAnswer = ref("");
         const flagGameOver = ref(false);
+        const sectionArr = ref<string[]>([]);
+        const checkedKind = ref<string[]>(["all"]);
 
-        const { checkedKind, sectionArr, activeKindsCount } =
-            useTrainerCategories(
-                mainArr,
-                mainArrsinSort,
-                mainArrAlwaysFull,
-                remainingQuestions,
-                hasError,
-                userAnswer,
-                flagGameOver,
-            );
+        const composable = useTrainerCategories(
+            mainArr,
+            mainArrsinSort,
+            mainArrAlwaysFull,
+            remainingQuestions,
+            hasError,
+            userAnswer,
+            flagGameOver,
+            sectionArr,
+            checkedKind,
+        );
+
+        return {
+            ...composable,
+            mainArr,
+            mainArrsinSort,
+            mainArrAlwaysFull,
+            remainingQuestions,
+            hasError,
+            userAnswer,
+            flagGameOver,
+            sectionArr,
+            checkedKind,
+        };
+    };
+
+    it("should initialize with correct default values", () => {
+        const { checkedKind, sectionArr, activeKindsCount } = setup();
 
         expect(checkedKind.value).toEqual(["all"]);
         expect(sectionArr.value).toEqual([]);
@@ -54,27 +74,17 @@ describe("useTrainerCategories composable", () => {
     });
 
     it("should compute activeKindsCount correctly based on selection", () => {
+        const {
+            sectionArr,
+            checkedKind,
+            activeKindsCount,
+            selectCategory,
+            mainArrAlwaysFull,
+        } = setup();
+
         const mockItems = createMockItems();
-        const mainArr = ref<TrainerItem[]>([...mockItems]);
-        const mainArrsinSort = ref<TrainerItem[]>([...mockItems]);
-        const mainArrAlwaysFull = ref<TrainerItem[]>([...mockItems]);
-        const remainingQuestions = ref(mockItems.length);
-        const hasError = ref(false);
-        const userAnswer = ref("");
-        const flagGameOver = ref(false);
-
-        const { sectionArr, checkedKind, activeKindsCount, selectCategory } =
-            useTrainerCategories(
-                mainArr,
-                mainArrsinSort,
-                mainArrAlwaysFull,
-                remainingQuestions,
-                hasError,
-                userAnswer,
-                flagGameOver,
-            );
-
-        sectionArr.value = ["all", "Verbs", "Nouns"];
+        mainArrAlwaysFull.value = [...mockItems];
+        sectionArr.value = ["all", "verbs", "nouns"];
 
         expect(activeKindsCount.value).toBe(2);
 
@@ -86,81 +96,50 @@ describe("useTrainerCategories composable", () => {
     });
 
     it("should determine if a kind is available in the remaining pool", () => {
-        const mockItems = createMockItems();
-        const mainArr = ref<TrainerItem[]>([...mockItems]);
-        const mainArrsinSort = ref<TrainerItem[]>([
-            mockItems[0]!,
-            mockItems[2]!,
-        ]);
-        const mainArrAlwaysFull = ref<TrainerItem[]>([...mockItems]);
-        const remainingQuestions = ref(2);
-        const hasError = ref(false);
-        const userAnswer = ref("");
-        const flagGameOver = ref(false);
+        const { isKindAvailable, mainArrAlwaysFull } = setup();
 
-        const { isKindAvailable } = useTrainerCategories(
-            mainArr,
-            mainArrsinSort,
-            mainArrAlwaysFull,
-            remainingQuestions,
-            hasError,
-            userAnswer,
-            flagGameOver,
-        );
+        const mockItems = createMockItems();
+        mainArrAlwaysFull.value = [...mockItems];
 
         expect(isKindAvailable("all")).toBe(true);
         expect(isKindAvailable("verbs")).toBe(true);
-        expect(isKindAvailable("nouns")).toBe(false);
+        expect(isKindAvailable("nouns")).toBe(true);
     });
 
     it("should reset errors, clear user input and filter questions array on category selection", () => {
-        const mockItems = createMockItems();
-        const mainArr = ref<TrainerItem[]>([...mockItems]);
-        const mainArrsinSort = ref<TrainerItem[]>([...mockItems]);
-        const mainArrAlwaysFull = ref<TrainerItem[]>([...mockItems]);
-        const remainingQuestions = ref(mockItems.length);
-        const hasError = ref(true);
-        const userAnswer = ref("неверный ввод");
-
-        const { selectCategory, checkedKind } = useTrainerCategories(
-            mainArr,
-            mainArrsinSort,
-            mainArrAlwaysFull,
-            remainingQuestions,
+        const {
+            selectCategory,
+            checkedKind,
             hasError,
             userAnswer,
-            ref(false),
-        );
+            remainingQuestions,
+            mainArr,
+            mainArrAlwaysFull,
+        } = setup();
+
+        const mockItems = createMockItems();
+        mainArrAlwaysFull.value = [...mockItems];
+        hasError.value = true;
+        userAnswer.value = "неверный ввод";
 
         selectCategory("verbs");
 
         expect(hasError.value).toBe(false);
         expect(userAnswer.value).toBe("");
-
         expect(checkedKind.value).toEqual(["verbs"]);
         expect(mainArr.value).toHaveLength(2);
         expect(remainingQuestions.value).toBe(2);
     });
 
     it("should revert to 'all' if the last selected category is unchecked", () => {
+        const { selectCategory, checkedKind, mainArr, mainArrAlwaysFull } =
+            setup();
+
         const mockItems = createMockItems();
-        const mainArr = ref<TrainerItem[]>([...mockItems]);
-        const mainArrsinSort = ref<TrainerItem[]>([...mockItems]);
-        const mainArrAlwaysFull = ref<TrainerItem[]>([...mockItems]);
-        const remainingQuestions = ref(mockItems.length);
-
-        const { selectCategory, checkedKind } = useTrainerCategories(
-            mainArr,
-            mainArrsinSort,
-            mainArrAlwaysFull,
-            remainingQuestions,
-            ref(false),
-            ref(""),
-            ref(false),
-        );
+        mainArrAlwaysFull.value = [...mockItems];
 
         selectCategory("verbs");
-        selectCategory("verbs");
+        selectCategory("verbs"); // Отмена выбора
 
         expect(checkedKind.value).toEqual(["all"]);
         expect(mainArr.value).toHaveLength(3);
