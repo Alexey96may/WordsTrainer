@@ -54,7 +54,7 @@ export default {
     },
     home: {
         title: "Learning Modern Greek",
-        subtitle: "Our Interactive Trainers",
+        subtitle: "Our Interactive Trainers:",
         startBtn: "Start Training",
     },
     header: {
@@ -159,7 +159,11 @@ export default {
     },
     dailyWord: {
         title: "Word of the day:",
-        translationLabel: "Translation:",
-        audioHint: "Click on the word to listen",
+        translationLabel: "Translation: ",
+        morphology: "Morphology: ",
+        etymology: "Etymology: ",
+        synonims: "Synonyms: ",
+        antonims: "Antonyms: ",
+        audioHint: "Click the word to listen",
     },
 };

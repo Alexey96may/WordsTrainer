@@ -167,7 +167,7 @@ watch(
 
 watch(locale, async () => {
     if (props.slug) {
-        await saveProgress(props.slug, null as any);
+        await saveProgress(props.slug, null);
         await loadTrainerData(props.slug);
     }
 });

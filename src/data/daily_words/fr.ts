@@ -1,0 +1,3508 @@
+import type { DailyWord } from "@/types/wordDay";
+
+export const daylyWordArray: DailyWord[] = [
+    {
+        word: "ψαρεύω",
+        translation: "Pêcher",
+        morfology:
+            '<em>ψαρεύω </em>→ ψάρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -εύω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ψάρι</span> – poisson < du grec médiéval <span style="color:#7a9473">ψάρι</span> – poisson < du grec ancien (<span style="color:#7a9473">ὀψάριον</span> – petit mets délicat < <span style="color:#7a9473">ὄψον</span> – mets délicat).',
+        synonims: "αλιεύω (pêcher), ψαρολογώ (s'adonner à la pêche)",
+        antonims: "",
+        level: "B1",
+        example: "Κάθε Σαββατοκύριακο πάμε στη θάλασσα και ψαρεύουμε.",
+        exampleTransl: "Chaque week-end, nous allons à la mer et pêchons.",
+        voicePath: "",
+    },
+    {
+        word: "έκπληξη",
+        translation: "Surprise",
+        morfology:
+            '<em>έκπληξη </em>→ εκπλή<span style="color: #b87333">σσω</span> +<span style="color: #b87333"> -ξη</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἔκπληξις</span> – étonnement < <span style="color:#7a9473">ἐκπλήσσω</span> – étonner, frapper < <span style="color:#7a9473">ἐκ-</span>, <span style="color:#7a9473">ἐξ-</span> (préfixe d’éloignement : hors de) + <span style="color:#7a9473">πλήσσω</span> – frapper, heurter)',
+        synonims:
+            "απορία (incompréhension), θαυμασμός (admiration), κατάπληξη (stupéfaction)",
+        antonims: "αδιαφορία (indifférence), πλήξη (ennui)",
+        level: "B1",
+        example: "Η είδηση του θριάμβου του προκάλεσε μεγάλη έκπληξη.",
+        exampleTransl:
+            "La nouvelle de son triomphe a provoqué une grande surprise.",
+        voicePath: "",
+    },
+    {
+        word: "δυτικός",
+        translation: "Occidental",
+        morfology:
+            '<em>δυτικός </em>→ δύ<span style="color: #b87333">ση</span> +<span style="color: #b87333"> -τικός</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">δῠτικός</span> < du grec ancien <span style="color:#7a9473">δύω</span>, <span style="color:#7a9473">δύνω</span> – plonger, entrer.',
+        synonims:
+            "δυτικογενής (d’origine occidentale), αποκαλυπτικός (occidental, en référence au coucher) – mais le synonyme plus précis : δυτικότροπος (de type occidental)",
+        antonims: "ανατολικός (oriental), ανατολίτικος (oriental)",
+        level: "A2",
+        example: "Ο δυτικός πολιτισμός έχει επηρεάσει πολλές χώρες.",
+        exampleTransl:
+            "La civilisation occidentale a influencé de nombreux pays.",
+        voicePath: "",
+    },
+    {
+        word: "βοσκή",
+        translation: "Pâturage",
+        morfology:
+            '<em>βοσκή </em>→ βόσκ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ή</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">βοσκή</span> < <span style="color:#7a9473">βόσκω</span> – faire paître)',
+        synonims: "λιβάδι (prairie, pâturage), βοσκότοπος (lieu de pâture)",
+        antonims: "έρημος (désert), ακαλλιέργητη γη (terre inculte)",
+        level: "B1",
+        example: "Τα πρόβατα βόσκησαν σε πλούσια βοσκή κοντά στο ποτάμι.",
+        exampleTransl:
+            "Les moutons ont brouté dans un riche pâturage près de la rivière.",
+        voicePath: "",
+    },
+    {
+        word: "εχθρικός",
+        translation: "Hostile",
+        morfology:
+            '<em>εχθρικός </em>→ εχθρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">ἐχθρικός</span> < du grec ancien <span style="color:#7a9473">ἐχθρός</span> – ennemi, haïssable.',
+        synonims:
+            "πολεμικός (belliqueux), αντιπαθητικός (antipathique), εχθρικός – en soi",
+        antonims:
+            "φιλικός (amical), φιλόξενος (hospitalier), ευνοϊκός (favorable)",
+        level: "B1",
+        example: "Η εχθρική του στάση μας εξέπληξε.",
+        exampleTransl: "Son attitude hostile nous a surpris.",
+        voicePath: "",
+    },
+    {
+        word: "ονειρεύομαι",
+        translation: "Rêver",
+        morfology:
+            '<em>ονειρεύομαι </em>→ όνειρ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -εύω</span> + <span style="color: #b87333">-ομαι</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ὀνειρεύομαι</span> < du grec ancien (<span style="color:#7a9473">ὄνειρος</span> – songe ; fantôme, vision < <span style="color:#7a9473">ὄναρ</span> – songe ; fantôme, vision).',
+        synonims:
+            "φαντάζομαι (imaginer), οραματίζομαι (rêver éveillé), ονειροπολώ (rêver en éveil)",
+        antonims:
+            "πραγματοποιώ (réaliser), ζω στην πραγματικότητα (vivre dans la réalité)",
+        level: "B1",
+        example: "Ονειρεύεται μια καλύτερη ζωή στο εξωτερικό.",
+        exampleTransl: "Il rêve d’une vie meilleure à l’étranger.",
+        voicePath: "",
+    },
+    {
+        word: "διεύθυνση",
+        translation: "Direction, adresse, gestion",
+        morfology:
+            '<em>διεύθυνση </em>→ διευθύν<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">διευθύνω</span> – diriger, gouverner, orienter < du grec ancien (<span style="color:#7a9473">δια-</span> (préfixe signifiant : à travers, en diverses directions, entre, etc.) + <span style="color:#7a9473">εὐθύνω</span> – redresser, appeler à répondre < <span style="color:#7a9473">εὐθύς</span>, <span style="color:#7a9473">ἰθύς</span> – droit, clair, honnête)',
+        synonims:
+            "κατεύθυνση (direction), διεύθυνση (adresse), διοίκηση (gestion) – mais ce sont des sens différents",
+        antonims:
+            "αποπροσανατολισμός (désorientation), ανυπακοή (désobéissance)",
+        level: "B1",
+        example: "Παρακαλώ δώστε μου τη διεύθυνσή σας.",
+        exampleTransl: "Veuillez me donner votre adresse.",
+        voicePath: "",
+    },
+    {
+        word: "νυχτιά",
+        translation: "Temps nocturne",
+        morfology:
+            '<em>νυχτιά </em>→ νύχτ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ιά</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">νυχτιά</span> < <span style="color:#7a9473">νύχτα</span> – nuit < <span style="color:#7a9473">νύκτα</span> – nuit) < du grec ancien <span style="color:#7a9473">νύξ</span> – nuit',
+        synonims: "νύχτα (nuit), βραδιά (soirée, nuit), σκοτάδι (obscurité)",
+        antonims: "μέρα (jour), ημέρα (jour), φως (lumière)",
+        level: "A2",
+        example: "Η νυχτιά έπεσε γρήγορα και τα αστέρια άρχισαν να λάμπουν.",
+        exampleTransl:
+            "La nuit est tombée vite et les étoiles ont commencé à briller.",
+        voicePath: "",
+    },
+    {
+        word: "αθλητισμός",
+        translation: "Sport, athlétisme",
+        morfology:
+            '<em>αθλητισμός </em>→ αθλητ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ισμος</span>',
+        etymology:
+            'Du français <span style="color:#7a9473">athlétisme</span> – athlétisme < du grec ancien (<span style="color:#7a9473">ἀθλητής</span> – athlète, champion < <span style="color:#7a9473">ἀθλέω</span> – lutter, être sportif < <span style="color:#7a9473">ἆθλος</span> – concours, lutte ; ou <span style="color:#7a9473">ἆθλον</strong> – compétition, prix)',
+        synonims:
+            "άθληση (pratique sportive), γυμναστική (gymnastique), σπορ (sport)",
+        antonims: "αδράνεια (inactivité), καθιστική ζωή (vie sédentaire)",
+        level: "B1",
+        example: "Ο αθλητισμός βοηθά στη διατήρηση της υγείας.",
+        exampleTransl: "Le sport aide à maintenir la santé.",
+        voicePath: "",
+    },
+    {
+        word: "μετρικός",
+        translation: "Métrique, de mesure",
+        morfology:
+            '<em>μετρικός </em>→ μετρ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">μετρικός</span> < <span style="color:#7a9473">μέτρον</span> – mesure, dimension)',
+        synonims: "μετρολογικός (métrologique), διαστασιακός (dimensionnel)",
+        antonims: "άμετρος (démesuré), ακαθόριστος (indéfini)",
+        level: "B2",
+        example: "Το μετρικό σύστημα είναι το πιο διαδεδομένο παγκοσμίως.",
+        exampleTransl: "Le système métrique est le plus répandu dans le monde.",
+        voicePath: "",
+    },
+    {
+        word: "αντικρινός",
+        translation: "Opposé, d’en face",
+        morfology:
+            '<em>αντικρινός </em>→ αντίκρ<span style="color: #b87333">υ</span> +<span style="color: #b87333"> -ινός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">αντίκρυ</span> < du grec médiéval <span style="color:#7a9473">ἀντίκρυ</span> < du grec ancien <span style="color:#7a9473">ἀντικρύ</span>.',
+        synonims:
+            "απέναντι (en face), αντίθετος (opposé), αντικριστός (tourné l’un vers l’autre)",
+        antonims: "ίδιος (identique), πανομοιότυπος (identique)",
+        level: "B1",
+        example: "Το σπίτι μου βρίσκεται στο αντικρινό πεζοδρόμιο.",
+        exampleTransl: "Ma maison se trouve sur le trottoir d’en face.",
+        voicePath: "",
+    },
+    {
+        word: "καλλιέργεια",
+        translation: "Culture, cultivation, élevage, pratique assidue",
+        morfology:
+            '<em>καλλιέργεια </em>→ καλλιέργ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -εια</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">καλλιέργεια</span> < du grec koinè (<span style="color:#7a9473">καλλιεργεία</span> < <span style="color:#7a9473">καλλιεργώ</span>, <span style="color:#7a9473">καλλιεργέω</span> – cultiver, labourer) < du grec ancien <span style="color:#7a9473">κάλλος</span> (beau) + <span style="color:#7a9473">ἔργον</span> – œuvre, travail, action.',
+        synonims:
+            "γεωργία (agriculture), καλλιέργεια (au sens d’éducation : ανατροφή, παιδεία)",
+        antonims: "αγρανάπαυση (jachère), εγκατάλειψη (abandon)",
+        level: "B2",
+        example: "Η καλλιέργεια της γης απαιτεί υπομονή και γνώση.",
+        exampleTransl: "La culture de la terre demande patience et savoir.",
+        voicePath: "",
+    },
+    {
+        word: "ελέγχω",
+        translation: "Vérifier, contrôler",
+        morfology:
+            '<em>ελέγχω </em>→ έλεγχ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ω</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐλέγχω</span> – réfuter, examiner, éprouver < <span style="color:#7a9473">ἔλεγχος</span> – honte, réfutation).',
+        synonims:
+            "εξετάζω (examiner, vérifier), διασταυρώνω (recouper), επιθεωρώ (inspecter)",
+        antonims: "παραλείπω (omettre), αγνοώ (ignorer)",
+        level: "B1",
+        example: "Πρέπει να ελέγξουμε τα στοιχεία πριν τα δημοσιεύσουμε.",
+        exampleTransl: "Nous devons vérifier les données avant de les publier.",
+        voicePath: "",
+    },
+    {
+        word: "λουτρός, λουτρό",
+        translation: "Bain",
+        morfology:
+            '<em>λουτρός </em>→ λού<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -ός</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">λουτρόν</span> – bain, <span style="color:#7a9473">λούω</span> – laver, baigner)',
+        synonims:
+            "μπάνιο (bain, baignade), λουτρό (salle de bain), πλύση (lavage)",
+        antonims: "βρωμιά (saleté), λέρα (crassier)",
+        level: "A2",
+        example: "Μετά το τρέξιμο, πήρε ένα ζεστό λουτρό.",
+        exampleTransl: "Après le jogging, il a pris un bain chaud.",
+        voicePath: "",
+    },
+    {
+        word: "εκδοτικός",
+        translation: "Éditorial, d’édition",
+        morfology:
+            '<em>εκδοτικός </em>→ εκδ<span style="color: #b87333">ίδω</span> +<span style="color: #b87333"> -οτικός</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">έκδοσής</span> – reddition < <span style="color:#7a9473">ἐκδίδωμι</span> – se rendre < <span style="color:#7a9473">δίδωμι</span> – donner).',
+        synonims: "εκτυπωτικός (typographique), δημοσιευτικός (de publication)",
+        antonims: "αντιεκδοτικός (anti-éditorial) – rare",
+        level: "B2",
+        example: "Η εκδοτική εταιρεία κυκλοφόρησε ένα νέο βιβλίο.",
+        exampleTransl: "La maison d’édition a publié un nouveau livre.",
+        voicePath: "",
+    },
+    {
+        word: "κοιλαράς",
+        translation: "Ventru, gros ventre",
+        morfology:
+            '<em>κοιλαράς </em>→ κοιλ<span style="color: #b87333">ιά</span> +<span style="color: #b87333"> -άρας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κοιλιά</span> – ventre < du grec médiéval <span style="color:#7a9473">κοιλιά</span> – ventre < du grec ancien <span style="color:#7a9473">κοιλία</span> – cavité < <span style="color:#7a9473">κοῖλος</span> – creux',
+        synonims: "παχύσαρκος (gros), φουσκωτός (ventru)",
+        antonims: "αδύνατος (mince), λεπτός (svelte)",
+        level: "B1",
+        example: "Ο κοιλαράς γείτονας έτρωγε συνέχεια γλυκά.",
+        exampleTransl:
+            "Le voisin ventru mangeait continuellement des sucreries.",
+        voicePath: "",
+    },
+    {
+        word: "διαστημικός",
+        translation: "Spatial, cosmique",
+        morfology:
+            '<em>διαστημικός </em>→ διάστημ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">διάστημα</span> – espace, intervalle < du grec ancien (<span style="color:#7a9473">διάστημα</span> – distance, intervalle < <span style="color:#7a9473">δια-</span> (préfixe signifiant : à travers, en diverses directions, entre, etc.) + <span style="color:#7a9473">ἵστημι</span> – placer, se tenir, établir)',
+        synonims: "αστρικός (stellaire), εξωγήινος (extraterrestre)",
+        antonims: "γήινος (terrestre), επίγειος (terrestre)",
+        level: "B1",
+        example: "Οι διαστημικοί πύραυλοι εξερευνούν το ηλιακό σύστημα.",
+        exampleTransl: "Les fusées spatiales explorent le système solaire.",
+        voicePath: "",
+    },
+    {
+        word: "καλοκύθα",
+        translation: "Grosse citrouille",
+        morfology:
+            '<em>καλοκύθα </em>→ καλοκύθ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -α</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">καλοκύθι</span> – citrouille < du grec ancien <span style="color:#7a9473">καλοκύνθη</span>',
+        synonims:
+            "κολοκύθα (citrouille), πεπόνι (melon) – mais ce n’est pas exact",
+        antonims: "",
+        level: "A2",
+        example: "Η γιαγιά έφτιαξε πίτα με καλοκύθα.",
+        exampleTransl: "La grand-mère a fait une tarte à la grosse citrouille.",
+        voicePath: "",
+    },
+    {
+        word: "ανησυχία",
+        translation: "Inquiétude",
+        morfology:
+            '<em>ανησυχία </em>→ ανησυχ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ανήσυχος</span> – inquiet, agité < du grec ancien (<span style="color:#7a9473">ἀνήσυχος</span> < <span style="color:#7a9473">ἀν-</span> / <span style="color:#7a9473">ἀ-</span> (préfixe d’absence, d’union, de renforcement ou sans effet sur le sens) + <span style="color:#7a9473">ἥσυχος</span> – calme, tranquille.',
+        synonims: "αγωνία (angoisse), άγχος (stress), ταραχή (agitation)",
+        antonims: "ηρεμία (calme), γαλήνη (sérénité), αταραξία (ataraxie)",
+        level: "B1",
+        example: "Η ανησυχία της για το μέλλον ήταν εμφανής.",
+        exampleTransl: "Son inquiétude pour l’avenir était évidente.",
+        voicePath: "",
+    },
+    {
+        word: "κούραση",
+        translation: "Fatigue",
+        morfology:
+            '<em>κούραση </em>→ κουρά<span style="color: #b87333">ζομαι</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">κούραση</span> < <span style="color:#7a9473">κουράζω</span> – fatiguer) < du grec ancien <span style="color:#7a9473">κουρά</span> – coupe de cheveux, tonte.',
+        synonims:
+            "εξάντληση (épuisement), κόπωση (lassitude), κάματος (fatigue)",
+        antonims: "ενέργεια (énergie), ζωντάνια (vivacité), σφρίγος (vigueur)",
+        level: "A2",
+        example: "Μετά τη δουλειά, ένιωθε μεγάλη κούραση.",
+        exampleTransl: "Après le travail, il ressentait une grande fatigue.",
+        voicePath: "",
+    },
+    {
+        word: "κοπιάζω",
+        translation: "Travailler dur, s’efforcer, peiner",
+        morfology:
+            '<em>κοπιάζω </em>→ κόπ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ιάζω</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">κόπος</span> – travail, peine < <span style="color:#7a9473">κόπτω</span> – frapper, battre).',
+        synonims: "εργάζομαι (travailler), μοχθώ (peiner), αγωνίζομαι (lutter)",
+        antonims: "τεμπελιάζω (paresse), αδρανώ (être inactif)",
+        level: "B1",
+        example: "Κοπιάζει κάθε μέρα για να πετύχει τους στόχους του.",
+        exampleTransl:
+            "Il travaille dur chaque jour pour atteindre ses objectifs.",
+        voicePath: "",
+    },
+    {
+        word: "χτεσινός, χθεσινός",
+        translation: "D’hier",
+        morfology:
+            '<em>χτεσινός </em>→ χτες +<span style="color: #b87333"> -ινός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">χτες</span> – hier',
+        synonims: "προηγούμενος (précédent), περασμένος (passé)",
+        antonims: "αυριανός (de demain), σημερινός (d’aujourd’hui)",
+        level: "A2",
+        example: "Το χθεσινό φαγητό ήταν νόστιμο.",
+        exampleTransl: "La nourriture d’hier était délicieuse.",
+        voicePath: "",
+    },
+    {
+        word: "αρχοντολόγι",
+        translation: "Noblesse, riches",
+        morfology:
+            '<em>αρχοντολόγι </em>→ άρχοντ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ολόγι</span>',
+        etymology:
+            'Soit du grec médiéval (<span style="color:#7a9473">ἀρχοντολόγιν</span> – noblesse < <span style="color:#7a9473">ἄρχοντας</span> – seigneur, chef, riche) < du grec ancien <span style="color:#7a9473">ἄρχων</span> – chef, souverain, dirigeant < <span style="color:#7a9473">ἄρχω</span> – commencer, conduire, gouverner) ; <br>Soit du grec moderne <span style="color:#7a9473">ἀρχοντολόγιο</span> – livre ou liste des noms de la noblesse d’une région < du katharévousa <span style="color:#7a9473">ἀρχοντολόγιον</span> < du grec médiéval <span style="color:#7a9473">ἀρχοντολόγιν</span> – noblesse < du grec ancien (<span style="color:#7a9473">ἄρχοντας</span> – seigneur, chef, riche < <span style="color:#7a9473">ἄρχων</span> – chef, souverain, dirigeant < <span style="color:#7a9473">ἄρχω</span> – commencer, conduire, gouverner) ;',
+        synonims:
+            "αριστοκρατία (aristocratie), ευγενείς (nobles), πλούσιοι (riches)",
+        antonims: "φτωχοί (pauvres), λαός (peuple), προλεταριάτο (prolétariat)",
+        level: "C1",
+        example: "Το αρχοντολόγι της πόλης συγκεντρώθηκε στο αρχοντικό.",
+        exampleTransl: "La noblesse de la ville s’est rassemblée au manoir.",
+        voicePath: "",
+    },
+    {
+        word: "λάμψη",
+        translation: "Éclat, lueur, brillance",
+        morfology:
+            '<em>λάμψη </em>→ λαμ<span style="color: #b87333">πώ</span> +<span style="color: #b87333"> -ψη</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">λάμψις</span> < du grec ancien <span style="color:#7a9473">λάμπω</span> – briller, luire.',
+        synonims:
+            "αίγλη (éclat), λάμψη, λαμπρότητα (brillant), φωτεινότητα (luminosité)",
+        antonims:
+            "σκοτεινιά (obscurité), αμυδρότητα (faiblesse), θολότητα (trouble)",
+        level: "B1",
+        example: "Η λάμψη των αστεριών φώτιζε το βραδινό ουρανό.",
+        exampleTransl: "L’éclat des étoiles illuminait le ciel nocturne.",
+        voicePath: "",
+    },
+    {
+        word: "παρακατιανός",
+        translation: "Inférieur, de moindre qualité, médiocre",
+        morfology:
+            '<em>παρακατιανός </em>→ παρακάτ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ιανός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">παρακάτω</span> – en dessous, plus bas, ensuite < du grec ancien (<span style="color:#7a9473">κάτω</span> – en bas, vers le bas < <span style="color:#7a9473">κάτα</span> – vers, auprès de ; contre)',
+        synonims:
+            "κατώτερος (inférieur), χειρότερος (pire), δευτεροκλασάτος (de second ordre)",
+        antonims:
+            "ανώτερος (supérieur), καλύτερος (meilleur), πρώτης τάξης (de première classe)",
+        level: "B2",
+        example:
+            "Αυτή η εργασία είναι παρακατιανή σε σχέση με την προηγούμενη.",
+        exampleTransl: "Ce travail est médiocre par rapport au précédent.",
+        voicePath: "",
+    },
+    {
+        word: "απάντηση",
+        translation: "Réponse",
+        morfology:
+            '<em>απάντηση </em>→ απαντ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀπάντησης</span> – répondre < <span style="color:#7a9473">ἀπαντάω</span> < <span style="color:#7a9473">ἀπό-</span> (indique l’éloignement : de, depuis ; le point de départ : depuis, après ; la cause : de, à cause de) + <span style="color:#7a9473">ἀντάω</span> – rencontrer, heurter < <span style="color:#7a9473">ἀντη</span> – au lieu de, hormis, en comparaison de)',
+        synonims:
+            "απόκριση (réaction), ανταπόκριση (réponse, correspondance), λύση (solution)",
+        antonims:
+            "ερώτηση (question), ερώτημα (question), απορία (incompréhension)",
+        level: "A2",
+        example: "Περίμενα την απάντησή του για ώρες.",
+        exampleTransl: "J’ai attendu sa réponse pendant des heures.",
+        voicePath: "",
+    },
+    {
+        word: "σκουριάζω",
+        translation: "Rouiller",
+        morfology:
+            '<em>σκουριάζω </em>→ σκουρ<span style="color: #b87333">ιά</span> +<span style="color: #b87333"> -ιάζω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σκουριά</span> < du grec ancien (<span style="color:#7a9473">σκωρία</span> – rouille < <span style="color:#7a9473">σκῶρ</span> – ordure, excréments).',
+        synonims: "οξειδώνομαι (s’oxyder), φθείρομαι (se détériorer)",
+        antonims: "συντηρούμαι (se conserver), προστατεύομαι (être protégé)",
+        level: "B1",
+        example: "Τα παλιά σίδερα σκουριάζουν εύκολα στην υγρασία.",
+        exampleTransl: "Les vieux fers rouillent facilement à l’humidité.",
+        voicePath: "",
+    },
+    {
+        word: "αγανάκτηση",
+        translation: "Indignation",
+        morfology:
+            '<em>αγανάκτηση </em>→ αγανακτ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀγανάκτησις</span> – dépit, irritation < <span style="color:#7a9473">ἀγανακτέω</span> – irriter, énerver < <span style="color:#7a9473">ἄγαν</span> (beaucoup) + <span style="color:#7a9473">κτείνω</span> – tuer)',
+        synonims:
+            "οργή (colère), αγανάκτηση, δυσαρέσκεια (mécontentement), έξαψη (excitation)",
+        antonims:
+            "ηρεμία (calme), ικανοποίηση (satisfaction), ευχαρίστηση (plaisir)",
+        level: "B2",
+        example: "Η αγανάκτησή του για την αδικία ήταν φανερή.",
+        exampleTransl: "Son indignation face à l’injustice était évidente.",
+        voicePath: "",
+    },
+    {
+        word: "αγριάδα",
+        translation: "Sauvagerie, rusticité",
+        morfology:
+            '<em>αγριάδα </em>→ άγρ<span style="color: #b87333">ιος</span> +<span style="color: #b87333"> -άδα</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">άγριος</span> – sauvage < du grec ancien (<span style="color:#7a9473">ἄγριος</span> – sauvage < <span style="color:#7a9473">ἀγρός</span> – champ, campagne)',
+        synonims:
+            "αγριότητα (cruauté), βαρβαρότητα (barbarie), απομόνωση (isolement, au sens de sauvagerie)",
+        antonims:
+            "ημερότητα (douceur, apprivoisement), πολιτισμός (civilisation)",
+        level: "B1",
+        example: "Η αγριάδα του τοπίου μας εντυπωσίασε.",
+        exampleTransl: "La sauvagerie du paysage nous a impressionnés.",
+        voicePath: "",
+    },
+    {
+        word: "εξαγωγή",
+        translation: "Exportation",
+        morfology:
+            '<em>εξαγωγή </em>→ εξάγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -γή</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐξᾰγωγή</span> < <span style="color:#7a9473">ἀγωγή</span> – conduite, mouvement < <span style="color:#7a9473">εξ-</span> (hors de) + <span style="color:#7a9473">ἄγω</span> – mener, conduire)',
+        synonims: "εξαγωγή, αποστολή (envoi), προώθηση (promotion)",
+        antonims: "εισαγωγή (importation), εισαγωγή (importation)",
+        level: "B1",
+        example: "Η χώρα αυξάνει τις εξαγωγές της προς την Ευρώπη.",
+        exampleTransl: "Le pays augmente ses exportations vers l’Europe.",
+        voicePath: "",
+    },
+    {
+        word: "ποτήρι",
+        translation: "Verre (récipient)",
+        morfology:
+            '<em>ποτήρι </em>→ πο<span style="color: #b87333">τίζω</span> +<span style="color: #b87333"> -τήρι</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ποτήρ</span>, <span style="color:#7a9473">ποτήριον</span> < du grec ancien (<span style="color:#7a9473">ποτήριον</span> – petit verre < <span style="color:#7a9473">ποτήρ</span> – verre < <span style="color:#7a9473">πίνω</span> – boire)',
+        synonims: "γυαλί (verre en verre), κύπελλο (coupe), ποτήρι (verre)",
+        antonims: "μπουκάλι (bouteille), κανάτα (cruche)",
+        level: "A1",
+        example: "Βάλε νερό σε ένα ποτήρι, παρακαλώ.",
+        exampleTransl: "Mets de l’eau dans un verre, s’il te plaît.",
+        voicePath: "",
+    },
+    {
+        word: "εμβολιάζω",
+        translation: "Vacciner",
+        morfology:
+            '<em>εμβολιάζω </em>→ εμβόλι<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -άζω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">εμβόλιο</span> – vaccin (calque du grec <span style="color:#7a9473">μπολιάζω</span> – greffer).',
+        synonims:
+            "ενοφθαλμίζω (greffer – pour les plantes), εμβολιάζω (vacciner)",
+        antonims: "αποφεύγω (éviter la vaccination)",
+        level: "B1",
+        example: "Ο γιατρός εμβολίασε όλα τα παιδιά κατά της γρίπης.",
+        exampleTransl:
+            "Le médecin a vacciné tous les enfants contre la grippe.",
+        voicePath: "",
+    },
+    {
+        word: "παίδαρας",
+        translation: "Grand enfant",
+        morfology:
+            '<em>παίδαρας </em>→ παιδ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άρας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">παιδί</span> – enfant < du grec médiéval <span style="color:#7a9473">παιδίν</span> < du grec ancien (<span style="color:#7a9473">παιδίον</span> – petit enfant < <span style="color:#7a9473">παῖς</span> – enfant)',
+        synonims: "μεγάλο παιδί (grand enfant), ανώριμος (immature)",
+        antonims: "ενήλικας (adulte), ώριμος (mûr)",
+        level: "B1",
+        example: "Αν και τριάντα χρονών, είναι ένας παίδαρας.",
+        exampleTransl: "Bien qu’il ait trente ans, c’est un grand enfant.",
+        voicePath: "",
+    },
+    {
+        word: "ανάκριση",
+        translation: "Interrogatoire, recherche obstinée de la vérité",
+        morfology:
+            '<em>ανάκριση </em>→ ανακρί<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀνάκρισις</span> – enquête ; examen ; débat < <span style="color:#7a9473">ἀνακρίνω</span> – interroger, questionner < <span style="color:#7a9473">ἀνα-</span> (vers le haut, en arrière, de nouveau ; exprime la répétition, l’intensité) + <span style="color:#7a9473">κρίνω</span> – séparer, décider, condamner)',
+        synonims:
+            "εξέταση (interrogatoire, expertise), ανάκριση, ανάκριση (instruction)",
+        antonims: "αθώωση (acquittement), απαλλαγή (libération)",
+        level: "B2",
+        example: "Η αστυνομία διεξήγαγε ανάκριση των μαρτύρων.",
+        exampleTransl: "La police a procédé à l’interrogatoire des témoins.",
+        voicePath: "",
+    },
+    {
+        word: "εκδότης",
+        translation: "Éditeur",
+        morfology:
+            '<em>εκδότης </em>→ εκδ<span style="color: #b87333">ίδω</span> +<span style="color: #b87333"> -ότης</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">εκδίδω</span> – publier, éditer.',
+        synonims:
+            "δημοσιογράφος (journaliste, mais pas tout à fait), τυπογράφος (imprimeur), εκδότης",
+        antonims: "αναγνώστης (lecteur), συγγραφέας (écrivain – plutôt auteur)",
+        level: "B1",
+        example: "Ο εκδότης υπέγραψε συμβόλαιο με τον συγγραφέα.",
+        exampleTransl: "L’éditeur a signé un contrat avec l’auteur.",
+        voicePath: "",
+    },
+    {
+        word: "κερασιά",
+        translation: "Cerisier (arbre)",
+        morfology:
+            '<em>κερασιά </em>→ κεράσ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιά</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κεράσι</span> – cerise < du grec ancien <span style="color:#7a9473">κεράσιον</span> – cerise, cerisier < <span style="color:#7a9473">κερασός</span> – merisier)',
+        synonims: "φρουτόδεντρο (arbre fruitier)",
+        antonims: "",
+        level: "A2",
+        example: "Η κερασιά στον κήπο μας φέτος έδωσε πολλά φρούτα.",
+        exampleTransl:
+            "Le cerisier de notre jardin a donné beaucoup de fruits cette année.",
+        voicePath: "",
+    },
+    {
+        word: "εξαγωγέας",
+        translation: "Exportateur",
+        morfology:
+            '<em>εξαγωγέας </em>→ εξάγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ωγέας</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐξάγω</span> – exporter, faire sortir < <span style="color:#7a9473">εξ-</span> (hors de) + <span style="color:#7a9473">ἄγω</span> – conduire)',
+        synonims: "εξαγωγέας, έμπορος (commerçant), προμηθευτής (fournisseur)",
+        antonims: "εισαγωγέας (importateur), αγοραστής (acheteur)",
+        level: "B1",
+        example: "Η εταιρεία είναι μεγάλος εξαγωγέας ελαιολάδου.",
+        exampleTransl: "L’entreprise est un grand exportateur d’huile d’olive.",
+        voicePath: "",
+    },
+    {
+        word: "παλικαριά",
+        translation: "Courage, bravoure, hardiesse",
+        morfology:
+            '<em>παλικαριά </em>→ παλικάρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιά</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">παλικάρι, παλληκάρι</span> – brave garçon, jeune homme < du grec koinè <span style="color:#7a9473">παλικάριν</span> < du grec ancien (<span style="color:#7a9473">πάλλαξ</span> – jeune garçon, enfant < <span style="color:#7a9473">παλικάριν</span> – concubine)',
+        synonims: "ανδρεία (courage), τόλμη (audace), παλικαριά (hardiesse)",
+        antonims: "δειλία (lâcheté), φόβος (peur), ανασφάλεια (insécurité)",
+        level: "B2",
+        example: "Η παλικαριά του τον έκανε να ρισκάρει τη ζωή του.",
+        exampleTransl: "Sa bravoure l’a poussé à risquer sa vie.",
+        voicePath: "",
+    },
+    {
+        word: "παίχτης",
+        translation: "Joueur, interprète",
+        morfology:
+            '<em>παίχτης </em>→ παίζω, παίχ<span style="color: #b87333">τηκα</span> +<span style="color: #b87333"> -της</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">παίκτης</span> < du grec ancien (<span style="color:#7a9473">παίκτης</span> < <span style="color:#7a9473">παίζω</span> – jouer < <span style="color:#7a9473">παῖς</span> – enfant)',
+        synonims:
+            "παίκτης (joueur), αθλητής (sportif), μουσικός (musicien, interprète)",
+        antonims: "θεατής (spectateur), ακροατής (auditeur)",
+        level: "B1",
+        example: "Είναι ένας ταλαντούχος παίχτης πιάνου.",
+        exampleTransl: "C’est un pianiste (interprète) talentueux.",
+        voicePath: "",
+    },
+    {
+        word: "τραυματισμός",
+        translation: "Blessure, lésion",
+        morfology:
+            '<em>τραυματισμός </em>→ τραυματίζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">τραυματίζω</span> – blesser < <span style="color:#7a9473">τραῦμα, τρῶμᾰ</span> – blessure < <span style="color:#7a9473">τιτρώσκω</span> – endommager)',
+        synonims: "πληγή (plaie), κάκωση (traumatisme), βλάβη (dommage)",
+        antonims: "ίαση (guérison), αποκατάσταση (réhabilitation)",
+        level: "B1",
+        example: "Ο τραυματισμός του τον ανάγκασε να σταματήσει τον αθλητισμό.",
+        exampleTransl: "Sa blessure l’a obligé à arrêter le sport.",
+        voicePath: "",
+    },
+    {
+        word: "αυριανός",
+        translation: "De demain",
+        morfology:
+            '<em>αυριανός </em>→ αύρ<span style="color: #b87333">ιο</span> +<span style="color: #b87333"> -ιανός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">αύριο</span> – demain < du grec médiéval <span style="color:#7a9473">αὔριο</span> < du grec ancien <span style="color:#7a9473">αὔριον</span>',
+        synonims: "μελλοντικός (futur), επερχόμενος (prochain)",
+        antonims: "χτεσινός (d’hier), προηγούμενος (précédent)",
+        level: "A2",
+        example: "Η αυριανή συνάντηση θα γίνει στις 10 το πρωί.",
+        exampleTransl: "La réunion de demain aura lieu à 10 heures du matin.",
+        voicePath: "",
+    },
+    {
+        word: "σκύλαρας",
+        translation: "Gros chien (mâle)",
+        morfology:
+            '<em>σκύλαρας </em>→ σκυλ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άρας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σκυλί</span>, <span style="color:#7a9473">σκύλος</span> – chien < du grec médiéval <span style="color:#7a9473">σκυλίον</span> – petit chien < du grec ancien <span style="color:#7a9473">σκύλος</span> – chien.',
+        synonims: "μεγάλος σκύλος (grand chien), μαστίφ (mastiff)",
+        antonims: "κουτάβι (chiot), μικρόσωμος σκύλος (petit chien)",
+        level: "B1",
+        example: "Ο σκύλαρας του γείτονα φοβίζει τα παιδιά.",
+        exampleTransl: "Le gros chien du voisin effraie les enfants.",
+        voicePath: "",
+    },
+    {
+        word: "ανταγωνισμός",
+        translation: "Concurrence, compétition",
+        morfology:
+            '<em>ανταγωνισμός </em>→ ανταγωνίζ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">ἀνταγωνίζομαι</span> – rivaliser < <span style="color:#7a9473">ἀγωνίζομαι</span> – concourir < <span style="color:#7a9473">ἀγών</span> – assemblée < <span style="color:#7a9473">ἄγω</span> – mener.',
+        synonims:
+            "συναγωνισμός (compétition), άμιλλα (rivalité), αντιπαλότητα (antagonisme)",
+        antonims:
+            "συνεργασία (coopération), αρμονία (harmonie), συναίνεση (consensus)",
+        level: "B2",
+        example: "Ο ανταγωνισμός μεταξύ των εταιρειών είναι έντονος.",
+        exampleTransl: "La concurrence entre les entreprises est intense.",
+        voicePath: "",
+    },
+    {
+        word: "παραβίαση, παράβαση",
+        translation: "Violation, infraction",
+        morfology:
+            '<em>παραβίαση, παράβαση </em>→ <span style="color: #b87333">παρα-</span> + βιά<span style="color: #b87333">ζω</span> + <span style="color: #b87333">-ση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">παραβιάζω</span> < <span style="color:#7a9473">βιάζω</span> – forcer, contraindre < <span style="color:#7a9473">βία</span> – force, violence).',
+        synonims:
+            "παράπτωμα (faute), αδίκημα (délit), παράνομη ενέργεια (acte illégal)",
+        antonims:
+            "τήρηση (respect), συμμόρφωση (conformité), νομιμότητα (légalité)",
+        level: "B2",
+        example: "Η παραβίαση των κανόνων οδηγεί σε ποινές.",
+        exampleTransl: "La violation des règles entraîne des sanctions.",
+        voicePath: "",
+    },
+    {
+        word: "φωνάρα",
+        translation: "Cri, hurlement",
+        morfology:
+            '<em>φωνάρα </em>→ φων<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -άρα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">φωνή</span> – son, voix < du grec ancien <span style="color:#7a9473">φωνή</span>',
+        synonims: "κραυγή (cri), βοή (bruit), ουρλιαχτό (hurlement)",
+        antonims: "ψίθυρος (chuchotement), σιγή (silence)",
+        level: "B1",
+        example: "Η φωνάρα του τον πρόδωσε στον κρυφτό.",
+        exampleTransl: "Son cri l’a trahi pendant la cache-cache.",
+        voicePath: "",
+    },
+    {
+        word: "προδοσία",
+        translation: "Trahison",
+        morfology:
+            '<em>προδοσία </em>→ προδο<span style="color: #b87333">τικός</span> +<span style="color: #b87333"> -σία</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">προδοσία</span> < <span style="color:#7a9473">προδοτικός</span> – traître)',
+        synonims:
+            "προδοσία, εξαπάτηση (tromperie), απιστία (infidélité), προδοτική πράξη (acte de trahison)",
+        antonims: "αφοσίωση (loyauté), πίστη (fidélité), πιστότητα (fidélité)",
+        level: "B2",
+        example: "Η προδοσία του φίλου του τον πλήγωσε βαθιά.",
+        exampleTransl: "La trahison de son ami l’a profondément blessé.",
+        voicePath: "",
+    },
+    {
+        word: "έγκριση",
+        translation: "Approbation, agrément",
+        morfology:
+            '<em>έγκριση </em>→ εγκρί<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec koinè (<span style="color:#7a9473">ἔγκρισις</span> < <span style="color:#7a9473">ἐγκρίνω</span> – approuver) < du grec ancien <span style="color:#7a9473">ἐγ-</span> (<span style="color:#7a9473">ἐν-</span> / <span style="color:#7a9473">ἐμ-</span>) (dans, à l’intérieur) + <span style="color:#7a9473">κρίνω</span> – séparer, décider, condamner.',
+        synonims:
+            "επικύρωση (ratification), αποδοχή (acceptation), συγκατάθεση (consentement)",
+        antonims:
+            "απόρριψη (rejet), αποδοκιμασία (désapprobation), κατάρριψη (réfutation)",
+        level: "B2",
+        example: "Η έγκριση του σχεδίου ήρθε καθυστερημένα.",
+        exampleTransl: "L’approbation du plan est arrivée tardivement.",
+        voicePath: "",
+    },
+    {
+        word: "λυτρωτής",
+        translation: "Rédempteur, libérateur",
+        morfology:
+            '<em>λυτρωτής </em>→ λυτρ<span style="color: #b87333">ώνω</span> +<span style="color: #b87333"> -ωτης</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">λυτρωτής</span> < du grec ancien <span style="color:#7a9473">λυτρόω</span> – libérer, racheter < <span style="color:#7a9473">λύτρον</span> – rançon, rédemption < <span style="color:#7a9473">λύω</span> – délier, relâcher + <span style="color:#7a9473">-τρον</span> (suffixe nominal instrumental).',
+        synonims:
+            "σωτήρας (sauveur), ελευθερωτής (libérateur), σωτήρ (sauveur – archaïque)",
+        antonims:
+            "δεσπότης (despote), κατακτητής (conquérant), τύραννος (tyran)",
+        level: "C1",
+        example: "Ο Χριστός θεωρείται λυτρωτής των ανθρώπων.",
+        exampleTransl:
+            "Le Christ est considéré comme le rédempteur des hommes.",
+        voicePath: "",
+    },
+    {
+        word: "σύλληψη",
+        translation: "Arrestation",
+        morfology:
+            '<em>σύλληψη </em>→ συλλ<span style="color: #b87333">αμβάνω</span> +<span style="color: #b87333"> -ηψη</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">σύλληψις</span> < <span style="color:#7a9473">συλλαμβάνω</span> – arrêter, rassembler, prendre < <span style="color:#7a9473">συλ-</span>, <span style="color:#7a9473">συν-</span> (marque la participation, la simultanéité) + <span style="color:#7a9473">λαμβάνω</span> – obtenir, recevoir, prendre)',
+        synonims: "σύλληψη, κράτηση (détention), φυλάκιση (emprisonnement)",
+        antonims: "αποφυλάκιση (libération), ελευθερία (liberté)",
+        level: "B1",
+        example: "Η αστυνομία προχώρησε στη σύλληψη του δράστη.",
+        exampleTransl: "La police a procédé à l’arrestation du coupable.",
+        voicePath: "",
+    },
+    {
+        word: "απομόνωση",
+        translation: "Isolement",
+        morfology:
+            '<em>απομόνωση </em>→ απομονώ<span style="color: #b87333">νομαι</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">απομονώνω</span> – isoler, exclure < du grec ancien <span style="color:#7a9473">ἀπομονόομαι</span> – être isolé < <span style="color:#7a9473">ἀπό-</span> (indique l’éloignement : de, depuis ; la cause : de, à cause de) + <span style="color:#7a9473">μονόω</span> – isoler < <span style="color:#7a9473">μόνος</span> – seul)',
+        synonims:
+            "απομόνωση, μοναξιά (solitude), απομάκρυνση (éloignement), ηρεμία (paix)",
+        antonims:
+            "συναναστροφή (fréquentation), συντροφιά (compagnie), κοινωνικοποίηση (socialisation)",
+        level: "B2",
+        example: "Η απομόνωση στη φύση βοηθά στην εσωτερική ηρεμία.",
+        exampleTransl: "L’isolement dans la nature aide à la paix intérieure.",
+        voicePath: "",
+    },
+    {
+        word: "δέσιμο",
+        translation: "Lien, attache, pansement",
+        morfology:
+            '<em>δέσιμο </em>→ δέ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -σιμο</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">δένω</span> – lier, attacher < du grec ancien <span style="color:#7a9473">δέω</span>, <span style="color:#7a9473">δένω</span> – lier, attacher.',
+        synonims:
+            "σύνδεση (connexion), πρόσδεση (amarrage), επιδέσμωση (pansement)",
+        antonims:
+            "λύσιμο (déliaison), αποδέσμευση (libération), ξεδιάλυμα (démêlage)",
+        level: "B1",
+        example: "Το δέσιμο των κορδονιών είναι απλή διαδικασία.",
+        exampleTransl: "Le laçage des lacets est une procédure simple.",
+        voicePath: "",
+    },
+    {
+        word: "αφρίζω",
+        translation: "Écumer, mousser",
+        morfology:
+            '<em>αφρίζω </em>→ αφρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">ἀφρίζω</span> – écumer < <span style="color:#7a9473">ἀφρός</span> – écume.',
+        synonims: "αφρίζω, αφρόνω (mousser), βγάζω αφρό (produire de l’écume)",
+        antonims: "κατακάθω (se déposer), ηρεμώ (s’apaiser)",
+        level: "B1",
+        example: "Η μπύρα αφρίζει όταν την αδειάζεις στο ποτήρι.",
+        exampleTransl: "La bière mousse quand on la verse dans le verre.",
+        voicePath: "",
+    },
+    {
+        word: "δέμα",
+        translation: "Colis, paquet, faisceau, bande",
+        morfology:
+            '<em>δέμα </em>→ δέ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -μα</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">δέμα</span> < du grec ancien <span style="color:#7a9473">δέω</span>, <span style="color:#7a9473">δένω</span> – lier, attacher.',
+        synonims: "πακέτο (paquet), δέσμη (liasse), τσουβάλι (sac)",
+        antonims: "ανοιχτό (ouvert), ξεπακετάρισμα (déballage)",
+        level: "B1",
+        example: "Παρέλαβα ένα δέμα από το ταχυδρομείο.",
+        exampleTransl: "J’ai reçu un colis de la poste.",
+        voicePath: "",
+    },
+    {
+        word: "ξυπνητός",
+        translation: "Éveillé, éveillé d’esprit, intelligent",
+        morfology:
+            '<em>ξυπνητός </em>→ ξυπν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητός</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">ξυπνώ</span> – réveiller, se réveiller) < du grec médiéval (<span style="color:#7a9473">ξυπνῶ</span> < <span style="color:#7a9473">ἔξυπνος</span> – éveillé) < du grec ancien <span style="color:#7a9473">ὕπνος</span> – sommeil',
+        synonims:
+            "έξυπνος (intelligent), ευφυής (astucieux), ζωηρός (vif, alerte)",
+        antonims:
+            "κοιμισμένος (endormi), ανόητος (stupide), νωθρός (paresseux)",
+        level: "B1",
+        example: "Είναι ένα ξυπνητό παιδί που μαθαίνει γρήγορα.",
+        exampleTransl: "C’est un enfant éveillé qui apprend vite.",
+        voicePath: "",
+    },
+    {
+        word: "φορτώνω",
+        translation: "Charger",
+        morfology:
+            '<em>φορτώνω </em>→ φορτ<span style="color: #b87333">ίο</span> +<span style="color: #b87333"> -ώνω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">φορτώνω</span> < du grec ancien (<span style="color:#7a9473">φόρτος</span> – charge, fardeau < <span style="color:#7a9473">φέρω</span> – porter).',
+        synonims: "γεμίζω (remplir), φορτώνω, επιβαρύνω (surcharger)",
+        antonims: "ξεφορτώνω (décharger), αδειάζω (vider)",
+        level: "A2",
+        example: "Οι εργάτες φορτώνουν τα εμπορεύματα στο φορτηγό.",
+        exampleTransl: "Les ouvriers chargent les marchandises dans le camion.",
+        voicePath: "",
+    },
+    {
+        word: "κλωστίτσα",
+        translation: "Petit fil",
+        morfology:
+            '<em>κλωστίτσα </em>→ κλωστ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ίτσα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κλωστή</span> – fil < du grec médiéval <span style="color:#7a9473">κλωστή</span> < du grec ancien (<span style="color:#7a9473">κλώθω</span> – filer < du grec ancien <span style="color:#7a9473">κάλαθος</span> – corbeille, panier tressé)',
+        synonims: "κλωστή (fil), σπάγγος (ficelle), νήμα (fil)",
+        antonims: "σχοινί (corde), παχύ σκοινί (grosse corde)",
+        level: "A2",
+        example: "Η κλωστίτσα έσπασε όταν τραβήχτηκε πολύ.",
+        exampleTransl: "Le petit fil s’est rompu quand on l’a trop tiré.",
+        voicePath: "",
+    },
+    {
+        word: "αναχώρηση",
+        translation: "Départ (de train, etc.)",
+        morfology:
+            '<em>αναχώρηση </em>→ αναχ<span style="color: #b87333">ωρώ</span> +<span style="color: #b87333"> -ηση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀναχώρησις</span> – retrait, départ < <span style="color:#7a9473">ἀναχωρέω</span> – se retirer, revenir < <span style="color:#7a9473">ἀνα-</span> (vers le haut, en arrière, de nouveau) + <span style="color:#7a9473">χωρέω</span> – aller, faire de la place < <span style="color:#7a9473">χῶρος</span> – lieu, région)',
+        synonims: "αναχώρηση, φυγή (fuite), αποχώρηση (retrait)",
+        antonims:
+            "άφιξη (arrivée), κατάφθαση (arrivée), προσεγγιστεί (approche)",
+        level: "B1",
+        example: "Η αναχώρηση του τρένου είναι στις 8 το πρωί.",
+        exampleTransl: "Le départ du train est à 8 heures du matin.",
+        voicePath: "",
+    },
+    {
+        word: "χαμός",
+        translation: "Perte, disparition",
+        morfology:
+            '<em>χαμός </em>→ χάν<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">χαμός</span> < <span style="color:#7a9473">χάνω</span> – perdre).',
+        synonims: "απώλεια (perte), θάνατος (mort), καταστροφή (catastrophe)",
+        antonims: "σώσιμο (sauvetage), εύρεση (découverte), ζωή (vie)",
+        level: "B1",
+        example: "Ο χαμός της πολιτιστικής κληρονομιάς είναι ανεπανόρθωτος.",
+        exampleTransl: "La perte du patrimoine culturel est irréparable.",
+        voicePath: "",
+    },
+    {
+        word: "εξυπνάδα",
+        translation: "Intelligence, astuce",
+        morfology:
+            '<em>εξυπνάδα </em>→ έξυπν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -άδα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">έξυπνος</span> – intelligent < du grec médiéval <span style="color:#7a9473">ἔξυπνος</span> < du grec ancien <span style="color:#7a9473">ἐξ</span> (hors) + <span style="color:#7a9473">ὕπνος</span> – sommeil',
+        synonims:
+            "ευστροφία (ingéniosité), οξυδέρκεια (perspicacité), νοημοσύνη (intelligence)",
+        antonims: "ανοησία (bêtise), βλακεία (stupidité), ηλιθιότητα (idiotie)",
+        level: "B1",
+        example: "Η εξυπνάδα του τον βοήθησε να λύσει το πρόβλημα.",
+        exampleTransl: "Son intelligence l’a aidé à résoudre le problème.",
+        voicePath: "",
+    },
+    {
+        word: "ενθουσιασμός",
+        translation: "Enthousiasme",
+        morfology:
+            '<em>ενθουσιασμός </em>→ ενθουσιάζ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ενθουσιάζω</span> – être inspiré < du grec ancien (<span style="color:#7a9473">ἐνθουσιάζω</span> < <span style="color:#7a9473">ἔνθους</span> – inspiré, exalté < <span style="color:#7a9473">ἔνθεος</span> – inspiré < <span style="color:#7a9473">ἐν</span> + <span style="color:#7a9473">θεός</span> – avec Dieu).',
+        synonims:
+            "εμπνευσμένη διάθεση (disposition inspirée), παλμός (élan), ζήλος (zèle)",
+        antonims: "απάθεια (apathie), πλήξη (ennui), αδιαφορία (indifférence)",
+        level: "B2",
+        example: "Ο ενθουσιασμός του ήταν μεταδοτικός.",
+        exampleTransl: "Son enthousiasme était contagieux.",
+        voicePath: "",
+    },
+    {
+        word: "φαρδαίνω",
+        translation: "Élargir, s’élargir",
+        morfology:
+            '<em>φαρδαίνω </em>→ φαρδ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -αίνω</span>',
+        etymology:
+            'Peut-être du grec moderne <span style="color:#7a9473">φαρδύς</span> – large < du grec médiéval <span style="color:#7a9473">φαρδύς</span> < du grec koinè <span style="color:#7a9473"></span><span style="color:#7a9473">εὺφραδής</span> < du grec ancien <span style="color:#7a9473">φράζω</span> – expliquer, exposer.',
+        synonims: "διευρύνω (dilater), πλατύνω (élargir), ανοίγω (ouvrir)",
+        antonims: "στενεύω (rétrécir), μαζεύω (resserrer), σφίγγω (serrer)",
+        level: "B2",
+        example: "Ο δρόμος φαρδαίνει μετά τη γέφυρα.",
+        exampleTransl: "La route s’élargit après le pont.",
+        voicePath: "",
+    },
+    {
+        word: "τουριστικός",
+        translation: "Touristique",
+        morfology:
+            '<em>τουριστικός </em>→ τουρίστ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">τουρίστας</span> – touriste < de l’italien <span style="color:#7a9473">turista</span> – touriste < du français <span style="color:#7a9473">touriste</span> – touriste < de l’anglais (<span style="color:#7a9473">tourist</span> – touriste < <span style="color:#7a9473">tour</span> – tour) < du latin <span style="color:#7a9473">tornare</span> – tourner, revenir < du grec ancien <span style="color:#7a9473">τόρνος</span> – ce qui tourne ; tour ; compas.',
+        synonims:
+            "ταξιδιωτικός (de voyage), τουριστικός, εξερευνητικός (explorateur)",
+        antonims: "επαγγελματικός (professionnel), τοπικός (local)",
+        level: "A2",
+        example: "Τα τουριστικά αξιοθέατα προσελκύουν εκατομμύρια επισκέπτες.",
+        exampleTransl:
+            "Les attractions touristiques attirent des millions de visiteurs.",
+        voicePath: "",
+    },
+    {
+        word: "σκαφτιάς",
+        translation: "Terrassier, bêcheur",
+        morfology:
+            '<em>σκαφτιάς </em>→ σκάβ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τιάς</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σκάφτω, σκάβω</span> – creuser < du grec ancien <span style="color:#7a9473">σκάπτω</span> – creuser.',
+        synonims:
+            "εργάτης (ouvrier), οικοδόμος (constructeur), σκαπανέας (terrassier)",
+        antonims: "χτίστης (maçon) – mais pas un antonyme direct",
+        level: "B1",
+        example: "Ο σκαφτιάς έσκαψε ένα βαθύ λάκκο για τα θεμέλια.",
+        exampleTransl:
+            "Le terrassier a creusé une fosse profonde pour les fondations.",
+        voicePath: "",
+    },
+    {
+        word: "ποίημα",
+        translation: "Poème, poésie",
+        morfology:
+            '<em>ποίημα </em>→ ποι<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ημα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ποιώ</span> – faire, créer < du grec ancien <span style="color:#7a9473">ποιέω</span>, <span style="color:#7a9473">ποιῶ</span>.',
+        synonims:
+            "ποιητικό κείμενο (texte poétique), στιχούργημα (poème), έμμετρο κείμενο (texte en vers)",
+        antonims: "πεζό (prose), πεζογραφία (prose)",
+        level: "B1",
+        example: "Έγραψε ένα ποίημα για την αγάπη.",
+        exampleTransl: "Il a écrit un poème sur l’amour.",
+        voicePath: "",
+    },
+    {
+        word: "δάρσιμο",
+        translation: "Battage, rossée",
+        morfology:
+            '<em>δάρσιμο </em>→ δ<span style="color: #b87333">έρνω</span> +<span style="color: #b87333"> -άρσιμο</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">δέρνω</span> – battre < du grec ancien <span style="color:#7a9473">δέρω</span> – écorcher, dépouiller, rosser.',
+        synonims:
+            "ξυλοδαρμός (correction), δέρσιμο (battement), χτύπημα (coup)",
+        antonims: "χάδι (caresse), περιποίηση (soin)",
+        level: "B2",
+        example: "Το δάρσιμο ζώων απαγορεύεται από το νόμο.",
+        exampleTransl: "Le fait de battre les animaux est interdit par la loi.",
+        voicePath: "",
+    },
+    {
+        word: "απογοήτευση",
+        translation: "Déception",
+        morfology:
+            '<em>απογοήτευση </em>→ <span style="color: #b87333">απο-</span> + γοητεύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            '<br>Du grec moderne (<span style="color:#7a9473">απογοητεύω</span> – décevoir < <span style="color:#7a9473">ἀπό-</span> (indique l’éloignement : de, depuis ; <u>négation</u> ; la cause : de, à cause de) + <span style="color:#7a9473">γοητεύω</span> – ensorceler, charmer) < du grec ancien (<span style="color:#7a9473">γόης</span> – sorcier, enchanteur < <span style="color:#7a9473">γοάω</span> – gémir, pleurer ; lamenter)',
+        synonims: "απογοήτευση, αποθάρρυνση (découragement), ματαίωση (échec)",
+        antonims:
+            "ικανοποίηση (satisfaction), ενθουσιασμός (enthousiasme), ευχαρίστηση (plaisir)",
+        level: "B2",
+        example: "Η απογοήτευσή του ήταν μεγάλη όταν δεν πέρασε τις εξετάσεις.",
+        exampleTransl:
+            "Sa déception a été grande quand il n’a pas réussi les examens.",
+        voicePath: "",
+    },
+    {
+        word: "ύπνωση",
+        translation: "Hypnose",
+        morfology:
+            '<em>ύπνωση </em>→ υπνώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">υπνώνω</span> – endormir < du grec ancien <span style="color:#7a9473">ὕπνος</span> – sommeil',
+        synonims: "υπνοτισμός (hypnotisme), μαγνητισμός (magnétisme), ύπνωση",
+        antonims: "αφύπνιση (réveil), εγρήγορση (vigilance)",
+        level: "B2",
+        example: "Η ύπνωση χρησιμοποιείται για τη θεραπεία φοβιών.",
+        exampleTransl: "L’hypnose est utilisée pour traiter les phobies.",
+        voicePath: "",
+    },
+    {
+        word: "εισαγωγέας",
+        translation: "Importateur",
+        morfology:
+            '<em>εισαγωγέας </em>→ <span style="color: #b87333">εισ-</span> + άγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ωγέας</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">εἰσάγω</span> – importer, introduire, faire entrer < <span style="color:#7a9473">είς-</span> (dans) + <span style="color:#7a9473">ἄγω</span> – mener)',
+        synonims: "εισαγωγέας, έμπορος (commerçant), προμηθευτής (fournisseur)",
+        antonims: "εξαγωγέας (exportateur), πωλητής (vendeur)",
+        level: "B1",
+        example: "Ο εισαγωγέας φέρνει προϊόντα από το εξωτερικό.",
+        exampleTransl: "L’importateur apporte des produits de l’étranger.",
+        voicePath: "",
+    },
+    {
+        word: "βοσκόπουλο, βοσκοπούλα",
+        translation: "Petit berger, petite bergère",
+        morfology:
+            '<em>βοσκόπουλο, βοσκοπούλα </em>→ βοσκ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -όπουλο</span>/<span style="color: #b87333">-οπούλα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">βοσκός</span> – berger < du grec ancien (<span style="color:#7a9473">βοσκός</span> < <span style="color:#7a9473">βόσκω</span> – faire paître)',
+        synonims: "μικρός βοσκός (petit berger), παιδί βοσκός (enfant berger)",
+        antonims: "αστόπαιδο (enfant de la ville)",
+        level: "B1",
+        example: "Το βοσκόπουλο φύλαγε τα πρόβατα στο βουνό.",
+        exampleTransl: "Le petit berger gardait les moutons à la montagne.",
+        voicePath: "/sound/voices/dailyword/joanna_1.mp3",
+    },
+    {
+        word: "γέννηση",
+        translation: "Naissance",
+        morfology:
+            '<em>γέννηση </em>→ γενν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">γέννηση</span> – naissance < du grec ancien (<span style="color:#7a9473">γέννησις</span> – naissance < <span style="color:#7a9473">γεννάω</span> – enfanter < <span style="color:#7a9473">γίγνομαι</span> – devenir, naître)',
+        synonims: "γένεση (genèse), δημιουργία (création), έλευση (avènement)",
+        antonims:
+            "θάνατος (mort), εξαφάνιση (disparition), φθορά (décomposition)",
+        level: "B1",
+        example: "Η γέννηση του παιδιού τους γέμισε το σπίτι χαρά.",
+        exampleTransl:
+            "La naissance de leur enfant a rempli la maison de joie.",
+        voicePath: "/sound/voices/dailyword/joanna_2.mp3",
+    },
+    {
+        word: "ευχή",
+        translation: "Vœu, souhait",
+        morfology:
+            '<em>ευχή </em>→ εύχ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -ή</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">εὐχή</span> – prière, souhait < <span style="color:#7a9473">εὔχομαι</span> – souhaiter, prier)',
+        synonims: "ευχή, επιθυμία (désir), παράκληση (supplique)",
+        antonims: "κατάρα (malédiction), βλαστήμια (blasphème)",
+        level: "A2",
+        example: "Σου εύχομαι καλή τύχη στις εξετάσεις.",
+        exampleTransl: "Je te souhaite bonne chance pour les examens.",
+        voicePath: "/sound/voices/dailyword/joanna_3.mp3",
+    },
+    {
+        word: "ζέστη",
+        translation: "Chaleur, canicule",
+        morfology:
+            '<em>ζέστη </em>→ ζεστ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -α</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ζέστη</span> < du grec koinè <span style="color:#7a9473">ζεστός</span> – chaud < du grec ancien <span style="color:#7a9473">ζέω</span> – bouillir, bouillonner.',
+        synonims:
+            "καύσωνα (canicule), θερμότητα (chaleur), υψηλή θερμοκρασία (température élevée)",
+        antonims: "κρύο (froid), παγωνιά (gel), ψύχος (froid vif)",
+        level: "A2",
+        example: "Η ζέστη του καλοκαιριού ήταν ανυπόφορη.",
+        exampleTransl: "La chaleur estivale était insupportable.",
+        voicePath: "/sound/voices/dailyword/joanna_4.mp3",
+    },
+    {
+        word: "πολεμιστής",
+        translation: "Guerrier",
+        morfology:
+            '<em>πολεμιστής </em>→ πολεμ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ιστής</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">πολεμῶ</span>, <span style="color:#7a9473">πολεμέω</span> – faire la guerre < <span style="color:#7a9473">πόλεμος</span> – guerre).',
+        synonims:
+            "στρατιώτης (soldat), μαχητής (combattant), αγωνιστής (lutteur)",
+        antonims: "ειρηνιστής (pacifiste), πολίτης (citoyen)",
+        level: "B1",
+        example: "Οι πολεμιστές της αρχαιότητας ήταν γενναίοι.",
+        exampleTransl: "Les guerriers de l’Antiquité étaient courageux.",
+        voicePath: "/sound/voices/dailyword/joanna_5.mp3",
+    },
+    {
+        word: "λίπανση",
+        translation: "Lubrification",
+        morfology:
+            '<em>λίπανση </em>→ λιπαίν<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">λίπανσις</span> – lubrification < du grec ancien (<span style="color:#7a9473">λιπαίνω</span> – graisser < <span style="color:#7a9473">λίπα</span> – abondamment, richement)',
+        synonims: "λίπανση, λάδωμα (graissage à l’huile), άλειμμα (enduit)",
+        antonims: "τριβή (usure), ξήρανση (dessèchement)",
+        level: "B2",
+        example:
+            "Η λίπανση των κινητήρων είναι απαραίτητη για τη λειτουργία τους.",
+        exampleTransl:
+            "La lubrification des moteurs est essentielle à leur fonctionnement.",
+        voicePath: "/sound/voices/dailyword/joanna_6.mp3",
+    },
+    {
+        word: "μαυρίλα",
+        translation: "Noirceur",
+        morfology:
+            '<em>μαυρίλα </em>→ μαύρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίλα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">μαύρος</span> – noir < du grec ancien <span style="color:#7a9473">μαυρός</span> – sombre, terne',
+        synonims:
+            "σκοτάδι (obscurité), μελανιά (ecchymose, noirceur), μαύρο χρώμα (couleur noire)",
+        antonims: "ασπρίλα (blancheur), φωτεινότητα (luminosité)",
+        level: "B1",
+        example: "Η μαυρίλα της νύχτας έκρυβε τα πάντα.",
+        exampleTransl: "La noirceur de la nuit cachait tout.",
+        voicePath: "/sound/voices/dailyword/joanna_7.mp3",
+    },
+    {
+        word: "λαμπερός",
+        translation: "Brillant, éclatant, magnifique",
+        morfology:
+            '<em>λαμπερός </em>→ λάμπ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ερός</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">λαμπερός</span> – brillant, ensoleillé < du grec ancien <span style="color:#7a9473">λάμπω</span> – briller, être éclatant ; être célèbre.',
+        synonims:
+            "αστραφτερός (scintillant), λαμπρός (éclatant), έξοχος (excellent)",
+        antonims: "θαμπός (terne), σκοτεινός (sombre), άσχημος (laid)",
+        level: "B1",
+        example: "Φόρεσε ένα λαμπερό φόρεμα για το πάρτι.",
+        exampleTransl: "Elle a mis une robe brillante pour la fête.",
+        voicePath: "/sound/voices/dailyword/joanna_8.mp3",
+    },
+    {
+        word: "αρχοντιά",
+        translation: "Noblesse, richesse, ascendance noble",
+        morfology:
+            '<em>αρχοντιά </em>→ αρχοντ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ιά</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ἄρχοντας</span> – seigneur, chef, riche < du grec médiéval <span style="color:#7a9473">ἄρχοντας</span> < du grec ancien (<span style="color:#7a9473">ἄρχων</span> – chef, souverain, dirigeant < <span style="color:#7a9473">ἄρχω</span> – commencer, conduire, gouverner) ;',
+        synonims:
+            "ευγένεια (noblesse), αριστοκρατία (aristocratie), πλούτος (richesse)",
+        antonims:
+            "φτώχεια (pauvreté), αγένεια (grossièreté), λαϊκότητα (populaire)",
+        level: "B2",
+        example: "Η αρχοντιά του φαινόταν από τη συμπεριφορά του.",
+        exampleTransl: "Sa noblesse se voyait dans son comportement.",
+        voicePath: "/sound/voices/dailyword/joanna_9.mp3",
+    },
+    {
+        word: "κινητήρας",
+        translation: "Moteur",
+        morfology:
+            '<em>κινητήρας </em>→ κιν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητήρας</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">κινητήρ</span> – agitateur',
+        synonims:
+            "μηχανή (mécanisme, moteur), κινητήρια μηχανή (machine motrice), μοτέρ (moteur)",
+        antonims: "σταθερά (fixité), ακινησία (immobilité)",
+        level: "B1",
+        example: "Ο κινητήρας του αυτοκινήτου χάλασε.",
+        exampleTransl: "Le moteur de la voiture est tombé en panne.",
+        voicePath: "/sound/voices/dailyword/joanna_10.mp3",
+    },
+    {
+        word: "ακρωτηριασμός",
+        translation: "Amputation",
+        morfology:
+            '<em>ακρωτηριασμός </em>→ ακρωτηριάζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀκρωτηριασμός</span> < <span style="color:#7a9473">ἀκρωτηριάζω</span> – amputer < <span style="color:#7a9473">ἀκρωτήριον</span> – sommet, extrémité, bord < <span style="color:#7a9473">ἄκρος</span> – aigu, meilleur, extrême)',
+        synonims:
+            "απότμηση (troncation), αφαίρεση (ablation), χειρουργική αφαίρεση (ablation chirurgicale)",
+        antonims: "αποκατάσταση (réhabilitation), προσθετική (prothèse)",
+        level: "C1",
+        example:
+            "Ο ακρωτηριασμός του ποδιού ήταν αναγκαίος για να σωθεί η ζωή του.",
+        exampleTransl:
+            "L’amputation de la jambe était nécessaire pour lui sauver la vie.",
+        voicePath: "/sound/voices/dailyword/joanna_11.mp3",
+    },
+    {
+        word: "καταβρεχτήρας",
+        translation: "Arroseuse (machine)",
+        morfology:
+            '<em>καταβρεχτήρας </em>→ καταβρέχ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τήρας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">καταβρέχω</span> – arroser < du grec ancien (<span style="color:#7a9473">καταβρέχω</span> < <span style="color:#7a9473">κατά</span> + <span style="color:#7a9473">βρέχω</span> – mouiller)',
+        synonims:
+            "ψεκαστήρας (pulvérisateur), ποτιστικό μηχάνημα (machine d’arrosage)",
+        antonims: "στεγνωτήρας (sèche-linge) – pas direct",
+        level: "B2",
+        example: "Ο καταβρεχτήρας ποτίζει τους κήπους τις ξηρές μέρες.",
+        exampleTransl: "L’arroseuse arrose les jardins les jours secs.",
+        voicePath: "/sound/voices/dailyword/joanna_12.mp3",
+    },
+    {
+        word: "εκκένωση",
+        translation: "Évacuation",
+        morfology:
+            '<em>εκκένωση </em>→ εκκενώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">εκκενώνω</span> – évacuer < du grec ancien (<span style="color:#7a9473">ἐκκενόω</span> – évacuer < <span style="color:#7a9473">κενόω</span> – laisser vide < <span style="color:#7a9473">κενός</span> – vide, vain)',
+        synonims: "απομάκρυνση (éloignement), αποχώρηση (retrait), εκκένωση",
+        antonims:
+            "κατάληψη (occupation), εγκατάσταση (installation), πλήρωση (remplissage)",
+        level: "B2",
+        example: "Η εκκένωση του κτιρίου έγινε λόγω φωτιάς.",
+        exampleTransl:
+            "L’évacuation du bâtiment a eu lieu à cause d’un incendie.",
+        voicePath: "/sound/voices/dailyword/joanna_13.mp3",
+    },
+    {
+        word: "σωτήριος",
+        translation: "Salvateur, bénéfique",
+        morfology:
+            '<em>σωτήριος </em>→ σώ<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -τήριος</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">σωτήριος</span> < <span style="color:#7a9473">σωτήρ</span> – sauveur, libérateur < <span style="color:#7a9473">σώζω</span> – sauver, libérer < <span style="color:#7a9473">σῶς</span> – sain et sauf, vivant)',
+        synonims:
+            "σώζων (sauveur), ευεργετικός (bienfaisant), λυτρωτικός (rédempteur)",
+        antonims:
+            "ολέθριος (funeste), καταστροφικός (destructeur), βλαβερός (nuisible)",
+        level: "C1",
+        example: "Η σωτήρια παρέμβαση του γιατρού έσωσε τον ασθενή.",
+        exampleTransl:
+            "L’intervention salvatrice du médecin a sauvé le patient.",
+        voicePath: "/sound/voices/dailyword/joanna_14.mp3",
+    },
+    {
+        word: "χάσιμο",
+        translation: "Perte, défaite",
+        morfology:
+            '<em>χάσιμο </em>→ χά<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -σιμο</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">χάνω</span> < du grec ancien <span style="color:#7a9473">χάνω</span> – perdre.',
+        synonims: "απώλεια (perte), ήττα (défaite), καταστροφή (catastrophe)",
+        antonims: "νίκη (victoire), κέρδος (gain), εύρεση (découverte)",
+        level: "B1",
+        example: "Το χάσιμο της δουλειάς του τον στενοχώρησε.",
+        exampleTransl: "La perte de son travail l’a attristé.",
+        voicePath: "/sound/voices/dailyword/joanna_15.mp3",
+    },
+    {
+        word: "επενδυτής",
+        translation: "Investisseur",
+        morfology:
+            '<em>επενδυτής </em>→ επενδύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τής</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">ἐπενδύτης</span> < <span style="color:#7a9473">ἐπενδύω</span> – revêtir < <span style="color:#7a9473">ἐνδύω</span> – vêtir, entrer < <span style="color:#7a9473">δύω</span> – plonger, entrer.',
+        synonims: "επενδυτής, χρηματοδότης (financier), μέτοχος (actionnaire)",
+        antonims: "δανειολήπτης (emprunteur), χρεώστης (débiteur)",
+        level: "B2",
+        example: "Ο επενδυτής αποφάσισε να επενδύσει σε νεοφυείς επιχειρήσεις.",
+        exampleTransl: "L’investisseur a décidé d’investir dans des start-ups.",
+        voicePath: "/sound/voices/dailyword/joanna_16.mp3",
+    },
+    {
+        word: "κουδουνίζω",
+        translation: "Sonner, tinter",
+        morfology:
+            '<em>κουδουνίζω </em>→ κουδούν<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">κωδωνίζω</span> < du grec ancien <span style="color:#7a9473">κώδων</span> – cloche, sonnette.',
+        synonims: "χτυπώ κουδούνι (sonner), ηχώ (résonner), κουδουνίζω",
+        antonims: "σιωπώ (se taire), σβήνω (s’éteindre)",
+        level: "B1",
+        example: "Το τηλέφωνο κουδούνιζε ασταμάτητα.",
+        exampleTransl: "Le téléphone sonnait sans arrêt.",
+        voicePath: "/sound/voices/dailyword/joanna_17.mp3",
+    },
+    {
+        word: "ανταγωνιστής",
+        translation: "Concurrent, rival",
+        morfology:
+            '<em>ανταγωνιστής </em>→ ανταγων +<span style="color: #b87333"> -ιστής</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">ἀνταγωνίζομαι</span> – rivaliser < <span style="color:#7a9473">ἀγωνίζομαι</span> – concourir < <span style="color:#7a9473">ἀγών</span> – assemblée < <span style="color:#7a9473">ἄγω</span> – mener.',
+        synonims:
+            "συναγωνιστής (compétiteur), αντίπαλος (adversaire), ανταγωνιστής",
+        antonims: "συνεργάτης (collaborateur), σύμμαχος (allié)",
+        level: "B2",
+        example: "Οι ανταγωνιστές της εταιρείας είναι πολύ δυνατοί.",
+        exampleTransl: "Les concurrents de l’entreprise sont très puissants.",
+        voicePath: "/sound/voices/dailyword/joanna_18.mp3",
+    },
+    {
+        word: "θεμελιώνω",
+        translation: "Fonder, établir",
+        morfology:
+            '<em>θεμελιώνω </em>→ θεμέλι<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ώνω</span>',
+        etymology: 'Du grec ancien <span style="color:#7a9473">θεμελιῶ</span>.',
+        synonims: "ιδρύω (fonder, instituer), εγκαθιστώ (installer), θεμελιώνω",
+        antonims: "καταλύω (détruire), διαλύω (dissoudre)",
+        level: "B2",
+        example: "Θεμελίωσε την επιχείρησή του πριν από δέκα χρόνια.",
+        exampleTransl: "Il a fondé son entreprise il y a dix ans.",
+        voicePath: "/sound/voices/dailyword/joanna_19.mp3",
+    },
+    {
+        word: "βιαστής",
+        translation: "Violent, violeur",
+        morfology:
+            '<em>βιαστής </em>→ βιάζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -της</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">βιάζω</span> – forcer, contraindre < <span style="color:#7a9473">βία</span> – force, violence.',
+        synonims: "βιαστής, παραβάτης (transgresseur), εγκληματίας (criminel)",
+        antonims: "θύμα (victime), προστάτης (protecteur)",
+        level: "C1",
+        example: "Ο βιαστής καταδικάστηκε σε πολυετή κάθειρξη.",
+        exampleTransl:
+            "Le violeur a été condamné à une longue peine de prison.",
+        voicePath: "/sound/voices/dailyword/joanna_20.mp3",
+    },
+    {
+        word: "ορκίζομαι",
+        translation: "Jurer, prêter serment",
+        morfology:
+            '<em>ορκίζομαι </em>→ όρκ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίζο</span> + <span style="color: #b87333">-ομαι</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ὁρκίζω</span> – adjurer, supplier < <span style="color:#7a9473">ὅρκος</span> – serment)',
+        synonims:
+            "ορκίζομαι, ορκίζομαι (prêter serment), υπόσχομαι (promettre)",
+        antonims: "αρνούμαι (refuser), αθετώ (trahir un serment)",
+        level: "B2",
+        example: "Ορκίστηκε ότι θα πει την αλήθεια.",
+        exampleTransl: "Il a juré de dire la vérité.",
+        voicePath: "/sound/voices/dailyword/joanna_21.mp3",
+    },
+    {
+        word: "ποιητικός",
+        translation: "Poétique",
+        morfology:
+            '<em>ποιητικός </em>→ ποιητ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">ποιητής</span> < <span style="color:#7a9473">ποιέω</span>, <span style="color:#7a9473">ποιῶ</span> – faire, créer.',
+        synonims:
+            "ποιητικός, ποιητικώς (poétiquement), μεστός ποιητικής (imprégné de poésie)",
+        antonims: "πεζός (prosaïque), καθημερινός (quotidien)",
+        level: "B2",
+        example: "Το έργο του χαρακτηρίζεται από ποιητική διάθεση.",
+        exampleTransl:
+            "Son œuvre est caractérisée par une disposition poétique.",
+        voicePath: "/sound/voices/dailyword/joanna_22.mp3",
+    },
+    {
+        word: "εκδίκηση",
+        translation: "Vengeance",
+        morfology:
+            '<em>εκδίκηση </em>→ εκδικ<span style="color: #b87333">ούμαι</span> +<span style="color: #b87333"> -ηση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐκδίκησις</span> – vengeance < <span style="color:#7a9473">ἐκδικέω</span> – venger < <span style="color:#7a9473">ἔκδῐκος</span> – injuste, vindicatif)',
+        synonims: "ανταπόδοση (représailles), τιμωρία (châtiment), εκδίκηση",
+        antonims: "συγχώρεση (pardon), επιείκεια (indulgence)",
+        level: "B2",
+        example: "Η εκδίκηση δεν φέρνει την ειρήνη.",
+        exampleTransl: "La vengeance n’apporte pas la paix.",
+        voicePath: "/sound/voices/dailyword/joanna_23.mp3",
+    },
+    {
+        word: "σεβασμός",
+        translation: "Respect",
+        morfology:
+            '<em>σεβασμός </em>→ σέβ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -ασμός</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">σεβάζω</span> < du grec ancien <span style="color:#7a9473">σέβομαι</span> – respecter.',
+        synonims: "τιμή (honneur), ευλάβεια (vénération), υπόληψη (estime)",
+        antonims:
+            "περιφρόνηση (mépris), ασέβεια (irrespect), καταφρόνηση (dédain)",
+        level: "B1",
+        example: "Δείξε σεβασμό στους μεγαλύτερους.",
+        exampleTransl: "Montre du respect envers les aînés.",
+        voicePath: "/sound/voices/dailyword/joanna_24.mp3",
+    },
+    {
+        word: "βιασμός",
+        translation: "Viol",
+        morfology:
+            '<em>βιασμός </em>→ βιάζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">βιάζω</span> – forcer, contraindre < <span style="color:#7a9473">βία</span> – force, violence.',
+        synonims:
+            "βιασμός, σεξουαλική επίθεση (agression sexuelle), ασελγής πράξη (acte obscène)",
+        antonims:
+            "συναίνεση (consentement), εθελοντική σχέση (relation volontaire)",
+        level: "C1",
+        example: "Ο βιασμός είναι ένα σοβαρό έγκλημα.",
+        exampleTransl: "Le viol est un crime grave.",
+        voicePath: "/sound/voices/dailyword/joanna_25.mp3",
+    },
+    {
+        word: "ξεκούραση",
+        translation: "Repos",
+        morfology:
+            '<em>ξεκούραση </em>→ ξεκουρά<span style="color: #b87333">ζομαι</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ξε-</span> (exprime l’opposé, l’annulation) + <span style="color:#7a9473">κούραση</span> – fatigue < du grec médiéval (<span style="color:#7a9473">κούραση</span> – fatigue < <span style="color:#7a9473">κουράζω</span> – fatiguer) < du grec ancien <span style="color:#7a9473">κουρά</span> – coupe de cheveux, tonte.',
+        synonims: "ανάπαυση (repos), ξεκούραση, χαλάρωση (détente)",
+        antonims: "κόπωση (fatigue), μόχθος (effort), εργασία (travail)",
+        level: "A2",
+        example: "Χρειάζομαι λίγη ξεκούραση μετά από τόσο διάβασμα.",
+        exampleTransl: "J’ai besoin d’un peu de repos après tant d’étude.",
+        voicePath: "/sound/voices/dailyword/joanna_26.mp3",
+    },
+    {
+        word: "διαφήμιση",
+        translation: "Publicité",
+        morfology:
+            '<em>διαφήμιση </em>→ διαφημί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">διαφημίζω</span> – faire de la publicité < du grec ancien (<span style="color:#7a9473">διαφημίζω</span> – faire connaître, nommer < <span style="color:#7a9473">δια-</span> (préfixe signifiant : à travers, en diverses directions, entre, etc.) + <span style="color:#7a9473">φημί</span> – renommée)',
+        synonims:
+            "προώθηση (promotion), διαφημιστική εκστρατεία (campagne publicitaire), αγγελία (annonce)",
+        antonims: "απόκρυψη (dissimulation), σιωπή (silence)",
+        level: "B1",
+        example: "Η διαφήμιση προσελκύει νέους πελάτες.",
+        exampleTransl: "La publicité attire de nouveaux clients.",
+        voicePath: "/sound/voices/dailyword/joanna_27.mp3",
+    },
+    {
+        word: "λυτρωμός",
+        translation: "Rédemption, délivrance",
+        morfology:
+            '<em>λυτρωμός </em>→ λυτρ<span style="color: #b87333">ώνω</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">λυτρωμός</span> < du grec ancien <span style="color:#7a9473">λυτρόω</span> – libérer, délier.',
+        synonims:
+            "σωτηρία (salut), απελευθέρωση (libération), λύτρωση (délivrance)",
+        antonims:
+            "καταδίκη (condamnation), σκλαβιά (esclavage), φυλάκιση (emprisonnement)",
+        level: "C1",
+        example: "Ο λυτρωμός των αιχμαλώτων ήταν γεγονός.",
+        exampleTransl: "La délivrance des prisonniers a eu lieu.",
+        voicePath: "/sound/voices/dailyword/joanna_28.mp3",
+    },
+    {
+        word: "ποιητής",
+        translation: "Poète",
+        morfology:
+            '<em>ποιητής </em>→ ποι<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητής</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">ποιητής</span> < <span style="color:#7a9473">ποιέω</span>, <span style="color:#7a9473">ποιῶ</span> – faire, créer.',
+        synonims: "ποιητής, στιχουργός (versificateur), βάρδος (barde)",
+        antonims: "πεζογράφος (prosateur), αναγνώστης (lecteur)",
+        level: "B1",
+        example: "Ο ποιητής έγραψε ένα συγκλονιστικό ποίημα.",
+        exampleTransl: "Le poète a écrit un poème bouleversant.",
+        voicePath: "/sound/voices/dailyword/joanna_29.mp3",
+    },
+    {
+        word: "ερχομός",
+        translation: "Venue, arrivée",
+        morfology:
+            '<em>ερχομός </em>→ έρχ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -ομός</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ερχομός</span> < du grec ancien <span style="color:#7a9473">ἔρχομαι</span> – venir.',
+        synonims: "άφιξη (arrivée), έλευση (venue), προσέλευση (arrivée)",
+        antonims: "αναχώρηση (départ), αποχώρηση (retrait), φυγή (fuite)",
+        level: "B1",
+        example: "Ο ερχομός του βασιλιά αναμενόταν με ανυπομονησία.",
+        exampleTransl: "La venue du roi était attendue avec impatience.",
+        voicePath: "/sound/voices/dailyword/joanna_30.mp3",
+    },
+    {
+        word: "φεγγίζω",
+        translation: "Transparaître, luire",
+        morfology:
+            '<em>φεγγίζω </em>→ φέγγ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">φεγγίζω</span> < <span style="color:#7a9473">φέγγος</span> – habitué < du grec ancien <span style="color:#7a9473">φέγγος</span> – lumière, éclat.',
+        synonims:
+            "λάμπω (briller), ακτινοβολώ (rayonner), διαφέρω (transparaître)",
+        antonims: "σκοτίζω (obscurcir), καλύπτω (couvrir)",
+        level: "B2",
+        example: "Ο ήλιος φέγγιζε μέσα από τα σύννεφα.",
+        exampleTransl: "Le soleil transparaissait à travers les nuages.",
+        voicePath: "/sound/voices/dailyword/joanna_31.mp3",
+    },
+    {
+        word: "γέρικος",
+        translation: "Sénile, vieux",
+        morfology:
+            '<em>γέρικος </em>→ γέρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">γέρος</span> – vieillard < du grec médiéval <span style="color:#7a9473">γέρος</span> < du grec ancien <span style="color:#7a9473">γέρων</span> – vieillard, ancien.',
+        synonims: "ηλικιωμένος (âgé), γέρικος, γερασμένος (vieilli)",
+        antonims: "νέος (jeune), νεανικός (juvénile)",
+        level: "B1",
+        example: "Είχε γέρικη εμφάνιση παρά την ηλικία του.",
+        exampleTransl: "Il avait une apparence sénile malgré son âge.",
+        voicePath: "/sound/voices/dailyword/joanna_32.mp3",
+    },
+    {
+        word: "αϋπνία",
+        translation: "Insomnie",
+        morfology:
+            '<em>αϋπνία </em>→ άυπν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ία</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀϋπνία</span> < <span style="color:#7a9473">ἀ- (privatif)</span> + <span style="color:#7a9473">ὕπνος</span> – sommeil)',
+        synonims:
+            "αυπνία, αγρυπνία (veille), έλλειψη ύπνου (manque de sommeil)",
+        antonims:
+            "ύπνος (sommeil), υπνηλία (somnolence), νύστα (assoupissement)",
+        level: "B2",
+        example: "Η αϋπνία τον ταλαιπωρούσε για μήνες.",
+        exampleTransl: "L’insomnie le tourmentait depuis des mois.",
+        voicePath: "/sound/voices/dailyword/joanna_33.mp3",
+    },
+    {
+        word: "αγναντεύω",
+        translation: "Faire face, se tenir en face",
+        morfology:
+            '<em>αγναντεύω </em>→ αγνάντ<span style="color: #b87333">ια</span> +<span style="color: #b87333"> -εύω</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">αγναντεύω</span> < <span style="color:#7a9473">αγνάντια</span> – en face)',
+        synonims: "βλέπω κατάματα (regarder en face), αντικρίζω (être en face)",
+        antonims:
+            "γυρίζω πλάτη (tourner le dos), αποστρέφομαι (détourner le regard)",
+        level: "B2",
+        example: "Αγνάντευα το βουνό από το παράθυρό μου.",
+        exampleTransl: "Je faisais face à la montagne depuis ma fenêtre.",
+        voicePath: "/sound/voices/dailyword/joanna_34.mp3",
+    },
+    {
+        word: "επιστήμονας",
+        translation: "Scientifique",
+        morfology:
+            '<em>επιστήμονας </em>→ επιστήμ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ονας</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐπιστήμη</span> – science, connaissance < <span style="color:#7a9473">ἐπίσταμαι</span> – savoir bien, être sûr < <span style="color:#7a9473">ἐπι-</span> (marque la suite, l’accompagnement ; position : sur) + <span style="color:#7a9473">ἵστημι</span> – placer, se tenir, établir)',
+        synonims: "επιστήμονας, ερευνητής (chercheur), σοφός (sage)",
+        antonims: "αμαθής (ignorant), ανειδίκευτος (non spécialisé)",
+        level: "B1",
+        example: "Ο επιστήμονας ανακοίνωσε μια σημαντική ανακάλυψη.",
+        exampleTransl: "Le scientifique a annoncé une découverte importante.",
+        voicePath: "/sound/voices/dailyword/joanna_35.mp3",
+    },
+    {
+        word: "νυστάζω",
+        translation: "Avoir sommeil",
+        morfology:
+            '<em>νυστάζω </em>→ νύστ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άζω</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">νυστάζω</span> < <span style="color:#7a9473">νευστάζω</span> – hocher < <span style="color:#7a9473">νεύω</span> – secouer).',
+        synonims:
+            "θέλω να κοιμηθώ (vouloir dormir), έχω υπνηλία (avoir somnolence)",
+        antonims: "είμαι ξύπνιος (être éveillé), αγρυπνώ (veiller)",
+        level: "A2",
+        example: "Μετά το φαγητό, άρχισε να νυστάζει.",
+        exampleTransl: "Après le repas, il a commencé à avoir sommeil.",
+        voicePath: "/sound/voices/dailyword/joanna_36.mp3",
+    },
+    {
+        word: "γραφέας, γραφιάς",
+        translation: "Écrivain",
+        morfology:
+            '<em>γραφέας, γραφιάς </em>→ γράφ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -έας</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">γραφεύς</span> < <span style="color:#7a9473">γράφω</span> – écrire)',
+        synonims:
+            "συγγραφέας (écrivain), λογοτέχνης (homme de lettres), γραφιάς",
+        antonims: "αναγνώστης (lecteur), κριτικός (critique)",
+        level: "B1",
+        example: "Ο γραφέας έγραψε ένα μυθιστόρημα.",
+        exampleTransl: "L’écrivain a écrit un roman.",
+        voicePath: "/sound/voices/dailyword/joanna_37.mp3",
+    },
+    {
+        word: "πεταχτός",
+        translation: "Volant, rapide",
+        morfology:
+            '<em>πεταχτός </em>→ πετ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -αχτός</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">πεταχτός</span> < du grec koinè <span style="color:#7a9473">πετώ</span>, <span style="color:#7a9473">πετάω</span> – voler < du grec ancien <span style="color:#7a9473">πέτομαι</span> – voler.',
+        synonims: "ιπτάμενος (volant), γρήγορος (rapide), ταχύς (vite)",
+        antonims: "στάσιμος (immobile), αργός (lent)",
+        level: "B2",
+        example: "Έκανε μια πεταχτή κίνηση για να πιάσει τη μπάλα.",
+        exampleTransl: "Il a fait un mouvement rapide pour attraper la balle.",
+        voicePath: "/sound/voices/dailyword/joanna_38.mp3",
+    },
+    {
+        word: "ψάρεμα",
+        translation: "Pêche (activité)",
+        morfology:
+            '<em>ψάρεμα </em>→ ψαρε<span style="color: #b87333">ύω</span> +<span style="color: #b87333"> -μα</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">ψάρεμα</span> < <span style="color:#7a9473">ψάρευμα</span> < <span style="color:#7a9473">ψαρεύω</span> – pêcher) < du grec ancien <span style="color:#7a9473">ὀψάριον</span> – petit mets délicat < <span style="color:#7a9473">ὄψον</span> – mets délicat).',
+        synonims: "αλιεία (pêche), ψάρεμα",
+        antonims: "αγροτική εργασία (travail agricole) – pas direct",
+        level: "A2",
+        example: "Το ψάρεμα είναι το αγαπημένο του χόμπι.",
+        exampleTransl: "La pêche est son passe-temps favori.",
+        voicePath: "/sound/voices/dailyword/joanna_39.mp3",
+    },
+    {
+        word: "αφράτος",
+        translation: "Mousseux, blanc, dodu",
+        morfology:
+            '<em>αφράτος </em>→ αφρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -άτος</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">ἀφράτος</span> < <span style="color:#7a9473">ἀφρός</span> – écume)',
+        synonims:
+            "αφρώδης (écumeux), φουσκωτός (gonflé), λευκός (blanc) – selon le contexte",
+        antonims: "συμπαγής (compact), σκληρός (dur)",
+        level: "B1",
+        example: "Η αφράτη κρέμα στόλιζε το γλυκό.",
+        exampleTransl: "La crème mousseuse décorait le dessert.",
+        voicePath: "/sound/voices/dailyword/joanna_40.mp3",
+    },
+    {
+        word: "δοξάζω",
+        translation: "Glorifier",
+        morfology:
+            '<em>δοξάζω </em>→ δόξ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άζω</span>',
+        etymology: 'Du grec ancien <span style="color:#7a9473">δόξα</span>.',
+        synonims: "επαινώ (louer), υμνώ (chanter), δοξάζω",
+        antonims: "κατηγορώ (accuser), δυσφημώ (diffamer)",
+        level: "B2",
+        example: "Δοξάζουμε τον ήρωα που έσωσε πολλές ζωές.",
+        exampleTransl:
+            "Nous glorifions le héros qui a sauvé de nombreuses vies.",
+        voicePath: "/sound/voices/dailyword/joanna_41.mp3",
+    },
+    {
+        word: "επισκευάζω",
+        translation: "Réparer",
+        morfology:
+            '<em>επισκευάζω </em>→ <span style="color: #b87333">έπι-</span> + σκευ<span style="color: #b87333">ή</span> + <span style="color: #b87333">-άζω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σκευάζω</span> – fabriquer < du grec ancien (<span style="color:#7a9473">σκευάζω</span> < <span style="color:#7a9473">σκεῦος</span> – vase ou <span style="color:#7a9473">σκευή</span> – équipement).',
+        synonims: "επισκευάζω, διορθώνω (corriger), φτιάχνω (arranger)",
+        antonims: "χαλάω (casser), καταστρέφω (détruire)",
+        level: "B1",
+        example: "Πρέπει να επισκευάσω το αυτοκίνητό μου.",
+        exampleTransl: "Je dois réparer ma voiture.",
+        voicePath: "/sound/voices/dailyword/joanna_42.mp3",
+    },
+    {
+        word: "απόδειξη",
+        translation: "Preuve, indice",
+        morfology:
+            '<em>απόδειξη </em>→ αποδει<span style="color: #b87333">κνύω</span> +<span style="color: #b87333"> -ξη</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀπόδειξις</span> – démonstration < <span style="color:#7a9473">ἀπό-</span> (indique l’éloignement : de, depuis ; la cause : de, à cause de) + <span style="color:#7a9473">δείκνῡμι</span> – montrer, indiquer, révéler)',
+        synonims:
+            "στοιχείο (élément de preuve), τεκμήριο (indice), βεβαίωση (attestation)",
+        antonims: "αμφιβολία (doute), ανυπαρξία (absence)",
+        level: "B2",
+        example: "Δεν υπάρχει απόδειξη για την ενοχή του.",
+        exampleTransl: "Il n’y a pas de preuve de sa culpabilité.",
+        voicePath: "/sound/voices/dailyword/joanna_43.mp3",
+    },
+    {
+        word: "φετάρα",
+        translation: "Tranche, morceau",
+        morfology:
+            '<em>φετάρα </em>→ φέτ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άρα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">φέτα</span> – tranche < de l’italien <span style="color:#7a9473">fetta</span> – tranche < du latin (<span style="color:#7a9473">offitta</span> – tranche, morceau < <span style="color:#7a9473">offa</span> – bouchée, morceau)',
+        synonims: "κομμάτι (morceau), φέτα (tranche), μερίδα (portion)",
+        antonims: "ολόκληρο (entier)",
+        level: "B1",
+        example: "Κόψε μια φετάρα ψωμί για μένα.",
+        exampleTransl: "Coupe-moi une tranche de pain.",
+        voicePath: "/sound/voices/dailyword/joanna_44.mp3",
+    },
+    {
+        word: "καρφώνω",
+        translation: "Clouer, enfoncer un clou",
+        morfology:
+            '<em>καρφώνω </em>→ καρφ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -ώνω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">καρφί</span> – clou < du grec médiéval <span style="color:#7a9473">καρφίον</span>, <span style="color:#7a9473">καρφίν</span> – ventouses < du grec ancien <span style="color:#7a9473">κάρφος</span> – bâtonnet, brindille sèche.',
+        synonims: "καρφώνω, στερεώνω (fixer), προσδένω (attacher)",
+        antonims: "ξεβιδώνω (dévisser), αφαιρώ (enlever)",
+        level: "B1",
+        example: "Καρφώνουμε την εικόνα στον τοίχο.",
+        exampleTransl: "Nous clouons le tableau au mur.",
+        voicePath: "/sound/voices/dailyword/joanna_45.mp3",
+    },
+    {
+        word: "ζωγραφικός",
+        translation: "Artistique, graphique",
+        morfology:
+            '<em>ζωγραφικός </em>→ ζωγράφ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ζωγραφική</span> – peinture < du grec ancien (<span style="color:#7a9473">ζωγρᾰφικός</span> < du grec ancien <span style="color:#7a9473">ζωγράφος</span> – peintre < <span style="color:#7a9473">ζωός</span> (vivant) ou <span style="color:#7a9473">ζωή</span> (vie) + <span style="color:#7a9473">γράφος</span> – écrivain < <span style="color:#7a9473">γράφω</span> – écrire)',
+        synonims: "εικαστικός (plastique), γραφικός (graphique), ζωγραφικός",
+        antonims: "μη εικονικός (non figuratif), περιγραφικός (descriptif)",
+        level: "B2",
+        example: "Το ζωγραφικό έργο είχε έντονα χρώματα.",
+        exampleTransl: "L’œuvre picturale avait des couleurs vives.",
+        voicePath: "/sound/voices/dailyword/joanna_46.mp3",
+    },
+    {
+        word: "εμπρησμός",
+        translation: "Incendie criminel",
+        morfology:
+            '<em>εμπρησμός </em>→ εμπρηστ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">ἐμπρησμός</span> < du grec ancien (<span style="color:#7a9473">ἐμπίμπρημι</span> – brûler, consumer < <span style="color:#7a9473">ἐμ-</span> (<span style="color:#7a9473">ἐν-</span> / <span style="color:#7a9473">ἐγ-</span>) (dans, à l’intérieur) + <span style="color:#7a9473">πίμπρημι</span> – souffler ; brûler)',
+        synonims:
+            "εμπρησμός, πυρκαγιά (incendie) – mais l’incendie criminel est un acte, καύση (combustion)",
+        antonims: "σβέση (extinction), κατάσβεση (extinction)",
+        level: "C1",
+        example: "Ο εμπρησμός της αποθήκης θεωρείται έγκλημα.",
+        exampleTransl:
+            "L’incendie criminel de l’entrepôt est considéré comme un crime.",
+        voicePath: "/sound/voices/dailyword/joanna_47.mp3",
+    },
+    {
+        word: "περιγραφή",
+        translation: "Description",
+        morfology:
+            '<em>περιγραφή </em>→ περιγράφ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -η</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">περιγραφή</span> < <span style="color:#7a9473">περῐγρᾰφω</span> – décrire < <span style="color:#7a9473">περι-</span> (autour) + <span style="color:#7a9473">γράφω</span> – écrire)',
+        synonims: "αφήγηση (récit), παρουσίαση (présentation), περιγραφή",
+        antonims: "αοριστία (imprécision), σύγχυση (confusion)",
+        level: "B1",
+        example: "Η περιγραφή του τοπίου ήταν ζωντανή.",
+        exampleTransl: "La description du paysage était vivante.",
+        voicePath: "/sound/voices/dailyword/joanna_48.mp3",
+    },
+    {
+        word: "χριστιανισμός",
+        translation: "Christianisme",
+        morfology:
+            '<em>χριστιανισμός </em>→ χριστιαν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ισμος</span>',
+        etymology:
+            'Du grec koinè (<span style="color:#7a9473">χριστιανισμός</span> – christianisme < <span style="color:#7a9473">χριστιανός</span> – chrétien < <span style="color:#7a9473">Χριστός</span> – Christ)',
+        synonims:
+            "χριστιανική πίστη (foi chrétienne), χριστιανοσύνη (chrétienté)",
+        antonims: "παγανισμός (paganisme), αθεϊσμός (athéisme)",
+        level: "B2",
+        example: "Ο χριστιανισμός έχει πολλές ομολογίες.",
+        exampleTransl: "Le christianisme a de nombreuses confessions.",
+        voicePath: "/sound/voices/dailyword/joanna_49.mp3",
+    },
+    {
+        word: "αλληλογραφία",
+        translation: "Correspondance",
+        morfology:
+            '<em>αλληλογραφία </em>→ αλληλογραφ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">αλληλο-</span> (indique la réciprocité : inter-) + <span style="color:#7a9473">γραφία</span>, <span style="color:#7a9473">γραφή</span> – écriture, dessin < <span style="color:#7a9473">γράφω</span> – écrire, dessiner) < du grec ancien γράφω – écrire, dessiner.',
+        synonims:
+            "αλληλογραφία, αλληλοεπικοινωνία (communication mutuelle), ανταλλαγή επιστολών (échange de lettres)",
+        antonims:
+            "σιωπή (silence), έλλειψη επικοινωνίας (absence de communication)",
+        level: "B2",
+        example: "Η αλληλογραφία τους κρατούσε για χρόνια.",
+        exampleTransl: "Leur correspondance a duré des années.",
+        voicePath: "/sound/voices/dailyword/joanna_50.mp3",
+    },
+    {
+        word: "προγραμματίζω",
+        translation: "Programmer",
+        morfology:
+            '<em>προγραμματίζω </em>→ πρόγραμμα<span style="color: #b87333">τ</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du français <span style="color:#7a9473">programmer</span> ou de l’anglais <span style="color:#7a9473">program</span>.',
+        synonims: "προγραμματίζω, κωδικοποιώ (coder), σχεδιάζω (planifier)",
+        antonims: "εκτελώ (exécuter) – pas direct",
+        level: "B2",
+        example: "Μαθαίνω να προγραμματίζω σε Python.",
+        exampleTransl: "J’apprends à programmer en Python.",
+        voicePath: "/sound/voices/dailyword/joanna_51.mp3",
+    },
+    {
+        word: "βαρέλα",
+        translation: "Grand tonneau",
+        morfology:
+            '<em>βαρέλα </em>→ βαρέλ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -α</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">βαρέλι</span> – tonneau < du grec médiéval <span style="color:#7a9473">βαρέλι</span> < de l’italien <span style="color:#7a9473">barella</span>',
+        synonims: "βαρέλι (tonneau), δοχείο (récipient), κάνιστρο (bidon)",
+        antonims: "μικρό μπουκάλι (petite bouteille)",
+        level: "B1",
+        example: "Η βαρέλα κρατούσε πάνω από 200 λίτρα κρασί.",
+        exampleTransl: "Le grand tonneau contenait plus de 200 litres de vin.",
+        voicePath: "/sound/voices/dailyword/joanna_52.mp3",
+    },
+    {
+        word: "αγοράζω",
+        translation: "Acheter",
+        morfology:
+            '<em>αγοράζω </em>→ αγορ<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -άζω</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">ἀγορά</span> – assemblée, marché.',
+        synonims: "αγοράζω, προμηθεύομαι (se procurer), αποκτώ (acquérir)",
+        antonims: "πουλώ (vendre), ξεφορτώνομαι (se débarrasser)",
+        level: "A1",
+        example: "Πηγαίνω στο σούπερ μάρκετ να αγοράσω γάλα.",
+        exampleTransl: "Je vais au supermarché acheter du lait.",
+        voicePath: "/sound/voices/dailyword/joanna_53.mp3",
+    },
+    {
+        word: "αγόρασμα",
+        translation: "Achat (processus)",
+        morfology:
+            '<em>αγόρασμα </em>→ αγορά<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀγόρασμα</span> < <span style="color:#7a9473">ἀγοράζω</span> – acheter < <span style="color:#7a9473">ἀγορά</span> – assemblée, marché)',
+        synonims: "αγορά (achat), απόκτηση (acquisition), ψώνιο (emplette)",
+        antonims: "πώληση (vente), διάθεση (cession)",
+        level: "B1",
+        example: "Το αγόρασμα του σπιτιού ήταν μια σημαντική απόφαση.",
+        exampleTransl: "L’achat de la maison a été une décision importante.",
+        voicePath: "/sound/voices/dailyword/joanna_54.mp3",
+    },
+    {
+        word: "κλαφουρίζω",
+        translation: "Pleurnicher pour un rien",
+        morfology:
+            '<em>κλαφουρίζω </em>→ κλαψούρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">κλαφουρίζω</span> < <span style="color:#7a9473">κλαψούρα</span> – pleurnicherie < <span style="color:#7a9473">κλάψα</span> – pleur) < du grec ancien <span style="color:#7a9473">κλαίω</span>.',
+        synonims:
+            "κλαίω συνέχεια (pleurer sans cesse), παραπονιέμαι (se plaindre), γκρινιάζω (geindre)",
+        antonims: "χαίρομαι (se réjouir), γελώ (rire)",
+        level: "B2",
+        example: "Το παιδί κλαφουρίζει για το παραμικρό.",
+        exampleTransl: "L’enfant pleurniche pour un rien.",
+        voicePath: "/sound/voices/dailyword/joanna_55.mp3",
+    },
+    {
+        word: "επιστημονικός",
+        translation: "Scientifique (adj.)",
+        morfology:
+            '<em>επιστημονικός </em>→ επιστήμον<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">επιστήμονας</span> – scientifique < du grec ancien (<span style="color:#7a9473">ἐπιστήμη</span> – science, connaissance < <span style="color:#7a9473">ἐπίσταμαι</span> – savoir bien, être sûr < <span style="color:#7a9473">ἐπι-</span> (marque la suite, l’accompagnement ; position : sur) + <span style="color:#7a9473">ἵστημι</span> – placer, se tenir, établir)',
+        synonims:
+            "επιστημονικός, ακαδημαϊκός (académique), ερευνητικός (de recherche)",
+        antonims:
+            "αντιεπιστημονικός (anti-scientifique), εμπειρικός (empirique) – dans le sens non scientifique",
+        level: "B2",
+        example: "Η επιστημονική έρευνα προχωρά με ταχείς ρυθμούς.",
+        exampleTransl: "La recherche scientifique progresse rapidement.",
+        voicePath: "/sound/voices/dailyword/joanna_56.mp3",
+    },
+    {
+        word: "επίσκεψη",
+        translation: "Visite",
+        morfology:
+            '<em>επίσκεψη </em>→ επισκέ<span style="color: #b87333">πτομαι</span> +<span style="color: #b87333"> -ψη</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐπισκέπτομαι</span> – visiter < <span style="color:#7a9473">σκέπτομαι</span> – regarder, observer).',
+        synonims:
+            "επίσκεψη, θέαση (vue), επίσκεψη σε κάποιον (visite à quelqu’un)",
+        antonims: "απουσία (absence), αποχή (abstention)",
+        level: "A2",
+        example: "Έκανα μια επίσκεψη στον παππού μου.",
+        exampleTransl: "J’ai rendu visite à mon grand-père.",
+        voicePath: "/sound/voices/dailyword/joanna_57.mp3",
+    },
+    {
+        word: "σκανδαλίζω",
+        translation: "Scandaliser",
+        morfology:
+            '<em>σκανδαλίζω </em>→ σκάνδαλ<span style="color: #b87333">ον</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">σκάνδαλον</span> – scandale ; piège à appât < du grec ancien <span style="color:#7a9473">σκάνδαλον</span>.',
+        synonims:
+            "σκανδαλίζω, προκαλώ σκάνδαλο (causer un scandale), ταράζω (perturber)",
+        antonims: "ηρεμώ (calmer), συμβιβάζω (réconcilier)",
+        level: "B2",
+        example: "Η συμπεριφορά του σκανδάλισε όλη την κοινωνία.",
+        exampleTransl: "Son comportement a scandalisé toute la société.",
+        voicePath: "/sound/voices/dailyword/joanna_58.mp3",
+    },
+    {
+        word: "μυλωνάς",
+        translation: "Meunier",
+        morfology:
+            '<em>μυλωνάς </em>→ μύλ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ωνάς</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">μυλών</span> – moulin < <span style="color:#7a9473">μύλος</span> – meunier, broyeur < <span style="color:#7a9473">μύλη</span> – meule',
+        synonims: "αλευροποιός (meunier), μυλωνάς",
+        antonims: "αρτοποιός (boulanger) – pas direct",
+        level: "B1",
+        example: "Ο μυλωνάς άλεσε το σιτάρι στο μύλο.",
+        exampleTransl: "Le meunier a moulu le blé au moulin.",
+        voicePath: "/sound/voices/dailyword/joanna_59.mp3",
+    },
+    {
+        word: "χαμηλώνω",
+        translation: "Baisser, descendre",
+        morfology:
+            '<em>χαμηλώνω </em>→ χαμηλ<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -ώνω</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">χαμηλά</span> – bas < <span style="color:#7a9473">χαμηλός</span> – bas, insignifiant) < du grec ancien <span style="color:#7a9473">χαμαί</span> – à terre, par terre.',
+        synonims: "κατεβάζω (descendre), μειώνω (diminuer), χαμηλώνω",
+        antonims: "ανεβάζω (monter), υψώνω (élever), αυξάνω (augmenter)",
+        level: "A2",
+        example: "Χαμήλωσε τη μουσική, παρακαλώ.",
+        exampleTransl: "Baisse la musique, s’il te plaît.",
+        voicePath: "/sound/voices/dailyword/joanna_60.mp3",
+    },
+    {
+        word: "ενθουσιαστής",
+        translation: "Enthousiaste (personne)",
+        morfology:
+            '<em>ενθουσιαστής </em>→ ενθουσιάζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -της</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ενθουσιάζω</span> – être inspiré < du grec ancien (<span style="color:#7a9473">ἐνθουσιάζω</span> < <span style="color:#7a9473">ἔνθους</span> – inspiré, exalté < <span style="color:#7a9473">ἔνθεος</span> – inspiré < <span style="color:#7a9473">ἐν</span> + <span style="color:#7a9473">θεός</span> – avec Dieu).',
+        synonims:
+            "ενθουσιώδης (exalté), φανατικός (fanatique), λάτρης (amateur)",
+        antonims: "απαθής (indifférent), σκεπτικιστής (sceptique)",
+        level: "B2",
+        example: "Είναι ενθουσιαστής της τεχνολογίας.",
+        exampleTransl: "Il est un passionné de technologie.",
+        voicePath: "/sound/voices/dailyword/joanna_61.mp3",
+    },
+    {
+        word: "κρίση",
+        translation: "Crise, opinion",
+        morfology:
+            '<em>κρίση </em>→ κρί<span style="color: #b87333">νω</span> +<span style="color: #b87333"> ση</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">κρίσις</span> – séparation, opinion, décision < <span style="color:#7a9473">κρίνω</span> – séparer, décider, condamner)',
+        synonims: "κρίση, κρίση (opinion), αξιολόγηση (évaluation)",
+        antonims:
+            "αποδοχή (acceptation), ευφορία (euphorie) – dans le sens de crise",
+        level: "B2",
+        example: "Η οικονομική κρίση επηρέασε πολλές επιχειρήσεις.",
+        exampleTransl:
+            "La crise économique a touché de nombreuses entreprises.",
+        voicePath: "/sound/voices/dailyword/joanna_62.mp3",
+    },
+    {
+        word: "συνταξιούχος",
+        translation: "Retraité",
+        morfology:
+            '<em>συνταξιούχος </em>→ σύνταξ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιούχος</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σύνταξη</span> – retraite < du grec ancien (<span style="color:#7a9473">σύνταξις</span> – ordre, arrangement, armée, lien < <span style="color:#7a9473">συντάσσω</span> – arranger, fonder, lier)',
+        synonims:
+            "συνταξιούχος, απόστρατος (militaire à la retraite), ηλικιωμένος (âgé)",
+        antonims: "εργαζόμενος (actif), νέος (jeune)",
+        level: "B1",
+        example: "Ο παππούς μου είναι συνταξιούχος δάσκαλος.",
+        exampleTransl: "Mon grand-père est un enseignant à la retraite.",
+        voicePath: "/sound/voices/dailyword/joanna_63.mp3",
+    },
+    {
+        word: "θεραπεία",
+        translation: "Traitement, soin",
+        morfology:
+            '<em>θεραπεία </em>→ θεραπ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -εία</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">θεραπεία</span> < <span style="color:#7a9473">θεραπεύω</span> – soigner, traiter < <span style="color:#7a9473">θεράπων</span> – compagnon, serviteur)',
+        synonims: "θεραπεία, αγωγή (traitement), περίθαλψη (soin)",
+        antonims: "ασθένεια (maladie), βλάβη (dommage)",
+        level: "B2",
+        example: "Η θεραπεία του καρκίνου προχωρά γρήγορα.",
+        exampleTransl: "Le traitement du cancer progresse rapidement.",
+        voicePath: "/sound/voices/dailyword/joanna_64.mp3",
+    },
+    {
+        word: "αρχίζω",
+        translation: "Commencer",
+        morfology:
+            '<em>αρχίζω </em>→ αρχ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ἀρχίζω</span> < du grec ancien <span style="color:#7a9473">ἀρχή</span> – commencement, principe.',
+        synonims: "αρχίζω, ξεκινάω (commencer), εγκαινιάζω (inaugurer)",
+        antonims: "τελειώνω (finir), παύω (cesser)",
+        level: "A2",
+        example: "Αρχίζω τις σπουδές μου το Σεπτέμβριο.",
+        exampleTransl: "Je commence mes études en septembre.",
+        voicePath: "/sound/voices/dailyword/joanna_65.mp3",
+    },
+    {
+        word: "βραδιά",
+        translation: "Soirée, soir",
+        morfology:
+            '<em>βραδιά </em>→ βράδ<span style="color: #b87333">υ</span> +<span style="color: #b87333"> -ιά</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">βραδιά</span> < <span style="color:#7a9473">βραδεῖα</span> < <span style="color:#7a9473">βραδύς</span> – lent, tardif)',
+        synonims:
+            "βράδυ (soir), βραδιά, εκδήλωση (événement) – dans le sens de fête",
+        antonims: "πρωινό (matin), αυγή (aube)",
+        level: "A2",
+        example: "Η βραδιά ήταν υπέροχη με φίλους.",
+        exampleTransl: "La soirée était merveilleuse avec des amis.",
+        voicePath: "/sound/voices/dailyword/joanna_66.mp3",
+    },
+    {
+        word: "γάυγισμα",
+        translation: "Aboiement",
+        morfology:
+            '<em>γάυγισμα </em>→ γαυγί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">γαυγίζω</span> – aboyer < <span style="color:#7a9473">γαβ</span> – ouaf (onomatopée)',
+        synonims:
+            "γάβγισμα (aboiement), γαβγητό (aboiement), βροντή (bruit fort)",
+        antonims: "σιωπή (silence), ησυχία (calme)",
+        level: "B1",
+        example: "Το γάυγισμα του σκύλου με ξύπνησε το πρωί.",
+        exampleTransl: "L’aboiement du chien m’a réveillé le matin.",
+        voicePath: "/sound/voices/dailyword/joanna_67.mp3",
+    },
+    {
+        word: "σημαδεύω",
+        translation: "Marquer, viser",
+        morfology:
+            '<em>σημαδεύω </em>→ σημάδ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -εύω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σημάδι</span> – signe, marque < du grec médiéval <span style="color:#7a9473">σημάδιον</span> (diminutif du grec ancien <span style="color:#7a9473"></span>σῆμ<span style="color:#7a9473">α</span> – marque, signe).',
+        synonims:
+            "σημαδεύω, σημειώνω (noter), βάζω σημάδι (mettre une marque), στοχεύω (viser)",
+        antonims: "αφήνω χωρίς σημάδι (laisser sans marque)",
+        level: "B1",
+        example: "Σημάδεψε το δέντρο με έναν κόκκινο κύκλο.",
+        exampleTransl: "Il a marqué l’arbre d’un cercle rouge.",
+        voicePath: "/sound/voices/dailyword/joanna_68.mp3",
+    },
+    {
+        word: "πλημμυρίζω",
+        translation: "Inonder",
+        morfology:
+            '<em>πλημμυρίζω </em>→ πλημμύρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">πλημμυρίζω</span> < du grec ancien (<span style="color:#7a9473">πλημυρέω</span>, <span style="color:#7a9473">πλημυρῶ</span> < <span style="color:#7a9473">πλημύρα</span> – inondation).',
+        synonims: "κατακλύζω (submerger), πλημμυρίζω, υπερχειλίζω (déborder)",
+        antonims: "αδειάζω (vider), αποστραγγίζω (assécher)",
+        level: "B2",
+        example: "Η βροχή πλημμύρισε το υπόγειο.",
+        exampleTransl: "La pluie a inondé le sous-sol.",
+        voicePath: "/sound/voices/dailyword/joanna_69.mp3",
+    },
+    {
+        word: "σφιχτός",
+        translation: "Serre, étroit, avare",
+        morfology:
+            '<em>σφιχτός </em>→ σφί<span style="color: #b87333">γγω</span> +<span style="color: #b87333"> -χτός</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">σφικτός</span> – serré < du grec ancien <span style="color:#7a9473">σφιγκτός</span> – serré < <span style="color:#7a9473">σφίγγω</span> – lier fermement',
+        synonims:
+            "σφιχτός, σφιγμένος (serré), στενός (étroit), τσιγκούνης (avare)",
+        antonims: "χαλαρός (détendu), φαρδύς (large), γενναιόδωρος (généreux)",
+        level: "B1",
+        example: "Φόρεσε ένα σφιχτό πουκάμισο.",
+        exampleTransl: "Il a mis une chemise serrée.",
+        voicePath: "/sound/voices/dailyword/joanna_70.mp3",
+    },
+    {
+        word: "παράλυση",
+        translation: "Paralysie",
+        morfology:
+            '<em>παράλυση </em>→ <span style="color: #b87333">παρα-</span> + λύ<span style="color: #b87333">ω</span> + <span style="color: #b87333">-ση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">παραλύω</span> < <span style="color:#7a9473">λύω</span> – délier).',
+        synonims: "παράλυση, ακινησία (immobilité), αδυναμία (faiblesse)",
+        antonims: "κίνηση (mouvement), ευκινησία (mobilité)",
+        level: "B2",
+        example: "Το ατύχημα του προκάλεσε παράλυση στα πόδια.",
+        exampleTransl: "L’accident a provoqué une paralysie des jambes.",
+        voicePath: "/sound/voices/dailyword/joanna_71.mp3",
+    },
+    {
+        word: "ψαράκι",
+        translation: "Petit poisson",
+        morfology:
+            '<em>ψαράκι </em>→ ψάρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άκι</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ψάρι</span> – poisson < du grec médiéval <span style="color:#7a9473">ψάρι</span> – poisson < du grec ancien (<span style="color:#7a9473">ὀψάριον</span> – petit mets délicat < <span style="color:#7a9473">ὄψον</span> – mets délicat).',
+        synonims: "ψαράκι, μικρό ψάρι (petit poisson), ψαρόπουλο (poisson)",
+        antonims: "μεγάλο ψάρι (gros poisson), φάλαινα (baleine)",
+        level: "A2",
+        example: "Ένα ψαράκι κολυμπούσε στη λίμνη.",
+        exampleTransl: "Un petit poisson nageait dans l’étang.",
+        voicePath: "/sound/voices/dailyword/joanna_72.mp3",
+    },
+    {
+        word: "ακύρωση",
+        translation: "Annulation",
+        morfology:
+            '<em>ακύρωση </em>→ ακυρώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀκύρωσις</span> < <span style="color:#7a9473">ἀκυρόω</span> – rejeter, annuler < <span style="color:#7a9473">ἄκυρος</span> – impuissant, indolent < <span style="color:#7a9473">α-</span> (préfixe privatif) + <span style="color:#7a9473">κῦρος</span> – autorité suprême ; authenticité, confirmation)',
+        synonims: "ακύρωση, ματαίωση (échec), αναστολή (suspension)",
+        antonims: "επικύρωση (validation), έγκριση (approbation)",
+        level: "B2",
+        example: "Η ακύρωση της συναυλίας απογοήτευσε τους θαυμαστές.",
+        exampleTransl: "L’annulation du concert a déçu les fans.",
+        voicePath: "/sound/voices/dailyword/joanna_73.mp3",
+    },
+    {
+        word: "καλημερίζω",
+        translation: "Dire bonjour",
+        morfology:
+            '<em>καλημερίζω </em>→ καλημέρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">καλημερίζω</span> < <span style="color:#7a9473">καλημέρα</span> – bonjour < <span style="color:#7a9473">καλήν</span> <span style="color:#7a9473">ἡμέραν</span>).',
+        synonims: "χαιρετώ (saluer), λέω καλημέρα (dire bonjour)",
+        antonims: "αποχαιρετώ (dire au revoir), αγνοώ (ignorer)",
+        level: "A2",
+        example: "Καλημερίζω τους γείτονες κάθε πρωί.",
+        exampleTransl: "Je dis bonjour aux voisins chaque matin.",
+        voicePath: "/sound/voices/dailyword/joanna_74.mp3",
+    },
+    {
+        word: "μαστοριά",
+        translation: "Maîtrise, habileté",
+        morfology:
+            '<em>μαστοριά </em>→ μάστορ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ιά</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">μαστορεία</span> – maîtrise < <span style="color:#7a9473">μάστορας</span> – maître < <span style="color:#7a9473">μαΐστωρ</span> < <span style="color:#7a9473">μαγίστωρ</span>) < du latin <span style="color:#7a9473">magister</span> – maître, chef',
+        synonims: "μαστοριά, τεχνική (technique), επιδεξιότητα (habileté)",
+        antonims: "απειρία (inexpérience), αδεξιότητα (maladresse)",
+        level: "B2",
+        example: "Η μαστοριά του στην ξυλουργική είναι εξαιρετική.",
+        exampleTransl: "Sa maîtrise en menuiserie est excellente.",
+        voicePath: "/sound/voices/dailyword/joanna_75.mp3",
+    },
+    {
+        word: "σκυφτός",
+        translation: "Courbé, penché",
+        morfology:
+            '<em>σκυφτός </em>→ σκύ<span style="color: #b87333">βω</span> +<span style="color: #b87333"> -φτός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σκύβω</span> – se pencher, s’incliner < du grec médiéval <span style="color:#7a9473">σκύπτω</span> < du grec ancien (<span style="color:#7a9473">κύπτω</span> – se baisser < peut-être de <span style="color:#7a9473">κυφός</span> – voûté, courbé)',
+        synonims: "σκυφτός, λυγισμένος (courbé), κυφός (voûté)",
+        antonims: "όρθιος (droit), τεντωμένος (tendu)",
+        level: "B1",
+        example: "Περπατούσε σκυφτός λόγω της ηλικίας του.",
+        exampleTransl: "Il marchait courbé à cause de son âge.",
+        voicePath: "/sound/voices/dailyword/joanna_76.mp3",
+    },
+    {
+        word: "ψαχουλεύω",
+        translation: "Fouiller, tâtonner",
+        morfology:
+            '<em>ψαχουλεύω </em>→ ψάχ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> χουλεύω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ψάχνω</span> – chercher, tâter et <span style="color:#7a9473">χαλεύω</span> – chercher, demander.',
+        synonims: "ψάχνω (chercher), εξερευνώ (explorer), ψηλαφώ (palper)",
+        antonims: "αγνοώ (ignorer), παραβλέπω (négliger)",
+        level: "B2",
+        example: "Ψαχούλεψε στην τσάντα για τα κλειδιά.",
+        exampleTransl: "Il a fouillé dans le sac à la recherche des clés.",
+        voicePath: "/sound/voices/dailyword/joanna_77.mp3",
+    },
+    {
+        word: "γατάκι, γατίτσα, γατούλα, γατούλι",
+        translation: "Minet, petite chatte",
+        morfology:
+            '<em>γατάκι, γατίτσα, γατούλα, γατούλι </em>→ γάτ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άκι/-ίτσα/-ούλα/-ούλι</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">γάτα</span> – chat < du grec médiéval <span style="color:#7a9473">γάτα</span> < du bas latin <span style="color:#7a9473">gatta</span> < du latin tardif <span style="color:#7a9473">catta</span>, <span style="color:#7a9473">cattus</span>.',
+        synonims: "γάτα (chat), γατούλα (minet), γατίτσα (minette)",
+        antonims: "σκύλος (chien), σκυλάκι (petit chien)",
+        level: "A2",
+        example: "Πήρε ένα γατάκι από το δρόμο.",
+        exampleTransl: "Il a pris un chaton dans la rue.",
+        voicePath: "/sound/voices/dailyword/joanna_78.mp3",
+    },
+    {
+        word: "βαρύτητα",
+        translation: "Lourdeur, gravité, importance",
+        morfology:
+            '<em>βαρύτητα </em>→ βαρ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -ύτητα</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">βᾰρύτης</span> – poids, hauteur < <span style="color:#7a9473">βᾰρύς</span> – lourd)',
+        synonims:
+            "βάρος (poids), σοβαρότητα (sérieux), σπουδαιότητα (importance)",
+        antonims: "ελαφρότητα (légèreté), επιπολαιότητα (étourderie)",
+        level: "B2",
+        example: "Η βαρύτητα της κατάστασης απαιτεί προσοχή.",
+        exampleTransl: "La gravité de la situation exige de l’attention.",
+        voicePath: "/sound/voices/dailyword/joanna_79.mp3",
+    },
+    {
+        word: "νικητής",
+        translation: "Vainqueur",
+        morfology:
+            '<em>νικητής </em>→ νικ<span style="color: #b87333">άω</span> +<span style="color: #b87333"> -ητης</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">νικητής</span> < <span style="color:#7a9473">νικάω, νικῶ</span> – vaincre < <span style="color:#7a9473">νίκη</span> – victoire)',
+        synonims:
+            "νικητής, πρωταθλητής (champion), κάτοχος νίκης (détenteur de la victoire)",
+        antonims: "ηττημένος (vaincu), χαμένος (perdant)",
+        level: "B1",
+        example: "Ο νικητής του αγώνα πήρε το χρυσό μετάλλιο.",
+        exampleTransl:
+            "Le vainqueur de la compétition a reçu la médaille d’or.",
+        voicePath: "/sound/voices/dailyword/joanna_80.mp3",
+    },
+    {
+        word: "βαρκάκι, βαρκίτσα, βαρκούλα",
+        translation: "Petit bateau, barquette",
+        morfology:
+            '<em>βαρκάκι, βαρκίτσα, βαρκούλα </em>→ βάρκ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άκι/-ίτσα/-ούλα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">βάρκα</span> – bateau < du latin tardif <span style="color:#7a9473">barca</span> < du latin <span style="color:#7a9473">baris</span> < du grec ancien <span style="color:#7a9473">βᾶρις</span> < de l’égyptien ancien <span style="color:#7a9473">/bair/</span>.',
+        synonims: "βάρκα (bateau), καραβάκι (petit navire), λέμβος (chaloupe)",
+        antonims: "πλοίο (navire), φέρι (ferry)",
+        level: "A2",
+        example: "Ένα βαρκάκι επέπλεε στην ήρεμη λίμνη.",
+        exampleTransl: "Une barquette flottait sur le lac calme.",
+        voicePath: "/sound/voices/dailyword/joanna_81.mp3",
+    },
+    {
+        word: "σεμνότητα",
+        translation: "Modestie, humilité",
+        morfology:
+            '<em>σεμνότητα </em>→ σεμν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ότητα</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">σεμνότης</span> – solennité < <span style="color:#7a9473">σεμνός</span> – vénérable < <span style="color:#7a9473">σέβομαι</span> – vénérer)',
+        synonims:
+            "σεμνότητα, ταπεινοφροσύνη (humilité), ευπρέπεια (bienséance)",
+        antonims: "αλαζονεία (arrogance), ματαιοδοξία (vanité)",
+        level: "B2",
+        example: "Η σεμνότητά του τον κάνει αγαπητό σε όλους.",
+        exampleTransl: "Sa modestie le rend aimé de tous.",
+        voicePath: "/sound/voices/dailyword/joanna_82.mp3",
+    },
+    {
+        word: "ψαράς",
+        translation: "Pêcheur",
+        morfology:
+            '<em>ψαράς </em>→ ψάρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άς</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ὀψαρᾶς</span> < du grec ancien (<span style="color:#7a9473">ὀψάριον</span> – petit mets délicat < <span style="color:#7a9473">ὄψον</span> – mets délicat).',
+        synonims: "ψαράς, αλιέας (pêcheur), ψαροκυνηγός (chasseur de poissons)",
+        antonims: "κρεοπώλης (boucher) – pas direct",
+        level: "A2",
+        example: "Ο ψαράς πιάστηκε μια μεγάλη τούνα.",
+        exampleTransl: "Le pêcheur a attrapé un gros thon.",
+        voicePath: "/sound/voices/dailyword/joanna_83.mp3",
+    },
+    {
+        word: "συχνάζω",
+        translation: "Fréquenter assidûment",
+        morfology:
+            '<em>συχνάζω </em>→ συχν<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -άζω</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">συχνός</span> – fréquent.',
+        synonims:
+            "επισκέπτομαι συχνά (visiter souvent), πηγαίνω συχνά (aller souvent)",
+        antonims: "αποφεύγω (éviter), σπανίζω (être rare)",
+        level: "B2",
+        example: "Συχνάζει στο ίδιο καφέ κάθε πρωί.",
+        exampleTransl: "Il fréquente le même café chaque matin.",
+        voicePath: "/sound/voices/dailyword/joanna_84.mp3",
+    },
+    {
+        word: "λύπη",
+        translation: "Tristesse",
+        morfology:
+            '<em>λύπη </em>→ λυπ<span style="color: #b87333">άμαι</span> +<span style="color: #b87333"> -η</span>',
+        etymology: 'Du grec ancien <span style="color:#7a9473">λύπη</span>',
+        synonims:
+            "θλίψη (tristesse), στενοχώρια (peine), μελαγχολία (mélancolie)",
+        antonims: "χαρά (joie), ευτυχία (bonheur)",
+        level: "B1",
+        example: "Αισθάνθηκε μεγάλη λύπη για την απώλεια.",
+        exampleTransl: "Il a ressenti une grande tristesse pour la perte.",
+        voicePath: "/sound/voices/dailyword/joanna_85.mp3",
+    },
+    {
+        word: "σκαλιστήρι",
+        translation: "Houe, ciseau",
+        morfology:
+            '<em>σκαλιστήρι </em>→ σκαλί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -στήρι</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">σκαλιστήριον</span> < <span style="color:#7a9473">σκαλίζω</span> – bêcher, sarcler) < du grec ancien <span style="color:#7a9473">σκάλλω</span> – creuser, fouiller',
+        synonims:
+            "σκαπτικό εργαλείο (outil de bêchage), αξίνα (pioche), σμίλη (burin)",
+        antonims: "σφυρί (marteau) – pas direct",
+        level: "B2",
+        example: "Χρησιμοποίησε το σκαλιστήρι για να καθαρίσει τον κήπο.",
+        exampleTransl: "Il a utilisé la houe pour nettoyer le jardin.",
+        voicePath: "/sound/voices/dailyword/joanna_86.mp3",
+    },
+    {
+        word: "κλειδώνω",
+        translation: "Fermer à clé",
+        morfology:
+            '<em>κλειδώνω </em>→ κλειδ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -ώνω</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">κλείς</span> – verrou, clé.',
+        synonims: "κλειδώνω, ασφαλίζω (verrouiller), μανταλώνω (barrer)",
+        antonims: "ξεκλειδώνω (déverrouiller), ανοίγω (ouvrir)",
+        level: "A2",
+        example: "Κλείδωσε την πόρτα πριν φύγεις.",
+        exampleTransl: "Ferme la porte à clé avant de partir.",
+        voicePath: "/sound/voices/dailyword/joanna_87.mp3",
+    },
+    {
+        word: "κουρέας",
+        translation: "Coiffeur (pour hommes)",
+        morfology:
+            '<em>κουρέας </em>→ κουρ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -έας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κουρεύω</span> – couper les cheveux < du grec médiéval <span style="color:#7a9473">κουρεύω</span> < du grec koinè (<span style="color:#7a9473">κουρεύομαι</span> – se faire couper les cheveux < <span style="color:#7a9473">κούρα</span> – coupe, tonte)',
+        synonims: "κομμωτής (coiffeur), κουρέας",
+        antonims: "πελάτης (client) – pas direct",
+        level: "B1",
+        example: "Πήγα στον κουρέα για κούρεμα.",
+        exampleTransl:
+            "Je suis allé chez le coiffeur pour me faire couper les cheveux.",
+        voicePath: "/sound/voices/dailyword/joanna_88.mp3",
+    },
+    {
+        word: "τρυφερότητα",
+        translation: "Tendresse",
+        morfology:
+            '<em>τρυφερότητα </em>→ τρυφερ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ότητα</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">τρυφερότης</span> – douceur, délicatesse, luxe < <span style="color:#7a9473">τρυφερός</span> – tendre, luxueux < <span style="color:#7a9473">τρυφή</span> – douceur, jouissance)',
+        synonims: "τρυφερότητα, απαλότητα (douceur), στοργή (affection)",
+        antonims: "σκληρότητα (dureté), ωμότητα (brutalité)",
+        level: "B2",
+        example: "Η τρυφερότητά της με συγκίνησε.",
+        exampleTransl: "Sa tendresse m’a ému.",
+        voicePath: "/sound/voices/dailyword/joanna_89.mp3",
+    },
+    {
+        word: "δηλητηριάζω",
+        translation: "Empoisonner",
+        morfology:
+            '<em>δηλητηριάζω </em>→ δηλητήρ<span style="color: #b87333">ιο</span> +<span style="color: #b87333"> -ιάζω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">δηλητήριο</span> – poison < du grec ancien (<span style="color:#7a9473">δηλητήρῐον</span> < <span style="color:#7a9473">δήλησις</span> < <span style="color:#7a9473">δηλέομαι</span>).',
+        synonims:
+            "δηλητηριάζω, δηλητηριάζω (empoisonner), σκοτώνω με δηλητήριο (tuer avec du poison)",
+        antonims: "θεραπεύω (guérir), σώζω (sauver)",
+        level: "B2",
+        example: "Κάποιος δηλητηρίασε το σκυλί του γείτονα.",
+        exampleTransl: "Quelqu’un a empoisonné le chien du voisin.",
+        voicePath: "/sound/voices/dailyword/joanna_90.mp3",
+    },
+    {
+        word: "φετινός",
+        translation: "De cette année",
+        morfology:
+            '<em>φετινός </em>→ φέτ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ινός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">φέτος</span> – cette année < du grec koinè (<span style="color:#7a9473">ἐφετινός</span> – de cette année < <span style="color:#7a9473">ἔτος</span> – année)',
+        synonims: "φετινός, τρέχοντος έτους (de l’année en cours)",
+        antonims: "περσινός (de l’année dernière), προηγούμενος (précédent)",
+        level: "B1",
+        example: "Η φετινή σοδειά είναι εξαιρετική.",
+        exampleTransl: "La récolte de cette année est excellente.",
+        voicePath: "/sound/voices/dailyword/joanna_91.mp3",
+    },
+    {
+        word: "πετρίτσα, πετρούλα, πετράδι, πετραδάκι",
+        translation: "Petit caillou",
+        morfology:
+            '<em>πετρίτσα, πετρούλα, πετράδι, πετραδάκι </em>→ πέτρα +<span style="color: #b87333"> -ίτσα/-ούλα/-άδι/-αδάκι</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">πέτρα</span> – pierre < du grec ancien <span style="color:#7a9473">πέτρα</span> – bloc de pierre, rocher.',
+        synonims: "πετράδι (caillou), βότσαλο (galet), λιθάρι (pierre)",
+        antonims: "βράχος (rocher), ογκόλιθος (bloc)",
+        level: "A2",
+        example: "Μάζευε πετρούλες στην παραλία.",
+        exampleTransl: "Il ramassait des petits cailloux sur la plage.",
+        voicePath: "/sound/voices/dailyword/joanna_92.mp3",
+    },
+    {
+        word: "ταχύτητα",
+        translation: "Vitesse",
+        morfology:
+            '<em>ταχύτητα </em>→ ταχ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -ύτητα</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ταχυτής</span> – vitesse < <span style="color:#7a9473">τᾰχύς</span> – rapide)',
+        synonims: "ταχύτητα, σπουδή (hâte), γρήγορη κίνηση (mouvement rapide)",
+        antonims: "βραδύτητα (lenteur), αργότητα (lenteur)",
+        level: "A2",
+        example: "Η ταχύτητα του αυτοκινήτου ήταν πολύ υψηλή.",
+        exampleTransl: "La vitesse de la voiture était très élevée.",
+        voicePath: "/sound/voices/dailyword/joanna_93.mp3",
+    },
+    {
+        word: "σκάψιμο",
+        translation: "Creusement",
+        morfology:
+            '<em>σκάψιμο </em>→ σκά<span style="color: #b87333">βω</span> +<span style="color: #b87333"> -ψιμο</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σκάφτω, σκάβω</span> – creuser < du grec ancien <span style="color:#7a9473">σκάπτω</span> – creuser.',
+        synonims: "σκάψιμο, ανασκαφή (fouille), όρυξη (excavation)",
+        antonims: "χτίσιμο (construction), επίχωση (remblai)",
+        level: "B1",
+        example: "Το σκάψιμο ενός λάκκου πήρε ώρες.",
+        exampleTransl: "Le creusement d’un trou a pris des heures.",
+        voicePath: "/sound/voices/dailyword/joanna_94.mp3",
+    },
+    {
+        word: "περιβολάρης",
+        translation: "Jardinier",
+        morfology:
+            '<em>περιβολάρης </em>→ περιβόλ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άρης</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">περιβολάρης</span>, <span style="color:#7a9473">περβολάρης</span> < du grec koinè <span style="color:#7a9473">περιβόλιον</span> – petit enclos, jardin < du grec ancien (<span style="color:#7a9473">περίβόλος</span> – enclos, enceinte < <span style="color:#7a9473">περί-</span> (autour) + <span style="color:#7a9473">βάλλω</span> – jeter, frapper)',
+        synonims: "κηπουρός (jardinier), περιβολάρης, γεωργός (agriculteur)",
+        antonims: "αρχιτέκτονας (architecte) – pas direct",
+        level: "B1",
+        example: "Ο περιβολάρης φρόντιζε τα λουλούδια.",
+        exampleTransl: "Le jardinier s’occupait des fleurs.",
+        voicePath: "/sound/voices/dailyword/joanna_95.mp3",
+    },
+    {
+        word: "εγωιστής",
+        translation: "Égoïste",
+        morfology:
+            '<em>εγωιστής </em>→ εγ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ιστής</span>',
+        etymology:
+            'Du français <span style="color:#7a9473">égoïste</span> < du grec ancien <span style="color:#7a9473">ἐγώ</span> – moi.',
+        synonims:
+            "εγωιστής, φιλάυτος (égocentrique), ναρκισσιστής (narcissique)",
+        antonims: "αλτρουιστής (altruiste), ανιδιοτελής (désintéressé)",
+        level: "B2",
+        example: "Ο εγωιστής νοιάζεται μόνο για τον εαυτό του.",
+        exampleTransl: "L’égoïste ne se soucie que de lui-même.",
+        voicePath: "/sound/voices/dailyword/joanna_96.mp3",
+    },
+    {
+        word: "σύνδεσμος",
+        translation: "Lien, connexion, conjonction",
+        morfology:
+            '<em>σύνδεσμος </em>→ <span style="color: #b87333">συν-</span> + δέ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -σμος</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">σύνδεσμος</span> < <span style="color:#7a9473">συνδέω</span> – lier ensemble < <span style="color:#7a9473">σύν-</span> (ensemble) + <span style="color:#7a9473">δέω</span> – lier, attacher)',
+        synonims: "σύνδεσμος, δεσμός (lien), σχέση (relation)",
+        antonims: "αποσύνδεση (déconnexion), διάσπαση (rupture)",
+        level: "B2",
+        example: "Ο σύνδεσμος μεταξύ τους ήταν ισχυρός.",
+        exampleTransl: "Le lien entre eux était fort.",
+        voicePath: "/sound/voices/dailyword/joanna_97.mp3",
+    },
+    {
+        word: "συνήθεια",
+        translation: "Habitude",
+        morfology:
+            '<em>συνήθεια </em>→ συνήθ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -εία</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">συνήθεια</span> < <span style="color:#7a9473">συνήθης</span> – habituel < <span style="color:#7a9473">συν</span> + <span style="color:#7a9473">ἦθος</span> – demeure < <span style="color:#7a9473">ἔθος</span> – habitude, coutume < <span style="color:#7a9473">ἔθω</span> – avoir coutume)',
+        synonims: "συνήθεια, έθιμο (coutume), τρόπος (manière, habitude)",
+        antonims: "καινοτομία (innovation), παραξενιά (bizarrerie)",
+        level: "B1",
+        example: "Είναι συνήθειά μου να διαβάζω πριν τον ύπνο.",
+        exampleTransl: "J’ai l’habitude de lire avant de dormir.",
+        voicePath: "/sound/voices/dailyword/joanna_98.mp3",
+    },
+    {
+        word: "γαλλικός",
+        translation: "Français (adj.)",
+        morfology:
+            '<em>γαλλικός </em>→ Γαλλ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">Γαλλία</span> – France < du latin <span style="color:#7a9473">Gallia</span>.',
+        synonims: "γαλλικός, από τη Γαλλία (de France)",
+        antonims: "ελληνικός (grec), αγγλικός (anglais)",
+        level: "A2",
+        example: "Μαθαίνω γαλλικά στο σχολείο.",
+        exampleTransl: "J’apprends le français à l’école.",
+        voicePath: "/sound/voices/dailyword/joanna_99.mp3",
+    },
+    {
+        word: "πριονίζω",
+        translation: "Scier",
+        morfology:
+            '<em>πριονίζω </em>→ πριόν<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">πριονίζω</span> < du grec ancien <span style="color:#7a9473">πρίων</span> – scie.',
+        synonims:
+            "πριονίζω, κόβω με πριόνι (couper à la scie), τεμαχίζω (découper)",
+        antonims: "κολλώ (coller), ενώνω (unir)",
+        level: "B1",
+        example: "Πριόνισε το ξύλο σε μικρά κομμάτια.",
+        exampleTransl: "Il a scié le bois en petits morceaux.",
+        voicePath: "/sound/voices/dailyword/joanna_100.mp3",
+    },
+    {
+        word: "ποτιστήρι",
+        translation: "Arrosoir",
+        morfology:
+            '<em>ποτιστήρι </em>→ ποτί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -στήρι</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ποτιστήριν</span> < du grec ancien (<span style="color:#7a9473">ποτίζω</span> – abreuver, arroser < <span style="color:#7a9473">πότος</span> – gorgée)',
+        synonims:
+            "ποτιστήρι, δοχείο ποτίσματος (récipient d’arrosage), λάστιχο (tuyau) – pas tout à fait",
+        antonims: "σφουγγαρίστρα (serpillière) – pas direct",
+        level: "B1",
+        example: "Χρησιμοποιώ το ποτιστήρι για τα λουλούδια.",
+        exampleTransl: "J’utilise l’arrosoir pour les fleurs.",
+        voicePath: "",
+    },
+    {
+        word: "επισκέπτης",
+        translation: "Visiteur",
+        morfology:
+            '<em>επισκέπτης </em>→ επισκέπτ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -της</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐπισκέπτης</span> < <span style="color:#7a9473">ἐπισκέπτομαι</span> – visiter < <span style="color:#7a9473">σκέπτομαι</span> – regarder, observer).',
+        synonims: "επισκέπτης, φιλοξενούμενος (hôte), επισκέπτης",
+        antonims: "οικοδεσπότης (hôte), κάτοικος (habitant)",
+        level: "A2",
+        example: "Οι επισκέπτες του μουσείου ήταν πολλοί.",
+        exampleTransl: "Les visiteurs du musée étaient nombreux.",
+        voicePath: "",
+    },
+    {
+        word: "κοντεύω",
+        translation: "Approcher, être sur le point de",
+        morfology:
+            '<em>κοντεύω </em>→ κοντ<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -εύω</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">κοντεύω</span> < <span style="color:#7a9473">κοντά</span> – près) < du grec ancien <span style="color:#7a9473">κοντός</span> – perche, gaule.',
+        synonims: "πλησιάζω (s’approcher), κοντεύω, φτάνω (atteindre)",
+        antonims: "απομακρύνομαι (s’éloigner), αποχωρώ (se retirer)",
+        level: "B1",
+        example: "Κοντεύουν τα Χριστούγεννα.",
+        exampleTransl: "Noël approche.",
+        voicePath: "",
+    },
+    {
+        word: "νοστιμάδα",
+        translation: "Délicieux (substantif), mets savoureux",
+        morfology:
+            '<em>νοστιμάδα </em>→ νόστιμ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -άδα</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">νοστιμάδα</span> < <span style="color:#7a9473">νόστιμος</span> – savoureux) < du grec ancien (<span style="color:#7a9473">νόστῐμος</span> – sain, qui ramène, agréable au goût, juteux < <span style="color:#7a9473">νόστος</span> – retour < <span style="color:#7a9473">νέομαι</span> – s’en aller, aller)',
+        synonims:
+            "νοστιμάδα, νόστιμο φαγητό (plat savoureux), λιχουδιά (friandise)",
+        antonims: "αηδία (dégoût), ανοστιά (insipidité)",
+        level: "B1",
+        example: "Αυτή η τούρτα είναι πραγματική νοστιμάδα.",
+        exampleTransl: "Ce gâteau est un vrai délice.",
+        voicePath: "",
+    },
+    {
+        word: "ξοδεύω",
+        translation: "Dépenser, consommer",
+        morfology:
+            '<em>ξοδεύω </em>→ <span style="color: #b87333">έ-</span> + ξοδ<span style="color: #b87333">α</span> + <span style="color: #b87333">-εύω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ἐξοδεύω</span> < du grec ancien <span style="color:#7a9473">ἔξοδος</span> – sortie, issue.',
+        synonims: "ξοδεύω, δαπανώ (dépenser), αναλώνω (consommer)",
+        antonims: "αποταμιεύω (épargner), αποθηκεύω (stocker)",
+        level: "B1",
+        example: "Ξόδεψε πολλά χρήματα σε ρούχα.",
+        exampleTransl: "Il a dépensé beaucoup d’argent en vêtements.",
+        voicePath: "",
+    },
+    {
+        word: "συνηθίζω",
+        translation: "S’habituer",
+        morfology:
+            '<em>συνηθίζω </em>→ συνήθ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">συνηθίζω</span> < <span style="color:#7a9473">συνήθης</span> – habitué).',
+        synonims:
+            "συνηθίζω, εθίζομαι (s’accoutumer), αποκτώ συνήθεια (prendre une habitude)",
+        antonims: "αποσυνηθίζω (se désaccoutumer), ξεχνώ (oublier)",
+        level: "B1",
+        example: "Συνήθισα να σηκώνομαι νωρίς.",
+        exampleTransl: "Je me suis habitué à me lever tôt.",
+        voicePath: "",
+    },
+    {
+        word: "αρνάκι",
+        translation: "Agneau (diminutif)",
+        morfology:
+            '<em>αρνάκι </em>→ αρν<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άκι</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">αρνί</span> – agneau < du grec médiéval <span style="color:#7a9473">ἀρνίν</span> – agneau < du grec ancien (<span style="color:#7a9473">ἀρνίον</span> – agneau < <span style="color:#7a9473">ἀρήν</span> – bélier)',
+        synonims: "αρνάκι, νεαρό αρνί (jeune agneau), πρόβατο (mouton)",
+        antonims: "πρόβατο (mouton adulte), κριάρι (bélier)",
+        level: "A2",
+        example: "Το αρνάκι έπαιζε στο λιβάδι.",
+        exampleTransl: "L’agneau jouait dans le pré.",
+        voicePath: "",
+    },
+    {
+        word: "μηλίτσα",
+        translation: "Petite pomme",
+        morfology:
+            '<em>μηλίτσα </em>→ μήλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ίτσα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">μήλο</span> – pomme < du grec ancien <span style="color:#7a9473">μῆλον</span> – pomme.',
+        synonims: "μηλίτσα, μήλο (pomme), μηλάκι (petite pomme)",
+        antonims: "αχλάδι (poire), πορτοκάλι (orange)",
+        level: "A2",
+        example: "Έφαγε μια μηλίτσα από το δέντρο.",
+        exampleTransl: "Il a mangé une petite pomme de l’arbre.",
+        voicePath: "",
+    },
+    {
+        word: "βοσκός",
+        translation: "Berger",
+        morfology:
+            '<em>βοσκός </em>→ βόσκ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ος</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">βοσκός</span> < <span style="color:#7a9473">βόσκω</span> – faire paître)',
+        synonims: "βοσκός, τσοπάνης (berger), κτηνοτρόφος (éleveur)",
+        antonims: "κυνηγός (chasseur) – pas direct",
+        level: "B1",
+        example: "Ο βοσκός οδήγησε τα πρόβατα στο βουνό.",
+        exampleTransl: "Le berger a conduit les moutons à la montagne.",
+        voicePath: "",
+    },
+    {
+        word: "πολεμώ",
+        translation: "Faire la guerre, combattre",
+        morfology:
+            '<em>πολεμώ </em>→ πόλεμ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ω</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">πολεμῶ</span>, <span style="color:#7a9473">πολεμέω</span> – faire la guerre < <span style="color:#7a9473">πόλεμος</span> – guerre).',
+        synonims: "πολεμώ, μάχομαι (lutter), συγκρούομαι (s’affronter)",
+        antonims: "ειρηνεύω (faire la paix), συνυπάρχω (coexister)",
+        level: "B1",
+        example: "Πολέμησαν για την ελευθερία της χώρας.",
+        exampleTransl: "Ils ont combattu pour la liberté du pays.",
+        voicePath: "",
+    },
+    {
+        word: "επισκεπτήριο",
+        translation: "Carte de visite",
+        morfology:
+            '<em>επισκεπτήριο </em>→ επισκέπτ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -ήριο</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐπισκέπτομαι</span> – visiter < <span style="color:#7a9473">σκέπτομαι</span> – regarder, observer).',
+        synonims:
+            "επισκεπτήριο, κάρτα (carte de visite), επαγγελματική κάρτα (carte professionnelle)",
+        antonims: "ανώνυμο (anonyme) – pas direct",
+        level: "B2",
+        example: "Άφησε το επισκεπτήριό του στο γραφείο.",
+        exampleTransl: "Il a laissé sa carte de visite au bureau.",
+        voicePath: "",
+    },
+    {
+        word: "καρτερικός",
+        translation: "Patient, endurant, persévérant",
+        morfology:
+            '<em>καρτερικός </em>→ καρτερ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">καρτερία</span> – patience < du grec ancien <span style="color:#7a9473">καρτερῶ</span> – attendre, supporter.',
+        synonims: "καρτερικός, υπομονετικός (patient), ανθεκτικός (résistant)",
+        antonims: "ανυπόμονος (impatient), ευέξαπτος (impulsif)",
+        level: "B2",
+        example: "Είναι καρτερικός και δεν παρατάει εύκολα τους στόχους του.",
+        exampleTransl:
+            "Il est patient et n’abandonne pas facilement ses objectifs.",
+        voicePath: "",
+    },
+    {
+        word: "κάπνισμα",
+        translation: "Tabagisme, action de fumer",
+        morfology:
+            '<em>κάπνισμα </em>→ καπνί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">καπνίζω</span> – fumer < du grec ancien <span style="color:#7a9473">καπνός</span> – fumée.',
+        synonims:
+            "κάπνισμα, καπνιστική συνήθεια (habitude de fumer), χρήση καπνού (consommation de tabac)",
+        antonims:
+            "αποχή από το κάπνισμα (abstinence tabagique), υγιεινή ζωή (vie saine)",
+        level: "B1",
+        example: "Το κάπνισμα βλάπτει σοβαρά την υγεία.",
+        exampleTransl: "Le tabagisme nuit gravement à la santé.",
+        voicePath: "",
+    },
+    {
+        word: "θλιβερός",
+        translation: "Triste, affligeant",
+        morfology:
+            '<em>θλιβερός </em>→ θλίβ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ερός</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">θλιβερός</span> < du grec ancien <span style="color:#7a9473">θλίβω</span> – presser, serrer, affliger.',
+        synonims: "θλιβερός, λυπηρός (triste), μελαγχολικός (mélancolique)",
+        antonims: "χαρούμενος (joyeux), ευτυχισμένος (heureux)",
+        level: "B1",
+        example: "Η θλιβερή είδηση μας στενοχώρησε.",
+        exampleTransl: "La triste nouvelle nous a attristés.",
+        voicePath: "",
+    },
+    {
+        word: "καπνίζω",
+        translation: "Fumer",
+        morfology:
+            '<em>καπνίζω </em>→ καπν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">καπνός</span> – fumée.',
+        synonims:
+            "καπνίζω, ανάβω τσιγάρο (allumer une cigarette), καπνίζω τακτικά (fumer régulièrement)",
+        antonims: "απέχω από το κάπνισμα (s’abstenir de fumer)",
+        level: "A2",
+        example: "Καπνίζει ένα πακέτο την ημέρα.",
+        exampleTransl: "Il fume un paquet par jour.",
+        voicePath: "",
+    },
+    {
+        word: "μηλιά",
+        translation: "Pommier",
+        morfology:
+            '<em>μηλιά </em>→ μήλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ιά</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">μήλο</span> – pomme < du grec ancien <span style="color:#7a9473">μῆλον</span> – pomme.',
+        synonims: "μηλιά, δέντρο μήλων (pommier)",
+        antonims: "αχλαδιά (poirier), πορτοκαλιά (oranger)",
+        level: "A2",
+        example: "Η μηλιά στον κήπο ανθίζει την άνοιξη.",
+        exampleTransl: "Le pommier du jardin fleurit au printemps.",
+        voicePath: "",
+    },
+    {
+        word: "καμαρωτός",
+        translation: "Fier, arqué, cintré",
+        morfology:
+            '<em>καμαρωτός </em>→ καμαρ<span style="color: #b87333">ώνω</span> +<span style="color: #b87333"> -ωτός</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">καμαρώνω</span> – être fier, se pavaner < <span style="color:#7a9473">καμάρι</span> – fierté, arrogance) < <span style="color:#7a9473">καμάριον</span> < <span style="color:#7a9473">καμάρα</span> – voûte)',
+        synonims: "καμαρωτός, υπερήφανος (fier), κυρτός (cintré)",
+        antonims: "ταπεινός (humble), ίσιος (droit)",
+        level: "B2",
+        example: "Περπατούσε με καμαρωτό βήμα.",
+        exampleTransl: "Il marchait d’un pas fier.",
+        voicePath: "",
+    },
+    {
+        word: "σαπίλα",
+        translation: "Pourriture",
+        morfology:
+            '<em>σαπίλα </em>→ σάπ<span style="color: #b87333">ιος</span> +<span style="color: #b87333"> -ίλα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σάπιος</span> – pourri < du grec médiéval (<span style="color:#7a9473">σάπιος</span> < <span style="color:#7a9473">σαπίζω</span> – pourrir) < du grec ancien <span style="color:#7a9473">σήπομαι</span> – pourrir',
+        synonims: "σαπίλα, σήψη (putréfaction), φθορά (décomposition)",
+        antonims: "φρεσκάδα (fraîcheur), υγιεινότητα (salubrité)",
+        level: "B2",
+        example: "Η σαπίλα των φρούτων μύριζε άσχημα.",
+        exampleTransl: "La pourriture des fruits sentait mauvais.",
+        voicePath: "",
+    },
+    {
+        word: "δουλειά",
+        translation: "Travail",
+        morfology:
+            '<em>δουλειά </em>→ δουλ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -ειά</span>',
+        etymology:
+            'Du grec koinè (<span style="color:#7a9473">δουλεία</span> – travail, esclavage < <span style="color:#7a9473">δουλεύω</span> – être esclave, servir) < du grec ancien (<span style="color:#7a9473">δουλόω</span> – asservir < <span style="color:#7a9473">δοῦλος</span> – esclave)',
+        synonims: "δουλειά, εργασία (travail), απασχόληση (occupation)",
+        antonims: "ξεκούραση (repos), αργία (chômage)",
+        level: "A1",
+        example: "Πάω στη δουλειά κάθε πρωί.",
+        exampleTransl: "Je vais au travail chaque matin.",
+        voicePath: "",
+    },
+    {
+        word: "επαγγελματίας",
+        translation: "Professionnel",
+        morfology:
+            '<em>επαγγελματίας </em>→ επάγγελ<span style="color: #b87333">μα</span> +<span style="color: #b87333"> -ματίας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">επάγγελμα</span> – profession < du grec ancien (<span style="color:#7a9473">ἐπάγγελμα</span> < <span style="color:#7a9473">ἐπαγγέλλομαι</span> – promettre ; exercer une profession < <span style="color:#7a9473">επ-</span>, <span style="color:#7a9473">επι-</span> (sur) + <span style="color:#7a9473">ἀγγέλλω</span> – annoncer < <span style="color:#7a9473">ἄγγελος</span> – messager)',
+        synonims: "επαγγελματίας, ειδικός (spécialiste), τεχνίτης (artisan)",
+        antonims: "ερασιτέχνης (amateur), άσχετος (incompétent)",
+        level: "B2",
+        example: "Είναι ένας πραγματικός επαγγελματίας στο είδος του.",
+        exampleTransl: "C’est un vrai professionnel dans son domaine.",
+        voicePath: "",
+    },
+    {
+        word: "προγραμματιστής",
+        translation: "Programmeur",
+        morfology:
+            '<em>προγραμματιστής </em>→ προγραμματ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιστης</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">προγραμματίζω</span> – programmer < du français <span style="color:#7a9473">programmer</span> ou de l’anglais <span style="color:#7a9473">program</span>.',
+        synonims: "προγραμματιστής, developer (angl.), κωδικοποιητής (codeur)",
+        antonims: "χρήστης (utilisateur), πελάτης (client)",
+        level: "B2",
+        example: "Ο προγραμματιστής έφτιαξε μια νέα εφαρμογή.",
+        exampleTransl: "Le programmeur a créé une nouvelle application.",
+        voicePath: "",
+    },
+    {
+        word: "αντικρίζω",
+        translation: "Faire face, être en face",
+        morfology:
+            '<em>αντικρίζω </em>→ αντίκρ<span style="color: #b87333">υ</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">αντίκρυ</span> < du grec médiéval <span style="color:#7a9473">ἀντίκρυ</span> < du grec ancien <span style="color:#7a9473">ἀντικρύ</span>.',
+        synonims:
+            "αντικρίζω, βλέπω αντίκρυ (voir en face), είμαι απέναντι (être en face)",
+        antonims: "γυρίζω την πλάτη (tourner le dos)",
+        level: "B2",
+        example: "Αντικρίζει το άλλο σπίτι.",
+        exampleTransl: "Il fait face à l’autre maison.",
+        voicePath: "",
+    },
+    {
+        word: "έμβασμα",
+        translation: "Virement, transfert d’argent",
+        morfology:
+            '<em>έμβασμα </em>→ εμβά<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">εμβάζω</span> – transférer de l’argent < <span style="color:#7a9473">εμβιβάζω</span> – embarquer, charger, amener < <span style="color:#7a9473">εν-</span> (dans) + <span style="color:#7a9473">βιβάζω</span> – lever) < du grec ancien <span style="color:#7a9473">βαίνω</span> – aller.',
+        synonims:
+            "έμβασμα, μεταφορά χρημάτων (transfert d’argent), κατάθεση (dépôt)",
+        antonims: "ανάληψη (retrait), χρηματική ανάληψη (retrait d’argent)",
+        level: "B2",
+        example: "Έλαβα ένα έμβασμα από την οικογένειά μου.",
+        exampleTransl: "J’ai reçu un virement de ma famille.",
+        voicePath: "",
+    },
+    {
+        word: "παραμερίζω",
+        translation: "Écarter, s’écarter",
+        morfology:
+            '<em>παραμερίζω </em>→ παραμέρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">παραμερίζω</span> < <span style="color:#7a9473">παραμέρα</span> – à côté < <span style="color:#7a9473">παραμέρος</span> – qui est à côté < <span style="color:#7a9473">πάρα</span> <span style="color:#7a9473">μέρος</span> – de côté)',
+        synonims:
+            "παραμερίζω, απομακρύνω (éloigner), βάζω στην άκρη (mettre de côté)",
+        antonims:
+            "φέρνω μπροστά (avancer), τοποθετώ στο κέντρο (mettre au centre)",
+        level: "B2",
+        example: "Παραμέρισε τα βιβλία για να κάνει χώρο.",
+        exampleTransl: "Il a écarté les livres pour faire de la place.",
+        voicePath: "",
+    },
+    {
+        word: "προειδοποίηση",
+        translation: "Avertissement, préavis",
+        morfology:
+            '<em>προειδοποίηση </em>→ προειδοποι<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">προειδοποιώ</span> – avertir < <span style="color:#7a9473">ειδοποιώ</span> – informer).',
+        synonims:
+            "προειδοποίηση, προάγγελος (présage), σύσταση (recommandation)",
+        antonims: "αναπάντεχο (imprévu), αιφνιδιασμός (surprise)",
+        level: "B2",
+        example: "Η προειδοποίηση της αστυνομίας μας έσωσε.",
+        exampleTransl: "L’avertissement de la police nous a sauvés.",
+        voicePath: "",
+    },
+    {
+        word: "παγωνιά",
+        translation: "Gel, froid intense",
+        morfology:
+            '<em>παγωνιά </em>→ πάγ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ωνιά</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">παγώνω</span> – refroidir < du grec médiéval <span style="color:#7a9473">παγῶ</span> – enfoncer',
+        synonims: "παγωνιά, ψύχος (froid), παγετός (gelée)",
+        antonims: "ζέστη (chaleur), καύσωνας (canicule)",
+        level: "B1",
+        example: "Η παγωνιά έσπασε τους σωλήνες νερού.",
+        exampleTransl: "Le gel a fait éclater les tuyaux d’eau.",
+        voicePath: "",
+    },
+    {
+        word: "αναπτήρας",
+        translation: "Briquet",
+        morfology:
+            '<em>αναπτήρας </em>→ ανάπτ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τήρας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ανάβω</span>, <span style="color:#7a9473">ανάπτω</span> – allumer < du grec médiéval <span style="color:#7a9473">ἀνάβω</span> < du grec ancien <span style="color:#7a9473">ἀνάπτω</span> < <span style="color:#7a9473">ἀνά</span> + <span style="color:#7a9473">ἅπτω</span> – attacher',
+        synonims:
+            "αναπτήρας, πυρσός (torche) – pas tout à fait, αντικείμενο για ανάμμιξη (objet pour allumer)",
+        antonims: "σπίρτο (allumette) – mais différent",
+        level: "B1",
+        example: "Μου χάρισε έναν αναπτήρα με το λογότυπό του.",
+        exampleTransl: "Il m’a offert un briquet avec son logo.",
+        voicePath: "",
+    },
+    {
+        word: "κερδίζω",
+        translation: "Gagner, remporter",
+        morfology:
+            '<em>κερδίζω </em>→ κέρδ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">κερδίζω</span> < du grec médiéval <span style="color:#7a9473">κέρδος</span> < du grec ancien <span style="color:#7a9473">κερδαίνω</span> – s’enrichir.',
+        synonims: "κερδίζω, νικώ (vaincre), αποκτώ (acquérir)",
+        antonims: "χάνω (perdre), χάνω (perdre)",
+        level: "A2",
+        example: "Κέρδισε το λαχείο και έγινε πλούσιος.",
+        exampleTransl: "Il a gagné à la loterie et est devenu riche.",
+        voicePath: "",
+    },
+    {
+        word: "πυροβολώ",
+        translation: "Tirer (avec une arme)",
+        morfology:
+            '<em>πυροβολώ </em>→ πυροβόλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">πυροβόλο</span> – arme à feu, canon.',
+        synonims: "πυροβολώ, ρίχνω (tirer), εκτοξεύω (lancer)",
+        antonims: "αφοπλίζω (désarmer) – pas direct",
+        level: "B1",
+        example: "Πυροβόλησε στον αέρα για να τρομάξει τον εχθρό.",
+        exampleTransl: "Il a tiré en l’air pour effrayer l’ennemi.",
+        voicePath: "",
+    },
+    {
+        word: "ξυπνητήρι",
+        translation: "Réveil (objet)",
+        morfology:
+            '<em>ξυπνητήρι </em>→ ξυπν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητήρι</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">ξύπνημα</span> – réveil < <span style="color:#7a9473">ξυπνώ</span> – réveiller, se réveiller) < du grec médiéval (<span style="color:#7a9473">ξυπνῶ</span> < <span style="color:#7a9473">ἔξυπνος</span> – éveillé) < du grec ancien <span style="color:#7a9473">ὕπνος</span> – sommeil',
+        synonims:
+            "ξυπνητήρι, κουδούνι (sonnette) – mais réveil, ρολόι με ξυπνητήρι (montre avec réveil)",
+        antonims: "υπνωτικό (somnifère) – pas direct",
+        level: "A2",
+        example: "Το ξυπνητήρι χτύπησε στις 7 το πρωί.",
+        exampleTransl: "Le réveil a sonné à 7 heures du matin.",
+        voicePath: "",
+    },
+    {
+        word: "ποίηση",
+        translation: "Poésie",
+        morfology:
+            '<em>ποίηση </em>→ ποι<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ποιώ</span> – faire, créer < du grec ancien <span style="color:#7a9473">ποιέω</span>, <span style="color:#7a9473">ποιῶ</span>.',
+        synonims: "ποίηση, ποιητική (poétique), στίχοι (vers)",
+        antonims: "πεζογραφία (prose), μυθιστόρημα (roman)",
+        level: "B2",
+        example: "Η ποίηση του Νότη είναι γεμάτη συναίσθημα.",
+        exampleTransl: "La poésie de Notis est pleine d’émotion.",
+        voicePath: "",
+    },
+    {
+        word: "κεραμιδάς",
+        translation: "Tuilier, potier",
+        morfology:
+            '<em>κεραμιδάς </em>→ κεραμίδ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άς</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κεραμίδι</span> – tuile < du grec médiéval <span style="color:#7a9473">κεραμίδι</span> < du grec ancien (<span style="color:#7a9473">κεραμίδιον</span> – diminutif de tuile < <span style="color:#7a9473">κερᾰμῑς</span> – tuile, argile < <span style="color:#7a9473">κέρᾰμος</span> – argile)',
+        synonims: "κεραμιδάς, αγγειοπλάστης (potier), πλινθοποιός (briquetier)",
+        antonims: "ξυλουργός (menuisier) – pas direct",
+        level: "B1",
+        example: "Ο κεραμιδάς έφτιαξε ωραία κεραμίδια.",
+        exampleTransl: "Le tuilier a fait de belles tuiles.",
+        voicePath: "",
+    },
+    {
+        word: "ζεσταίνω",
+        translation: "Chauffer, réchauffer",
+        morfology:
+            '<em>ζεσταίνω </em>→ ζεστ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -αίνω</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ζεστός</span> – chaud < du grec ancien <span style="color:#7a9473">ζέω</span> – bouillir.',
+        synonims: "ζεσταίνω, θερμαίνω (chauffer), υπερθερμαίνω (surchauffer)",
+        antonims: "κρυώνω (refroidir), παγώνω (geler)",
+        level: "A2",
+        example: "Ζέσταινε το γάλα πριν το πιει.",
+        exampleTransl: "Il a chauffé le lait avant de le boire.",
+        voicePath: "",
+    },
+    {
+        word: "σπαθάτος",
+        translation: "En forme de sabre",
+        morfology:
+            '<em>σπαθάτος </em>→ σπαθ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άτος</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σπαθί</span> – sabre < du grec koinè <span style="color:#7a9473">σπαθίον</span> – petite épée < du grec ancien <span style="color:#7a9473">σπάθη</span> – large lame de bois ou de métal, épée.',
+        synonims:
+            "σπαθάτος, σπαθοειδής (en forme de sabre), μακρύς και στενός (long et étroit)",
+        antonims: "στρογγυλός (rond), πλατύς (large)",
+        level: "B2",
+        example: "Το σπαθάτο φύλλο αυτού του φυτού είναι χαρακτηριστικό.",
+        exampleTransl:
+            "La feuille en forme de sabre de cette plante est caractéristique.",
+        voicePath: "",
+    },
+    {
+        word: "ακριβαίνω",
+        translation: "Augmenter de prix, devenir cher",
+        morfology:
+            '<em>ακριβαίνω </em>→ ακριβ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -αίνω</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">ἀκριβός</span> – précieux < du grec ancien (<span style="color:#7a9473">ἀκριβής</span> – précieux < <span style="color:#7a9473">ἄκρος</span> – aigu, meilleur, extrême).',
+        synonims:
+            "ακριβαίνω, αυξάνομαι σε τιμή (augmenter en prix), γίνομαι ακριβότερος (devenir plus cher)",
+        antonims:
+            "φτηναίνω (baisser de prix), μειώνω την τιμή (réduire le prix)",
+        level: "B1",
+        example: "Το πετρέλαιο ακριβαίνει συνεχώς.",
+        exampleTransl: "Le pétrole ne cesse d’augmenter.",
+        voicePath: "",
+    },
+    {
+        word: "τουρισμός",
+        translation: "Tourisme",
+        morfology:
+            '<em>τουρισμός </em>→ τουρίσ<span style="color: #b87333">τας</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du français <span style="color:#7a9473">tourisme</span> – tourisme < de l’anglais (<span style="color:#7a9473">tourism</span> – tourisme < <span style="color:#7a9473">tour</span> – voyage) < du latin <span style="color:#7a9473">tornare</span> – tourner, revenir < du grec ancien <span style="color:#7a9473">τόρνος</span> – ce qui tourne ; tour ; compas.',
+        synonims:
+            "τουρισμός, ταξιδιωτική βιομηχανία (industrie touristique), αναψυχή (loisirs)",
+        antonims: "εργασία (travail), επαγγελματικό ταξίδι (voyage d’affaires)",
+        level: "B1",
+        example: "Ο τουρισμός αποτελεί σημαντικό τομέα της οικονομίας.",
+        exampleTransl:
+            "Le tourisme constitue un secteur important de l’économie.",
+        voicePath: "",
+    },
+    {
+        word: "κουτάλα",
+        translation: "Louche, grande cuillère",
+        morfology:
+            '<em>κουτάλα </em>→ κουτάλ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -α</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κουτάλι</span> – cuillère < du grec médiéval <span style="color:#7a9473">κουτάλιν</span> < du grec koinè <span style="color:#7a9473">κουτάλιον</span>, <span style="color:#7a9473">κωτάλιον</span> – diminutif de louche < du grec médiéval <span style="color:#7a9473">κώταλις</span> – agitateur, louche.',
+        synonims:
+            "κουτάλα, μεγάλη κουτάλα (louche), κουτάλα σούπας (louche à soupe)",
+        antonims: "κουταλάκι (petite cuillère), πιρούνι (fourchette)",
+        level: "B1",
+        example: "Χρησιμοποιώ κουτάλα για να σερβίρω τη σούπα.",
+        exampleTransl: "J’utilise une louche pour servir la soupe.",
+        voicePath: "",
+    },
+    {
+        word: "ακουστός",
+        translation: "Connu, célèbre",
+        morfology:
+            '<em>ακουστός </em>→ ακού<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -στός</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀκουστός</span> < <span style="color:#7a9473">ἀκούω</span> – écouter, entendre)',
+        synonims: "ακουστός, διάσημος (célèbre), γνωστός (connu)",
+        antonims: "άγνωστος (inconnu), αφανής (obscur)",
+        level: "B1",
+        example: "Είναι ένας ακουστός τραγουδιστής σε όλη την Ελλάδα.",
+        exampleTransl: "Il est un chanteur connu dans toute la Grèce.",
+        voicePath: "",
+    },
+    {
+        word: "επίδεση",
+        translation: "Pansement, bandage",
+        morfology:
+            '<em>επίδεση </em>→ επιδέ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐπίθεσις</span> – application, imposition < <span style="color:#7a9473">ἐπιτίθημι</span> – poser, appliquer < <span style="color:#7a9473">ἐπι-</span> (marque la suite, l’accompagnement ; position : sur) + <span style="color:#7a9473">τῐθημῐ</span> – poser, établir)',
+        synonims: "επίδεση, περιποίηση (soin), επίδεση τραύματος (pansement)",
+        antonims: "αφαίρεση (retrait), γύψος (plâtre) – pas direct",
+        level: "B2",
+        example: "Η επίδεση του τραύματος έγινε από τον γιατρό.",
+        exampleTransl: "Le pansement de la plaie a été fait par le médecin.",
+        voicePath: "",
+    },
+    {
+        word: "σκληράδα",
+        translation: "Dureté, rigidité",
+        morfology:
+            '<em>σκληράδα </em>→ σκληρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -άδα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">σκληρός</span> – dur, sévère < du grec ancien <span style="color:#7a9473">σκληρός</span>',
+        synonims: "σκληράδα, σκληρότητα (dureté), ανθεκτικότητα (résistance)",
+        antonims: "μαλακότητα (mollesse), ευελιξία (flexibilité)",
+        level: "B2",
+        example: "Η σκληράδα του εδάφους δυσκόλεψε το σκάψιμο.",
+        exampleTransl: "La dureté du sol a rendu le creusement difficile.",
+        voicePath: "",
+    },
+    {
+        word: "καπνιστής",
+        translation: "Fumeur",
+        morfology:
+            '<em>καπνιστής </em>→ καπν<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιστης</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">καπνίζω</span> – fumer < <span style="color:#7a9473">καπνός</span> – fumée)',
+        synonims:
+            "καπνιστής, άτομο που καπνίζει (personne qui fume), τοξικομανής (toxicomane) – dans le contexte de la nicotine",
+        antonims: "μη καπνιστής (non-fumeur), υγιεινός (sain)",
+        level: "B1",
+        example: "Οι καπνιστές κινδυνεύουν περισσότερο από καρδιακές παθήσεις.",
+        exampleTransl: "Les fumeurs sont plus exposés aux maladies cardiaques.",
+        voicePath: "",
+    },
+    {
+        word: "κοκκινίλα",
+        translation: "Rougeur",
+        morfology:
+            '<em>κοκκινίλα </em>→ κόκκιν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίλα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κόκκινος</span> – rouge < du grec koinè <span style="color:#7a9473">κόκκινος</span> < du grec ancien <span style="color:#7a9473">κόκκος</span> – grain, graine',
+        synonims: "κοκκινίλα, ερυθρότητα (rougeur), κοκκινάδα (teinte rouge)",
+        antonims: "ασπρίλα (blancheur), χλωμάδα (pâleur)",
+        level: "B1",
+        example: "Η κοκκινίλα στα μάγουλά της ήταν φανερή.",
+        exampleTransl: "La rougeur sur ses joues était visible.",
+        voicePath: "",
+    },
+    {
+        word: "υπογραφή",
+        translation: "Signature",
+        morfology:
+            '<em>υπογραφή </em>→ υπογράφ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ή</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ὑπογραφή</span> < <span style="color:#7a9473">ὑπογράφω</span> – signer < <span style="color:#7a9473">ὑπό-</span> (sous) + <span style="color:#7a9473">γράφω</span> – écrire)',
+        synonims:
+            "υπογραφή, μονογραφή (signature, initiales), σφραγίδα (sceau)",
+        antonims: "ανανυμία (anonymat), ψευδώνυμο (pseudonyme)",
+        level: "B1",
+        example: "Έβαλε την υπογραφή του στο συμβόλαιο.",
+        exampleTransl: "Il a apposé sa signature sur le contrat.",
+        voicePath: "",
+    },
+    {
+        word: "αστυνομικός",
+        translation: "Policier",
+        morfology:
+            '<em>αστυνομικός </em>→ αστυνομ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">αστυνομία</span> – police < <span style="color:#7a9473">αστυνόμος</span> – agent de police) < du grec ancien (<span style="color:#7a9473">ἀστυνόμος</span> – qui veille à la sécurité de la ville < <span style="color:#7a9473">ἄστυ</span> – ville, cité + <span style="color:#7a9473">νόμος</span> – loi)',
+        synonims:
+            "αστυνομικός, αστυφύλακας (gardien de la paix), μπάτσος (flic – argot)",
+        antonims: "πολίτης (citoyen), απλός πολίτης (simple citoyen)",
+        level: "A2",
+        example: "Ο αστυνομικός σταμάτησε το αυτοκίνητο.",
+        exampleTransl: "Le policier a arrêté la voiture.",
+        voicePath: "",
+    },
+    {
+        word: "άρνηση",
+        translation: "Refus, dénégation",
+        morfology:
+            '<em>άρνηση </em>→ αρν<span style="color: #b87333">ούμαι</span> +<span style="color: #b87333"> -ηση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">αρνούμαι</span> – refuser < du grec ancien <span style="color:#7a9473">ἀρνέομαι</span> – refuser, nier.',
+        synonims: "άρνηση, αποποίηση (rejet), απόρριψη (rejet)",
+        antonims: "αποδοχή (acceptation), συγκατάθεση (consentement)",
+        level: "B1",
+        example: "Η άρνησή του να βοηθήσει μας απογοήτευσε.",
+        exampleTransl: "Son refus d’aider nous a déçus.",
+        voicePath: "",
+    },
+    {
+        word: "ζωγραφιά",
+        translation: "Dessin, peinture",
+        morfology:
+            '<em>ζωγραφιά </em>→ ζωγράφ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιά</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ζωγραφιά</span> < du grec ancien (<span style="color:#7a9473">ζωγραφία</span> < du grec ancien <span style="color:#7a9473">ζωγράφος</span> – peintre < <span style="color:#7a9473">ζωός</span> (vivant) ou <span style="color:#7a9473">ζωή</span> (vie) + <span style="color:#7a9473">γράφος</span> – écrivain < <span style="color:#7a9473">γράφω</span> – écrire)',
+        synonims: "ζωγραφιά, πίνακας (tableau), εικόνα (image)",
+        antonims: "άγαλμα (sculpture) – pas direct",
+        level: "B1",
+        example: "Η ζωγραφιά του ήταν πολύχρωμη.",
+        exampleTransl: "Son dessin était coloré.",
+        voicePath: "",
+    },
+    {
+        word: "ανάλυση",
+        translation: "Analyse",
+        morfology:
+            '<em>ανάλυση </em>→ αναλύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀνάλυσις</span> – résolution ; décomposition, analyse ; départ, retrait < <span style="color:#7a9473">ἀναλύω</span> – décomposer ; renoncer < <span style="color:#7a9473">ἀνα-</span> (vers le haut, en arrière, de nouveau) + <span style="color:#7a9473">λύω</span> – résoudre ; libérer ; relâcher)',
+        synonims: "ανάλυση, εξέταση (examen), διερεύνηση (étude)",
+        antonims: "σύνθεση (synthèse), σύνοψη (résumé)",
+        level: "B2",
+        example: "Η ανάλυση των δεδομένων έδειξε ενδιαφέροντα αποτελέσματα.",
+        exampleTransl:
+            "L’analyse des données a montré des résultats intéressants.",
+        voicePath: "",
+    },
+    {
+        word: "χορευταράς",
+        translation: "Grand danseur (fanatique)",
+        morfology:
+            '<em>χορευταράς </em>→ χορευτ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -άρας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">χορευτής</span> – danseur < du grec ancien (<span style="color:#7a9473">χορευτής</span> < <span style="color:#7a9473">χορός</span> – danse)',
+        synonims:
+            "χορευταράς, λάτρης του χορού (amateur de danse), φανατικός χορευτής (danseur fanatique)",
+        antonims: "άτομο που δεν χορεύει (personne qui ne danse pas)",
+        level: "B2",
+        example: "Ο χορευταράς δεν σταμάτησε μέχρι το ξημέρωμα.",
+        exampleTransl: "Le grand danseur n’a pas arrêté jusqu’à l’aube.",
+        voicePath: "",
+    },
+    {
+        word: "εγωιστικός",
+        translation: "Égoïste (adj.)",
+        morfology:
+            '<em>εγωιστικός </em>→ εγωιστ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ικός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">εγωιστής</span> – égoïste < du français <span style="color:#7a9473">égoïste</span> < du grec ancien <span style="color:#7a9473">ἐγώ</span> – moi.',
+        synonims:
+            "εγωιστικός, φιλάυτος (égoïste), ναρκισσιστικός (narcissique)",
+        antonims: "αλτρουιστικός (altruiste), ανιδιοτελής (désintéressé)",
+        level: "B2",
+        example: "Η εγωιστική του συμπεριφορά τον έκανε αντιπαθητικό.",
+        exampleTransl: "Son comportement égoïste l’a rendu antipathique.",
+        voicePath: "",
+    },
+    {
+        word: "εισαγωγή",
+        translation: "Importation",
+        morfology:
+            '<em>εισαγωγή </em>→ εισάγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -γή</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">εἰσαγωγή</span> < <span style="color:#7a9473">είς-</span> (dans) + <span style="color:#7a9473">ἀγωγή</span> – conduite, mouvement < <span style="color:#7a9473">ἄγω</span> – mener)',
+        synonims:
+            "εισαγωγή, εισαγωγή εμπορευμάτων (importation de marchandises), προμήθεια (approvisionnement)",
+        antonims: "εξαγωγή (exportation), εξαγωγή (exportation)",
+        level: "B1",
+        example: "Η εισαγωγή αυτοκινήτων αυξήθηκε φέτος.",
+        exampleTransl: "L’importation de voitures a augmenté cette année.",
+        voicePath: "",
+    },
+    {
+        word: "κατσουφιάζω",
+        translation: "Faire la tête, devenir maussade",
+        morfology:
+            '<em>κατσουφιάζω </em>→ κατσούφ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ιάζω</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">κατηφιάω</span> / <span style="color:#7a9473">κατηφιῶ</span> – s’attrister < <span style="color:#7a9473">κατηφής</span> – sombre, triste).',
+        synonims:
+            "κατσουφιάζω, σκυθρωπιάζω (s’assombrir), γίνομαι σκυθρωπός (devenir maussade)",
+        antonims: "χαμογελώ (sourire), φωτίζομαι (s’éclairer)",
+        level: "B2",
+        example: "Κατσουφιάζει όταν του λένε όχι.",
+        exampleTransl: "Il fait la tête quand on lui dit non.",
+        voicePath: "",
+    },
+    {
+        word: "κοντινός",
+        translation: "Proche",
+        morfology:
+            '<em>κοντινός </em>→ κοντ<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -ινός</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κοντά</span> – près < du grec ancien <span style="color:#7a9473">κοντός</span> – perche, gaule.',
+        synonims: "κοντινός, κοντινός (proche), γειτονικός (voisin)",
+        antonims: "μακρινός (lointain), απομακρυσμένος (éloigné)",
+        level: "A2",
+        example: "Το κοντινό σούπερ μάρκετ είναι ανοιχτό.",
+        exampleTransl: "Le supermarché proche est ouvert.",
+        voicePath: "",
+    },
+    {
+        word: "απεργία",
+        translation: "Grève",
+        morfology:
+            '<em>απεργία </em>→ απεργ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">απεργός</span> – gréviste < du grec ancien <span style="color:#7a9473">απο-</span> (éloignement, séparation ; privation ; renforcement) + <span style="color:#7a9473">ἔργον</span> – travail, œuvre.',
+        synonims:
+            "απεργία, στάση εργασίας (arrêt de travail), διαμαρτυρία (protestation)",
+        antonims: "εργασία (travail), συνεργασία (coopération)",
+        level: "B2",
+        example: "Η απεργία των εργαζομένων διήρκεσε τρεις ημέρες.",
+        exampleTransl: "La grève des travailleurs a duré trois jours.",
+        voicePath: "",
+    },
+    {
+        word: "έκδοση",
+        translation: "Édition, publication",
+        morfology:
+            '<em>έκδοση </em>→ εκδ<span style="color: #b87333">ίδω</span> +<span style="color: #b87333"> -οση</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἐκδοσής</span> – reddition < <span style="color:#7a9473">ἐκδίδωμι</span> – se rendre < <span style="color:#7a9473">δίδωμι</span> – donner).',
+        synonims:
+            "έκδοση, δημοσίευση (publication), κυκλοφορία (mise en circulation)",
+        antonims: "απόσυρση (retrait), λογοκρισία (censure)",
+        level: "B1",
+        example: "Η έκδοση του βιβλίου έγινε τον περασμένο μήνα.",
+        exampleTransl: "L’édition du livre a eu lieu le mois dernier.",
+        voicePath: "",
+    },
+    {
+        word: "βαρκάρης",
+        translation: "Batelier",
+        morfology:
+            '<em>βαρκάρης </em>→ βάρκ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άρης</span>',
+        etymology:
+            'Du grec médiéval (<span style="color:#7a9473">βαρκάρης</span> < <span style="color:#7a9473">βάρκα</span> – bateau) < du latin tardif <span style="color:#7a9473">barca</span> < du latin <span style="color:#7a9473">baris</span> < du grec ancien <span style="color:#7a9473">βᾶρις</span> < de l’égyptien ancien <span style="color:#7a9473">/bair/</span>.',
+        synonims: "βαρκάρης, βαρκάς (batelier), ναύτης (marin)",
+        antonims: "επιβάτης (passager) – pas direct",
+        level: "B1",
+        example: "Ο βαρκάρης μετέφερε τους τουρίστες στο νησί.",
+        exampleTransl: "Le batelier a transporté les touristes sur l’île.",
+        voicePath: "",
+    },
+    {
+        word: "στρατώνας",
+        translation: "Caserne",
+        morfology:
+            '<em>στρατώνας </em>→ στρατ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ώνας</span>',
+        etymology:
+            'Du grec ancien <span style="color:#7a9473">στρατών</span> < <span style="color:#7a9473">στρατός</span> – armée',
+        synonims:
+            "στρατώνας, στρατιωτικό κτίριο (bâtiment militaire), στρατόπεδο (camp)",
+        antonims: "πολιτικό κτίριο (bâtiment civil), σπίτι (maison)",
+        level: "B1",
+        example: "Οι στρατιώτες επέστρεψαν στον στρατώνα.",
+        exampleTransl: "Les soldats sont retournés à la caserne.",
+        voicePath: "",
+    },
+    {
+        word: "αρχοντόπουλο, αρχοντοπούλα",
+        translation: "Enfant de noble, fille de noble",
+        morfology:
+            '<em>αρχοντόπουλο, αρχοντοπούλα </em>→ άρχοντ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -όπουλο</span>/<span style="color: #b87333">-οπούλα</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ἄρχοντας</span> – seigneur, chef, riche < du grec ancien (<span style="color:#7a9473">ἄρχων</span> – chef, souverain, dirigeant < <span style="color:#7a9473">ἄρχω</span> – commencer, conduire, gouverner) ;',
+        synonims:
+            "ευγενής (noble), αριστοκράτης (aristocrate), παιδί αρχοντιάς (enfant de la noblesse)",
+        antonims: "χωριάτης (paysan), λαϊκό παιδί (enfant du peuple)",
+        level: "C1",
+        example: "Το αρχοντόπουλο μεγάλωσε στο παλάτι.",
+        exampleTransl: "L’enfant de noble a grandi au palais.",
+        voicePath: "",
+    },
+    {
+        word: "τιμιότητα",
+        translation: "Honnêteté",
+        morfology:
+            '<em>τιμιότητα </em>→ τίμι<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ότητα</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">τίμιος</span> – précieux, honorable, honnête < <span style="color:#7a9473">τιμή</span> – honneur, prix, estime).',
+        synonims: "τιμιότητα, ειλικρίνεια (sincérité), εντιμότητα (probité)",
+        antonims: "ανεντιμότητα (malhonnêteté), δολιότητα (fourberie)",
+        level: "B2",
+        example: "Η τιμιότητά του ήταν γνωστή σε όλους.",
+        exampleTransl: "Son honnêteté était connue de tous.",
+        voicePath: "",
+    },
+    {
+        word: "τρέξιμο",
+        translation: "Course, écoulement",
+        morfology:
+            '<em>τρέξιμο </em>→ τρέ<span style="color: #b87333">χω</span> +<span style="color: #b87333"> ξιμο</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">τρέξιμον</span> – battre < du grec ancien <span style="color:#7a9473">τρέχω</span> – courir, s’écouler.',
+        synonims: "τρέξιμο, δρόμος (course), ροή (flux)",
+        antonims: "βάδισμα (marche), στάση (arrêt)",
+        level: "A2",
+        example: "Το τρέξιμο το πρωί μου δίνει ενέργεια.",
+        exampleTransl: "La course du matin me donne de l’énergie.",
+        voicePath: "",
+    },
+    {
+        word: "μαυρίζω",
+        translation: "Bronzer, noircir",
+        morfology:
+            '<em>μαυρίζω </em>→ μαύρ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">μαυρίζω</span> < du grec ancien <span style="color:#7a9473">μαῦρος</span> – noir, basané.',
+        synonims:
+            "μαυρίζω, αποκτώ μαύρισμα (bronzer), γίνομαι μαύρος (devenir noir) du soleil",
+        antonims: "ασπρίζω (blanchir), χάνω το μαύρισμα (perdre son bronzage)",
+        level: "B1",
+        example: "Το καλοκαίρι μαυρίζω στην παραλία.",
+        exampleTransl: "L’été, je bronze sur la plage.",
+        voicePath: "",
+    },
+    {
+        word: "διωγμός",
+        translation: "Poursuite, expulsion, persécution",
+        morfology:
+            '<em>διωγμός </em>→ διώχ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -μός</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">διωγμός</span> < <span style="color:#7a9473">διώκω</span> – poursuivre < <span style="color:#7a9473">δίω</span> – chasser, poursuivre)',
+        synonims: "διωγμός, εξορία (exil), απέλαση (expulsion)",
+        antonims: "υποδοχή (accueil), εγκατάσταση (installation)",
+        level: "B2",
+        example: "Ο διωγμός των πολιτικών αντιπάλων προκάλεσε αντιδράσεις.",
+        exampleTransl:
+            "La persécution des opposants politiques a provoqué des réactions.",
+        voicePath: "",
+    },
+    {
+        word: "κασόνα",
+        translation: "Grande caisse, coffre",
+        morfology:
+            '<em>κασόνα </em>→ κασόν<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -α</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">κασόνι</span> – caisse < de l’italien <span style="color:#7a9473">cassone</span>',
+        synonims: "κασόνα, κιβώτιο (caisse), μπαούλο (coffre)",
+        antonims: "μικρό κουτί (petite boîte)",
+        level: "B1",
+        example: "Η κασόνα περιείχε παλιά ρούχα.",
+        exampleTransl: "La grande caisse contenait de vieux vêtements.",
+        voicePath: "",
+    },
+    {
+        word: "πυροβολισμός",
+        translation: "Coup de feu, tir",
+        morfology:
+            '<em>πυροβολισμός </em>→ πυροβολ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ισμος</span>',
+        etymology:
+            'Du grec moderne (<span style="color:#7a9473">πυροβολώ</span> – tirer < <span style="color:#7a9473">πυροβόλο</span> – arme à feu, canon).',
+        synonims: "πυροβολισμός, βολή (tir), ριπή (rafale)",
+        antonims: "σιωπή (silence) – pas direct",
+        level: "B1",
+        example: "Ακούστηκαν πυροβολισμοί από το κοντινό δάσος.",
+        exampleTransl:
+            "Des coups de feu ont été entendus dans la forêt proche.",
+        voicePath: "",
+    },
+    {
+        word: "ασπρίλα",
+        translation: "Blancheur",
+        morfology:
+            '<em>ασπρίλα </em>→ άσπρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίλα</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">άσπρος</span> – blanc < du grec koinè <span style="color:#7a9473">ἄσπρος</span> < du latin <span style="color:#7a9473">asper</span> – dur, rugueux, difficile',
+        synonims:
+            "ασπρίλα, λευκότητα (blancheur), λευκό χρώμα (couleur blanche)",
+        antonims: "μαυρίλα (noirceur), σκοτάδι (obscurité)",
+        level: "B1",
+        example: "Η ασπρίλα του χιονιού τύφλωνε τα μάτια.",
+        exampleTransl: "La blancheur de la neige éblouissait les yeux.",
+        voicePath: "",
+    },
+    {
+        word: "αδικία",
+        translation: "Injustice",
+        morfology:
+            '<em>αδικία </em>→ άδικ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ία</span>',
+        etymology:
+            'Du grec ancien (<span style="color:#7a9473">ἀδικία</span> < <span style="color:#7a9473">ἄδικος</span> – injuste < <span style="color:#7a9473">ἀ- (privatif)</span> + <span style="color:#7a9473">δίκη</span> – justice, procès)',
+        synonims: "αδικία, αδίκημα (acte injuste), ανισότητα (inégalité)",
+        antonims: "δικαιοσύνη (justice), ισότητα (égalité)",
+        level: "B2",
+        example: "Η αδικία προκάλεσε διαμαρτυρίες.",
+        exampleTransl: "L’injustice a provoqué des protestations.",
+        voicePath: "",
+    },
+    {
+        word: "εκτέλεση",
+        translation: "Exécution (peine de mort)",
+        morfology:
+            '<em>εκτέλεση </em>→ εκτε<span style="color: #b87333">λώ</span> +<span style="color: #b87333"> -ση</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">εκτελώ</span> – exécuter < du grec ancien (<span style="color:#7a9473">ἐκτελέω</span> < <span style="color:#7a9473">ἐκ-</span>, <span style="color:#7a9473">ἐξ-</span> (préfixe d’éloignement : hors de) + <span style="color:#7a9473">τέλος</span> – fin)',
+        synonims: "εκτέλεση, θάνατος (mort), τιμωρία (châtiment)",
+        antonims: "αποφυλάκιση (libération), αθώωση (acquittement)",
+        level: "C1",
+        example: "Η εκτέλεση του καταδίκου έγινε κρυφά.",
+        exampleTransl: "L’exécution du condamné a eu lieu en secret.",
+        voicePath: "",
+    },
+    {
+        word: "δουλευταράς",
+        translation: "Travailleur acharné",
+        morfology:
+            '<em>δουλευταράς </em>→ δουλευτ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -άρας</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">δουλευτής</span> – travailleur < du grec koinè (<span style="color:#7a9473">δουλευτής</span> – travailleur, serviteur, esclave < <span style="color:#7a9473">δουλεύω</span> – être esclave, servir) < du grec ancien (<span style="color:#7a9473">δουλόω</span> – asservir < <span style="color:#7a9473">δοῦλος</span> – esclave)',
+        synonims:
+            "δουλευταράς, εργατικός (laborieux), εργασιομανής (workaholic)",
+        antonims: "τεμπέλης (paresseux), αδρανής (inactif)",
+        level: "B1",
+        example: "Ο δουλευταράς τελείωσε τη δουλειά σε μία μέρα.",
+        exampleTransl: "Le travailleur acharné a fini le travail en un jour.",
+        voicePath: "",
+    },
+    {
+        word: "δουλεύω",
+        translation: "Travailler",
+        morfology:
+            '<em>δουλεύω </em>→ δουλ<span style="color: #b87333">ειά</span> +<span style="color: #b87333"> -εύω</span>',
+        etymology:
+            'Du grec koinè <span style="color:#7a9473">δουλεύω</span> – être esclave, servir < du grec ancien (<span style="color:#7a9473">δουλόω</span> – asservir < <span style="color:#7a9473">δοῦλος</span> – esclave).',
+        synonims: "δουλεύω, εργάζομαι (travailler), απασχολούμαι (être occupé)",
+        antonims: "ξεκουράζομαι (se reposer), αδρανώ (être inactif)",
+        level: "A1",
+        example: "Δουλεύω σε μια εταιρεία πληροφορικής.",
+        exampleTransl: "Je travaille dans une entreprise informatique.",
+        voicePath: "",
+    },
+    {
+        word: "ζωγραφίζω",
+        translation: "Dessiner, peindre",
+        morfology:
+            '<em>ζωγραφίζω </em>→ ζωγράφ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίζω</span>',
+        etymology:
+            'Du grec médiéval <span style="color:#7a9473">ζωγραφίζω</span> – dessiner < du grec ancien <span style="color:#7a9473">ζωγραφέω</span>, <span style="color:#7a9473">ζωγραφῶ</span>.',
+        synonims: "ζωγραφίζω, σχεδιάζω (tracer), απεικονίζω (représenter)",
+        antonims: "σβήνω (effacer), καταστρέφω (détruire)",
+        level: "A2",
+        example: "Η κόρη μου ζωγραφίζει τοπία.",
+        exampleTransl: "Ma fille dessine des paysages.",
+        voicePath: "",
+    },
+    {
+        word: "ζεστούτσικος",
+        translation: "Tiède, bien chaud",
+        morfology:
+            '<em>ζεστούτσικος </em>→ ζεστ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ούτσικος</span>',
+        etymology:
+            'Du grec moderne <span style="color:#7a9473">ζεστός</span> – chaud < du grec ancien <span style="color:#7a9473">ζέω</span> – bouillir.',
+        synonims:
+            "ζεστούτσικος, ελαφρώς ζεστός (légèrement chaud), χλιαρός (tiède)",
+        antonims: "κρύος (froid), παγωμένος (glacé)",
+        level: "B1",
+        example: "Το φαγητό είναι ακόμα ζεστούτσικο.",
+        exampleTransl: "La nourriture est encore bien chaude.",
+        voicePath: "",
+    },
+];

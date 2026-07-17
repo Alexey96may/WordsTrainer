@@ -73,7 +73,7 @@ export default {
     },
     home: {
         title: "Aprendizaje del idioma griego",
-        subtitle: "¡Nuestros ejercicios interactivos!",
+        subtitle: "Nuestros ejercicios interactivos:",
         startBtn: "Comenzar el entrenamiento",
     },
     trainer: {
@@ -162,7 +162,11 @@ export default {
     },
     dailyWord: {
         title: "Palabra del día:",
-        translationLabel: "Traducción:",
+        translationLabel: "Traducción: ",
+        morphology: "Morfología: ",
+        etymology: "Etimología: ",
+        synonims: "Sinónimos: ",
+        antonims: "Antónimos: ",
         audioHint: "Haz clic en la palabra para escuchar",
     },
 };

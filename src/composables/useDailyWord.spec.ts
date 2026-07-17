@@ -1,49 +1,58 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { useDailyWord } from "@/composables/useDailyWord";
-import type { DailyWord } from "@/types/wordDay";
+import { describe, it, expect, vi, beforeEach } from "vitest";
+import { useDailyWord } from "./useDailyWord";
+import { ref } from "vue";
+
+// Mock vue-i18n
+vi.mock("vue-i18n", () => ({
+    useI18n: () => ({
+        locale: ref("en"),
+    }),
+}));
+
+// Mock the data files
+vi.mock("@/data/daily_words/en.ts", () => ({
+    daylyWordArray: [
+        { word: "apple", translation: "manzana" },
+        { word: "banana", translation: "plátano" },
+    ],
+}));
+
+vi.mock("@/data/daily_words/ru.ts", () => ({
+    daylyWordArray: [{ word: "яблоко", translation: "яблоко" }],
+}));
 
 describe("useDailyWord", () => {
-    const mockWords: DailyWord[] = [
-        { word: "word1" } as DailyWord,
-        { word: "word2" } as DailyWord,
-    ];
-
     beforeEach(() => {
         vi.useFakeTimers();
     });
 
-    afterEach(() => {
-        vi.useRealTimers();
+    it("should load the correct word based on the day of the year", async () => {
+        // Set date to January 1st (dayOfYear = 1)
+        const date = new Date(2026, 0, 1);
+        vi.setSystemTime(date);
+
+        const { wordData } = useDailyWord();
+
+        // Wait for the async import to resolve
+        await vi.waitFor(() => expect(wordData.value).not.toBeNull());
+
+        // dayOfYear % 2 (index 1) = 'banana'
+        expect(wordData.value?.word).toBe("banana");
     });
 
-    it("should throw an error if the array is empty", () => {
-        expect(() => useDailyWord([])).toThrow("dailyWordArray is empty");
-    });
+    it("should fallback to ru locale if the requested locale file is missing", async () => {
+        // Force a locale that doesn't exist
+        vi.mock("vue-i18n", () => ({
+            useI18n: () => ({
+                locale: ref("fr"), // 'fr.ts' is not mocked
+            }),
+        }));
 
-    it("should return the correct word for a specific date", () => {
-        // January 1st, 2026 (dayOfYear = 1)
-        // (1 - 1) % 2 = 0 -> index 0
-        vi.setSystemTime(new Date(2026, 0, 1));
+        const { wordData } = useDailyWord();
 
-        const { wordData } = useDailyWord(mockWords);
-        expect(wordData.value.word).toBe("word1");
-    });
+        await vi.waitFor(() => expect(wordData.value).not.toBeNull());
 
-    it("should switch to the next word on the next day", () => {
-        // January 2nd, 2026 (dayOfYear = 2)
-        // (2 - 1) % 2 = 1 -> index 1
-        vi.setSystemTime(new Date(2026, 0, 2));
-
-        const { wordData } = useDailyWord(mockWords);
-        expect(wordData.value.word).toBe("word2");
-    });
-
-    it("should cycle through the words if the array is shorter than a year", () => {
-        // January 3rd, 2026 (dayOfYear = 3)
-        // (3 - 1) % 2 = 0 -> index 0
-        vi.setSystemTime(new Date(2026, 0, 3));
-
-        const { wordData } = useDailyWord(mockWords);
-        expect(wordData.value.word).toBe("word1");
+        // Should load the fallback 'ru' mock
+        expect(wordData.value?.word).toBe("яблоко");
     });
 });

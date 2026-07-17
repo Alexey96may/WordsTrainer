@@ -40,10 +40,10 @@ export default {
             history: {
                 title: "Comment tout a commencé",
                 p1: "Le site <strong>αGreek</strong> a été publié pour la première fois en <strong>2022</strong> en tant que plateforme éducative complète pour tous ceux qui sont profondément immergés dans l'apprentissage du grec moderne. Pendant plusieurs années, le projet a aidé à structurer les connaissances, à comprendre les subtilités de la grammaire et à affiner les compétences.",
-                p2: "Cependant, le temps impose ses conditions : en raison de l'augmentation soudaine du coût de l'hébergement de qualité, ainsi que des difficultés techniques et des restrictions liées aux règles régionales d'enregistrement et de maintenance des domaines, en <strong>2026</strong>, le site αGreek original a officiellement cessé d'exister dans son format à grande échelle.",
+                p2: "Cependant, le temps impose ses conditions: en raison de l'augmentation soudaine du coût de l'hébergement de qualité, ainsi que des difficultés techniques et des restrictions liées aux règles régionales d'enregistrement et de maintenance des domaines, en <strong>2026</strong>, le site αGreek original a officiellement cessé d'exister dans son format à grande échelle.",
             },
             rebirth: {
-                title: "Un second souffle : Qu'est-ce que c'est maintenant ?",
+                title: "Un second souffle: Qu'est-ce que c'est maintenant?",
                 p1: "Nous ne pouvions pas laisser les outils interactifs accumulés disparaître sans laisser de trace. Le cœur du site, le plus précieux, le plus pratique et le plus apprécié des utilisateurs — <strong>nos entraîneurs interactifs</strong> — a été soigneusement extrait, retravaillé et transféré sur cette plateforme dédiée et allégée.",
                 quote: "Cette relance autonome locale est un hommage à la langue et à ceux qui continuent avec persévérance à l'apprendre, malgré tout changement externe.",
             },
@@ -72,7 +72,7 @@ export default {
     },
     home: {
         title: "Apprentissage de la langue grecque",
-        subtitle: "Nos entraîneurs interactifs !",
+        subtitle: "Nos entraîneurs interactifs :",
         startBtn: "Commencer l'entraînement",
     },
     trainer: {
@@ -162,6 +162,10 @@ export default {
     dailyWord: {
         title: "Mot du jour :",
         translationLabel: "Traduction :",
+        morphology: "Morphologie : ",
+        etymology: "Étymologie : ",
+        synonims: "Synonymes : ",
+        antonims: "Antonymes : ",
         audioHint: "Cliquez sur le mot pour écouter",
     },
 };

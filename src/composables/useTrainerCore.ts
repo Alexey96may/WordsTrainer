@@ -23,10 +23,6 @@ export function useTrainerCore() {
     const mainArr = ref<TrainerItem[]>([]);
     const mainArrsinSort = ref<TrainerItem[]>([]);
 
-    const saveTrainerProgress = (slug: string, data: any) => {
-        saveProgress(slug, data);
-    };
-
     // Initialize the trainer from a raw data array
     const initTrainer = (
         rawArray: RawTrainerItem[],

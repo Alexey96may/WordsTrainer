@@ -1,17 +1,19 @@
+export type wordLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+
 export interface DailyWord {
     word: string;
-    base: string;
-    groups: {
-        morfology: string;
-        etymology: string;
-        aplication?: string;
-        synonims?: string;
-    };
-    qws: string[];
-    transls: string[];
     translation: string;
-    kind: string;
-    unicTransl: string;
-    notice: string;
+
+    morfology: string;
+    etymology: string;
+
+    synonims: string;
+    antonims: string;
+
+    level: wordLevel;
+
+    example: string;
+    exampleTransl: string;
+
     voicePath?: string;
 }

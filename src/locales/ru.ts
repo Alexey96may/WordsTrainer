@@ -73,7 +73,7 @@ export default {
     },
     home: {
         title: "Изучение Греческого Языка",
-        subtitle: "Наши интерактивные тренажёры!",
+        subtitle: "Наши интерактивные тренажёры:",
         startBtn: "Начать тренировку",
     },
     trainer: {
@@ -162,7 +162,11 @@ export default {
     },
     dailyWord: {
         title: "Слово дня:",
-        translationLabel: "Перевод:",
+        translationLabel: "Перевод: ",
+        morphology: "Морфология: ",
+        etymology: "Этимология: ",
+        synonims: "Синонимы: ",
+        antonims: "Антонимы: ",
         audioHint: "Нажмите на слово, чтобы послушать",
     },
 };

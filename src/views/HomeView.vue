@@ -6,6 +6,12 @@
             <hr class="hr_title_page" size="3" />
         </div>
 
+        <section class="daily-words">
+            <h2 class="subtitle">{{ $t("dailyWord.title") }}</h2>
+
+            <DailyWord />
+        </section>
+
         <section class="trainers">
             <h2 class="subtitle">{{ $t("home.subtitle") }}</h2>
 
@@ -37,6 +43,7 @@ import { ref, onMounted } from "vue";
 import { RouterLink } from "vue-router";
 import { TRAINERS_CONFIG, type TrainerConfig } from "@/config/trainers";
 import TrainerCardSkeleton from "@/components/ui/TrainerCardSkeleton.vue";
+import DailyWord from "@/components/shared/DailyWord.vue";
 
 const isLoading = ref(true);
 const trainers = ref<TrainerConfig[]>([]);
@@ -56,6 +63,12 @@ onMounted(() => {
     margin-bottom: 40px;
     font-size: 1.1rem;
 }
+
+.daily-words {
+    margin: 0 auto;
+    padding: 0;
+}
+
 .trainers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
