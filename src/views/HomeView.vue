@@ -44,6 +44,7 @@
             <div
                 class="spinner-wrapper"
                 :style="{ visibility: isFetching ? 'visible' : 'hidden' }"
+                :class="{ 'spinner-wrapper--visible': !isFetching }"
             >
                 <LoadMoreSpinner v-if="isFetching" />
             </div>
@@ -143,6 +144,15 @@ onUnmounted(() => {
 .fade-enter-from {
     opacity: 0;
     transform: translateY(20px);
+}
+
+.spinner-wrapper {
+    height: 90px;
+    transition: all 0.5s ease;
+}
+
+.spinner-wrapper--visible {
+    height: 0;
 }
 
 .trainer-card {
