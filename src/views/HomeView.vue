@@ -119,6 +119,9 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
+.home-container {
+    min-height: 100vh;
+}
 .welcome-text {
     text-align: center;
     color: #aaa;

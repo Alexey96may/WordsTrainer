@@ -248,6 +248,9 @@ onUnmounted(() => {
 }
 
 @media (max-width: 600px) {
+    .header {
+        margin-bottom: 4px;
+    }
     .daily-word-container {
         margin-top: 20px;
         margin-bottom: 60px;
@@ -256,6 +259,10 @@ onUnmounted(() => {
     .daily-word-card {
         width: 100%;
         padding: 1rem 1rem 3rem;
+    }
+
+    .translation {
+        font-size: 1rem;
     }
 
     .details {
