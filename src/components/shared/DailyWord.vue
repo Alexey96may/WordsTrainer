@@ -227,7 +227,6 @@ onUnmounted(() => {
     font-size: 0.9em;
     color: #888;
 }
-
 .lexical-group p {
     flex-basis: 50%;
 }
@@ -275,8 +274,13 @@ onUnmounted(() => {
 
     .lexical-group {
         flex-direction: column;
-        gap: 0.1rem;
+        gap: 0.5rem;
         font-size: 0.8em;
+    }
+
+    .lexical-group p {
+        padding-left: 1rem;
+        text-indent: -1rem;
     }
 
     .ex-orig {
@@ -306,7 +310,6 @@ onUnmounted(() => {
 @media (max-width: 340px) {
     .lexical-group {
         flex-direction: column;
-        gap: 1rem;
         font-size: 0.9em;
     }
 }
