@@ -1,13 +1,13 @@
 import { ref, computed } from "vue";
 import type { TrainerItem, RawTrainerItem } from "@/types/trainer";
 import { shuffleArray } from "@/utils/trainerHelpers";
-import { saveProgress, getProgress } from "@/utils/db";
-
+import { saveProgress } from "@/utils/db";
 import { useI18n } from "vue-i18n";
 
 export function useTrainerCore() {
     const { t } = useI18n();
-    // Gameplay state
+
+    // Состояние игры
     const userAnswer = ref("");
     const hasError = ref(false);
     const remainingQuestions = ref(0);
@@ -18,21 +18,20 @@ export function useTrainerCore() {
     const sectionArr = ref<string[]>([]);
     const checkedKind = ref<string[]>(["all"]);
 
-    // Queues and question pools
+    // Очереди и пулы вопросов
     const mainArrAlwaysFull = ref<TrainerItem[]>([]);
     const mainArr = ref<TrainerItem[]>([]);
     const mainArrsinSort = ref<TrainerItem[]>([]);
 
-    // Initialize the trainer from a raw data array
-    const initTrainer = (
+    // 1. Подготовка структуры данных (без перемешивания)
+    const prepareTrainerStructure = (
         rawArray: RawTrainerItem[],
-        sectionArr: { value: string[] },
+        sectionArrRef: any,
     ) => {
         if (!rawArray.length) return;
 
         const kinds = new Set<string>(["all"]);
 
-        // Normalization and mapping of incoming data
         const normalizedArray: TrainerItem[] = rawArray.map((item) => {
             const base = item.base || item.word;
             let kind = t("trainer.states.noGroup");
@@ -45,7 +44,7 @@ export function useTrainerCore() {
             return { ...item, base, kind };
         });
 
-        sectionArr.value = Array.from(kinds);
+        sectionArrRef.value = Array.from(kinds);
 
         const fullList: TrainerItem[] = [];
         normalizedArray.forEach((item) => {
@@ -72,12 +71,17 @@ export function useTrainerCore() {
         });
 
         mainArrAlwaysFull.value = fullList;
-        mainArr.value = shuffleArray(fullList);
         mainArrsinSort.value = [...fullList];
+    };
+
+    // 2. Инициализация (с перемешиванием)
+    const initTrainer = (rawArray: RawTrainerItem[], sectionArrRef: any) => {
+        prepareTrainerStructure(rawArray, sectionArrRef);
+        mainArr.value = shuffleArray([...mainArrAlwaysFull.value]);
         remainingQuestions.value = mainArr.value.length;
     };
 
-    // Dynamic HTML for the current question
+    // HTML для вопроса
     const currentQuestionHtml = computed<string>(() => {
         if (!mainArr.value.length) {
             return flagGameOver.value
@@ -94,7 +98,7 @@ export function useTrainerCore() {
         return `${qwMod} <br><span class="spanTransl">(${currentItem.transls[0]})</span>`;
     });
 
-    // Validation of user response
+    // Проверка ответа
     const checkUserAnswer = async (slug: string): Promise<boolean> => {
         if (!mainArr.value.length) return false;
 
@@ -126,18 +130,12 @@ export function useTrainerCore() {
                 flagGameOver.value = mainArrsinSort.value.length === 0;
             }
 
-            console.log("Saving to IndexedDB for slug:", slug);
-            try {
-                await saveProgress(slug, {
-                    mainArr: mainArr.value,
-                    mainArrsinSort: mainArrsinSort.value,
-                    checkedKind: checkedKind.value,
-                    sectionArr: sectionArr.value,
-                });
-                console.log("Save successful!");
-            } catch (e) {
-                console.error("Save failed:", e);
-            }
+            await saveProgress(slug, {
+                mainArr: mainArr.value,
+                mainArrsinSort: mainArrsinSort.value,
+                checkedKind: checkedKind.value,
+                sectionArr: sectionArr.value,
+            });
             return true;
         } else {
             hasError.value = true;
@@ -156,6 +154,7 @@ export function useTrainerCore() {
         mainArr,
         mainArrsinSort,
         initTrainer,
+        prepareTrainerStructure, // Теперь доступна для загрузчика
         currentQuestionHtml,
         checkUserAnswer,
         sectionArr,

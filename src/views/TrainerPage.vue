@@ -60,6 +60,7 @@ const {
     checkUserAnswer,
     sectionArr,
     checkedKind,
+    prepareTrainerStructure,
 } = useTrainerCore();
 
 // 3. Categories Module
@@ -111,11 +112,6 @@ const applySavedFilter = () => {
 const loadTrainerData = async (slug: string) => {
     isSyncing.value = true;
 
-    mainArr.value = [];
-    mainArrsinSort.value = [];
-    sectionArr.value = [];
-    checkedKind.value = [];
-
     const currentLang = locale.value || "ru";
     let module;
     try {
@@ -127,30 +123,25 @@ const loadTrainerData = async (slug: string) => {
     titles.value = module.tableTitlesArr;
     const rawData = module.globalArray as RawTrainerItem[];
 
-    const sanitizedData: TrainerItem[] = rawData.map((item) => ({
-        ...item,
-        base: item.base ?? "",
-        kind: item.kind ?? "general",
-        notice: item.notice ?? "",
-    }));
-
-    initTrainer(sanitizedData, sectionArr);
+    prepareTrainerStructure(rawData, sectionArr);
 
     const saved = await getProgress(slug);
 
     if (saved) {
+        // Восстанавливаем все сохранённые данные
         mainArrsinSort.value = saved.mainArrsinSort;
-        mainArr.value = saved.mainArr;
+        mainArr.value = saved.mainArr; // ← порядок сохранён
         sectionArr.value = saved.sectionArr;
         checkedKind.value = saved.checkedKind;
-        applySavedFilter();
-        globalArray.value = [...saved.mainArrsinSort];
+
+        // ❌ НЕ вызываем applySavedFilter() – она испортит порядок!
+        remainingQuestions.value = mainArr.value.length; // обновляем счётчик
+        globalArray.value = [...mainArrsinSort.value]; // для таблицы (все слова)
     } else {
-        globalArray.value = rawData;
-        userAnswer.value = "";
-        hasError.value = false;
+        // Если сейва нет – инициализация с перемешиванием
+        initTrainer(rawData, sectionArr);
+        globalArray.value = [...mainArrAlwaysFull.value];
         checkedKind.value = ["all"];
-        initTrainer(globalArray.value, sectionArr);
     }
 
     await nextTick();
