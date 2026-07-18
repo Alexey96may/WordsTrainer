@@ -6,9 +6,10 @@
                     <div
                         v-if="wordData.voicePath"
                         class="sound-icon"
-                        v-html="svgIcon"
                         @click="playAudio"
-                    ></div>
+                    >
+                        <SpeakerIcon />
+                    </div>
                     <span class="level-badge">{{ wordData.level }}</span>
                 </div>
                 <h2
@@ -25,12 +26,10 @@
             <hr class="divider" :style="{ width: isVisible ? '60%' : '0px' }" />
 
             <div class="details">
-                <p v-if="wordData.morfology">
-                    <strong>{{ t("dailyWord.morphology") }}</strong>
+                <p class="details__morph" v-if="wordData.morfology">
                     <span v-html="wordData.morfology"></span>
                 </p>
-                <p v-if="wordData.etymology">
-                    <strong>{{ t("dailyWord.etymology") }}</strong>
+                <p class="details__etim" v-if="wordData.etymology">
                     <span v-html="wordData.etymology"></span>
                 </p>
             </div>
@@ -58,7 +57,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from "vue";
+import { ref, computed, onUnmounted, nextTick, watch } from "vue";
+import SpeakerIcon from "@/components/icons/SpeakerIcon.vue";
 import { useDailyWord } from "@/composables/useDailyWord";
 import { useI18n } from "vue-i18n";
 
@@ -72,58 +72,52 @@ const capitalizedWord = computed(() => {
     return w.charAt(0).toUpperCase() + w.slice(1);
 });
 
-const svgIcon = `<svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-            >
-                <g data-name="Layer 34" id="Layer_34">
-                    <path
-                        class="cls-1"
-                        d="M18,29a1,1,0,0,1-.57-.18l-10-7A1,1,0,0,1,7,21V11a1,1,0,0,1,.43-.82l10-7a1,1,0,0,1,1-.07A1,1,0,0,1,19,4V28a1,1,0,0,1-.54.89A1,1,0,0,1,18,29ZM9,20.48l8,5.6V5.92l-8,5.6Z"
-                    />
-                    <path
-                        class="cls-1"
-                        d="M7,22H3a2,2,0,0,1-2-2V12a2,2,0,0,1,2-2h4a1,1,0,0,1,1,1V21A1,1,0,0,1,7,22ZM3,12v8H6V12Z"
-                    />
-
-                    <path
-                        class="cls-1"
-                        id="sLevel1"
-                        d="M18,21V19a3,3,0,0,0,2.12-5.12l1.42-1.42A5,5,0,0,1,18,21Z"
-                    />
-                    <path
-                        class="cls-1"
-                        id="sLevel3"
-                        d="M23.65,22.65a1,1,0,0,1-.29-.7A1,1,0,0,1,23,21a7,7,0,0,0,0-9.9,1,1,0,0,1,1.41-1.41,9,9,0,0,1,0,12.72A1,1,0,0,1,23.65,22.65Z"
-                    />
-                    <path
-                        class="cls-1"
-                        id="sLevel2"
-                        d="M26.48,25.48a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42,11,11,0,0,0,0-15.54,1,1,0,1,1,1.42-1.42,13,13,0,0,1,0,18.38A1,1,0,0,1,26.48,25.48Z"
-                    />
-                </g>
-            </svg>`;
-
 const playAudio = () => {
     if (wordData.value?.voicePath) {
         new Audio(import.meta.env.BASE_URL + wordData.value.voicePath).play();
     }
 };
 
-const handleScroll = () => {
-    if (container.value && !isVisible.value) {
-        const top = container.value.getBoundingClientRect().top;
-        if (top < window.innerHeight * 0.8) isVisible.value = true;
+let observer: IntersectionObserver | null = null;
+
+const initObserver = () => {
+    observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    isVisible.value = true;
+                    observer?.disconnect();
+                }
+            });
+        },
+        { threshold: 0.1 },
+    );
+
+    if (container.value) {
+        observer.observe(container.value);
+
+        const rect = container.value.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            isVisible.value = true;
+            observer.disconnect();
+        }
     }
 };
 
-onMounted(() => {
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-});
+watch(
+    () => wordData.value,
+    async (newData) => {
+        if (newData) {
+            await nextTick();
+            initObserver();
+        }
+    },
+    { immediate: true },
+);
 
-onUnmounted(() => window.removeEventListener("scroll", handleScroll));
+onUnmounted(() => {
+    if (observer) observer.disconnect();
+});
 </script>
 
 <style scoped>
@@ -136,16 +130,17 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     max-width: 500px;
     min-width: 50vw;
     margin: 0 auto;
-    padding: 30px;
+
+    padding: 2rem 2rem 3rem;
     background-color: rgb(29, 29, 29);
     border: 1px solid #198754;
     border-radius: 8px;
     color: #e0e0e0;
     opacity: 0;
+    transform: translateY(20px);
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
-    transform: translateY(20px);
 }
 
 .daily-word-card.visible {
@@ -161,8 +156,8 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 8px;
-    gap: 12px;
+    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .word {
@@ -177,30 +172,16 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     transition: opacity 0.2s;
 }
 
-:deep(.daily-word-card svg) {
-    fill: #198754;
-    transition: fill 0.3s;
-}
-
-.word.has-audio:active,
-:deep(.daily-word-card svg:active) {
-    transform: scale(0.98);
-    opacity: 0.6;
-}
-
 @media (hover: hover) {
     .word.has-audio:hover {
         opacity: 0.8;
     }
-
-    :deep(.daily-word-card svg:hover) {
-        fill: #fff;
-    }
 }
 
 .level-badge {
-    font-size: 0.6rem;
-    padding: 2px 6px;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 8px;
     background: #198754;
     border-radius: 4px;
 }
@@ -232,7 +213,11 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
+}
+
+.details__morph {
+    text-align: center;
 }
 
 .lexical-group {
@@ -271,7 +256,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
 
     .daily-word-card {
         width: 100%;
-        padding: 1.5rem 18px;
+        padding: 1rem 1rem 3rem;
     }
 
     .details {
@@ -280,12 +265,17 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
         margin-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+    }
+
+    .level-badge {
+        font-size: 0.6rem;
+        padding: 6px 6px;
+        border-radius: 4px;
     }
 
     .lexical-group {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.1rem;
         font-size: 0.8em;
     }
 
@@ -297,13 +287,19 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     }
 
     .header__up {
-        margin-bottom: 18px;
-        gap: 12px;
+        margin-bottom: 1rem;
+        gap: 0.7rem;
     }
 
     .sound-icon {
         width: 18px;
         height: 18px;
+    }
+
+    .example-box {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        border-left: 1px solid #198754;
     }
 }
 

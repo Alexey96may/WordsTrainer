@@ -162,8 +162,6 @@ export default {
     dailyWord: {
         title: "Mot du jour :",
         translationLabel: "Traduction :",
-        morphology: "Morphologie : ",
-        etymology: "Étymologie : ",
         synonims: "Synonymes : ",
         antonims: "Antonymes : ",
         audioHint: "Cliquez sur le mot pour écouter",

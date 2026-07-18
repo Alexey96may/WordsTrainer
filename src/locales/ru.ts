@@ -163,8 +163,6 @@ export default {
     dailyWord: {
         title: "Слово дня:",
         translationLabel: "Перевод: ",
-        morphology: "Морфология: ",
-        etymology: "Этимология: ",
         synonims: "Синонимы: ",
         antonims: "Антонимы: ",
         audioHint: "Нажмите на слово, чтобы послушать",

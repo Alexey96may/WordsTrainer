@@ -160,8 +160,6 @@ export default {
     dailyWord: {
         title: "Word of the day:",
         translationLabel: "Translation: ",
-        morphology: "Morphology: ",
-        etymology: "Etymology: ",
         synonims: "Synonyms: ",
         antonims: "Antonyms: ",
         audioHint: "Click the word to listen",
