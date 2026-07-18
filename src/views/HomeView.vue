@@ -21,40 +21,99 @@
                 </template>
 
                 <template v-else>
-                    <RouterLink
-                        v-for="trainer in trainers"
-                        :key="trainer.id"
-                        :to="`/trainer/${trainer.id}`"
-                        class="trainer-card"
+                    <TransitionGroup name="fade">
+                        <RouterLink
+                            v-for="trainer in displayedTrainers"
+                            :key="trainer.id"
+                            :to="`/trainer/${trainer.id}`"
+                            class="trainer-card"
+                        >
+                            <div class="card-icon">
+                                <component :is="trainer.icon" />
+                            </div>
+                            <h3>{{ $t(`trainers.${trainer.id}.name`) }}</h3>
+                            <p>{{ $t(`trainers.${trainer.id}.desc`) }}</p>
+                            <span class="start-btn">{{
+                                $t("home.startBtn")
+                            }}</span>
+                        </RouterLink></TransitionGroup
                     >
-                        <div class="card-icon">
-                            <component :is="trainer.icon" />
-                        </div>
-                        <h3>{{ $t(`trainers.${trainer.id}.name`) }}</h3>
-                        <p>{{ $t(`trainers.${trainer.id}.desc`) }}</p>
-                        <span class="start-btn">{{ $t("home.startBtn") }}</span>
-                    </RouterLink>
                 </template>
             </div>
+
+            <div
+                class="spinner-wrapper"
+                :style="{ visibility: isFetching ? 'visible' : 'hidden' }"
+            >
+                <LoadMoreSpinner v-if="isFetching" />
+            </div>
+
+            <div ref="sentinel" class="sentinel" style="height: 20px"></div>
         </section>
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onUnmounted, nextTick } from "vue";
 import { RouterLink } from "vue-router";
 import { TRAINERS_CONFIG, type TrainerConfig } from "@/config/trainers";
 import TrainerCardSkeleton from "@/components/ui/TrainerCardSkeleton.vue";
+import LoadMoreSpinner from "@/components/ui/LoadMoreSpinner.vue";
 import DailyWord from "@/components/shared/DailyWord.vue";
 
 const isLoading = ref(true);
-const trainers = ref<TrainerConfig[]>([]);
 
-onMounted(() => {
-    setTimeout(() => {
-        trainers.value = TRAINERS_CONFIG;
-        isLoading.value = false;
-    }, 300);
+const displayedTrainers = ref<TrainerConfig[]>([]);
+const pageSize = 4;
+const sentinel = ref<HTMLElement | null>(null);
+let observer: IntersectionObserver | null = null;
+
+const isFetching = ref(false);
+
+const loadMore = async () => {
+    if (
+        isFetching.value ||
+        displayedTrainers.value.length >= TRAINERS_CONFIG.length
+    )
+        return;
+    isFetching.value = true;
+
+    await new Promise((resolve) => setTimeout(resolve, 300));
+
+    const currentLength = displayedTrainers.value.length;
+    const nextBatch = TRAINERS_CONFIG.slice(
+        currentLength,
+        currentLength + pageSize,
+    );
+    displayedTrainers.value.push(...nextBatch);
+
+    isFetching.value = false;
+};
+
+onMounted(async () => {
+    loadMore();
+    isLoading.value = false;
+
+    await nextTick();
+
+    observer = new IntersectionObserver(
+        (entries) => {
+            if (entries[0]?.isIntersecting) {
+                if (displayedTrainers.value.length < TRAINERS_CONFIG.length) {
+                    loadMore();
+                }
+            }
+        },
+        { threshold: 0.1 },
+    );
+
+    if (sentinel.value) {
+        observer.observe(sentinel.value);
+    }
+});
+
+onUnmounted(() => {
+    observer?.disconnect();
 });
 </script>
 
@@ -76,6 +135,16 @@ onMounted(() => {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
 }
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.5s ease;
+}
+.fade-enter-from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
 .trainer-card {
     background-color: #1d1d1d;
     border: 1px solid #198754;
