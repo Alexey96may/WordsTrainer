@@ -27,7 +27,9 @@
                         :to="`/trainer/${trainer.id}`"
                         class="trainer-card"
                     >
-                        <div class="card-icon">{{ trainer.icon }}</div>
+                        <div class="card-icon">
+                            <component :is="trainer.icon" />
+                        </div>
                         <h3>{{ $t(`trainers.${trainer.id}.name`) }}</h3>
                         <p>{{ $t(`trainers.${trainer.id}.desc`) }}</p>
                         <span class="start-btn">{{ $t("home.startBtn") }}</span>
@@ -81,31 +83,38 @@ onMounted(() => {
     padding: 24px;
     text-decoration: none;
     color: #fff;
-    transition:
-        transform 0.2s,
-        box-shadow 0.2s;
     display: flex;
     flex-direction: column;
     transition:
-        transform 0.2s cubic-bezier(0.25, 1, 0.5, 1),
-        box-shadow 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+        transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .card-icon {
     font-size: 2rem;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+    text-align: center;
+    line-height: 1;
 }
+.card-icon svg {
+    width: 2rem;
+    height: 2rem;
+    stroke-width: 1.5;
+}
+
 .trainer-card h3 {
     color: #198754;
-    margin: 0 0 10px 0;
+    margin: 0 0 1rem 0;
+    text-align: center;
     font-size: 1.4rem;
 }
 .trainer-card p {
     color: #ccc;
     font-size: 0.95rem;
     line-height: 1.5;
+    text-align: center;
     flex-grow: 1;
-    margin-bottom: 20px;
 }
 .start-btn {
     background-color: #198754;
@@ -116,6 +125,7 @@ onMounted(() => {
     font-weight: bold;
     font-size: 0.9rem;
     transition: background-color 0.2s;
+    margin-top: 2rem;
 }
 
 .trainer-card:active {
@@ -129,6 +139,10 @@ onMounted(() => {
         box-shadow: 0 10px 20px rgba(25, 135, 84, 0.2);
     }
 
+    .trainer-card:hover .card-icon {
+        color: #198754;
+    }
+
     .trainer-card:hover .start-btn {
         background-color: #157347;
     }
@@ -140,16 +154,23 @@ onMounted(() => {
     }
     .card-icon {
         font-size: 1.6rem;
+        display: block;
     }
     .trainer-card h3 {
         font-size: 1.2rem;
+        margin: 0 0 0.5rem 0;
     }
     .trainer-card p {
         font-size: 0.8rem;
-        margin-bottom: 20px;
     }
     .start-btn {
         font-size: 0.8rem;
+    }
+
+    .card-icon svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        stroke-width: 1;
     }
 }
 
@@ -162,7 +183,7 @@ onMounted(() => {
     }
     .trainer-card {
         border-radius: 6px;
-        padding: 12px;
+        padding: 24px 12px;
     }
     .trainer-card h3 {
         font-size: 1rem;

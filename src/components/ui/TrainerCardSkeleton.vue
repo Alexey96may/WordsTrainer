@@ -1,12 +1,9 @@
 <template>
     <div class="trainer-card skeleton-card">
         <div class="skeleton-icon skeleton-anim"></div>
-
         <div class="skeleton-title skeleton-anim"></div>
-
         <div class="skeleton-text skeleton-anim"></div>
         <div class="skeleton-text skeleton-text--short skeleton-anim"></div>
-
         <div class="skeleton-btn skeleton-anim"></div>
     </div>
 </template>
@@ -17,42 +14,41 @@
     border: 1px solid rgba(25, 135, 84, 0.2);
     cursor: default;
     pointer-events: none;
+    align-items: center;
 }
 
 .skeleton-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
 }
 
 .skeleton-title {
-    width: 75%;
+    width: 60%;
     height: 24px;
     border-radius: 6px;
-    margin: 0 0 10px 0;
+    margin: 0 0 1rem 0;
 }
 
 .skeleton-text {
-    width: 100%;
-    height: 26px;
+    width: 90%;
+    height: 14px;
     border-radius: 4px;
     margin-bottom: 8px;
 }
 
 .skeleton-text--short {
-    width: 50%;
-    margin-bottom: 40px;
+    width: 40%;
+    margin-bottom: 2rem;
 }
 
 .skeleton-btn {
     width: 100%;
     height: 38px;
     border-radius: 6px;
-    margin-top: auto;
 }
 
-/* Glint shimmer effect */
 .skeleton-anim {
     background: linear-gradient(90deg, #252525 25%, #333333 50%, #252525 75%);
     background-size: 200% 100%;
@@ -68,23 +64,22 @@
     }
 }
 
-@media (max-width: 340px) {
-    .skeleton-card {
-        padding: 12px;
-        border-radius: 6px;
-    }
+@media (max-width: 600px) {
     .skeleton-icon {
         width: 30px;
         height: 30px;
     }
     .skeleton-title {
-        height: 18px;
+        height: 20px;
     }
     .skeleton-text {
         height: 12px;
     }
-    .skeleton-btn {
-        height: 28px;
+}
+
+@media (max-width: 340px) {
+    .skeleton-card {
+        padding: 24px 12px;
     }
 }
 </style>
