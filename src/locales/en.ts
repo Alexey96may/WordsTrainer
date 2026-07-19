@@ -156,6 +156,10 @@ export default {
             name: "Word Formation",
             desc: "Prefixes, suffixes, and word roots.",
         },
+        train_complex_sentences: {
+            name: "Complex Sentences & Links",
+            desc: "Mastering conjunctions and linking structures to build complex sentences effectively.",
+        },
     },
     dailyWord: {
         title: "Word of the day:",

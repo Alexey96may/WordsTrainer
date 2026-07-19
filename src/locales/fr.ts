@@ -158,6 +158,10 @@ export default {
             name: "Formation des mots",
             desc: "Étude des préfixes, suffixes et de la logique de construction des mots grecs de même racine.",
         },
+        train_complex_sentences: {
+            name: "Structures et liens",
+            desc: "Étude des structures et des conjonctions reliant les propositions dans différents types de phrases.",
+        },
     },
     dailyWord: {
         title: "Mot du jour :",

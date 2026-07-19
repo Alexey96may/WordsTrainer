@@ -10,6 +10,7 @@ import {
     User,
     RefreshCw,
     Box,
+    CableIcon,
 } from "lucide-vue-next";
 import type { Component } from "vue";
 
@@ -19,6 +20,7 @@ export interface TrainerConfig {
 }
 
 export const TRAINERS_CONFIG: TrainerConfig[] = [
+    { id: "train_complex_sentences", icon: CableIcon },
     { id: "train_accus_case", icon: Target },
     { id: "train_gen_case", icon: FileText },
     { id: "train_verb_all_the_times", icon: RefreshCw },

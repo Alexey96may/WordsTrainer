@@ -26,7 +26,6 @@ import { getProgress, saveProgress } from "@/utils/db";
 
 const props = defineProps({
     slug: { type: String, required: true },
-    paramGlobal: { type: Array, default: () => [] },
     theoryContent: { type: String, default: "" },
 });
 
@@ -78,7 +77,7 @@ const { activeKindsCount, isKindAvailable, selectCategory } =
     );
 
 const globalArray = ref<RawTrainerItem[]>([]);
-const paramGlobal = ref<string[]>(props.paramGlobal as string[]);
+const paramGlobal = ref<string[]>([]);
 const titles = ref<LocalTitleItem[]>([]);
 const trainerTableComponent = ref<InstanceType<typeof TrainerTable> | null>(
     null,
@@ -121,6 +120,8 @@ const loadTrainerData = async (slug: string) => {
     }
 
     titles.value = module.tableTitlesArr;
+    paramGlobal.value = module.paramGlobal || [];
+
     const rawData = module.globalArray as RawTrainerItem[];
 
     prepareTrainerStructure(rawData, sectionArr);
@@ -134,7 +135,6 @@ const loadTrainerData = async (slug: string) => {
         sectionArr.value = saved.sectionArr;
         checkedKind.value = saved.checkedKind;
 
-        // ❌ НЕ вызываем applySavedFilter() – она испортит порядок!
         remainingQuestions.value = mainArr.value.length; // обновляем счётчик
         globalArray.value = [...mainArrsinSort.value]; // для таблицы (все слова)
     } else {

@@ -1,56 +1,63 @@
 <template>
-    <div v-if="wordData" class="daily-word-container" ref="container">
-        <div class="daily-word-card" :class="{ visible: isVisible }">
-            <div class="header">
-                <div class="header__up">
-                    <div
-                        v-if="wordData.voicePath"
-                        class="sound-icon"
-                        @click="playAudio"
-                    >
-                        <SpeakerIcon />
+    <div class="main-wrapper">
+        <DailyWordSkeleton v-if="!wordData" />
+
+        <div v-else class="daily-word-container" ref="container">
+            <div class="daily-word-card" :class="{ visible: isVisible }">
+                <div class="header">
+                    <div class="header__up">
+                        <div
+                            v-if="wordData.voicePath"
+                            class="sound-icon"
+                            @click="playAudio"
+                        >
+                            <SpeakerIcon />
+                        </div>
+                        <span class="level-badge">{{ wordData.level }}</span>
                     </div>
-                    <span class="level-badge">{{ wordData.level }}</span>
+                    <h2
+                        class="word"
+                        @click="playAudio"
+                        :class="{ 'has-audio': wordData?.voicePath }"
+                    >
+                        {{ capitalizedWord }}
+                    </h2>
                 </div>
-                <h2
-                    class="word"
-                    @click="playAudio"
-                    :class="{ 'has-audio': wordData?.voicePath }"
+
+                <p class="translation">{{ wordData.translation }}</p>
+
+                <hr
+                    class="divider"
+                    :style="{ width: isVisible ? '60%' : '0px' }"
+                />
+
+                <div class="details">
+                    <p class="details__morph" v-if="wordData.morfology">
+                        <span v-html="wordData.morfology"></span>
+                    </p>
+                    <p class="details__etim" v-if="wordData.etymology">
+                        <span v-html="wordData.etymology"></span>
+                    </p>
+                </div>
+
+                <div
+                    v-if="wordData.synonims || wordData.antonims"
+                    class="lexical-group"
                 >
-                    {{ capitalizedWord }}
-                </h2>
-            </div>
+                    <p v-if="wordData.synonims" class="syn">
+                        <em>{{ t("dailyWord.synonims") }}</em>
+                        {{ wordData.synonims }}
+                    </p>
+                    <p v-if="wordData.antonims" class="ant">
+                        <em>{{ t("dailyWord.antonims") }}</em>
+                        {{ wordData.antonims }}
+                    </p>
+                </div>
 
-            <p class="translation">{{ wordData.translation }}</p>
-
-            <hr class="divider" :style="{ width: isVisible ? '60%' : '0px' }" />
-
-            <div class="details">
-                <p class="details__morph" v-if="wordData.morfology">
-                    <span v-html="wordData.morfology"></span>
-                </p>
-                <p class="details__etim" v-if="wordData.etymology">
-                    <span v-html="wordData.etymology"></span>
-                </p>
-            </div>
-
-            <div
-                v-if="wordData.synonims || wordData.antonims"
-                class="lexical-group"
-            >
-                <p v-if="wordData.synonims" class="syn">
-                    <em>{{ t("dailyWord.synonims") }}</em>
-                    {{ wordData.synonims }}
-                </p>
-                <p v-if="wordData.antonims" class="ant">
-                    <em>{{ t("dailyWord.antonims") }}</em>
-                    {{ wordData.antonims }}
-                </p>
-            </div>
-
-            <div class="example-box" v-if="wordData.example">
-                <p class="ex-orig">{{ wordData.example }}</p>
-                <p class="ex-transl">{{ wordData.exampleTransl }}</p>
+                <div class="example-box" v-if="wordData.example">
+                    <p class="ex-orig">{{ wordData.example }}</p>
+                    <p class="ex-transl">{{ wordData.exampleTransl }}</p>
+                </div>
             </div>
         </div>
     </div>
@@ -58,6 +65,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onUnmounted, nextTick, watch } from "vue";
+import DailyWordSkeleton from "@/components/ui/DailyWordSkeleton.vue";
 import SpeakerIcon from "@/components/icons/SpeakerIcon.vue";
 import { useDailyWord } from "@/composables/useDailyWord";
 import { useI18n } from "vue-i18n";

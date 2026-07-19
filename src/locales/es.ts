@@ -159,6 +159,10 @@ export default {
             name: "Formación de palabras",
             desc: "Estudio de prefijos, sufijos y la lógica de construcción de palabras griegas de la misma raíz.",
         },
+        train_complex_sentences: {
+            name: "Construcciones y conectores",
+            desc: "Práctica de conectores y estructuras gramaticales para unir oraciones complejas.",
+        },
     },
     dailyWord: {
         title: "Palabra del día:",

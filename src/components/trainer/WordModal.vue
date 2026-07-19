@@ -58,6 +58,7 @@
 
                                 <template
                                     v-if="
+                                        !paramGlobal.includes('ignoreKind') &&
                                         item.groups &&
                                         Object.keys(item.groups).length
                                     "
@@ -139,14 +140,31 @@ const relatedForms = computed(() => {
         .trim();
     const targetKind = (activeRow.value.kind || "").toLowerCase().trim();
 
-    return props.globalArray.filter((item) => {
+    const isIgnoreKind = props.paramGlobal.includes("ignoreKind");
+
+    const filtered = props.globalArray.filter((item) => {
         const base = (item.base || item.word || "").toLowerCase().trim();
         const kind = (item.kind || "").toLowerCase().trim();
+
         const matchesBase = targetBase === base;
-        const matchesKind =
-            props.paramGlobal.includes("withoutKind") || targetKind === kind;
+        const matchesKind = isIgnoreKind || targetKind === kind;
+
         return matchesBase && matchesKind;
     });
+
+    // 2. Если ignoreKind активен, убираем дубликаты карточек по слову
+    if (isIgnoreKind) {
+        const uniqueMap = new Map();
+        filtered.forEach((item) => {
+            const wordKey = (item.word || "").toLowerCase().trim();
+            if (!uniqueMap.has(wordKey)) {
+                uniqueMap.set(wordKey, item);
+            }
+        });
+        return Array.from(uniqueMap.values());
+    }
+
+    return filtered;
 });
 
 const countFill = computed(() => relatedForms.value.length);

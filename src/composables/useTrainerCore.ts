@@ -154,7 +154,7 @@ export function useTrainerCore() {
         mainArr,
         mainArrsinSort,
         initTrainer,
-        prepareTrainerStructure, // Теперь доступна для загрузчика
+        prepareTrainerStructure,
         currentQuestionHtml,
         checkUserAnswer,
         sectionArr,
