@@ -184,8 +184,7 @@ const checkHighlight = (row: any) => {
 
     if (!hasKind) return false;
 
-    const rawBase =
-        props.currentQuestion.base || props.currentQuestion.word || "";
+    const rawBase = props.currentQuestion.word || "";
 
     const qwVariants = rawBase
         .split("/")
