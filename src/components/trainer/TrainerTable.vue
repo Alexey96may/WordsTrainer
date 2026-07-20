@@ -172,6 +172,44 @@ const isGroupVisible = (groupKindName: string) => {
     return props.checkedKind.includes(groupKindName.toLowerCase());
 };
 
+const activeHighlightVariants = computed(() => {
+    if (!props.currentQuestion || !props.isHintUsed) return [];
+
+    const qwKind = (
+        props.currentQuestion.kind || t("trainer.states.noGroup")
+    ).toLowerCase();
+
+    const rawWord = props.currentQuestion.word || "";
+    const wordVariants = rawWord
+        .split("/")
+        .map((v: string) => v.trim().toLowerCase())
+        .filter(Boolean);
+
+    if (wordVariants.length > 0) {
+        const hasWordMatch = groupedTableData.value.some((group) => {
+            if (group.kindName.toLowerCase() !== qwKind) return false;
+
+            return group.rows.some((row) =>
+                Object.values(row).some(
+                    (val) =>
+                        typeof val === "string" &&
+                        wordVariants.includes(val.trim().toLowerCase()),
+                ),
+            );
+        });
+
+        if (hasWordMatch) {
+            return wordVariants;
+        }
+    }
+
+    const rawBase = props.currentQuestion.base || "";
+    return rawBase
+        .split("/")
+        .map((v: string) => v.trim().toLowerCase())
+        .filter(Boolean);
+});
+
 // Check row highlighting (illum logic)
 const checkHighlight = (row: any) => {
     if (!props.currentQuestion || !props.isHintUsed) return false;
@@ -184,21 +222,14 @@ const checkHighlight = (row: any) => {
 
     if (!hasKind) return false;
 
-    const rawBase =
-        props.currentQuestion.word || props.currentQuestion.base || "";
+    const variants = activeHighlightVariants.value;
+    if (!variants.length) return false;
 
-    const qwVariants = rawBase
-        .split("/")
-        .map((v: string) => v.trim().toLowerCase())
-        .filter(Boolean);
-
-    const hasBase = Object.values(row).some(
+    return Object.values(row).some(
         (val) =>
             typeof val === "string" &&
-            qwVariants.includes(val.trim().toLowerCase()),
+            variants.includes(val.trim().toLowerCase()),
     );
-
-    return hasBase;
 };
 
 // On click, find the row index within the overall list of visible directory items
