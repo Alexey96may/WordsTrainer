@@ -50,6 +50,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from "vue";
+import { useI18n } from "vue-i18n";
 
 interface TitleItem {
     title: string;
@@ -73,6 +74,8 @@ const emit = defineEmits<{
     ): void;
 }>();
 
+const { t } = useI18n();
+
 const tableContentRef = ref<HTMLElement | null>(null);
 
 // Helper smoothing function from your old script
@@ -95,7 +98,7 @@ function flattenObj(ob: any): any {
 const categories = computed(() => {
     const set = new Set<string>();
     props.globalArray.forEach((item) => {
-        let kind = item.kind || "Без группы";
+        let kind = item.kind || t("trainer.states.noGroup");
         kind = kind[0].toUpperCase() + kind.slice(1);
         set.add(kind);
     });
@@ -120,12 +123,15 @@ const groupedTableData = computed(() => {
         const groupRows: any[] = [];
 
         rawPlain.forEach((item) => {
-            const itemKind = (item.kind || "Без группы").toLowerCase();
+            const itemKind = (
+                item.kind || t("trainer.states.noGroup")
+            ).toLowerCase();
             const targetKind = currentGrName.toLowerCase();
 
             const matchesKind =
                 itemKind === targetKind ||
-                (targetKind === "без группы" && item.kind === "");
+                (targetKind === t("trainer.states.noGroup") &&
+                    item.kind === "");
             const uniqKey = item.base + item.kind;
 
             if (matchesKind && !usedCombinations.has(uniqKey)) {
@@ -170,20 +176,29 @@ const isGroupVisible = (groupKindName: string) => {
 const checkHighlight = (row: any) => {
     if (!props.currentQuestion || !props.isHintUsed) return false;
 
-    const qwBase = (
-        props.currentQuestion.base ||
-        props.currentQuestion.word ||
-        ""
+    const qwKind = (
+        props.currentQuestion.kind || t("trainer.states.noGroup")
     ).toLowerCase();
-    const qwKind = (props.currentQuestion.kind || "без группы").toLowerCase();
+    const hasKind =
+        (row.kind || t("trainer.states.noGroup")).toLowerCase() === qwKind;
 
-    // Проверяем ячейки строки
+    if (!hasKind) return false;
+
+    const rawBase =
+        props.currentQuestion.base || props.currentQuestion.word || "";
+
+    const qwVariants = rawBase
+        .split("/")
+        .map((v: string) => v.trim().toLowerCase())
+        .filter(Boolean);
+
     const hasBase = Object.values(row).some(
-        (val) => typeof val === "string" && val.toLowerCase() === qwBase,
+        (val) =>
+            typeof val === "string" &&
+            qwVariants.includes(val.trim().toLowerCase()),
     );
-    const hasKind = (row.kind || "без группы").toLowerCase() === qwKind;
 
-    return hasBase && hasKind;
+    return hasBase;
 };
 
 // On click, find the row index within the overall list of visible directory items
@@ -293,13 +308,13 @@ defineExpose({ tableContentRef });
 
 .orange_row,
 .group_table.is_table tr.orange_row:nth-child(even) {
-    background-color: #ffc107 !important;
+    background-color: #25c97c !important;
     color: #000000 !important;
 }
 
 .orange_row td {
     color: #000000 !important;
-    border-bottom: 1px solid #cca105 !important;
+    border-bottom: 1px solid #198754 !important;
 }
 
 @media (max-width: 600px) {
