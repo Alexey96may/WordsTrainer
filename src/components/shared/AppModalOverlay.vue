@@ -2,6 +2,7 @@
     <Teleport to="body">
         <Transition name="slide-down" @after-enter="onAfterEnter">
             <div
+                :id="id"
                 v-if="isOpen"
                 class="modal_overlay"
                 role="dialog"
@@ -25,6 +26,7 @@ import { ref, watch } from "vue";
 
 interface Props {
     isOpen: boolean;
+    id?: string;
     title?: string;
 }
 

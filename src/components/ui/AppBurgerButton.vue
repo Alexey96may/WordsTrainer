@@ -3,7 +3,6 @@
         class="button_img_btn"
         type="button"
         :aria-expanded="isOpen"
-        aria-label="Переключить меню навигации"
         @click="onClick"
     >
         <img
