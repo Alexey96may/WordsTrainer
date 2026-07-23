@@ -8,22 +8,32 @@
             </div>
         </Transition>
 
-        <Transition name="fade-question" mode="out-in">
-            <div class="question-container" :key="questionHtml">
-                <h2
-                    class="text-center"
-                    id="question_text"
-                    v-html="questionHtml"
-                ></h2>
-            </div>
-        </Transition>
+        <div ref="wrapperRef" class="question-wrapper">
+            <Transition
+                name="fade-question"
+                mode="out-in"
+                @before-leave="onBeforeLeave"
+                @enter="onEnter"
+                @after-enter="onAfterEnter"
+            >
+                <div class="question-container" :key="questionHtml">
+                    <h2
+                        class="text-center"
+                        id="question_text"
+                        v-html="questionHtml"
+                    ></h2>
+                </div>
+            </Transition>
+        </div>
     </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
+const wrapperRef = ref<HTMLElement | null>(null);
 
 interface Props {
     questionHtml: string;
@@ -31,6 +41,29 @@ interface Props {
 }
 
 defineProps<Props>();
+
+const onBeforeLeave = () => {
+    if (!wrapperRef.value) return;
+    wrapperRef.value.style.height = `${wrapperRef.value.offsetHeight}px`;
+};
+
+const onEnter = (el: Element) => {
+    if (!wrapperRef.value) return;
+    const htmlEl = el as HTMLElement;
+
+    const newHeight = htmlEl.offsetHeight;
+
+    requestAnimationFrame(() => {
+        if (wrapperRef.value) {
+            wrapperRef.value.style.height = `${newHeight}px`;
+        }
+    });
+};
+
+const onAfterEnter = () => {
+    if (!wrapperRef.value) return;
+    wrapperRef.value.style.height = "";
+};
 </script>
 
 <style scoped>
@@ -41,8 +74,13 @@ defineProps<Props>();
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0 24px;
-    min-height: 84px;
+    margin: 64px 0 44px;
+}
+
+.question-wrapper {
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .question-container {
@@ -50,7 +88,6 @@ defineProps<Props>();
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 84px;
 }
 
 #question_text {
@@ -63,7 +100,8 @@ defineProps<Props>();
 .error-slider-wrapper {
     overflow: hidden;
     width: 100%;
-    max-height: 32px;
+    height: 32px;
+    margin-bottom: 12px;
 }
 
 #errorField {
@@ -72,20 +110,21 @@ defineProps<Props>();
     font-size: 1.1rem;
     line-height: 1.2;
     display: block;
-    margin-bottom: 10px;
 }
 
 .expand-error-enter-active,
 .expand-error-leave-active {
     transition:
-        max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 0.2s ease;
+        height 0.25s ease,
+        opacity 0.25s ease,
+        margin-bottom 0.25s ease;
 }
 
 .expand-error-enter-from,
 .expand-error-leave-to {
-    max-height: 0;
+    height: 0;
     opacity: 0;
+    margin-bottom: 0;
 }
 
 /* === QUESTION TRANSITION ANIMATION (Fade out-in) === */
@@ -115,11 +154,11 @@ defineProps<Props>();
 }
 
 @media (max-width: 600px) {
+    .fix_two_rows {
+        margin: 42px 0;
+    }
     #question_text {
         font-size: 1.3rem;
-    }
-    .question-container {
-        min-height: 96px;
     }
     #errorField {
         font-size: 0.9rem;
@@ -130,7 +169,7 @@ defineProps<Props>();
 }
 @media (max-width: 340px) {
     .fix_two_rows {
-        margin: 60px 0 24px;
+        margin: 72px 0 42px;
     }
     #question_text {
         font-size: 1.1rem;

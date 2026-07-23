@@ -64,18 +64,27 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
     z-index: 998;
     box-sizing: border-box;
     font-size: 0.95rem;
+    max-height: 20vh;
+    overflow: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.35) transparent;
+}
+
+.fixed-notice::-webkit-scrollbar {
+    width: 6px;
 }
 
 @media (max-width: 600px) {
     .fixed-notice {
-        padding: 12px;
-        font-size: 0.85rem;
+        padding: 8px 12px;
+        font-size: 0.75rem;
     }
 }
 @media (max-width: 340px) {
     .fixed-notice {
         padding: 8px;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
 }
 </style>

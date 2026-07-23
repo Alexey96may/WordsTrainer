@@ -13,6 +13,7 @@ export function useTrainerCategories(
 
     sectionArr: Ref<string[]>,
     checkedKind: Ref<string[]>,
+    showNotesFlag: Ref<boolean>,
 ) {
     // const sectionArr = ref<string[]>([]);
     // const checkedKind = ref<string[]>(["all"]);
@@ -59,6 +60,7 @@ export function useTrainerCategories(
         mainArr.value = shuffleArray(mainArr.value);
         remainingQuestions.value = mainArr.value.length;
         hasError.value = false;
+        showNotesFlag.value = false;
         userAnswer.value = "";
 
         if (mainArr.value.length === 0) {

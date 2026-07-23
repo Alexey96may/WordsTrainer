@@ -74,6 +74,7 @@ const { activeKindsCount, isKindAvailable, selectCategory } =
         flagGameOver,
         sectionArr,
         checkedKind,
+        showNotesFlag,
     );
 
 const globalArray = ref<RawTrainerItem[]>([]);
@@ -277,6 +278,7 @@ const forceSyncToDB = async () => {
                         @refresh="refreshGame"
                         @toggle-sound="toggleSound"
                     />
+
                     <TrainerCategorySelect
                         :section-arr="sectionArr"
                         :checked-kind="checkedKind"
@@ -286,16 +288,19 @@ const forceSyncToDB = async () => {
                         @select-category="selectCategory"
                     />
                 </div>
+
                 <TrainerQuestion
                     :question-html="currentQuestionHtml"
                     :has-error="hasError"
                 />
+
                 <TrainerForm
                     v-model="userAnswer"
                     :has-error="hasError"
                     @submit="handleInputSubmit"
                     @hint="showHint"
                 />
+
                 <TrainerScore :count="remainingQuestions" />
             </div>
 
@@ -319,6 +324,7 @@ const forceSyncToDB = async () => {
             "
             :table-container-ref="tableDOMElement"
         />
+
         <WordModal
             v-model:current-index="modalCurrentIndex"
             :is-open="isModalOpen"
