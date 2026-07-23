@@ -55,7 +55,8 @@ export default {
     home: {
         title: "Learning Modern Greek",
         subtitle: "Our Interactive Trainers:",
-        startBtn: "Start Training",
+        startBtn: "Start",
+        continueBtn: "Continue",
     },
     header: {
         menuTitle: "Trainer Menu",

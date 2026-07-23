@@ -73,8 +73,9 @@ export default {
     },
     home: {
         title: "Изучение Греческого Языка",
-        subtitle: "Наши интерактивные тренажёры:",
-        startBtn: "Начать тренировку",
+        subtitle: "Интерактивные тренажёры:",
+        startBtn: "Начать",
+        continueBtn: "Продолжить",
     },
     trainer: {
         loading: "Загрузка...",

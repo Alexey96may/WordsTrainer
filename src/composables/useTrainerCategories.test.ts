@@ -34,6 +34,7 @@ describe("useTrainerCategories composable", () => {
         const mainArrAlwaysFull = ref<TrainerItem[]>([]);
         const remainingQuestions = ref(0);
         const hasError = ref(false);
+        const showNotesFlag = ref(false);
         const userAnswer = ref("");
         const flagGameOver = ref(false);
         const sectionArr = ref<string[]>([]);
@@ -49,6 +50,7 @@ describe("useTrainerCategories composable", () => {
             flagGameOver,
             sectionArr,
             checkedKind,
+            showNotesFlag,
         );
 
         return {

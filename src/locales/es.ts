@@ -74,7 +74,8 @@ export default {
     home: {
         title: "Aprendizaje del idioma griego",
         subtitle: "Nuestros ejercicios interactivos:",
-        startBtn: "Comenzar el entrenamiento",
+        startBtn: "Comenzar",
+        continueBtn: "Continuar",
     },
     trainer: {
         loading: "Cargando...",

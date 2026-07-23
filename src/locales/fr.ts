@@ -73,7 +73,8 @@ export default {
     home: {
         title: "Apprentissage de la langue grecque",
         subtitle: "Nos entraîneurs interactifs :",
-        startBtn: "Commencer l'entraînement",
+        startBtn: "Commencer",
+        continueBtn: "Continuer",
     },
     trainer: {
         loading: "Chargement...",

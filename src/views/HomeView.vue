@@ -33,9 +33,19 @@
                             </div>
                             <h3>{{ $t(`trainers.${trainer.id}.name`) }}</h3>
                             <p>{{ $t(`trainers.${trainer.id}.desc`) }}</p>
-                            <span class="start-btn">{{
-                                $t("home.startBtn")
-                            }}</span>
+                            <span
+                                class="start-btn"
+                                :class="{
+                                    'start-btn--continue': activeTrainerIds.has(
+                                        trainer.id,
+                                    ),
+                                }"
+                                >{{
+                                    activeTrainerIds.has(trainer.id)
+                                        ? $t("home.continueBtn")
+                                        : $t("home.startBtn")
+                                }}</span
+                            >
                         </RouterLink></TransitionGroup
                     >
                 </template>
@@ -61,6 +71,7 @@ import { TRAINERS_CONFIG, type TrainerConfig } from "@/config/trainers";
 import TrainerCardSkeleton from "@/components/ui/TrainerCardSkeleton.vue";
 import LoadMoreSpinner from "@/components/ui/LoadMoreSpinner.vue";
 import DailyWord from "@/components/shared/DailyWord.vue";
+import { getProgress } from "@/utils/db";
 
 const isLoading = ref(true);
 
@@ -70,6 +81,18 @@ const sentinel = ref<HTMLElement | null>(null);
 let observer: IntersectionObserver | null = null;
 
 const isFetching = ref(false);
+
+const activeTrainerIds = ref<Set<string>>(new Set());
+
+const checkTrainersProgress = async (trainers: TrainerConfig[]) => {
+    for (const trainer of trainers) {
+        const progress = await getProgress(trainer.id);
+
+        if (progress && Object.keys(progress).length > 0) {
+            activeTrainerIds.value.add(trainer.id);
+        }
+    }
+};
 
 const loadMore = async () => {
     if (
@@ -86,13 +109,15 @@ const loadMore = async () => {
         currentLength,
         currentLength + pageSize,
     );
+
+    await checkTrainersProgress(nextBatch);
     displayedTrainers.value.push(...nextBatch);
 
     isFetching.value = false;
 };
 
 onMounted(async () => {
-    loadMore();
+    await loadMore();
     isLoading.value = false;
 
     await nextTick();
