@@ -1,13 +1,13 @@
-import { ref, computed } from "vue";
+import { ref, computed, shallowRef } from "vue";
 import type { TrainerItem, RawTrainerItem } from "@/types/trainer";
 import { shuffleArray } from "@/utils/trainerHelpers";
 import { saveProgress } from "@/utils/db";
+import type { SupportedLang } from "@/i18n";
 import { useI18n } from "vue-i18n";
 
 export function useTrainerCore() {
-    const { t } = useI18n();
+    const { t, locale } = useI18n();
 
-    // Состояние игры
     const userAnswer = ref("");
     const hasError = ref(false);
     const remainingQuestions = ref(0);
@@ -19,9 +19,9 @@ export function useTrainerCore() {
     const checkedKind = ref<string[]>(["all"]);
 
     // Очереди и пулы вопросов
-    const mainArrAlwaysFull = ref<TrainerItem[]>([]);
-    const mainArr = ref<TrainerItem[]>([]);
-    const mainArrsinSort = ref<TrainerItem[]>([]);
+    const mainArrAlwaysFull = shallowRef<TrainerItem[]>([]);
+    const mainArr = shallowRef<TrainerItem[]>([]);
+    const mainArrsinSort = shallowRef<TrainerItem[]>([]);
 
     // 1. Подготовка структуры данных (без перемешивания)
     const prepareTrainerStructure = (
@@ -130,12 +130,16 @@ export function useTrainerCore() {
                 flagGameOver.value = mainArrsinSort.value.length === 0;
             }
 
-            await saveProgress(slug, {
-                mainArr: mainArr.value,
-                mainArrsinSort: mainArrsinSort.value,
-                checkedKind: checkedKind.value,
-                sectionArr: sectionArr.value,
-            });
+            await saveProgress(
+                slug,
+                {
+                    mainArr: mainArr.value,
+                    mainArrsinSort: mainArrsinSort.value,
+                    checkedKind: checkedKind.value,
+                    sectionArr: sectionArr.value,
+                },
+                locale.value as SupportedLang,
+            );
             return true;
         } else {
             hasError.value = true;

@@ -5,7 +5,7 @@ import en from "@/locales/en";
 import es from "@/locales/es";
 import fr from "@/locales/fr";
 
-type SupportedLang = "ru" | "en" | "es" | "fr";
+export type SupportedLang = "ru" | "en" | "es" | "fr";
 
 const getBrowserLang = (): string => {
     const browserLang = navigator.language || "ru";

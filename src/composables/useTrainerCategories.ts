@@ -1,4 +1,4 @@
-import { ref, computed, type Ref } from "vue";
+import { computed, type Ref } from "vue";
 import type { TrainerItem } from "@/types/trainer";
 import { shuffleArray } from "@/utils/trainerHelpers";
 

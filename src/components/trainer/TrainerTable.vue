@@ -1,11 +1,11 @@
 <template>
-    <div class="table-container" ref="tableContentRef">
+    <div ref="tableContentRef" class="table-container">
         <table id="table_verbs" class="trainer-table text-center table_decline">
             <thead>
                 <tr class="table-dark">
                     <th
-                        v-for="(titleObj, index) in titles"
-                        :key="index"
+                        v-for="titleObj in titles"
+                        :key="titleObj.place"
                         :style="{ width: 100 / titles.length + '%' }"
                     >
                         {{ titleObj.title }}
@@ -14,8 +14,8 @@
             </thead>
 
             <tbody
-                v-for="(group, gIdx) in groupedTableData"
-                :key="gIdx"
+                v-for="group in groupedTableData"
+                :key="group.kindName"
                 class="group_table"
                 :class="
                     isGroupVisible(group.kindName) ? 'is_table' : 'none_table'
@@ -32,14 +32,14 @@
                 </tr>
 
                 <tr
-                    v-for="(row, rIdx) in group.rows"
-                    :key="rIdx"
-                    :class="{ orange_row: checkHighlight(row) }"
+                    v-for="row in group.rows"
+                    :key="row.uniqKey"
+                    :class="{ orange_row: highlightedRowKeys.has(row.uniqKey) }"
                     @click="handleRowClick(row)"
                 >
                     <td
-                        v-for="(titleObj, tIdx) in titles"
-                        :key="tIdx"
+                        v-for="titleObj in titles"
+                        :key="titleObj.place"
                         v-html="row[titleObj.place] || '—'"
                     ></td>
                 </tr>
@@ -75,14 +75,16 @@ const emit = defineEmits<{
 }>();
 
 const { t } = useI18n();
-
 const tableContentRef = ref<HTMLElement | null>(null);
 
-// Helper smoothing function from your old script
 function flattenObj(ob: any): any {
     let result: any = {};
     for (const i in ob) {
-        if (typeof ob[i] === "object" && !Array.isArray(ob[i])) {
+        if (
+            typeof ob[i] === "object" &&
+            ob[i] !== null &&
+            !Array.isArray(ob[i])
+        ) {
             const temp = flattenObj(ob[i]);
             for (const j in temp) {
                 result[j] = temp[j];
@@ -94,78 +96,49 @@ function flattenObj(ob: any): any {
     return result;
 }
 
-// 1. Create a list of unique Kinds (excluding "All")
-const categories = computed(() => {
-    const set = new Set<string>();
-    props.globalArray.forEach((item) => {
-        let kind = item.kind || t("trainer.states.noGroup");
-        kind = kind[0].toUpperCase() + kind.slice(1);
-        set.add(kind);
-    });
-    return Array.from(set);
-});
-
-// 2. Construct the table structure, ensuring row uniqueness based on the `base+kind` rule.
 const groupedTableData = computed(() => {
-    const _forceUpdate = props.checkedKind;
-
-    const result: Array<{ kindName: string; rows: any[] }> = [];
+    const noGroupText = t("trainer.states.noGroup");
+    const groupsMap = new Map<string, { kindName: string; rows: any[] }>();
     const usedCombinations = new Set<string>();
 
-    // Create a deep copy and flatten the source array
-    const rawPlain = props.globalArray.map((item) => {
+    for (let i = 0; i < props.globalArray.length; i++) {
+        const item = props.globalArray[i];
         const flat = flattenObj(item);
         if (!flat.base) flat.base = flat.word;
-        return flat;
-    });
 
-    categories.value.forEach((currentGrName) => {
-        const groupRows: any[] = [];
+        let rawKind = flat.kind || noGroupText;
+        const kindName = rawKind[0].toUpperCase() + rawKind.slice(1);
+        const uniqKey = `${flat.base || ""}_${flat.kind || ""}_${i}`;
 
-        rawPlain.forEach((item) => {
-            const itemKind = (
-                item.kind || t("trainer.states.noGroup")
-            ).toLowerCase();
-            const targetKind = currentGrName.toLowerCase();
+        if (usedCombinations.has(`${flat.base}_${flat.kind}`)) continue;
+        usedCombinations.add(`${flat.base}_${flat.kind}`);
 
-            const matchesKind =
-                itemKind === targetKind ||
-                (targetKind === t("trainer.states.noGroup") &&
-                    item.kind === "");
-            const uniqKey = item.base + item.kind;
+        const flatValues = props.titles.map(
+            (tItem) => flat[tItem.place] || "—",
+        );
+        const flatString = flatValues.join("\t");
+        const rowObj = { ...flat, flatString, uniqKey };
 
-            if (matchesKind && !usedCombinations.has(uniqKey)) {
-                const flatValues = props.titles.map(
-                    (t) => item[t.place] || "—",
-                );
-                const flatString = flatValues.join("\t");
+        if (!groupsMap.has(kindName)) {
+            groupsMap.set(kindName, { kindName, rows: [rowObj] });
+        } else {
+            groupsMap.get(kindName)!.rows.push(rowObj);
+        }
+    }
 
-                groupRows.push({ ...item, flatString });
-                usedCombinations.add(uniqKey);
-            }
-        });
-
-        result.push({
-            kindName: currentGrName,
-            rows: groupRows,
-        });
-    });
-
-    return result;
+    return Array.from(groupsMap.values());
 });
 
-// Pool of currently filtered and visible rows (for the modal slider logic)
 const visibleFlatRows = computed(() => {
     const rows: any[] = [];
-    groupedTableData.value.forEach((group) => {
+    for (const group of groupedTableData.value) {
         if (isGroupVisible(group.kindName)) {
             rows.push(...group.rows);
         }
-    });
+    }
     return rows;
 });
 
-// Check visibility of the entire group (none_table / is_table logic)
 const isGroupVisible = (groupKindName: string) => {
     if (props.checkedKind.includes("all") || props.checkedKind.length === 0)
         return true;
@@ -175,64 +148,79 @@ const isGroupVisible = (groupKindName: string) => {
 const activeHighlightVariants = computed(() => {
     if (!props.currentQuestion || !props.isHintUsed) return [];
 
-    const qwKind = (
-        props.currentQuestion.kind || t("trainer.states.noGroup")
-    ).toLowerCase();
-
     const rawWord = props.currentQuestion.word || "";
+    const rawBase = props.currentQuestion.base || "";
+
     const wordVariants = rawWord
         .split("/")
         .map((v: string) => v.trim().toLowerCase())
         .filter(Boolean);
 
-    if (wordVariants.length > 0) {
-        const hasWordMatch = groupedTableData.value.some((group) => {
-            if (group.kindName.toLowerCase() !== qwKind) return false;
-
-            return group.rows.some((row) =>
-                Object.values(row).some(
-                    (val) =>
-                        typeof val === "string" &&
-                        wordVariants.includes(val.trim().toLowerCase()),
-                ),
-            );
-        });
-
-        if (hasWordMatch) {
-            return wordVariants;
-        }
-    }
-
-    const rawBase = props.currentQuestion.base || "";
-    return rawBase
+    const baseVariants = rawBase
         .split("/")
         .map((v: string) => v.trim().toLowerCase())
         .filter(Boolean);
+
+    if (wordVariants.length > 0) {
+        const qwKind = (
+            props.currentQuestion.kind || t("trainer.states.noGroup")
+        ).toLowerCase();
+
+        let hasWordMatch = false;
+        for (const group of groupedTableData.value) {
+            if (group.kindName.toLowerCase() !== qwKind) continue;
+            for (const row of group.rows) {
+                for (const key in row) {
+                    if (
+                        typeof row[key] === "string" &&
+                        wordVariants.includes(row[key].trim().toLowerCase())
+                    ) {
+                        hasWordMatch = true;
+                        break;
+                    }
+                }
+                if (hasWordMatch) break;
+            }
+            if (hasWordMatch) break;
+        }
+
+        if (hasWordMatch) return wordVariants;
+    }
+
+    return baseVariants;
 });
 
-// Check row highlighting (illum logic)
-const checkHighlight = (row: any) => {
-    if (!props.currentQuestion || !props.isHintUsed) return false;
+const highlightedRowKeys = computed(() => {
+    const set = new Set<string>();
+    if (!props.currentQuestion || !props.isHintUsed) return set;
+
+    const variants = activeHighlightVariants.value;
+    if (!variants.length) return set;
 
     const qwKind = (
         props.currentQuestion.kind || t("trainer.states.noGroup")
     ).toLowerCase();
-    const hasKind =
-        (row.kind || t("trainer.states.noGroup")).toLowerCase() === qwKind;
 
-    if (!hasKind) return false;
+    for (const group of groupedTableData.value) {
+        if (group.kindName.toLowerCase() !== qwKind) continue;
 
-    const variants = activeHighlightVariants.value;
-    if (!variants.length) return false;
+        for (const row of group.rows) {
+            for (const key in row) {
+                const val = row[key];
+                if (
+                    typeof val === "string" &&
+                    variants.includes(val.trim().toLowerCase())
+                ) {
+                    set.add(row.uniqKey);
+                    break;
+                }
+            }
+        }
+    }
 
-    return Object.values(row).some(
-        (val) =>
-            typeof val === "string" &&
-            variants.includes(val.trim().toLowerCase()),
-    );
-};
+    return set;
+});
 
-// On click, find the row index within the overall list of visible directory items
 const handleRowClick = (clickedRow: any) => {
     const idx = visibleFlatRows.value.findIndex(
         (r) => r.flatString === clickedRow.flatString,
@@ -274,13 +262,11 @@ defineExpose({ tableContentRef });
     font-size: 0.95rem;
 }
 
-/* Remove the right border from the last column */
 .trainer-table th:last-child,
 .trainer-table td:last-child {
     border-right: none;
 }
 
-/* Table header (Top level) */
 .table-dark th {
     background-color: #111111;
     color: #198754;
@@ -291,7 +277,6 @@ defineExpose({ tableContentRef });
     border-bottom: 2px solid #198754;
 }
 
-/* Group separator headers (Categories within the table) */
 .table-active {
     background-color: #142b1f !important;
     color: #ffffff !important;
@@ -310,7 +295,6 @@ defineExpose({ tableContentRef });
     display: table-row-group;
 }
 
-/* Data rows */
 .group_table.is_table tr:not(.group-header-row) {
     background-color: #1d1d1d;
     transition: background-color 0.15s ease-in-out;

@@ -33,19 +33,11 @@
                             </div>
                             <h3>{{ $t(`trainers.${trainer.id}.name`) }}</h3>
                             <p>{{ $t(`trainers.${trainer.id}.desc`) }}</p>
-                            <span
-                                class="start-btn"
-                                :class="{
-                                    'start-btn--continue': activeTrainerIds.has(
-                                        trainer.id,
-                                    ),
-                                }"
-                                >{{
-                                    activeTrainerIds.has(trainer.id)
-                                        ? $t("home.continueBtn")
-                                        : $t("home.startBtn")
-                                }}</span
-                            >
+                            <span class="start-btn">{{
+                                activeTrainerIds.has(trainer.id)
+                                    ? $t("home.continueBtn")
+                                    : $t("home.startBtn")
+                            }}</span>
                         </RouterLink></TransitionGroup
                     >
                 </template>
@@ -65,15 +57,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, nextTick } from "vue";
+import { ref, onMounted, onUnmounted, nextTick, watch } from "vue";
 import { RouterLink } from "vue-router";
 import { TRAINERS_CONFIG, type TrainerConfig } from "@/config/trainers";
 import TrainerCardSkeleton from "@/components/ui/TrainerCardSkeleton.vue";
 import LoadMoreSpinner from "@/components/ui/LoadMoreSpinner.vue";
 import DailyWord from "@/components/shared/DailyWord.vue";
 import { getProgress } from "@/utils/db";
+import { useI18n } from "vue-i18n";
+import type { SupportedLang } from "@/i18n";
 
 const isLoading = ref(true);
+const { locale } = useI18n();
 
 const displayedTrainers = ref<TrainerConfig[]>([]);
 const pageSize = 4;
@@ -86,10 +81,15 @@ const activeTrainerIds = ref<Set<string>>(new Set());
 
 const checkTrainersProgress = async (trainers: TrainerConfig[]) => {
     for (const trainer of trainers) {
-        const progress = await getProgress(trainer.id);
+        const progress = await getProgress(
+            trainer.id,
+            locale.value as SupportedLang,
+        );
 
         if (progress && Object.keys(progress).length > 0) {
             activeTrainerIds.value.add(trainer.id);
+        } else {
+            activeTrainerIds.value.delete(trainer.id);
         }
     }
 };
@@ -140,6 +140,12 @@ onMounted(async () => {
 
 onUnmounted(() => {
     observer?.disconnect();
+});
+
+watch(locale, async () => {
+    if (displayedTrainers.value.length > 0) {
+        await checkTrainersProgress(displayedTrainers.value);
+    }
 });
 </script>
 

@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, computed, watch, nextTick } from "vue";
+import { ref, computed, watch, nextTick, toRaw } from "vue";
 import { useI18n } from "vue-i18n";
+import type { SupportedLang } from "@/i18n";
 
 import TrainerQuestion from "@/components/trainer/TrainerQuestion.vue";
 import TrainerAudioControls from "@/components/trainer/TrainerAudioControls.vue";
@@ -127,19 +128,17 @@ const loadTrainerData = async (slug: string) => {
 
     prepareTrainerStructure(rawData, sectionArr);
 
-    const saved = await getProgress(slug);
+    const saved = await getProgress(slug, locale.value as SupportedLang);
 
     if (saved) {
-        // Восстанавливаем все сохранённые данные
         mainArrsinSort.value = saved.mainArrsinSort;
-        mainArr.value = saved.mainArr; // ← порядок сохранён
+        mainArr.value = saved.mainArr;
         sectionArr.value = saved.sectionArr;
         checkedKind.value = saved.checkedKind;
 
-        remainingQuestions.value = mainArr.value.length; // обновляем счётчик
-        globalArray.value = [...mainArrsinSort.value]; // для таблицы (все слова)
+        remainingQuestions.value = mainArr.value.length;
+        globalArray.value = [...mainArrsinSort.value];
     } else {
-        // Если сейва нет – инициализация с перемешиванием
         initTrainer(rawData, sectionArr);
         globalArray.value = [...mainArrAlwaysFull.value];
         checkedKind.value = ["all"];
@@ -159,7 +158,6 @@ watch(
 
 watch(locale, async () => {
     if (props.slug) {
-        await saveProgress(props.slug, null);
         await loadTrainerData(props.slug);
     }
 });
@@ -178,19 +176,20 @@ const showHint = () => {
 };
 
 const reloadGame = async () => {
+    isSyncing.value = true;
+
     playSound(audioHint);
-    flagGameOver.value = false;
-    hasError.value = false;
-    userAnswer.value = "";
-    showNotesFlag.value = false;
-    checkedKind.value = ["all"];
+    resetFlags(true);
 
     mainArr.value = shuffleArray([...mainArrAlwaysFull.value]);
     mainArrsinSort.value = [...mainArrAlwaysFull.value];
     remainingQuestions.value = mainArr.value.length;
     globalArray.value = [...mainArrsinSort.value];
 
-    await forceSyncToDB();
+    await nextTick();
+    isSyncing.value = false;
+
+    forceSyncToDB().catch((err) => console.error("DB Sync error:", err));
 };
 
 const refreshGame = async () => {
@@ -209,9 +208,7 @@ const refreshGame = async () => {
     if (filtered.length <= 1) return;
 
     playSound(audioHint);
-    hasError.value = false;
-    userAnswer.value = "";
-    showNotesFlag.value = false;
+    resetFlags();
 
     const shuffled = shuffleArray([...filtered]);
 
@@ -222,7 +219,18 @@ const refreshGame = async () => {
 
     mainArr.value = shuffled;
 
-    await forceSyncToDB();
+    forceSyncToDB().catch((err) => console.error("DB Sync error:", err));
+};
+
+const resetFlags = (resetAll: boolean = false) => {
+    hasError.value = false;
+    userAnswer.value = "";
+    showNotesFlag.value = false;
+
+    if (resetAll) {
+        flagGameOver.value = false;
+        checkedKind.value = ["all"];
+    }
 };
 
 const handleModalOpenRequest = (payload: {
@@ -234,27 +242,43 @@ const handleModalOpenRequest = (payload: {
     isModalOpen.value = true;
 };
 
-watch(
-    [mainArr, mainArrsinSort, checkedKind],
-    async () => {
-        if (isSyncing.value) return;
-        await saveProgress(props.slug, {
+function debounce<T extends (...args: any[]) => void>(fn: T, delay = 300) {
+    let timeoutId: ReturnType<typeof setTimeout>;
+    return (...args: Parameters<T>) => {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => fn(...args), delay);
+    };
+}
+
+const debouncedSave = debounce(async () => {
+    await saveProgress(
+        props.slug,
+        {
             mainArr: mainArr.value,
             mainArrsinSort: mainArrsinSort.value,
             checkedKind: checkedKind.value,
             sectionArr: sectionArr.value,
-        });
-    },
-    { deep: true },
-);
+        },
+        locale.value as SupportedLang,
+    );
+}, 300);
+
+watch([mainArr, mainArrsinSort, checkedKind], () => {
+    if (isSyncing.value) return;
+    debouncedSave();
+});
 
 const forceSyncToDB = async () => {
-    await saveProgress(props.slug, {
-        mainArr: mainArr.value,
-        mainArrsinSort: mainArrsinSort.value,
-        checkedKind: checkedKind.value,
-        sectionArr: sectionArr.value,
-    });
+    await saveProgress(
+        props.slug,
+        {
+            mainArr: mainArr.value,
+            mainArrsinSort: mainArrsinSort.value,
+            checkedKind: checkedKind.value,
+            sectionArr: sectionArr.value,
+        },
+        locale.value as SupportedLang,
+    );
 };
 </script>
 
@@ -306,7 +330,7 @@ const forceSyncToDB = async () => {
 
             <TrainerTable
                 v-if="globalArray.length > 0 && titles.length > 0"
-                :key="slug + locale + checkedKind.length + globalArray.length"
+                :key="slug + '_' + locale"
                 ref="trainerTableComponent"
                 :titles="titles"
                 :global-array="globalArray"
