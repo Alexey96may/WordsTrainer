@@ -105,7 +105,7 @@ const onAfterEnter = () => {
 }
 
 #errorField {
-    color: #e53131;
+    color: #f87171;
     font-weight: bold;
     font-size: 1.1rem;
     line-height: 1.2;

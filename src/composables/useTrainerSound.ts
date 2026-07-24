@@ -1,4 +1,7 @@
 import { ref, watch } from "vue";
+import { createCooldown } from "@/utils/cooldown";
+
+const canPlaySound = createCooldown(200);
 
 export function useTrainerSound() {
     const savedLevel = localStorage.getItem("trainer_sound_level");
@@ -45,11 +48,13 @@ export function useTrainerSound() {
 
     const playSound = (audioNode: HTMLAudioElement | null) => {
         if (!isSoundOn.value || !audioNode) return;
+        if (!canPlaySound()) return;
+
         try {
             const clone = audioNode.cloneNode() as HTMLAudioElement;
             clone.volume = sVolume.value;
             if (typeof clone.play === "function") {
-                clone.play();
+                clone.play().catch(() => {});
             }
         } catch (e) {
             console.warn("Audio playback not supported", e);

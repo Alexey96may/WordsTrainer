@@ -68,6 +68,9 @@ import { ref, computed, onUnmounted, nextTick, watch } from "vue";
 import DailyWordSkeleton from "@/components/ui/DailyWordSkeleton.vue";
 import SpeakerIcon from "@/components/icons/SpeakerIcon.vue";
 import { useDailyWord } from "@/composables/useDailyWord";
+
+import { createCooldown } from "@/utils/cooldown";
+
 import { useI18n } from "vue-i18n";
 
 const { wordData } = useDailyWord();
@@ -80,9 +83,20 @@ const capitalizedWord = computed(() => {
     return w.charAt(0).toUpperCase() + w.slice(1);
 });
 
+const canPlaySound = createCooldown(700);
+
 const playAudio = () => {
     if (wordData.value?.voicePath) {
-        new Audio(import.meta.env.BASE_URL + wordData.value.voicePath).play();
+        if (!canPlaySound()) return;
+
+        const audioNode = new Audio(
+            import.meta.env.BASE_URL + wordData.value.voicePath,
+        );
+        const clone = audioNode.cloneNode() as HTMLAudioElement;
+
+        if (typeof clone.play === "function") {
+            clone.play().catch(() => {});
+        }
     }
 };
 

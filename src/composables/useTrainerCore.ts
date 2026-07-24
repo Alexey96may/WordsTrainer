@@ -18,12 +18,10 @@ export function useTrainerCore() {
     const sectionArr = ref<string[]>([]);
     const checkedKind = ref<string[]>(["all"]);
 
-    // Очереди и пулы вопросов
     const mainArrAlwaysFull = shallowRef<TrainerItem[]>([]);
     const mainArr = shallowRef<TrainerItem[]>([]);
     const mainArrsinSort = shallowRef<TrainerItem[]>([]);
 
-    // 1. Подготовка структуры данных (без перемешивания)
     const prepareTrainerStructure = (
         rawArray: RawTrainerItem[],
         sectionArrRef: any,
@@ -74,14 +72,12 @@ export function useTrainerCore() {
         mainArrsinSort.value = [...fullList];
     };
 
-    // 2. Инициализация (с перемешиванием)
     const initTrainer = (rawArray: RawTrainerItem[], sectionArrRef: any) => {
         prepareTrainerStructure(rawArray, sectionArrRef);
         mainArr.value = shuffleArray([...mainArrAlwaysFull.value]);
         remainingQuestions.value = mainArr.value.length;
     };
 
-    // HTML для вопроса
     const currentQuestionHtml = computed<string>(() => {
         if (!mainArr.value.length) {
             return flagGameOver.value
@@ -98,7 +94,6 @@ export function useTrainerCore() {
         return `${qwMod} <br><span class="spanTransl">(${currentItem.transls[0]})</span>`;
     });
 
-    // Проверка ответа
     const checkUserAnswer = async (slug: string): Promise<boolean> => {
         if (!mainArr.value.length) return false;
 

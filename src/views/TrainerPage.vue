@@ -23,7 +23,7 @@ import { useTrainerSound } from "@/composables/useTrainerSound";
 import { useTrainerCore } from "@/composables/useTrainerCore";
 import { useTrainerCategories } from "@/composables/useTrainerCategories";
 
-import { getProgress, saveProgress } from "@/utils/db";
+import { getProgress, saveProgress, deleteProgress } from "@/utils/db";
 
 const props = defineProps({
     slug: { type: String, required: true },
@@ -189,7 +189,8 @@ const reloadGame = async () => {
     await nextTick();
     isSyncing.value = false;
 
-    forceSyncToDB().catch((err) => console.error("DB Sync error:", err));
+    deleteProgress(props.slug, locale.value as SupportedLang);
+    // forceSyncToDB().catch((err) => console.error("DB Sync error:", err));
 };
 
 const refreshGame = async () => {
@@ -269,16 +270,7 @@ watch([mainArr, mainArrsinSort, checkedKind], () => {
 });
 
 const forceSyncToDB = async () => {
-    await saveProgress(
-        props.slug,
-        {
-            mainArr: mainArr.value,
-            mainArrsinSort: mainArrsinSort.value,
-            checkedKind: checkedKind.value,
-            sectionArr: sectionArr.value,
-        },
-        locale.value as SupportedLang,
-    );
+    debouncedSave();
 };
 </script>
 
