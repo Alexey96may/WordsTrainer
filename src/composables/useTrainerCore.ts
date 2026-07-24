@@ -114,9 +114,13 @@ export function useTrainerCore() {
             const index = mainArrsinSort.value.findIndex(
                 (item) => item === currentItem,
             );
-            if (index > -1) mainArrsinSort.value.splice(index, 1);
+            if (index > -1) {
+                mainArrsinSort.value = mainArrsinSort.value.filter(
+                    (_, i) => i !== index,
+                );
+            }
 
-            mainArr.value.shift();
+            mainArr.value = mainArr.value.slice(1);
             remainingQuestions.value = mainArr.value.length;
             fromHintButton.value = false;
             showNotesFlag.value = false;
