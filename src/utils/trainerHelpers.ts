@@ -11,3 +11,16 @@ export function shuffleArray<T>(array: T[]): T[] {
     }
     return arr;
 }
+
+/**
+ * Capitalizes the first letter of the string (even if preceded by "...").
+ * Preserves the case of the remaining characters (to avoid breaking proper nouns).
+ */
+export function capitalize(str: string): string {
+    if (!str) return "";
+    const trimmed = str.trim();
+
+    return trimmed.replace(/^(\.\.\.\s*)?(\p{L})/u, (_, dots = "", letter) => {
+        return dots + letter.toUpperCase();
+    });
+}

@@ -134,7 +134,8 @@ const activeRow = computed(() => {
 const currentWordData = computed(() => activeRow.value || {});
 
 const relatedForms = computed(() => {
-    if (!activeRow.value) return [];
+    if (!activeRow.value || props.paramGlobal.includes("hideCards")) return [];
+
     const targetBase = (activeRow.value.base || activeRow.value.word || "")
         .toLowerCase()
         .trim();
@@ -152,7 +153,6 @@ const relatedForms = computed(() => {
         return matchesBase && matchesKind;
     });
 
-    // 2. Если ignoreKind активен, убираем дубликаты карточек по слову
     if (isIgnoreKind) {
         const uniqueMap = new Map();
         filtered.forEach((item) => {

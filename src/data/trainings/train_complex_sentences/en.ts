@@ -4,7 +4,7 @@ export const tableTitlesArr = [
 ];
 
 export const trainingName = "complexSentences";
-export const paramGlobal = ["ignoreKind"];
+export const paramGlobal = ["hideCards"];
 
 export const globalArray = [
     {

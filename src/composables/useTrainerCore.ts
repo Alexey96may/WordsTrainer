@@ -1,6 +1,6 @@
 import { ref, computed, shallowRef } from "vue";
 import type { TrainerItem, RawTrainerItem } from "@/types/trainer";
-import { shuffleArray } from "@/utils/trainerHelpers";
+import { shuffleArray, capitalize } from "@/utils/trainerHelpers";
 import { saveProgress } from "@/utils/db";
 import type { SupportedLang } from "@/i18n";
 import { useI18n } from "vue-i18n";
@@ -31,20 +31,28 @@ export function useTrainerCore() {
         const kinds = new Set<string>(["all"]);
 
         const normalizedArray: TrainerItem[] = rawArray.map((item) => {
-            const base = item.base || item.word;
+            const word = item.word
+                ? item.word
+                      .split("/")
+                      .map((w) => capitalize(w))
+                      .join(" / ")
+                : item.word;
+
+            const base = item.base ? capitalize(item.base) : word;
+
             let kind = t("trainer.states.noGroup");
-            if (item.kind && item.kind.trim() !== "") {
-                kind = (
-                    item.kind[0]!.toUpperCase() + item.kind.slice(1)
-                ).toLowerCase();
+            if (item.kind) {
+                kind = capitalize(item.kind);
             }
             kinds.add(kind);
-            return { ...item, base, kind };
+
+            return { ...item, word, base, kind };
         });
 
         sectionArrRef.value = Array.from(kinds);
 
         const fullList: TrainerItem[] = [];
+
         normalizedArray.forEach((item) => {
             if (
                 item.qws &&

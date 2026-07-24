@@ -4,6 +4,7 @@ export const tableTitlesArr = [
 ];
 
 export const trainingName = "pronDecl";
+export const paramGlobal = ["ignoreKind"];
 export const globalArray = [
     {
         word: "εγώ",

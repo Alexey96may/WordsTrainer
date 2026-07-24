@@ -14,7 +14,7 @@
                 mode="out-in"
                 @before-leave="onBeforeLeave"
                 @enter="onEnter"
-                @after-enter="onAfterEnter"
+                @after-enter=""
             >
                 <div class="question-container" :key="questionHtml">
                     <h2
@@ -58,11 +58,6 @@ const onEnter = (el: Element) => {
             wrapperRef.value.style.height = `${newHeight}px`;
         }
     });
-};
-
-const onAfterEnter = () => {
-    if (!wrapperRef.value) return;
-    wrapperRef.value.style.height = "";
 };
 </script>
 

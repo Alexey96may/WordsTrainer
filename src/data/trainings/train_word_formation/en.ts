@@ -14,9 +14,9 @@ export const globalArray = [
         base: "έλεγχος",
         groups: {
             morfology:
-                '<em>ελέγχω </em>→ έλεγχ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ω</span>',
+                '<em>ελέγχω </em>→ έλεγχ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ω</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐλέγχω</span> – to shame, examine, test < <span style="color:#054728">ἔλεγχος</span> – shame, refutation).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐλέγχω</span> – to shame, examine, test < <span style="color:#7a9473">ἔλεγχος</span> – shame, refutation).',
         },
         qws: ["to check"],
         transls: ["From the word Έλεγχος — check"],
@@ -30,9 +30,9 @@ export const globalArray = [
         base: "πυροβόλο",
         groups: {
             morfology:
-                '<em>πυροβολώ </em>→ πυροβόλ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ω</span>',
+                '<em>πυροβολώ </em>→ πυροβόλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">πυροβόλο</span> – firearm, cannon.',
+                '<br>From Modern Greek <span style="color:#7a9473">πυροβόλο</span> – firearm, cannon.',
         },
         qws: ["to shoot"],
         transls: ["From the word Πυροβόλο — firearm, cannon"],
@@ -46,9 +46,9 @@ export const globalArray = [
         base: "πόλεμος",
         groups: {
             morfology:
-                '<em>πολεμώ </em>→ πόλεμ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ω</span>',
+                '<em>πολεμώ </em>→ πόλεμ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ω</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">πολεμῶ</span>, <span style="color:#054728">πολεμέω</span> – to wage war < <span style="color:#054728">πόλεμος</span> – war).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">πολεμῶ</span>, <span style="color:#7a9473">πολεμέω</span> – to wage war < <span style="color:#7a9473">πόλεμος</span> – war).',
         },
         qws: ["to wage war"],
         transls: ["From the word Πόλεμος — war"],
@@ -62,9 +62,9 @@ export const globalArray = [
         base: "αγορά",
         groups: {
             morfology:
-                '<em>αγοράζω </em>→ αγορ<span style="color: #900101">ά</span> +<span style="color: #900101"> -άζω</span>',
+                '<em>αγοράζω </em>→ αγορ<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -άζω</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">ἀγορά</span> – assembly, goods.',
+                '<br>From Ancient Greek <span style="color:#7a9473">ἀγορά</span> – assembly, goods.',
         },
         qws: ["to buy"],
         transls: ["From the word Αγορά — purchase‑item"],
@@ -78,9 +78,9 @@ export const globalArray = [
         base: "δηλητήριο",
         groups: {
             morfology:
-                '<em>δηλητηριάζω </em>→ δηλητήρ<span style="color: #900101">ιο</span> +<span style="color: #900101"> -ιάζω</span>',
+                '<em>δηλητηριάζω </em>→ δηλητήρ<span style="color: #b87333">ιο</span> +<span style="color: #b87333"> -ιάζω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">δηλητήριο</span> – poison < Ancient Greek (<span style="color:#054728">δηλητήρῐον</span> < <span style="color:#054728">δήλησις</span> < <span style="color:#054728">δηλέομαι</span>).',
+                '<br>From Modern Greek <span style="color:#7a9473">δηλητήριο</span> – poison < Ancient Greek (<span style="color:#7a9473">δηλητήρῐον</span> < <span style="color:#7a9473">δήλησις</span> < <span style="color:#7a9473">δηλέομαι</span>).',
         },
         qws: ["to poison"],
         transls: ["From the word Δηλητήριο — poison"],
@@ -94,9 +94,9 @@ export const globalArray = [
         base: "δόξα",
         groups: {
             morfology:
-                '<em>δοξάζω </em>→ δόξ<span style="color: #900101">α</span> +<span style="color: #900101"> -άζω</span>',
+                '<em>δοξάζω </em>→ δόξ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άζω</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">δόξα</span> – glory.',
+                '<br>From Ancient Greek <span style="color:#7a9473">δόξα</span> – glory.',
         },
         qws: ["to glorify"],
         transls: ["From the word Δόξα — glory"],
@@ -110,9 +110,9 @@ export const globalArray = [
         base: "εμβόλιο",
         groups: {
             morfology:
-                '<em>εμβολιάζω </em>→ <span style="color: #900101">εμ-</span> + βόλι<span style="color: #900101">ο</span> +<span style="color: #900101"> -άζω</span>',
+                '<em>εμβολιάζω </em>→ <span style="color: #b87333">εμ-</span> + βόλι<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -άζω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">εμβόλιο</span> – vaccine < Koine Greek <span style="color:#054728">ἐμβόλιον</span> – dart, javelin < Ancient Greek (<span style="color:#054728">ἔμβολον</span> – wedge; ship’s beak < <span style="color:#054728">ἐμβάλλω</span> – to throw in, insert < <span style="color:#054728">ἐμ-</span> (<span style="color:#054728">ἐν-</span> / <span style="color:#054728">ἐγ-</span>) (in, into) + <span style="color:#054728">βάλλω</span> – to throw, strike)',
+                '<br>From Modern Greek <span style="color:#7a9473">εμβόλιο</span> – vaccine < Koine Greek <span style="color:#7a9473">ἐμβόλιον</span> – dart, javelin < Ancient Greek (<span style="color:#7a9473">ἔμβολον</span> – wedge; ship’s beak < <span style="color:#7a9473">ἐμβάλλω</span> – to throw in, insert < <span style="color:#7a9473">ἐμ-</span> (<span style="color:#7a9473">ἐν-</span> / <span style="color:#7a9473">ἐγ-</span>) (in, into) + <span style="color:#7a9473">βάλλω</span> – to throw, strike)',
         },
         qws: ["to vaccinate"],
         transls: ["From the word Εμβόλιο — vaccine"],
@@ -126,9 +126,9 @@ export const globalArray = [
         base: "επισκευή",
         groups: {
             morfology:
-                '<em>επισκευάζω </em>→ <span style="color: #900101">έπι-</span> + σκευ<span style="color: #900101">ή</span> + <span style="color: #900101">-άζω</span>',
+                '<em>επισκευάζω </em>→ <span style="color: #b87333">έπι-</span> + σκευ<span style="color: #b87333">ή</span> + <span style="color: #b87333">-άζω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">επι-</span> (denotes succession, accompaniment; position: on) + <span style="color:#054728">σκευάζω</span> – to make < Ancient Greek (<span style="color:#054728">σκευάζω</span> < <span style="color:#054728">σκεῦος</span> – vessel or <span style="color:#054728">σκευή</span> – equipment).',
+                '<br>From Modern Greek <span style="color:#7a9473">επι-</span> (denotes succession, accompaniment; position: on) + <span style="color:#7a9473">σκευάζω</span> – to make < Ancient Greek (<span style="color:#7a9473">σκευάζω</span> < <span style="color:#7a9473">σκεῦος</span> – vessel or <span style="color:#7a9473">σκευή</span> – equipment).',
         },
         qws: ["to repair"],
         transls: ["From the word Επισκευή — repair"],
@@ -142,9 +142,9 @@ export const globalArray = [
         base: "κατσούφης",
         groups: {
             morfology:
-                '<em>κοπιάζω </em>→ κατσούφ<span style="color: #900101">ης</span> +<span style="color: #900101"> -ιάζω</span>',
+                '<em>κοπιάζω </em>→ κατσούφ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ιάζω</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">κατηφιάω</span> / <span style="color:#054728">κατηφιῶ</span> – to be downcast < <span style="color:#054728">κατηφής</span> – gloomy).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">κατηφιάω</span> / <span style="color:#7a9473">κατηφιῶ</span> – to be downcast < <span style="color:#7a9473">κατηφής</span> – gloomy).',
         },
         qws: ["to become sullen"],
         transls: ["From the word Κατσούφης — gloomy"],
@@ -158,9 +158,9 @@ export const globalArray = [
         base: "κόπος",
         groups: {
             morfology:
-                '<em>κοπιάζω </em>→ κόπ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ιάζω</span>',
+                '<em>κοπιάζω </em>→ κόπ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ιάζω</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">κόπος</span> – labour < <span style="color:#054728">κόπτω</span> – to push, strike).',
+                '<br>From Modern Greek (<span style="color:#7a9473">κόπος</span> – labour < <span style="color:#7a9473">κόπτω</span> – to push, strike).',
         },
         qws: ["to labour, strive, exert oneself"],
         transls: ["From the word Κόπος — labour, effort"],
@@ -174,9 +174,9 @@ export const globalArray = [
         base: "νύστα",
         groups: {
             morfology:
-                '<em>νυστάζω </em>→ νύστ<span style="color: #900101">α</span> +<span style="color: #900101"> -άζω</span>',
+                '<em>νυστάζω </em>→ νύστ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άζω</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">νυστάζω</span> < <span style="color:#054728">νευστάζω</span> – to nod < <span style="color:#054728">νεύω</span> – to shake).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">νυστάζω</span> < <span style="color:#7a9473">νευστάζω</span> – to nod < <span style="color:#7a9473">νεύω</span> – to shake).',
         },
         qws: ["to be sleepy"],
         transls: ["From the word Νύστα — drowsiness"],
@@ -190,9 +190,9 @@ export const globalArray = [
         base: "σκουριά",
         groups: {
             morfology:
-                '<em>σκουριάζω </em>→ σκουρ<span style="color: #900101">ιά</span> +<span style="color: #900101"> -ιάζω</span>',
+                '<em>σκουριάζω </em>→ σκουρ<span style="color: #b87333">ιά</span> +<span style="color: #b87333"> -ιάζω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σκουριά</span> < Ancient Greek (<span style="color:#054728">σκωρία</span> – rust < <span style="color:#054728">σκῶρ</span> – dung, excrement).',
+                '<br>From Modern Greek <span style="color:#7a9473">σκουριά</span> < Ancient Greek (<span style="color:#7a9473">σκωρία</span> – rust < <span style="color:#7a9473">σκῶρ</span> – dung, excrement).',
         },
         qws: ["to rust"],
         transls: ["From the word Σκουριά — rust"],
@@ -206,9 +206,9 @@ export const globalArray = [
         base: "θεμέλιο",
         groups: {
             morfology:
-                '<em>θεμελιώνω </em>→ θεμέλι<span style="color: #900101">ο</span> +<span style="color: #900101"> -ώνω</span>',
+                '<em>θεμελιώνω </em>→ θεμέλι<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ώνω</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">θεμελιῶ</span>.',
+                '<br>From Ancient Greek <span style="color:#7a9473">θεμελιῶ</span>.',
         },
         qws: ["to found, establish"],
         transls: ["From the word Θεμέλιο — foundation, base"],
@@ -222,9 +222,9 @@ export const globalArray = [
         base: "καρφί",
         groups: {
             morfology:
-                '<em>καρφώνω </em>→ καρφ<span style="color: #900101">ί</span> +<span style="color: #900101"> -ώνω</span>',
+                '<em>καρφώνω </em>→ καρφ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -ώνω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">καρφί</span> – nail < Medieval Greek <span style="color:#054728">καρφίον</span>, <span style="color:#054728">καρφίν</span> – sucker < Ancient Greek <span style="color:#054728">κάρφος</span> – stick, dry chip.',
+                '<br>From Modern Greek <span style="color:#7a9473">καρφί</span> – nail < Medieval Greek <span style="color:#7a9473">καρφίον</span>, <span style="color:#7a9473">καρφίν</span> – sucker < Ancient Greek <span style="color:#7a9473">κάρφος</span> – stick, dry chip.',
         },
         qws: ["to nail, drive a nail"],
         transls: ["From the word Καρφί — nail"],
@@ -238,9 +238,9 @@ export const globalArray = [
         base: "κλειδί",
         groups: {
             morfology:
-                '<em>κλειδώνω </em>→ κλειδ<span style="color: #900101">ί</span> +<span style="color: #900101"> -ώνω</span>',
+                '<em>κλειδώνω </em>→ κλειδ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -ώνω</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">κλείς</span> – bolt, key.',
+                '<br>From Ancient Greek <span style="color:#7a9473">κλείς</span> – bolt, key.',
         },
         qws: ["to lock"],
         transls: ["From the word Κλειδί — key"],
@@ -254,9 +254,9 @@ export const globalArray = [
         base: "φορτίο",
         groups: {
             morfology:
-                '<em>φορτώνω </em>→ φορτ<span style="color: #900101">ίο</span> +<span style="color: #900101"> -ώνω</span>',
+                '<em>φορτώνω </em>→ φορτ<span style="color: #b87333">ίο</span> +<span style="color: #b87333"> -ώνω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">φορτώνω</span> < Ancient Greek (<span style="color:#054728">φόρτος</span> – load, burden < <span style="color:#054728">φέρω</span> – to carry).',
+                '<br>From Medieval Greek <span style="color:#7a9473">φορτώνω</span> < Ancient Greek (<span style="color:#7a9473">φόρτος</span> – load, burden < <span style="color:#7a9473">φέρω</span> – to carry).',
         },
         qws: ["to load"],
         transls: ["From the word Φορτίο — load"],
@@ -270,9 +270,9 @@ export const globalArray = [
         base: "χαμηλά",
         groups: {
             morfology:
-                '<em>χαμηλώνω </em>→ χαμηλ<span style="color: #900101">ά</span> +<span style="color: #900101"> -ώνω</span>',
+                '<em>χαμηλώνω </em>→ χαμηλ<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -ώνω</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">χαμηλά</span> – low < <span style="color:#054728">χαμηλός</span> – low, insignificant) < Ancient Greek <span style="color:#054728">χαμαί</span> – on the ground, to the ground.',
+                '<br>From Modern Greek (<span style="color:#7a9473">χαμηλά</span> – low < <span style="color:#7a9473">χαμηλός</span> – low, insignificant) < Ancient Greek <span style="color:#7a9473">χαμαί</span> – on the ground, to the ground.',
         },
         qws: ["to lower, go down"],
         transls: ["From the word Χαμηλά — low"],
@@ -286,9 +286,9 @@ export const globalArray = [
         base: "ακριβός",
         groups: {
             morfology:
-                '<em>ακριβαίνω </em>→ ακριβ<span style="color: #900101">ός</span> +<span style="color: #900101"> -αίνω</span>',
+                '<em>ακριβαίνω </em>→ ακριβ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -αίνω</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">ἀκριβός</span> – valuable < Ancient Greek (<span style="color:#054728">ἀκριβής</span> – valuable < <span style="color:#054728">ἄκρος</span> – sharp, best, extreme).',
+                '<br>From Koine Greek <span style="color:#7a9473">ἀκριβός</span> – valuable < Ancient Greek (<span style="color:#7a9473">ἀκριβής</span> – valuable < <span style="color:#7a9473">ἄκρος</span> – sharp, best, extreme).',
         },
         qws: ["to become expensive, rise in price"],
         transls: ["From the word Ακριβός — expensive"],
@@ -302,9 +302,9 @@ export const globalArray = [
         base: "ζεστός",
         groups: {
             morfology:
-                '<em>ζεσταίνω </em>→ ζεστ<span style="color: #900101">ός</span> +<span style="color: #900101"> -αίνω</span>',
+                '<em>ζεσταίνω </em>→ ζεστ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -αίνω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ζεστός</span> – hot < Ancient Greek <span style="color:#054728">ζέω</span> – to boil, seethe.',
+                '<br>From Modern Greek <span style="color:#7a9473">ζεστός</span> – hot < Ancient Greek <span style="color:#7a9473">ζέω</span> – to boil, seethe.',
         },
         qws: ["to heat, warm up"],
         transls: ["From the word Ζεστός — hot"],
@@ -318,9 +318,9 @@ export const globalArray = [
         base: "φαρδύς",
         groups: {
             morfology:
-                '<em>φαρδαίνω </em>→ φαρδ<span style="color: #900101">ύς</span> +<span style="color: #900101"> -αίνω</span>',
+                '<em>φαρδαίνω </em>→ φαρδ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -αίνω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">φαρδύς</span> – wide < Medieval Greek <span style="color:#054728">φαρδύς</span> < Koine Greek <span style="color:#054728">εὺφραδής</span> < Ancient Greek <span style="color:#054728">φράζω</span> – to explain, expound.',
+                '<br>From Modern Greek <span style="color:#7a9473">φαρδύς</span> – wide < Medieval Greek <span style="color:#7a9473">φαρδύς</span> < Koine Greek <span style="color:#7a9473">εὺφραδής</span> < Ancient Greek <span style="color:#7a9473">φράζω</span> – to explain, expound.',
         },
         qws: ["to widen, expand"],
         transls: ["From the word Φαρδύς — wide"],
@@ -334,9 +334,9 @@ export const globalArray = [
         base: "αντίκρυ",
         groups: {
             morfology:
-                '<em>αντικρίζω </em>→ αντίκρ<span style="color: #900101">υ</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>αντικρίζω </em>→ αντίκρ<span style="color: #b87333">υ</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">αντίκρυ</span> < Medieval Greek <span style="color:#054728">ἀντίκρυ</span> < Ancient Greek <span style="color:#054728">ἀντικρύ</span>.',
+                '<br>From Modern Greek <span style="color:#7a9473">αντίκρυ</span> < Medieval Greek <span style="color:#7a9473">ἀντίκρυ</span> < Ancient Greek <span style="color:#7a9473">ἀντικρύ</span>.',
         },
         qws: ["to stand opposite"],
         transls: ["From the word Αντίκρυ — opposite side"],
@@ -350,9 +350,9 @@ export const globalArray = [
         base: "αρχή",
         groups: {
             morfology:
-                '<em>αρχίζω </em>→ αρχ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>αρχίζω </em>→ αρχ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ἀρχίζω</span> < Ancient Greek <span style="color:#054728">ἀρχή</span> – beginning, foundation.',
+                '<br>From Medieval Greek <span style="color:#7a9473">ἀρχίζω</span> < Ancient Greek <span style="color:#7a9473">ἀρχή</span> – beginning, foundation.',
         },
         qws: ["to begin"],
         transls: ["From the word Αρχή — beginning"],
@@ -366,9 +366,9 @@ export const globalArray = [
         base: "αφρός",
         groups: {
             morfology:
-                '<em>αφρίζω </em>→ αφρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>αφρίζω </em>→ αφρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">ἀφρίζω</span> – to foam < <span style="color:#054728">ἀφρός</span> – foam.',
+                '<br>From Ancient Greek <span style="color:#7a9473">ἀφρίζω</span> – to foam < <span style="color:#7a9473">ἀφρός</span> – foam.',
         },
         qws: ["to foam"],
         transls: ["From the word Αφρός — foam"],
@@ -382,9 +382,9 @@ export const globalArray = [
         base: "ζωγράφος",
         groups: {
             morfology:
-                '<em>ζωγραφίζω </em>→ ζωγράφ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>ζωγραφίζω </em>→ ζωγράφ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ζωγραφίζω</span> – to draw < Ancient Greek <span style="color:#054728">ζωγραφέω</span>, <span style="color:#054728">ζωγραφῶ</span>.',
+                '<br>From Medieval Greek <span style="color:#7a9473">ζωγραφίζω</span> – to draw < Ancient Greek <span style="color:#7a9473">ζωγραφέω</span>, <span style="color:#7a9473">ζωγραφῶ</span>.',
         },
         qws: ["to draw, paint"],
         transls: ["From the word Ζωγράφος — painter"],
@@ -398,9 +398,9 @@ export const globalArray = [
         base: "κέρδος",
         groups: {
             morfology:
-                '<em>κερδίζω </em>→ κέρδ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>κερδίζω </em>→ κέρδ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">κερδίζω</span> < Medieval Greek <span style="color:#054728">κέρδος</span> < Ancient Greek <span style="color:#054728">κερδαίνω</span> – to profit.',
+                '<br>From Medieval Greek <span style="color:#7a9473">κερδίζω</span> < Medieval Greek <span style="color:#7a9473">κέρδος</span> < Ancient Greek <span style="color:#7a9473">κερδαίνω</span> – to profit.',
         },
         qws: ["to win, earn"],
         transls: ["From the word Κέρδος — profit, gain"],
@@ -414,9 +414,9 @@ export const globalArray = [
         base: "καλημέρα",
         groups: {
             morfology:
-                '<em>καλημερίζω </em>→ καλημέρ<span style="color: #900101">α</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>καλημερίζω </em>→ καλημέρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">καλημερίζω</span> < <span style="color:#054728">καλημέρα</span> – good day < <span style="color:#054728">καλήν</span> <span style="color:#054728">ἡμέραν</span>).',
+                '<br>From Medieval Greek (<span style="color:#7a9473">καλημερίζω</span> < <span style="color:#7a9473">καλημέρα</span> – good day < <span style="color:#7a9473">καλήν</span> <span style="color:#7a9473">ἡμέραν</span>).',
         },
         qws: ["to greet, say good morning"],
         transls: ["From the word Καλημέρα — good day"],
@@ -430,9 +430,9 @@ export const globalArray = [
         base: "καπνός",
         groups: {
             morfology:
-                '<em>καπνίζω </em>→ καπν<span style="color: #900101">ός</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>καπνίζω </em>→ καπν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">καπνός</span> – smoke.',
+                '<br>From Ancient Greek <span style="color:#7a9473">καπνός</span> – smoke.',
         },
         qws: ["to smoke"],
         transls: ["From the word Καπνός — smoke"],
@@ -446,9 +446,9 @@ export const globalArray = [
         base: "κλαίω, έκλαψα",
         groups: {
             morfology:
-                '<em>κλαφουρίζω </em>→ κλαψούρ<span style="color: #900101">α</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>κλαφουρίζω </em>→ κλαψούρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">κλαφουρίζω</span> < <span style="color:#054728">κλαψούρα</span> – whining < <span style="color:#054728">κλάψα</span> – whining) < Ancient Greek <span style="color:#054728">κλαίω</span>.',
+                '<br>From Medieval Greek (<span style="color:#7a9473">κλαφουρίζω</span> < <span style="color:#7a9473">κλαψούρα</span> – whining < <span style="color:#7a9473">κλάψα</span> – whining) < Ancient Greek <span style="color:#7a9473">κλαίω</span>.',
         },
         qws: ["to whimper at every occasion"],
         transls: ["From the word Κλαίω, έκλαψα — to cry, cried"],
@@ -462,9 +462,9 @@ export const globalArray = [
         base: "κουδούνι",
         groups: {
             morfology:
-                '<em>κουδουνίζω </em>→ κουδούν<span style="color: #900101">ι</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>κουδουνίζω </em>→ κουδούν<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">κωδωνίζω</span> < Ancient Greek <span style="color:#054728">κώδων</span> – bell.',
+                '<br>From Medieval Greek <span style="color:#7a9473">κωδωνίζω</span> < Ancient Greek <span style="color:#7a9473">κώδων</span> – bell.',
         },
         qws: ["to ring, jingle"],
         transls: ["From the word Κουδούνι — bell"],
@@ -478,9 +478,9 @@ export const globalArray = [
         base: "μαύρο",
         groups: {
             morfology:
-                '<em>μαυρίζω </em>→ μαύρ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>μαυρίζω </em>→ μαύρ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">μαυρίζω</span> < Ancient Greek <span style="color:#054728">μαῦρος</span> – black, dark-skinned.',
+                '<br>From Medieval Greek <span style="color:#7a9473">μαυρίζω</span> < Ancient Greek <span style="color:#7a9473">μαῦρος</span> – black, dark-skinned.',
         },
         qws: ["to tan"],
         transls: ["From the word Μαύρο — black"],
@@ -494,9 +494,9 @@ export const globalArray = [
         base: "παράμερα",
         groups: {
             morfology:
-                '<em>παραμερίζω </em>→ παραμέρ<span style="color: #900101">α</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>παραμερίζω </em>→ παραμέρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">παραμερίζω</span> < <span style="color:#054728">παραμέρα</span> – aside < <span style="color:#054728">παραμέρος</span> – being aside < <span style="color:#054728">πάρα</span> <span style="color:#054728">μέρος</span> – to the side)',
+                '<br>From Medieval Greek (<span style="color:#7a9473">παραμερίζω</span> < <span style="color:#7a9473">παραμέρα</span> – aside < <span style="color:#7a9473">παραμέρος</span> – being aside < <span style="color:#7a9473">πάρα</span> <span style="color:#7a9473">μέρος</span> – to the side)',
         },
         qws: ["to move aside, step aside"],
         transls: ["From the word Παράμερα — aside"],
@@ -510,9 +510,9 @@ export const globalArray = [
         base: "πλημμύρα",
         groups: {
             morfology:
-                '<em>πλημμυρίζω </em>→ πλημμύρ<span style="color: #900101">α</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>πλημμυρίζω </em>→ πλημμύρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">πλημμυρίζω</span> < Ancient Greek (<span style="color:#054728">πλημυρέω</span>, <span style="color:#054728">πλημυρῶ</span> < <span style="color:#054728">πλημύρα</span> – flood).',
+                '<br>From Medieval Greek <span style="color:#7a9473">πλημμυρίζω</span> < Ancient Greek (<span style="color:#7a9473">πλημυρέω</span>, <span style="color:#7a9473">πλημυρῶ</span> < <span style="color:#7a9473">πλημύρα</span> – flood).',
         },
         qws: ["to flood"],
         transls: ["From the word Πλημμύρα — flood"],
@@ -526,9 +526,9 @@ export const globalArray = [
         base: "πριόνι",
         groups: {
             morfology:
-                '<em>πριονίζω </em>→ πριόν<span style="color: #900101">ι</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>πριονίζω </em>→ πριόν<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">πριονίζω</span> < Ancient Greek <span style="color:#054728">πρίων</span> – saw.',
+                '<br>From Medieval Greek <span style="color:#7a9473">πριονίζω</span> < Ancient Greek <span style="color:#7a9473">πρίων</span> – saw.',
         },
         qws: ["to saw"],
         transls: ["From the word Πριόνι — saw"],
@@ -542,9 +542,9 @@ export const globalArray = [
         base: "πρόγραμμα",
         groups: {
             morfology:
-                '<em>προγραμματίζω </em>→ πρόγραμμα<span style="color: #900101">τ</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>προγραμματίζω </em>→ πρόγραμμα<span style="color: #b87333">τ</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From French <span style="color:#054728">programmer</span> or English <span style="color:#054728">program</span>.',
+                '<br>From French <span style="color:#7a9473">programmer</span> or English <span style="color:#7a9473">program</span>.',
         },
         qws: ["to program"],
         transls: ["From the word Πρόγραμμα — program"],
@@ -558,9 +558,9 @@ export const globalArray = [
         base: "σκάνδαλο",
         groups: {
             morfology:
-                '<em>σκανδαλίζω </em>→ σκάνδαλ<span style="color: #900101">ον</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>σκανδαλίζω </em>→ σκάνδαλ<span style="color: #b87333">ον</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">σκάνδαλον</span> – scandal; the bait-stick in a trap < Ancient Greek <span style="color:#054728">σκάνδαλον</span>.',
+                '<br>From Medieval Greek <span style="color:#7a9473">σκάνδαλον</span> – scandal; the bait-stick in a trap < Ancient Greek <span style="color:#7a9473">σκάνδαλον</span>.',
         },
         qws: ["to scandalise, make a scene"],
         transls: ["From the word Σκάνδαλο — scandal"],
@@ -574,9 +574,9 @@ export const globalArray = [
         base: "συνήθης",
         groups: {
             morfology:
-                '<em>συνηθίζω </em>→ συνήθ<span style="color: #900101">ης</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>συνηθίζω </em>→ συνήθ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">συνηθίζω</span> < <span style="color:#054728">συνήθης</span> – accustomed).',
+                '<br>From Medieval Greek (<span style="color:#7a9473">συνηθίζω</span> < <span style="color:#7a9473">συνήθης</span> – accustomed).',
         },
         qws: ["to get used to"],
         transls: ["From the word Συνήθης — accustomed"],
@@ -590,9 +590,9 @@ export const globalArray = [
         base: "συχνά",
         groups: {
             morfology:
-                '<em>συχνάζω </em>→ συχν<span style="color: #900101">ά</span> +<span style="color: #900101"> -άζω</span>',
+                '<em>συχνάζω </em>→ συχν<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -άζω</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">συχνός</span> – frequent.',
+                '<br>From Ancient Greek <span style="color:#7a9473">συχνός</span> – frequent.',
         },
         qws: ["to frequent"],
         transls: ["From the word Συχνά — often"],
@@ -606,9 +606,9 @@ export const globalArray = [
         base: "φέγγω",
         groups: {
             morfology:
-                '<em>φεγγίζω </em>→ φέγγ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ίζω</span>',
+                '<em>φεγγίζω </em>→ φέγγ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίζω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">φεγγίζω</span> < <span style="color:#054728">συνήθης</span> – accustomed < Ancient Greek <span style="color:#054728">φέγγος</span> – light, brightness.',
+                '<br>From Medieval Greek <span style="color:#7a9473">φεγγίζω</span> < <span style="color:#7a9473">συνήθης</span> – accustomed < Ancient Greek <span style="color:#7a9473">φέγγος</span> – light, brightness.',
         },
         qws: ["to shine through, be translucent"],
         transls: ["From the word Φέγγω — to shine, glow"],
@@ -622,9 +622,9 @@ export const globalArray = [
         base: "όρκος",
         groups: {
             morfology:
-                '<em>ορκίζομαι </em>→ όρκ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ίζο</span> + <span style="color: #900101">-ομαι</span>',
+                '<em>ορκίζομαι </em>→ όρκ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίζο</span> + <span style="color: #b87333">-ομαι</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ὁρκίζω</span> – to conjure, beseech < <span style="color:#054728">ὅρκος</span> – oath)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ὁρκίζω</span> – to conjure, beseech < <span style="color:#7a9473">ὅρκος</span> – oath)',
         },
         qws: ["to swear (an oath)"],
         transls: ["From the word Όρκος — oath"],
@@ -638,9 +638,9 @@ export const globalArray = [
         base: "έξοδα",
         groups: {
             morfology:
-                '<em>ξοδεύω </em>→ <span style="color: #900101">έ-</span> + ξοδ<span style="color: #900101">α</span> + <span style="color: #900101">-εύω</span>',
+                '<em>ξοδεύω </em>→ <span style="color: #b87333">έ-</span> + ξοδ<span style="color: #b87333">α</span> + <span style="color: #b87333">-εύω</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ἐξοδεύω</span> < Ancient Greek <span style="color:#054728">ἔξοδος</span> – departure, exit.',
+                '<br>From Medieval Greek <span style="color:#7a9473">ἐξοδεύω</span> < Ancient Greek <span style="color:#7a9473">ἔξοδος</span> – departure, exit.',
         },
         qws: ["to spend, expend"],
         transls: ["From the word Έξοδα — expenses"],
@@ -654,9 +654,9 @@ export const globalArray = [
         base: "αγνάντια",
         groups: {
             morfology:
-                '<em>αγναντεύω </em>→ αγνάντ<span style="color: #900101">ια</span> +<span style="color: #900101"> -εύω</span>',
+                '<em>αγναντεύω </em>→ αγνάντ<span style="color: #b87333">ια</span> +<span style="color: #b87333"> -εύω</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">αγναντεύω</span> < <span style="color:#054728">αγνάντια</span> – opposite)',
+                '<br>From Medieval Greek (<span style="color:#7a9473">αγναντεύω</span> < <span style="color:#7a9473">αγνάντια</span> – opposite)',
         },
         qws: ["to stand opposite"],
         transls: ["From the word Αγνάντια — opposite"],
@@ -670,9 +670,9 @@ export const globalArray = [
         base: "δουλειά",
         groups: {
             morfology:
-                '<em>δουλεύω </em>→ δουλ<span style="color: #900101">ειά</span> +<span style="color: #900101"> -εύω</span>',
+                '<em>δουλεύω </em>→ δουλ<span style="color: #b87333">ειά</span> +<span style="color: #b87333"> -εύω</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">δουλεύω</span> – to be a slave, serve < Ancient Greek (<span style="color:#054728">δουλόω</span> – to enslave < <span style="color:#054728">δοῦλος</span> – slave).',
+                '<br>From Koine Greek <span style="color:#7a9473">δουλεύω</span> – to be a slave, serve < Ancient Greek (<span style="color:#7a9473">δουλόω</span> – to enslave < <span style="color:#7a9473">δοῦλος</span> – slave).',
         },
         qws: ["to work"],
         transls: ["From the word Δουλειά — work"],
@@ -686,9 +686,9 @@ export const globalArray = [
         base: "κοντά",
         groups: {
             morfology:
-                '<em>κοντεύω </em>→ κοντ<span style="color: #900101">ά</span> +<span style="color: #900101"> -εύω</span>',
+                '<em>κοντεύω </em>→ κοντ<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -εύω</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">κοντεύω</span> < <span style="color:#054728">κοντά</span> – near) < Ancient Greek <span style="color:#054728">κοντός</span> – pole, rod.',
+                '<br>From Medieval Greek (<span style="color:#7a9473">κοντεύω</span> < <span style="color:#7a9473">κοντά</span> – near) < Ancient Greek <span style="color:#7a9473">κοντός</span> – pole, rod.',
         },
         qws: ["to approach, come near"],
         transls: ["From the word Κοντά — near"],
@@ -702,9 +702,9 @@ export const globalArray = [
         base: "σημάδι",
         groups: {
             morfology:
-                '<em>σημαδεύω </em>→ σημάδ<span style="color: #900101">ι</span> +<span style="color: #900101"> -εύω</span>',
+                '<em>σημαδεύω </em>→ σημάδ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -εύω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σημάδι</span> – sign, mark < Medieval Greek <span style="color:#054728">σημάδιον</span> (diminutive of Ancient Greek <span style="color:#054728">σῆμα</span> – sign, mark).',
+                '<br>From Modern Greek <span style="color:#7a9473">σημάδι</span> – sign, mark < Medieval Greek <span style="color:#7a9473">σημάδιον</span> (diminutive of Ancient Greek <span style="color:#7a9473">σῆμα</span> – sign, mark).',
         },
         qws: ["to mark, brand, aim at"],
         transls: ["From the word Σημάδι — sign, mark"],
@@ -718,9 +718,9 @@ export const globalArray = [
         base: "ψάχνω",
         groups: {
             morfology:
-                '<em>ψαχουλεύω </em>→ ψάχ<span style="color: #900101">νω</span> +<span style="color: #900101"> χουλεύω</span>',
+                '<em>ψαχουλεύω </em>→ ψάχ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> χουλεύω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ψάχνω</span> – to search, feel and <span style="color:#054728">χαλεύω</span> – to search, ask.',
+                '<br>From Modern Greek <span style="color:#7a9473">ψάχνω</span> – to search, feel and <span style="color:#7a9473">χαλεύω</span> – to search, ask.',
         },
         qws: ["to explore, rummage"],
         transls: ["From the word Ψάχνω — to search"],
@@ -734,9 +734,9 @@ export const globalArray = [
         base: "ψάρι",
         groups: {
             morfology:
-                '<em>ψαρεύω </em>→ ψάρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -εύω</span>',
+                '<em>ψαρεύω </em>→ ψάρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -εύω</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ψάρι</span> – fish < Medieval Greek <span style="color:#054728">ψάρι</span> – fish < Ancient Greek (<span style="color:#054728">ὀψάριον</span> – delicacy < <span style="color:#054728">ὄψον</span> – delicacy).',
+                '<br>From Modern Greek <span style="color:#7a9473">ψάρι</span> – fish < Medieval Greek <span style="color:#7a9473">ψάρι</span> – fish < Ancient Greek (<span style="color:#7a9473">ὀψάριον</span> – delicacy < <span style="color:#7a9473">ὄψον</span> – delicacy).',
         },
         qws: ["to fish"],
         transls: ["From the word Ψάρι — fish"],
@@ -750,9 +750,9 @@ export const globalArray = [
         base: "όνειρο",
         groups: {
             morfology:
-                '<em>ονειρεύομαι </em>→ όνειρ<span style="color: #900101">ο</span> +<span style="color: #900101"> -εύω</span> + <span style="color: #900101">-ομαι</span>',
+                '<em>ονειρεύομαι </em>→ όνειρ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -εύω</span> + <span style="color: #b87333">-ομαι</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ὀνειρεύομαι</span> < Ancient Greek (<span style="color:#054728">ὄνειρος</span> – dream; apparition < <span style="color:#054728">ὄναρ</span> – dream; apparition).',
+                '<br>From Medieval Greek <span style="color:#7a9473">ὀνειρεύομαι</span> < Ancient Greek (<span style="color:#7a9473">ὄνειρος</span> – dream; apparition < <span style="color:#7a9473">ὄναρ</span> – dream; apparition).',
         },
         qws: ["to dream"],
         transls: ["From the word Όνειρο — dream"],
@@ -766,9 +766,9 @@ export const globalArray = [
         base: "γράφω",
         groups: {
             morfology:
-                '<em>γραφέας, γραφιάς </em>→ γράφ<span style="color: #900101">ω</span> +<span style="color: #900101"> -έας</span>',
+                '<em>γραφέας, γραφιάς </em>→ γράφ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -έας</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">γραφεύς</span> < <span style="color:#054728">γράφω</span> – to write)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">γραφεύς</span> < <span style="color:#7a9473">γράφω</span> – to write)',
             aplication:
                 "<br>Nouns in -έας, -ιάς denote the doer of an action and are formed from verbs. With the same meaning, nouns in -της, -ιστης, -ότης and -(ά)τορας are also formed.",
         },
@@ -784,9 +784,9 @@ export const globalArray = [
         base: "εισάγω",
         groups: {
             morfology:
-                '<em>εισαγωγέας </em>→ <span style="color: #900101">εισ-</span> + άγ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ωγέας</span>',
+                '<em>εισαγωγέας </em>→ <span style="color: #b87333">εισ-</span> + άγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ωγέας</span>',
             etymology:
-                'From Ancient Greek (<span style="color:#054728">εἰσάγω</span> – to import, introduce, bring in < <span style="color:#054728">είς-</span> (into) + <span style="color:#054728">ἄγω</span> – to lead)',
+                'From Ancient Greek (<span style="color:#7a9473">εἰσάγω</span> – to import, introduce, bring in < <span style="color:#7a9473">είς-</span> (into) + <span style="color:#7a9473">ἄγω</span> – to lead)',
             aplication:
                 "<br>Nouns in -έας, -ιάς denote the doer of an action and are formed from verbs. With the same meaning, nouns in -της, -ιστης, -ότης and -(ά)τορας are also formed.",
         },
@@ -802,9 +802,9 @@ export const globalArray = [
         base: "εξάγω",
         groups: {
             morfology:
-                '<em>εξαγωγέας </em>→ εξάγ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ωγέας</span>',
+                '<em>εξαγωγέας </em>→ εξάγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ωγέας</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐξάγω</span> – to export, lead out < <span style="color:#054728">εξ-</span> (from, out) + <span style="color:#054728">ἄγω</span> – to lead)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐξάγω</span> – to export, lead out < <span style="color:#7a9473">εξ-</span> (from, out) + <span style="color:#7a9473">ἄγω</span> – to lead)',
             aplication:
                 "<br>Nouns in -έας, -ιάς denote the doer of an action and are formed from verbs. With the same meaning, nouns in -της, -ιστης, -ότης and -(ά)τορας are also formed.",
         },
@@ -820,9 +820,9 @@ export const globalArray = [
         base: "κουρεύω",
         groups: {
             morfology:
-                '<em>κουρέας </em>→ κουρ<span style="color: #900101">εύω</span> +<span style="color: #900101"> -έας</span>',
+                '<em>κουρέας </em>→ κουρ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -έας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κουρεύω</span> – to cut hair < Medieval Greek <span style="color:#054728">κουρεύω</span> < Koine Greek (<span style="color:#054728">κουρεύομαι</span> – to have one’s hair cut < <span style="color:#054728">κούρα</span> – shearing, cutting)',
+                '<br>From Modern Greek <span style="color:#7a9473">κουρεύω</span> – to cut hair < Medieval Greek <span style="color:#7a9473">κουρεύω</span> < Koine Greek (<span style="color:#7a9473">κουρεύομαι</span> – to have one’s hair cut < <span style="color:#7a9473">κούρα</span> – shearing, cutting)',
             aplication:
                 "<br>Nouns in -έας, -ιάς denote the doer of an action and are formed from verbs. With the same meaning, nouns in -της, -ιστης, -ότης and -(ά)τορας are also formed.",
         },
@@ -838,9 +838,9 @@ export const globalArray = [
         base: "σκάβω",
         groups: {
             morfology:
-                '<em>σκαφτιάς </em>→ σκάβ<span style="color: #900101">ω</span> +<span style="color: #900101"> -τιάς</span>',
+                '<em>σκαφτιάς </em>→ σκάβ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τιάς</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σκάφτω, σκάβω</span> – to dig < Ancient Greek <span style="color:#054728">σκάπτω</span> – to dig.',
+                '<br>From Modern Greek <span style="color:#7a9473">σκάφτω, σκάβω</span> – to dig < Ancient Greek <span style="color:#7a9473">σκάπτω</span> – to dig.',
             aplication:
                 "<br>Nouns in -έας, -ιάς denote the doer of an action and are formed from verbs. With the same meaning, nouns in -της, -ιστης, -ότης and -(ά)τορας are also formed.",
         },
@@ -856,9 +856,9 @@ export const globalArray = [
         base: "έρχομαι",
         groups: {
             morfology:
-                '<em>ερχομός </em>→ έρχ<span style="color: #900101">ομαι</span> +<span style="color: #900101"> -ομός</span>',
+                '<em>ερχομός </em>→ έρχ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -ομός</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ερχομός</span> < Ancient Greek <span style="color:#054728">ἔρχομαι</span> – to come.',
+                '<br>From Medieval Greek <span style="color:#7a9473">ερχομός</span> < Ancient Greek <span style="color:#7a9473">ἔρχομαι</span> – to come.',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -874,9 +874,9 @@ export const globalArray = [
         base: "ακρωτηριάζω",
         groups: {
             morfology:
-                '<em>ακρωτηριασμός </em>→ ακρωτηριάζ<span style="color: #900101">ω</span> +<span style="color: #900101"> -μός</span>',
+                '<em>ακρωτηριασμός </em>→ ακρωτηριάζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀκρωτηριασμός</span> < <span style="color:#054728">ἀκρωτηριάζω</span> – to amputate < <span style="color:#054728">ἀκρωτήριον</span> – top, extremity, edge < <span style="color:#054728">ἄκρος</span> – sharp, best, extreme)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀκρωτηριασμός</span> < <span style="color:#7a9473">ἀκρωτηριάζω</span> – to amputate < <span style="color:#7a9473">ἀκρωτήριον</span> – top, extremity, edge < <span style="color:#7a9473">ἄκρος</span> – sharp, best, extreme)',
             synonims: "<strong><i>Synonyms</i></strong>: ακρωτηρίαση.",
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
@@ -893,9 +893,9 @@ export const globalArray = [
         base: "ανταγωνίζομαι",
         groups: {
             morfology:
-                '<em>ανταγωνισμός </em>→ ανταγωνίζ<span style="color: #900101">ομαι</span> +<span style="color: #900101"> -μός</span>',
+                '<em>ανταγωνισμός </em>→ ανταγωνίζ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">ἀνταγωνίζομαι</span> – to compete < <span style="color:#054728">ἀγωνίζομαι</span> – to compete < <span style="color:#054728">ἀγών</span> – assembly < <span style="color:#054728">ἄγω</span> – to lead.',
+                '<br>From Ancient Greek <span style="color:#7a9473">ἀνταγωνίζομαι</span> – to compete < <span style="color:#7a9473">ἀγωνίζομαι</span> – to compete < <span style="color:#7a9473">ἀγών</span> – assembly < <span style="color:#7a9473">ἄγω</span> – to lead.',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -911,9 +911,9 @@ export const globalArray = [
         base: "βιάζω",
         groups: {
             morfology:
-                '<em>βιασμός </em>→ βιάζ<span style="color: #900101">ω</span> +<span style="color: #900101"> -μός</span>',
+                '<em>βιασμός </em>→ βιάζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">βιάζω</span> – to use force < <span style="color:#054728">βία</span> – force, violence.',
+                '<br>From Ancient Greek <span style="color:#7a9473">βιάζω</span> – to use force < <span style="color:#7a9473">βία</span> – force, violence.',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -929,9 +929,9 @@ export const globalArray = [
         base: "διώχνω",
         groups: {
             morfology:
-                '<em>διωγμός </em>→ διώχ<span style="color: #900101">νω</span> +<span style="color: #900101"> -μός</span>',
+                '<em>διωγμός </em>→ διώχ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">διωγμός</span> < <span style="color:#054728">διώκω</span> – to chase < <span style="color:#054728">δίω</span> – to drive away, pursue)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">διωγμός</span> < <span style="color:#7a9473">διώκω</span> – to chase < <span style="color:#7a9473">δίω</span> – to drive away, pursue)',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -947,9 +947,9 @@ export const globalArray = [
         base: "ενθουσιάζομαι",
         groups: {
             morfology:
-                '<em>ενθουσιασμός </em>→ ενθουσιάζ<span style="color: #900101">ομαι</span> +<span style="color: #900101"> -μός</span>',
+                '<em>ενθουσιασμός </em>→ ενθουσιάζ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ενθουσιάζω</span> – to be inspired < Ancient Greek (<span style="color:#054728">ἐνθουσιάζω</span> < <span style="color:#054728">ἔνθους</span> – inspired, enthusiastic < <span style="color:#054728">ἔνθεος</span> – inspired < <span style="color:#054728">ἐν</span> + <span style="color:#054728">θεός</span> – with God).',
+                '<br>From Modern Greek <span style="color:#7a9473">ενθουσιάζω</span> – to be inspired < Ancient Greek (<span style="color:#7a9473">ἐνθουσιάζω</span> < <span style="color:#7a9473">ἔνθους</span> – inspired, enthusiastic < <span style="color:#7a9473">ἔνθεος</span> – inspired < <span style="color:#7a9473">ἐν</span> + <span style="color:#7a9473">θεός</span> – with God).',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -965,9 +965,9 @@ export const globalArray = [
         base: "λυτρώνω",
         groups: {
             morfology:
-                '<em>λυτρωμός </em>→ λυτρ<span style="color: #900101">ώνω</span> +<span style="color: #900101"> -μός</span>',
+                '<em>λυτρωμός </em>→ λυτρ<span style="color: #b87333">ώνω</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">λυτρωμός</span> < Ancient Greek <span style="color:#054728">λυτρόω</span> – to redeem, release.',
+                '<br>From Medieval Greek <span style="color:#7a9473">λυτρωμός</span> < Ancient Greek <span style="color:#7a9473">λυτρόω</span> – to redeem, release.',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -983,9 +983,9 @@ export const globalArray = [
         base: "πυροβολώ",
         groups: {
             morfology:
-                '<em>πυροβολισμός </em>→ πυροβολ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ισμος</span>',
+                '<em>πυροβολισμός </em>→ πυροβολ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ισμος</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">πυροβολώ</span> – to shoot < <span style="color:#054728">πυροβόλο</span> – firearm, cannon).',
+                '<br>From Modern Greek (<span style="color:#7a9473">πυροβολώ</span> – to shoot < <span style="color:#7a9473">πυροβόλο</span> – firearm, cannon).',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1001,9 +1001,9 @@ export const globalArray = [
         base: "σέβομαι",
         groups: {
             morfology:
-                '<em>σεβασμός </em>→ σέβ<span style="color: #900101">ομαι</span> +<span style="color: #900101"> -ασμός</span>',
+                '<em>σεβασμός </em>→ σέβ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -ασμός</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">σεβάζω</span> < Ancient Greek <span style="color:#054728">σέβομαι</span> – to respect.',
+                '<br>From Koine Greek <span style="color:#7a9473">σεβάζω</span> < Ancient Greek <span style="color:#7a9473">σέβομαι</span> – to respect.',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1019,9 +1019,9 @@ export const globalArray = [
         base: "συνδέω",
         groups: {
             morfology:
-                '<em>σύνδεσμος </em>→ <span style="color: #900101">συν-</span> + δέ<span style="color: #900101">ω</span> +<span style="color: #900101"> -σμος</span>',
+                '<em>σύνδεσμος </em>→ <span style="color: #b87333">συν-</span> + δέ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -σμος</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">σύνδεσμος</span> < <span style="color:#054728">συνδέω</span> – to join < <span style="color:#054728">σύν-</span> (together) + <span style="color:#054728">δέω</span> – to bind)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">σύνδεσμος</span> < <span style="color:#7a9473">συνδέω</span> – to join < <span style="color:#7a9473">σύν-</span> (together) + <span style="color:#7a9473">δέω</span> – to bind)',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1037,9 +1037,9 @@ export const globalArray = [
         base: "τραυματίζω",
         groups: {
             morfology:
-                '<em>τραυματισμός </em>→ τραυματίζ<span style="color: #900101">ω</span> +<span style="color: #900101"> -μός</span>',
+                '<em>τραυματισμός </em>→ τραυματίζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">τραυματίζω</span> – to wound, injure < <span style="color:#054728">τραῦμα, τρῶμᾰ</span> – wound < <span style="color:#054728">τιτρώσκω</span> – to damage)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">τραυματίζω</span> – to wound, injure < <span style="color:#7a9473">τραῦμα, τρῶμᾰ</span> – wound < <span style="color:#7a9473">τιτρώσκω</span> – to damage)',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1055,9 +1055,9 @@ export const globalArray = [
         base: "χάνω",
         groups: {
             morfology:
-                '<em>χαμός </em>→ χάν<span style="color: #900101">ω</span> +<span style="color: #900101"> -μός</span>',
+                '<em>χαμός </em>→ χάν<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">χαμός</span> < <span style="color:#054728">χάνω</span> – to lose).',
+                '<br>From Medieval Greek (<span style="color:#7a9473">χαμός</span> < <span style="color:#7a9473">χάνω</span> – to lose).',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1073,9 +1073,9 @@ export const globalArray = [
         base: "αθλητής",
         groups: {
             morfology:
-                '<em>αθλητισμός </em>→ αθλητ<span style="color: #900101">ής</span> +<span style="color: #900101"> -ισμος</span>',
+                '<em>αθλητισμός </em>→ αθλητ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ισμος</span>',
             etymology:
-                '<br>From French <span style="color:#054728">athlétisme</span> – athletics < Ancient Greek (<span style="color:#054728">ἀθλητής</span> – athlete, champion < <span style="color:#054728">ἀθλέω</span> – to contend, be an athlete < <span style="color:#054728">ἆθλος</span> – contest, struggle; or <span style="color:#054728">ἆθλον</span> – prize)',
+                '<br>From French <span style="color:#7a9473">athlétisme</span> – athletics < Ancient Greek (<span style="color:#7a9473">ἀθλητής</span> – athlete, champion < <span style="color:#7a9473">ἀθλέω</span> – to contend, be an athlete < <span style="color:#7a9473">ἆθλος</span> – contest, struggle; or <span style="color:#7a9473">ἆθλον</span> – prize)',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1091,9 +1091,9 @@ export const globalArray = [
         base: "εμπρηστής",
         groups: {
             morfology:
-                '<em>εμπρησμός </em>→ εμπρηστ<span style="color: #900101">ής</span> +<span style="color: #900101"> -μός</span>',
+                '<em>εμπρησμός </em>→ εμπρηστ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">ἐμπρησμός</span> < Ancient Greek (<span style="color:#054728">ἐμπίμπρημι</span> – to burn, set on fire < <span style="color:#054728">ἐμ-</span> (<span style="color:#054728">ἐν-</span> / <span style="color:#054728">ἐγ-</span>) (in, into) + <span style="color:#054728">πίμπρημι</span> – to blow; to burn)',
+                '<br>From Koine Greek <span style="color:#7a9473">ἐμπρησμός</span> < Ancient Greek (<span style="color:#7a9473">ἐμπίμπρημι</span> – to burn, set on fire < <span style="color:#7a9473">ἐμ-</span> (<span style="color:#7a9473">ἐν-</span> / <span style="color:#7a9473">ἐγ-</span>) (in, into) + <span style="color:#7a9473">πίμπρημι</span> – to blow; to burn)',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1109,9 +1109,9 @@ export const globalArray = [
         base: "τουρίστας",
         groups: {
             morfology:
-                '<em>τουρισμός </em>→ τουρίσ<span style="color: #900101">τας</span> +<span style="color: #900101"> -μός</span>',
+                '<em>τουρισμός </em>→ τουρίσ<span style="color: #b87333">τας</span> +<span style="color: #b87333"> -μός</span>',
             etymology:
-                '<br>From French <span style="color:#054728">tourisme</span> – tourism < English (<span style="color:#054728">tourism</span> – tourism < <span style="color:#054728">tour</span> – tour) < Latin <span style="color:#054728">tornare</span> – to turn < Ancient Greek <span style="color:#054728">τόρνος</span> – that which turns; lathe; compass.',
+                '<br>From French <span style="color:#7a9473">tourisme</span> – tourism < English (<span style="color:#7a9473">tourism</span> – tourism < <span style="color:#7a9473">tour</span> – tour) < Latin <span style="color:#7a9473">tornare</span> – to turn < Ancient Greek <span style="color:#7a9473">τόρνος</span> – that which turns; lathe; compass.',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1127,9 +1127,9 @@ export const globalArray = [
         base: "χριστιανός",
         groups: {
             morfology:
-                '<em>χριστιανισμός </em>→ χριστιαν<span style="color: #900101">ός</span> +<span style="color: #900101"> -ισμος</span>',
+                '<em>χριστιανισμός </em>→ χριστιαν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ισμος</span>',
             etymology:
-                '<br>From Koine Greek (<span style="color:#054728">χριστιανισμός</span> – Christianity < <span style="color:#054728">χριστιανός</span> – Christian < <span style="color:#054728">Χριστός</span> – Christ)',
+                '<br>From Koine Greek (<span style="color:#7a9473">χριστιανισμός</span> – Christianity < <span style="color:#7a9473">χριστιανός</span> – Christian < <span style="color:#7a9473">Χριστός</span> – Christ)',
             aplication:
                 "<br>Nouns in -μός, -ισμος denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -ση, -ηση (-ξη,-φη), in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1145,9 +1145,9 @@ export const globalArray = [
         base: "αγανακτώ",
         groups: {
             morfology:
-                '<em>αγανάκτηση </em>→ αγανακτ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>αγανάκτηση </em>→ αγανακτ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀγανάκτησις</span> – annoyance, indignation < <span style="color:#054728">ἀγανακτέω</span> – to irritate, be annoyed < <span style="color:#054728">ἄγαν</span> (much) + <span style="color:#054728">κτείνω</span> – to kill)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀγανάκτησις</span> – annoyance, indignation < <span style="color:#7a9473">ἀγανακτέω</span> – to irritate, be annoyed < <span style="color:#7a9473">ἄγαν</span> (much) + <span style="color:#7a9473">κτείνω</span> – to kill)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1163,9 +1163,9 @@ export const globalArray = [
         base: "ακυρώνω",
         groups: {
             morfology:
-                '<em>ακύρωση </em>→ ακυρώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>ακύρωση </em>→ ακυρώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀκύρωσις</span> < <span style="color:#054728">ἀκυρόω</span> – to annul, cancel < <span style="color:#054728">ἄκυρος</span> – powerless, invalid < <span style="color:#054728">α-</span> (negation prefix) + <span style="color:#054728">κῦρος</span> – authority, validity)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀκύρωσις</span> < <span style="color:#7a9473">ἀκυρόω</span> – to annul, cancel < <span style="color:#7a9473">ἄκυρος</span> – powerless, invalid < <span style="color:#7a9473">α-</span> (negation prefix) + <span style="color:#7a9473">κῦρος</span> – authority, validity)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1181,9 +1181,9 @@ export const globalArray = [
         base: "ανακρίνω",
         groups: {
             morfology:
-                '<em>ανάκριση </em>→ ανακρί<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>ανάκριση </em>→ ανακρί<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀνάκρισις</span> – investigation; inquiry; dispute < <span style="color:#054728">ἀνακρίνω</span> – to interrogate, question < <span style="color:#054728">ἀνα-</span> (up, back, again; expresses repetition, intensification) + <span style="color:#054728">κρίνω</span> – to separate, judge, condemn)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀνάκρισις</span> – investigation; inquiry; dispute < <span style="color:#7a9473">ἀνακρίνω</span> – to interrogate, question < <span style="color:#7a9473">ἀνα-</span> (up, back, again; expresses repetition, intensification) + <span style="color:#7a9473">κρίνω</span> – to separate, judge, condemn)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1199,9 +1199,9 @@ export const globalArray = [
         base: "αναλύω",
         groups: {
             morfology:
-                '<em>ανάλυση </em>→ αναλύ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>ανάλυση </em>→ αναλύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀνάλυσις</span> – solving; analysis; dissolution; retreat < <span style="color:#054728">ἀναλύω</span> – to dissolve; to retreat < <span style="color:#054728">ἀνα-</span> (up, back, again) + <span style="color:#054728">λύω</span> – to solve; release)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀνάλυσις</span> – solving; analysis; dissolution; retreat < <span style="color:#7a9473">ἀναλύω</span> – to dissolve; to retreat < <span style="color:#7a9473">ἀνα-</span> (up, back, again) + <span style="color:#7a9473">λύω</span> – to solve; release)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1217,9 +1217,9 @@ export const globalArray = [
         base: "αναχωρώ",
         groups: {
             morfology:
-                '<em>αναχώρηση </em>→ αναχ<span style="color: #900101">ωρώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>αναχώρηση </em>→ αναχ<span style="color: #b87333">ωρώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀναχώρησις</span> – retreat, withdrawal < <span style="color:#054728">ἀναχωρέω</span> – to withdraw, go back < <span style="color:#054728">ἀνα-</span> (up, back, again) + <span style="color:#054728">χωρέω</span> – to go, make room < <span style="color:#054728">χῶρος</span> – place, region)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀναχώρησις</span> – retreat, withdrawal < <span style="color:#7a9473">ἀναχωρέω</span> – to withdraw, go back < <span style="color:#7a9473">ἀνα-</span> (up, back, again) + <span style="color:#7a9473">χωρέω</span> – to go, make room < <span style="color:#7a9473">χῶρος</span> – place, region)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1235,9 +1235,9 @@ export const globalArray = [
         base: "απαντώ",
         groups: {
             morfology:
-                '<em>απάντηση </em>→ απαντ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>απάντηση </em>→ απαντ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀπάντησης</span> – answer < <span style="color:#054728">ἀπαντάω</span> < <span style="color:#054728">ἀπό-</span> (from, off, after) + <span style="color:#054728">ἀντάω</span> – to meet, encounter < <span style="color:#054728">ἀντη</span> – instead, besides)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀπάντησης</span> – answer < <span style="color:#7a9473">ἀπαντάω</span> < <span style="color:#7a9473">ἀπό-</span> (from, off, after) + <span style="color:#7a9473">ἀντάω</span> – to meet, encounter < <span style="color:#7a9473">ἀντη</span> – instead, besides)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1253,9 +1253,9 @@ export const globalArray = [
         base: "απογοητεύω",
         groups: {
             morfology:
-                '<em>απογοήτευση </em>→ <span style="color: #900101">απο-</span> + γοητεύ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>απογοήτευση </em>→ <span style="color: #b87333">απο-</span> + γοητεύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">απογοητεύω</span> – to disappoint < <span style="color:#054728">ἀπό-</span> (from, off, <u>negation</u>) + <span style="color:#054728">γοητεύω</span> – to charm, enchant) < Ancient Greek (<span style="color:#054728">γόης</span> – sorcerer < <span style="color:#054728">γοάω</span> – to groan, lament)',
+                '<br>From Modern Greek (<span style="color:#7a9473">απογοητεύω</span> – to disappoint < <span style="color:#7a9473">ἀπό-</span> (from, off, <u>negation</u>) + <span style="color:#7a9473">γοητεύω</span> – to charm, enchant) < Ancient Greek (<span style="color:#7a9473">γόης</span> – sorcerer < <span style="color:#7a9473">γοάω</span> – to groan, lament)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1271,9 +1271,9 @@ export const globalArray = [
         base: "αποδεικνύω",
         groups: {
             morfology:
-                '<em>απόδειξη </em>→ αποδει<span style="color: #900101">κνύω</span> +<span style="color: #900101"> -ξη</span>',
+                '<em>απόδειξη </em>→ αποδει<span style="color: #b87333">κνύω</span> +<span style="color: #b87333"> -ξη</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀπόδειξις</span> – proof, demonstration < <span style="color:#054728">ἀπό-</span> (from, off) + <span style="color:#054728">δείκνῡμι</span> – to show, point out)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀπόδειξις</span> – proof, demonstration < <span style="color:#7a9473">ἀπό-</span> (from, off) + <span style="color:#7a9473">δείκνῡμι</span> – to show, point out)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1289,9 +1289,9 @@ export const globalArray = [
         base: "απομονώνομαι",
         groups: {
             morfology:
-                '<em>απομόνωση </em>→ απομονώ<span style="color: #900101">νομαι</span> +<span style="color: #900101"> -ση</span>',
+                '<em>απομόνωση </em>→ απομονώ<span style="color: #b87333">νομαι</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">απομονώνω</span> – to isolate < Ancient Greek <span style="color:#054728">ἀπομονόομαι</span> – to be isolated < <span style="color:#054728">ἀπό-</span> (from) + <span style="color:#054728">μονόω</span> – to isolate < <span style="color:#054728">μόνος</span> – alone)',
+                '<br>From Modern Greek <span style="color:#7a9473">απομονώνω</span> – to isolate < Ancient Greek <span style="color:#7a9473">ἀπομονόομαι</span> – to be isolated < <span style="color:#7a9473">ἀπό-</span> (from) + <span style="color:#7a9473">μονόω</span> – to isolate < <span style="color:#7a9473">μόνος</span> – alone)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1307,9 +1307,9 @@ export const globalArray = [
         base: "αρνούμαι",
         groups: {
             morfology:
-                '<em>άρνηση </em>→ αρν<span style="color: #900101">ούμαι</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>άρνηση </em>→ αρν<span style="color: #b87333">ούμαι</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">αρνούμαι</span> – to refuse < Ancient Greek <span style="color:#054728">ἀρνέομαι</span> – to deny, refuse.',
+                '<br>From Modern Greek <span style="color:#7a9473">αρνούμαι</span> – to refuse < Ancient Greek <span style="color:#7a9473">ἀρνέομαι</span> – to deny, refuse.',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1325,9 +1325,9 @@ export const globalArray = [
         base: "γεννώ",
         groups: {
             morfology:
-                '<em>γέννηση </em>→ γενν<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>γέννηση </em>→ γενν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">γέννηση</span> – birth < Ancient Greek (<span style="color:#054728">γέννησις</span> – birth < <span style="color:#054728">γεννάω</span> – to give birth < <span style="color:#054728">γίγνομαι</span> – to become, be born)',
+                '<br>From Medieval Greek <span style="color:#7a9473">γέννηση</span> – birth < Ancient Greek (<span style="color:#7a9473">γέννησις</span> – birth < <span style="color:#7a9473">γεννάω</span> – to give birth < <span style="color:#7a9473">γίγνομαι</span> – to become, be born)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1343,9 +1343,9 @@ export const globalArray = [
         base: "διαφημίζω",
         groups: {
             morfology:
-                '<em>διαφήμιση </em>→ διαφημί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>διαφήμιση </em>→ διαφημί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">διαφημίζω</span> – to advertise < Ancient Greek (<span style="color:#054728">διαφημίζω</span> – to make known, proclaim < <span style="color:#054728">δια-</span> (through, across) + <span style="color:#054728">φημί</span> – to speak)',
+                '<br>From Modern Greek <span style="color:#7a9473">διαφημίζω</span> – to advertise < Ancient Greek (<span style="color:#7a9473">διαφημίζω</span> – to make known, proclaim < <span style="color:#7a9473">δια-</span> (through, across) + <span style="color:#7a9473">φημί</span> – to speak)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1361,9 +1361,9 @@ export const globalArray = [
         base: "διευθύνω",
         groups: {
             morfology:
-                '<em>διεύθυνση </em>→ διευθύν<span style="color: #900101">ω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>διεύθυνση </em>→ διευθύν<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">διευθύνω</span> – to direct, manage < Ancient Greek (<span style="color:#054728">δια-</span> (through) + <span style="color:#054728">εὐθύνω</span> – to straighten, call to account < <span style="color:#054728">εὐθύς</span>, <span style="color:#054728">ἰθύς</span> – straight)',
+                '<br>From Modern Greek <span style="color:#7a9473">διευθύνω</span> – to direct, manage < Ancient Greek (<span style="color:#7a9473">δια-</span> (through) + <span style="color:#7a9473">εὐθύνω</span> – to straighten, call to account < <span style="color:#7a9473">εὐθύς</span>, <span style="color:#7a9473">ἰθύς</span> – straight)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1379,9 +1379,9 @@ export const globalArray = [
         base: "εγκρίνω",
         groups: {
             morfology:
-                '<em>έγκριση </em>→ εγκρί<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>έγκριση </em>→ εγκρί<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Koine Greek (<span style="color:#054728">ἔγκρισις</span> < <span style="color:#054728">ἐγκρίνω</span> – to approve) < Ancient Greek <span style="color:#054728">ἐγ-</span> (<span style="color:#054728">ἐν-</span> / <span style="color:#054728">ἐμ-</span>) (in) + <span style="color:#054728">κρίνω</span> – to judge, decide.',
+                '<br>From Koine Greek (<span style="color:#7a9473">ἔγκρισις</span> < <span style="color:#7a9473">ἐγκρίνω</span> – to approve) < Ancient Greek <span style="color:#7a9473">ἐγ-</span> (<span style="color:#7a9473">ἐν-</span> / <span style="color:#7a9473">ἐμ-</span>) (in) + <span style="color:#7a9473">κρίνω</span> – to judge, decide.',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1397,9 +1397,9 @@ export const globalArray = [
         base: "εκδίδω",
         groups: {
             morfology:
-                '<em>έκδοση </em>→ εκδ<span style="color: #900101">ίδω</span> +<span style="color: #900101"> -οση</span>',
+                '<em>έκδοση </em>→ εκδ<span style="color: #b87333">ίδω</span> +<span style="color: #b87333"> -οση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐκδοσής</span> – delivery < <span style="color:#054728">ἐκδίδωμι</span> – to give out < <span style="color:#054728">δίδωμι</span> – to give).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐκδοσής</span> – delivery < <span style="color:#7a9473">ἐκδίδωμι</span> – to give out < <span style="color:#7a9473">δίδωμι</span> – to give).',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1415,9 +1415,9 @@ export const globalArray = [
         base: "εκδικούμαι",
         groups: {
             morfology:
-                '<em>εκδίκηση </em>→ εκδικ<span style="color: #900101">ούμαι</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>εκδίκηση </em>→ εκδικ<span style="color: #b87333">ούμαι</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐκδίκησις</span> – revenge < <span style="color:#054728">ἐκδικέω</span> – to avenge < <span style="color:#054728">ἔκδῐκος</span> – unjust, vengeful)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐκδίκησις</span> – revenge < <span style="color:#7a9473">ἐκδικέω</span> – to avenge < <span style="color:#7a9473">ἔκδῐκος</span> – unjust, vengeful)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1433,9 +1433,9 @@ export const globalArray = [
         base: "εκκενώνω",
         groups: {
             morfology:
-                '<em>εκκένωση </em>→ εκκενώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>εκκένωση </em>→ εκκενώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">εκκενώνω</span> – to evacuate < Ancient Greek (<span style="color:#054728">ἐκκενόω</span> – to evacuate < <span style="color:#054728">κενόω</span> – to empty < <span style="color:#054728">κενός</span> – empty)',
+                '<br>From Modern Greek <span style="color:#7a9473">εκκενώνω</span> – to evacuate < Ancient Greek (<span style="color:#7a9473">ἐκκενόω</span> – to evacuate < <span style="color:#7a9473">κενόω</span> – to empty < <span style="color:#7a9473">κενός</span> – empty)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1451,9 +1451,9 @@ export const globalArray = [
         base: "εκπλήσσω",
         groups: {
             morfology:
-                '<em>έκπληξη </em>→ εκπλή<span style="color: #900101">σσω</span> +<span style="color: #900101"> -ξη</span>',
+                '<em>έκπληξη </em>→ εκπλή<span style="color: #b87333">σσω</span> +<span style="color: #b87333"> -ξη</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἔκπληξις</span> – amazement < <span style="color:#054728">ἐκπλήσσω</span> – to amaze, astonish < <span style="color:#054728">ἐκ-</span>, <span style="color:#054728">ἐξ-</span> (out) + <span style="color:#054728">πλήσσω</span> – to strike)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἔκπληξις</span> – amazement < <span style="color:#7a9473">ἐκπλήσσω</span> – to amaze, astonish < <span style="color:#7a9473">ἐκ-</span>, <span style="color:#7a9473">ἐξ-</span> (out) + <span style="color:#7a9473">πλήσσω</span> – to strike)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1469,9 +1469,9 @@ export const globalArray = [
         base: "εκτελώ",
         groups: {
             morfology:
-                '<em>εκτέλεση </em>→ εκτε<span style="color: #900101">λώ</span> +<span style="color: #900101"> -ση</span>',
+                '<em>εκτέλεση </em>→ εκτε<span style="color: #b87333">λώ</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">εκτελώ</span> – to execute < Ancient Greek (<span style="color:#054728">ἐκτελέω</span> < <span style="color:#054728">ἐκ-</span>, <span style="color:#054728">ἐξ-</span> (out) + <span style="color:#054728">τέλος</span> – end)',
+                '<br>From Modern Greek <span style="color:#7a9473">εκτελώ</span> – to execute < Ancient Greek (<span style="color:#7a9473">ἐκτελέω</span> < <span style="color:#7a9473">ἐκ-</span>, <span style="color:#7a9473">ἐξ-</span> (out) + <span style="color:#7a9473">τέλος</span> – end)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1487,9 +1487,9 @@ export const globalArray = [
         base: "εξαπατώ",
         groups: {
             morfology:
-                '<em>εξαπάτηση </em>→ <span style="color: #900101">εξ-</span> + απατ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>εξαπάτηση </em>→ <span style="color: #b87333">εξ-</span> + απατ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">εξαπατώ</span> – to deceive < Ancient Greek (<span style="color:#054728">ἐξαπαταω</span> < <span style="color:#054728">ἐξ-</span>, <span style="color:#054728">ἐκ-</span> (out) + <span style="color:#054728">ἀπατάω</span> – to cheat < <span style="color:#054728">ἀπάτη</span> – deceit)',
+                '<br>From Modern Greek <span style="color:#7a9473">εξαπατώ</span> – to deceive < Ancient Greek (<span style="color:#7a9473">ἐξαπαταω</span> < <span style="color:#7a9473">ἐξ-</span>, <span style="color:#7a9473">ἐκ-</span> (out) + <span style="color:#7a9473">ἀπατάω</span> – to cheat < <span style="color:#7a9473">ἀπάτη</span> – deceit)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1505,9 +1505,9 @@ export const globalArray = [
         base: "επενδύω",
         groups: {
             morfology:
-                '<em>επένδυση </em>→ <span style="color: #900101">επ-</span> + <span style="color: #900101">εν-</span> + δύ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>επένδυση </em>→ <span style="color: #b87333">επ-</span> + <span style="color: #b87333">εν-</span> + δύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">επενδύω</span> – to invest < Ancient Greek (<span style="color:#054728">ἐπενδύω</span> – to cover, put on < <span style="color:#054728">ἐπί-</span> (on, upon) + <span style="color:#054728">ἐνδύω</span> – to put on, enter < <span style="color:#054728">ἐν-</span> (in) + <span style="color:#054728">δύω</span> – to enter)',
+                '<br>From Modern Greek <span style="color:#7a9473">επενδύω</span> – to invest < Ancient Greek (<span style="color:#7a9473">ἐπενδύω</span> – to cover, put on < <span style="color:#7a9473">ἐπί-</span> (on, upon) + <span style="color:#7a9473">ἐνδύω</span> – to put on, enter < <span style="color:#7a9473">ἐν-</span> (in) + <span style="color:#7a9473">δύω</span> – to enter)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1523,9 +1523,9 @@ export const globalArray = [
         base: "επιβεβαιώνω",
         groups: {
             morfology:
-                '<em>επιβεβαίωση </em>→ <span style="color: #900101">επι-</span> + βεβαιώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>επιβεβαίωση </em>→ <span style="color: #b87333">επι-</span> + βεβαιώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">επιβεβαιώνω</span> – to confirm < <span style="color:#054728">επι-</span> (on) + <span style="color:#054728">βεβαιώνω</span> – to confirm) < Ancient Greek <span style="color:#054728">βεβαιόω</span> – to strengthen, guarantee < <span style="color:#054728">βέβαιος</span> – sure, firm < <span style="color:#054728">βαίνω</span> – to go)',
+                '<br>From Modern Greek (<span style="color:#7a9473">επιβεβαιώνω</span> – to confirm < <span style="color:#7a9473">επι-</span> (on) + <span style="color:#7a9473">βεβαιώνω</span> – to confirm) < Ancient Greek <span style="color:#7a9473">βεβαιόω</span> – to strengthen, guarantee < <span style="color:#7a9473">βέβαιος</span> – sure, firm < <span style="color:#7a9473">βαίνω</span> – to go)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1541,9 +1541,9 @@ export const globalArray = [
         base: "επιδένω",
         groups: {
             morfology:
-                '<em>επίδεση </em>→ <span style="color: #900101">επι-</span> + δέ<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>επίδεση </em>→ <span style="color: #b87333">επι-</span> + δέ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐπίθεσις</span> – placing, imposition < <span style="color:#054728">ἐπιτίθημι</span> – to put on < <span style="color:#054728">ἐπι-</span> (on) + <span style="color:#054728">τῐθημῐ</span> – to place)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐπίθεσις</span> – placing, imposition < <span style="color:#7a9473">ἐπιτίθημι</span> – to put on < <span style="color:#7a9473">ἐπι-</span> (on) + <span style="color:#7a9473">τῐθημῐ</span> – to place)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1559,9 +1559,9 @@ export const globalArray = [
         base: "επισκέπτομαι",
         groups: {
             morfology:
-                '<em>επίσκεψη </em>→ <span style="color: #900101">επι-</span> + σκέ<span style="color: #900101">πτομαι</span> +<span style="color: #900101"> -ψη</span>',
+                '<em>επίσκεψη </em>→ <span style="color: #b87333">επι-</span> + σκέ<span style="color: #b87333">πτομαι</span> +<span style="color: #b87333"> -ψη</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐπισκέπτομαι</span> – to visit < <span style="color:#054728">ἐπι-</span> (on) + <span style="color:#054728">σκέπτομαι</span> – to look, observe).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐπισκέπτομαι</span> – to visit < <span style="color:#7a9473">ἐπι-</span> (on) + <span style="color:#7a9473">σκέπτομαι</span> – to look, observe).',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1577,9 +1577,9 @@ export const globalArray = [
         base: "θυμάμαι",
         groups: {
             morfology:
-                '<em>θύμηση </em>→ θυμ<span style="color: #900101">άμαι</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>θύμηση </em>→ θυμ<span style="color: #b87333">άμαι</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">θυμάμαι</span> – to remember < <span style="color:#054728">θυμοῡμαι</span>) < Ancient Greek (<span style="color:#054728">ἐνθυμέομαι</span> – to consider, think over < <span style="color:#054728">ἐν-</span> (in) + <span style="color:#054728">θῡμός</span> – soul, mind, will)',
+                '<br>From Modern Greek (<span style="color:#7a9473">θυμάμαι</span> – to remember < <span style="color:#7a9473">θυμοῡμαι</span>) < Ancient Greek (<span style="color:#7a9473">ἐνθυμέομαι</span> – to consider, think over < <span style="color:#7a9473">ἐν-</span> (in) + <span style="color:#7a9473">θῡμός</span> – soul, mind, will)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1595,9 +1595,9 @@ export const globalArray = [
         base: "καταδιώκω",
         groups: {
             morfology:
-                '<em>καταδίωξη </em>→ <span style="color: #900101">κατα-</span> + διώ<span style="color: #900101">κω</span> +<span style="color: #900101"> -ξη</span>',
+                '<em>καταδίωξη </em>→ <span style="color: #b87333">κατα-</span> + διώ<span style="color: #b87333">κω</span> +<span style="color: #b87333"> -ξη</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">καταδιώκω</span> – to pursue < Ancient Greek (<span style="color:#054728">καταδιώκω</span> – to pursue, chase < <span style="color:#054728">κατα-</span> (expresses hostility; intensification; downwards) + <span style="color:#054728">διώκω</span> – to chase, persecute < <span style="color:#054728">δίω</span> – to drive away)',
+                '<br>From Modern Greek <span style="color:#7a9473">καταδιώκω</span> – to pursue < Ancient Greek (<span style="color:#7a9473">καταδιώκω</span> – to pursue, chase < <span style="color:#7a9473">κατα-</span> (expresses hostility; intensification; downwards) + <span style="color:#7a9473">διώκω</span> – to chase, persecute < <span style="color:#7a9473">δίω</span> – to drive away)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1613,9 +1613,9 @@ export const globalArray = [
         base: "καταθέτω",
         groups: {
             morfology:
-                '<em>κατάθεση </em>→ <span style="color: #900101">κατα-</span> + θέ<span style="color: #900101">τω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>κατάθεση </em>→ <span style="color: #b87333">κατα-</span> + θέ<span style="color: #b87333">τω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">καταθέτω</span> – to deposit < Ancient Greek (<span style="color:#054728">κατατίθημι</span> – to place, deposit < <span style="color:#054728">κατα-</span> (down, against) + <span style="color:#054728">τίθημι</span> – to place)',
+                '<br>From Modern Greek <span style="color:#7a9473">καταθέτω</span> – to deposit < Ancient Greek (<span style="color:#7a9473">κατατίθημι</span> – to place, deposit < <span style="color:#7a9473">κατα-</span> (down, against) + <span style="color:#7a9473">τίθημι</span> – to place)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1631,9 +1631,9 @@ export const globalArray = [
         base: "κουράζομαι",
         groups: {
             morfology:
-                '<em>κούραση </em>→ κουρά<span style="color: #900101">ζομαι</span> +<span style="color: #900101"> -ση</span>',
+                '<em>κούραση </em>→ κουρά<span style="color: #b87333">ζομαι</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">κούραση</span> < <span style="color:#054728">κουράζω</span> – to tire) < Ancient Greek <span style="color:#054728">κουρά</span> – shearing, cutting.',
+                '<br>From Medieval Greek (<span style="color:#7a9473">κούραση</span> < <span style="color:#7a9473">κουράζω</span> – to tire) < Ancient Greek <span style="color:#7a9473">κουρά</span> – shearing, cutting.',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1649,9 +1649,9 @@ export const globalArray = [
         base: "κρίνω",
         groups: {
             morfology:
-                '<em>κρίση </em>→ κρί<span style="color: #900101">νω</span> +<span style="color: #900101"> ση</span>',
+                '<em>κρίση </em>→ κρί<span style="color: #b87333">νω</span> +<span style="color: #b87333"> ση</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">κρίσις</span> – separation, judgement, decision < <span style="color:#054728">κρίνω</span> – to separate, judge)',
+                '<br>From Ancient Greek <span style="color:#7a9473">κρίσις</span> – separation, judgement, decision < <span style="color:#7a9473">κρίνω</span> – to separate, judge)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1667,9 +1667,9 @@ export const globalArray = [
         base: "λάμπω",
         groups: {
             morfology:
-                '<em>λάμψη </em>→ λαμ<span style="color: #900101">πώ</span> +<span style="color: #900101"> -ψη</span>',
+                '<em>λάμψη </em>→ λαμ<span style="color: #b87333">πώ</span> +<span style="color: #b87333"> -ψη</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">λάμψις</span> < Ancient Greek <span style="color:#054728">λάμπω</span> – to shine, gleam.',
+                '<br>From Koine Greek <span style="color:#7a9473">λάμψις</span> < Ancient Greek <span style="color:#7a9473">λάμπω</span> – to shine, gleam.',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1685,9 +1685,9 @@ export const globalArray = [
         base: "λιπαίνω",
         groups: {
             morfology:
-                '<em>λίπανση </em>→ λιπαίν<span style="color: #900101">ω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>λίπανση </em>→ λιπαίν<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                'From Koine Greek <span style="color:#054728">λίπανσις</span> – lubrication < Ancient Greek (<span style="color:#054728">λιπαίνω</span> – to grease < <span style="color:#054728">λίπα</span> – richly, lavishly)',
+                'From Koine Greek <span style="color:#7a9473">λίπανσις</span> – lubrication < Ancient Greek (<span style="color:#7a9473">λιπαίνω</span> – to grease < <span style="color:#7a9473">λίπα</span> – richly, lavishly)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1705,9 +1705,9 @@ export const globalArray = [
         base: "παραβιάζω",
         groups: {
             morfology:
-                '<em>παραβίαση, παράβαση </em>→ <span style="color: #900101">παρα-</span> + βιά<span style="color: #900101">ζω</span> + <span style="color: #900101">-ση</span>',
+                '<em>παραβίαση, παράβαση </em>→ <span style="color: #b87333">παρα-</span> + βιά<span style="color: #b87333">ζω</span> + <span style="color: #b87333">-ση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">παραβιάζω</span> < <span style="color:#054728">βιάζω</span> – to use force < <span style="color:#054728">βία</span> – force, violence).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">παραβιάζω</span> < <span style="color:#7a9473">βιάζω</span> – to use force < <span style="color:#7a9473">βία</span> – force, violence).',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1723,9 +1723,9 @@ export const globalArray = [
         base: "παραλύω",
         groups: {
             morfology:
-                '<em>παράλυση </em>→ <span style="color: #900101">παρα-</span> + λύ<span style="color: #900101">ω</span> + <span style="color: #900101">-ση</span>',
+                '<em>παράλυση </em>→ <span style="color: #b87333">παρα-</span> + λύ<span style="color: #b87333">ω</span> + <span style="color: #b87333">-ση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">παραλύω</span> < <span style="color:#054728">λύω</span> – to release).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">παραλύω</span> < <span style="color:#7a9473">λύω</span> – to release).',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1741,7 +1741,7 @@ export const globalArray = [
         base: "περιφρονώ",
         groups: {
             morfology:
-                '<em>περιφρόνηση </em>→ περιφρον<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>περιφρόνηση </em>→ περιφρον<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1759,9 +1759,9 @@ export const globalArray = [
         base: "ποιώ",
         groups: {
             morfology:
-                '<em>ποίηση </em>→ ποι<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>ποίηση </em>→ ποι<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ποιώ</span> – to make, create < Ancient Greek <span style="color:#054728">ποιέω</span>, <span style="color:#054728">ποιῶ</span>.',
+                '<br>From Modern Greek <span style="color:#7a9473">ποιώ</span> – to make, create < Ancient Greek <span style="color:#7a9473">ποιέω</span>, <span style="color:#7a9473">ποιῶ</span>.',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1777,9 +1777,9 @@ export const globalArray = [
         base: "προειδοποιώ",
         groups: {
             morfology:
-                '<em>προειδοποίηση </em>→ προειδοποι<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>προειδοποίηση </em>→ προειδοποι<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">προειδοποιώ</span> – to warn < <span style="color:#054728">ειδοποιώ</span> – to notify).',
+                '<br>From Modern Greek (<span style="color:#7a9473">προειδοποιώ</span> – to warn < <span style="color:#7a9473">ειδοποιώ</span> – to notify).',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1795,7 +1795,7 @@ export const globalArray = [
         base: "προπονώ",
         groups: {
             morfology:
-                '<em>προπόνηση </em>→ προπον<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>προπόνηση </em>→ προπον<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1813,7 +1813,7 @@ export const globalArray = [
         base: "προσδένω",
         groups: {
             morfology:
-                '<em>πρόσδεση </em>→ προσδέ<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>πρόσδεση </em>→ προσδέ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1831,7 +1831,7 @@ export const globalArray = [
         base: "προσκαλώ",
         groups: {
             morfology:
-                '<em>πρόσκληση </em>→ προσκαλ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>πρόσκληση </em>→ προσκαλ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1849,7 +1849,7 @@ export const globalArray = [
         base: "συζητώ",
         groups: {
             morfology:
-                '<em>συζήτηση </em>→ συζητ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>συζήτηση </em>→ συζητ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1867,9 +1867,9 @@ export const globalArray = [
         base: "συλλαμβάνω",
         groups: {
             morfology:
-                '<em>σύλληψη </em>→ συλλ<span style="color: #900101">αμβάνω</span> +<span style="color: #900101"> -ηψη</span>',
+                '<em>σύλληψη </em>→ συλλ<span style="color: #b87333">αμβάνω</span> +<span style="color: #b87333"> -ηψη</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">σύλληψις</span> < <span style="color:#054728">συλλαμβάνω</span> – to arrest, collect, seize < <span style="color:#054728">συλ-</span>, <span style="color:#054728">συν-</span> (together) + <span style="color:#054728">λαμβάνω</span> – to take)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">σύλληψις</span> < <span style="color:#7a9473">συλλαμβάνω</span> – to arrest, collect, seize < <span style="color:#7a9473">συλ-</span>, <span style="color:#7a9473">συν-</span> (together) + <span style="color:#7a9473">λαμβάνω</span> – to take)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -1885,7 +1885,7 @@ export const globalArray = [
         base: "συναντιέμαι",
         groups: {
             morfology:
-                '<em>συνάντηση </em>→ συναντ<span style="color: #900101">ιέμαι</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>συνάντηση </em>→ συναντ<span style="color: #b87333">ιέμαι</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1903,7 +1903,7 @@ export const globalArray = [
         base: "συνδέω",
         groups: {
             morfology:
-                '<em>σύνδεση </em>→ συνδέ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>σύνδεση </em>→ συνδέ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1921,7 +1921,7 @@ export const globalArray = [
         base: "συνθέτω",
         groups: {
             morfology:
-                '<em>σύνθεση </em>→ συνθέ<span style="color: #900101">τω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>σύνθεση </em>→ συνθέ<span style="color: #b87333">τω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1939,7 +1939,7 @@ export const globalArray = [
         base: "ταπεινώνω",
         groups: {
             morfology:
-                '<em>ταπείνωση </em>→ ταπεινώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>ταπείνωση </em>→ ταπεινώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1957,7 +1957,7 @@ export const globalArray = [
         base: "τοποθετώ",
         groups: {
             morfology:
-                '<em>τοποθέτηση </em>→ τοποθετ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>τοποθέτηση </em>→ τοποθετ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -1975,7 +1975,7 @@ export const globalArray = [
         base: "μεταφράζω",
         groups: {
             morfology:
-                '<em>μετάφραση </em>→ μεταφρά<span style="color: #900101">ζω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>μετάφραση </em>→ μεταφρά<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -1991,9 +1991,9 @@ export const globalArray = [
         base: "ξεκουράζομαι",
         groups: {
             morfology:
-                '<em>ξεκούραση </em>→ ξεκουρά<span style="color: #900101">ζομαι</span> +<span style="color: #900101"> -ση</span>',
+                '<em>ξεκούραση </em>→ ξεκουρά<span style="color: #b87333">ζομαι</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ξε-</span> (expresses opposition, reversal) + <span style="color:#054728">κούραση</span> – tiredness < Medieval Greek (<span style="color:#054728">κούραση</span> – tiredness < <span style="color:#054728">κουράζω</span> – to tire) < Ancient Greek <span style="color:#054728">κουρά</span> – shearing.',
+                '<br>From Modern Greek <span style="color:#7a9473">ξε-</span> (expresses opposition, reversal) + <span style="color:#7a9473">κούραση</span> – tiredness < Medieval Greek (<span style="color:#7a9473">κούραση</span> – tiredness < <span style="color:#7a9473">κουράζω</span> – to tire) < Ancient Greek <span style="color:#7a9473">κουρά</span> – shearing.',
         },
         qws: ["rest"],
         transls: ["From the word Ξεκουράζομαι — to rest"],
@@ -2007,9 +2007,9 @@ export const globalArray = [
         base: "υπνώνω",
         groups: {
             morfology:
-                '<em>ύπνωση </em>→ υπνώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>ύπνωση </em>→ υπνώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">υπνώνω</span> – to put to sleep < Ancient Greek <span style="color:#054728">ὕπνος</span> – sleep',
+                '<br>From Modern Greek <span style="color:#7a9473">υπνώνω</span> – to put to sleep < Ancient Greek <span style="color:#7a9473">ὕπνος</span> – sleep',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -2025,9 +2025,9 @@ export const globalArray = [
         base: "υποθέτω",
         groups: {
             morfology:
-                '<em>υπόθεση </em>→ <span style="color: #900101">υπο-</span> + θέ<span style="color: #900101">τω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>υπόθεση </em>→ <span style="color: #b87333">υπο-</span> + θέ<span style="color: #b87333">τω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ὑπόθεσις</span> – hypothesis, assumption < <span style="color:#054728">ὑποτίθημι</span> – to put under < <span style="color:#054728">ὑπο-</span> (under) + <span style="color:#054728">τίθημι</span> – to place)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ὑπόθεσις</span> – hypothesis, assumption < <span style="color:#7a9473">ὑποτίθημι</span> – to put under < <span style="color:#7a9473">ὑπο-</span> (under) + <span style="color:#7a9473">τίθημι</span> – to place)',
             aplication:
                 "<br>Nouns in -ση, -ηση (-ξη,-φη) denote an action (process) or its result and are formed mainly from verbs. With the same meaning, nouns in -μός, -ισμος, in -σίμο, -ξίμω, -φίμω and in -μα are also formed.",
         },
@@ -2043,7 +2043,7 @@ export const globalArray = [
         base: "υποχωρώ",
         groups: {
             morfology:
-                '<em>υποχώρηση </em>→ υποχωρ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ηση</span>',
+                '<em>υποχώρηση </em>→ υποχωρ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ηση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2061,7 +2061,7 @@ export const globalArray = [
         base: "υπόσχομαι",
         groups: {
             morfology:
-                '<em>υπόσχεση </em>→ υπόσχ<span style="color: #900101">ομαι</span> +<span style="color: #900101"> -εση</span>',
+                '<em>υπόσχεση </em>→ υπόσχ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -εση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2079,7 +2079,7 @@ export const globalArray = [
         base: "φορτώνω",
         groups: {
             morfology:
-                '<em>φόρτωση </em>→ φορτώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -ση</span>',
+                '<em>φόρτωση </em>→ φορτώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -ση</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2097,7 +2097,7 @@ export const globalArray = [
         base: "φυλάγω",
         groups: {
             morfology:
-                '<em>φύλαξη </em>→ φυλά<span style="color: #900101">γω</span> +<span style="color: #900101"> -ξη</span>',
+                '<em>φύλαξη </em>→ φυλά<span style="color: #b87333">γω</span> +<span style="color: #b87333"> -ξη</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2115,7 +2115,7 @@ export const globalArray = [
         base: "αγαπάω",
         groups: {
             morfology:
-                '<em>αγάπη </em>→ αγαπ<span style="color: #900101">άω</span> +<span style="color: #900101"> -η</span>',
+                '<em>αγάπη </em>→ αγαπ<span style="color: #b87333">άω</span> +<span style="color: #b87333"> -η</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2131,7 +2131,7 @@ export const globalArray = [
         base: "απειλώ",
         groups: {
             morfology:
-                '<em>απειλή </em>→ απειλ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ή</span>',
+                '<em>απειλή </em>→ απειλ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2147,7 +2147,7 @@ export const globalArray = [
         base: "αστράπτω",
         groups: {
             morfology:
-                '<em>αστραπή </em>→ αστράπ<span style="color: #900101">τω</span> +<span style="color: #900101"> -ή</span>',
+                '<em>αστραπή </em>→ αστράπ<span style="color: #b87333">τω</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2163,7 +2163,7 @@ export const globalArray = [
         base: "βροντάω",
         groups: {
             morfology:
-                '<em>βροντή </em>→ βροντ<span style="color: #900101">άω</span> +<span style="color: #900101"> -ή</span>',
+                '<em>βροντή </em>→ βροντ<span style="color: #b87333">άω</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2179,9 +2179,9 @@ export const globalArray = [
         base: "βόσκω",
         groups: {
             morfology:
-                '<em>βοσκή </em>→ βόσκ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ή</span>',
+                '<em>βοσκή </em>→ βόσκ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">βοσκή</span> < <span style="color:#054728">βόσκω</span> — to graze)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">βοσκή</span> < <span style="color:#7a9473">βόσκω</span> — to graze)',
         },
         qws: ["pasture"],
         transls: ["From the word Βόσκω — to graze"],
@@ -2195,9 +2195,9 @@ export const globalArray = [
         base: "εισάγω",
         groups: {
             morfology:
-                '<em>εισαγωγή </em>→ εισάγ<span style="color: #900101">ω</span> +<span style="color: #900101"> -γή</span>',
+                '<em>εισαγωγή </em>→ εισάγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -γή</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">εἰσαγωγή</span> < <span style="color:#054728">είς-</span> (into) + <span style="color:#054728">ἀγωγή</span> – leading, moving < <span style="color:#054728">ἄγω</span> – to lead)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">εἰσαγωγή</span> < <span style="color:#7a9473">είς-</span> (into) + <span style="color:#7a9473">ἀγωγή</span> – leading, moving < <span style="color:#7a9473">ἄγω</span> – to lead)',
         },
         qws: ["import"],
         transls: ["From the word Εισάγω — to import"],
@@ -2211,7 +2211,7 @@ export const globalArray = [
         base: "εμπιστεύομαι",
         groups: {
             morfology:
-                '<em>εμπιστοσύνη </em>→ εμπιστ<span style="color: #900101">εύομαι</span> +<span style="color: #900101"> -οσύνη</span>',
+                '<em>εμπιστοσύνη </em>→ εμπιστ<span style="color: #b87333">εύομαι</span> +<span style="color: #b87333"> -οσύνη</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2227,9 +2227,9 @@ export const globalArray = [
         base: "εξάγω",
         groups: {
             morfology:
-                '<em>εξαγωγή </em>→ εξάγ<span style="color: #900101">ω</span> +<span style="color: #900101"> -γή</span>',
+                '<em>εξαγωγή </em>→ εξάγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -γή</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐξᾰγωγή</span> < <span style="color:#054728">ἀγωγή</span> – leading, movement < <span style="color:#054728">εξ-</span> (out) + <span style="color:#054728">ἄγω</span> – to lead)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐξᾰγωγή</span> < <span style="color:#7a9473">ἀγωγή</span> – leading, movement < <span style="color:#7a9473">εξ-</span> (out) + <span style="color:#7a9473">ἄγω</span> – to lead)',
         },
         qws: ["export"],
         transls: ["From the word Εξάγω — to export"],
@@ -2243,9 +2243,9 @@ export const globalArray = [
         base: "εύχομαι",
         groups: {
             morfology:
-                '<em>ευχή </em>→ εύχ<span style="color: #900101">ομαι</span> +<span style="color: #900101"> -ή</span>',
+                '<em>ευχή </em>→ εύχ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">εὐχή</span> – prayer, wish < <span style="color:#054728">εὔχομαι</span> – to wish, pray)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">εὐχή</span> – prayer, wish < <span style="color:#7a9473">εὔχομαι</span> – to wish, pray)',
         },
         qws: ["wish"],
         transls: ["From the word Εύχομαι — to wish"],
@@ -2259,9 +2259,9 @@ export const globalArray = [
         base: "λυπάμαι",
         groups: {
             morfology:
-                '<em>λύπη </em>→ λυπ<span style="color: #900101">άμαι</span> +<span style="color: #900101"> -η</span>',
+                '<em>λύπη </em>→ λυπ<span style="color: #b87333">άμαι</span> +<span style="color: #b87333"> -η</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">λύπη</span>',
+                '<br>From Ancient Greek <span style="color:#7a9473">λύπη</span>',
         },
         qws: ["sorrow, regret"],
         transls: ["From the word Λυπάμαι — to regret"],
@@ -2275,9 +2275,9 @@ export const globalArray = [
         base: "περιγράφω",
         groups: {
             morfology:
-                '<em>περιγραφή </em>→ περιγράφ<span style="color: #900101">ω</span> +<span style="color: #900101"> -η</span>',
+                '<em>περιγραφή </em>→ περιγράφ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -η</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">περιγραφή</span> < <span style="color:#054728">περῐγρᾰφω</span> – to describe < <span style="color:#054728">περι-</span> (around) + <span style="color:#054728">γράφω</span> – to write)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">περιγραφή</span> < <span style="color:#7a9473">περῐγρᾰφω</span> – to describe < <span style="color:#7a9473">περι-</span> (around) + <span style="color:#7a9473">γράφω</span> – to write)',
         },
         qws: ["description"],
         transls: ["From the word Περιγράφω — to describe"],
@@ -2291,7 +2291,7 @@ export const globalArray = [
         base: "προσβάλλω",
         groups: {
             morfology:
-                '<em>προσβολή </em>→ προσβάλ<span style="color: #900101">λω</span> +<span style="color: #900101"> -ή</span>',
+                '<em>προσβολή </em>→ προσβάλ<span style="color: #b87333">λω</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2307,7 +2307,7 @@ export const globalArray = [
         base: "σημμετέχω",
         groups: {
             morfology:
-                '<em>συμμετοχή </em>→ σημμετ<span style="color: #900101">έχω</span> +<span style="color: #900101"> -οχή</span>',
+                '<em>συμμετοχή </em>→ σημμετ<span style="color: #b87333">έχω</span> +<span style="color: #b87333"> -οχή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2323,7 +2323,7 @@ export const globalArray = [
         base: "σιωπώ",
         groups: {
             morfology:
-                '<em>σιωπή </em>→ σιωπ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ή</span>',
+                '<em>σιωπή </em>→ σιωπ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2339,7 +2339,7 @@ export const globalArray = [
         base: "στρίβω",
         groups: {
             morfology:
-                '<em>στροφή </em>→ στρ<span style="color: #900101">ίβω</span> +<span style="color: #900101"> -οφή</span>',
+                '<em>στροφή </em>→ στρ<span style="color: #b87333">ίβω</span> +<span style="color: #b87333"> -οφή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2355,7 +2355,7 @@ export const globalArray = [
         base: "συλλέγω",
         groups: {
             morfology:
-                '<em>συλλογή </em>→ συλλ<span style="color: #900101">έγω</span> +<span style="color: #900101"> -ογή</span>',
+                '<em>συλλογή </em>→ συλλ<span style="color: #b87333">έγω</span> +<span style="color: #b87333"> -ογή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2371,7 +2371,7 @@ export const globalArray = [
         base: "συμβουλεύω",
         groups: {
             morfology:
-                '<em>συμβουλή </em>→ συμβουλ<span style="color: #900101">εύω</span> +<span style="color: #900101"> -ή</span>',
+                '<em>συμβουλή </em>→ συμβουλ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2387,9 +2387,9 @@ export const globalArray = [
         base: "υπογράφω",
         groups: {
             morfology:
-                '<em>υπογραφή </em>→ υπογράφ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ή</span>',
+                '<em>υπογραφή </em>→ υπογράφ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ὑπογραφή</span> < <span style="color:#054728">ὑπογράφω</span> – to sign < <span style="color:#054728">ὑπό-</span> (under) + <span style="color:#054728">γράφω</span> – to write)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ὑπογραφή</span> < <span style="color:#7a9473">ὑπογράφω</span> – to sign < <span style="color:#7a9473">ὑπό-</span> (under) + <span style="color:#7a9473">γράφω</span> – to write)',
         },
         qws: ["signature"],
         transls: ["From the word Υπογράφω — to sign"],
@@ -2403,9 +2403,9 @@ export const globalArray = [
         base: "δένω",
         groups: {
             morfology:
-                '<em>δέσιμο </em>→ δέ<span style="color: #900101">νω</span> +<span style="color: #900101"> -σιμο</span>',
+                '<em>δέσιμο </em>→ δέ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -σιμο</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">δένω</span> – to tie, bind < Ancient Greek <span style="color:#054728">δέω</span>, <span style="color:#054728">δένω</span> – to tie.',
+                '<br>From Modern Greek <span style="color:#7a9473">δένω</span> – to tie, bind < Ancient Greek <span style="color:#7a9473">δέω</span>, <span style="color:#7a9473">δένω</span> – to tie.',
             aplication:
                 "<br>Nouns in -σίμο, -ξίμω, -φίμω denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -μα are also formed.",
         },
@@ -2421,9 +2421,9 @@ export const globalArray = [
         base: "δέρνω",
         groups: {
             morfology:
-                '<em>δάρσιμο </em>→ δ<span style="color: #900101">έρνω</span> +<span style="color: #900101"> -άρσιμο</span>',
+                '<em>δάρσιμο </em>→ δ<span style="color: #b87333">έρνω</span> +<span style="color: #b87333"> -άρσιμο</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">δέρνω</span> – to beat < Ancient Greek <span style="color:#054728">δέρω</span> – to flay, skin, thrash.',
+                '<br>From Medieval Greek <span style="color:#7a9473">δέρνω</span> – to beat < Ancient Greek <span style="color:#7a9473">δέρω</span> – to flay, skin, thrash.',
             aplication:
                 "<br>Nouns in -σίμο, -ξίμω, -φίμω denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -μα are also formed.",
         },
@@ -2439,9 +2439,9 @@ export const globalArray = [
         base: "σκάβω",
         groups: {
             morfology:
-                '<em>σκάψιμο </em>→ σκά<span style="color: #900101">βω</span> +<span style="color: #900101"> -ψιμο</span>',
+                '<em>σκάψιμο </em>→ σκά<span style="color: #b87333">βω</span> +<span style="color: #b87333"> -ψιμο</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σκάφτω, σκάβω</span> – to dig < Ancient Greek <span style="color:#054728">σκάπτω</span> – to dig.',
+                '<br>From Modern Greek <span style="color:#7a9473">σκάφτω, σκάβω</span> – to dig < Ancient Greek <span style="color:#7a9473">σκάπτω</span> – to dig.',
             aplication:
                 "<br>Nouns in -σίμο, -ξίμω, -φίμω denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -μα are also formed.",
         },
@@ -2457,9 +2457,9 @@ export const globalArray = [
         base: "τρέχω",
         groups: {
             morfology:
-                '<em>τρέξιμο </em>→ τρέ<span style="color: #900101">χω</span> +<span style="color: #900101"> ξιμο</span>',
+                '<em>τρέξιμο </em>→ τρέ<span style="color: #b87333">χω</span> +<span style="color: #b87333"> ξιμο</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">τρέξιμον</span> – beating < Ancient Greek <span style="color:#054728">τρέχω</span> – to run, flow.',
+                '<br>From Medieval Greek <span style="color:#7a9473">τρέξιμον</span> – beating < Ancient Greek <span style="color:#7a9473">τρέχω</span> – to run, flow.',
             aplication:
                 "<br>Nouns in -σίμο, -ξίμω, -φίμω denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -μα are also formed.",
         },
@@ -2475,9 +2475,9 @@ export const globalArray = [
         base: "χάνω",
         groups: {
             morfology:
-                '<em>χάσιμο </em>→ χά<span style="color: #900101">νω</span> +<span style="color: #900101"> -σιμο</span>',
+                '<em>χάσιμο </em>→ χά<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -σιμο</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">χάνω</span> < Ancient Greek <span style="color:#054728">χάνω</span> – to lose.',
+                '<br>From Modern Greek <span style="color:#7a9473">χάνω</span> < Ancient Greek <span style="color:#7a9473">χάνω</span> – to lose.',
             aplication:
                 "<br>Nouns in -σίμο, -ξίμω, -φίμω denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -μα are also formed.",
         },
@@ -2493,9 +2493,9 @@ export const globalArray = [
         base: "αγοράζω",
         groups: {
             morfology:
-                '<em>αγόρασμα </em>→ αγορά<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>αγόρασμα </em>→ αγορά<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀγόρασμα</span> < <span style="color:#054728">ἀγοράζω</span> – to buy < <span style="color:#054728">ἀγορά</span> – assembly, goods)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀγόρασμα</span> < <span style="color:#7a9473">ἀγοράζω</span> – to buy < <span style="color:#7a9473">ἀγορά</span> – assembly, goods)',
             aplication:
                 "<br>Nouns in -μα denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -σίμο, -ξίμω, -φίμω are also formed.",
         },
@@ -2511,9 +2511,9 @@ export const globalArray = [
         base: "γαυγίζω",
         groups: {
             morfology:
-                '<em>γάυγισμα </em>→ γαυγί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>γάυγισμα </em>→ γαυγί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">γαυγίζω</span> – to bark < <span style="color:#054728">γαβ</span> – woof (onomatopoeia)',
+                '<br>From Modern Greek <span style="color:#7a9473">γαυγίζω</span> – to bark < <span style="color:#7a9473">γαβ</span> – woof (onomatopoeia)',
             aplication:
                 "<br>Nouns in -μα denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -σίμο, -ξίμω, -φίμω are also formed.",
         },
@@ -2529,9 +2529,9 @@ export const globalArray = [
         base: "δένω",
         groups: {
             morfology:
-                '<em>δέμα </em>→ δέ<span style="color: #900101">νω</span> +<span style="color: #900101"> -μα</span>',
+                '<em>δέμα </em>→ δέ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -μα</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">δέμα</span> < Ancient Greek <span style="color:#054728">δέω</span>, <span style="color:#054728">δένω</span> – to tie, bind.',
+                '<br>From Koine Greek <span style="color:#7a9473">δέμα</span> < Ancient Greek <span style="color:#7a9473">δέω</span>, <span style="color:#7a9473">δένω</span> – to tie, bind.',
             aplication:
                 "<br>Nouns in -μα denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -σίμο, -ξίμω, -φίμω are also formed.",
         },
@@ -2547,9 +2547,9 @@ export const globalArray = [
         base: "εμβάζω",
         groups: {
             morfology:
-                '<em>έμβασμα </em>→ εμβά<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>έμβασμα </em>→ εμβά<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">εμβάζω</span> – to remit money < <span style="color:#054728">εμβιβάζω</span> – to put in, load, bring < <span style="color:#054728">εν-</span> (in) + <span style="color:#054728">βιβάζω</span> – to raise) < Ancient Greek <span style="color:#054728">βαίνω</span> – to go.',
+                '<br>From Modern Greek (<span style="color:#7a9473">εμβάζω</span> – to remit money < <span style="color:#7a9473">εμβιβάζω</span> – to put in, load, bring < <span style="color:#7a9473">εν-</span> (in) + <span style="color:#7a9473">βιβάζω</span> – to raise) < Ancient Greek <span style="color:#7a9473">βαίνω</span> – to go.',
             aplication:
                 "<br>Nouns in -μα denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -σίμο, -ξίμω, -φίμω are also formed.",
         },
@@ -2565,9 +2565,9 @@ export const globalArray = [
         base: "καπνίζω",
         groups: {
             morfology:
-                '<em>κάπνισμα </em>→ καπνί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>κάπνισμα </em>→ καπνί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">καπνίζω</span> – to smoke < Ancient Greek <span style="color:#054728">καπνός</span> – smoke.',
+                '<br>From Modern Greek <span style="color:#7a9473">καπνίζω</span> – to smoke < Ancient Greek <span style="color:#7a9473">καπνός</span> – smoke.',
             aplication:
                 "<br>Nouns in -μα denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -σίμο, -ξίμω, -φίμω are also formed.",
         },
@@ -2583,7 +2583,7 @@ export const globalArray = [
         base: "κεντώ",
         groups: {
             morfology:
-                '<em>κέντημα </em>→ κεντ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ημα</span>',
+                '<em>κέντημα </em>→ κεντ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ημα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2601,7 +2601,7 @@ export const globalArray = [
         base: "κουδουνίζω",
         groups: {
             morfology:
-                '<em>κουδούνισμα </em>→ κουδουνί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>κουδούνισμα </em>→ κουδουνί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2619,7 +2619,7 @@ export const globalArray = [
         base: "κρυολογώ",
         groups: {
             morfology:
-                '<em>κρυολόγημα </em>→ κρυολογ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ημα</span>',
+                '<em>κρυολόγημα </em>→ κρυολογ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ημα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2637,7 +2637,7 @@ export const globalArray = [
         base: "λιπαίνω",
         groups: {
             morfology:
-                '<em>λίπασμα </em>→ λιπ<span style="color: #900101">αίνω</span> +<span style="color: #900101"> -ασμα</span>',
+                '<em>λίπασμα </em>→ λιπ<span style="color: #b87333">αίνω</span> +<span style="color: #b87333"> -ασμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2655,7 +2655,7 @@ export const globalArray = [
         base: "μαυρίζω",
         groups: {
             morfology:
-                '<em>μαύρισμα </em>→ μαυρί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>μαύρισμα </em>→ μαυρί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2673,7 +2673,7 @@ export const globalArray = [
         base: "μηνώ",
         groups: {
             morfology:
-                '<em>μήνυμα </em>→ μην<span style="color: #900101">ώ</span> +<span style="color: #900101"> -υμα</span>',
+                '<em>μήνυμα </em>→ μην<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -υμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2691,7 +2691,7 @@ export const globalArray = [
         base: "πετώ",
         groups: {
             morfology:
-                '<em>πέταμα </em>→ πετώ +<span style="color: #900101"> -αμα</span>',
+                '<em>πέταμα </em>→ πετώ +<span style="color: #b87333"> -αμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2709,9 +2709,9 @@ export const globalArray = [
         base: "ποιώ",
         groups: {
             morfology:
-                '<em>ποίημα </em>→ ποι<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ημα</span>',
+                '<em>ποίημα </em>→ ποι<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ημα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ποιώ</span> – to make, create < Ancient Greek <span style="color:#054728">ποιέω</span>, <span style="color:#054728">ποιῶ</span>.',
+                '<br>From Modern Greek <span style="color:#7a9473">ποιώ</span> – to make, create < Ancient Greek <span style="color:#7a9473">ποιέω</span>, <span style="color:#7a9473">ποιῶ</span>.',
             aplication:
                 "<br>Nouns in -μα denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -σίμο, -ξίμω, -φίμω are also formed.",
         },
@@ -2727,7 +2727,7 @@ export const globalArray = [
         base: "ποτίζω",
         groups: {
             morfology:
-                '<em>πότισμα </em>→ ποτί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>πότισμα </em>→ ποτί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2745,7 +2745,7 @@ export const globalArray = [
         base: "σφραγίζω",
         groups: {
             morfology:
-                '<em>σφράγισμα </em>→ σφραγί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>σφράγισμα </em>→ σφραγί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2763,7 +2763,7 @@ export const globalArray = [
         base: "τραγουδώ",
         groups: {
             morfology:
-                '<em>τραγούδησμα </em>→ τραγουδ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ησμα</span>',
+                '<em>τραγούδησμα </em>→ τραγουδ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ησμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2781,7 +2781,7 @@ export const globalArray = [
         base: "φορτώνω",
         groups: {
             morfology:
-                '<em>φόρτωμα </em>→ φορτώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -μα</span>',
+                '<em>φόρτωμα </em>→ φορτώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -μα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2799,9 +2799,9 @@ export const globalArray = [
         base: "ψαρεύω",
         groups: {
             morfology:
-                '<em>ψάρεμα </em>→ ψαρε<span style="color: #900101">ύω</span> +<span style="color: #900101"> -μα</span>',
+                '<em>ψάρεμα </em>→ ψαρε<span style="color: #b87333">ύω</span> +<span style="color: #b87333"> -μα</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">ψάρεμα</span> < <span style="color:#054728">ψάρευμα</span> < <span style="color:#054728">ψαρεύω</span> – to fish) < Ancient Greek <span style="color:#054728">ὀψάριον</span> – delicacy < <span style="color:#054728">ὄψον</span> – delicacy).',
+                '<br>From Medieval Greek (<span style="color:#7a9473">ψάρεμα</span> < <span style="color:#7a9473">ψάρευμα</span> < <span style="color:#7a9473">ψαρεύω</span> – to fish) < Ancient Greek <span style="color:#7a9473">ὀψάριον</span> – delicacy < <span style="color:#7a9473">ὄψον</span> – delicacy).',
             aplication:
                 "<br>Nouns in -μα denote an action (process) or its result and are formed from verbs. With the same meaning, nouns in -μός, -ισμος, in -ση, -ηση (-ξη,-φη), -φίμω and in -σίμο, -ξίμω, -φίμω are also formed.",
         },
@@ -2817,7 +2817,7 @@ export const globalArray = [
         base: "ψιθυρίζω",
         groups: {
             morfology:
-                '<em>ψιθύρισμα </em>→ ψιθυρί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -σμα</span>',
+                '<em>ψιθύρισμα </em>→ ψιθυρί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -σμα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -2835,7 +2835,7 @@ export const globalArray = [
         base: "σκουπίζω",
         groups: {
             morfology:
-                '<em>σκουπίδι </em>→ σκουπ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ίδι</span>',
+                '<em>σκουπίδι </em>→ σκουπ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ίδι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2851,7 +2851,7 @@ export const globalArray = [
         base: "στολίζω",
         groups: {
             morfology:
-                '<em>στολίδι </em>→ στολ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ίδι</span>',
+                '<em>στολίδι </em>→ στολ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ίδι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2867,7 +2867,7 @@ export const globalArray = [
         base: "τρέχω, έτρεξα",
         groups: {
             morfology:
-                '<em>τρεξίδι </em>→ τρέχω, έτρεξ<span style="color: #900101">α</span> +<span style="color: #900101"> -ίδι</span>',
+                '<em>τρεξίδι </em>→ τρέχω, έτρεξ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίδι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2883,7 +2883,7 @@ export const globalArray = [
         base: "βογκώ",
         groups: {
             morfology:
-                '<em>βογκητό </em>→ βογκ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητό</span>',
+                '<em>βογκητό </em>→ βογκ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητό</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2899,7 +2899,7 @@ export const globalArray = [
         base: "ξεφωνίζω",
         groups: {
             morfology:
-                '<em>ξεφωνητό </em>→ ξεφων<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ητό</span>',
+                '<em>ξεφωνητό </em>→ ξεφων<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ητό</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2915,7 +2915,7 @@ export const globalArray = [
         base: "παραμιλώ",
         groups: {
             morfology:
-                '<em>παραμιλητό </em>→ παραμιλ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητό</span>',
+                '<em>παραμιλητό </em>→ παραμιλ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητό</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2931,7 +2931,7 @@ export const globalArray = [
         base: "κλείνω",
         groups: {
             morfology:
-                '<em>κλεισούρα </em>→ κλεί<span style="color: #900101">νω</span> +<span style="color: #900101"> -σούρα</span>',
+                '<em>κλεισούρα </em>→ κλεί<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -σούρα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2947,7 +2947,7 @@ export const globalArray = [
         base: "απεργώ",
         groups: {
             morfology:
-                '<em>απεργός </em>→ απεργ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ος</span>',
+                '<em>απεργός </em>→ απεργ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2963,9 +2963,9 @@ export const globalArray = [
         base: "βόσκω",
         groups: {
             morfology:
-                '<em>βοσκός </em>→ βόσκ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ος</span>',
+                '<em>βοσκός </em>→ βόσκ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">βοσκός</span> < <span style="color:#054728">βόσκω</span> — to graze)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">βοσκός</span> < <span style="color:#7a9473">βόσκω</span> — to graze)',
         },
         qws: ["shepherd"],
         transls: ["From the word Βόσκω — to graze"],
@@ -2979,7 +2979,7 @@ export const globalArray = [
         base: "κοστίζω",
         groups: {
             morfology:
-                '<em>κόστος </em>→ κοστ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ος</span>',
+                '<em>κόστος </em>→ κοστ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -2995,7 +2995,7 @@ export const globalArray = [
         base: "σημμετέχω",
         groups: {
             morfology:
-                '<em>σημμέτοχος </em>→ σημμετ<span style="color: #900101">έχω</span> +<span style="color: #900101"> -οχος</span>',
+                '<em>σημμέτοχος </em>→ σημμετ<span style="color: #b87333">έχω</span> +<span style="color: #b87333"> -οχος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3011,7 +3011,7 @@ export const globalArray = [
         base: "γελώ",
         groups: {
             morfology:
-                '<em>γέλιο </em>→ γελ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ιο</span>',
+                '<em>γέλιο </em>→ γελ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ιο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3027,7 +3027,7 @@ export const globalArray = [
         base: "ζυγιάζω",
         groups: {
             morfology:
-                '<em>ζυγί </em>→ ζυγ<span style="color: #900101">ιάζω</span> +<span style="color: #900101"> -ί</span>',
+                '<em>ζυγί </em>→ ζυγ<span style="color: #b87333">ιάζω</span> +<span style="color: #b87333"> -ί</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3043,7 +3043,7 @@ export const globalArray = [
         base: "κολυμπώ",
         groups: {
             morfology:
-                '<em>κολύμπι </em>→ κολυμπ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ι</span>',
+                '<em>κολύμπι </em>→ κολυμπ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3059,9 +3059,9 @@ export const globalArray = [
         base: "λούζω",
         groups: {
             morfology:
-                '<em>λουτρός </em>→ λού<span style="color: #900101">ζω</span> +<span style="color: #900101"> -ός</span>',
+                '<em>λουτρός </em>→ λού<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -ός</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">λουτρόν</span> – bath, <span style="color:#054728">λούω</span> – to wash)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">λουτρόν</span> – bath, <span style="color:#7a9473">λούω</span> – to wash)',
         },
         qws: ["bath"],
         transls: ["From the word Λούζω — to wash"],
@@ -3075,7 +3075,7 @@ export const globalArray = [
         base: "τραγουδώ",
         groups: {
             morfology:
-                '<em>τραγούδι </em>→ τραγουδ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ι</span>',
+                '<em>τραγούδι </em>→ τραγουδ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3091,7 +3091,7 @@ export const globalArray = [
         base: "ανασαίνω",
         groups: {
             morfology:
-                '<em>ανάσα </em>→ ανασ<span style="color: #900101">αίνω</span> +<span style="color: #900101"> -α</span>',
+                '<em>ανάσα </em>→ ανασ<span style="color: #b87333">αίνω</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3107,7 +3107,7 @@ export const globalArray = [
         base: "παστρεύω",
         groups: {
             morfology:
-                '<em>πάστρα </em>→ παστρ<span style="color: #900101">εύω</span> +<span style="color: #900101"> -α</span>',
+                '<em>πάστρα </em>→ παστρ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3123,7 +3123,7 @@ export const globalArray = [
         base: "γιατρεύω",
         groups: {
             morfology:
-                '<em>γιατρειά </em>→ γιατρ<span style="color: #900101">εύω</span> +<span style="color: #900101"> -εια</span>',
+                '<em>γιατρειά </em>→ γιατρ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -εια</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3139,9 +3139,9 @@ export const globalArray = [
         base: "δουλεύω",
         groups: {
             morfology:
-                '<em>δουλειά </em>→ δουλ<span style="color: #900101">εύω</span> +<span style="color: #900101"> -ειά</span>',
+                '<em>δουλειά </em>→ δουλ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -ειά</span>',
             etymology:
-                '<br>From Koine Greek (<span style="color:#054728">δουλεία</span> – work, slavery < <span style="color:#054728">δουλεύω</span> – to be a slave, serve) < Ancient Greek (<span style="color:#054728">δουλόω</span> – to enslave < <span style="color:#054728">δοῦλος</span> – slave)',
+                '<br>From Koine Greek (<span style="color:#7a9473">δουλεία</span> – work, slavery < <span style="color:#7a9473">δουλεύω</span> – to be a slave, serve) < Ancient Greek (<span style="color:#7a9473">δουλόω</span> – to enslave < <span style="color:#7a9473">δοῦλος</span> – slave)',
         },
         qws: ["work"],
         transls: ["From the word Δουλεύω — to work"],
@@ -3155,9 +3155,9 @@ export const globalArray = [
         base: "ζωγραφίζω",
         groups: {
             morfology:
-                '<em>ζωγραφιά </em>→ ζωγράφ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>ζωγραφιά </em>→ ζωγράφ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ζωγραφιά</span> < Ancient Greek (<span style="color:#054728">ζωγραφία</span> < <span style="color:#054728">ζωγράφος</span> – painter < <span style="color:#054728">ζωός</span> (alive) or <span style="color:#054728">ζωή</span> (life) + <span style="color:#054728">γράφος</span> – writer < <span style="color:#054728">γράφω</span> – to write)',
+                '<br>From Medieval Greek <span style="color:#7a9473">ζωγραφιά</span> < Ancient Greek (<span style="color:#7a9473">ζωγραφία</span> < <span style="color:#7a9473">ζωγράφος</span> – painter < <span style="color:#7a9473">ζωός</span> (alive) or <span style="color:#7a9473">ζωή</span> (life) + <span style="color:#7a9473">γράφος</span> – writer < <span style="color:#7a9473">γράφω</span> – to write)',
         },
         qws: ["painting, picture"],
         transls: ["From the word Ζωγραφίζω — to draw, paint"],
@@ -3171,9 +3171,9 @@ export const globalArray = [
         base: "θεραπεύω",
         groups: {
             morfology:
-                '<em>θεραπεία </em>→ θεραπ<span style="color: #900101">εύω</span> +<span style="color: #900101"> -εία</span>',
+                '<em>θεραπεία </em>→ θεραπ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -εία</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">θεραπεία</span> < <span style="color:#054728">θεραπεύω</span> – to treat, care for < <span style="color:#054728">θεράπων</span> – attendant, servant)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">θεραπεία</span> < <span style="color:#7a9473">θεραπεύω</span> – to treat, care for < <span style="color:#7a9473">θεράπων</span> – attendant, servant)',
         },
         qws: ["therapy, care, treatment"],
         transls: ["From the word Θεραπεύω — to treat, care for"],
@@ -3187,9 +3187,9 @@ export const globalArray = [
         base: "καλλιεργώ",
         groups: {
             morfology:
-                '<em>καλλιέργεια </em>→ καλλιέργ<span style="color: #900101">ω</span> +<span style="color: #900101"> -εια</span>',
+                '<em>καλλιέργεια </em>→ καλλιέργ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -εια</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">καλλιέργεια</span> < Koine Greek (<span style="color:#054728">καλλιεργεία</span> < <span style="color:#054728">καλλιεργώ</span>, <span style="color:#054728">καλλιεργέω</span> – to cultivate) < Ancient Greek <span style="color:#054728">κάλλος</span> (beauty) + <span style="color:#054728">ἔργον</span> – work, deed, action.',
+                '<br>From Medieval Greek <span style="color:#7a9473">καλλιέργεια</span> < Koine Greek (<span style="color:#7a9473">καλλιεργεία</span> < <span style="color:#7a9473">καλλιεργώ</span>, <span style="color:#7a9473">καλλιεργέω</span> – to cultivate) < Ancient Greek <span style="color:#7a9473">κάλλος</span> (beauty) + <span style="color:#7a9473">ἔργον</span> – work, deed, action.',
         },
         qws: ["cultivation, farming, diligent pursuit"],
         transls: ["From the word Καλλιέργω — to cultivate"],
@@ -3203,7 +3203,7 @@ export const globalArray = [
         base: "λατρεύω",
         groups: {
             morfology:
-                '<em>λατρεία </em>→ λατρ<span style="color: #900101">εύω</span> +<span style="color: #900101"> -εία</span>',
+                '<em>λατρεία </em>→ λατρ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -εία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3219,7 +3219,7 @@ export const globalArray = [
         base: "προσπαθώ",
         groups: {
             morfology:
-                '<em>προσπάθεια </em>→ προσπαθ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -εια</span>',
+                '<em>προσπάθεια </em>→ προσπαθ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -εια</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3235,7 +3235,7 @@ export const globalArray = [
         base: "ωφελώ",
         groups: {
             morfology:
-                '<em>ωφέλεια </em>→ ωφελ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -εια</span>',
+                '<em>ωφέλεια </em>→ ωφελ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -εια</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3251,9 +3251,9 @@ export const globalArray = [
         base: "αλληλογραφώ",
         groups: {
             morfology:
-                '<em>αλληλογραφία </em>→ αλληλογραφ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>αλληλογραφία </em>→ αλληλογραφ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">αλληλο-</span> (mutual) + <span style="color:#054728">γραφία</span>, <span style="color:#054728">γραφή</span> – writing < <span style="color:#054728">γράφω</span> – to write) < Ancient Greek <span style="color:#054728">γράφω</span> – to write, draw.',
+                '<br>From Modern Greek (<span style="color:#7a9473">αλληλο-</span> (mutual) + <span style="color:#7a9473">γραφία</span>, <span style="color:#7a9473">γραφή</span> – writing < <span style="color:#7a9473">γράφω</span> – to write) < Ancient Greek <span style="color:#7a9473">γράφω</span> – to write, draw.',
         },
         qws: ["correspondence"],
         transls: ["From the word Αλληλογραφώ — to correspond"],
@@ -3267,9 +3267,9 @@ export const globalArray = [
         base: "ανησυχώ",
         groups: {
             morfology:
-                '<em>ανησυχία </em>→ ανησυχ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>ανησυχία </em>→ ανησυχ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ανήσυχος</span> – anxious, worried < Ancient Greek (<span style="color:#054728">ἀνήσυχος</span> < <span style="color:#054728">ἀν-</span> / <span style="color:#054728">ἀ-</span> (negation) + <span style="color:#054728">ἥσυχος</span> – quiet, calm)',
+                '<br>From Modern Greek <span style="color:#7a9473">ανήσυχος</span> – anxious, worried < Ancient Greek (<span style="color:#7a9473">ἀνήσυχος</span> < <span style="color:#7a9473">ἀν-</span> / <span style="color:#7a9473">ἀ-</span> (negation) + <span style="color:#7a9473">ἥσυχος</span> – quiet, calm)',
         },
         qws: ["anxiety, worry"],
         transls: ["From the word Ανησυχώ — to worry"],
@@ -3283,7 +3283,7 @@ export const globalArray = [
         base: "απατώ",
         groups: {
             morfology:
-                '<em>απατία </em>→ απατ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>απατία </em>→ απατ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3299,9 +3299,9 @@ export const globalArray = [
         base: "απεργώ",
         groups: {
             morfology:
-                '<em>απεργία </em>→ απεργ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>απεργία </em>→ απεργ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">απεργός</span> – striker < Ancient Greek <span style="color:#054728">απο-</span> (separation, division, removal) + <span style="color:#054728">ἔργον</span> – work, labour.',
+                '<br>From Modern Greek <span style="color:#7a9473">απεργός</span> – striker < Ancient Greek <span style="color:#7a9473">απο-</span> (separation, division, removal) + <span style="color:#7a9473">ἔργον</span> – work, labour.',
         },
         qws: ["strike"],
         transls: ["From the word Απεργώ — to strike"],
@@ -3315,7 +3315,7 @@ export const globalArray = [
         base: "απουσιάζω",
         groups: {
             morfology:
-                '<em>απουσία </em>→ απουσ<span style="color: #900101">ιάζω</span> +<span style="color: #900101"> -ία</span>',
+                '<em>απουσία </em>→ απουσ<span style="color: #b87333">ιάζω</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3331,7 +3331,7 @@ export const globalArray = [
         base: "δωροδοκώ",
         groups: {
             morfology:
-                '<em>δωροδοκία </em>→ δωροδοκ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>δωροδοκία </em>→ δωροδοκ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3347,7 +3347,7 @@ export const globalArray = [
         base: "επικοινωνώ",
         groups: {
             morfology:
-                '<em>επικοινωνία </em>→ επικοινων<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>επικοινωνία </em>→ επικοινων<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3363,7 +3363,7 @@ export const globalArray = [
         base: "κατηγορώ",
         groups: {
             morfology:
-                '<em>κατηγορία </em>→ κατηγορ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>κατηγορία </em>→ κατηγορ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3379,7 +3379,7 @@ export const globalArray = [
         base: "λιποθυμώ",
         groups: {
             morfology:
-                '<em>λιποθυμία </em>→ λιποθυμ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>λιποθυμία </em>→ λιποθυμ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3395,7 +3395,7 @@ export const globalArray = [
         base: "προστατεύω",
         groups: {
             morfology:
-                '<em>προστασία </em>→ προστ<span style="color: #900101">ατεύω</span> +<span style="color: #900101"> -ασία</span>',
+                '<em>προστασία </em>→ προστ<span style="color: #b87333">ατεύω</span> +<span style="color: #b87333"> -ασία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3411,7 +3411,7 @@ export const globalArray = [
         base: "συσκευάζω",
         groups: {
             morfology:
-                '<em>συσκευασία </em>→ συσκευ<span style="color: #900101">άζω</span> +<span style="color: #900101"> -ασία</span>',
+                '<em>συσκευασία </em>→ συσκευ<span style="color: #b87333">άζω</span> +<span style="color: #b87333"> -ασία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3427,7 +3427,7 @@ export const globalArray = [
         base: "τιμωρώ",
         groups: {
             morfology:
-                '<em>τιμωρία </em>→ τιμωρ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>τιμωρία </em>→ τιμωρ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3443,7 +3443,7 @@ export const globalArray = [
         base: "τοποθετώ",
         groups: {
             morfology:
-                '<em>τοποθεσία </em>→ τοποθ<span style="color: #900101">ετώ</span> +<span style="color: #900101"> -εσία</span>',
+                '<em>τοποθεσία </em>→ τοποθ<span style="color: #b87333">ετώ</span> +<span style="color: #b87333"> -εσία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3459,7 +3459,7 @@ export const globalArray = [
         base: "χρεοκοπώ",
         groups: {
             morfology:
-                '<em>χρεοκοπία </em>→ χρεοκοπ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>χρεοκοπία </em>→ χρεοκοπ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3475,7 +3475,7 @@ export const globalArray = [
         base: "χρεοκοπώ",
         groups: {
             morfology:
-                '<em>χρεοκοπία </em>→ χρεοκοπ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ία</span>',
+                '<em>χρεοκοπία </em>→ χρεοκοπ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3491,7 +3491,7 @@ export const globalArray = [
         base: "εισπράττω",
         groups: {
             morfology:
-                '<em>εισπράκτορας </em>→ εισπρ<span style="color: #900101">άττω</span> +<span style="color: #900101"> -άκτορας</span>',
+                '<em>εισπράκτορας </em>→ εισπρ<span style="color: #b87333">άττω</span> +<span style="color: #b87333"> -άκτορας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3509,7 +3509,7 @@ export const globalArray = [
         base: "συμβουλεύω",
         groups: {
             morfology:
-                '<em>συμβουλάτορας </em>→ συμβουλ<span style="color: #900101">εύω</span> +<span style="color: #900101"> -άτορας</span>',
+                '<em>συμβουλάτορας </em>→ συμβουλ<span style="color: #b87333">εύω</span> +<span style="color: #b87333"> -άτορας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3527,9 +3527,9 @@ export const globalArray = [
         base: "ανάβω, ανάπτω",
         groups: {
             morfology:
-                '<em>αναπτήρας </em>→ ανάπτ<span style="color: #900101">ω</span> +<span style="color: #900101"> -τήρας</span>',
+                '<em>αναπτήρας </em>→ ανάπτ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τήρας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ανάβω</span>, <span style="color:#054728">ανάπτω</span> – to light < Medieval Greek <span style="color:#054728">ἀνάβω</span> < Ancient Greek <span style="color:#054728">ἀνάπτω</span> < <span style="color:#054728">ἀνά</span> + <span style="color:#054728">ἅπτω</span> – to fasten',
+                '<br>From Modern Greek <span style="color:#7a9473">ανάβω</span>, <span style="color:#7a9473">ανάπτω</span> – to light < Medieval Greek <span style="color:#7a9473">ἀνάβω</span> < Ancient Greek <span style="color:#7a9473">ἀνάπτω</span> < <span style="color:#7a9473">ἀνά</span> + <span style="color:#7a9473">ἅπτω</span> – to fasten',
             aplication:
                 "<br>Nouns in -τήρας, -τήρι denote devices, tools, and are formed mainly from verbs.",
         },
@@ -3545,9 +3545,9 @@ export const globalArray = [
         base: "καταβρέχω",
         groups: {
             morfology:
-                '<em>καταβρεχτήρας </em>→ καταβρέχ<span style="color: #900101">ω</span> +<span style="color: #900101"> -τήρας</span>',
+                '<em>καταβρεχτήρας </em>→ καταβρέχ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τήρας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">καταβρέχω</span> – to sprinkle < Ancient Greek (<span style="color:#054728">καταβρέχω</span> < <span style="color:#054728">κατά</span> + <span style="color:#054728">βρέχω</span> – to wet)',
+                '<br>From Modern Greek <span style="color:#7a9473">καταβρέχω</span> – to sprinkle < Ancient Greek (<span style="color:#7a9473">καταβρέχω</span> < <span style="color:#7a9473">κατά</span> + <span style="color:#7a9473">βρέχω</span> – to wet)',
             aplication:
                 "<br>Nouns in -τήρας, -τήρι denote devices, tools, and are formed mainly from verbs.",
         },
@@ -3563,9 +3563,9 @@ export const globalArray = [
         base: "κινώ",
         groups: {
             morfology:
-                '<em>κινητήρας </em>→ κιν<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητήρας</span>',
+                '<em>κινητήρας </em>→ κιν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητήρας</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">κινητήρ</span> – mover',
+                '<br>From Ancient Greek <span style="color:#7a9473">κινητήρ</span> – mover',
             aplication:
                 "<br>Nouns in -τήρας, -τήρι denote devices, tools, and are formed mainly from verbs.",
         },
@@ -3581,9 +3581,9 @@ export const globalArray = [
         base: "ξυπνώ",
         groups: {
             morfology:
-                '<em>ξυπνητήρι </em>→ ξυπν<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητήρι</span>',
+                '<em>ξυπνητήρι </em>→ ξυπν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητήρι</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">ξύπνημα</span> – awakening < <span style="color:#054728">ξυπνώ</span> – to wake) < Medieval Greek (<span style="color:#054728">ξυπνῶ</span> < <span style="color:#054728">ἔξυπνος</span> – awake) < Ancient Greek <span style="color:#054728">ὕπνος</span> – sleep',
+                '<br>From Modern Greek (<span style="color:#7a9473">ξύπνημα</span> – awakening < <span style="color:#7a9473">ξυπνώ</span> – to wake) < Medieval Greek (<span style="color:#7a9473">ξυπνῶ</span> < <span style="color:#7a9473">ἔξυπνος</span> – awake) < Ancient Greek <span style="color:#7a9473">ὕπνος</span> – sleep',
             aplication:
                 "<br>Nouns in -τήρας, -τήρι denote devices, tools, and are formed mainly from verbs.",
         },
@@ -3599,9 +3599,9 @@ export const globalArray = [
         base: "ποτίζω",
         groups: {
             morfology:
-                '<em>ποτήρι </em>→ πο<span style="color: #900101">τίζω</span> +<span style="color: #900101"> -τήρι</span>',
+                '<em>ποτήρι </em>→ πο<span style="color: #b87333">τίζω</span> +<span style="color: #b87333"> -τήρι</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ποτήρ</span>, <span style="color:#054728">ποτήριον</span> < Ancient Greek (<span style="color:#054728">ποτήριον</span> – small cup < <span style="color:#054728">ποτήρ</span> – cup < <span style="color:#054728">πίνω</span> – to drink)',
+                '<br>From Medieval Greek <span style="color:#7a9473">ποτήρ</span>, <span style="color:#7a9473">ποτήριον</span> < Ancient Greek (<span style="color:#7a9473">ποτήριον</span> – small cup < <span style="color:#7a9473">ποτήρ</span> – cup < <span style="color:#7a9473">πίνω</span> – to drink)',
             aplication:
                 "<br>Nouns in -τήρας, -τήρι denote devices, tools, and are formed mainly from verbs.",
         },
@@ -3617,9 +3617,9 @@ export const globalArray = [
         base: "ποτίζω",
         groups: {
             morfology:
-                '<em>ποτιστήρι </em>→ ποτί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -στήρι</span>',
+                '<em>ποτιστήρι </em>→ ποτί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -στήρι</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ποτιστήριν</span> < Ancient Greek (<span style="color:#054728">ποτίζω</span> — to water < <span style="color:#054728">πότος</span> – drink)',
+                '<br>From Medieval Greek <span style="color:#7a9473">ποτιστήριν</span> < Ancient Greek (<span style="color:#7a9473">ποτίζω</span> — to water < <span style="color:#7a9473">πότος</span> – drink)',
             aplication:
                 "<br>Nouns in -τήρας, -τήρι denote devices, tools, and are formed mainly from verbs.",
         },
@@ -3635,9 +3635,9 @@ export const globalArray = [
         base: "σκαλίζω",
         groups: {
             morfology:
-                '<em>σκαλιστήρι </em>→ σκαλί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -στήρας</span>',
+                '<em>σκαλιστήρι </em>→ σκαλί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -στήρας</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">σκαλιστήριον</span> < <span style="color:#054728">σκαλίζω</span> — to hoe, weed) < Ancient Greek <span style="color:#054728">σκάλλω</span> – to dig, hoe',
+                '<br>From Medieval Greek (<span style="color:#7a9473">σκαλιστήριον</span> < <span style="color:#7a9473">σκαλίζω</span> — to hoe, weed) < Ancient Greek <span style="color:#7a9473">σκάλλω</span> – to dig, hoe',
             aplication:
                 "<br>Nouns in -τήρας, -τήρι denote devices, tools, and are formed mainly from verbs.",
         },
@@ -3653,7 +3653,7 @@ export const globalArray = [
         base: "βασανίζω",
         groups: {
             morfology:
-                '<em>βασανιστήριο </em>→ βασανί<span style="color: #900101">ζω</span> +<span style="color: #900101"> -στήριο</span>',
+                '<em>βασανιστήριο </em>→ βασανί<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -στήριο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3669,7 +3669,7 @@ export const globalArray = [
         base: "γυμνάζω",
         groups: {
             morfology:
-                '<em>γυναστήριο </em>→ γυμνά<span style="color: #900101">ζω</span> +<span style="color: #900101"> -στήριο</span>',
+                '<em>γυναστήριο </em>→ γυμνά<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -στήριο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3685,7 +3685,7 @@ export const globalArray = [
         base: "δικάζω",
         groups: {
             morfology:
-                '<em>δικαστήριο </em>→ δικά(ζω) +<span style="color: #900101"> -στήριο</span>',
+                '<em>δικαστήριο </em>→ δικά(ζω) +<span style="color: #b87333"> -στήριο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3701,7 +3701,7 @@ export const globalArray = [
         base: "εκπαιδεύω",
         groups: {
             morfology:
-                '<em>εκπαιδευτήριο </em>→ εκπαιδεύ<span style="color: #900101">ω</span> +<span style="color: #900101"> -τήριο</span>',
+                '<em>εκπαιδευτήριο </em>→ εκπαιδεύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τήριο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -3717,9 +3717,9 @@ export const globalArray = [
         base: "επισκέπτομαι",
         groups: {
             morfology:
-                '<em>επισκεπτήριο </em>→ επισκέπτ<span style="color: #900101">ομαι</span> +<span style="color: #900101"> -ήριο</span>',
+                '<em>επισκεπτήριο </em>→ επισκέπτ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -ήριο</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐπισκέπτομαι</span> — to visit < <span style="color:#054728">σκέπτομαι</span> – to look, observe).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐπισκέπτομαι</span> — to visit < <span style="color:#7a9473">σκέπτομαι</span> – to look, observe).',
         },
         qws: ["visiting card"],
         transls: ["From the word Επισκέπτομαι — to visit"],
@@ -3733,7 +3733,7 @@ export const globalArray = [
         base: "καμπάνα",
         groups: {
             morfology:
-                '<em>καμπαναριό </em>→ καμπάν<span style="color: #900101">α</span> +<span style="color: #900101"> -αριό</span>',
+                '<em>καμπαναριό </em>→ καμπάν<span style="color: #b87333">α</span> +<span style="color: #b87333"> -αριό</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3751,7 +3751,7 @@ export const globalArray = [
         base: "πλύστρα",
         groups: {
             morfology:
-                '<em>πλυσταριό </em>→ πλύστ<span style="color: #900101">ρα</span> +<span style="color: #900101"> -αριό</span>',
+                '<em>πλυσταριό </em>→ πλύστ<span style="color: #b87333">ρα</span> +<span style="color: #b87333"> -αριό</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3769,7 +3769,7 @@ export const globalArray = [
         base: "σκουπίδι",
         groups: {
             morfology:
-                '<em>σκουπιδαριό </em>→ σκουπίδ<span style="color: #900101">ι</span> +<span style="color: #900101"> -αριό</span>',
+                '<em>σκουπιδαριό </em>→ σκουπίδ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -αριό</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3787,9 +3787,9 @@ export const globalArray = [
         base: "ασβεστάς",
         groups: {
             morfology:
-                '<em>ασβεστάδικο </em>→ ασβεστ<span style="color: #900101">άς</span> +<span style="color: #900101"> -άδικο</span>',
+                '<em>ασβεστάδικο </em>→ ασβεστ<span style="color: #b87333">άς</span> +<span style="color: #b87333"> -άδικο</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">ασβεστάς</span> – lime seller; owner of a lime kiln < <span style="color:#054728">ασβέστης</span> – lime) < Medieval Greek (<span style="color:#054728">ασβέστης</span> – lime < <span style="color:#054728">ασβέστιν</span> – diminutive of lime) < Ancient Greek (<span style="color:#054728">ἄσβεστος</span> – unslaked; lime < Medieval Greek <span style="color:#054728">ἀ-</span> (negation) + <span style="color:#054728">σβέννυμι</span> – to quench)',
+                '<br>From Modern Greek (<span style="color:#7a9473">ασβεστάς</span> – lime seller; owner of a lime kiln < <span style="color:#7a9473">ασβέστης</span> – lime) < Medieval Greek (<span style="color:#7a9473">ασβέστης</span> – lime < <span style="color:#7a9473">ασβέστιν</span> – diminutive of lime) < Ancient Greek (<span style="color:#7a9473">ἄσβεστος</span> – unslaked; lime < Medieval Greek <span style="color:#7a9473">ἀ-</span> (negation) + <span style="color:#7a9473">σβέννυμι</span> – to quench)',
             aplication:
                 "<br>Nouns in -άδικο, -ίδικο denote a place (territory) and are formed from nouns. With the same meaning, nouns in -αριό and -είο, -ιο are also formed.",
         },
@@ -3805,9 +3805,9 @@ export const globalArray = [
         base: "γαλατάς",
         groups: {
             morfology:
-                '<em>γαλατάδικο </em>→ γαλατ<span style="color: #900101">άς</span> +<span style="color: #900101"> -άδικο</span>',
+                '<em>γαλατάδικο </em>→ γαλατ<span style="color: #b87333">άς</span> +<span style="color: #b87333"> -άδικο</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">γαλατάς</span> – milkman < <span style="color:#054728">γάλα</span> – milk) < Ancient Greek <span style="color:#054728">γάλα</span> – milk.',
+                '<br>From Modern Greek (<span style="color:#7a9473">γαλατάς</span> – milkman < <span style="color:#7a9473">γάλα</span> – milk) < Ancient Greek <span style="color:#7a9473">γάλα</span> – milk.',
             aplication:
                 "<br>Nouns in -άδικο, -ίδικο denote a place (territory) and are formed from nouns. With the same meaning, nouns in -αριό and -είο, -ιο are also formed.",
         },
@@ -3823,9 +3823,9 @@ export const globalArray = [
         base: "παλιατζής",
         groups: {
             morfology:
-                '<em>παλιατζίδικο </em>→ παλιατζ<span style="color: #900101">ής</span> +<span style="color: #900101"> -ίδικο</span>',
+                '<em>παλιατζίδικο </em>→ παλιατζ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ίδικο</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">παλιατζής</span> – second-hand dealer < <span style="color:#054728">παλιός</span> – old) < Medieval Greek <span style="color:#054728">παλιός</span> – old < Ancient Greek (<span style="color:#054728">παλαιός</span> – old < <span style="color:#054728">πάλαι</span> – long ago)',
+                '<br>From Modern Greek (<span style="color:#7a9473">παλιατζής</span> – second-hand dealer < <span style="color:#7a9473">παλιός</span> – old) < Medieval Greek <span style="color:#7a9473">παλιός</span> – old < Ancient Greek (<span style="color:#7a9473">παλαιός</span> – old < <span style="color:#7a9473">πάλαι</span> – long ago)',
             aplication:
                 "<br>Nouns in -άδικο, -ίδικο denote a place (territory) and are formed from nouns. With the same meaning, nouns in -αριό and -είο, -ιο are also formed.",
         },
@@ -3841,9 +3841,9 @@ export const globalArray = [
         base: "ράφτης",
         groups: {
             morfology:
-                '<em>ραφτάδικο </em>→ ράφτ<span style="color: #900101">ης</span> +<span style="color: #900101"> -άδικο</span>',
+                '<em>ραφτάδικο </em>→ ράφτ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -άδικο</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ράφτης</span> – tailor < Medieval Greek <span style="color:#054728">ράφτης</span> – tailor < <span style="color:#054728">ράπτω</span>, <span style="color:#054728">ράβω</span> – to sew) < Ancient Greek <span style="color:#054728">ῥάπτω</span> – to sew.',
+                '<br>From Modern Greek <span style="color:#7a9473">ράφτης</span> – tailor < Medieval Greek <span style="color:#7a9473">ράφτης</span> – tailor < <span style="color:#7a9473">ράπτω</span>, <span style="color:#7a9473">ράβω</span> – to sew) < Ancient Greek <span style="color:#7a9473">ῥάπτω</span> – to sew.',
             aplication:
                 "<br>Nouns in -άδικο, -ίδικο denote a place (territory) and are formed from nouns. With the same meaning, nouns in -αριό and -είο, -ιο are also formed.",
         },
@@ -3859,9 +3859,9 @@ export const globalArray = [
         base: "βιβλιοπώλης",
         groups: {
             morfology:
-                '<em>βιβλιοπωλείο </em>→ βιβλιοπώλ<span style="color: #900101">ης</span> +<span style="color: #900101"> -είο</span>',
+                '<em>βιβλιοπωλείο </em>→ βιβλιοπώλ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -είο</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">βιβλιοπώλης</span> – bookseller < Ancient Greek (<span style="color:#054728">βιβλιοπώλης</span> – bookseller < <span style="color:#054728">βιβλίον</span> – small book, letter + <span style="color:#054728">πώλης</span> – seller < <span style="color:#054728">βίβλος</span> – book, papyrus < <span style="color:#054728">βύβλος</span> – papyrus, book < <span style="color:#054728">Βύβλος</span> – Byblos, ancient city in Lebanon)',
+                '<br>From Modern Greek <span style="color:#7a9473">βιβλιοπώλης</span> – bookseller < Ancient Greek (<span style="color:#7a9473">βιβλιοπώλης</span> – bookseller < <span style="color:#7a9473">βιβλίον</span> – small book, letter + <span style="color:#7a9473">πώλης</span> – seller < <span style="color:#7a9473">βίβλος</span> – book, papyrus < <span style="color:#7a9473">βύβλος</span> – papyrus, book < <span style="color:#7a9473">Βύβλος</span> – Byblos, ancient city in Lebanon)',
             aplication:
                 "<br>Nouns in -είο, -ιο denote a place (territory) and are formed from nouns. With the same meaning, nouns in -αριό and -άδικο, -ίδικο are also formed.",
         },
@@ -3877,7 +3877,7 @@ export const globalArray = [
         base: "δασάρχης",
         groups: {
             morfology:
-                '<em>δασαρχείο </em>→ δασάρχ<span style="color: #900101">ης</span> +<span style="color: #900101"> -είο</span>',
+                '<em>δασαρχείο </em>→ δασάρχ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -είο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3895,7 +3895,7 @@ export const globalArray = [
         base: "ιατρός, γιατρός",
         groups: {
             morfology:
-                '<em>ιατρείο </em>→ ιατρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -είο</span>',
+                '<em>ιατρείο </em>→ ιατρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -είο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3913,7 +3913,7 @@ export const globalArray = [
         base: "κουρέας",
         groups: {
             morfology:
-                '<em>κουρείο </em>→ κουρ<span style="color: #900101">έας</span> +<span style="color: #900101"> -είο</span>',
+                '<em>κουρείο </em>→ κουρ<span style="color: #b87333">έας</span> +<span style="color: #b87333"> -είο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3931,7 +3931,7 @@ export const globalArray = [
         base: "εστιάτορας",
         groups: {
             morfology:
-                '<em>εστιατόριο </em>→ εστιάτορ<span style="color: #900101">ας</span> +<span style="color: #900101"> -ιο</span>',
+                '<em>εστιατόριο </em>→ εστιάτορ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ιο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3949,7 +3949,7 @@ export const globalArray = [
         base: "φύλακας",
         groups: {
             morfology:
-                '<em>φυλάκιο </em>→ φύλακ<span style="color: #900101">ας</span> +<span style="color: #900101"> -ιο</span>',
+                '<em>φυλάκιο </em>→ φύλακ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ιο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3967,7 +3967,7 @@ export const globalArray = [
         base: "αλεύρι",
         groups: {
             morfology:
-                '<em>αλευράς </em>→ αλεύρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -άς</span>',
+                '<em>αλευράς </em>→ αλεύρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άς</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -3985,9 +3985,9 @@ export const globalArray = [
         base: "γάλα",
         groups: {
             morfology:
-                '<em>γαλατάς </em>→ γάλ<span style="color: #900101">α</span> +<span style="color: #900101"> -ατάς</span>',
+                '<em>γαλατάς </em>→ γάλ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ατάς</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">γάλα</span> – milk < Ancient Greek <span style="color:#054728">γάλα</span> – milk.',
+                '<br>From Modern Greek <span style="color:#7a9473">γάλα</span> – milk < Ancient Greek <span style="color:#7a9473">γάλα</span> – milk.',
             aplication:
                 "<br>Nouns in -άς denote a profession and are formed from nouns. With the same meaning, nouns in -άριος, -άρης, -ιάρης and -τζής are also formed.",
         },
@@ -4003,9 +4003,9 @@ export const globalArray = [
         base: "κεραμίδι",
         groups: {
             morfology:
-                '<em>κεραμιδάς </em>→ κεραμίδ<span style="color: #900101">ι</span> +<span style="color: #900101"> -άς</span>',
+                '<em>κεραμιδάς </em>→ κεραμίδ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άς</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κεραμίδι</span> – roof tile < Medieval Greek <span style="color:#054728">κεραμίδι</span> < Ancient Greek (<span style="color:#054728">κεραμίδιον</span> – diminutive of roof tile < <span style="color:#054728">κερᾰμῑς</span> – roof tile, clay < <span style="color:#054728">κέρᾰμος</span> – clay)',
+                '<br>From Modern Greek <span style="color:#7a9473">κεραμίδι</span> – roof tile < Medieval Greek <span style="color:#7a9473">κεραμίδι</span> < Ancient Greek (<span style="color:#7a9473">κεραμίδιον</span> – diminutive of roof tile < <span style="color:#7a9473">κερᾰμῑς</span> – roof tile, clay < <span style="color:#7a9473">κέρᾰμος</span> – clay)',
             aplication:
                 "<br>Nouns in -άς denote a profession and are formed from nouns. With the same meaning, nouns in -άριος, -άρης, -ιάρης and -τζής are also formed.",
         },
@@ -4021,9 +4021,9 @@ export const globalArray = [
         base: "μύλος",
         groups: {
             morfology:
-                '<em>μυλωνάς </em>→ μύλ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ωνάς</span>',
+                '<em>μυλωνάς </em>→ μύλ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ωνάς</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">μυλών</span> – mill < <span style="color:#054728">μύλος</span> – miller, grinder < <span style="color:#054728">μύλη</span> – mill',
+                '<br>From Ancient Greek <span style="color:#7a9473">μυλών</span> – mill < <span style="color:#7a9473">μύλος</span> – miller, grinder < <span style="color:#7a9473">μύλη</span> – mill',
             aplication:
                 "<br>Nouns in -άς denote a profession and are formed from nouns. With the same meaning, nouns in -άριος, -άρης, -ιάρης and -τζής are also formed.",
         },
@@ -4039,7 +4039,7 @@ export const globalArray = [
         base: "σίδερο",
         groups: {
             morfology:
-                '<em>σιδεράς </em>→ σίδερ<span style="color: #900101">ο</span> +<span style="color: #900101"> -άς</span>',
+                '<em>σιδεράς </em>→ σίδερ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -άς</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4057,9 +4057,9 @@ export const globalArray = [
         base: "ψάρι",
         groups: {
             morfology:
-                '<em>ψαράς </em>→ ψάρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -άς</span>',
+                '<em>ψαράς </em>→ ψάρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άς</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ὀψαρᾶς</span> < Ancient Greek (<span style="color:#054728">ὀψάριον</span> – delicacy < <span style="color:#054728">ὄψον</span> – delicacy).',
+                '<br>From Medieval Greek <span style="color:#7a9473">ὀψαρᾶς</span> < Ancient Greek (<span style="color:#7a9473">ὀψάριον</span> – delicacy < <span style="color:#7a9473">ὄψον</span> – delicacy).',
             aplication:
                 "<br>Nouns in -άς denote a profession and are formed from nouns. With the same meaning, nouns in -άριος, -άρης, -ιάρης and -τζής are also formed.",
         },
@@ -4075,7 +4075,7 @@ export const globalArray = [
         base: "ψωμί",
         groups: {
             morfology:
-                '<em>ψωμάς </em>→ ψωμ<span style="color: #900101">ί</span> +<span style="color: #900101"> -άς</span>',
+                '<em>ψωμάς </em>→ ψωμ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άς</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4093,7 +4093,7 @@ export const globalArray = [
         base: "πέυκο",
         groups: {
             morfology:
-                '<em>πευκιάς </em>→ πέυκ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ίας</span>',
+                '<em>πευκιάς </em>→ πέυκ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ίας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4111,7 +4111,7 @@ export const globalArray = [
         base: "άμμος, αμμούδα",
         groups: {
             morfology:
-                '<em>αμμοθδιά </em>→ άμμ<span style="color: #900101">ος</span> +<span style="color: #900101"> -οθδιά</span>',
+                '<em>αμμοθδιά </em>→ άμμ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -οθδιά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4129,7 +4129,7 @@ export const globalArray = [
         base: "πλατάνι",
         groups: {
             morfology:
-                '<em>πλατανιά </em>→ πλατάν<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>πλατανιά </em>→ πλατάν<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4147,9 +4147,9 @@ export const globalArray = [
         base: "επάγγελμα",
         groups: {
             morfology:
-                '<em>επαγγελματίας </em>→ επάνγγελ<span style="color: #900101">μα</span> +<span style="color: #900101"> -ματίας</span>',
+                '<em>επαγγελματίας </em>→ επάνγγελ<span style="color: #b87333">μα</span> +<span style="color: #b87333"> -ματίας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">επάγγελμα</span> – profession < Ancient Greek (<span style="color:#054728">ἐπάγγελμα</span> < <span style="color:#054728">ἐπαγγέλλομαι</span> – to promise; to pursue a profession < <span style="color:#054728">επ-</span>, <span style="color:#054728">επι-</span> (on) + <span style="color:#054728">ἀγγέλλω</span> – to announce < <span style="color:#054728">ἄγγελος</span> – messenger, angel)',
+                '<br>From Modern Greek <span style="color:#7a9473">επάγγελμα</span> – profession < Ancient Greek (<span style="color:#7a9473">ἐπάγγελμα</span> < <span style="color:#7a9473">ἐπαγγέλλομαι</span> – to promise; to pursue a profession < <span style="color:#7a9473">επ-</span>, <span style="color:#7a9473">επι-</span> (on) + <span style="color:#7a9473">ἀγγέλλω</span> – to announce < <span style="color:#7a9473">ἄγγελος</span> – messenger, angel)',
         },
         qws: ["professional"],
         transls: ["From the word Επάνγγελμα — profession"],
@@ -4163,7 +4163,7 @@ export const globalArray = [
         base: "ληστής",
         groups: {
             morfology:
-                '<em>ληστεία </em>→ ληστ<span style="color: #900101">ής</span> + <span style="color: #900101">-εία</span>',
+                '<em>ληστεία </em>→ ληστ<span style="color: #b87333">ής</span> + <span style="color: #b87333">-εία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4179,7 +4179,7 @@ export const globalArray = [
         base: "κτήμα",
         groups: {
             morfology:
-                '<em>κτηματίας </em>→ κτή<span style="color: #900101">μα</span> +<span style="color: #900101"> -ματίας</span>',
+                '<em>κτηματίας </em>→ κτή<span style="color: #b87333">μα</span> +<span style="color: #b87333"> -ματίας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4195,7 +4195,7 @@ export const globalArray = [
         base: "άχερο",
         groups: {
             morfology:
-                '<em>αχερώνας </em>→ άχερ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ώνας</span>',
+                '<em>αχερώνας </em>→ άχερ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ώνας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4213,7 +4213,7 @@ export const globalArray = [
         base: "αμπέλι",
         groups: {
             morfology:
-                '<em>αμπελώνας </em>→ αμπέλ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ώνας</span>',
+                '<em>αμπελώνας </em>→ αμπέλ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ώνας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4231,7 +4231,7 @@ export const globalArray = [
         base: "ελία, ελαία",
         groups: {
             morfology:
-                '<em>ελαιώνας </em>→ ελαί<span style="color: #900101">α</span> +<span style="color: #900101"> -ώνας</span>',
+                '<em>ελαιώνας </em>→ ελαί<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ώνας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4249,7 +4249,7 @@ export const globalArray = [
         base: "καλάμι",
         groups: {
             morfology:
-                '<em>καλαμιώνας </em>→ καλάμ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιώνας</span>',
+                '<em>καλαμιώνας </em>→ καλάμ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιώνας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4267,7 +4267,7 @@ export const globalArray = [
         base: "ξένος",
         groups: {
             morfology:
-                '<em>ξενώνας </em>→ ξέν<span style="color: #900101">ος</span> +<span style="color: #900101"> -ώνας</span>',
+                '<em>ξενώνας </em>→ ξέν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ώνας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4285,7 +4285,7 @@ export const globalArray = [
         base: "περιστέρι",
         groups: {
             morfology:
-                '<em>περιστεριώνας </em>→ περιστέρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιώνας</span>',
+                '<em>περιστεριώνας </em>→ περιστέρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιώνας</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4303,9 +4303,9 @@ export const globalArray = [
         base: "στρατός",
         groups: {
             morfology:
-                '<em>στρατώνας </em>→ στρατ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ώνας</span>',
+                '<em>στρατώνας </em>→ στρατ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ώνας</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">στρατών</span> < <span style="color:#054728">στρατός</span> – army',
+                '<br>From Ancient Greek <span style="color:#7a9473">στρατών</span> < <span style="color:#7a9473">στρατός</span> – army',
             aplication:
                 "<br>Nouns in -ώνας, -ιώνας denote a large quantity of what the derived noun means. With the same meaning, nouns in -ίας, -ία are also formed.",
         },
@@ -4321,9 +4321,9 @@ export const globalArray = [
         base: "επιστήμη",
         groups: {
             morfology:
-                '<em>επιστήμονας </em>→ επιστήμ<span style="color: #900101">η</span> +<span style="color: #900101"> -ονας</span>',
+                '<em>επιστήμονας </em>→ επιστήμ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ονας</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐπιστήμη</span> – science, knowledge < <span style="color:#054728">ἐπίσταμαι</span> – to know well, be certain < <span style="color:#054728">ἐπι-</span> (on) + <span style="color:#054728">ἵστημι</span> – to stand, place)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐπιστήμη</span> – science, knowledge < <span style="color:#7a9473">ἐπίσταμαι</span> – to know well, be certain < <span style="color:#7a9473">ἐπι-</span> (on) + <span style="color:#7a9473">ἵστημι</span> – to stand, place)',
         },
         qws: ["scientist"],
         transls: ["From the word Επιστήμη — science"],
@@ -4337,9 +4337,9 @@ export const globalArray = [
         base: "βάρκα",
         groups: {
             morfology:
-                '<em>βαρκάρης </em>→ βάρκ<span style="color: #900101">α</span> +<span style="color: #900101"> -άρης</span>',
+                '<em>βαρκάρης </em>→ βάρκ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άρης</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">βαρκάρης</span> < <span style="color:#054728">βάρκα</span> – boat) < Late Latin <span style="color:#054728">barca</span> < Latin <span style="color:#054728">baris</span> < Ancient Greek <span style="color:#054728">βᾶρις</span> < Ancient Egyptian <span style="color:#054728">/bair/</span>.',
+                '<br>From Medieval Greek (<span style="color:#7a9473">βαρκάρης</span> < <span style="color:#7a9473">βάρκα</span> – boat) < Late Latin <span style="color:#7a9473">barca</span> < Latin <span style="color:#7a9473">baris</span> < Ancient Greek <span style="color:#7a9473">βᾶρις</span> < Ancient Egyptian <span style="color:#7a9473">/bair/</span>.',
             aplication:
                 "<br>Nouns in -άριος, -άρης, -ιάρης denote a profession and are formed from nouns. With the same meaning, nouns in -άς and -τζής are also formed.",
         },
@@ -4355,9 +4355,9 @@ export const globalArray = [
         base: "περιβόλι",
         groups: {
             morfology:
-                '<em>περιβολάρης </em>→ περιβόλ<span style="color: #900101">ι</span> +<span style="color: #900101"> -άρης</span>',
+                '<em>περιβολάρης </em>→ περιβόλ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άρης</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">περιβολάρης</span>, <span style="color:#054728">περβολάρης</span> < Koine Greek <span style="color:#054728">περιβόλιον</span> – small area surrounded by something, e.g., a wall < Ancient Greek (<span style="color:#054728">περίβόλος</span> – area surrounded by something, e.g., a wall < <span style="color:#054728">περί-</span> (around) + <span style="color:#054728">βάλλω</span> – to throw, strike)',
+                '<br>From Medieval Greek <span style="color:#7a9473">περιβολάρης</span>, <span style="color:#7a9473">περβολάρης</span> < Koine Greek <span style="color:#7a9473">περιβόλιον</span> – small area surrounded by something, e.g., a wall < Ancient Greek (<span style="color:#7a9473">περίβόλος</span> – area surrounded by something, e.g., a wall < <span style="color:#7a9473">περί-</span> (around) + <span style="color:#7a9473">βάλλω</span> – to throw, strike)',
             aplication:
                 "<br>Nouns in -άριος, -άρης, -ιάρης denote a profession and are formed from nouns. With the same meaning, nouns in -άς and -τζής are also formed.",
         },
@@ -4373,7 +4373,7 @@ export const globalArray = [
         base: "κάρβουνο",
         groups: {
             morfology:
-                '<em>καρβουνιάρης </em>→ κάρβουν<span style="color: #900101">ο</span> +<span style="color: #900101"> -ιάρης</span>',
+                '<em>καρβουνιάρης </em>→ κάρβουν<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ιάρης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4391,7 +4391,7 @@ export const globalArray = [
         base: "σκουπίδι",
         groups: {
             morfology:
-                '<em>σκουπιδιάρης </em>→ σκουπίδ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιάρης</span>',
+                '<em>σκουπιδιάρης </em>→ σκουπίδ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιάρης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4409,7 +4409,7 @@ export const globalArray = [
         base: "αποθήκη",
         groups: {
             morfology:
-                '<em>αποθηκάριος </em>→ αποθήκ<span style="color: #900101">η</span> +<span style="color: #900101"> -άριος</span>',
+                '<em>αποθηκάριος </em>→ αποθήκ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -άριος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4427,7 +4427,7 @@ export const globalArray = [
         base: "βιβλιοθήκη",
         groups: {
             morfology:
-                '<em>βιβλιοθηκάριος </em>→ βιβλιοθήκ<span style="color: #900101">η</span> +<span style="color: #900101"> -άριος</span>',
+                '<em>βιβλιοθηκάριος </em>→ βιβλιοθήκ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -άριος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4445,7 +4445,7 @@ export const globalArray = [
         base: "καφενείο",
         groups: {
             morfology:
-                '<em>καφετζής </em>→ καφ<span style="color: #900101">ενείο</span> +<span style="color: #900101"> -ετζής</span>',
+                '<em>καφετζής </em>→ καφ<span style="color: #b87333">ενείο</span> +<span style="color: #b87333"> -ετζής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4463,7 +4463,7 @@ export const globalArray = [
         base: "κουλούρι",
         groups: {
             morfology:
-                '<em>κουλουρτζής </em>→ κουλούρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -τζής</span>',
+                '<em>κουλουρτζής </em>→ κουλούρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -τζής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4481,7 +4481,7 @@ export const globalArray = [
         base: "τζάμι",
         groups: {
             morfology:
-                '<em>τζαμτζής </em>→ τζάμ<span style="color: #900101">ι</span> +<span style="color: #900101"> -τζής</span>',
+                '<em>τζαμτζής </em>→ τζάμ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -τζής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4499,7 +4499,7 @@ export const globalArray = [
         base: "γιώργος",
         groups: {
             morfology:
-                '<em>γιώργαινα </em>→ γιώργ<span style="color: #900101">ος</span> +<span style="color: #900101"> -αινα</span>',
+                '<em>γιώργαινα </em>→ γιώργ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -αινα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4517,7 +4517,7 @@ export const globalArray = [
         base: "δημήτρης",
         groups: {
             morfology:
-                '<em>δημήτραινα </em>→ δημήτρ<span style="color: #900101">ης</span> +<span style="color: #900101"> -αινα</span>',
+                '<em>δημήτραινα </em>→ δημήτρ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -αινα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4535,7 +4535,7 @@ export const globalArray = [
         base: "θόδωρος",
         groups: {
             morfology:
-                '<em>θοδωρίνα </em>→ θόδωρ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ίνα</span>',
+                '<em>θοδωρίνα </em>→ θόδωρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίνα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -4553,7 +4553,7 @@ export const globalArray = [
         base: "ανήφορος",
         groups: {
             morfology:
-                '<em>ανηφοριά </em>→ ανήφορ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>ανηφοριά </em>→ ανήφορ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4569,9 +4569,9 @@ export const globalArray = [
         base: "άρχοντας",
         groups: {
             morfology:
-                '<em>αρχοντιά </em>→ αρχοντ<span style="color: #900101">ας</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>αρχοντιά </em>→ αρχοντ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ἄρχοντας</span> – lord, ruler, rich man < Medieval Greek <span style="color:#054728">ἄρχοντας</span> < Ancient Greek (<span style="color:#054728">ἄρχων</span> – ruler, leader < <span style="color:#054728">ἄρχω</span> – to begin, lead, rule);',
+                '<br>From Modern Greek <span style="color:#7a9473">ἄρχοντας</span> – lord, ruler, rich man < Medieval Greek <span style="color:#7a9473">ἄρχοντας</span> < Ancient Greek (<span style="color:#7a9473">ἄρχων</span> – ruler, leader < <span style="color:#7a9473">ἄρχω</span> – to begin, lead, rule);',
         },
         qws: ["nobility, wealth, noble origin"],
         transls: ["From the word Άρχοντας — lord, ruler, rich man, archon"],
@@ -4585,7 +4585,7 @@ export const globalArray = [
         base: "βαλανίδι",
         groups: {
             morfology:
-                '<em>βαλανιδιά </em>→ βαλανίδ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>βαλανιδιά </em>→ βαλανίδ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4601,9 +4601,9 @@ export const globalArray = [
         base: "βράδυ",
         groups: {
             morfology:
-                '<em>βραδιά </em>→ βράδ<span style="color: #900101">υ</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>βραδιά </em>→ βράδ<span style="color: #b87333">υ</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">βραδιά</span> < <span style="color:#054728">βραδεῖα</span> < <span style="color:#054728">βραδύς</span> – slow, late)',
+                '<br>From Medieval Greek (<span style="color:#7a9473">βραδιά</span> < <span style="color:#7a9473">βραδεῖα</span> < <span style="color:#7a9473">βραδύς</span> – slow, late)',
         },
         qws: ["evening, party"],
         transls: ["From the word Βράδυ — evening"],
@@ -4617,7 +4617,7 @@ export const globalArray = [
         base: "καλοκαίρι",
         groups: {
             morfology:
-                '<em>καλοκεριά </em>→ καλοκ<span style="color: #900101">αίρι</span> +<span style="color: #900101"> -εριά</span>',
+                '<em>καλοκεριά </em>→ καλοκ<span style="color: #b87333">αίρι</span> +<span style="color: #b87333"> -εριά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4633,9 +4633,9 @@ export const globalArray = [
         base: "κεράσι",
         groups: {
             morfology:
-                '<em>κερασιά </em>→ κεράσ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>κερασιά </em>→ κεράσ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κεράσι</span> – cherry < Ancient Greek <span style="color:#054728">κεράσιον</span> – cherry, cherry tree < <span style="color:#054728">κερασός</span> – cherry tree)',
+                '<br>From Modern Greek <span style="color:#7a9473">κεράσι</span> – cherry < Ancient Greek <span style="color:#7a9473">κεράσιον</span> – cherry, cherry tree < <span style="color:#7a9473">κερασός</span> – cherry tree)',
         },
         qws: ["cherry tree"],
         transls: ["From the word Κεράσι — cherry"],
@@ -4649,9 +4649,9 @@ export const globalArray = [
         base: "μάστορας",
         groups: {
             morfology:
-                '<em>μαστοριά </em>→ μάστορ<span style="color: #900101">ας</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>μαστοριά </em>→ μάστορ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">μαστορεία</span> – craftsmanship < <span style="color:#054728">μάστορας</span> – master < <span style="color:#054728">μαΐστωρ</span> < <span style="color:#054728">μαγίστωρ</span>) < Latin <span style="color:#054728">magister</span> – teacher, head',
+                '<br>From Medieval Greek (<span style="color:#7a9473">μαστορεία</span> – craftsmanship < <span style="color:#7a9473">μάστορας</span> – master < <span style="color:#7a9473">μαΐστωρ</span> < <span style="color:#7a9473">μαγίστωρ</span>) < Latin <span style="color:#7a9473">magister</span> – teacher, head',
         },
         qws: ["craftsmanship, skill"],
         transls: ["From the word Μάστορας — master craftsman"],
@@ -4665,9 +4665,9 @@ export const globalArray = [
         base: "μήλο",
         groups: {
             morfology:
-                '<em>μηλιά </em>→ μήλ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>μηλιά </em>→ μήλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">μήλο</span> – apple < Ancient Greek <span style="color:#054728">μῆλον</span> – apple.',
+                '<br>From Modern Greek <span style="color:#7a9473">μήλο</span> – apple < Ancient Greek <span style="color:#7a9473">μῆλον</span> – apple.',
         },
         qws: ["apple tree"],
         transls: ["From the word Μήλο — apple"],
@@ -4681,9 +4681,9 @@ export const globalArray = [
         base: "νύχτα",
         groups: {
             morfology:
-                '<em>νυχτιά </em>→ νύχτ<span style="color: #900101">α</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>νυχτιά </em>→ νύχτ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">νυχτιά</span> < <span style="color:#054728">νύχτα</span> – night < <span style="color:#054728">νύκτα</span> – night) < Ancient Greek <span style="color:#054728">νύξ</span> – night',
+                '<br>From Medieval Greek (<span style="color:#7a9473">νυχτιά</span> < <span style="color:#7a9473">νύχτα</span> – night < <span style="color:#7a9473">νύκτα</span> – night) < Ancient Greek <span style="color:#7a9473">νύξ</span> – night',
         },
         qws: ["nighttime"],
         transls: ["From the word Νύχτα — night"],
@@ -4697,9 +4697,9 @@ export const globalArray = [
         base: "πάγος",
         groups: {
             morfology:
-                '<em>παγωνιά </em>→ πάγ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ωνιά</span>',
+                '<em>παγωνιά </em>→ πάγ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ωνιά</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">παγώνω</span> – to freeze < Medieval Greek <span style="color:#054728">παγῶ</span> – to fix',
+                '<br>From Modern Greek <span style="color:#7a9473">παγώνω</span> – to freeze < Medieval Greek <span style="color:#7a9473">παγῶ</span> – to fix',
         },
         qws: ["frost"],
         transls: ["From the word Πάγος — ice"],
@@ -4713,9 +4713,9 @@ export const globalArray = [
         base: "παλικάρι",
         groups: {
             morfology:
-                '<em>παλικαριά </em>→ παλικάρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>παλικαριά </em>→ παλικάρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">παλικάρι, παλληκάρι</span> – brave young man, lad < Koine Greek <span style="color:#054728">παλικάριν</span> < Ancient Greek (<span style="color:#054728">πάλλαξ</span> – youth, child < <span style="color:#054728">παλικάριν</span> – concubine)',
+                '<br>From Modern Greek <span style="color:#7a9473">παλικάρι, παλληκάρι</span> – brave young man, lad < Koine Greek <span style="color:#7a9473">παλικάριν</span> < Ancient Greek (<span style="color:#7a9473">πάλλαξ</span> – youth, child < <span style="color:#7a9473">παλικάριν</span> – concubine)',
         },
         qws: ["bravery, daring"],
         transls: ["From the word Παλικάρι — brave young man, lad"],
@@ -4729,7 +4729,7 @@ export const globalArray = [
         base: "πλαί, πλάγι",
         groups: {
             morfology:
-                '<em>πλαγιά </em>→ πλάγ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>πλαγιά </em>→ πλάγ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4745,7 +4745,7 @@ export const globalArray = [
         base: "σύννεφο",
         groups: {
             morfology:
-                '<em>συννεφιά </em>→ σύννεφ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>συννεφιά </em>→ σύννεφ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4761,7 +4761,7 @@ export const globalArray = [
         base: "χρόνος",
         groups: {
             morfology:
-                '<em>χρονιά </em>→ χρόν<span style="color: #900101">ος</span> +<span style="color: #900101"> -ιά</span>',
+                '<em>χρονιά </em>→ χρόν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ιά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4777,9 +4777,9 @@ export const globalArray = [
         base: "άρχοντας",
         groups: {
             morfology:
-                '<em>αρχοντολόγι </em>→ άρχοντ<span style="color: #900101">ας</span> +<span style="color: #900101"> -ολόγι</span>',
+                '<em>αρχοντολόγι </em>→ άρχοντ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ολόγι</span>',
             etymology:
-                '<br>Either from Medieval Greek (<span style="color:#054728">ἀρχοντολόγιν</span> – nobility < <span style="color:#054728">ἄρχοντας</span> – lord, ruler, rich man) < Ancient Greek <span style="color:#054728">ἄρχων</span> – ruler, leader < <span style="color:#054728">ἄρχω</span> – to begin, lead, rule); <br>Or from Modern Greek <span style="color:#054728">ἀρχοντολόγιο</span> – book or list of nobles of a region < Katharevousa <span style="color:#054728">ἀρχοντολόγιον</span> < Medieval Greek <span style="color:#054728">ἀρχοντολόγιν</span> – nobility < Ancient Greek (<span style="color:#054728">ἄρχοντας</span> – lord, ruler, rich man < <span style="color:#054728">ἄρχων</span> – ruler, leader < <span style="color:#054728">ἄρχω</span> – to begin, lead, rule);',
+                '<br>Either from Medieval Greek (<span style="color:#7a9473">ἀρχοντολόγιν</span> – nobility < <span style="color:#7a9473">ἄρχοντας</span> – lord, ruler, rich man) < Ancient Greek <span style="color:#7a9473">ἄρχων</span> – ruler, leader < <span style="color:#7a9473">ἄρχω</span> – to begin, lead, rule); <br>Or from Modern Greek <span style="color:#7a9473">ἀρχοντολόγιο</span> – book or list of nobles of a region < Katharevousa <span style="color:#7a9473">ἀρχοντολόγιον</span> < Medieval Greek <span style="color:#7a9473">ἀρχοντολόγιν</span> – nobility < Ancient Greek (<span style="color:#7a9473">ἄρχοντας</span> – lord, ruler, rich man < <span style="color:#7a9473">ἄρχων</span> – ruler, leader < <span style="color:#7a9473">ἄρχω</span> – to begin, lead, rule);',
         },
         qws: ["nobility, rich people"],
         transls: ["From the word Άρχοντας — lord, ruler, rich man, archon"],
@@ -4793,7 +4793,7 @@ export const globalArray = [
         base: "συγγενής",
         groups: {
             morfology:
-                '<em>συγγενολόγι </em>→ συγγεν<span style="color: #900101">ής</span> +<span style="color: #900101"> -ολόγι</span>',
+                '<em>συγγενολόγι </em>→ συγγεν<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ολόγι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4809,7 +4809,7 @@ export const globalArray = [
         base: "κλέφτης",
         groups: {
             morfology:
-                '<em>κλεφτουριά </em>→ κλέφτ<span style="color: #900101">ης</span> +<span style="color: #900101"> -ουριά</span>',
+                '<em>κλεφτουριά </em>→ κλέφτ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ουριά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4825,7 +4825,7 @@ export const globalArray = [
         base: "λάσπη",
         groups: {
             morfology:
-                '<em>λασπουριά </em>→ λάσπ<span style="color: #900101">η</span> +<span style="color: #900101"> -ουριά</span>',
+                '<em>λασπουριά </em>→ λάσπ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ουριά</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4841,7 +4841,7 @@ export const globalArray = [
         base: "άδεια",
         groups: {
             morfology:
-                '<em>αδειούχος </em>→ άδει<span style="color: #900101">α</span> +<span style="color: #900101"> -ούχος</span>',
+                '<em>αδειούχος </em>→ άδει<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ούχος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4857,7 +4857,7 @@ export const globalArray = [
         base: "αξίωμα",
         groups: {
             morfology:
-                '<em>αξιωματούχος </em>→ αξίω<span style="color: #900101">μα</span> +<span style="color: #900101"> -ματούχος</span>',
+                '<em>αξιωματούχος </em>→ αξίω<span style="color: #b87333">μα</span> +<span style="color: #b87333"> -ματούχος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4873,7 +4873,7 @@ export const globalArray = [
         base: "πτυχίο",
         groups: {
             morfology:
-                '<em>πτυχιούχος </em>→ πτυχίο +<span style="color: #900101"> -ούχος</span>',
+                '<em>πτυχιούχος </em>→ πτυχίο +<span style="color: #b87333"> -ούχος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -4889,9 +4889,9 @@ export const globalArray = [
         base: "σύνταξη",
         groups: {
             morfology:
-                '<em>συνταξιούχος </em>→ σύνταξ<span style="color: #900101">η</span> +<span style="color: #900101"> -ιούχος</span>',
+                '<em>συνταξιούχος </em>→ σύνταξ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιούχος</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σύνταξη</span> – pension < Ancient Greek (<span style="color:#054728">σύνταξις</span> – order, arrangement, army, connection < <span style="color:#054728">συντάσσω</span> – to arrange, establish, connect)',
+                '<br>From Modern Greek <span style="color:#7a9473">σύνταξη</span> – pension < Ancient Greek (<span style="color:#7a9473">σύνταξις</span> – order, arrangement, army, connection < <span style="color:#7a9473">συντάσσω</span> – to arrange, establish, connect)',
         },
         qws: ["pensioner"],
         transls: ["From the word Σύνταξη — pension"],
@@ -4905,9 +4905,9 @@ export const globalArray = [
         base: "άγριος",
         groups: {
             morfology:
-                '<em>αγριάδα </em>→ άγρ<span style="color: #900101">ιος</span> +<span style="color: #900101"> -άδα</span>',
+                '<em>αγριάδα </em>→ άγρ<span style="color: #b87333">ιος</span> +<span style="color: #b87333"> -άδα</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">άγριος</span> – wild < Ancient Greek (<span style="color:#054728">ἄγριος</span> – wild < <span style="color:#054728">ἀγρός</span> – field, village)',
+                '<br>From Medieval Greek <span style="color:#7a9473">άγριος</span> – wild < Ancient Greek (<span style="color:#7a9473">ἄγριος</span> – wild < <span style="color:#7a9473">ἀγρός</span> – field, village)',
         },
         qws: ["wildness, savagery"],
         transls: ["From the word Άγριος — wild"],
@@ -4921,9 +4921,9 @@ export const globalArray = [
         base: "έξυπνος",
         groups: {
             morfology:
-                '<em>εξυπνάδα </em>→ έξυπν<span style="color: #900101">ος</span> +<span style="color: #900101"> -άδα</span>',
+                '<em>εξυπνάδα </em>→ έξυπν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -άδα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">έξυπνος</span> – smart < Medieval Greek <span style="color:#054728">ἔξυπνος</span> < Ancient Greek <span style="color:#054728">ἐξ</span> (out) + <span style="color:#054728">ὕπνος</span> – sleep',
+                '<br>From Modern Greek <span style="color:#7a9473">έξυπνος</span> – smart < Medieval Greek <span style="color:#7a9473">ἔξυπνος</span> < Ancient Greek <span style="color:#7a9473">ἐξ</span> (out) + <span style="color:#7a9473">ὕπνος</span> – sleep',
         },
         qws: ["cleverness, intelligence"],
         transls: ["From the word Έξυπνος — smart"],
@@ -4937,9 +4937,9 @@ export const globalArray = [
         base: "νόστιμος",
         groups: {
             morfology:
-                '<em>νοστιμάδα </em>→ νόστιμ<span style="color: #900101">ος</span> +<span style="color: #900101"> -άδα</span>',
+                '<em>νοστιμάδα </em>→ νόστιμ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -άδα</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">νοστιμάδα</span> < <span style="color:#054728">νόστιμος</span> – tasty) < Ancient Greek (<span style="color:#054728">νόστῐμος</span> – safe, bringing return, pleasant-tasting, juicy < <span style="color:#054728">νόστος</span> – return < <span style="color:#054728">νέομαι</span> – to go, return)',
+                '<br>From Medieval Greek (<span style="color:#7a9473">νοστιμάδα</span> < <span style="color:#7a9473">νόστιμος</span> – tasty) < Ancient Greek (<span style="color:#7a9473">νόστῐμος</span> – safe, bringing return, pleasant-tasting, juicy < <span style="color:#7a9473">νόστος</span> – return < <span style="color:#7a9473">νέομαι</span> – to go, return)',
         },
         qws: ["deliciousness, tastiness"],
         transls: ["From the word Νόστιμος — tasty"],
@@ -4953,9 +4953,9 @@ export const globalArray = [
         base: "σκληρός",
         groups: {
             morfology:
-                '<em>σκληράδα </em>→ σκληρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -άδα</span>',
+                '<em>σκληράδα </em>→ σκληρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -άδα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σκληρός</span> – hard, severe < Ancient Greek <span style="color:#054728">σκληρός</span>',
+                '<br>From Modern Greek <span style="color:#7a9473">σκληρός</span> – hard, severe < Ancient Greek <span style="color:#7a9473">σκληρός</span>',
         },
         qws: ["hardness, cruelty"],
         transls: ["From the word Σκληρός — hard, harsh, severe, cruel"],
@@ -4969,9 +4969,9 @@ export const globalArray = [
         base: "άσπρος",
         groups: {
             morfology:
-                '<em>ασπρίλα </em>→ άσπρ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ίλα</span>',
+                '<em>ασπρίλα </em>→ άσπρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίλα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">άσπρος</span> – white < Koine Greek <span style="color:#054728">ἄσπρος</span> < Latin <span style="color:#054728">asper</span> – rough, harsh, difficult',
+                '<br>From Modern Greek <span style="color:#7a9473">άσπρος</span> – white < Koine Greek <span style="color:#7a9473">ἄσπρος</span> < Latin <span style="color:#7a9473">asper</span> – rough, harsh, difficult',
         },
         qws: ["whiteness"],
         transls: ["From the word Άσπρος — white"],
@@ -4985,9 +4985,9 @@ export const globalArray = [
         base: "κόκκινος",
         groups: {
             morfology:
-                '<em>κοκκινίλα </em>→ κόκκιν<span style="color: #900101">ος</span> +<span style="color: #900101"> -ίλα</span>',
+                '<em>κοκκινίλα </em>→ κόκκιν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίλα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κόκκινος</span> – red < Koine Greek <span style="color:#054728">κόκκινος</span> < Ancient Greek <span style="color:#054728">κόκκος</span> – grain, seed',
+                '<br>From Modern Greek <span style="color:#7a9473">κόκκινος</span> – red < Koine Greek <span style="color:#7a9473">κόκκινος</span> < Ancient Greek <span style="color:#7a9473">κόκκος</span> – grain, seed',
         },
         qws: ["redness"],
         transls: ["From the word Κόκκινος — red"],
@@ -5001,9 +5001,9 @@ export const globalArray = [
         base: "μαύρος",
         groups: {
             morfology:
-                '<em>μαυρίλα </em>→ μαύρ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ίλα</span>',
+                '<em>μαυρίλα </em>→ μαύρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ίλα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">μαύρος</span> – black < Ancient Greek <span style="color:#054728">μαυρός</span> – dark, dim',
+                '<br>From Modern Greek <span style="color:#7a9473">μαύρος</span> – black < Ancient Greek <span style="color:#7a9473">μαυρός</span> – dark, dim',
         },
         qws: ["blackness"],
         transls: ["From the word Μαύρος — black"],
@@ -5017,9 +5017,9 @@ export const globalArray = [
         base: "σάπιος",
         groups: {
             morfology:
-                '<em>σαπίλα </em>→ σάπ<span style="color: #900101">ιος</span> +<span style="color: #900101"> -ίλα</span>',
+                '<em>σαπίλα </em>→ σάπ<span style="color: #b87333">ιος</span> +<span style="color: #b87333"> -ίλα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σάπιος</span> – rotten < Medieval Greek (<span style="color:#054728">σάπιος</span> < <span style="color:#054728">σαπίζω</span> – to rot) < Ancient Greek <span style="color:#054728">σήπομαι</span> – to rot',
+                '<br>From Modern Greek <span style="color:#7a9473">σάπιος</span> – rotten < Medieval Greek (<span style="color:#7a9473">σάπιος</span> < <span style="color:#7a9473">σαπίζω</span> – to rot) < Ancient Greek <span style="color:#7a9473">σήπομαι</span> – to rot',
         },
         qws: ["rottenness"],
         transls: ["From the word Σάπιος — rotten"],
@@ -5033,7 +5033,7 @@ export const globalArray = [
         base: "αγράμματος",
         groups: {
             morfology:
-                '<em>αγραμματοσύνη </em>→ αγράμματ<span style="color: #900101">ος</span> +<span style="color: #900101"> -οσύνη</span>',
+                '<em>αγραμματοσύνη </em>→ αγράμματ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -οσύνη</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5049,7 +5049,7 @@ export const globalArray = [
         base: "καλός",
         groups: {
             morfology:
-                '<em>καλοσύνη </em>→ καλ<span style="color: #900101">ός</span> +<span style="color: #900101"> -οσύνη</span>',
+                '<em>καλοσύνη </em>→ καλ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -οσύνη</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5065,7 +5065,7 @@ export const globalArray = [
         base: "αβέβαιος",
         groups: {
             morfology:
-                '<em>αβεβαιότητα </em>→ αβέβαι<span style="color: #900101">ος</span> +<span style="color: #900101"> -ότητα</span>',
+                '<em>αβεβαιότητα </em>→ αβέβαι<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ότητα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5081,7 +5081,7 @@ export const globalArray = [
         base: "αθώος",
         groups: {
             morfology:
-                '<em>αθωότητα </em>→ αθώ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ότητα</span>',
+                '<em>αθωότητα </em>→ αθώ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ότητα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5097,7 +5097,7 @@ export const globalArray = [
         base: "γενναίος",
         groups: {
             morfology:
-                '<em>γενναιότητα </em>→ γενναί<span style="color: #900101">ος</span> +<span style="color: #900101"> -ότητα</span>',
+                '<em>γενναιότητα </em>→ γενναί<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ότητα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5113,9 +5113,9 @@ export const globalArray = [
         base: "σεμνός",
         groups: {
             morfology:
-                '<em>σεμνότητα </em>→ σεμν<span style="color: #900101">ός</span> +<span style="color: #900101"> -ότητα</span>',
+                '<em>σεμνότητα </em>→ σεμν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ότητα</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">σεμνότης</span> – solemnity < <span style="color:#054728">σεμνός</span> – revered < <span style="color:#054728">σέβομαι</span> – to respect)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">σεμνότης</span> – solemnity < <span style="color:#7a9473">σεμνός</span> – revered < <span style="color:#7a9473">σέβομαι</span> – to respect)',
         },
         qws: ["modesty, decency"],
         transls: ["From the word Σεμνός — modest"],
@@ -5129,9 +5129,9 @@ export const globalArray = [
         base: "τίμιος",
         groups: {
             morfology:
-                '<em>τιμιότητα </em>→ τίμι<span style="color: #900101">ος</span> +<span style="color: #900101"> -ότητα</span>',
+                '<em>τιμιότητα </em>→ τίμι<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ότητα</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">τιμιότης</span> – honesty < <span style="color:#054728">τίμιος</span> – honest)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">τιμιότης</span> – honesty < <span style="color:#7a9473">τίμιος</span> – honest)',
         },
         qws: ["honesty"],
         transls: ["From the word Τίμιος — honest"],
@@ -5145,9 +5145,9 @@ export const globalArray = [
         base: "τρυφερός",
         groups: {
             morfology:
-                '<em>τρυφερότητα </em>→ τρυφερ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ότητα</span>',
+                '<em>τρυφερότητα </em>→ τρυφερ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ότητα</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">τρυφερότης</span> – tenderness, delicacy < <span style="color:#054728">τρυφερός</span> – tender, luxurious < <span style="color:#054728">τρυφή</span> – luxury, enjoyment)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">τρυφερότης</span> – tenderness, delicacy < <span style="color:#7a9473">τρυφερός</span> – tender, luxurious < <span style="color:#7a9473">τρυφή</span> – luxury, enjoyment)',
         },
         qws: ["tenderness"],
         transls: ["From the word Τρυφερός — tender"],
@@ -5161,9 +5161,9 @@ export const globalArray = [
         base: "βαρύς",
         groups: {
             morfology:
-                '<em>βαρύτητα </em>→ βαρ<span style="color: #900101">ύς</span> +<span style="color: #900101"> -ύτητα</span>',
+                '<em>βαρύτητα </em>→ βαρ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -ύτητα</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">βᾰρύτης</span> – weight, arrogance < <span style="color:#054728">βᾰρύς</span> – heavy)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">βᾰρύτης</span> – weight, arrogance < <span style="color:#7a9473">βᾰρύς</span> – heavy)',
         },
         qws: ["weight, seriousness, gravity"],
         transls: ["From the word Βαρύς — heavy, serious"],
@@ -5177,9 +5177,9 @@ export const globalArray = [
         base: "ταχύς",
         groups: {
             morfology:
-                '<em>ταχύτητα </em>→ ταχ<span style="color: #900101">ύς</span> +<span style="color: #900101"> -ύτητα</span>',
+                '<em>ταχύτητα </em>→ ταχ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -ύτητα</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ταχυτής</span> – speed < <span style="color:#054728">τᾰχύς</span> – fast)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ταχυτής</span> – speed < <span style="color:#7a9473">τᾰχύς</span> – fast)',
         },
         qws: ["speed"],
         transls: ["From the word Ταχύς — fast"],
@@ -5193,9 +5193,9 @@ export const globalArray = [
         base: "άδικος",
         groups: {
             morfology:
-                '<em>αδικία </em>→ άδικ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ία</span>',
+                '<em>αδικία </em>→ άδικ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀδικία</span> < <span style="color:#054728">ἄδικος</span> – unjust < <span style="color:#054728">ἀ-</span> (negation) + <span style="color:#054728">δίκη</span> – justice)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀδικία</span> < <span style="color:#7a9473">ἄδικος</span> – unjust < <span style="color:#7a9473">ἀ-</span> (negation) + <span style="color:#7a9473">δίκη</span> – justice)',
         },
         qws: ["injustice"],
         transls: ["From the word Άδικος — unjust"],
@@ -5209,9 +5209,9 @@ export const globalArray = [
         base: "άυπνος",
         groups: {
             morfology:
-                '<em>αϋπνία </em>→ άυπν<span style="color: #900101">ος</span> +<span style="color: #900101"> -ία</span>',
+                '<em>αϋπνία </em>→ άυπν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ία</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀϋπνία</span> < <span style="color:#054728">ἀ-</span> (negation) + <span style="color:#054728">ὕπνος</span> – sleep)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀϋπνία</span> < <span style="color:#7a9473">ἀ-</span> (negation) + <span style="color:#7a9473">ὕπνος</span> – sleep)',
         },
         qws: ["insomnia"],
         transls: ["From the word Άυπνος — sleepless"],
@@ -5225,7 +5225,7 @@ export const globalArray = [
         base: "ξηρός",
         groups: {
             morfology:
-                '<em>ξηρασία </em>→ ξηρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ασία</span>',
+                '<em>ξηρασία </em>→ ξηρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ασία</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5241,9 +5241,9 @@ export const globalArray = [
         base: "προδοτικός",
         groups: {
             morfology:
-                '<em>προδοσία </em>→ προδο<span style="color: #900101">τικός</span> +<span style="color: #900101"> -σία</span>',
+                '<em>προδοσία </em>→ προδο<span style="color: #b87333">τικός</span> +<span style="color: #b87333"> -σία</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">προδοσία</span> < <span style="color:#054728">προδοτικός</span> – treacherous)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">προδοσία</span> < <span style="color:#7a9473">προδοτικός</span> – treacherous)',
         },
         qws: ["betrayal"],
         transls: ["From the word Προδοτικός — treacherous"],
@@ -5257,9 +5257,9 @@ export const globalArray = [
         base: "συνήθης",
         groups: {
             morfology:
-                '<em>συνήθεια </em>→ συνήθ<span style="color: #900101">ης</span> +<span style="color: #900101"> -εία</span>',
+                '<em>συνήθεια </em>→ συνήθ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -εία</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">συνήθεια</span> < <span style="color:#054728">συνήθης</span> – accustomed < <span style="color:#054728">συν</span> + <span style="color:#054728">ἦθος</span> – character, custom < <span style="color:#054728">ἔθος</span> – habit, custom < <span style="color:#054728">ἔθω</span> – to be accustomed)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">συνήθεια</span> < <span style="color:#7a9473">συνήθης</span> – accustomed < <span style="color:#7a9473">συν</span> + <span style="color:#7a9473">ἦθος</span> – character, custom < <span style="color:#7a9473">ἔθος</span> – habit, custom < <span style="color:#7a9473">ἔθω</span> – to be accustomed)',
         },
         qws: ["habit, custom"],
         transls: ["From the word Συνήθης — accustomed"],
@@ -5273,7 +5273,7 @@ export const globalArray = [
         base: "αλμυρός",
         groups: {
             morfology:
-                '<em>αλμύρα </em>→ αλμυρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -α</span>',
+                '<em>αλμύρα </em>→ αλμυρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5289,7 +5289,7 @@ export const globalArray = [
         base: "γλυκός",
         groups: {
             morfology:
-                '<em>γλύκα </em>→ γλυκ<span style="color: #900101">ός</span> +<span style="color: #900101"> -α</span>',
+                '<em>γλύκα </em>→ γλυκ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5305,9 +5305,9 @@ export const globalArray = [
         base: "ζεστός",
         groups: {
             morfology:
-                '<em>ζέστη </em>→ ζεστ<span style="color: #900101">ός</span> +<span style="color: #900101"> -α</span>',
+                '<em>ζέστη </em>→ ζεστ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -α</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ζέστη</span> < Koine Greek <span style="color:#054728">ζεστός</span> – hot < Ancient Greek <span style="color:#054728">ζέω</span> – to boil, seethe.',
+                '<br>From Medieval Greek <span style="color:#7a9473">ζέστη</span> < Koine Greek <span style="color:#7a9473">ζεστός</span> – hot < Ancient Greek <span style="color:#7a9473">ζέω</span> – to boil, seethe.',
         },
         qws: ["heat, warmth"],
         transls: ["From the word Ζεστός — hot, warm"],
@@ -5321,7 +5321,7 @@ export const globalArray = [
         base: "ζωγραφικός",
         groups: {
             morfology:
-                '<em>ζωγραφική </em>→ ζωγραφικ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ή</span>',
+                '<em>ζωγραφική </em>→ ζωγραφικ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5337,7 +5337,7 @@ export const globalArray = [
         base: "ξερός",
         groups: {
             morfology:
-                '<em>ξέρα </em>→ ξερ<span style="color: #900101">ός</span> +<span style="color: #900101"> -α</span>',
+                '<em>ξέρα </em>→ ξερ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5353,7 +5353,7 @@ export const globalArray = [
         base: "πικρός",
         groups: {
             morfology:
-                '<em>πίκρα </em>→ πικρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -α</span>',
+                '<em>πίκρα </em>→ πικρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5369,7 +5369,7 @@ export const globalArray = [
         base: "φοβερός",
         groups: {
             morfology:
-                '<em>φοβέρα </em>→ φοβερ<span style="color: #900101">ός</span> +<span style="color: #900101"> -α</span>',
+                '<em>φοβέρα </em>→ φοβερ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5385,7 +5385,7 @@ export const globalArray = [
         base: "ψυχρός",
         groups: {
             morfology:
-                '<em>ψύχρα </em>→ ψυχρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -α</span>',
+                '<em>ψύχρα </em>→ ψυχρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -5401,9 +5401,9 @@ export const globalArray = [
         base: "ανταγωνίζομαι",
         groups: {
             morfology:
-                '<em>ανταγωνιστής </em>→ ανταγων +<span style="color: #900101"> -ιστής</span>',
+                '<em>ανταγωνιστής </em>→ ανταγων +<span style="color: #b87333"> -ιστής</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">ἀνταγωνίζομαι</span> – to compete < <span style="color:#054728">ἀγωνίζομαι</span> – to compete < <span style="color:#054728">ἀγών</span> – assembly < <span style="color:#054728">ἄγω</span> – to lead.',
+                '<br>From Ancient Greek <span style="color:#7a9473">ἀνταγωνίζομαι</span> – to compete < <span style="color:#7a9473">ἀγωνίζομαι</span> – to compete < <span style="color:#7a9473">ἀγών</span> – assembly < <span style="color:#7a9473">ἄγω</span> – to lead.',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5419,9 +5419,9 @@ export const globalArray = [
         base: "βιάζω",
         groups: {
             morfology:
-                '<em>βιαστής </em>→ βιάζ<span style="color: #900101">ω</span> +<span style="color: #900101"> -της</span>',
+                '<em>βιαστής </em>→ βιάζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -της</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">βιάζω</span> – to use force < <span style="color:#054728">βία</span> – force, violence.',
+                '<br>From Ancient Greek <span style="color:#7a9473">βιάζω</span> – to use force < <span style="color:#7a9473">βία</span> – force, violence.',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5437,9 +5437,9 @@ export const globalArray = [
         base: "εκδίδω",
         groups: {
             morfology:
-                '<em>εκδότης </em>→ εκδ<span style="color: #900101">ίδω</span> +<span style="color: #900101"> -ότης</span>',
+                '<em>εκδότης </em>→ εκδ<span style="color: #b87333">ίδω</span> +<span style="color: #b87333"> -ότης</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">εκδίδω</span> – to publish.',
+                '<br>From Modern Greek <span style="color:#7a9473">εκδίδω</span> – to publish.',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5455,9 +5455,9 @@ export const globalArray = [
         base: "ενθουσιάζω",
         groups: {
             morfology:
-                '<em>ενθουσιαστής </em>→ ενθουσιάζ<span style="color: #900101">ω</span> +<span style="color: #900101"> -της</span>',
+                '<em>ενθουσιαστής </em>→ ενθουσιάζ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -της</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ενθουσιάζω</span> – to be inspired < Ancient Greek (<span style="color:#054728">ἐνθουσιάζω</span> < <span style="color:#054728">ἔνθους</span> – inspired, enthusiastic < <span style="color:#054728">ἔνθεος</span> – inspired < <span style="color:#054728">ἐν</span> + <span style="color:#054728">θεός</span> – with God).',
+                '<br>From Modern Greek <span style="color:#7a9473">ενθουσιάζω</span> – to be inspired < Ancient Greek (<span style="color:#7a9473">ἐνθουσιάζω</span> < <span style="color:#7a9473">ἔνθους</span> – inspired, enthusiastic < <span style="color:#7a9473">ἔνθεος</span> – inspired < <span style="color:#7a9473">ἐν</span> + <span style="color:#7a9473">θεός</span> – with God).',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5473,9 +5473,9 @@ export const globalArray = [
         base: "επενδύω",
         groups: {
             morfology:
-                '<em>επενδυτής </em>→ επενδύ<span style="color: #900101">ω</span> +<span style="color: #900101"> -τής</span>',
+                '<em>επενδυτής </em>→ επενδύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τής</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">ἐπενδύτης</span> < <span style="color:#054728">ἐπενδύω</span> – to put on < <span style="color:#054728">ἐνδύω</span> – to dress, enter < <span style="color:#054728">δύω</span> – to enter.',
+                '<br>From Ancient Greek <span style="color:#7a9473">ἐπενδύτης</span> < <span style="color:#7a9473">ἐπενδύω</span> – to put on < <span style="color:#7a9473">ἐνδύω</span> – to dress, enter < <span style="color:#7a9473">δύω</span> – to enter.',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5491,9 +5491,9 @@ export const globalArray = [
         base: "επισκέπτομαι",
         groups: {
             morfology:
-                '<em>επισκέπτης </em>→ επισκέπτ<span style="color: #900101">ομαι</span> +<span style="color: #900101"> -της</span>',
+                '<em>επισκέπτης </em>→ επισκέπτ<span style="color: #b87333">ομαι</span> +<span style="color: #b87333"> -της</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἐπισκέπτης</span> < <span style="color:#054728">ἐπισκέπτομαι</span> — to visit < <span style="color:#054728">σκέπτομαι</span> – to look, observe).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἐπισκέπτης</span> < <span style="color:#7a9473">ἐπισκέπτομαι</span> — to visit < <span style="color:#7a9473">σκέπτομαι</span> – to look, observe).',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5509,7 +5509,7 @@ export const globalArray = [
         base: "θερίζω",
         groups: {
             morfology:
-                '<em>θεριστής </em>→ θερ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ιστης</span>',
+                '<em>θεριστής </em>→ θερ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιστης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5527,9 +5527,9 @@ export const globalArray = [
         base: "καπνίζω",
         groups: {
             morfology:
-                '<em>καπνιστής </em>→ καπν<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ιστης</span>',
+                '<em>καπνιστής </em>→ καπν<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιστης</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">καπνίζω</span> – to smoke < <span style="color:#054728">καπνός</span> – smoke)',
+                '<br>From Modern Greek (<span style="color:#7a9473">καπνίζω</span> – to smoke < <span style="color:#7a9473">καπνός</span> – smoke)',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5545,9 +5545,9 @@ export const globalArray = [
         base: "λυτρώνω",
         groups: {
             morfology:
-                '<em>λυτρωτής </em>→ λυτρ<span style="color: #900101">ώνω</span> +<span style="color: #900101"> -ωτης</span>',
+                '<em>λυτρωτής </em>→ λυτρ<span style="color: #b87333">ώνω</span> +<span style="color: #b87333"> -ωτης</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">λυτρωτής</span> < Ancient Greek <span style="color:#054728">λυτρόω</span> – to redeem, release < <span style="color:#054728">λύτρον</span> – ransom, redemption < <span style="color:#054728">λύω</span> – to release + <span style="color:#054728">-τρον</span> (instrumental suffix).',
+                '<br>From Koine Greek <span style="color:#7a9473">λυτρωτής</span> < Ancient Greek <span style="color:#7a9473">λυτρόω</span> – to redeem, release < <span style="color:#7a9473">λύτρον</span> – ransom, redemption < <span style="color:#7a9473">λύω</span> – to release + <span style="color:#7a9473">-τρον</span> (instrumental suffix).',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5563,9 +5563,9 @@ export const globalArray = [
         base: "νικάω",
         groups: {
             morfology:
-                '<em>νικητής </em>→ νικ<span style="color: #900101">άω</span> +<span style="color: #900101"> -ητης</span>',
+                '<em>νικητής </em>→ νικ<span style="color: #b87333">άω</span> +<span style="color: #b87333"> -ητης</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">νικητής</span> < <span style="color:#054728">νικάω, νικῶ</span> – to win < <span style="color:#054728">νίκη</span> – victory)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">νικητής</span> < <span style="color:#7a9473">νικάω, νικῶ</span> – to win < <span style="color:#7a9473">νίκη</span> – victory)',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5581,9 +5581,9 @@ export const globalArray = [
         base: "παίζω",
         groups: {
             morfology:
-                '<em>παίχτης </em>→ παίζω, παίχ<span style="color: #900101">τηκα</span> +<span style="color: #900101"> -της</span>',
+                '<em>παίχτης </em>→ παίζω, παίχ<span style="color: #b87333">τηκα</span> +<span style="color: #b87333"> -της</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">παίκτης</span> < Ancient Greek (<span style="color:#054728">παίκτης</span> < <span style="color:#054728">παίζω</span> – to play < <span style="color:#054728">παῖς</span> – child)',
+                '<br>From Modern Greek <span style="color:#7a9473">παίκτης</span> < Ancient Greek (<span style="color:#7a9473">παίκτης</span> < <span style="color:#7a9473">παίζω</span> – to play < <span style="color:#7a9473">παῖς</span> – child)',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5599,9 +5599,9 @@ export const globalArray = [
         base: "ποιώ",
         groups: {
             morfology:
-                '<em>ποιητής </em>→ ποι<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητής</span>',
+                '<em>ποιητής </em>→ ποι<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητής</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">ποιητής</span> < <span style="color:#054728">ποιέω</span>, <span style="color:#054728">ποιῶ</span> – to make, create.',
+                '<br>From Ancient Greek <span style="color:#7a9473">ποιητής</span> < <span style="color:#7a9473">ποιέω</span>, <span style="color:#7a9473">ποιῶ</span> – to make, create.',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5617,9 +5617,9 @@ export const globalArray = [
         base: "πολεμώ",
         groups: {
             morfology:
-                '<em>πολεμιστής </em>→ πολεμ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ιστής</span>',
+                '<em>πολεμιστής </em>→ πολεμ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ιστής</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">πολεμῶ</span>, <span style="color:#054728">πολεμέω</span> – to wage war < <span style="color:#054728">πόλεμος</span> – war).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">πολεμῶ</span>, <span style="color:#7a9473">πολεμέω</span> – to wage war < <span style="color:#7a9473">πόλεμος</span> – war).',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5635,9 +5635,9 @@ export const globalArray = [
         base: "προγραμματίζω",
         groups: {
             morfology:
-                '<em>προγραμματιστής </em>→ προγραμματ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ιστης</span>',
+                '<em>προγραμματιστής </em>→ προγραμματ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιστης</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">προγραμματίζω</span> – to program < French <span style="color:#054728">programmer</span> or English <span style="color:#054728">program</span>.',
+                '<br>From Modern Greek <span style="color:#7a9473">προγραμματίζω</span> – to program < French <span style="color:#7a9473">programmer</span> or English <span style="color:#7a9473">program</span>.',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5653,7 +5653,7 @@ export const globalArray = [
         base: "προδίδω",
         groups: {
             morfology:
-                '<em>προδότης </em>→ προδ<span style="color: #900101">ίδω</span> +<span style="color: #900101"> -ότης</span>',
+                '<em>προδότης </em>→ προδ<span style="color: #b87333">ίδω</span> +<span style="color: #b87333"> -ότης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5671,7 +5671,7 @@ export const globalArray = [
         base: "προπονώ",
         groups: {
             morfology:
-                '<em>προπονητής </em>→ προπον<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητής</span>',
+                '<em>προπονητής </em>→ προπον<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5689,7 +5689,7 @@ export const globalArray = [
         base: "ράβω",
         groups: {
             morfology:
-                '<em>ράφτης </em>→ ράβ<span style="color: #900101">ω</span> +<span style="color: #900101"> -της</span>',
+                '<em>ράφτης </em>→ ράβ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -της</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5707,7 +5707,7 @@ export const globalArray = [
         base: "συλλέγω",
         groups: {
             morfology:
-                '<em>συλλέκτης </em>→ συλλέγ<span style="color: #900101">ω</span> +<span style="color: #900101"> -της</span>',
+                '<em>συλλέκτης </em>→ συλλέγ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -της</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5725,7 +5725,7 @@ export const globalArray = [
         base: "τραγουδώ",
         groups: {
             morfology:
-                '<em>τραγουδιστής </em>→ τραγουδ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ιστής</span>',
+                '<em>τραγουδιστής </em>→ τραγουδ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ιστής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5743,7 +5743,7 @@ export const globalArray = [
         base: "υφαίνω",
         groups: {
             morfology:
-                '<em>υφαντής </em>→ υφαίν<span style="color: #900101">ω</span> +<span style="color: #900101"> -της</span>',
+                '<em>υφαντής </em>→ υφαίν<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -της</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5761,7 +5761,7 @@ export const globalArray = [
         base: "φορτώνω",
         groups: {
             morfology:
-                '<em>φορτωτής </em>→ φορτώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -τής</span>',
+                '<em>φορτωτής </em>→ φορτώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -τής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5779,7 +5779,7 @@ export const globalArray = [
         base: "άνθρωπος",
         groups: {
             morfology:
-                '<em>ανθρωπιστής </em>→ άνθρωπ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ιστής</span>',
+                '<em>ανθρωπιστής </em>→ άνθρωπ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ιστής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5797,9 +5797,9 @@ export const globalArray = [
         base: "εγώ",
         groups: {
             morfology:
-                '<em>εγωιστής </em>→ εγ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ιστής</span>',
+                '<em>εγωιστής </em>→ εγ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ιστής</span>',
             etymology:
-                '<br>From French <span style="color:#054728">égoïste</span> < Ancient Greek <span style="color:#054728">ἐγώ</span> – I.',
+                '<br>From French <span style="color:#7a9473">égoïste</span> < Ancient Greek <span style="color:#7a9473">ἐγώ</span> – I.',
             aplication:
                 "<br>Nouns in -της, -ιστης, -ότης denote the doer of an action and are formed mainly from verbs. With the same meaning, nouns in -(ά)τορας and -έας, -ιάς are also formed.",
         },
@@ -5815,7 +5815,7 @@ export const globalArray = [
         base: "γέροντας",
         groups: {
             morfology:
-                '<em>γεροντάκος </em>→ γέροντ<span style="color: #900101">ας</span> +<span style="color: #900101"> -άκος</span>',
+                '<em>γεροντάκος </em>→ γέροντ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -άκος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5833,7 +5833,7 @@ export const globalArray = [
         base: "δρόμος",
         groups: {
             morfology:
-                '<em>δρομάκος </em>→ δρόμ<span style="color: #900101">ος</span> +<span style="color: #900101"> -άκος</span>',
+                '<em>δρομάκος </em>→ δρόμ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -άκος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5851,7 +5851,7 @@ export const globalArray = [
         base: "μαθητής",
         groups: {
             morfology:
-                '<em>μαθητάκος </em>→ μαθητ<span style="color: #900101">ής</span> +<span style="color: #900101"> -άκος</span>',
+                '<em>μαθητάκος </em>→ μαθητ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -άκος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5869,7 +5869,7 @@ export const globalArray = [
         base: "γιώργος",
         groups: {
             morfology:
-                '<em>γιωργάκης </em>→ γιώργ<span style="color: #900101">ος</span> +<span style="color: #900101"> -άκης</span>',
+                '<em>γιωργάκης </em>→ γιώργ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -άκης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5887,7 +5887,7 @@ export const globalArray = [
         base: "κόσμος",
         groups: {
             morfology:
-                '<em>κοσμάκης </em>→ κόσμ<span style="color: #900101">ος</span> +<span style="color: #900101"> -άκης</span>',
+                '<em>κοσμάκης </em>→ κόσμ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -άκης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5905,9 +5905,9 @@ export const globalArray = [
         base: "αρνί",
         groups: {
             morfology:
-                '<em>αρνάκι </em>→ αρν<span style="color: #900101">ί</span> +<span style="color: #900101"> -άκι</span>',
+                '<em>αρνάκι </em>→ αρν<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άκι</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">αρνί</span> – lamb < Medieval Greek <span style="color:#054728">ἀρνίν</span> – lamb < Ancient Greek (<span style="color:#054728">ἀρνίον</span> – lamb < <span style="color:#054728">ἀρήν</span> – ram)',
+                '<br>From Modern Greek <span style="color:#7a9473">αρνί</span> – lamb < Medieval Greek <span style="color:#7a9473">ἀρνίν</span> – lamb < Ancient Greek (<span style="color:#7a9473">ἀρνίον</span> – lamb < <span style="color:#7a9473">ἀρήν</span> – ram)',
             aplication:
                 "<br>Nouns in -άκος, -άκης, -άκι are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -ίτσα, -ούδα, -ούδι, -ούλης, -ουλα, -ούλι and -όπουλο, -οπούλα are also formed.",
         },
@@ -5923,7 +5923,7 @@ export const globalArray = [
         base: "δάχτυλο",
         groups: {
             morfology:
-                '<em>δαχτυλάκι </em>→ δάχτυλ<span style="color: #900101">ο</span> +<span style="color: #900101"> -άκι</span>',
+                '<em>δαχτυλάκι </em>→ δάχτυλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -άκι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5941,7 +5941,7 @@ export const globalArray = [
         base: "παιδί",
         groups: {
             morfology:
-                '<em>παιδάκι </em>→ παιδ<span style="color: #900101">ί</span> +<span style="color: #900101"> -άκι</span>',
+                '<em>παιδάκι </em>→ παιδ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άκι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5959,9 +5959,9 @@ export const globalArray = [
         base: "ψάρι",
         groups: {
             morfology:
-                '<em>ψαράκι </em>→ ψάρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -άκι</span>',
+                '<em>ψαράκι </em>→ ψάρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -άκι</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ψάρι</span> – fish < Medieval Greek <span style="color:#054728">ψάρι</span> – fish < Ancient Greek (<span style="color:#054728">ὀψάριον</span> – delicacy < <span style="color:#054728">ὄψον</span> – delicacy).',
+                '<br>From Modern Greek <span style="color:#7a9473">ψάρι</span> – fish < Medieval Greek <span style="color:#7a9473">ψάρι</span> – fish < Ancient Greek (<span style="color:#7a9473">ὀψάριον</span> – delicacy < <span style="color:#7a9473">ὄψον</span> – delicacy).',
             aplication:
                 "<br>Nouns in -άκος, -άκης, -άκι are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -ίτσα, -ούδα, -ούδι, -ούλης, -ουλα, -ούλι and -όπουλο, -οπούλα are also formed.",
         },
@@ -5977,7 +5977,7 @@ export const globalArray = [
         base: "ελένη",
         groups: {
             morfology:
-                '<em>ελενίτσα </em>→ ελέν<span style="color: #900101">η</span> +<span style="color: #900101"> -ίτσα</span>',
+                '<em>ελενίτσα </em>→ ελέν<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ίτσα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -5995,9 +5995,9 @@ export const globalArray = [
         base: "κλωστή",
         groups: {
             morfology:
-                '<em>κλωστίτσα </em>→ κλωστ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ίτσα</span>',
+                '<em>κλωστίτσα </em>→ κλωστ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ίτσα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κλωστή</span> – thread < Medieval Greek <span style="color:#054728">κλωστή</span> < Ancient Greek (<span style="color:#054728">κλώθω</span> – to spin < <span style="color:#054728">κάλαθος</span> – basket, wicker)',
+                '<br>From Modern Greek <span style="color:#7a9473">κλωστή</span> – thread < Medieval Greek <span style="color:#7a9473">κλωστή</span> < Ancient Greek (<span style="color:#7a9473">κλώθω</span> – to spin < <span style="color:#7a9473">κάλαθος</span> – basket, wicker)',
             aplication:
                 "<br>Nouns in -ίτσα are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -άκος, -άκης, -άκι, -ούδα, -ούδι, -ούλης, -ουλα, -ούλι and -όπουλο, -οπούλα are also formed.",
         },
@@ -6013,9 +6013,9 @@ export const globalArray = [
         base: "μήλο",
         groups: {
             morfology:
-                '<em>μηλίτσα </em>→ μήλ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ίτσα</span>',
+                '<em>μηλίτσα </em>→ μήλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ίτσα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">μήλο</span> – apple < Ancient Greek <span style="color:#054728">μῆλον</span> – apple.',
+                '<br>From Modern Greek <span style="color:#7a9473">μήλο</span> – apple < Ancient Greek <span style="color:#7a9473">μῆλον</span> – apple.',
             aplication:
                 "<br>Nouns in -ίτσα are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -άκος, -άκης, -άκι, -ούδα, -ούδι, -ούλης, -ουλα, -ούλι and -όπουλο, -οπούλα are also formed.",
         },
@@ -6031,7 +6031,7 @@ export const globalArray = [
         base: "άγγελος",
         groups: {
             morfology:
-                '<em>αγγελούδι </em>→ άγγελ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ούδι</span>',
+                '<em>αγγελούδι </em>→ άγγελ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ούδι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6049,7 +6049,7 @@ export const globalArray = [
         base: "κοπέλα",
         groups: {
             morfology:
-                '<em>κοπελούδα </em>→ κοπέλ<span style="color: #900101">α</span> +<span style="color: #900101"> -ούδα</span>',
+                '<em>κοπελούδα </em>→ κοπέλ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ούδα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6067,7 +6067,7 @@ export const globalArray = [
         base: "αδερφός",
         groups: {
             morfology:
-                '<em>αδερφούλης </em>→ αδερφ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ούλης</span>',
+                '<em>αδερφούλης </em>→ αδερφ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ούλης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6085,7 +6085,7 @@ export const globalArray = [
         base: "παππούς",
         groups: {
             morfology:
-                '<em>παππούλης </em>→ παππ<span style="color: #900101">ούς</span> +<span style="color: #900101"> -ούλης</span>',
+                '<em>παππούλης </em>→ παππ<span style="color: #b87333">ούς</span> +<span style="color: #b87333"> -ούλης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6103,7 +6103,7 @@ export const globalArray = [
         base: "αγγελίκα",
         groups: {
             morfology:
-                '<em>αγγελικούλα </em>→ αγγελ<span style="color: #900101">ίκα</span> +<span style="color: #900101"> -ούλα</span>',
+                '<em>αγγελικούλα </em>→ αγγελ<span style="color: #b87333">ίκα</span> +<span style="color: #b87333"> -ούλα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6121,7 +6121,7 @@ export const globalArray = [
         base: "αδερφή",
         groups: {
             morfology:
-                '<em>αδερφούλα </em>→ αδερφ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ούλα</span>',
+                '<em>αδερφούλα </em>→ αδερφ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ούλα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6139,7 +6139,7 @@ export const globalArray = [
         base: "βρύση",
         groups: {
             morfology:
-                '<em>βρυσούλα </em>→ βρύσ<span style="color: #900101">η</span> +<span style="color: #900101"> -ούλα</span>',
+                '<em>βρυσούλα </em>→ βρύσ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ούλα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6157,7 +6157,7 @@ export const globalArray = [
         base: "κόρη",
         groups: {
             morfology:
-                '<em>κορούλα </em>→ κόρ<span style="color: #900101">η</span> +<span style="color: #900101"> -ούλα</span>',
+                '<em>κορούλα </em>→ κόρ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ούλα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6175,7 +6175,7 @@ export const globalArray = [
         base: "μητέρα",
         groups: {
             morfology:
-                '<em>μητερούλα </em>→ μητέρ<span style="color: #900101">α</span> +<span style="color: #900101"> -ούλα</span>',
+                '<em>μητερούλα </em>→ μητέρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ούλα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6193,7 +6193,7 @@ export const globalArray = [
         base: "σακί",
         groups: {
             morfology:
-                '<em>σακούλι </em>→ σακ<span style="color: #900101">ί</span> +<span style="color: #900101"> -ούλι</span>',
+                '<em>σακούλι </em>→ σακ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -ούλι</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6211,9 +6211,9 @@ export const globalArray = [
         base: "άρχοντας",
         groups: {
             morfology:
-                '<em>αρχοντόπουλο, αρχοντοπούλα </em>→ άρχοντ<span style="color: #900101">ας</span> +<span style="color: #900101"> -όπουλο</span>/<span style="color: #900101">-οπούλα</span>',
+                '<em>αρχοντόπουλο, αρχοντοπούλα </em>→ άρχοντ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -όπουλο</span>/<span style="color: #b87333">-οπούλα</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">ἄρχοντας</span> – lord, ruler, rich man < Ancient Greek (<span style="color:#054728">ἄρχων</span> – ruler, leader < <span style="color:#054728">ἄρχω</span> – to begin, lead, rule);',
+                '<br>From Medieval Greek <span style="color:#7a9473">ἄρχοντας</span> – lord, ruler, rich man < Ancient Greek (<span style="color:#7a9473">ἄρχων</span> – ruler, leader < <span style="color:#7a9473">ἄρχω</span> – to begin, lead, rule);',
             aplication:
                 "<br>Nouns in -όπουλο, -οπούλα are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -άκος, -άκης, -άκι, -ίτσα, -ούδα, -ούδι and -ούλης, -ουλα, -ούλι are also formed.",
         },
@@ -6229,7 +6229,7 @@ export const globalArray = [
         base: "βασιλιάς",
         groups: {
             morfology:
-                '<em>βασιλόπουλο, βασιλοπούλα </em>→ βασιλ<span style="color: #900101">ιάς</span> +<span style="color: #900101"> -όπουλο/-οπούλα</span>',
+                '<em>βασιλόπουλο, βασιλοπούλα </em>→ βασιλ<span style="color: #b87333">ιάς</span> +<span style="color: #b87333"> -όπουλο/-οπούλα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6247,9 +6247,9 @@ export const globalArray = [
         base: "βοσκός",
         groups: {
             morfology:
-                '<em>βοσκόπουλο, βοσκοπούλα </em>→ βοσκ<span style="color: #900101">ός</span> +<span style="color: #900101"> -όπουλο</span>/<span style="color: #900101">-οπούλα</span>',
+                '<em>βοσκόπουλο, βοσκοπούλα </em>→ βοσκ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -όπουλο</span>/<span style="color: #b87333">-οπούλα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">βοσκός</span> – shepherd < Ancient Greek (<span style="color:#054728">βοσκός</span> < <span style="color:#054728">βόσκω</span> – to graze)',
+                '<br>From Modern Greek <span style="color:#7a9473">βοσκός</span> – shepherd < Ancient Greek (<span style="color:#7a9473">βοσκός</span> < <span style="color:#7a9473">βόσκω</span> – to graze)',
             aplication:
                 "<br>Nouns in -όπουλο, -οπούλα are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -άκος, -άκης, -άκι, -ίτσα, -ούδα, -ούδι and -ούλης, -ουλα, -ούλι are also formed.",
         },
@@ -6265,9 +6265,9 @@ export const globalArray = [
         base: "βάρκα",
         groups: {
             morfology:
-                '<em>βαρκάκι, βαρκίτσα, βαρκούλα </em>→ βάρκ<span style="color: #900101">α</span> +<span style="color: #900101"> -άκι/-ίτσα/-ούλα</span>',
+                '<em>βαρκάκι, βαρκίτσα, βαρκούλα </em>→ βάρκ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άκι/-ίτσα/-ούλα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">βάρκα</span> – boat < Late Latin <span style="color:#054728">barca</span> < Latin <span style="color:#054728">baris</span> < Ancient Greek <span style="color:#054728">βᾶρις</span> < Ancient Egyptian <span style="color:#054728">/bair/</span>.',
+                '<br>From Modern Greek <span style="color:#7a9473">βάρκα</span> – boat < Late Latin <span style="color:#7a9473">barca</span> < Latin <span style="color:#7a9473">baris</span> < Ancient Greek <span style="color:#7a9473">βᾶρις</span> < Ancient Egyptian <span style="color:#7a9473">/bair/</span>.',
             aplication:
                 "<br>These nouns have multiple endings and are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -άκος, -άκης, -άκι, -ίτσα, -όπουλο, -οπούλα, -ούδα, -ούδι and -ούλης, -ουλα, -ούλι are also formed.",
         },
@@ -6283,9 +6283,9 @@ export const globalArray = [
         base: "γάτα",
         groups: {
             morfology:
-                '<em>γατάκι, γατίτσα, γατούλα, γατούλι </em>→ γάτ<span style="color: #900101">α</span> +<span style="color: #900101"> -άκι/-ίτσα/-ούλα/-ούλι</span>',
+                '<em>γατάκι, γατίτσα, γατούλα, γατούλι </em>→ γάτ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άκι/-ίτσα/-ούλα/-ούλι</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">γάτα</span> – cat < Medieval Greek <span style="color:#054728">γάτα</span> < Medieval Latin <span style="color:#054728">gatta</span> < Late Latin <span style="color:#054728">catta</span>, <span style="color:#054728">cattus</span>.',
+                '<br>From Modern Greek <span style="color:#7a9473">γάτα</span> – cat < Medieval Greek <span style="color:#7a9473">γάτα</span> < Medieval Latin <span style="color:#7a9473">gatta</span> < Late Latin <span style="color:#7a9473">catta</span>, <span style="color:#7a9473">cattus</span>.',
             aplication:
                 "<br>These nouns have multiple endings and are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -άκος, -άκης, -άκι, -ίτσα, -όπουλο, -οπούλα, -ούδα, -ούδι and -ούλης, -ουλα, -ούλι are also formed.",
         },
@@ -6301,9 +6301,9 @@ export const globalArray = [
         base: "πέτρα",
         groups: {
             morfology:
-                '<em>πετρίτσα, πετρούλα, πετράδι, πετραδάκι </em>→ πέτρα +<span style="color: #900101"> -ίτσα/-ούλα/-άδι/-αδάκι</span>',
+                '<em>πετρίτσα, πετρούλα, πετράδι, πετραδάκι </em>→ πέτρα +<span style="color: #b87333"> -ίτσα/-ούλα/-άδι/-αδάκι</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">πέτρα</span> – stone < Ancient Greek <span style="color:#054728">πέτρα</span> – rock, stone.',
+                '<br>From Modern Greek <span style="color:#7a9473">πέτρα</span> – stone < Ancient Greek <span style="color:#7a9473">πέτρα</span> – rock, stone.',
             aplication:
                 "<br>These nouns have multiple endings and are diminutive forms of the noun from which they are derived. With the same meaning, nouns in -άκος, -άκης, -άκι, -ίτσα, -όπουλο, -οπούλα, -ούδα, -ούδι and -ούλης, -ουλα, -ούλι are also formed.",
         },
@@ -6319,9 +6319,9 @@ export const globalArray = [
         base: "βαρέλι",
         groups: {
             morfology:
-                '<em>βαρέλα </em>→ βαρέλ<span style="color: #900101">ι</span> +<span style="color: #900101"> -α</span>',
+                '<em>βαρέλα </em>→ βαρέλ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -α</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">βαρέλι</span> – barrel < Medieval Greek <span style="color:#054728">βαρέλι</span> < Italian <span style="color:#054728">barella</span>',
+                '<br>From Modern Greek <span style="color:#7a9473">βαρέλι</span> – barrel < Medieval Greek <span style="color:#7a9473">βαρέλι</span> < Italian <span style="color:#7a9473">barella</span>',
             aplication:
                 "<br>Nouns in -α are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -άρα, -αρας are also formed.",
         },
@@ -6337,9 +6337,9 @@ export const globalArray = [
         base: "καλοκύθι",
         groups: {
             morfology:
-                '<em>καλοκύθα </em>→ καλοκύθ<span style="color: #900101">ι</span> +<span style="color: #900101"> -α</span>',
+                '<em>καλοκύθα </em>→ καλοκύθ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -α</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">καλοκύθι</span> – pumpkin < Ancient Greek <span style="color:#054728">καλοκύνθη</span>',
+                '<br>From Modern Greek <span style="color:#7a9473">καλοκύθι</span> – pumpkin < Ancient Greek <span style="color:#7a9473">καλοκύνθη</span>',
             aplication:
                 "<br>Nouns in -α are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -άρα, -αρας are also formed.",
         },
@@ -6355,9 +6355,9 @@ export const globalArray = [
         base: "κασόνι",
         groups: {
             morfology:
-                '<em>κασόνα </em>→ κασόν<span style="color: #900101">ι</span> +<span style="color: #900101"> -α</span>',
+                '<em>κασόνα </em>→ κασόν<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -α</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κασόνι</span> – box < Italian <span style="color:#054728">cassone</span>',
+                '<br>From Modern Greek <span style="color:#7a9473">κασόνι</span> – box < Italian <span style="color:#7a9473">cassone</span>',
             aplication:
                 "<br>Nouns in -α are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -άρα, -αρας are also formed.",
         },
@@ -6373,9 +6373,9 @@ export const globalArray = [
         base: "κουτάλι",
         groups: {
             morfology:
-                '<em>κουτάλα </em>→ κουτάλ<span style="color: #900101">ι</span> +<span style="color: #900101"> -α</span>',
+                '<em>κουτάλα </em>→ κουτάλ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -α</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κουτάλι</span> – spoon < Medieval Greek <span style="color:#054728">κουτάλιν</span> < Koine Greek <span style="color:#054728">κουτάλιον</span>, <span style="color:#054728">κωτάλιον</span> – diminutive of ladle < Medieval Greek <span style="color:#054728">κώταλις</span> – stirrer, ladle.',
+                '<br>From Modern Greek <span style="color:#7a9473">κουτάλι</span> – spoon < Medieval Greek <span style="color:#7a9473">κουτάλιν</span> < Koine Greek <span style="color:#7a9473">κουτάλιον</span>, <span style="color:#7a9473">κωτάλιον</span> – diminutive of ladle < Medieval Greek <span style="color:#7a9473">κώταλις</span> – stirrer, ladle.',
             aplication:
                 "<br>Nouns in -α are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -άρα, -αρας are also formed.",
         },
@@ -6391,9 +6391,9 @@ export const globalArray = [
         base: "φέτα",
         groups: {
             morfology:
-                '<em>φετάρα </em>→ φέτ<span style="color: #900101">α</span> +<span style="color: #900101"> -άρα</span>',
+                '<em>φετάρα </em>→ φέτ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άρα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">φέτα</span> – slice < Italian <span style="color:#054728">fetta</span> – slice < Latin (<span style="color:#054728">offitta</span> – slice, piece < <span style="color:#054728">offa</span> – chunk, piece)',
+                '<br>From Modern Greek <span style="color:#7a9473">φέτα</span> – slice < Italian <span style="color:#7a9473">fetta</span> – slice < Latin (<span style="color:#7a9473">offitta</span> – slice, piece < <span style="color:#7a9473">offa</span> – chunk, piece)',
             aplication:
                 "<br>Nouns in -άρα, -αρας are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -α are also formed.",
         },
@@ -6409,9 +6409,9 @@ export const globalArray = [
         base: "φωνή",
         groups: {
             morfology:
-                '<em>φωνάρα </em>→ φων<span style="color: #900101">ή</span> +<span style="color: #900101"> -άρα</span>',
+                '<em>φωνάρα </em>→ φων<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -άρα</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">φωνή</span> – voice, sound < Ancient Greek <span style="color:#054728">φωνή</span>',
+                '<br>From Modern Greek <span style="color:#7a9473">φωνή</span> – voice, sound < Ancient Greek <span style="color:#7a9473">φωνή</span>',
             aplication:
                 "<br>Nouns in -άρα, -αρας are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -α are also formed.",
         },
@@ -6427,9 +6427,9 @@ export const globalArray = [
         base: "δουλευτής",
         groups: {
             morfology:
-                '<em>δουλευταράς </em>→ δουλευτ<span style="color: #900101">ής</span> +<span style="color: #900101"> -άρας</span>',
+                '<em>δουλευταράς </em>→ δουλευτ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -άρας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">δουλευτής</span> – worker, labourer < Koine Greek (<span style="color:#054728">δουλευτής</span> – worker, servant, slave < <span style="color:#054728">δουλεύω</span> – to be a slave, serve) < Ancient Greek (<span style="color:#054728">δουλόω</span> – to enslave < <span style="color:#054728">δοῦλος</span> – slave)',
+                '<br>From Modern Greek <span style="color:#7a9473">δουλευτής</span> – worker, labourer < Koine Greek (<span style="color:#7a9473">δουλευτής</span> – worker, servant, slave < <span style="color:#7a9473">δουλεύω</span> – to be a slave, serve) < Ancient Greek (<span style="color:#7a9473">δουλόω</span> – to enslave < <span style="color:#7a9473">δοῦλος</span> – slave)',
             aplication:
                 "<br>Nouns in -άρα, -αρας are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -α are also formed.",
         },
@@ -6445,9 +6445,9 @@ export const globalArray = [
         base: "κοιλιά",
         groups: {
             morfology:
-                '<em>κοιλαράς </em>→ κοιλ<span style="color: #900101">ιά</span> +<span style="color: #900101"> -άρας</span>',
+                '<em>κοιλαράς </em>→ κοιλ<span style="color: #b87333">ιά</span> +<span style="color: #b87333"> -άρας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κοιλιά</span> – belly < Medieval Greek <span style="color:#054728">κοιλιά</span> – belly < Ancient Greek <span style="color:#054728">κοιλία</span> – cavity < <span style="color:#054728">κοῖλος</span> – hollow',
+                '<br>From Modern Greek <span style="color:#7a9473">κοιλιά</span> – belly < Medieval Greek <span style="color:#7a9473">κοιλιά</span> – belly < Ancient Greek <span style="color:#7a9473">κοιλία</span> – cavity < <span style="color:#7a9473">κοῖλος</span> – hollow',
             aplication:
                 "<br>Nouns in -άρα, -αρας are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -α are also formed.",
         },
@@ -6463,9 +6463,9 @@ export const globalArray = [
         base: "χορευτής",
         groups: {
             morfology:
-                '<em>χορευταράς </em>→ χορευτ<span style="color: #900101">ής</span> +<span style="color: #900101"> -άρας</span>',
+                '<em>χορευταράς </em>→ χορευτ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -άρας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">χορευτής</span> – dancer < Ancient Greek (<span style="color:#054728">χορευτής</span> < <span style="color:#054728">χορός</span> – dance)',
+                '<br>From Modern Greek <span style="color:#7a9473">χορευτής</span> – dancer < Ancient Greek (<span style="color:#7a9473">χορευτής</span> < <span style="color:#7a9473">χορός</span> – dance)',
             aplication:
                 "<br>Nouns in -άρα, -αρας are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -α are also formed.",
         },
@@ -6481,9 +6481,9 @@ export const globalArray = [
         base: "παιδί",
         groups: {
             morfology:
-                '<em>παίδαρας </em>→ παιδ<span style="color: #900101">ί</span> +<span style="color: #900101"> -άρας</span>',
+                '<em>παίδαρας </em>→ παιδ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άρας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">παιδί</span> – child < Medieval Greek <span style="color:#054728">παιδίν</span> < Ancient Greek (<span style="color:#054728">παιδίον</span> – little child < <span style="color:#054728">παῖς</span> – child)',
+                '<br>From Modern Greek <span style="color:#7a9473">παιδί</span> – child < Medieval Greek <span style="color:#7a9473">παιδίν</span> < Ancient Greek (<span style="color:#7a9473">παιδίον</span> – little child < <span style="color:#7a9473">παῖς</span> – child)',
             aplication:
                 "<br>Nouns in -άρα, -αρας are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -α are also formed.",
         },
@@ -6499,9 +6499,9 @@ export const globalArray = [
         base: "σκυλί, σκύλος",
         groups: {
             morfology:
-                '<em>σκύλαρας </em>→ σκυλ<span style="color: #900101">ί</span> +<span style="color: #900101"> -άρας</span>',
+                '<em>σκύλαρας </em>→ σκυλ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άρας</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σκυλί</span>, <span style="color:#054728">σκύλος</span> – dog < Medieval Greek <span style="color:#054728">σκυλίον</span> – little dog < Ancient Greek <span style="color:#054728">σκύλος</span> – dog.',
+                '<br>From Modern Greek <span style="color:#7a9473">σκυλί</span>, <span style="color:#7a9473">σκύλος</span> – dog < Medieval Greek <span style="color:#7a9473">σκυλίον</span> – little dog < Ancient Greek <span style="color:#7a9473">σκύλος</span> – dog.',
             aplication:
                 "<br>Nouns in -άρα, -αρας are augmentative forms of the noun from which they are derived. With the same meaning, nouns in -α are also formed.",
         },
@@ -6517,7 +6517,7 @@ export const globalArray = [
         base: "Ήπερεις",
         groups: {
             morfology:
-                '<em>ηπερώτης </em>→ Ήπερ<span style="color: #900101">εις</span> +<span style="color: #900101"> -ώτης</span>',
+                '<em>ηπερώτης </em>→ Ήπερ<span style="color: #b87333">εις</span> +<span style="color: #b87333"> -ώτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6535,7 +6535,7 @@ export const globalArray = [
         base: "Θράκη",
         groups: {
             morfology:
-                '<em>θρακιώτης </em>→ Θράκ<span style="color: #900101">η</span> +<span style="color: #900101"> -ιώτης</span>',
+                '<em>θρακιώτης </em>→ Θράκ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιώτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6553,7 +6553,7 @@ export const globalArray = [
         base: "Ρούμελη",
         groups: {
             morfology:
-                '<em>ρουμελιώτης </em>→ Ρούμελ<span style="color: #900101">η</span> +<span style="color: #900101"> -ιώτης</span>',
+                '<em>ρουμελιώτης </em>→ Ρούμελ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιώτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6571,7 +6571,7 @@ export const globalArray = [
         base: "Σούλι",
         groups: {
             morfology:
-                '<em>σουλιώτης </em>→ Σούλ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ιώτης</span>',
+                '<em>σουλιώτης </em>→ Σούλ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ιώτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6589,7 +6589,7 @@ export const globalArray = [
         base: "ανατολή",
         groups: {
             morfology:
-                '<em>ανατολίτης </em>→ ανατολ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ίτης</span>',
+                '<em>ανατολίτης </em>→ ανατολ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ίτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6607,7 +6607,7 @@ export const globalArray = [
         base: "Αράχοβα",
         groups: {
             morfology:
-                '<em>αραχοβίτης </em>→ Αράχοβ<span style="color: #900101">α</span> +<span style="color: #900101"> -ίτης</span>',
+                '<em>αραχοβίτης </em>→ Αράχοβ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6625,7 +6625,7 @@ export const globalArray = [
         base: "Μόσχα",
         groups: {
             morfology:
-                '<em>μοσχοβίτης </em>→ Μόσχ<span style="color: #900101">α</span> +<span style="color: #900101"> -οβίτης</span>',
+                '<em>μοσχοβίτης </em>→ Μόσχ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -οβίτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6643,7 +6643,7 @@ export const globalArray = [
         base: "πόλη",
         groups: {
             morfology:
-                '<em>πολίτης </em>→ πόλ<span style="color: #900101">η</span> +<span style="color: #900101"> -ίτης</span>',
+                '<em>πολίτης </em>→ πόλ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ίτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6661,7 +6661,7 @@ export const globalArray = [
         base: "Μοριάς",
         groups: {
             morfology:
-                '<em>μοραίτη </em>→ Μορ<span style="color: #900101">ιάς</span> +<span style="color: #900101"> -αίτη</span>',
+                '<em>μοραίτη </em>→ Μορ<span style="color: #b87333">ιάς</span> +<span style="color: #b87333"> -αίτη</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6679,7 +6679,7 @@ export const globalArray = [
         base: "Μάνη",
         groups: {
             morfology:
-                '<em>μανιάτης </em>→ Μάν<span style="color: #900101">η</span> +<span style="color: #900101"> -ιάτης</span>',
+                '<em>μανιάτης </em>→ Μάν<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιάτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6697,7 +6697,7 @@ export const globalArray = [
         base: "Σπάρτη",
         groups: {
             morfology:
-                '<em>σπαρτιάτης </em>→ Σπάρτ<span style="color: #900101">η</span> +<span style="color: #900101"> -ιάτης</span>',
+                '<em>σπαρτιάτης </em>→ Σπάρτ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιάτης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6715,7 +6715,7 @@ export const globalArray = [
         base: "Αλεξάνδρεια",
         groups: {
             morfology:
-                '<em>αλεξανδρινός </em>→ Αλεξάνδρ<span style="color: #900101">εια</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>αλεξανδρινός </em>→ Αλεξάνδρ<span style="color: #b87333">εια</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6733,7 +6733,7 @@ export const globalArray = [
         base: "Αμερική",
         groups: {
             morfology:
-                '<em>αμερικανός </em>→ Αμερικ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ανός</span>',
+                '<em>αμερικανός </em>→ Αμερικ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ανός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6751,7 +6751,7 @@ export const globalArray = [
         base: "Αφρική",
         groups: {
             morfology:
-                '<em>αφρικανός </em>→ Αφρικ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ανός</span>',
+                '<em>αφρικανός </em>→ Αφρικ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ανός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6769,7 +6769,7 @@ export const globalArray = [
         base: "Ουκρανία",
         groups: {
             morfology:
-                '<em>ουκρανός </em>→ Ουκρ<span style="color: #900101">ανία</span> +<span style="color: #900101"> -ανός</span>',
+                '<em>ουκρανός </em>→ Ουκρ<span style="color: #b87333">ανία</span> +<span style="color: #b87333"> -ανός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6787,7 +6787,7 @@ export const globalArray = [
         base: "Πάτρα",
         groups: {
             morfology:
-                '<em>πατρινός </em>→ Πάτρ<span style="color: #900101">α</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>πατρινός </em>→ Πάτρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6805,7 +6805,7 @@ export const globalArray = [
         base: "Πρεβέζα",
         groups: {
             morfology:
-                '<em>πρεβεζάνος </em>→ Πρεβέζ<span style="color: #900101">α</span> +<span style="color: #900101"> -άνος</span>',
+                '<em>πρεβεζάνος </em>→ Πρεβέζ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -άνος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6823,7 +6823,7 @@ export const globalArray = [
         base: "πόλη",
         groups: {
             morfology:
-                '<em>πολίτισσα </em>→ πόλ<span style="color: #900101">η</span> +<span style="color: #900101"> -ίτισσα</span>',
+                '<em>πολίτισσα </em>→ πόλ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ίτισσα</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6841,7 +6841,7 @@ export const globalArray = [
         base: "ουκρανός",
         groups: {
             morfology:
-                '<em>ουκρανή </em>→ ουκραν<span style="color: #900101">ός</span> +<span style="color: #900101"> -ή</span>',
+                '<em>ουκρανή </em>→ ουκραν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6859,7 +6859,7 @@ export const globalArray = [
         base: "πρεβεζάνος",
         groups: {
             morfology:
-                '<em>πρεβεζάνα </em>→ πρεβεζάν<span style="color: #900101">ος</span> +<span style="color: #900101"> -α</span>',
+                '<em>πρεβεζάνα </em>→ πρεβεζάν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -α</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6877,7 +6877,7 @@ export const globalArray = [
         base: "συριανός",
         groups: {
             morfology:
-                '<em>συριανή </em>→ συριαν<span style="color: #900101">ός</span> +<span style="color: #900101"> -ή</span>',
+                '<em>συριανή </em>→ συριαν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ή</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6895,7 +6895,7 @@ export const globalArray = [
         base: "Αθήνα",
         groups: {
             morfology:
-                '<em>αθηναίος </em>→ Αθήν<span style="color: #900101">α</span> +<span style="color: #900101"> -αίος</span>',
+                '<em>αθηναίος </em>→ Αθήν<span style="color: #b87333">α</span> +<span style="color: #b87333"> -αίος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6913,7 +6913,7 @@ export const globalArray = [
         base: "Ευρώπη",
         groups: {
             morfology:
-                '<em>ευρωπαίος </em>→ Ευρώπ<span style="color: #900101">η</span> +<span style="color: #900101"> -αίος</span>',
+                '<em>ευρωπαίος </em>→ Ευρώπ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -αίος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6931,7 +6931,7 @@ export const globalArray = [
         base: "Θεσσαλονίκη",
         groups: {
             morfology:
-                '<em>θεσσαλονικιός </em>→ Θεσσαλονίκ<span style="color: #900101">η</span> +<span style="color: #900101"> -ιός</span>',
+                '<em>θεσσαλονικιός </em>→ Θεσσαλονίκ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6949,7 +6949,7 @@ export const globalArray = [
         base: "Μυτιλήνη",
         groups: {
             morfology:
-                '<em>μυτιληνιός </em>→ Μυτιλήν<span style="color: #900101">η</span> +<span style="color: #900101"> -ιός</span>',
+                '<em>μυτιληνιός </em>→ Μυτιλήν<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
             aplication:
@@ -6967,7 +6967,7 @@ export const globalArray = [
         base: "αναλύω",
         groups: {
             morfology:
-                '<em>αναλυτικός </em>→ αναλύ<span style="color: #900101">ω</span> +<span style="color: #900101"> -τικός</span>',
+                '<em>αναλυτικός </em>→ αναλύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -6983,7 +6983,7 @@ export const globalArray = [
         base: "διαφημίζω",
         groups: {
             morfology:
-                '<em>διαφημιστικός </em>→ διαφημ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ιστικός</span>',
+                '<em>διαφημιστικός </em>→ διαφημ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιστικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -6999,7 +6999,7 @@ export const globalArray = [
         base: "δροσίζω",
         groups: {
             morfology:
-                '<em>δροσιστικός </em>→ δροσ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ιστικός</span>',
+                '<em>δροσιστικός </em>→ δροσ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιστικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7015,9 +7015,9 @@ export const globalArray = [
         base: "εκδίδω",
         groups: {
             morfology:
-                '<em>εκδοτικός </em>→ εκδ<span style="color: #900101">ίδω</span> +<span style="color: #900101"> -οτικός</span>',
+                '<em>εκδοτικός </em>→ εκδ<span style="color: #b87333">ίδω</span> +<span style="color: #b87333"> -οτικός</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">έκδοσής</span> – delivery < <span style="color:#054728">ἐκδίδωμι</span> – to give out < <span style="color:#054728">δίδωμι</span> – to give).',
+                '<br>From Ancient Greek (<span style="color:#7a9473">έκδοσής</span> – delivery < <span style="color:#7a9473">ἐκδίδωμι</span> – to give out < <span style="color:#7a9473">δίδωμι</span> – to give).',
         },
         qws: ["publishing"],
         transls: ["From the word Εκδίδω — to publish"],
@@ -7031,7 +7031,7 @@ export const globalArray = [
         base: "εκπλήσσω",
         groups: {
             morfology:
-                '<em>εκπληκτικός </em>→ εκπλ<span style="color: #900101">ήσσω</span> +<span style="color: #900101"> -ηκτικός</span>',
+                '<em>εκπληκτικός </em>→ εκπλ<span style="color: #b87333">ήσσω</span> +<span style="color: #b87333"> -ηκτικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7047,7 +7047,7 @@ export const globalArray = [
         base: "ενοχλώ",
         groups: {
             morfology:
-                '<em>ενοχλητικός </em>→ ενοχλ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητικός</span>',
+                '<em>ενοχλητικός </em>→ ενοχλ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7063,7 +7063,7 @@ export const globalArray = [
         base: "επενδύω",
         groups: {
             morfology:
-                '<em>επενδυτικός </em>→ επενδύ<span style="color: #900101">ω</span> +<span style="color: #900101"> -τικός</span>',
+                '<em>επενδυτικός </em>→ επενδύ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -τικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7079,7 +7079,7 @@ export const globalArray = [
         base: "παραπονιέμαι",
         groups: {
             morfology:
-                '<em>παραπονετικός </em>→ παραπον<span style="color: #900101">ιέμαι</span> +<span style="color: #900101"> -ετικός</span>',
+                '<em>παραπονετικός </em>→ παραπον<span style="color: #b87333">ιέμαι</span> +<span style="color: #b87333"> -ετικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7095,7 +7095,7 @@ export const globalArray = [
         base: "περνώ, πέρασα",
         groups: {
             morfology:
-                '<em>περαστικός </em>→ πέρασ<span style="color: #900101">α</span> +<span style="color: #900101"> -τικός</span>',
+                '<em>περαστικός </em>→ πέρασ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -τικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7111,7 +7111,7 @@ export const globalArray = [
         base: "σκανδαλίζω",
         groups: {
             morfology:
-                '<em>σκανδαλιστικός </em>→ σκανδαλ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -ιστικός</span>',
+                '<em>σκανδαλιστικός </em>→ σκανδαλ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -ιστικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7127,9 +7127,9 @@ export const globalArray = [
         base: "θλίβω",
         groups: {
             morfology:
-                '<em>θλιβερός </em>→ θλίβ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ερός</span>',
+                '<em>θλιβερός </em>→ θλίβ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ερός</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">θλιβερός</span> < Ancient Greek <span style="color:#054728">θλίβω</span> – to press, squeeze, trouble.',
+                '<br>From Medieval Greek <span style="color:#7a9473">θλιβερός</span> < Ancient Greek <span style="color:#7a9473">θλίβω</span> – to press, squeeze, trouble.',
         },
         qws: ["sad, sorrowful"],
         transls: ["From the word Θλίβω — to press, squeeze, trouble, sadden"],
@@ -7143,9 +7143,9 @@ export const globalArray = [
         base: "καρτερώ",
         groups: {
             morfology:
-                '<em>καρτερικός </em>→ καρτερ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>καρτερικός </em>→ καρτερ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">καρτερία</span> – patience < Ancient Greek <span style="color:#054728">καρτερῶ</span> – to wait, endure.',
+                '<br>From Modern Greek <span style="color:#7a9473">καρτερία</span> – patience < Ancient Greek <span style="color:#7a9473">καρτερῶ</span> – to wait, endure.',
         },
         qws: ["patient, enduring, persistent"],
         transls: ["From the word Καρτερώ — to wait, endure"],
@@ -7159,7 +7159,7 @@ export const globalArray = [
         base: "κινώ",
         groups: {
             morfology:
-                '<em>κινητήριος </em>→ κιν<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητήριος</span>',
+                '<em>κινητήριος </em>→ κιν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητήριος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7175,9 +7175,9 @@ export const globalArray = [
         base: "λάμπω",
         groups: {
             morfology:
-                '<em>λαμπερός </em>→ λάμπ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ερός</span>',
+                '<em>λαμπερός </em>→ λάμπ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ερός</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">λαμπερός</span> – shining, sunny < Ancient Greek <span style="color:#054728">λάμπω</span> – to shine, be bright; to be famous.',
+                '<br>From Medieval Greek <span style="color:#7a9473">λαμπερός</span> – shining, sunny < Ancient Greek <span style="color:#7a9473">λάμπω</span> – to shine, be bright; to be famous.',
         },
         qws: ["bright, shining, excellent"],
         transls: ["From the word Λάμπω — to shine, glow"],
@@ -7191,9 +7191,9 @@ export const globalArray = [
         base: "μετρώ",
         groups: {
             morfology:
-                '<em>μετρικός </em>→ μετρ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>μετρικός </em>→ μετρ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">μετρικός</span> < <span style="color:#054728">μέτρον</span> – measure, measurement)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">μετρικός</span> < <span style="color:#7a9473">μέτρον</span> – measure, measurement)',
         },
         qws: ["measuring, metric"],
         transls: ["From the word Μετρώ — to measure"],
@@ -7207,7 +7207,7 @@ export const globalArray = [
         base: "πειθαρχώ",
         groups: {
             morfology:
-                '<em>πειθαρχικός </em>→ πειθαρχ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>πειθαρχικός </em>→ πειθαρχ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7223,9 +7223,9 @@ export const globalArray = [
         base: "σώζω",
         groups: {
             morfology:
-                '<em>σωτήριος </em>→ σώ<span style="color: #900101">ζω</span> +<span style="color: #900101"> -τήριος</span>',
+                '<em>σωτήριος </em>→ σώ<span style="color: #b87333">ζω</span> +<span style="color: #b87333"> -τήριος</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">σωτήριος</span> < <span style="color:#054728">σωτήρ</span> – saviour, deliverer < <span style="color:#054728">σώζω</span> – to save, deliver < <span style="color:#054728">σῶς</span> – safe and sound, alive)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">σωτήριος</span> < <span style="color:#7a9473">σωτήρ</span> – saviour, deliverer < <span style="color:#7a9473">σώζω</span> – to save, deliver < <span style="color:#7a9473">σῶς</span> – safe and sound, alive)',
         },
         qws: ["salvific, beneficial"],
         transls: ["From the word Σώζω — to save, deliver"],
@@ -7239,9 +7239,9 @@ export const globalArray = [
         base: "ακούω",
         groups: {
             morfology:
-                '<em>ακουστός </em>→ ακού<span style="color: #900101">ω</span> +<span style="color: #900101"> -στός</span>',
+                '<em>ακουστός </em>→ ακού<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -στός</span>',
             etymology:
-                '<br>From Ancient Greek (<span style="color:#054728">ἀκουστός</span> < <span style="color:#054728">ἀκούω</span> – to hear, listen)',
+                '<br>From Ancient Greek (<span style="color:#7a9473">ἀκουστός</span> < <span style="color:#7a9473">ἀκούω</span> – to hear, listen)',
         },
         qws: ["known, famous"],
         transls: ["From the word Ακούω — to hear"],
@@ -7255,9 +7255,9 @@ export const globalArray = [
         base: "καμαρώνω",
         groups: {
             morfology:
-                '<em>καμαρωτός </em>→ καμαρ<span style="color: #900101">ώνω</span> +<span style="color: #900101"> -ωτός</span>',
+                '<em>καμαρωτός </em>→ καμαρ<span style="color: #b87333">ώνω</span> +<span style="color: #b87333"> -ωτός</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">καμαρώνω</span> – to be proud, swagger < <span style="color:#054728">καμάρι</span> – pride, conceit) < <span style="color:#054728">καμάριον</span> < <span style="color:#054728">καμάρα</span> – arched structure)',
+                '<br>From Modern Greek (<span style="color:#7a9473">καμαρώνω</span> – to be proud, swagger < <span style="color:#7a9473">καμάρι</span> – pride, conceit) < <span style="color:#7a9473">καμάριον</span> < <span style="color:#7a9473">καμάρα</span> – arched structure)',
         },
         qws: ["proud, arched, curved"],
         transls: ["From the word Καμαρώνω — to be proud, swagger"],
@@ -7271,9 +7271,9 @@ export const globalArray = [
         base: "ξυπνώ",
         groups: {
             morfology:
-                '<em>ξυπνητός </em>→ ξυπν<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ητός</span>',
+                '<em>ξυπνητός </em>→ ξυπν<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ητός</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">ξυπνώ</span> – to wake) < Medieval Greek (<span style="color:#054728">ξυπνῶ</span> < <span style="color:#054728">ἔξυπνος</span> – awake) < Ancient Greek <span style="color:#054728">ὕπνος</span> – sleep',
+                '<br>From Modern Greek (<span style="color:#7a9473">ξυπνώ</span> – to wake) < Medieval Greek (<span style="color:#7a9473">ξυπνῶ</span> < <span style="color:#7a9473">ἔξυπνος</span> – awake) < Ancient Greek <span style="color:#7a9473">ὕπνος</span> – sleep',
         },
         qws: ["awake, smart, clever"],
         transls: ["From the word Ξυπνώ — to wake"],
@@ -7287,9 +7287,9 @@ export const globalArray = [
         base: "πετώ",
         groups: {
             morfology:
-                '<em>πεταχτός </em>→ πετ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -αχτός</span>',
+                '<em>πεταχτός </em>→ πετ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -αχτός</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">πεταχτός</span> < Koine Greek <span style="color:#054728">πετώ</span>, <span style="color:#054728">πετάω</span> – to fly < Ancient Greek <span style="color:#054728">πέτομαι</span> – to fly.',
+                '<br>From Medieval Greek <span style="color:#7a9473">πεταχτός</span> < Koine Greek <span style="color:#7a9473">πετώ</span>, <span style="color:#7a9473">πετάω</span> – to fly < Ancient Greek <span style="color:#7a9473">πέτομαι</span> – to fly.',
         },
         qws: ["flying, swift"],
         transls: ["From the word Πετώ — to fly"],
@@ -7303,7 +7303,7 @@ export const globalArray = [
         base: "σβήνω",
         groups: {
             morfology:
-                '<em>σβηστός </em>→ σβή<span style="color: #900101">νω</span> +<span style="color: #900101"> -στός</span>',
+                '<em>σβηστός </em>→ σβή<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -στός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7319,9 +7319,9 @@ export const globalArray = [
         base: "σκύβω",
         groups: {
             morfology:
-                '<em>σκυφτός </em>→ σκύ<span style="color: #900101">βω</span> +<span style="color: #900101"> -φτός</span>',
+                '<em>σκυφτός </em>→ σκύ<span style="color: #b87333">βω</span> +<span style="color: #b87333"> -φτός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σκύβω</span> — to bend, stoop < Medieval Greek <span style="color:#054728">σκύπτω</span> < Ancient Greek (<span style="color:#054728">κύπτω</span> – to bend < possibly from <span style="color:#054728">κυφός</span> – bent forward, hunchbacked)',
+                '<br>From Modern Greek <span style="color:#7a9473">σκύβω</span> — to bend, stoop < Medieval Greek <span style="color:#7a9473">σκύπτω</span> < Ancient Greek (<span style="color:#7a9473">κύπτω</span> – to bend < possibly from <span style="color:#7a9473">κυφός</span> – bent forward, hunchbacked)',
         },
         qws: ["bent, stooping"],
         transls: ["From the word Σκύβω — to bend, stoop"],
@@ -7335,9 +7335,9 @@ export const globalArray = [
         base: "σφίγγω",
         groups: {
             morfology:
-                '<em>σφιχτός </em>→ σφί<span style="color: #900101">γγω</span> +<span style="color: #900101"> -χτός</span>',
+                '<em>σφιχτός </em>→ σφί<span style="color: #b87333">γγω</span> +<span style="color: #b87333"> -χτός</span>',
             etymology:
-                '<br>From Medieval Greek <span style="color:#054728">σφικτός</span> – tight < Ancient Greek <span style="color:#054728">σφιγκτός</span> – tight < <span style="color:#054728">σφίγγω</span> – to bind tightly',
+                '<br>From Medieval Greek <span style="color:#7a9473">σφικτός</span> – tight < Ancient Greek <span style="color:#7a9473">σφιγκτός</span> – tight < <span style="color:#7a9473">σφίγγω</span> – to bind tightly',
         },
         qws: ["tight, narrow, stingy"],
         transls: ["From the word Σφίγγω — to squeeze, tighten"],
@@ -7351,7 +7351,7 @@ export const globalArray = [
         base: "γεμίζω",
         groups: {
             morfology:
-                '<em>γεμάτος </em>→ γεμ<span style="color: #900101">ίζω</span> +<span style="color: #900101"> -άτος</span>',
+                '<em>γεμάτος </em>→ γεμ<span style="color: #b87333">ίζω</span> +<span style="color: #b87333"> -άτος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7367,7 +7367,7 @@ export const globalArray = [
         base: "χορταίνω",
         groups: {
             morfology:
-                '<em>χορτάτος </em>→ χορτ<span style="color: #900101">αίνω</span> +<span style="color: #900101"> -άτος</span>',
+                '<em>χορτάτος </em>→ χορτ<span style="color: #b87333">αίνω</span> +<span style="color: #b87333"> -άτος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7383,9 +7383,9 @@ export const globalArray = [
         base: "αφρός",
         groups: {
             morfology:
-                '<em>αφράτος </em>→ αφρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -άτος</span>',
+                '<em>αφράτος </em>→ αφρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -άτος</span>',
             etymology:
-                '<br>From Medieval Greek (<span style="color:#054728">ἀφράτος</span> < <span style="color:#054728">ἀφρός</span> – foam)',
+                '<br>From Medieval Greek (<span style="color:#7a9473">ἀφράτος</span> < <span style="color:#7a9473">ἀφρός</span> – foam)',
         },
         qws: ["foamy, fluffy, white"],
         transls: ["From the word Αφρός — foam"],
@@ -7399,7 +7399,7 @@ export const globalArray = [
         base: "δροσία",
         groups: {
             morfology:
-                '<em>δροσάτος </em>→ δροσ<span style="color: #900101">ία</span> +<span style="color: #900101"> -άτος</span>',
+                '<em>δροσάτος </em>→ δροσ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -άτος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7415,7 +7415,7 @@ export const globalArray = [
         base: "μυρωδιά",
         groups: {
             morfology:
-                '<em>μυρωδάτος </em>→ μυρωδ<span style="color: #900101">ιά</span> +<span style="color: #900101"> -άτος</span>',
+                '<em>μυρωδάτος </em>→ μυρωδ<span style="color: #b87333">ιά</span> +<span style="color: #b87333"> -άτος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7431,9 +7431,9 @@ export const globalArray = [
         base: "σπαθί",
         groups: {
             morfology:
-                '<em>σπαθάτος </em>→ σπαθ<span style="color: #900101">ί</span> +<span style="color: #900101"> -άτος</span>',
+                '<em>σπαθάτος </em>→ σπαθ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -άτος</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">σπαθί</span> – sword < Koine Greek <span style="color:#054728">σπαθίον</span> – small blade < Ancient Greek <span style="color:#054728">σπάθη</span> – broad blade of wood or metal, sword.',
+                '<br>From Modern Greek <span style="color:#7a9473">σπαθί</span> – sword < Koine Greek <span style="color:#7a9473">σπαθίον</span> – small blade < Ancient Greek <span style="color:#7a9473">σπάθη</span> – broad blade of wood or metal, sword.',
         },
         qws: ["sword-like"],
         transls: ["From the word Σπαθί — sword"],
@@ -7447,7 +7447,7 @@ export const globalArray = [
         base: "κατοικώ",
         groups: {
             morfology:
-                '<em>κατοικήσιμος </em>→ κατοικ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ήσιμος</span>',
+                '<em>κατοικήσιμος </em>→ κατοικ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ήσιμος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7463,7 +7463,7 @@ export const globalArray = [
         base: "τρώγω, έφαγα",
         groups: {
             morfology:
-                '<em>φαγώσιμος </em>→ έφαγ<span style="color: #900101">α</span> +<span style="color: #900101"> -ώσιμος</span>',
+                '<em>φαγώσιμος </em>→ έφαγ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ώσιμος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7479,7 +7479,7 @@ export const globalArray = [
         base: "αφαιρώ",
         groups: {
             morfology:
-                '<em>αφεραιτέος </em>→ αφ<span style="color: #900101">αιρώ</span> +<span style="color: #900101"> -εραιτέος</span>',
+                '<em>αφεραιτέος </em>→ αφ<span style="color: #b87333">αιρώ</span> +<span style="color: #b87333"> -εραιτέος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7495,7 +7495,7 @@ export const globalArray = [
         base: "διαιρώ",
         groups: {
             morfology:
-                '<em>διαιρετέος </em>→ διαιρ<span style="color: #900101">ώ</span> +<span style="color: #900101"> -ετέος</span>',
+                '<em>διαιρετέος </em>→ διαιρ<span style="color: #b87333">ώ</span> +<span style="color: #b87333"> -ετέος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7511,7 +7511,7 @@ export const globalArray = [
         base: "μειώνω",
         groups: {
             morfology:
-                '<em>μειωτέος </em>→ μειώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -τέος</span>',
+                '<em>μειωτέος </em>→ μειώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -τέος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7527,7 +7527,7 @@ export const globalArray = [
         base: "πληρώνω",
         groups: {
             morfology:
-                '<em>πληρωτέος </em>→ πληρώ<span style="color: #900101">νω</span> +<span style="color: #900101"> -τέος</span>',
+                '<em>πληρωτέος </em>→ πληρώ<span style="color: #b87333">νω</span> +<span style="color: #b87333"> -τέος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7543,7 +7543,7 @@ export const globalArray = [
         base: "κόκαλο",
         groups: {
             morfology:
-                '<em>κοκαλιάρης </em>→ κόκαλ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ιάρης</span>',
+                '<em>κοκαλιάρης </em>→ κόκαλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ιάρης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7559,7 +7559,7 @@ export const globalArray = [
         base: "πείσμα",
         groups: {
             morfology:
-                '<em>πεισματάρης </em>→ πείσ<span style="color: #900101">μα</span> +<span style="color: #900101"> -ματάρης</span>',
+                '<em>πεισματάρης </em>→ πείσ<span style="color: #b87333">μα</span> +<span style="color: #b87333"> -ματάρης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7575,7 +7575,7 @@ export const globalArray = [
         base: "ασήμι",
         groups: {
             morfology:
-                '<em>ασημένιος </em>→ ασήμ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ένιος</span>',
+                '<em>ασημένιος </em>→ ασήμ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ένιος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7591,7 +7591,7 @@ export const globalArray = [
         base: "μάρμαρο",
         groups: {
             morfology:
-                '<em>μαρμαρένιος </em>→ μάρμαρ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ένιος</span>',
+                '<em>μαρμαρένιος </em>→ μάρμαρ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ένιος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7607,7 +7607,7 @@ export const globalArray = [
         base: "σανίδι",
         groups: {
             morfology:
-                '<em>σανιδένιος </em>→ σανίδ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ένιος</span>',
+                '<em>σανιδένιος </em>→ σανίδ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ένιος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7623,7 +7623,7 @@ export const globalArray = [
         base: "βροχή",
         groups: {
             morfology:
-                '<em>βρόχινος </em>→ βροχ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>βρόχινος </em>→ βροχ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7639,7 +7639,7 @@ export const globalArray = [
         base: "γυαλί",
         groups: {
             morfology:
-                '<em>γυάλινος </em>→ γυαλ<span style="color: #900101">ί</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>γυάλινος </em>→ γυαλ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7655,7 +7655,7 @@ export const globalArray = [
         base: "καλοκαίρι",
         groups: {
             morfology:
-                '<em>καλοκαιρινός </em>→ καλοκαίρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>καλοκαιρινός </em>→ καλοκαίρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7671,7 +7671,7 @@ export const globalArray = [
         base: "λάστιχο",
         groups: {
             morfology:
-                '<em>λαστιχένιος </em>→ λάστιχ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ένιος</span>',
+                '<em>λαστιχένιος </em>→ λάστιχ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ένιος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7687,7 +7687,7 @@ export const globalArray = [
         base: "λινάρι",
         groups: {
             morfology:
-                '<em>λινός </em>→ λ<span style="color: #900101">ινάρι</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>λινός </em>→ λ<span style="color: #b87333">ινάρι</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7703,7 +7703,7 @@ export const globalArray = [
         base: "μαλλί",
         groups: {
             morfology:
-                '<em>μάλλινος </em>→ μαλλ<span style="color: #900101">ί</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>μάλλινος </em>→ μαλλ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7719,7 +7719,7 @@ export const globalArray = [
         base: "μπρούντζος",
         groups: {
             morfology:
-                '<em>μπρούντζινος </em>→ μπρούντζ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>μπρούντζινος </em>→ μπρούντζ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7735,7 +7735,7 @@ export const globalArray = [
         base: "ξύλο",
         groups: {
             morfology:
-                '<em>ξύλινος </em>→ ξύλ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>ξύλινος </em>→ ξύλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7751,7 +7751,7 @@ export const globalArray = [
         base: "πέτρα",
         groups: {
             morfology:
-                '<em>πέτρινος </em>→ πέτρ<span style="color: #900101">α</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>πέτρινος </em>→ πέτρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7767,7 +7767,7 @@ export const globalArray = [
         base: "πηλός",
         groups: {
             morfology:
-                '<em>πήλινος </em>→ πηλ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>πήλινος </em>→ πηλ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7783,7 +7783,7 @@ export const globalArray = [
         base: "πορσελάνη",
         groups: {
             morfology:
-                '<em>πορσελάνινος </em>→ πορσελάν<span style="color: #900101">η</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>πορσελάνινος </em>→ πορσελάν<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7799,7 +7799,7 @@ export const globalArray = [
         base: "φθινόπωρο",
         groups: {
             morfology:
-                '<em>φθινοπωρινός </em>→ φθινόπωρ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>φθινοπωρινός </em>→ φθινόπωρ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7815,7 +7815,7 @@ export const globalArray = [
         base: "χαρτί",
         groups: {
             morfology:
-                '<em>χάρτινος </em>→ χαρτ<span style="color: #900101">ί</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>χάρτινος </em>→ χαρτ<span style="color: #b87333">ί</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7831,7 +7831,7 @@ export const globalArray = [
         base: "χαρτόνι",
         groups: {
             morfology:
-                '<em>χάρτινος </em>→ χαρτ<span style="color: #900101">όνι</span> +<span style="color: #900101"> -ινος</span>',
+                '<em>χάρτινος </em>→ χαρτ<span style="color: #b87333">όνι</span> +<span style="color: #b87333"> -ινος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7847,7 +7847,7 @@ export const globalArray = [
         base: "αταξία",
         groups: {
             morfology:
-                '<em>άτακτος </em>→ ατ<span style="color: #900101">αξία</span> +<span style="color: #900101"> -ακτος</span>',
+                '<em>άτακτος </em>→ ατ<span style="color: #b87333">αξία</span> +<span style="color: #b87333"> -ακτος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7863,7 +7863,7 @@ export const globalArray = [
         base: "ατολμία",
         groups: {
             morfology:
-                '<em>άτολμος </em>→ ατολμ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ος</span>',
+                '<em>άτολμος </em>→ ατολμ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7879,7 +7879,7 @@ export const globalArray = [
         base: "βιομηχανία",
         groups: {
             morfology:
-                '<em>βιομηχανικός </em>→ βιομηχαν<span style="color: #900101">ία</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>βιομηχανικός </em>→ βιομηχαν<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7895,7 +7895,7 @@ export const globalArray = [
         base: "γενναιοδωρία",
         groups: {
             morfology:
-                '<em>γενναιόδωρος </em>→ γενναιοδωρ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ος</span>',
+                '<em>γενναιόδωρος </em>→ γενναιοδωρ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7911,7 +7911,7 @@ export const globalArray = [
         base: "δυσπιστία",
         groups: {
             morfology:
-                '<em>δύσπιστος </em>→ δυσπιστ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ος</span>',
+                '<em>δύσπιστος </em>→ δυσπιστ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7927,7 +7927,7 @@ export const globalArray = [
         base: "ευθύνη",
         groups: {
             morfology:
-                '<em>υπεύθυνος </em>→ ευθύν<span style="color: #900101">η</span> +<span style="color: #900101"> -ος</span>',
+                '<em>υπεύθυνος </em>→ ευθύν<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7943,7 +7943,7 @@ export const globalArray = [
         base: "κληρονομία",
         groups: {
             morfology:
-                '<em>κληρονόμος </em>→ κληρονομ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ος</span>',
+                '<em>κληρονόμος </em>→ κληρονομ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7959,7 +7959,7 @@ export const globalArray = [
         base: "κρύο",
         groups: {
             morfology:
-                '<em>κρύος </em>→ κρύ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ος</span>',
+                '<em>κρύος </em>→ κρύ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7975,7 +7975,7 @@ export const globalArray = [
         base: "μουσική",
         groups: {
             morfology:
-                '<em>μουσικός </em>→ μουσικ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ος</span>',
+                '<em>μουσικός </em>→ μουσικ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -7991,7 +7991,7 @@ export const globalArray = [
         base: "οικονομία",
         groups: {
             morfology:
-                '<em>οικονομικός </em>→ οικονομ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>οικονομικός </em>→ οικονομ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8007,7 +8007,7 @@ export const globalArray = [
         base: "σιγουρία",
         groups: {
             morfology:
-                '<em>σίγουρος </em>→ σιγουρ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ος</span>',
+                '<em>σίγουρος </em>→ σιγουρ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8023,7 +8023,7 @@ export const globalArray = [
         base: "βύσσινο",
         groups: {
             morfology:
-                '<em>βυσσινής </em>→ βύσσιν<span style="color: #900101">ο</span> +<span style="color: #900101"> -ής</span>',
+                '<em>βυσσινής </em>→ βύσσιν<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8039,7 +8039,7 @@ export const globalArray = [
         base: "θάλασσα",
         groups: {
             morfology:
-                '<em>θαλασσινής </em>→ θάλασσ<span style="color: #900101">α</span> +<span style="color: #900101"> -ινής</span>',
+                '<em>θαλασσινής </em>→ θάλασσ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ινής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8055,7 +8055,7 @@ export const globalArray = [
         base: "τριαντάφυλλο",
         groups: {
             morfology:
-                '<em>τριανταφυλλής </em>→ τριαντάφυλλ<span style="color: #900101">ο</span> +<span style="color: #900101"> -ής</span>',
+                '<em>τριανταφυλλής </em>→ τριαντάφυλλ<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8071,7 +8071,7 @@ export const globalArray = [
         base: "βαθός",
         groups: {
             morfology:
-                '<em>βαθύς </em>→ βαθ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ής</span>',
+                '<em>βαθύς </em>→ βαθ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8087,7 +8087,7 @@ export const globalArray = [
         base: "πάχος",
         groups: {
             morfology:
-                '<em>παχύς </em>→ πάχ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ής</span>',
+                '<em>παχύς </em>→ πάχ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8103,7 +8103,7 @@ export const globalArray = [
         base: "φάρδος",
         groups: {
             morfology:
-                '<em>φαρδύς </em>→ φάρδ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ής</span>',
+                '<em>φαρδύς </em>→ φάρδ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ής</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8119,7 +8119,7 @@ export const globalArray = [
         base: "νόμος",
         groups: {
             morfology:
-                '<em>νόμιμος </em>→ νόμ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ιμος</span>',
+                '<em>νόμιμος </em>→ νόμ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ιμος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8135,7 +8135,7 @@ export const globalArray = [
         base: "βροχή",
         groups: {
             morfology:
-                '<em>βροχερός </em>→ βροχ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ερός</span>',
+                '<em>βροχερός </em>→ βροχ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ερός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8151,7 +8151,7 @@ export const globalArray = [
         base: "δροσιά",
         groups: {
             morfology:
-                '<em>δροσερός </em>→ δροσ<span style="color: #900101">ιά</span> +<span style="color: #900101"> -ερός</span>',
+                '<em>δροσερός </em>→ δροσ<span style="color: #b87333">ιά</span> +<span style="color: #b87333"> -ερός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8167,7 +8167,7 @@ export const globalArray = [
         base: "φαρμάκι",
         groups: {
             morfology:
-                '<em>φαρμακερός </em>→ φαρμάκ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ερός</span>',
+                '<em>φαρμακερός </em>→ φαρμάκ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ερός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8183,7 +8183,7 @@ export const globalArray = [
         base: "φλόγα",
         groups: {
             morfology:
-                '<em>φλογερός </em>→ φλόγ<span style="color: #900101">α</span> +<span style="color: #900101"> -ερός</span>',
+                '<em>φλογερός </em>→ φλόγ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ερός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8199,7 +8199,7 @@ export const globalArray = [
         base: "λίπος",
         groups: {
             morfology:
-                '<em>λιπαρός </em>→ λίπ<span style="color: #900101">ος</span> +<span style="color: #900101"> -αρός</span>',
+                '<em>λιπαρός </em>→ λίπ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -αρός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8215,7 +8215,7 @@ export const globalArray = [
         base: "αγκάθι",
         groups: {
             morfology:
-                '<em>αγκαθωτός </em>→ αγκάθ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ωτός</span>',
+                '<em>αγκαθωτός </em>→ αγκάθ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ωτός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8231,7 +8231,7 @@ export const globalArray = [
         base: "μετάξι",
         groups: {
             morfology:
-                '<em>μεταξωτός </em>→ μετάξ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ωτός</span>',
+                '<em>μεταξωτός </em>→ μετάξ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ωτός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8247,7 +8247,7 @@ export const globalArray = [
         base: "φούντωμα",
         groups: {
             morfology:
-                '<em>φουντωτός </em>→ φούντ<span style="color: #900101">ωμα</span> +<span style="color: #900101"> -ωτός</span>',
+                '<em>φουντωτός </em>→ φούντ<span style="color: #b87333">ωμα</span> +<span style="color: #b87333"> -ωτός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8263,7 +8263,7 @@ export const globalArray = [
         base: "υποψία",
         groups: {
             morfology:
-                '<em>ύποπτος </em>→ υπο<span style="color: #900101">ψία</span> +<span style="color: #900101"> -πτός</span>',
+                '<em>ύποπτος </em>→ υπο<span style="color: #b87333">ψία</span> +<span style="color: #b87333"> -πτός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8279,7 +8279,7 @@ export const globalArray = [
         base: "έθνος",
         groups: {
             morfology:
-                '<em>εθνικός </em>→ έθν<span style="color: #900101">ος</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>εθνικός </em>→ έθν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8295,7 +8295,7 @@ export const globalArray = [
         base: "έλληνας",
         groups: {
             morfology:
-                '<em>ελληνικός </em>→ έλλην<span style="color: #900101">ας</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>ελληνικός </em>→ έλλην<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8311,7 +8311,7 @@ export const globalArray = [
         base: "ήλιος",
         groups: {
             morfology:
-                '<em>ηλιακός </em>→ ήλι<span style="color: #900101">ος</span> +<span style="color: #900101"> -ακός</span>',
+                '<em>ηλιακός </em>→ ήλι<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ακός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8327,7 +8327,7 @@ export const globalArray = [
         base: "αίρεση",
         groups: {
             morfology:
-                '<em>αιρετικός </em>→ αίρε<span style="color: #900101">ση</span> +<span style="color: #900101"> -τικός</span>',
+                '<em>αιρετικός </em>→ αίρε<span style="color: #b87333">ση</span> +<span style="color: #b87333"> -τικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8343,7 +8343,7 @@ export const globalArray = [
         base: "αδερφός",
         groups: {
             morfology:
-                '<em>αδερφικός </em>→ αδερφ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>αδερφικός </em>→ αδερφ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8359,7 +8359,7 @@ export const globalArray = [
         base: "ανατολή",
         groups: {
             morfology:
-                '<em>ανατολικός </em>→ ανατολ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>ανατολικός </em>→ ανατολ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8375,9 +8375,9 @@ export const globalArray = [
         base: "αστυνομία",
         groups: {
             morfology:
-                '<em>αστυνομικός </em>→ αστυνομ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>αστυνομικός </em>→ αστυνομ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek (<span style="color:#054728">αστυνομία</span> – police < <span style="color:#054728">αστυνόμος</span> – police officer) < Ancient Greek (<span style="color:#054728">ἀστυνόμος</span> – guarding the city < <span style="color:#054728">ἄστυ</span> – city + <span style="color:#054728">νόμος</span> – law)',
+                '<br>From Modern Greek (<span style="color:#7a9473">αστυνομία</span> – police < <span style="color:#7a9473">αστυνόμος</span> – police officer) < Ancient Greek (<span style="color:#7a9473">ἀστυνόμος</span> – guarding the city < <span style="color:#7a9473">ἄστυ</span> – city + <span style="color:#7a9473">νόμος</span> – law)',
         },
         qws: ["police (adj.), policeman"],
         transls: ["From the word Αστυνομία — police"],
@@ -8391,9 +8391,9 @@ export const globalArray = [
         base: "Γαλλία",
         groups: {
             morfology:
-                '<em>γαλλικός </em>→ Γαλλ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>γαλλικός </em>→ Γαλλ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">Γαλλία</span> – France < Latin <span style="color:#054728">Gallia</span>.',
+                '<br>From Modern Greek <span style="color:#7a9473">Γαλλία</span> – France < Latin <span style="color:#7a9473">Gallia</span>.',
         },
         qws: ["French"],
         transls: ["From the word Γαλλία — France"],
@@ -8407,9 +8407,9 @@ export const globalArray = [
         base: "γέρος",
         groups: {
             morfology:
-                '<em>γέρικος </em>→ γέρ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>γέρικος </em>→ γέρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">γέρος</span> – old man < Medieval Greek <span style="color:#054728">γέρος</span> < Ancient Greek <span style="color:#054728">γέρων</span> – old man, elder.',
+                '<br>From Modern Greek <span style="color:#7a9473">γέρος</span> – old man < Medieval Greek <span style="color:#7a9473">γέρος</span> < Ancient Greek <span style="color:#7a9473">γέρων</span> – old man, elder.',
         },
         qws: ["old, elderly"],
         transls: ["From the word Γέρος — old man"],
@@ -8423,9 +8423,9 @@ export const globalArray = [
         base: "διάστημα",
         groups: {
             morfology:
-                '<em>διαστημικός </em>→ διάστημ<span style="color: #900101">α</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>διαστημικός </em>→ διάστημ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">διάστημα</span> – space < Ancient Greek (<span style="color:#054728">διάστημα</span> – distance, interval < <span style="color:#054728">δια-</span> (through) + <span style="color:#054728">ἵστημι</span> – to stand, place)',
+                '<br>From Modern Greek <span style="color:#7a9473">διάστημα</span> – space < Ancient Greek (<span style="color:#7a9473">διάστημα</span> – distance, interval < <span style="color:#7a9473">δια-</span> (through) + <span style="color:#7a9473">ἵστημι</span> – to stand, place)',
         },
         qws: ["space (adj.)"],
         transls: ["From the word Διάστημα — space"],
@@ -8439,9 +8439,9 @@ export const globalArray = [
         base: "δύση",
         groups: {
             morfology:
-                '<em>δυτικός </em>→ δύ<span style="color: #900101">ση</span> +<span style="color: #900101"> -τικός</span>',
+                '<em>δυτικός </em>→ δύ<span style="color: #b87333">ση</span> +<span style="color: #b87333"> -τικός</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">δῠτικός</span> < Ancient Greek <span style="color:#054728">δύω</span>, <span style="color:#054728">δύνω</span> – to enter, set.',
+                '<br>From Koine Greek <span style="color:#7a9473">δῠτικός</span> < Ancient Greek <span style="color:#7a9473">δύω</span>, <span style="color:#7a9473">δύνω</span> – to enter, set.',
         },
         qws: ["western"],
         transls: ["From the word Δύση — west"],
@@ -8455,9 +8455,9 @@ export const globalArray = [
         base: "εγωιστής",
         groups: {
             morfology:
-                '<em>εγωιστικός </em>→ εγωιστ<span style="color: #900101">ής</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>εγωιστικός </em>→ εγωιστ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">εγωιστής</span> – egoist < French <span style="color:#054728">égoïste</span> < Ancient Greek <span style="color:#054728">ἐγώ</span> – I.',
+                '<br>From Modern Greek <span style="color:#7a9473">εγωιστής</span> – egoist < French <span style="color:#7a9473">égoïste</span> < Ancient Greek <span style="color:#7a9473">ἐγώ</span> – I.',
         },
         qws: ["egoistic"],
         transls: ["From the word Εγωιστής — egoist"],
@@ -8471,9 +8471,9 @@ export const globalArray = [
         base: "επιστήμονας",
         groups: {
             morfology:
-                '<em>επιστημονικός </em>→ επιστήμον<span style="color: #900101">ας</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>επιστημονικός </em>→ επιστήμον<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">επιστήμονας</span> – scientist < Ancient Greek (<span style="color:#054728">ἐπιστήμη</span> – science, knowledge < <span style="color:#054728">ἐπίσταμαι</span> – to know well < <span style="color:#054728">ἐπι-</span> (on) + <span style="color:#054728">ἵστημι</span> – to stand, place)',
+                '<br>From Modern Greek <span style="color:#7a9473">επιστήμονας</span> – scientist < Ancient Greek (<span style="color:#7a9473">ἐπιστήμη</span> – science, knowledge < <span style="color:#7a9473">ἐπίσταμαι</span> – to know well < <span style="color:#7a9473">ἐπι-</span> (on) + <span style="color:#7a9473">ἵστημι</span> – to stand, place)',
         },
         qws: ["scientific"],
         transls: ["From the word Επιστήμονας — scientist"],
@@ -8487,9 +8487,9 @@ export const globalArray = [
         base: "εχθρός",
         groups: {
             morfology:
-                '<em>εχθρικός </em>→ εχθρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>εχθρικός </em>→ εχθρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Koine Greek <span style="color:#054728">ἐχθρικός</span> < Ancient Greek <span style="color:#054728">ἐχθρός</span> – enemy, hateful.',
+                '<br>From Koine Greek <span style="color:#7a9473">ἐχθρικός</span> < Ancient Greek <span style="color:#7a9473">ἐχθρός</span> – enemy, hateful.',
         },
         qws: ["hostile, enemy"],
         transls: ["From the word Εχθρός — enemy"],
@@ -8503,9 +8503,9 @@ export const globalArray = [
         base: "ζωγράφος",
         groups: {
             morfology:
-                '<em>ζωγραφικός </em>→ ζωγράφ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>ζωγραφικός </em>→ ζωγράφ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ζωγραφική</span> – painting < Ancient Greek (<span style="color:#054728">ζωγρᾰφικός</span> < <span style="color:#054728">ζωγράφος</span> – painter < <span style="color:#054728">ζωός</span> (alive) or <span style="color:#054728">ζωή</span> (life) + <span style="color:#054728">γράφος</span> – writer < <span style="color:#054728">γράφω</span> – to write)',
+                '<br>From Modern Greek <span style="color:#7a9473">ζωγραφική</span> – painting < Ancient Greek (<span style="color:#7a9473">ζωγρᾰφικός</span> < <span style="color:#7a9473">ζωγράφος</span> – painter < <span style="color:#7a9473">ζωός</span> (alive) or <span style="color:#7a9473">ζωή</span> (life) + <span style="color:#7a9473">γράφος</span> – writer < <span style="color:#7a9473">γράφω</span> – to write)',
         },
         qws: ["pictorial, graphic"],
         transls: ["From the word Ζωγράφος — painter"],
@@ -8519,7 +8519,7 @@ export const globalArray = [
         base: "ηλεκτρισμός",
         groups: {
             morfology:
-                '<em>ηλεκτρικός </em>→ ηλεκτρ<span style="color: #900101">ισμός</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>ηλεκτρικός </em>→ ηλεκτρ<span style="color: #b87333">ισμός</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8535,7 +8535,7 @@ export const globalArray = [
         base: "κεραμική",
         groups: {
             morfology:
-                '<em>κεραμικός </em>→ κεραμ<span style="color: #900101">ική</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>κεραμικός </em>→ κεραμ<span style="color: #b87333">ική</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8551,7 +8551,7 @@ export const globalArray = [
         base: "κύκλος",
         groups: {
             morfology:
-                '<em>κυκλικός </em>→ κύκλ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>κυκλικός </em>→ κύκλ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8567,7 +8567,7 @@ export const globalArray = [
         base: "οικογένεια",
         groups: {
             morfology:
-                '<em>οικογενειακός </em>→ οικογένει<span style="color: #900101">α</span> +<span style="color: #900101"> -ακός</span>',
+                '<em>οικογενειακός </em>→ οικογένει<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ακός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8583,7 +8583,7 @@ export const globalArray = [
         base: "πλαστικό",
         groups: {
             morfology:
-                '<em>πλαστικός </em>→ πλαστ<span style="color: #900101">ικό</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>πλαστικός </em>→ πλαστ<span style="color: #b87333">ικό</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8599,9 +8599,9 @@ export const globalArray = [
         base: "ποιητής",
         groups: {
             morfology:
-                '<em>ποιητικός </em>→ ποιητ<span style="color: #900101">ής</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>ποιητικός </em>→ ποιητ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Ancient Greek <span style="color:#054728">ποιητής</span> < <span style="color:#054728">ποιέω</span>, <span style="color:#054728">ποιῶ</span> – to make, create.',
+                '<br>From Ancient Greek <span style="color:#7a9473">ποιητής</span> < <span style="color:#7a9473">ποιέω</span>, <span style="color:#7a9473">ποιῶ</span> – to make, create.',
         },
         qws: ["poetic"],
         transls: ["From the word Ποιητής — poet"],
@@ -8615,7 +8615,7 @@ export const globalArray = [
         base: "προάστιο",
         groups: {
             morfology:
-                '<em>προαστιακός </em>→ προάστι<span style="color: #900101">ο</span> +<span style="color: #900101"> -ακός</span>',
+                '<em>προαστιακός </em>→ προάστι<span style="color: #b87333">ο</span> +<span style="color: #b87333"> -ακός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8631,7 +8631,7 @@ export const globalArray = [
         base: "προδότης",
         groups: {
             morfology:
-                '<em>προδοτικός </em>→ προδότ<span style="color: #900101">ης</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>προδοτικός </em>→ προδότ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8647,7 +8647,7 @@ export const globalArray = [
         base: "σελήνη",
         groups: {
             morfology:
-                '<em>σεληνιακός </em>→ σελήν<span style="color: #900101">η</span> +<span style="color: #900101"> -ιακός</span>',
+                '<em>σεληνιακός </em>→ σελήν<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιακός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8663,7 +8663,7 @@ export const globalArray = [
         base: "σημμέτοχος",
         groups: {
             morfology:
-                '<em>σημμετοχικός </em>→ σημμέτοχ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>σημμετοχικός </em>→ σημμέτοχ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8679,9 +8679,9 @@ export const globalArray = [
         base: "τουρίστας",
         groups: {
             morfology:
-                '<em>τουριστικός </em>→ τουρίστ<span style="color: #900101">ας</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>τουριστικός </em>→ τουρίστ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">τουρίστας</span> – tourist < Italian <span style="color:#054728">turista</span> – tourist < French <span style="color:#054728">touriste</span> – tourist < English (<span style="color:#054728">tourist</span> – tourist < <span style="color:#054728">tour</span> – tour) < Latin <span style="color:#054728">tornare</span> – to turn < Ancient Greek <span style="color:#054728">τόρνος</span> – that which turns; lathe; compass.',
+                '<br>From Modern Greek <span style="color:#7a9473">τουρίστας</span> – tourist < Italian <span style="color:#7a9473">turista</span> – tourist < French <span style="color:#7a9473">touriste</span> – tourist < English (<span style="color:#7a9473">tourist</span> – tourist < <span style="color:#7a9473">tour</span> – tour) < Latin <span style="color:#7a9473">tornare</span> – to turn < Ancient Greek <span style="color:#7a9473">τόρνος</span> – that which turns; lathe; compass.',
         },
         qws: ["tourist, touristic"],
         transls: ["From the word Τουρίστας — tourist"],
@@ -8695,7 +8695,7 @@ export const globalArray = [
         base: "φεύτης",
         groups: {
             morfology:
-                '<em>φεύτικος </em>→ φεύτ<span style="color: #900101">ης</span> +<span style="color: #900101"> -ικός</span>',
+                '<em>φεύτικος </em>→ φεύτ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ικός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8711,7 +8711,7 @@ export const globalArray = [
         base: "άνοιξη",
         groups: {
             morfology:
-                '<em>ανοιξιάτικος </em>→ άνοιξ<span style="color: #900101">η</span> +<span style="color: #900101"> -ιάτικος</span>',
+                '<em>ανοιξιάτικος </em>→ άνοιξ<span style="color: #b87333">η</span> +<span style="color: #b87333"> -ιάτικος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8727,7 +8727,7 @@ export const globalArray = [
         base: "κυριακή",
         groups: {
             morfology:
-                '<em>κυριακάτικος </em>→ κυριακ<span style="color: #900101">ή</span> +<span style="color: #900101"> -άτικος</span>',
+                '<em>κυριακάτικος </em>→ κυριακ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -άτικος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8743,7 +8743,7 @@ export const globalArray = [
         base: "χειμώνας",
         groups: {
             morfology:
-                '<em>χειμωνιάτικος </em>→ χειμών<span style="color: #900101">ας</span> +<span style="color: #900101"> -ιάτικος</span>',
+                '<em>χειμωνιάτικος </em>→ χειμών<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ιάτικος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8759,7 +8759,7 @@ export const globalArray = [
         base: "αγόρι",
         groups: {
             morfology:
-                '<em>αγορίστικος </em>→ αγόρ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ίστικος</span>',
+                '<em>αγορίστικος </em>→ αγόρ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ίστικος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8775,7 +8775,7 @@ export const globalArray = [
         base: "κορίτσι",
         groups: {
             morfology:
-                '<em>κοριτσίστικος </em>→ κορίτσ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ίστικος</span>',
+                '<em>κοριτσίστικος </em>→ κορίτσ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ίστικος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8791,7 +8791,7 @@ export const globalArray = [
         base: "κούκλα",
         groups: {
             morfology:
-                '<em>κουκλίστικος </em>→ κούκλ<span style="color: #900101">α</span> +<span style="color: #900101"> -ίστικος</span>',
+                '<em>κουκλίστικος </em>→ κούκλ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ίστικος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8807,7 +8807,7 @@ export const globalArray = [
         base: "αιώνας",
         groups: {
             morfology:
-                '<em>αιώνιος </em>→ αιών<span style="color: #900101">ας</span> +<span style="color: #900101"> -ιος</span>',
+                '<em>αιώνιος </em>→ αιών<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ιος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8823,7 +8823,7 @@ export const globalArray = [
         base: "ουρανός",
         groups: {
             morfology:
-                '<em>ουράνιος </em>→ ουραν<span style="color: #900101">ός</span> +<span style="color: #900101"> -ιος</span>',
+                '<em>ουράνιος </em>→ ουραν<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ιος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8839,7 +8839,7 @@ export const globalArray = [
         base: "τιμή",
         groups: {
             morfology:
-                '<em>τίμιος </em>→ τιμ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ιος</span>',
+                '<em>τίμιος </em>→ τιμ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ιος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8855,7 +8855,7 @@ export const globalArray = [
         base: "άντρας",
         groups: {
             morfology:
-                '<em>αντρείος </em>→ άντρ<span style="color: #900101">ας</span> +<span style="color: #900101"> -είος</span>',
+                '<em>αντρείος </em>→ άντρ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -είος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8871,7 +8871,7 @@ export const globalArray = [
         base: "γυναίκα",
         groups: {
             morfology:
-                '<em>γυναικείος, γυναίκειος </em>→ γυναίκ<span style="color: #900101">α</span> +<span style="color: #900101"> -είος/-ειος</span>',
+                '<em>γυναικείος, γυναίκειος </em>→ γυναίκ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -είος/-ειος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8887,7 +8887,7 @@ export const globalArray = [
         base: "Αριστοτέλης",
         groups: {
             morfology:
-                '<em>αριστοτέλειος </em>→ Αριστοτέλ<span style="color: #900101">ης</span> +<span style="color: #900101"> -ειος</span>',
+                '<em>αριστοτέλειος </em>→ Αριστοτέλ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ειος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8903,7 +8903,7 @@ export const globalArray = [
         base: "Πυθαγόρας",
         groups: {
             morfology:
-                '<em>πυθαγόρειος </em>→ Πυθαγόρ<span style="color: #900101">ας</span> +<span style="color: #900101"> -ειος</span>',
+                '<em>πυθαγόρειος </em>→ Πυθαγόρ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ειος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8919,7 +8919,7 @@ export const globalArray = [
         base: "Αρσάκης",
         groups: {
             morfology:
-                '<em>αρσάκειο </em>→ Αρσάκ<span style="color: #900101">ης</span> +<span style="color: #900101"> -ειο</span>',
+                '<em>αρσάκειο </em>→ Αρσάκ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ειο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8935,7 +8935,7 @@ export const globalArray = [
         base: "Βαρβάκης",
         groups: {
             morfology:
-                '<em>βαρβάκειο </em>→ Βαρβάκ<span style="color: #900101">ης</span> +<span style="color: #900101"> -ειο</span>',
+                '<em>βαρβάκειο </em>→ Βαρβάκ<span style="color: #b87333">ης</span> +<span style="color: #b87333"> -ειο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8951,7 +8951,7 @@ export const globalArray = [
         base: "Ζάππας",
         groups: {
             morfology:
-                '<em>ζάππειο </em>→ Ζάππ<span style="color: #900101">ας</span> +<span style="color: #900101"> -ειο</span>',
+                '<em>ζάππειο </em>→ Ζάππ<span style="color: #b87333">ας</span> +<span style="color: #b87333"> -ειο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8967,7 +8967,7 @@ export const globalArray = [
         base: "Μαρασλής",
         groups: {
             morfology:
-                '<em>μαράσλειο </em>→ Μαρασλ<span style="color: #900101">ής</span> +<span style="color: #900101"> -ειο</span>',
+                '<em>μαράσλειο </em>→ Μαρασλ<span style="color: #b87333">ής</span> +<span style="color: #b87333"> -ειο</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -8984,7 +8984,7 @@ export const globalArray = [
         base: "ακμή",
         groups: {
             morfology:
-                '<em>ακμαίος </em>→ ακμ<span style="color: #900101">ή</span> +<span style="color: #900101"> -αίος</span>',
+                '<em>ακμαίος </em>→ ακμ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -αίος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9000,7 +9000,7 @@ export const globalArray = [
         base: "μοίρα",
         groups: {
             morfology:
-                '<em>μοιραίος </em>→ μοίρ<span style="color: #900101">α</span> +<span style="color: #900101"> -αίος</span>',
+                '<em>μοιραίος </em>→ μοίρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -αίος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9016,7 +9016,7 @@ export const globalArray = [
         base: "δίψα",
         groups: {
             morfology:
-                '<em>διψαλέος </em>→ δίψ<span style="color: #900101">α</span> +<span style="color: #900101"> -αλέος</span>',
+                '<em>διψαλέος </em>→ δίψ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -αλέος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9032,7 +9032,7 @@ export const globalArray = [
         base: "πείνα",
         groups: {
             morfology:
-                '<em>πειναλέος </em>→ πείν<span style="color: #900101">α</span> +<span style="color: #900101"> -αλέος</span>',
+                '<em>πειναλέος </em>→ πείν<span style="color: #b87333">α</span> +<span style="color: #b87333"> -αλέος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9048,7 +9048,7 @@ export const globalArray = [
         base: "αρματία",
         groups: {
             morfology:
-                '<em>αρματωλός </em>→ αρματ<span style="color: #900101">ία</span> +<span style="color: #900101"> -ωλός</span>',
+                '<em>αρματωλός </em>→ αρματ<span style="color: #b87333">ία</span> +<span style="color: #b87333"> -ωλός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9064,7 +9064,7 @@ export const globalArray = [
         base: "σιωπή",
         groups: {
             morfology:
-                '<em>σιωπιλός </em>→ σιωπ<span style="color: #900101">ή</span> +<span style="color: #900101"> -ιλός</span>',
+                '<em>σιωπιλός </em>→ σιωπ<span style="color: #b87333">ή</span> +<span style="color: #b87333"> -ιλός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9080,7 +9080,7 @@ export const globalArray = [
         base: "άσπρος",
         groups: {
             morfology:
-                '<em>ασπρούλης </em>→ άσπρ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ούλης</span>',
+                '<em>ασπρούλης </em>→ άσπρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ούλης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9096,7 +9096,7 @@ export const globalArray = [
         base: "κοντός",
         groups: {
             morfology:
-                '<em>κοντούλης </em>→ κοντ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ούλης</span>',
+                '<em>κοντούλης </em>→ κοντ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ούλης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9112,7 +9112,7 @@ export const globalArray = [
         base: "μικρός",
         groups: {
             morfology:
-                '<em>μικρούλης </em>→ μικρ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ούλης</span>',
+                '<em>μικρούλης </em>→ μικρ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ούλης</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9128,9 +9128,9 @@ export const globalArray = [
         base: "ζεστός",
         groups: {
             morfology:
-                '<em>ζεστούτσικος </em>→ ζεστ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ούτσικος</span>',
+                '<em>ζεστούτσικος </em>→ ζεστ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ούτσικος</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">ζεστός</span> – hot < Ancient Greek <span style="color:#054728">ζέω</span> – to boil, seethe.',
+                '<br>From Modern Greek <span style="color:#7a9473">ζεστός</span> – hot < Ancient Greek <span style="color:#7a9473">ζέω</span> – to boil, seethe.',
         },
         qws: ["warmish (affectionate)"],
         transls: ["From the word Ζεστός — warm"],
@@ -9144,7 +9144,7 @@ export const globalArray = [
         base: "καλός",
         groups: {
             morfology:
-                '<em>καλούτσικος </em>→ καλ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ούτσικος</span>',
+                '<em>καλούτσικος </em>→ καλ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ούτσικος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9160,7 +9160,7 @@ export const globalArray = [
         base: "ψηλός",
         groups: {
             morfology:
-                '<em>ψηλούτσικος </em>→ ψηλ<span style="color: #900101">ός</span> +<span style="color: #900101"> -ούτσικος</span>',
+                '<em>ψηλούτσικος </em>→ ψηλ<span style="color: #b87333">ός</span> +<span style="color: #b87333"> -ούτσικος</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9176,7 +9176,7 @@ export const globalArray = [
         base: "άγριος",
         groups: {
             morfology:
-                '<em>αγριωπώς </em>→ άγρι<span style="color: #900101">ος</span> +<span style="color: #900101"> -ωπός</span>',
+                '<em>αγριωπώς </em>→ άγρι<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ωπός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9192,7 +9192,7 @@ export const globalArray = [
         base: "κόκκινος",
         groups: {
             morfology:
-                '<em>κοκκινωπός </em>→ κόκκιν<span style="color: #900101">ος</span> +<span style="color: #900101"> -ωπός</span>',
+                '<em>κοκκινωπός </em>→ κόκκιν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ωπός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9208,7 +9208,7 @@ export const globalArray = [
         base: "πράσινος",
         groups: {
             morfology:
-                '<em>πρασινωπός </em>→ πράσιν<span style="color: #900101">ος</span> +<span style="color: #900101"> -ωπός</span>',
+                '<em>πρασινωπός </em>→ πράσιν<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ωπός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9224,7 +9224,7 @@ export const globalArray = [
         base: "άσπρος",
         groups: {
             morfology:
-                '<em>ασπριδερός </em>→ άσπρ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ιδερός</span>',
+                '<em>ασπριδερός </em>→ άσπρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ιδερός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9240,7 +9240,7 @@ export const globalArray = [
         base: "μαύρος",
         groups: {
             morfology:
-                '<em>μαυριδερός </em>→ μαύρ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ιδερός</span>',
+                '<em>μαυριδερός </em>→ μαύρ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ιδερός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9256,7 +9256,7 @@ export const globalArray = [
         base: "βαθύς",
         groups: {
             morfology:
-                '<em>βαθουλός </em>→ βαθ<span style="color: #900101">ύς</span> +<span style="color: #900101"> -ουλός</span>',
+                '<em>βαθουλός </em>→ βαθ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -ουλός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9272,7 +9272,7 @@ export const globalArray = [
         base: "μακρύς",
         groups: {
             morfology:
-                '<em>μακρουλός </em>→ μακρ<span style="color: #900101">ύς</span> +<span style="color: #900101"> -ουλός</span>',
+                '<em>μακρουλός </em>→ μακρ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -ουλός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9288,7 +9288,7 @@ export const globalArray = [
         base: "παχύς",
         groups: {
             morfology:
-                '<em>παχουλός </em>→ παχ<span style="color: #900101">ύς</span> +<span style="color: #900101"> -ουλός</span>',
+                '<em>παχουλός </em>→ παχ<span style="color: #b87333">ύς</span> +<span style="color: #b87333"> -ουλός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9304,9 +9304,9 @@ export const globalArray = [
         base: "αντίκρυ",
         groups: {
             morfology:
-                '<em>αντικρινός </em>→ αντίκρ<span style="color: #900101">υ</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>αντικρινός </em>→ αντίκρ<span style="color: #b87333">υ</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">αντίκρυ</span> < Medieval Greek <span style="color:#054728">ἀντίκρυ</span> < Ancient Greek <span style="color:#054728">ἀντικρύ</span>.',
+                '<br>From Modern Greek <span style="color:#7a9473">αντίκρυ</span> < Medieval Greek <span style="color:#7a9473">ἀντίκρυ</span> < Ancient Greek <span style="color:#7a9473">ἀντικρύ</span>.',
         },
         qws: ["opposite"],
         transls: ["From the word Αντίκρυ — opposite"],
@@ -9320,7 +9320,7 @@ export const globalArray = [
         base: "κατόπιν",
         groups: {
             morfology:
-                '<em>κατοπινός </em>→ κατόπ<span style="color: #900101">ιν</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>κατοπινός </em>→ κατόπ<span style="color: #b87333">ιν</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9336,9 +9336,9 @@ export const globalArray = [
         base: "κοντά",
         groups: {
             morfology:
-                '<em>κοντινός </em>→ κοντ<span style="color: #900101">ά</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>κοντινός </em>→ κοντ<span style="color: #b87333">ά</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">κοντά</span> – near < Ancient Greek <span style="color:#054728">κοντός</span> – pole, rod.',
+                '<br>From Modern Greek <span style="color:#7a9473">κοντά</span> – near < Ancient Greek <span style="color:#7a9473">κοντός</span> – pole, rod.',
         },
         qws: ["near, close"],
         transls: ["From the word Κοντά — near"],
@@ -9352,7 +9352,7 @@ export const globalArray = [
         base: "μακριά",
         groups: {
             morfology:
-                '<em>μακρινός </em>→ μακρ<span style="color: #900101">ιά</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>μακρινός </em>→ μακρ<span style="color: #b87333">ιά</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9368,7 +9368,7 @@ export const globalArray = [
         base: "πάντοτε",
         groups: {
             morfology:
-                '<em>παντοτινός </em>→ πάντοτ<span style="color: #900101">ε</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>παντοτινός </em>→ πάντοτ<span style="color: #b87333">ε</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9384,7 +9384,7 @@ export const globalArray = [
         base: "πέρσι",
         groups: {
             morfology:
-                '<em>περσινός </em>→ πέρσ<span style="color: #900101">ι</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>περσινός </em>→ πέρσ<span style="color: #b87333">ι</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9400,7 +9400,7 @@ export const globalArray = [
         base: "σήμερα",
         groups: {
             morfology:
-                '<em>σημερινός </em>→ σήμερ<span style="color: #900101">α</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>σημερινός </em>→ σήμερ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9416,7 +9416,7 @@ export const globalArray = [
         base: "τώρα",
         groups: {
             morfology:
-                '<em>τωρινός </em>→ τώρ<span style="color: #900101">α</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>τωρινός </em>→ τώρ<span style="color: #b87333">α</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
                 "<br>The etymology of this word has not been added yet. You can send it to us!",
         },
@@ -9432,9 +9432,9 @@ export const globalArray = [
         base: "φέτος",
         groups: {
             morfology:
-                '<em>φετινός </em>→ φέτ<span style="color: #900101">ος</span> +<span style="color: #900101"> -ινός</span>',
+                '<em>φετινός </em>→ φέτ<span style="color: #b87333">ος</span> +<span style="color: #b87333"> -ινός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">φέτος</span> – this year < Koine Greek (<span style="color:#054728">ἐφετινός</span> – of this year < <span style="color:#054728">ἔτος</span> – year)',
+                '<br>From Modern Greek <span style="color:#7a9473">φέτος</span> – this year < Koine Greek (<span style="color:#7a9473">ἐφετινός</span> – of this year < <span style="color:#7a9473">ἔτος</span> – year)',
         },
         qws: ["this year's"],
         transls: ["From the word Φέτος — this year"],
@@ -9448,9 +9448,9 @@ export const globalArray = [
         base: "χτες, χθες",
         groups: {
             morfology:
-                '<em>χτεσινός </em>→ χτες +<span style="color: #900101"> -ινός</span>',
+                '<em>χτεσινός </em>→ χτες +<span style="color: #b87333"> -ινός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">χτες</span> – yesterday',
+                '<br>From Modern Greek <span style="color:#7a9473">χτες</span> – yesterday',
         },
         qws: ["yesterday's"],
         transls: ["From the word Χτες — yesterday"],
@@ -9464,9 +9464,9 @@ export const globalArray = [
         base: "αύριο",
         groups: {
             morfology:
-                '<em>αυριανός </em>→ αύρ<span style="color: #900101">ιο</span> +<span style="color: #900101"> -ιανός</span>',
+                '<em>αυριανός </em>→ αύρ<span style="color: #b87333">ιο</span> +<span style="color: #b87333"> -ιανός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">αύριο</span> – tomorrow < Medieval Greek <span style="color:#054728">αὔριο</span> < Ancient Greek <span style="color:#054728">αὔριον</span>',
+                '<br>From Modern Greek <span style="color:#7a9473">αύριο</span> – tomorrow < Medieval Greek <span style="color:#7a9473">αὔριο</span> < Ancient Greek <span style="color:#7a9473">αὔριον</span>',
         },
         qws: ["tomorrow's"],
         transls: ["From the word Αύριο — tomorrow"],
@@ -9480,9 +9480,9 @@ export const globalArray = [
         base: "παρακάτω",
         groups: {
             morfology:
-                '<em>παρακατιανός </em>→ παρακάτ<span style="color: #900101">ω</span> +<span style="color: #900101"> -ιανός</span>',
+                '<em>παρακατιανός </em>→ παρακάτ<span style="color: #b87333">ω</span> +<span style="color: #b87333"> -ιανός</span>',
             etymology:
-                '<br>From Modern Greek <span style="color:#054728">παρακάτω</span> – below, further, then < Ancient Greek (<span style="color:#054728">κάτω</span> – down, below < <span style="color:#054728">κάτα</span> – towards, about; against)',
+                '<br>From Modern Greek <span style="color:#7a9473">παρακάτω</span> – below, further, then < Ancient Greek (<span style="color:#7a9473">κάτω</span> – down, below < <span style="color:#7a9473">κάτα</span> – towards, about; against)',
         },
         qws: ["lower, inferior, mediocre"],
         transls: ["From the word Παρακάτω — below, further, then"],
