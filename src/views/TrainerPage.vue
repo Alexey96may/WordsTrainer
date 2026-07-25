@@ -381,6 +381,7 @@ const forceSyncToDB = async () => {
 .training-config {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 24px;
     position: relative;
