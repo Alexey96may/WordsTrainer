@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, watch, nextTick, toRaw } from "vue";
+import { ref, computed, watch, nextTick } from "vue";
 import { useI18n } from "vue-i18n";
 import type { SupportedLang } from "@/i18n";
 
@@ -61,6 +61,7 @@ const {
     sectionArr,
     checkedKind,
     prepareTrainerStructure,
+    thinkAgainCount,
 } = useTrainerCore();
 
 // 3. Categories Module
@@ -76,6 +77,7 @@ const { activeKindsCount, isKindAvailable, selectCategory } =
         sectionArr,
         checkedKind,
         showNotesFlag,
+        thinkAgainCount,
     );
 
 const globalArray = ref<RawTrainerItem[]>([]);
@@ -87,8 +89,6 @@ const trainerTableComponent = ref<InstanceType<typeof TrainerTable> | null>(
 const modalCurrentIndex = ref(0);
 const modalTableRows = ref<unknown[]>([]);
 const isModalOpen = ref(false);
-
-const thinkAgainCount = ref(0);
 
 const pageTitle = computed(() => {
     if (!props.slug) return t("trainer.loading");
@@ -233,6 +233,7 @@ const resetFlags = (resetAll: boolean = false) => {
     hasError.value = false;
     userAnswer.value = "";
     showNotesFlag.value = false;
+    thinkAgainCount.value = 0;
 
     if (resetAll) {
         flagGameOver.value = false;

@@ -15,6 +15,8 @@ export function useTrainerCore() {
     const showNotesFlag = ref(false);
     const flagGameOver = ref(false);
 
+    const thinkAgainCount = ref(0);
+
     const sectionArr = ref<string[]>([]);
     const checkedKind = ref<string[]>(["all"]);
 
@@ -170,5 +172,6 @@ export function useTrainerCore() {
         checkUserAnswer,
         sectionArr,
         checkedKind,
+        thinkAgainCount,
     };
 }

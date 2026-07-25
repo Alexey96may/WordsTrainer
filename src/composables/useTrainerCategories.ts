@@ -14,6 +14,8 @@ export function useTrainerCategories(
     sectionArr: Ref<string[]>,
     checkedKind: Ref<string[]>,
     showNotesFlag: Ref<boolean>,
+
+    thinkAgainCount: Ref<number>,
 ) {
     // const sectionArr = ref<string[]>([]);
     // const checkedKind = ref<string[]>(["all"]);
@@ -62,6 +64,7 @@ export function useTrainerCategories(
         hasError.value = false;
         showNotesFlag.value = false;
         userAnswer.value = "";
+        thinkAgainCount.value = 0;
 
         if (mainArr.value.length === 0) {
             flagGameOver.value = mainArrsinSort.value.length === 0;
