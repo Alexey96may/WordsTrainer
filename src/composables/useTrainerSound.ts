@@ -46,8 +46,11 @@ export function useTrainerSound() {
         }
     };
 
-    const playSound = (audioNode: HTMLAudioElement | null) => {
-        if (!isSoundOn.value || !audioNode) return;
+    const playSound = (
+        audioNode: HTMLAudioElement | null,
+        isKindAvailable: boolean = true,
+    ) => {
+        if (!isSoundOn.value || !audioNode || !isKindAvailable) return;
         if (!canPlaySound()) return;
 
         try {

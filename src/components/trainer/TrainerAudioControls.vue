@@ -21,7 +21,6 @@
                 <path
                     d="M12.5 3C17.15 3 21 6.85 21 11.5C21 16.15 17.15 20 12.5 20C8.87 20 5.8 17.7 4.6 14.5M3 10V5M3 10H8"
                     stroke="#e0e0e0"
-                    stroke-width="2.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                 />
@@ -45,7 +44,6 @@
                 <path
                     d="M11.5 3C6.85 3 3 6.85 3 11.5C3 16.15 6.85 20 11.5 20C15.13 20 18.2 17.7 19.4 14.5M21 10V5M21 10H16"
                     stroke="#e0e0e0"
-                    stroke-width="2.5"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                 />
@@ -143,7 +141,7 @@ const handleRefresh = () => {
 .sound-controls-container {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .control-btn {
@@ -175,6 +173,7 @@ const handleRefresh = () => {
     height: 24px;
     transition: all 0.2s;
     display: block;
+    stroke-width: 2;
 }
 
 .control-btn .control-btn__svg--load path,
@@ -253,8 +252,8 @@ const handleRefresh = () => {
 
     .control-btn svg,
     .control-btn__svg {
-        width: 22px;
-        height: 22px;
+        width: 24px;
+        height: 24px;
     }
 }
 

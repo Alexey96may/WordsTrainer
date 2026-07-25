@@ -2,7 +2,14 @@
     <div class="fix_two_rows">
         <Transition name="expand-error">
             <div v-if="hasError" class="error-slider-wrapper">
-                <span id="errorField" role="alert" aria-live="assertive">
+                <span
+                    id="errorField"
+                    :key="thinkAgainCount"
+                    :class="{ shake: thinkAgainCount > 1 }"
+                    :style="{ color: errorColor }"
+                    role="alert"
+                    aria-live="assertive"
+                >
                     {{ t("trainer.question.error") }}
                 </span>
             </div>
@@ -29,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
@@ -38,9 +45,19 @@ const wrapperRef = ref<HTMLElement | null>(null);
 interface Props {
     questionHtml: string;
     hasError: boolean;
+    thinkAgainCount: number;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const errorColor = computed(() => {
+    const count = Math.max(1, props.thinkAgainCount);
+
+    const hue = Math.max(0, 28 - (count - 1) * 7);
+    const lightness = Math.max(38, 60 - (count - 1) * 5);
+
+    return `hsl(${hue}, 90%, ${lightness}%)`;
+});
 
 const onBeforeLeave = () => {
     if (!wrapperRef.value) return;
@@ -100,11 +117,30 @@ const onEnter = (el: Element) => {
 }
 
 #errorField {
-    color: #f87171;
     font-weight: bold;
     font-size: 1.1rem;
     line-height: 1.2;
     display: block;
+    transition: color 0.3s ease;
+}
+
+.shake {
+    animation: shake-anim 0.35s ease-in-out;
+}
+
+@keyframes shake-anim {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    20%,
+    60% {
+        transform: translateX(-6px);
+    }
+    40%,
+    80% {
+        transform: translateX(6px);
+    }
 }
 
 .expand-error-enter-active,

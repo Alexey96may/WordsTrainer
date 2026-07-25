@@ -88,6 +88,8 @@ const modalCurrentIndex = ref(0);
 const modalTableRows = ref<unknown[]>([]);
 const isModalOpen = ref(false);
 
+const thinkAgainCount = ref(0);
+
 const pageTitle = computed(() => {
     if (!props.slug) return t("trainer.loading");
     const key = `trainers.${props.slug}.name`;
@@ -98,17 +100,6 @@ const pageTitle = computed(() => {
 const tableDOMElement = computed(
     () => trainerTableComponent.value?.tableContentRef || null,
 );
-
-const applySavedFilter = () => {
-    if (checkedKind.value.includes("all")) {
-        mainArr.value = [...mainArrsinSort.value];
-    } else {
-        mainArr.value = mainArrsinSort.value.filter((item) =>
-            checkedKind.value.includes(item.kind.toLowerCase()),
-        );
-    }
-    remainingQuestions.value = mainArr.value.length;
-};
 
 const loadTrainerData = async (slug: string) => {
     isSyncing.value = true;
@@ -163,8 +154,21 @@ watch(locale, async () => {
 });
 
 const handleInputSubmit = async () => {
-    if (await checkUserAnswer(props.slug)) playSound(audioGreat);
-    else playSound(audioBad);
+    const currentKind = mainArr.value[0]?.kind;
+
+    const isCorrect = await checkUserAnswer(props.slug);
+
+    if (isCorrect) {
+        playSound(audioGreat);
+        thinkAgainCount.value = 0;
+    } else {
+        const available = currentKind
+            ? isKindAvailable(currentKind)
+            : mainArr.value.length > 0;
+
+        thinkAgainCount.value++;
+        playSound(audioBad, available);
+    }
 };
 
 const showHint = () => {
@@ -190,10 +194,12 @@ const reloadGame = async () => {
     isSyncing.value = false;
 
     deleteProgress(props.slug, locale.value as SupportedLang);
-    // forceSyncToDB().catch((err) => console.error("DB Sync error:", err));
 };
 
 const refreshGame = async () => {
+    const currentKind = mainArr.value[0]?.kind || "";
+    if (!isKindAvailable(currentKind)) return;
+
     let filtered: TrainerItem[];
 
     if (checkedKind.value.includes("all")) {
@@ -308,6 +314,7 @@ const forceSyncToDB = async () => {
                 <TrainerQuestion
                     :question-html="currentQuestionHtml"
                     :has-error="hasError"
+                    :think-again-count="thinkAgainCount"
                 />
 
                 <TrainerForm
@@ -374,10 +381,9 @@ const forceSyncToDB = async () => {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: baseline;
     gap: 24px;
     position: relative;
-    height: 40px;
+    height: 26px;
     z-index: 9999;
 }
 

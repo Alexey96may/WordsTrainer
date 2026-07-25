@@ -248,13 +248,14 @@ onBeforeUnmount(() => {
 }
 
 .disabled-kind {
-    color: #7f7f7f !important;
+    opacity: 0.6;
+    text-decoration: line-through;
 }
 
 @media (max-width: 600px) {
     .custom-select-box {
         max-width: 40vw;
-        height: 30px;
+        height: 26px;
     }
 
     .is-open {
@@ -262,16 +263,16 @@ onBeforeUnmount(() => {
     }
     .option {
         padding: 6px 12px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .first-opt {
-        height: 30px;
+        height: 26px;
     }
 
     .arrow-indicator {
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
     }
 
     .arrow-indicator svg {
@@ -288,7 +289,7 @@ onBeforeUnmount(() => {
     }
     .option {
         padding: 6px 12px;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .arrow-indicator svg {
