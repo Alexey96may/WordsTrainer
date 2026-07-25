@@ -39,6 +39,7 @@ describe("useTrainerCategories composable", () => {
         const flagGameOver = ref(false);
         const sectionArr = ref<string[]>([]);
         const checkedKind = ref<string[]>(["all"]);
+        const thinkAgainCount = ref(0);
 
         const composable = useTrainerCategories(
             mainArr,
@@ -51,6 +52,7 @@ describe("useTrainerCategories composable", () => {
             sectionArr,
             checkedKind,
             showNotesFlag,
+            thinkAgainCount,
         );
 
         return {

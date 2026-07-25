@@ -3,7 +3,6 @@ import { ref } from "vue";
 import { useTrainerCore } from "./useTrainerCore";
 import type { TrainerItem } from "@/types/trainer";
 
-// Используем TrainerItem, как того требует новая структура
 const mockData: TrainerItem[] = [
     {
         word: "αγαπώ",
@@ -31,7 +30,6 @@ describe("useTrainerCore composable", () => {
         expect(mainArr.value).toHaveLength(2);
         expect(remainingQuestions.value).toBe(2);
         expect(sectionArr.value).toContain("all");
-        // Проверяем, что категории нормализованы (если ваша логика приводит их к Capitalize)
         expect(sectionArr.value).toContain("verbs");
     });
 

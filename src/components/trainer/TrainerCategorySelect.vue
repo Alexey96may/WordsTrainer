@@ -255,7 +255,7 @@ onBeforeUnmount(() => {
 @media (max-width: 600px) {
     .custom-select-box {
         max-width: 40vw;
-        height: 26px;
+        height: 28px;
     }
 
     .is-open {
@@ -267,12 +267,12 @@ onBeforeUnmount(() => {
     }
 
     .first-opt {
-        height: 26px;
+        height: 28px;
     }
 
     .arrow-indicator {
-        width: 26px;
-        height: 26px;
+        width: 28px;
+        height: 28px;
     }
 
     .arrow-indicator svg {

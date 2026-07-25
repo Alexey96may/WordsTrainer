@@ -250,10 +250,17 @@ const handleRefresh = () => {
         gap: 8px;
     }
 
+    .control-btn {
+        width: unset;
+        height: unset;
+        padding-top: 2px;
+    }
+
     .control-btn svg,
     .control-btn__svg {
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
+        display: block;
     }
 }
 
