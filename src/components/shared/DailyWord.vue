@@ -171,7 +171,7 @@ onUnmounted(() => {
 }
 
 .header {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .header__up {
@@ -184,7 +184,7 @@ onUnmounted(() => {
 
 .word {
     font-family: var(--font-serif);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0;
     text-align: center;
 }
@@ -271,7 +271,7 @@ onUnmounted(() => {
 
 @media (max-width: 600px) {
     .header {
-        margin-bottom: 4px;
+        margin-bottom: 0;
     }
     .daily-word-container {
         margin-top: 20px;
@@ -281,6 +281,10 @@ onUnmounted(() => {
     .daily-word-card {
         width: 100%;
         padding: 1rem 1rem 3rem;
+    }
+
+    .word {
+        font-size: 2.3rem;
     }
 
     .translation {
@@ -337,6 +341,12 @@ onUnmounted(() => {
 }
 
 @media (max-width: 340px) {
+    .word {
+        font-size: 2rem;
+    }
+    .translation {
+        font-size: 0.9rem;
+    }
     .lexical-group {
         flex-direction: column;
         font-size: 0.9em;
