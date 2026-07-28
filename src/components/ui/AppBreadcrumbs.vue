@@ -18,7 +18,7 @@
                     v-if="index < breadcrumbs.length - 1 && crumb.url"
                     :to="crumb.url"
                 >
-                    {{ crumb.label }}
+                    <span> {{ crumb.label }}</span>
                 </RouterLink>
 
                 <span v-else>{{ crumb.label }}</span>
@@ -93,9 +93,12 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => {
 .nav_breadcrumb {
     background-color: rgb(29, 29, 29);
     padding: 6px 12px;
-    font-size: 90%;
     font-style: oblique;
     border-radius: 4px;
+}
+
+.nav_breadcrumb span {
+    font-size: 0.8rem;
 }
 
 .breadcrumb-list {
@@ -121,7 +124,7 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => {
 
 @media (max-width: 600px) {
     .nav_breadcrumb span {
-        font-size: 12px;
+        font-size: 0.6rem;
     }
 }
 

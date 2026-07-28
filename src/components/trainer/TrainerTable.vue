@@ -145,21 +145,22 @@ const isGroupVisible = (groupKindName: string) => {
     return props.checkedKind.includes(groupKindName.toLowerCase());
 };
 
+const parseVariants = (str: string): string[] => {
+    if (!str) return [];
+    return str
+        .split(/[\/,]/) // '/', ','
+        .map((v) => v.trim().toLowerCase())
+        .filter(Boolean);
+};
+
 const activeHighlightVariants = computed(() => {
     if (!props.currentQuestion || !props.isHintUsed) return [];
 
     const rawWord = props.currentQuestion.word || "";
     const rawBase = props.currentQuestion.base || "";
 
-    const wordVariants = rawWord
-        .split("/")
-        .map((v: string) => v.trim().toLowerCase())
-        .filter(Boolean);
-
-    const baseVariants = rawBase
-        .split("/")
-        .map((v: string) => v.trim().toLowerCase())
-        .filter(Boolean);
+    const wordVariants = parseVariants(rawWord);
+    const baseVariants = parseVariants(rawBase);
 
     if (wordVariants.length > 0) {
         const qwKind = (
@@ -171,12 +172,14 @@ const activeHighlightVariants = computed(() => {
             if (group.kindName.toLowerCase() !== qwKind) continue;
             for (const row of group.rows) {
                 for (const key in row) {
-                    if (
-                        typeof row[key] === "string" &&
-                        wordVariants.includes(row[key].trim().toLowerCase())
-                    ) {
-                        hasWordMatch = true;
-                        break;
+                    if (typeof row[key] === "string") {
+                        const cellValues = parseVariants(row[key]);
+                        if (
+                            cellValues.some((val) => wordVariants.includes(val))
+                        ) {
+                            hasWordMatch = true;
+                            break;
+                        }
                     }
                 }
                 if (hasWordMatch) break;
@@ -207,12 +210,12 @@ const highlightedRowKeys = computed(() => {
         for (const row of group.rows) {
             for (const key in row) {
                 const val = row[key];
-                if (
-                    typeof val === "string" &&
-                    variants.includes(val.trim().toLowerCase())
-                ) {
-                    set.add(row.uniqKey);
-                    break;
+                if (typeof val === "string") {
+                    const cellValues = parseVariants(val);
+                    if (cellValues.some((v) => variants.includes(v))) {
+                        set.add(row.uniqKey);
+                        break;
+                    }
                 }
             }
         }
