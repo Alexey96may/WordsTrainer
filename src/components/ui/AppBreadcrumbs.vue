@@ -128,7 +128,7 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => {
 
 @media (max-width: 600px) {
     .nav_breadcrumb span {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
     }
 }
 
