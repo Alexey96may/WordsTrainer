@@ -8,6 +8,7 @@ import TrainerAudioControls from "@/components/trainer/TrainerAudioControls.vue"
 import TrainerForm from "@/components/trainer/TrainerForm.vue";
 import TrainerScore from "@/components/trainer/TrainerScore.vue";
 import TrainerGameSkeleton from "@/components/ui/TrainerGameSkeleton.vue";
+import TrainerTableSkeleton from "@/components/ui/TrainerTableSkeleton.vue";
 import ShareButton from "@/components/ui/ShareButton.vue";
 import TrainerCategorySelect from "@/components/trainer/TrainerCategorySelect.vue";
 import TrainerTable from "@/components/trainer/TrainerTable.vue";
@@ -336,8 +337,13 @@ const forceSyncToDB = async () => {
                 <TrainerScore :count="remainingQuestions" />
             </div>
 
+            <TrainerTableSkeleton
+                v-if="globalArray.length <= 0 && titles.length <= 0"
+                :cols-count="titles.length || 3"
+            />
+
             <TrainerTable
-                v-if="globalArray.length > 0 && titles.length > 0"
+                v-else
                 :key="slug + '_' + locale"
                 ref="trainerTableComponent"
                 :titles="titles"
