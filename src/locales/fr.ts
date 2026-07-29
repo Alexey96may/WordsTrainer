@@ -171,4 +171,15 @@ export default {
         antonims: "Antonymes : ",
         audioHint: "Cliquez sur le mot pour écouter",
     },
+    share: {
+        defaultTitle: "Entraîneur interactif",
+        defaultText: "Essaie cet entraîneur et teste tes connaissances !",
+        ariaLabel: "Partager l'entraîneur",
+        buttonLabel: "Partager",
+        copiedLabel: "Lien copié !",
+        tooltipSuccess: "Lien copié dans le presse-papier !",
+        tooltipError: "Impossible de copier le lien",
+        srSuccess:
+            "Le lien vers l'entraîneur a été copié avec succès dans le presse-papier.",
+    },
 };

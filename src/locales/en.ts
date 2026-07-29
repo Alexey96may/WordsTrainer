@@ -169,4 +169,14 @@ export default {
         antonims: "Antonyms: ",
         audioHint: "Click the word to listen",
     },
+    share: {
+        defaultTitle: "Interactive trainer",
+        defaultText: "Check out this trainer and test your skills!",
+        ariaLabel: "Share trainer",
+        buttonLabel: "Share",
+        copiedLabel: "Link copied!",
+        tooltipSuccess: "Link copied to clipboard!",
+        tooltipError: "Failed to copy link",
+        srSuccess: "Link to trainer successfully copied to clipboard.",
+    },
 };

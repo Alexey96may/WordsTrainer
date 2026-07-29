@@ -101,18 +101,22 @@ const breadcrumbs = computed<BreadcrumbItem[]>(() => {
     font-size: 0.8rem;
 }
 
+.nav_breadcrumb a {
+    padding: 0;
+}
+
 .breadcrumb-list {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 .breadcrumb-item {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     color: #8b8b8b;
 }
 

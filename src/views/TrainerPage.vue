@@ -8,6 +8,7 @@ import TrainerAudioControls from "@/components/trainer/TrainerAudioControls.vue"
 import TrainerForm from "@/components/trainer/TrainerForm.vue";
 import TrainerScore from "@/components/trainer/TrainerScore.vue";
 import TrainerGameSkeleton from "@/components/ui/TrainerGameSkeleton.vue";
+import ShareButton from "@/components/ui/ShareButton.vue";
 import TrainerCategorySelect from "@/components/trainer/TrainerCategorySelect.vue";
 import TrainerTable from "@/components/trainer/TrainerTable.vue";
 import TrainerNotice from "@/components/trainer/TrainerNotice.vue";
@@ -95,6 +96,13 @@ const pageTitle = computed(() => {
     const key = `trainers.${props.slug}.name`;
     const translated = t(key);
     return translated !== key ? translated : t("trainer.defaultTitle");
+});
+
+const pageDescription = computed(() => {
+    if (!props.slug) return "";
+    const key = `trainers.${props.slug}.desc`;
+    const translated = t(key);
+    return translated !== key ? translated : "";
 });
 
 const tableDOMElement = computed(
@@ -341,6 +349,14 @@ const forceSyncToDB = async () => {
             />
         </section>
 
+        <section class="shareSection">
+            <ShareButton
+                :title="pageTitle"
+                :text="pageDescription"
+                :aria-label="pageDescription"
+            />
+        </section>
+
         <TrainerNotice
             v-if="globalArray.length"
             :notice-text="
@@ -398,6 +414,12 @@ const forceSyncToDB = async () => {
     margin-top: 24px;
 }
 
+.shareSection {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: end;
+}
+
 @media (max-width: 600px) {
     .training-config {
         gap: 18px;
@@ -418,6 +440,10 @@ const forceSyncToDB = async () => {
     .content_game {
         border-radius: 6px;
         padding: 12px;
+    }
+
+    .shareSection {
+        justify-content: center;
     }
 }
 </style>

@@ -172,4 +172,16 @@ export default {
         antonims: "Antónimos: ",
         audioHint: "Haz clic en la palabra para escuchar",
     },
+    share: {
+        defaultTitle: "Entrenador interactivo",
+        defaultText:
+            "¡Prueba este entrenador y pon a prueba tus conocimientos!",
+        ariaLabel: "Compartir entrenador",
+        buttonLabel: "Compartir",
+        copiedLabel: "¡Enlace copiado!",
+        tooltipSuccess: "¡Enlace copiado al portapapeles!",
+        tooltipError: "No se pudo copiar el enlace",
+        srSuccess:
+            "El enlace al entrenador se ha copiado con éxito al portapapeles.",
+    },
 };
