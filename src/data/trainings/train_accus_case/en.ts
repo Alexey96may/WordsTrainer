@@ -2164,7 +2164,7 @@ export const globalArray = [
         },
         base: "η σεζόν",
         notice: "",
-        qws: ["Σ <u>η</u> νέες <u>σεζόν</u>"],
+        qws: ["Σε <u>η</u> νέες <u>σεζόν</u>"],
         transls: ["In the new seasons"],
         kind: "indeclinable",
         unicTransl: "season",

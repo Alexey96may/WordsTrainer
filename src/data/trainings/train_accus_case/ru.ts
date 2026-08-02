@@ -1588,7 +1588,7 @@ export const globalArray = [
         groups: { case: "Вин. падеж", num: "мн. число", gen: "несклоняемые" },
         base: "η σεζόν",
         notice: "",
-        qws: ["Σ <u>η</u> νέες <u>σεζόν</u>"],
+        qws: ["Σε <u>η</u> νέες <u>σεζόν</u>"],
         transls: ["В новых сезонах"],
         kind: "несклоняемые",
         unicTransl: "сезон",
