@@ -3,7 +3,6 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vitest/config";
 import vue from "@vitejs/plugin-vue";
 import vueDevTools from "vite-plugin-vue-devtools";
-import { compression } from "vite-plugin-compression2";
 import { VitePWA } from "vite-plugin-pwa";
 import { manifestData } from "./manifest.config";
 
@@ -12,10 +11,6 @@ export default defineConfig({
     plugins: [
         vue(),
         vueDevTools(),
-        compression({
-            algorithms: ["gzip"],
-            exclude: [/\.(br)$/, /\.(gz)$/],
-        }),
         VitePWA({
             registerType: "autoUpdate",
             manifest: manifestData,
