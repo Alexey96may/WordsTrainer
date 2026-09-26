@@ -30,10 +30,9 @@ export const saveProgress = async (
 ) => {
     try {
         const key = getStoreKey(slug, locale);
-        const plainData = fastToRaw(data);
         await Preferences.set({
             key,
-            value: JSON.stringify(plainData),
+            value: JSON.stringify(fastToRaw(data)),
         });
     } catch (e) {
         console.error("DB: Save error", e);
@@ -42,10 +41,10 @@ export const saveProgress = async (
 
 export const getProgress = async (slug: string, locale: SupportedLang) => {
     try {
-        const key = getStoreKey(slug, locale);
-        const { value } = await Preferences.get({ key });
-        if (value == null) return null;
-        return JSON.parse(value);
+        const { value } = await Preferences.get({
+            key: getStoreKey(slug, locale),
+        });
+        return value == null ? null : JSON.parse(value);
     } catch (e) {
         console.error("DB: Fetch error", e);
         return null;
@@ -54,8 +53,7 @@ export const getProgress = async (slug: string, locale: SupportedLang) => {
 
 export const deleteProgress = async (slug: string, locale: SupportedLang) => {
     try {
-        const key = getStoreKey(slug, locale);
-        await Preferences.remove({ key });
+        await Preferences.remove({ key: getStoreKey(slug, locale) });
     } catch (e) {
         console.error("DB: Delete error", e);
     }

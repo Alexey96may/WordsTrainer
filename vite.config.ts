@@ -15,22 +15,33 @@ export default defineConfig(({ command, mode }) => {
         plugins: [
             vue(),
             vueDevTools(),
-            VitePWA({
-                registerType: "autoUpdate",
-                manifest: manifestData,
-                base: currentBase,
-                scope: currentBase,
-                includeAssets: ["icon-192.png", "icon-512.png"],
-                workbox: {
-                    navigateFallback: `${currentBase}index.html`,
-                    navigateFallbackDenylist: [/^\/WordsTrainer\/api/],
-                },
-            }),
+            ...(!isCapacitor
+                ? [
+                      VitePWA({
+                          registerType: "autoUpdate",
+                          manifest: manifestData,
+                          base: currentBase,
+                          scope: currentBase,
+                          includeAssets: ["icon-192.png", "icon-512.png"],
+                          workbox: {
+                              navigateFallback: `${currentBase}index.html`,
+                              navigateFallbackDenylist: [
+                                  /^\/WordsTrainer\/api/,
+                              ],
+                          },
+                      }),
+                  ]
+                : []),
         ],
         base: currentBase,
         resolve: {
             alias: {
                 "@": fileURLToPath(new URL("./src", import.meta.url)),
+                ...(isCapacitor && {
+                    "@/utils/db": fileURLToPath(
+                        new URL("./src/utils/db.native.ts", import.meta.url),
+                    ),
+                }),
             },
         },
         build: {
