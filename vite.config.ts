@@ -41,6 +41,18 @@ export default defineConfig(({ command, mode }) => {
                     "@/utils/db": fileURLToPath(
                         new URL("./src/utils/db.native.ts", import.meta.url),
                     ),
+                    "@/components/ui/AppButton.vue": fileURLToPath(
+                        new URL(
+                            "./src/components/ui/AppButton.native.vue",
+                            import.meta.url,
+                        ),
+                    ),
+                    "@/components/ui/AppInput.vue": fileURLToPath(
+                        new URL(
+                            "./src/components/ui/AppInput.native.vue",
+                            import.meta.url,
+                        ),
+                    ),
                 }),
             },
         },
