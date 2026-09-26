@@ -36,15 +36,7 @@ const { t, locale } = useI18n();
 const isSyncing = ref(false);
 
 // 1. Sound Module
-const {
-    soundLevel,
-    isSoundOn,
-    toggleSound,
-    playSound,
-    audioBad,
-    audioGreat,
-    audioHint,
-} = useTrainerSound();
+const { soundLevel, isSoundOn, toggleSound, playSound } = useTrainerSound();
 
 // 2. Core Module
 const {
@@ -168,7 +160,7 @@ const handleInputSubmit = async () => {
     const isCorrect = await checkUserAnswer(props.slug);
 
     if (isCorrect) {
-        playSound(audioGreat);
+        playSound("great");
         thinkAgainCount.value = 0;
     } else {
         const available = currentKind
@@ -176,13 +168,13 @@ const handleInputSubmit = async () => {
             : mainArr.value.length > 0;
 
         thinkAgainCount.value++;
-        playSound(audioBad, available);
+        playSound("bad", available);
     }
 };
 
 const showHint = () => {
     if (!mainArr.value.length) return;
-    playSound(audioHint);
+    playSound("hint");
     fromHintButton.value = true;
     userAnswer.value = mainArr.value[0]!.word;
     showNotesFlag.value = true;
@@ -191,7 +183,7 @@ const showHint = () => {
 const reloadGame = async () => {
     isSyncing.value = true;
 
-    playSound(audioHint);
+    playSound("hint");
     resetFlags(true);
 
     mainArr.value = shuffleArray([...mainArrAlwaysFull.value]);
@@ -223,7 +215,7 @@ const refreshGame = async () => {
 
     if (filtered.length <= 1) return;
 
-    playSound(audioHint);
+    playSound("hint");
     resetFlags();
 
     const shuffled = shuffleArray([...filtered]);
