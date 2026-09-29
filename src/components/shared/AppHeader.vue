@@ -44,6 +44,9 @@
         >
             <nav class="navbar_menu">
                 <ul class="header__nav indentTop">
+                    <AppButton @click="closeBurger" custom-class="cancelBtn"
+                        >x</AppButton
+                    >
                     <li
                         v-for="trainer in trainersList"
                         :key="trainer.id"
@@ -80,6 +83,15 @@
                             >{{ $t("header.links.quiz") }}</a
                         >
                     </li>
+                    <li v-if="!isNative" class="menu-item menu-item--ext">
+                        <a
+                            href="@/assets/app/aGreekTrainer.apk"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                            >{{ $t("header.links.download") }}</a
+                        >
+                    </li>
                 </ul>
 
                 <hr class="hr-menu" />
@@ -109,10 +121,14 @@ import { ref, computed, onMounted, onUnmounted } from "vue";
 import { useI18n } from "vue-i18n";
 import AppBreadcrumbs from "@/components/ui/AppBreadcrumbs.vue";
 import AppLangSwitcher from "@/components/ui/AppLangSwitcher.vue";
+import AppButton from "@/components/ui/AppButton.vue";
 import { RouterLink, useRoute } from "vue-router";
 import AppModalOverlay from "@/components/shared/AppModalOverlay.vue";
 import AppBurgerButton from "@/components/ui/AppBurgerButton.vue";
 import { TRAINERS_CONFIG } from "@/config/trainers";
+import { Capacitor } from "@capacitor/core";
+
+const isNative = Capacitor.isNativePlatform();
 
 const { t } = useI18n();
 
@@ -177,14 +193,29 @@ const scrollToTop = () => {
 </script>
 
 <style scoped>
+.cancelBtn {
+    background-color: #8b1a2b;
+    line-height: 1;
+    font-size: 1rem;
+    border: 1px solid #7a1524;
+    color: #d6d6d6;
+    padding: 0.3rem 0.75rem;
+    position: absolute;
+    min-width: none;
+    top: 0.75rem;
+    right: 0.75rem;
+    transition: all 0.3s;
+}
+
 .navbar_menu {
     display: block;
     width: 100%;
     text-align: center;
+    position: relative;
     border-radius: 5px;
     border: 1px solid #198754 !important;
     background-color: #1d1d1d;
-    padding: 12px 0;
+    padding: 24px 0;
 }
 
 /* STYLING THE ACTIVE LINK IN THE SIMULATOR */
@@ -259,11 +290,8 @@ const scrollToTop = () => {
 
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        box-shadow 0.2s ease,
-        transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: background-color 0.2s ease, color 0.2s ease,
+        box-shadow 0.2s ease, transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 
     display: flex;
     align-items: center;
@@ -277,6 +305,10 @@ const scrollToTop = () => {
         box-shadow: 0 2px 8px rgba(25, 135, 84, 0.4);
         transform: rotate(270deg) scale(1.05);
     }
+
+    .cancelBtn:hover {
+        background-color: #69121f;
+    }
 }
 
 #toTop:active {
@@ -286,9 +318,7 @@ const scrollToTop = () => {
 
 .fade-enter-active,
 .fade-leave-active {
-    transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .fade-enter-from,
@@ -421,7 +451,7 @@ const scrollToTop = () => {
         font-size: 18px;
     }
     .header__nav {
-        padding: 12px 0;
+        padding: 24px 0;
     }
     .logo a {
         font-size: 14px;

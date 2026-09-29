@@ -64,6 +64,7 @@ export default {
             telegram: "Telegram Group",
             quiz: "Telegram Quiz",
             about: "About Project",
+            download: "Download APK",
         },
         breadcrumbs: {
             home: "Home",

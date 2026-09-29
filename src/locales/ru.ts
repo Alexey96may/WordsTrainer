@@ -20,6 +20,7 @@ export default {
             telegram: "Группа в Telegram",
             quiz: "Викторина в Telegram",
             about: "О проекте",
+            download: "Скачать APK",
         },
         breadcrumbs: {
             home: "Главная",

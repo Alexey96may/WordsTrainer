@@ -20,6 +20,7 @@ export default {
             telegram: "Grupo en Telegram",
             quiz: "Quiz en Telegram",
             about: "Sobre el proyecto",
+            download: "Descargar APK",
         },
         breadcrumbs: {
             home: "Inicio",
