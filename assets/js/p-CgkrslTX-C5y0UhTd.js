@@ -1,0 +1,1 @@
+import{r as e}from"./vendor-gINUwykT.js";export{e as createSwipeBackGesture};

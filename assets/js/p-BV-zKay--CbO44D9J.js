@@ -1,0 +1,1 @@
+import{i as r}from"./vendor-gINUwykT.js";export{r as startTapClick};

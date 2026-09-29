@@ -1,0 +1,1 @@
+import{D as e,E as r}from"./vendor-gINUwykT.js";export{r as createGesture};

@@ -1,0 +1,1 @@
+import{p as o}from"./vendor-gINUwykT.js";export{o as mdTransitionAnimation};
