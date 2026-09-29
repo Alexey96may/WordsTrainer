@@ -39,11 +39,6 @@ function buildBody(word: DailyWord): string {
         }
     }
 
-    if (word.etymology) {
-        lines.push("");
-        lines.push(`🏛 ${word.etymology}`);
-    }
-
     return lines.join("\n");
 }
 
@@ -84,7 +79,7 @@ export async function scheduleWordNotifications(locale: string): Promise<void> {
             body: buildShortBody(word),
             largeBody: buildBody(word),
             smallIcon: "ic_stat_word",
-            iconColor: "#4CAF50",
+            iconColor: "#198754",
             schedule: { at: date, allowWhileIdle: true },
             extra: { word: word.word, index: i },
         });
