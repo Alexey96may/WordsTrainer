@@ -85,7 +85,7 @@
                     </li>
                     <li v-if="!isNative" class="menu-item menu-item--ext">
                         <a
-                            href="@/assets/app/aGreekTrainer.apk"
+                            href="https://github.com/Alexey96may/WordsTrainer/releases/download/v1.0.0/aGreekTrainer.apk"
                             target="_blank"
                             rel="noopener noreferrer"
                             download
