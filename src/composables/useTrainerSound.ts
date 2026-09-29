@@ -49,7 +49,7 @@ export function useTrainerSound() {
         (Object.keys(SOUND_FILES) as SoundKey[]).forEach((key) => {
             NativeAudio.preload({
                 assetId: key,
-                assetPath: SOUND_FILES[key].replace("sound/effects/", ""),
+                assetPath: `public/${SOUND_FILES[key]}`,
                 audioChannelNum: 1,
                 isUrl: false,
             }).catch((e) =>
