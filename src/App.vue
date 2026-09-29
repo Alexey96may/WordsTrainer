@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import Header from "@/components/shared/AppHeader.vue";
 import Footer from "@/components/shared/AppFooter.vue";
-import { Preferences } from "@capacitor/preferences";
+
 import { scheduleWordNotifications } from "@/composables/useNativeNotification";
-import { watch, onMounted } from "vue";
+
+import { watch, onMounted, computed } from "vue";
 
 import { useHead } from "@vueuse/head";
-import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
 
@@ -14,18 +14,18 @@ const { t, locale } = useI18n();
 const route = useRoute();
 
 onMounted(() => {
-    scheduleWordNotifications(locale.value);
+    scheduleWordNotifications(locale.value, t("dailyWord.title"));
 });
 
 watch(locale, async (newLocale) => {
-    await Preferences.remove({ key: "lastScheduledDate" });
-    await scheduleWordNotifications(newLocale);
+    await scheduleWordNotifications(newLocale, t("dailyWord.title"));
 });
 
 useHead(
     computed(() => {
         const currentPath = route.fullPath;
         const baseUrl = "https://alexey96may.github.io/WordsTrainer";
+
         const fullUrl = `${baseUrl}${
             currentPath.startsWith("/") ? "" : "/"
         }${currentPath}`;
@@ -33,10 +33,14 @@ useHead(
         const titleKey = (route.meta.title as string) || "meta.home";
 
         let pageTitle = "";
+
         if (route.name === "trainer") {
             const slug = route.params.slug as string;
             const trainerName = t(`trainers.${slug}.name`);
-            pageTitle = t(titleKey, { name: trainerName });
+
+            pageTitle = t(titleKey, {
+                name: trainerName,
+            });
         } else {
             pageTitle = t(titleKey);
         }
@@ -46,33 +50,62 @@ useHead(
                 lang: locale.value,
                 translate: "no",
             },
+
             title: pageTitle,
+
             meta: [
-                { name: "description", content: t("meta.description") },
-                { name: "keywords", content: t("meta.keywords") },
-                { name: "author", content: t("meta.author") },
-                { property: "og:type", content: "website" },
+                {
+                    name: "description",
+                    content: t("meta.description"),
+                },
+                {
+                    name: "keywords",
+                    content: t("meta.keywords"),
+                },
+                {
+                    name: "author",
+                    content: t("meta.author"),
+                },
+                {
+                    property: "og:type",
+                    content: "website",
+                },
                 {
                     property: "og:url",
                     content: fullUrl,
                 },
-                { property: "og:title", content: t("meta.og_title") },
+                {
+                    property: "og:title",
+                    content: t("meta.og_title"),
+                },
                 {
                     property: "og:description",
                     content: t("meta.og_description"),
                 },
-                { property: "twitter:card", content: "summary_large_image" },
+                {
+                    property: "twitter:card",
+                    content: "summary_large_image",
+                },
                 {
                     property: "twitter:url",
                     content: fullUrl,
                 },
-                { property: "twitter:title", content: t("meta.og_title") },
+                {
+                    property: "twitter:title",
+                    content: t("meta.og_title"),
+                },
                 {
                     property: "twitter:description",
                     content: t("meta.og_description"),
                 },
             ],
-            link: [{ rel: "icon", href: "/favicon.png" }],
+
+            link: [
+                {
+                    rel: "icon",
+                    href: "/favicon.png",
+                },
+            ],
         };
     }),
 );
@@ -103,7 +136,6 @@ header {
         transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Initial state upon appearance and final state upon disappearance */
 .fade-view-enter-from {
     opacity: 0;
     transform: translateY(10px);
