@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Header from "@/components/shared/AppHeader.vue";
 import Footer from "@/components/shared/AppFooter.vue";
+import { scheduleWordNotifications } from "@/composables/useNativeNotification";
+import { onMounted } from "vue";
 
 import { useHead } from "@vueuse/head";
 import { computed } from "vue";
@@ -10,11 +12,17 @@ import { useRoute } from "vue-router";
 const { t, locale } = useI18n();
 const route = useRoute();
 
+onMounted(() => {
+    scheduleWordNotifications(locale.value);
+});
+
 useHead(
     computed(() => {
         const currentPath = route.fullPath;
         const baseUrl = "https://alexey96may.github.io/WordsTrainer";
-        const fullUrl = `${baseUrl}${currentPath.startsWith("/") ? "" : "/"}${currentPath}`;
+        const fullUrl = `${baseUrl}${
+            currentPath.startsWith("/") ? "" : "/"
+        }${currentPath}`;
 
         const titleKey = (route.meta.title as string) || "meta.home";
 
@@ -85,8 +93,7 @@ header {
 
 .fade-view-enter-active,
 .fade-view-leave-active {
-    transition:
-        opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
         transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 

@@ -1,7 +1,6 @@
 @font-face {
     font-family: "EB Garamond";
-    src:
-        url("/fonts/EBGaramond-Regular.woff2") format("woff2"),
+    src: url("/fonts/EBGaramond-Regular.woff2") format("woff2"),
         url("/fonts/EBGaramond-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -10,8 +9,7 @@
 
 @font-face {
     font-family: "Inter";
-    src:
-        url("/fonts/Inter_18pt-Regular.woff2") format("woff2"),
+    src: url("/fonts/Inter_18pt-Regular.woff2") format("woff2"),
         url("/fonts/Inter_18pt-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -67,11 +65,11 @@
 
 body {
     min-height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     color: var(--color-text);
     background: var(--color-background);
-    transition:
-        color 0.5s,
-        background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
     line-height: 1.6;
     font-family: var(--font-sans);
     font-size: 15px;

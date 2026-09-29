@@ -12,19 +12,14 @@ import router from "./router";
 const app = createApp(App);
 const head = createHead();
 
-if (Capacitor.getPlatform() !== "web") {
-    await import("@ionic/vue/css/core.css");
-    await import("@ionic/vue/css/normalize.css");
-    await import("@ionic/vue/css/structure.css");
-    await import("@ionic/vue/css/typography.css");
-
-    const { IonicVue } = await import("@ionic/vue");
-    app.use(IonicVue);
-}
-
 app.use(IonicVue);
 app.use(router);
 app.use(i18n);
 app.use(head);
+
+if (Capacitor.getPlatform() !== "web") {
+    await import("@ionic/vue/css/core.css");
+    await import("@ionic/vue/css/normalize.css");
+}
 
 app.mount("#app");

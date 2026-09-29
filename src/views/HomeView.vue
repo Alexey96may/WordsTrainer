@@ -16,31 +16,40 @@
             <h2 class="subtitle">{{ $t("home.subtitle") }}</h2>
 
             <div class="trainers-grid">
-                <template v-if="isLoading">
-                    <TrainerCardSkeleton v-for="i in 6" :key="'loader-' + i" />
-                </template>
-
-                <template v-else>
-                    <TransitionGroup name="fade">
-                        <RouterLink
-                            v-for="trainer in displayedTrainers"
-                            :key="trainer.id"
-                            :to="`/trainer/${trainer.id}`"
-                            class="trainer-card"
-                        >
-                            <div class="card-icon">
-                                <component :is="trainer.icon" />
-                            </div>
-                            <h3>{{ $t(`trainers.${trainer.id}.name`) }}</h3>
-                            <p>{{ $t(`trainers.${trainer.id}.desc`) }}</p>
-                            <span class="start-btn">{{
-                                activeTrainerIds.has(trainer.id)
-                                    ? $t("home.continueBtn")
-                                    : $t("home.startBtn")
-                            }}</span>
-                        </RouterLink></TransitionGroup
+                <Transition name="fade" mode="out-in" appear>
+                    <div
+                        v-if="isLoading"
+                        key="skeleton"
+                        class="trainers-grid__inner"
                     >
-                </template>
+                        <TrainerCardSkeleton
+                            v-for="i in 6"
+                            :key="'loader-' + i"
+                        />
+                    </div>
+
+                    <div v-else key="cards" class="trainers-grid__inner">
+                        <TransitionGroup name="fade">
+                            <RouterLink
+                                v-for="trainer in displayedTrainers"
+                                :key="trainer.id"
+                                :to="`/trainer/${trainer.id}`"
+                                class="trainer-card"
+                            >
+                                <div class="card-icon">
+                                    <component :is="trainer.icon" />
+                                </div>
+                                <h3>{{ $t(`trainers.${trainer.id}.name`) }}</h3>
+                                <p>{{ $t(`trainers.${trainer.id}.desc`) }}</p>
+                                <span class="start-btn">{{
+                                    activeTrainerIds.has(trainer.id)
+                                        ? $t("home.continueBtn")
+                                        : $t("home.startBtn")
+                                }}</span>
+                            </RouterLink></TransitionGroup
+                        >
+                    </div>
+                </Transition>
             </div>
 
             <div
@@ -171,6 +180,27 @@ watch(locale, async () => {
     gap: 24px;
 }
 
+.trainers-grid__inner {
+    display: contents;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: none;
+    }
+}
+
 .fade-enter-active,
 .fade-leave-active {
     transition: all 0.5s ease;
@@ -198,8 +228,7 @@ watch(locale, async () => {
     color: #fff;
     display: flex;
     flex-direction: column;
-    transition:
-        transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
         box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 

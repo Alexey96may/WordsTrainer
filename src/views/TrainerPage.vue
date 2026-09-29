@@ -14,6 +14,9 @@ import TrainerCategorySelect from "@/components/trainer/TrainerCategorySelect.vu
 import TrainerTable from "@/components/trainer/TrainerTable.vue";
 import TrainerNotice from "@/components/trainer/TrainerNotice.vue";
 import WordModal from "@/components/trainer/WordModal.vue";
+import { Capacitor } from "@capacitor/core";
+
+const isAndroid = Capacitor.getPlatform() === "android";
 
 import { shuffleArray } from "@/utils/trainerHelpers";
 import type {
@@ -291,63 +294,65 @@ const forceSyncToDB = async () => {
         </div>
 
         <section v-if="pageTitle !== t('trainer.notFound')">
-            <TrainerGameSkeleton v-if="!globalArray.length" />
+            <Transition name="fade" mode="out-in">
+                <TrainerGameSkeleton v-if="!globalArray.length" />
 
-            <div v-else class="content_game content_training">
-                <div class="training-config">
-                    <TrainerAudioControls
-                        :is-sound-on="isSoundOn"
-                        :sound-level="soundLevel"
-                        @reload="reloadGame"
-                        @refresh="refreshGame"
-                        @toggle-sound="toggleSound"
+                <div v-else class="content_game content_training">
+                    <div class="training-config">
+                        <TrainerAudioControls
+                            :is-sound-on="isSoundOn"
+                            :sound-level="soundLevel"
+                            @reload="reloadGame"
+                            @refresh="refreshGame"
+                            @toggle-sound="toggleSound"
+                        />
+
+                        <TrainerCategorySelect
+                            :section-arr="sectionArr"
+                            :checked-kind="checkedKind"
+                            class="training-config__select"
+                            :active-kinds-count="activeKindsCount"
+                            :is-kind-available="isKindAvailable"
+                            @select-category="selectCategory"
+                        />
+                    </div>
+
+                    <TrainerQuestion
+                        :question-html="currentQuestionHtml"
+                        :has-error="hasError"
+                        :think-again-count="thinkAgainCount"
                     />
 
-                    <TrainerCategorySelect
-                        :section-arr="sectionArr"
-                        :checked-kind="checkedKind"
-                        class="training-config__select"
-                        :active-kinds-count="activeKindsCount"
-                        :is-kind-available="isKindAvailable"
-                        @select-category="selectCategory"
+                    <TrainerForm
+                        v-model="userAnswer"
+                        :has-error="hasError"
+                        @submit="handleInputSubmit"
+                        @hint="showHint"
                     />
+
+                    <TrainerScore :count="remainingQuestions" />
                 </div>
+            </Transition>
 
-                <TrainerQuestion
-                    :question-html="currentQuestionHtml"
-                    :has-error="hasError"
-                    :think-again-count="thinkAgainCount"
-                />
+            <Transition name="fade" mode="out-in">
+                <TrainerTableSkeleton
+                    v-if="globalArray.length <= 0 && titles.length <= 0"
+                    :cols-count="titles.length || 3" />
 
-                <TrainerForm
-                    v-model="userAnswer"
-                    :has-error="hasError"
-                    @submit="handleInputSubmit"
-                    @hint="showHint"
-                />
-
-                <TrainerScore :count="remainingQuestions" />
-            </div>
-
-            <TrainerTableSkeleton
-                v-if="globalArray.length <= 0 && titles.length <= 0"
-                :cols-count="titles.length || 3"
-            />
-
-            <TrainerTable
-                v-else
-                :key="slug + '_' + locale"
-                ref="trainerTableComponent"
-                :titles="titles"
-                :global-array="globalArray"
-                :checked-kind="checkedKind"
-                :current-question="mainArr[0]"
-                :is-hint-used="fromHintButton"
-                @row-select="handleModalOpenRequest"
-            />
+                <TrainerTable
+                    v-else
+                    :key="slug + '_' + locale"
+                    ref="trainerTableComponent"
+                    :titles="titles"
+                    :global-array="globalArray"
+                    :checked-kind="checkedKind"
+                    :current-question="mainArr[0]"
+                    :is-hint-used="fromHintButton"
+                    @row-select="handleModalOpenRequest"
+            /></Transition>
         </section>
 
-        <section class="shareSection">
+        <section v-if="!isAndroid" class="shareSection">
             <ShareButton
                 :title="pageTitle"
                 :text="pageDescription"
@@ -380,6 +385,16 @@ const forceSyncToDB = async () => {
 </template>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
 .mainTrainer {
     width: 100%;
     min-height: 100vh;

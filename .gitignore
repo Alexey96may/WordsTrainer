@@ -6,7 +6,13 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+
+*.jks
+*.keystore
+keystore.properties
 android/
+android/*.jks
+android/*.keystore
 
 node_modules
 .DS_Store

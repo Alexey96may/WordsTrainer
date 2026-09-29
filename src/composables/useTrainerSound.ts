@@ -31,7 +31,6 @@ export function useTrainerSound() {
 
     const sVolume = ref(calculateVolume(initialLevel));
 
-    // --- Web: держим те же Audio-элементы, что и раньше ---
     const webAudio: Record<SoundKey, HTMLAudioElement | null> = {
         bad: null,
         great: null,
@@ -46,7 +45,6 @@ export function useTrainerSound() {
         }
     }
 
-    // --- Native: прогреваем плагин ---
     if (isNative) {
         (Object.keys(SOUND_FILES) as SoundKey[]).forEach((key) => {
             NativeAudio.preload({
@@ -80,7 +78,12 @@ export function useTrainerSound() {
 
         try {
             if (isNative) {
-                NativeAudio.play({ assetId: key }).catch(() => {});
+                NativeAudio.setVolume({
+                    assetId: key,
+                    volume: sVolume.value,
+                }).then(() => {
+                    NativeAudio.play({ assetId: key }).catch(() => {});
+                });
                 return;
             }
 
