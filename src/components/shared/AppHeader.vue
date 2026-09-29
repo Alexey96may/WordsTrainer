@@ -194,17 +194,20 @@ const scrollToTop = () => {
 
 <style scoped>
 .cancelBtn {
-    background-color: #8b1a2b;
     line-height: 1;
     font-size: 1rem;
     border: 1px solid #7a1524;
     color: #d6d6d6;
     padding: 0.3rem 0.75rem;
     position: absolute;
-    min-width: none;
+    min-width: unset;
     top: 0.75rem;
     right: 0.75rem;
     transition: all 0.3s;
+}
+
+.cancelBtn:active {
+    transform: scale(0.9);
 }
 
 .navbar_menu {
