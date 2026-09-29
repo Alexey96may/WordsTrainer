@@ -24,6 +24,7 @@
         "@capacitor/core": "^8.4.1",
         "@capacitor/local-notifications": "^8.3.1",
         "@capacitor/preferences": "^8.0.1",
+        "@capacitor/splash-screen": "^8.0.2",
         "@ionic/vue": "^8.8.19",
         "@ionic/vue-router": "^8.8.19",
         "@vueuse/core": "^14.3.0",
