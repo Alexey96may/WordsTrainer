@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import Header from "@/components/shared/AppHeader.vue";
 import Footer from "@/components/shared/AppFooter.vue";
+import { Preferences } from "@capacitor/preferences";
 import { scheduleWordNotifications } from "@/composables/useNativeNotification";
-import { onMounted } from "vue";
+import { watch, onMounted } from "vue";
 
 import { useHead } from "@vueuse/head";
 import { computed } from "vue";
@@ -14,6 +15,11 @@ const route = useRoute();
 
 onMounted(() => {
     scheduleWordNotifications(locale.value);
+});
+
+watch(locale, async (newLocale) => {
+    await Preferences.remove({ key: "lastScheduledDate" });
+    await scheduleWordNotifications(newLocale);
 });
 
 useHead(
