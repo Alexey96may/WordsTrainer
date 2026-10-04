@@ -2,8 +2,8 @@
 
 A highly optimized, modern application for learning and memorizing foreign languages (with advanced support for Greek grammar, phonetics, and dynamic exercise building). Available as a **Progressive Web App (PWA)** and a native **Android APK** powered by Capacitor.
 
-🔗 **Live Web App (PWA):** [alexey96may.github.io/WordsTrainer/](https://alexey96may.github.io/WordsTrainer/)
-🔗 **Download Android APK:** [github.com/Alexey96may/WordsTrainer/releases](https://github.com/Alexey96may/WordsTrainer/releases)
+-   🔗 **Live Web App (PWA):** [alexey96may.github.io/WordsTrainer/](https://alexey96may.github.io/WordsTrainer/)
+-   🔗 **Download Android APK:** [github.com/Alexey96may/WordsTrainer/releases](https://github.com/Alexey96may/WordsTrainer/releases)
 
 ---
 
