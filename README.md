@@ -10,12 +10,12 @@ A highly optimized, modern single-page application (SPA) for learning and memori
 
 This project is built using professional-grade, modern front-end tooling optimized for scale, performance, and developer experience:
 
-- **Core:** Vue 3 (Composition API, `<script setup>`)
-- **Language:** TypeScript (Strict Mode, Zero `any` policy)
-- **State & Logic:** Custom Modular Composables (Domain-Driven design)
-- **Styling:** Tailwind CSS / Scoped CSS for precise layouts
-- **Testing Suite:** Vitest + `jsdom` for automated unit testing
-- **Build Tool & Optimization:** Vite + Terser + Rollup Code Splitting + Gzip Pre-compression
+-   **Core:** Vue 3 (Composition API, `<script setup>`)
+-   **Language:** TypeScript (Strict Mode, Zero `any` policy)
+-   **State & Logic:** Custom Modular Composables (Domain-Driven design)
+-   **Styling:** Tailwind CSS / Scoped CSS for precise layouts
+-   **Testing Suite:** Vitest + `jsdom` for automated unit testing
+-   **Build Tool & Optimization:** Vite + Terser + Rollup Code Splitting + Gzip Pre-compression
 
 ---
 
@@ -29,23 +29,23 @@ The main production component was heavily refactored from a monolithic file into
 2.  **`useTrainerCategories`**: Encapsulates data filtration layers, multi-category selection mechanics, and calculates remaining pool capacities.
 3.  **`useTrainerSound`**: Safely manages browser hardware audio APIs, volumes, and sound states using encapsulated reactive node clones (bypassing global memory leaks).
 
-### ⚡ Strict Typing & Data Contracts
+## Getting Started
 
-All dynamic data models arriving from asynchronous language files are normalized via strict interface bindings:
+Make sure you have Node.js installed on your machine.
 
-```typescript
-export interface RawTrainerItem {
-    word: string;
-    base?: string;
-    kind?: string;
-    qws: string[];
-    transls: string[];
-    notice?: string;
-    [key: string]: unknown;
-}
+1. **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Alexey96may/WordsTrainer.git](https://github.com/Alexey96may/WordsTrainer.git)
+    cd WordsTrainer
+    ```
+2. **Install dependencies:**
 
-export interface TrainerItem extends RawTrainerItem {
-    base: string;
-    kind: string;
-}
-```
+    ```bash
+    npm install
+    ```
+
+3. **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```

@@ -6,15 +6,16 @@
     "scripts": {
         "dev": "vite",
         "build": "run-p type-check \"build-only {@}\" --",
-        "build:android": "vite build --mode capacitor",
-        "build:capacitor": "vue-tsc --build && vite build --mode capacitor && npx cap sync android",
+        "build:android": "vitest run && vite build --mode capacitor",
+        "build:capacitor": "vitest run && vue-tsc --build && vite build --mode capacitor && npx cap sync android",
         "capacitor:sync": "npx cap sync android",
         "capacitor:open": "npx cap open android",
         "preview": "vite preview",
         "build-only": "vite build",
         "type-check": "vue-tsc --build",
         "test": "vitest",
-        "predeploy": "npm run build",
+        "test:run": "vitest run",
+        "predeploy": "npm run test:run && npm run build",
         "deploy": "gh-pages -d dist"
     },
     "dependencies": {
