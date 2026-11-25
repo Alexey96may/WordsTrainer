@@ -72,6 +72,8 @@ import { useDailyWord } from "@/composables/useDailyWord";
 import { createCooldown } from "@/utils/cooldown";
 
 import { useI18n } from "vue-i18n";
+import { Capacitor } from "@capacitor/core";
+import { NativeAudio } from "@capacitor-community/native-audio";
 
 const { wordData } = useDailyWord();
 const { t } = useI18n();
@@ -85,18 +87,40 @@ const capitalizedWord = computed(() => {
 
 const canPlaySound = createCooldown(700);
 
-const playAudio = () => {
-    if (wordData.value?.voicePath) {
-        if (!canPlaySound()) return;
+const isNative = Capacitor.getPlatform() !== "web";
 
-        const audioNode = new Audio(
-            import.meta.env.BASE_URL + wordData.value.voicePath,
-        );
-        const clone = audioNode.cloneNode() as HTMLAudioElement;
+const playAudio = async () => {
+    const voicePath = wordData.value?.voicePath;
 
-        if (typeof clone.play === "function") {
-            clone.play().catch(() => {});
+    if (!voicePath || !canPlaySound()) return;
+
+    if (isNative) {
+        try {
+            await NativeAudio.preload({
+                assetId: "daily-word",
+                assetPath: `public/${voicePath.replace(/^\/+/, "")}`,
+                audioChannelNum: 1,
+                isUrl: false,
+            });
+
+            await NativeAudio.play({
+                assetId: "daily-word",
+            });
+        } catch (error) {
+            console.error("DailyWord NativeAudio error:", error);
         }
+
+        return;
+    }
+
+    const audio = new Audio(
+        `${import.meta.env.BASE_URL}${voicePath.replace(/^\/+/, "")}`,
+    );
+
+    try {
+        await audio.play();
+    } catch (error) {
+        console.error("DailyWord WebAudio error:", error);
     }
 };
 
@@ -160,9 +184,7 @@ onUnmounted(() => {
     color: #e0e0e0;
     opacity: 0;
     transform: translateY(20px);
-    transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .daily-word-card.visible {
