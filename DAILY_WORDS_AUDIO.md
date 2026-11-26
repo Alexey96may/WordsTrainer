@@ -126,9 +126,12 @@ Recording instructions
 98. συνήθεια
 99. γαλλικός
 100. πριονίζω
-     How to contribute
-101. Choose an unrecorded continuous section.
-102. Record it according to the instructions above.
-103. Attach the MP3 file in a comment on the related GitHub Issue.
-104. Mention the first and last word in your recording.
-     Thank you very much for helping make Greek Trainer better!
+
+## How to contribute
+
+-   Choose an unrecorded continuous section.
+-   Record it according to the instructions above.
+-   Attach the MP3 file in a comment on the related GitHub Issue.
+-   Mention the first and last word in your recording.
+
+    Thank you very much for helping make Greek Trainer better!
