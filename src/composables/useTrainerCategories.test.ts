@@ -100,10 +100,10 @@ describe("useTrainerCategories composable", () => {
     });
 
     it("should determine if a kind is available in the remaining pool", () => {
-        const { isKindAvailable, mainArrAlwaysFull } = setup();
+        const { isKindAvailable, mainArrsinSort } = setup();
 
         const mockItems = createMockItems();
-        mainArrAlwaysFull.value = [...mockItems];
+        mainArrsinSort.value = [...mockItems];
 
         expect(isKindAvailable("all")).toBe(true);
         expect(isKindAvailable("verbs")).toBe(true);
@@ -118,11 +118,11 @@ describe("useTrainerCategories composable", () => {
             userAnswer,
             remainingQuestions,
             mainArr,
-            mainArrAlwaysFull,
+            mainArrsinSort,
         } = setup();
 
         const mockItems = createMockItems();
-        mainArrAlwaysFull.value = [...mockItems];
+        mainArrsinSort.value = [...mockItems];
         hasError.value = true;
         userAnswer.value = "неверный ввод";
 
@@ -136,11 +136,11 @@ describe("useTrainerCategories composable", () => {
     });
 
     it("should revert to 'all' if the last selected category is unchecked", () => {
-        const { selectCategory, checkedKind, mainArr, mainArrAlwaysFull } =
+        const { selectCategory, checkedKind, mainArr, mainArrsinSort } =
             setup();
 
         const mockItems = createMockItems();
-        mainArrAlwaysFull.value = [...mockItems];
+        mainArrsinSort.value = [...mockItems];
 
         selectCategory("verbs");
         selectCategory("verbs"); // Отмена выбора

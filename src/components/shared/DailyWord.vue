@@ -88,6 +88,7 @@ const capitalizedWord = computed(() => {
 const canPlaySound = createCooldown(700);
 
 const isNative = Capacitor.getPlatform() !== "web";
+let loadedVoicePath: string | null = null;
 
 const playAudio = async () => {
     const voicePath = wordData.value?.voicePath;
@@ -95,17 +96,33 @@ const playAudio = async () => {
     if (!voicePath || !canPlaySound()) return;
 
     if (isNative) {
-        try {
-            await NativeAudio.preload({
-                assetId: "daily-word",
-                assetPath: `public/${voicePath.replace(/^\/+/, "")}`,
-                audioChannelNum: 1,
-                isUrl: false,
-            });
+        const assetId = "daily-word";
 
-            await NativeAudio.play({
-                assetId: "daily-word",
-            });
+        try {
+            if (loadedVoicePath !== voicePath) {
+                if (loadedVoicePath) {
+                    try {
+                        await NativeAudio.unload({ assetId });
+                    } catch {
+                        // Ресурс мог быть ещё не загружен
+                    }
+                }
+
+                await NativeAudio.preload({
+                    assetId,
+                    assetPath: `public/${voicePath.replace(/^\/+/, "")}`,
+                    audioChannelNum: 1,
+                    isUrl: false,
+                });
+
+                loadedVoicePath = voicePath;
+            }
+
+            try {
+                await NativeAudio.stop({ assetId });
+            } catch {}
+
+            await NativeAudio.play({ assetId });
         } catch (error) {
             console.error("DailyWord NativeAudio error:", error);
         }
@@ -163,6 +180,14 @@ watch(
 
 onUnmounted(() => {
     if (observer) observer.disconnect();
+
+    if (loadedVoicePath) {
+        NativeAudio.unload({ assetId: "daily-word" }).catch((error) => {
+            console.error("DailyWord unload error:", error);
+        });
+
+        loadedVoicePath = null;
+    }
 });
 </script>
 

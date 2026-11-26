@@ -1,6 +1,15 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
 import { useTrainerSound } from "./useTrainerSound";
 
+vi.mock("@capacitor-community/native-audio", () => ({
+    NativeAudio: {
+        preload: vi.fn().mockResolvedValue(undefined),
+        play: vi.fn().mockResolvedValue(undefined),
+        stop: vi.fn().mockResolvedValue(undefined),
+        unload: vi.fn().mockResolvedValue(undefined),
+    },
+}));
+
 class AudioMock {
     public volume = 1;
 
